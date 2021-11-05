@@ -23,12 +23,12 @@ a {
 	color: violet;
 }
 
-keyword {
+code keyword {
 	color: rgb(102, 68, 170);
 	font-weight: 400;
 }
 
-quote {
+code quote {
 	color:rgb(255, 204, 51);
 	font-weight:400;
 }
