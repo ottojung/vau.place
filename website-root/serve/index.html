@@ -21,7 +21,7 @@
     </br></br>
     Everybody these days seems to like static type systems.
     But there is an obvious advantage of dynamic languages - you can express more at runtime.
-    Contracts check types at runtime and thus allow us to do stuff like:
+    Contracts check types at runtime and thus allow for stuff like:
     <pre><code>(<keyword>define/contract</keyword> bitcoin-price
   (<keyword>if</keyword> (system <quote>"ping -c 1 rate.sx"</quote>) number? false?) <comment>; check if there is a connection</comment>
   (string->number (shell <quote>"curl rate.sx/10BTC"</quote>)))   <comment>; convert to number right away</comment> </code></pre>
