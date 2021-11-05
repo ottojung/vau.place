@@ -32,3 +32,8 @@ code quote {
 	color:rgb(255, 204, 51);
 	font-weight:400;
 }
+
+code comment {
+	color:rgb(90, 150, 90);
+	font-weight:400;
+}

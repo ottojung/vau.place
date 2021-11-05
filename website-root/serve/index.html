@@ -15,13 +15,29 @@
 </div>
 
 <ul>
+
+  <li>
+    <a href="./post/hyper-dynamic.html"> Static types vs contracts </a>
+    </br></br>
+    Everybody these days seems to like static type systems.
+    Dynamically typed languages started to adopt some forms of gradual typing.
+    But there is an obvious advantage of dynamic languages - you can express more at runtime.
+    Contracts check types at runtime and thus allow us to do stuff like:
+    <pre><code>(<keyword>define/contract</keyword> bitcoin-price
+  (<keyword>if</keyword> (system <quote>"ping -c 1 rate.sx"</quote>) number? false?) <comment>; check if there is a connection</comment>
+  (string->number (shell <quote>"curl rate.sx/10BTC"</quote>)))   <comment>; convert to number right away</comment> </code></pre>
+    Now do that with your dependent types 😊
+    </br></br>
+  </li>
+
   <li>
     <a href="./post/incognito.html"> Why I use incognito </a>
     </br></br>
-    Logging on requirement is usually an abuse. Most services don't need it, yet they will require me to register. Incognito mode changed the way I look at such websites. It is similar to how disabling javascript by default works - just like I got more likely to leave a website that required javascript for no apparent reason, it also became harder to tolerate websites that required me to authenticate for no reason.
+    Logging on requirement is usually an abuse. Most services don't need it, yet they will require me to register. Incognito mode changed the way I look at such services. It is similar to how disabling javascript by default works - just like I got more likely to leave a website that required javascript for no apparent reason, it also became harder to tolerate websites that required me to authenticate for no reason.
     </br>
     </br>
   </li>
+
   <li>
     <a href="https://axisofeval.blogspot.com/2011/09/kernel-underground.html"> The Axis of Eval: The Kernel Underground </a>
     </br>

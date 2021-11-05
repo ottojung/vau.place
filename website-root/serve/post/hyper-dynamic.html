@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title> Vau's blog </title>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex"> <!-- prevent robots from indexing -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <h3> Static types vs contracts </h3>
+    Everybody these days seems to like static type systems.
+    Dynamically typed languages started to adopt some forms of gradual typing.
+    But there is an obvious advantage of dynamic languages - you can express more at runtime.
+    Contracts check types at runtime and thus allow us to do stuff like:
+    <pre><code>(<keyword>define/contract</keyword> bitcoin-price
+  (<keyword>if</keyword> (system <quote>"ping -c 1 rate.sx"</quote>) number? false?) <comment>; check if there is a connection</comment>
+  (string->number (shell <quote>"curl rate.sx/10BTC"</quote>)))   <comment>; convert to number right away</comment> </code></pre>
+    Now do that with your dependent types 😊
+
+    <!-- TODO: finish -->
