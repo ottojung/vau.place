@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title> Vau's blog </title>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex"> <!-- prevent robots
+from indexing -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <h3> Simple undecidable problem </h3>
+
+  When explaining undecidability, halting problem is usually used as an example.
+  But some people, including youger me, have doubts when presented with its proof.
+  And rightfully so, since the proof involves Cantor's diagonal argument.
+  Thus, here I want to give a proof of a slightly different problem which may be easier to understand.
+
+  <br><br>
+
+  To support my point on why one should be forgiven for not trusting the halting problem proofs, here is <a href="https://arxiv.org/pdf/1906.05340">a paper</a> that critisizes the problem itself.
+
+  <br><br>
+
+  The the problem I chose is not related to halting, but it does require some background.
+  Let me start with recursion normal form theorem.
+  Intuitively, it says that every program can be rewritten in such a way that unrestricted loop is only used once.
+  Formally, this means that every recursive function <high>f</high> can be constructed in the following way:
+
+  <pre><code>  f(x) = <keyword>S</keyword>(<keyword>μ</keyword><sub>y</sub> <keyword>T</keyword>(ϕ<sub>f</sub>, x, y))</code></pre>
+
+  Where <high>ϕ<sub>f</sub></high> is the code of the original function <high>f</high>, <high>T</high> is a primitive predicate that associates the application of <high>f(x)</high> with its <i>history of evaluation</i> <high>y</high>, <high>μ</high> is a minimization operator that searches for a minimal such <high>y</high> that satisfies <high>T</high>, and <high>S</high> is another primitive function that returns just the result from the entire history <high>y</high>.
+
+  <br><br>
+
+  The proof of this theorem is not hard, but is too large to fit in the margins of this webpage.
+
+  <br><br>
+
+  So
+
+</body>
+

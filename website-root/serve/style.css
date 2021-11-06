@@ -6,7 +6,7 @@ body {
 	margin: auto;
 	margin-top: 1%;
 	margin-bottom: 1%;
-	background-color: #100f10;
+	background-color: #081010;
 	color: #e0e6f0;
 }
 
@@ -25,15 +25,20 @@ a {
 
 code keyword {
 	color: rgb(102, 68, 170);
-	font-weight: 400;
+	font-weight: 600;
 }
 
 code quote {
-	color:rgb(255, 204, 51);
-	font-weight:400;
+	color: rgb(255, 204, 51);
+	font-weight: 400;
 }
 
 code comment {
-	color:rgb(90, 150, 90);
-	font-weight:400;
+	color: rgb(90, 150, 90);
+	font-weight: 400;
+}
+
+high {
+	color: #ff00ff;
+	font-weight: 550;
 }
