@@ -18,23 +18,13 @@ from indexing -->
 <ul>
 
   <li>
-    <a href="./post/undecidability0.html"> Simple undecidable problem </a>
-    </br></br>
-    When explaining undecidability, halting problem is usually used as an example.
-    But some people, including youger me, have doubts when presented with its proof.
-    And rightfully so, since the proof involves Cantor's diagonal argument.
-    Thus, here I want to give a proof of a slightly different problem which may be easier to understand.
-    </br></br>
-  </li>
-
-  <li>
     <a href="./post/hyper-dynamic.html"> Static types vs contracts </a>
     </br></br>
-    Everyone these days seems to like static type systems.
-    But there is an obvious advantage to dynamic types - they are more expressive because they have access to runtime information.
-    Contracts check types at runtime and thus allow for stuff like:
+    Everyone these days seems to be excited about static type systems.
+    Well, I don't like that. Why did we suddenly forgot about the undeniable advantage of dynamic types - the mighty expressiveness that comes from the knowledge of runtime itself!
+    Let me demonstrate.
     <pre><code>  x: random.choice([<keyword>String</keyword>, <keyword>Int</keyword>]) = read(<quote>"2"</quote>)</code></pre>
-    Now do that with your dependent types 😊
+    See? Now do that with your dependent types 😊
     </br></br>
   </li>
 
