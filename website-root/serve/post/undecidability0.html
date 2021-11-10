@@ -26,11 +26,11 @@ from indexing -->
   The the problem I chose is not related to halting, but it does require some background.
   Let me start with recursion normal form theorem.
   Intuitively, it says that every program can be rewritten in such a way that unrestricted loop is only used once.
-  Formally, this means that every recursive function <span id="high">f</span> can be constructed in the following way:
+  Formally, this means that every recursive function <span class="high">f</span> can be constructed in the following way:
 
-  <pre><code>  f(x) = <span id="keyword">S</span>(<span id="keyword">μ</span><sub>y</sub> <span id="keyword">T</span>(ϕ<sub>f</sub>, x, y))</code></pre>
+  <pre><code>  f(x) = <span class="keyword">S</span>(<span class="keyword">μ</span><sub>y</sub> <span class="keyword">T</span>(ϕ<sub>f</sub>, x, y))</code></pre>
 
-  Where <span id="high">ϕ<sub>f</sub></span> is the code of the original function <span id="high">f</span>, <span id="high">T</span> is a primitive predicate that associates the application of <span id="high">f(x)</span> with its <i>history of evaluation</i> <span id="high">y</span>, <span id="high">μ</span> is a minimization operator that searches for a minimal such <span id="high">y</span> that satisfies <span id="high">T</span>, and <span id="high">S</span> is another primitive function that returns just the result from the entire history <span id="high">y</span>.
+  Where <span class="high">ϕ<sub>f</sub></span> is the code of the original function <span class="high">f</span>, <span class="high">T</span> is a primitive predicate that associates the application of <span class="high">f(x)</span> with its <i>history of evaluation</i> <span class="high">y</span>, <span class="high">μ</span> is a minimization operator that searches for a minimal such <span class="high">y</span> that satisfies <span class="high">T</span>, and <span class="high">S</span> is another primitive function that returns just the result from the entire history <span class="high">y</span>.
 
   <br><br>
 
