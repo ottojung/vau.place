@@ -23,22 +23,22 @@ a {
 	color: violet;
 }
 
-code keyword {
+#keyword {
 	color: rgb(102, 68, 170);
 	font-weight: 600;
 }
 
-code quote {
+#quote {
 	color: rgb(255, 204, 51);
 	font-weight: 400;
 }
 
-code comment {
+#comment {
 	color: rgb(90, 150, 90);
 	font-weight: 400;
 }
 
-high {
+#high {
 	color: #ff00ff;
 	font-weight: 550;
 }
