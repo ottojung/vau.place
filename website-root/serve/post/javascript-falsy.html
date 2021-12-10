@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title> Vau's blog </title>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex"> <!-- prevent robots from indexing -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <h3> The incredible complexity of Javascript's <span class="keyword">if</span> </h3>
+
+  Conditional branching... The most fundamental construct in all of programming, the simplest of control flows, the most common of language constructs, the first one to learn, and the basis of all machine learning.
+  Its importance is hard to overestimate.
+  But have you ever thought what <i>really</i> happens when a language interpreter encounters an <span class="keyword">if</span> statement?
+
+  <br><br>
+
+  The answer hugely depends on the language, of course.
+
+  <br>
+
+  So first, the strongly-typed ifs.
+  In case of those, the interpreter only needs to check if the condition evaluates to "true" or "false",
+  and execute either the first or the second alternative based on that. Simple.
+
+  <br><br>
+
+  Going into what's called <i>truthy if</i>s, we have Lisp-type ifs.
+  Lisp interpreters only need to check for a "false" value, since everything else is considered "true".
+  Sounds like not a big deal, but these kinds of ifs are technically more expressive than the strongy-typed version.
+  A variation of <i>truthy if</i> is the C-type if.
+  Here we need to check if what's inside the brackets is zero, then execute the second branch in case it is, otherwise execute the first branch.
+  There is a catch though -- what is zero exactly? Is 0.0 a zero? Is -0.0 a zero? Usually they are.
+  And in C specifically, there are 3 flavors of zero -- the integer 0 (int, unsigned long, ...),
+  the floating point 0.0 and 0.0f, and the NULL pointer.
+
+  <br><br>
+
+  We can say that all 3 types of zero are coersible to "false" in C.
+  This brings us to the Final Boss, the master of coersions, Javascript.
+  Not not does the Javascript have the usual <span class="keyword">false</span>, <span class="keyword">null</span> and <span class="keyword">undefined</span>, but also <span class="keyword">0</span>, <span class="keyword">-0</span>, <span class="keyword">0n</span>, <span class="keyword">NaN</span>, <span class="quote">""</span>, and the cherry on top, the <span class="keyword">document.all</span>.
+
+  <br><br>
+
+  If you think it's absurd to do a whole 9 checks every time an if is encountered,
+  you should know that most dynamic languages do something similar,
+  including Ruby, which does 7, and Python, which also does 9 checks.
+
+</body>
