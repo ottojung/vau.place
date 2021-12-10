@@ -32,8 +32,8 @@
   Sounds like not a big deal, but these kinds of ifs are technically more expressive than the strongy-typed version.
   A variation of <i>truthy if</i> is the C-type if.
   Here we need to check if what's inside the brackets is zero, then execute the second branch in case it is, otherwise execute the first branch.
-  There is a catch though -- what is zero exactly? Is 0.0 a zero? Is -0.0 a zero? Usually they are.
-  And in C specifically, there are 3 flavors of zero -- the integer 0 (int, unsigned long, ...),
+  There is a catch though -- what is zero exactly? Is 0.0 a zero? Is -0.0 a zero? It makes sense for them to be.
+  In C specifically, there are 3 flavors of zero -- the integer 0 (int, unsigned long, ...),
   the floating point 0.0 and 0.0f, and the NULL pointer.
 
   <br><br>
