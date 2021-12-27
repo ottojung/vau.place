@@ -31,8 +31,8 @@ from indexing -->
   <br><br>
 
   Printf functions are the ones used to output formatted text on the terminal.
-  What I am claiming is that printf functions are priviledged functions that get special treatment in many languages.
-  This special treatment is discriminative to other functions and awkward to programmers.
+  The claim is that they are priviledged in many languages.
+  Their special treatment is discriminative to other functions and awkward to programmers.
 
   <br><br>
 
@@ -45,18 +45,18 @@ from indexing -->
       &       8H  AREA= ,F10.2, 13H SQUARE UNITS)
   </code></pre>
 
-  Needless to say, it was a distinguished element in Fortran's specification,
+  Needless to say, it was a distinguished language element,
   both the programmer and the compiler must have had a respect for it.
   <!-- To add to that, it was a relied on quite obscure way of composing statements together. -->
   And the statement itself looked quite involved.
-  To give you an idea of how involved it really was, that <span class="high">601</span> in the <span class="keyword">WRITE</span> form stood for the line number of the relevant <span class="keyword">FORMAT</span> form.
+  Involved it was -- that <span class="high">601</span> in the <span class="keyword">WRITE</span> form stood for the line number of the relevant <span class="keyword">FORMAT</span> form.
 
   <br><br>
 
-  Other examples include...
+  Going forward in history...
   <ul>
     <li>
-      Algol had a <span class="keyword">printf</span> function, but unlike <i>the usual</i> <span class="keyword">printf</span>, the format string that it received was not a regular string,
+      Algol implemented <span class="keyword">printf</span> as a function, but unlike the usual <span class="keyword">printf</span>, the format string that it received was not a regular string,
       but rather a separate entity whose value must have been available at compile-time,
       and which had its own, special constructor-syntax.
       This restriction has been later adopted by other languages in ML-family, notably OCaml.
@@ -68,48 +68,47 @@ from indexing -->
       Pass a wrong type of argument that does not comform to the format string,
       or God forbid, use a dynamically generated format string, and you will get a warning from GCC.
       No other regular function can possibly express such behaviour,
-      one would need dependent types to do that,
-      but there is a compiler-specific extension that allows one to bless any function with such a check,
+      one would need dependent types for that,
+      but there is a compiler-specific extension that allows one to bless any function with such a check
       by simply adding the following magic to its signature:
-      <pre><code>__attribute__(format(<span class="keyword">printf</span>, ...))</code></pre>
+      <pre><code>    __attribute__(format(<span class="keyword">printf</span>, ...))</code></pre>
       It may also be interesting to note that there are not that many variable-arity functions in the C standard library, and their semantics is usually a complication for compiler writers, considering the relative simplicity of C.
     </li>
 
     <br>
-    <li> Pascal's <span class="keyword">write</span>
-      <br>
-      hello
+    <li> Pascal's <span class="keyword">write</span> was very exceptional in that it was one of a few privileged functions
+      that were allowed to accept variable number of arguments.
     </li>
+
+    <br>
+    <li> Even though OCaml dropped special syntax of Algol's <span class="keyword">printf</span>,
+      the format string still has to be a coward and not a normal string.
+    </li>
+
+    <br>
+    <li>Python 2, a dynamic language with great potential in teaching,
+      had <span class="keyword">print</span> as a statement, not function.
+    </li>
+
+    <br>
     <li>
-      Rust's <span class="keyword">printf!</span> pretends to be a macro, but searching for the implementation, we get this:
+      Rust's <span class="keyword">printf!</span> pretends to be a macro, but searching for the implementation we encounter this piece of code:
 
-      
+      <pre><code><span class="keyword">    macro_rules!</span> format_args_nl {
+        ($fmt:expr) => {{ <span class="comment">/* compiler built-in */</span> }};
+        ($fmt:expr, $($args:tt)*) => {{ <span class="comment">/* compiler built-in */</span> }};
+    }</code></pre>
 
-      So it is a built-in that 
+      There are actually not that many excuses to not have <span class="keyword">printf!</span> as a macro in rust,
+      the behaviour could be replicated in the macro system, but for some reason it was decided to be builtin.
     </li>
-    <li> Even though Ocaml dropped a special syntax for <span class="keyword">printf</span>, the 
-    </li>
+
   </ul>
 
-  <br><br>
-
-  It may be difficult to detect at first glance.
-  We have to be cautios.
-  Look around. Do you see any C, or Pascal near you?
-  The printf supremacy is real.
-
-  <br><br>
-
-  Have you noticed, that
-  It's like language designers have conspired.
-
-  <br><br>
-
-  If you use conventional programming languages at home,
-  Have you noticed
-  Does your compiler treat printf as any other function,
-  or is it special?
-  Programming languages
+  Printf is so complicated it <a href="https://hownot2code.com/2016/08/10/beware-of-printf/">has been considered</a> an attack surface.
+  This seems to be the primary reason for it being so extraordinary, for it is hard to express it in native terms.
+  But when we do make it special-case, we lie to programmers.
+  We lie in that we pretend it's simple by putting it together with regular functions, when it is in fact different.
 
   <!-- TODO:
        About C:
@@ -122,9 +121,9 @@ from indexing -->
 
   <br><br>
 
-  Concluding my rant, <span class="keyword">printf</span> is a hack,
-  it should not be, it does not belong in modern languages,
-  but it is there anyways, and we should aknowledge that it is a little special (in a bad way).
+  I personally think that <span class="keyword">printf</span> is a hack.
+  It should not be, it's ugly, it does not belong in modern languages,
+  but it is here anyways, and we should aknowledge that it is a little special (in a bad way).
 
   <h4> References </h4>
 
@@ -133,6 +132,8 @@ from indexing -->
     <li> <a href="https://retrocomputing.stackexchange.com/questions/10937/what-was-the-first-programming-language-to-have-printf/10948#10948">First language to have printf</a> </li>
     <li> <a href="https://accu.org/journals/overload/26/148/james_2586/">Mechanics of Algol's printf</a> </li>
     <li> <a href="https://stackoverflow.com/questions/33321751/how-can-printf-issue-a-compiler-warning">Confused user tries to understand C's printf</a></li>
+    <li> <a href="https://rustmustdie.com">Critique of printf (rust case)</li>
+    <li> <a href="https://hownot2code.com/2016/08/10/beware-of-printf/">Attack on printf</a> </li>
   </ol>
 
 </body>
