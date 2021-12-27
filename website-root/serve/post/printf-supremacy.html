@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title> Vau's blog </title>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex"> <!-- prevent robots
+from indexing -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <h3> Printf supremacy </h3>
+
+  Not all functions are equal.
+  Some simple, others not, some are safe, not all, and some are pure as driven snow, still most are dirty though.
+  There is however a class of functions that are above all others,
+  a higher cast, respected by compilers and language designers.
+  Think of the most priviledged functions in Pascal,
+  those that are blessed with the ability to receive variable number of arguments.
+  Or in case of C, of these only functions to get their arguments dependently-typed-checked.
+  Read along as I will try to convince you, the printf supremacy is real.
+
+  <!-- They get special treatment in compile time, -->
+  <!-- be that a free arguments type-check, -->
+  <!-- or abilities not accessible to inferior functions. -->
+
+  <!-- They are language designer's special functions.  -->
+  <!-- No wonder compilers treat them differently. -->
+
+  <br><br>
+
+  Printf functions are the ones used to output formatted text on the terminal.
+  What I am claiming is that printf functions are priviledged functions that get special treatment in many languages.
+  This special treatment is discriminative to other functions and awkward to programmers.
+
+  <br><br>
+
+  It all started with Fortran. There was no single function to do formatted output in Fortran,
+  there was a special statement to do that. Here is how it looked like:
+
+  <pre><code>
+      <span class="keyword">WRITE</span> OUTPUT TAPE 6, <span class="high">601</span>, IA, IB, IC, AREA
+      <span class="keyword">FORMAT</span> (4H A= ,I5,5H  B= ,I5,5H  C= ,I5,
+      &       8H  AREA= ,F10.2, 13H SQUARE UNITS)
+  </code></pre>
+
+  Needless to say, it was a distinguished element in Fortran's specification,
+  both the programmer and the compiler must have had a respect for it.
+  <!-- To add to that, it was a relied on quite obscure way of composing statements together. -->
+  And the statement itself looked quite involved.
+  To give you an idea of how involved it really was, that <span class="high">601</span> in the <span class="keyword">WRITE</span> form stood for the line number of the relevant <span class="keyword">FORMAT</span> form.
+
+  <br><br>
+
+  Other examples include...
+  <ul>
+    <li>
+      Algol had a <span class="keyword">printf</span> function, but unlike <i>the usual</i> <span class="keyword">printf</span>, the format string that it received was not a regular string,
+      but rather a separate entity whose value must have been available at compile-time,
+      and which had its own, special constructor-syntax.
+      This restriction has been later adopted by other languages in ML-family, notably OCaml.
+    </li>
+
+    <br>
+    <li>
+      C's <span class="keyword">printf</span> does not look outstanding from the language point of view, but it is handled with care in today's compilers.
+      Pass a wrong type of argument that does not comform to the format string,
+      or God forbid, use a dynamically generated format string, and you will get a warning from GCC.
+      No other regular function can possibly express such behaviour,
+      one would need dependent types to do that,
+      but there is a compiler-specific extension that allows one to bless any function with such a check,
+      by simply adding the following magic to its signature:
+      <pre><code>__attribute__(format(<span class="keyword">printf</span>, ...))</code></pre>
+      It may also be interesting to note that there are not that many variable-arity functions in the C standard library, and their semantics is usually a complication for compiler writers, considering the relative simplicity of C.
+    </li>
+
+    <br>
+    <li> Pascal's <span class="keyword">write</span>
+      <br>
+      hello
+    </li>
+    <li>
+      Rust's <span class="keyword">printf!</span> pretends to be a macro, but searching for the implementation, we get this:
+
+      
+
+      So it is a built-in that 
+    </li>
+    <li> Even though Ocaml dropped a special syntax for <span class="keyword">printf</span>, the 
+    </li>
+  </ul>
+
+  <br><br>
+
+  It may be difficult to detect at first glance.
+  We have to be cautios.
+  Look around. Do you see any C, or Pascal near you?
+  The printf supremacy is real.
+
+  <br><br>
+
+  Have you noticed, that
+  It's like language designers have conspired.
+
+  <br><br>
+
+  If you use conventional programming languages at home,
+  Have you noticed
+  Does your compiler treat printf as any other function,
+  or is it special?
+  Programming languages
+
+  <!-- TODO:
+       About C:
+       __attribute__(format(printf, ...))
+
+       About OCaml:
+       Там компилятор рассматривает строку формата не как обычную строку, а как специальный тип «строка формата», и она должна быть известна при компиляци
+       ВНЕЗАПНАЯ перегрузка литералов
+    -->
+
+  <br><br>
+
+  Concluding my rant, <span class="keyword">printf</span> is a hack,
+  it should not be, it does not belong in modern languages,
+  but it is there anyways, and we should aknowledge that it is a little special (in a bad way).
+
+  <h4> References </h4>
+
+  <ol>
+    <li> <a href="https://en.wikipedia.org/wiki/Printf_format_string#History"><span class="keyword">printf</span>'s history</a> </li>
+    <li> <a href="https://retrocomputing.stackexchange.com/questions/10937/what-was-the-first-programming-language-to-have-printf/10948#10948">First language to have printf</a> </li>
+    <li> <a href="https://accu.org/journals/overload/26/148/james_2586/">Mechanics of Algol's printf</a> </li>
+    <li> <a href="https://stackoverflow.com/questions/33321751/how-can-printf-issue-a-compiler-warning">Confused user tries to understand C's printf</a></li>
+  </ol>
+
+</body>
