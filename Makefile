@@ -6,13 +6,10 @@ SYNC = rsync --links --delete -P -r
 rsync: rsyncpush
 	ssh website@$(MY_SERVER_NAME) 'chmod -R o+rx,g+rx root/serve/ ; chmod o+x,g+x . ; chmod o+x,g+x root ; chmod o+x,g+x root/serve'
 
-rsyncpush: | tmenc board-lurker website
+rsyncpush: | tmenc website
 
 website:
 	$(SYNC) website-root/ website@$(MY_SERVER_NAME):root
-
-board-lurker: website
-	$(SYNC) $(MY_MEDIA)/text/code/board-lurker/ website@$(MY_SERVER_NAME):root/serve/board-lurker/
 
 tmenc: website
 	$(SYNC) $(MY_MEDIA)/text/code/tmenc-core/src/js/ website@$(MY_SERVER_NAME):root/serve/tmenc/
