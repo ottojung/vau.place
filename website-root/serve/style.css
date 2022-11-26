@@ -1,13 +1,13 @@
 
 body {
-	font-family: 'Courier New', monospace;
+	font-family: 'Iosevka', monospace;
 	font-size: 1.5em;
 	width: min(95%, max(60%, 47em));
 	margin: auto;
 	margin-top: 1%;
 	margin-bottom: 1%;
-	background-color: #081010;
-	color: #e0e6f0;
+	background-color: transparent;
+	color: black;
 }
 
 ::selection {
@@ -24,12 +24,12 @@ a {
 }
 
 .keyword {
-	color: rgb(102, 68, 170);
+	color: blue;
 	font-weight: 600;
 }
 
 .quote {
-	color: rgb(255, 204, 51);
+	color: brown;
 	font-weight: 400;
 }
 
