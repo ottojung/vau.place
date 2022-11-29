@@ -1,6 +1,6 @@
 
 body {
-	font-family: 'Courier New', monospace;
+	font-family: 'Courier New';
 	font-size: 1.5em;
 	width: min(95%, max(60%, 47em));
 	margin: auto;
