@@ -6,8 +6,8 @@ body {
 	margin: auto;
 	margin-top: 1%;
 	margin-bottom: 1%;
-	background-color: transparent;
-	color: black;
+	background-color: #eeeeee;
+	color: #222831;
 }
 
 code {
@@ -15,25 +15,25 @@ code {
 }
 
 h1, h2, h3, b {
-	color: #272727;
+	color: #393e46;
 }
 
 a {
-	color: violet;
+	color: #0092ca;
 }
 
 .keyword {
-	color: blue;
+	color: #2fafff;
 	font-weight: 600;
 }
 
 .quote {
-	color: brown;
+	color: #a55233;
 	font-weight: 400;
 }
 
 .comment {
-	color: rgb(90, 150, 90);
+	color: #f57b51;
 	font-weight: 400;
 }
 
