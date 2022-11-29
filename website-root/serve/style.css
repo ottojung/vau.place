@@ -10,11 +10,6 @@ body {
 	color: black;
 }
 
-::selection {
-	background: #ffff11;
-	color: #100f10;
-}
-
 h1, h2, h3, b {
 	color: #4fe42f;
 }
