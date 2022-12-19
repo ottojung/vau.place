@@ -25,7 +25,6 @@
 @font-face {
 	font-family: 'Merriweather';
 	src: url('Merriweather-Regular.ttf') format('truetype');
-	font-style: italic;
 }
 
 body {
@@ -49,6 +48,8 @@ h1, h2, h3, b {
 
 h1, h2, h3 {
 	font-family: 'MerriweatherBold';
+	font-weight: bold;
+	font-style: italic;
 	font-size: 1.8em;
 }
 
