@@ -16,9 +16,15 @@
 }
 
 @font-face {
-	font-family: 'Merriweather';
+	font-family: 'MerriweatherBold';
 	src: url('Merriweather-BlackItalic.ttf') format('truetype');
 	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('Merriweather-Regular.ttf') format('truetype');
 	font-style: italic;
 }
 
@@ -42,11 +48,16 @@ h1, h2, h3, b {
 }
 
 h1, h2, h3 {
-	font-family: 'Merriweather';
+	font-family: 'MerriweatherBold';
 	font-size: 1.8em;
 }
 
 a {
+	color: #0092ca;
+}
+
+.headerlist a {
+	font-family: 'Merriweather';
 	color: #0092ca;
 }
 
