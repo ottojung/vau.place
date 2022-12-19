@@ -2,17 +2,17 @@
 @font-face {
 	font-family: 'Fira Code';
 	src:
-		url('/font/FiraCode-Regular.oet') format('embedded-opentype'),
-		url('/font/FiraCode-Regular.woff2') format('woff2'),
-		url('/font/FiraCode-Regular.woff') format('woff'),
-		url('/font/FiraCode-Regular.ttf') format('truetype');
+		url('style/FiraCode-Regular.oet') format('embedded-opentype'),
+		url('style/FiraCode-Regular.woff2') format('woff2'),
+		url('style/FiraCode-Regular.woff') format('woff'),
+		url('style/FiraCode-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Raleway';
-	src: url('/font/Raleway-Regular.ttf') format('truetype');
+	src: url('style/Raleway-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -37,7 +37,6 @@ body {
 
 code {
 	font-family: 'Fira Code', monospace;
-	/* font-family: 'IBM plex', monospace; */
 }
 
 h1, h2, h3, b {
