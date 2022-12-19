@@ -2,18 +2,29 @@
 @font-face {
 	font-family: 'Fira Code';
 	src:
-		url('style/FiraCode-Regular.oet') format('embedded-opentype'),
-		url('style/FiraCode-Regular.woff2') format('woff2'),
-		url('style/FiraCode-Regular.woff') format('woff'),
-		url('style/FiraCode-Regular.ttf') format('truetype');
-	font-weight: 400;
+		url('FiraCode-Regular.oet') format('embedded-opentype'),
+		url('FiraCode-Regular.woff2') format('woff2'),
+		url('FiraCode-Regular.woff') format('woff'),
+		url('FiraCode-Regular.ttf') format('truetype');
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Raleway';
-	src: url('style/Raleway-Regular.ttf') format('truetype');
-	font-weight: 400;
+	src: url('Raleway-Regular.ttf') format('truetype');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lobster';
+	/* src: url('IMFellEnglish-Regular.ttf') format('truetype'); */
+	src: url('Merriweather-BoldItalic.ttf') format('truetype');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PressStart2P';
+	src: url('PressStart2P-Regular.ttf') format('truetype');
 	font-style: normal;
 }
 
@@ -37,10 +48,17 @@ body {
 
 code {
 	font-family: 'Fira Code', monospace;
+	/* font-family: 'PressStart2P', monospace; */
 }
 
 h1, h2, h3, b {
 	color: #393e46;
+}
+
+h1, h2, h3 {
+	font-family: 'Lobster';
+	font-size: 1.8em;
+	/* font-weight: 100; */
 }
 
 a {
