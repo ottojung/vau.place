@@ -22,20 +22,7 @@
 	font-style: italic;
 }
 
-@font-face {
-	font-family: 'PressStart2P';
-	src: url('PressStart2P-Regular.ttf') format('truetype');
-	font-style: normal;
-}
-
 body {
-	/* font-family: 'Open Sans' sans-serif; */
-	/* font-family: 'Google Noto'; */
-	/* font-family: 'Courier New'; */
-	/* font-family: 'Arial'; */
-	/* font-family: 'Inter var'; */
-	/* font-family: "PT Sans", Calibri, Tahoma, sans-serif; */
-	/* font-family: "Fira Sans"; */
 	font-family: "Raleway";
 	font-size: 1.5em;
 	width: min(95%, max(60%, 47em));
@@ -48,7 +35,6 @@ body {
 
 code {
 	font-family: 'Fira Code', monospace;
-	/* font-family: 'PressStart2P', monospace; */
 }
 
 h1, h2, h3, b {
@@ -58,7 +44,6 @@ h1, h2, h3, b {
 h1, h2, h3 {
 	font-family: 'Merriweather';
 	font-size: 1.8em;
-	/* font-weight: 100; */
 }
 
 a {
