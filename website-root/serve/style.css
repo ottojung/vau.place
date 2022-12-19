@@ -1,6 +1,31 @@
 
+@font-face {
+	font-family: 'Fira Code';
+	src:
+		url('/font/FiraCode-Regular.oet') format('embedded-opentype'),
+		url('/font/FiraCode-Regular.woff2') format('woff2'),
+		url('/font/FiraCode-Regular.woff') format('woff'),
+		url('/font/FiraCode-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('/font/Raleway-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
 body {
-	font-family: 'Courier New';
+	/* font-family: 'Open Sans' sans-serif; */
+	/* font-family: 'Google Noto'; */
+	/* font-family: 'Courier New'; */
+	/* font-family: 'Arial'; */
+	/* font-family: 'Inter var'; */
+	/* font-family: "PT Sans", Calibri, Tahoma, sans-serif; */
+	/* font-family: "Fira Sans"; */
+	font-family: "Raleway";
 	font-size: 1.5em;
 	width: min(95%, max(60%, 47em));
 	margin: auto;
@@ -11,7 +36,8 @@ body {
 }
 
 code {
-	font-family: 'Iosevka', monospace;
+	font-family: 'Fira Code', monospace;
+	/* font-family: 'IBM plex', monospace; */
 }
 
 h1, h2, h3, b {
