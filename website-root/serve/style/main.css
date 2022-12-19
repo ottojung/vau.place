@@ -16,10 +16,10 @@
 }
 
 @font-face {
-	font-family: 'Lobster';
-	/* src: url('IMFellEnglish-Regular.ttf') format('truetype'); */
-	src: url('Merriweather-BoldItalic.ttf') format('truetype');
-	font-style: normal;
+	font-family: 'Merriweather';
+	src: url('Merriweather-BlackItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
 }
 
 @font-face {
@@ -56,7 +56,7 @@ h1, h2, h3, b {
 }
 
 h1, h2, h3 {
-	font-family: 'Lobster';
+	font-family: 'Merriweather';
 	font-size: 1.8em;
 	/* font-weight: 100; */
 }
