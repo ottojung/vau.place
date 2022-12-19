@@ -63,21 +63,25 @@ a {
 }
 
 .keyword {
+	font-family: 'Fira Code', monospace;
 	color: #2fafff;
 	font-weight: 600;
 }
 
 .quote {
+	font-family: 'Fira Code', monospace;
 	color: #a55233;
 	font-weight: 400;
 }
 
 .comment {
+	font-family: 'Fira Code', monospace;
 	color: #f57b51;
 	font-weight: 400;
 }
 
 .high {
+	font-family: 'Fira Code', monospace;
 	color: #ff00ff;
 	font-weight: 550;
 }
