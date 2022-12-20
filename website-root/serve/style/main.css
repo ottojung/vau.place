@@ -9,12 +9,6 @@
 	font-style: normal;
 }
 
-/* @font-face { */
-/* 	font-family: 'Raleway'; */
-/* 	src: url('Raleway-Regular.ttf') format('truetype'); */
-/* 	font-style: normal; */
-/* } */
-
 @font-face {
 	font-family: 'Merriweather';
 	src: url('Merriweather-BoldItalic.ttf') format('truetype');
