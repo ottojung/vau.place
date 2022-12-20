@@ -9,11 +9,11 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-Regular.ttf') format('truetype');
-	font-style: normal;
-}
+/* @font-face { */
+/* 	font-family: 'Raleway'; */
+/* 	src: url('Raleway-Regular.ttf') format('truetype'); */
+/* 	font-style: normal; */
+/* } */
 
 @font-face {
 	font-family: 'MerriweatherBold';
@@ -30,6 +30,7 @@
 body {
 	font-family: "Raleway";
 	font-size: 1.5em;
+	font-weight: lighter;
 	width: min(95%, max(60%, 47em));
 	margin: auto;
 	margin-top: 1%;
