@@ -11,7 +11,7 @@
 	font-family: 'Merriweather';
 	src:
 		local('Merriweather'),
-		url('Merriweather-BoldItalic.Z.ttf') format('truetype');
+		url('Merriweather-BlackItalic.Z.ttf') format('truetype');
 	font-style: italic;
 }
 
