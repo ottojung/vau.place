@@ -3,10 +3,7 @@
 	font-family: 'Fira Code';
 	src:
 		local('FiraCode'),
-		url('FiraCode-Regular.oet') format('embedded-opentype'),
-		url('FiraCode-Regular.woff2') format('woff2'),
-		url('FiraCode-Regular.woff') format('woff'),
-		url('FiraCode-Regular.ttf') format('truetype');
+		url('FiraCode-Regular.Z.ttf') format('truetype');
 	font-style: normal;
 	font-display: optional;
 }
@@ -15,7 +12,7 @@
 	font-family: 'Merriweather';
 	src:
 		local('Merriweather'),
-		url('Merriweather-BoldItalic.ttf') format('truetype');
+		url('Merriweather-BoldItalic.Z.ttf') format('truetype');
 	font-style: italic;
 	font-display: optional;
 }
