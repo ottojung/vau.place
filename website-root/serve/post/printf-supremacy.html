@@ -107,19 +107,6 @@ from indexing -->
   Printf is so complicated it <a href="https://hownot2code.com/2016/08/10/beware-of-printf/">has been considered</a> an attack surface.
   This seems to be the primary reason for it being so extraordinary, for it is hard to express it in native terms.
   But when we do make it special-case, we lie to programmers.
-  We lie in that we pretend it's simple by putting it together with regular functions, when it is in fact different.
-
-  <!-- TODO:
-       About C:
-       __attribute__(format(printf, ...))
-
-       About OCaml:
-       Там компилятор рассматривает строку формата не как обычную строку, а как специальный тип «строка формата», и она должна быть известна при компиляци
-       ВНЕЗАПНАЯ перегрузка литералов
-    -->
-
-  <br><br>
-
   I personally think that <span class="keyword">printf</span> is a hack, it's ugly, and does not belong in modern languages,
   but it is here anyways, and we should aknowledge that it is a little special.
 
