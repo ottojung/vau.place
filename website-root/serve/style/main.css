@@ -8,6 +8,7 @@
 		url('FiraCode-Regular.woff') format('woff'),
 		url('FiraCode-Regular.ttf') format('truetype');
 	font-style: normal;
+	font-display: optional;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
 		local('Merriweather'),
 		url('Merriweather-BoldItalic.ttf') format('truetype');
 	font-style: italic;
+	font-display: optional;
 }
 
 body {
