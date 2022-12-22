@@ -37,6 +37,7 @@ h1, h2, h3, b {
 
 h1, h2, h3 {
 	font-family: 'Merriweather', serif;
+	font-weight: bold;
 	font-style: italic;
 	font-size: 1.8em;
 }
