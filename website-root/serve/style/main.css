@@ -5,7 +5,7 @@
 		local('FiraCode'),
 		url('FiraCode-Regular.Z.ttf') format('truetype');
 	font-style: normal;
-	font-display: optional;
+	font-display: fallback;
 }
 
 @font-face {
@@ -14,7 +14,7 @@
 		local('Merriweather'),
 		url('Merriweather-BoldItalic.Z.ttf') format('truetype');
 	font-style: italic;
-	font-display: optional;
+	font-display: fallback;
 }
 
 body {
