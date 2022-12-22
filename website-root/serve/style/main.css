@@ -18,7 +18,7 @@
 }
 
 body {
-	font-family: "Raleway";
+	font-family: "Raleway", "Times New Roman", serif;
 	font-size: 1.5em;
 	font-weight: lighter;
 	width: min(95%, max(60%, 47em));
@@ -38,7 +38,7 @@ h1, h2, h3, b {
 }
 
 h1, h2, h3 {
-	font-family: 'Merriweather';
+	font-family: 'Merriweather', serif;
 	font-style: italic;
 	font-size: 1.8em;
 }
@@ -48,7 +48,7 @@ a {
 }
 
 .headerlist a {
-	font-family: 'Merriweather';
+	font-family: 'Merriweather', serif;
 	font-weight: lighter;
 	color: #0092ca;
 }
