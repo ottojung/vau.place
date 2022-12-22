@@ -2,6 +2,7 @@
 @font-face {
 	font-family: 'Fira Code';
 	src:
+		local('FiraCode'),
 		url('FiraCode-Regular.oet') format('embedded-opentype'),
 		url('FiraCode-Regular.woff2') format('woff2'),
 		url('FiraCode-Regular.woff') format('woff'),
@@ -11,7 +12,9 @@
 
 @font-face {
 	font-family: 'Merriweather';
-	src: url('Merriweather-BoldItalic.ttf') format('truetype');
+	src:
+		local('Merriweather'),
+		url('Merriweather-BoldItalic.ttf') format('truetype');
 	font-style: italic;
 }
 
