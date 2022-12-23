@@ -18,20 +18,80 @@
 
   <br><br>
 
-  It is almost a meme at this point how dynamic types are being justified,
-  yet no good real world example to be seen.
-  Ironically as well, I did not prepare one myself, you cought me off guard.
-  Or did you? See, typing is not like most of those things...
-  You grow up as a programmer, using type discipline.
-  You develop habits and skills, you adopt.
-  Maybe you even become an expert, you tame those types, make them dance for you, coworkers are jelous.
-  And at that point, the only thing I can say, is you just got to feel it, man.
-  You either get it or don't, no examples necessary.
+  This is meant to be an informative post actually.
+  The main alternative to static typing, besides its various gradual implmentations, are contracts.
+  So let us see what those are, and what are their advantages.
 
-  <!-- This post is not a meme however. In this post we figure stuff out.
-       So, in case you didn't know contracts, let me introduce.
-       Racket implements contracts out of the box. They are great and state of the art (it's an old art, okay?).  -->
+  In short, contracts are type signatures that are checked at runtime instead of at compile-time.
+  Of course this means that we don't get to know if the program is "correct" upfront,
+  but the goal here is to move error messages as close to the sources of errors as possible.
+  To show what I mean by that, consider the following python type definition:
 
-    <!-- Dynamically typed languages started to adopt some forms of gradual typing. -->
+  class Rectangle:
+    def __init__(self, height, width):
+      self.height = height
+      self.width = width
 
-    <!-- TODO: finish -->
+  and a function that uses that type:
+
+  def get_area(rec):
+    rec.height * rec.width
+
+  Nothing prevents us from calling `get_area` on a an argument that it does not expect.
+  But there is a difference between doing `get_area("SOME STRING")` and
+
+  x = Rectangle("SOME", "STRING")
+  ...
+  return get_area(x)
+
+  The difference is that both calls result in an error thrown during the call,
+  but only in the first example it would be the actual source of that error.
+  In the second example, the source is the construction of a bad rectangle.
+
+  If we stick to dynamic typing, then the solution is to add type checks at every call,
+  including calls to constructors.
+
+  class Rectangle:
+  def __init__(self, height, width):
+      assert(instanceof(self, Rectangle))
+      assert(typeof(height), number)
+      assert(typeof(width), number)
+
+      self.height = height
+      self.width = width
+
+  ...
+
+  def get_area(rec):
+    assert(instanceof(rec, Rectangle)) # ignore duck typing concerns
+    rec.height * rec.width
+
+  But there are at least two things that we can improve on.
+  One is to make it less verbose, since the code for type checking is currently not separated from the main logic.
+  For this, we could move those checks to the functions signatures, like this:
+
+  def get_area(rec: Rectangle):
+    rec.height * rec.width
+
+  But the second issue is more subtle: our template solution is not directly transferrable to higher order objects.
+  Consider this example:
+
+  def iterate(fn: Function[Number, Number], n: Number)
+    x = 0
+    for i in range(n):
+      x = fn(x)
+    return x
+
+  It is not possible for `iterate` to check whether `fn` is of the right type at the moment of receiving the function.
+  So if `fn` would ever return something other than a `Number`, the error would be thrown in `iterate`,
+  without ever mentioning that it is actually the `fn`'s fault.
+  To combat this, we want to make the type signatures of `Function` objects public,
+  and to also check that what they return is permitted by that signature.
+
+  And this is basically all that is required from contracts to be actually usable.
+
+  It's worth noting that many static type systems do include a type that serves as a sort of "dynamic" type, like Java's Object class. The main difference between contracts and static type systems, then, is in how they are used rather than in their underlying theory. In my opinion, one of the main advantages of contracts is their ability to defer the specification of concrete types until the overall structure of the program is established. Additionally, contracts are able to express a wider range of properties about programs than static types can.
+
+
+</body>
+</html>
