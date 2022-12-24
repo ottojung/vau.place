@@ -8,6 +8,20 @@
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
   <entry>
+    <title>Static types vs contracts</title>
+	<summary>
+      Everyone these days seems to be excited about static type systems.
+      Well, I don't like that. Why did we suddenly forgot about the undeniable advantage of dynamic types - the mighty expressiveness that comes from the knowledge of runtime itself!
+      Let me demonstrate.
+      <pre><code>  x: random.choice([<span class="keyword">String</span>, <span class="keyword">Int</span>]) = read(<span class="quote">"2"</span>)</code></pre>
+      See? Now do that with your dependent types 😊
+	</summary>
+    <link href="https://vau.place/post/hyper-dynamic.html"/>
+    <updated>2022-12-22T17:30:52Z</updated>
+    <id>https://vau.place/post/hyper-dynamic.html</id>
+    <content type="html" src="https://vau.place/post/hyper-dynamic.html"/>
+  </entry>
+  <entry>
     <title>Have you seen Kernel?</title>
 	<summary>
 	  I like Kernel. It is such a simple language, yet so beautifully powerful.
