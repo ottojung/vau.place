@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Vau's Blog</title>
-  <link href="https://vau.place/feed.atom" rel="self"/>
+  <link href="https://vau.place/atom.xml" rel="self"/>
   <link href="https://vau.place"/>
   <head><link rel="stylesheet" type="text/css" href="https://vau.place/style/main.css"/></head>
   <updated>2022-12-24T17:10:34Z</updated>
