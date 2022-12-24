@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Vau's Blog</title>
+  <link href="https://vau.place/feed.atom" rel="self"/>
+  <link href="https://vau.place"/>
+  <head><link rel="stylesheet" type="text/css" href="https://vau.place/style/main.css"/></head>
+  <updated>2022-12-24T17:10:34Z</updated>
+  <author><name>Otto Jung</name></author>
+  <id>https://vau.place</id>
+  <entry>
+    <title>Have you seen Kernel?</title>
+	<summary>
+	  I like Kernel. It is such a simple language, yet so beautifully powerful.
+	  It is a lisp, you know, but more in the schemey-way.
+	  So there is homoiconicity and hygienic macros and continuations.
+	  All baked into the language.
+	  But unlike other lisps, Kernel has it all first-class!
+	</summary>
+    <link href="https://vau.place/post/kernel.html"/>
+    <updated>2021-11-14T17:08:27Z</updated>
+    <id>https://vau.place/post/kernel.html</id>
+    <content type="html" src="https://vau.place/post/kernel.html"/>
+  </entry>
+</feed>
