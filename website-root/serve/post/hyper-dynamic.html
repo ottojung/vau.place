@@ -63,7 +63,7 @@
 
   <pre><code>
   <span class="keyword">class</span> Rectangle:
-  <span class="keyword">def</span> __init__(self, height, width):
+    <span class="keyword">def</span> __init__(self, height, width):
       assert(instanceof(self, Rectangle))
       assert(typeof(height), number)
       assert(typeof(width), number)
@@ -110,7 +110,7 @@
 
   <br><br>
 
-  It's worth noting that many static type systems do include a type that serves as a sort of "dynamic" type, like Java's Object class. The main difference between contracts and static type systems, then, is in how they are used rather than in their underlying theory. In my opinion, one of the main advantages of contracts is their ability to defer the specification of concrete types until the overall structure of the program is established. Additionally, contracts are able to express a wider range of properties about programs than static types can.
+  It's worth noting that many static type systems do include a type that serves as a sort of "dynamic" type, like Java's <span class="keyword">Object</span> class. The main difference between contracts and static type systems, then, is in how they are used rather than in their underlying theory. In my opinion, one of the main advantages of contracts is their ability to defer the specification of concrete types until the overall structure of the program is established. Additionally, contracts are able to express a wider range of properties about programs than static types can.
 
 </body>
 </html>
