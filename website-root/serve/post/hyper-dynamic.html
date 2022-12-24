@@ -18,41 +18,52 @@
 
   <br><br>
 
-  This is meant to be an informative post actually.
+  This is meant to be an informative post, actually.
   The main alternative to static typing, besides its various gradual implmentations, are contracts.
   So let us see what those are, and what are their advantages.
+
+  <br><br>
 
   In short, contracts are type signatures that are checked at runtime instead of at compile-time.
   Of course this means that we don't get to know if the program is "correct" upfront,
   but the goal here is to move error messages as close to the sources of errors as possible.
   To show what I mean by that, consider the following python type definition:
 
-  class Rectangle:
-    def __init__(self, height, width):
+  <pre><code>
+  <span class="keyword">class</span> Rectangle:
+    <span class="keyword">def</span> __init__(self, height, width):
       self.height = height
       self.width = width
+  </code></pre>
 
   and a function that uses that type:
 
-  def get_area(rec):
+  <pre><code>
+  <span class="keyword">def</span> get_area(rec):
     rec.height * rec.width
+  </code></pre>
 
-  Nothing prevents us from calling `get_area` on a an argument that it does not expect.
-  But there is a difference between doing `get_area("SOME STRING")` and
+  Nothing prevents us from calling <span class="high">get_area</span> on a an argument that it does not expect.
+  But there is a difference between doing <span class="high">get_area(<span class="quote">"SOME STRING"</span>)</span> and
 
-  x = Rectangle("SOME", "STRING")
-  ...
-  return get_area(x)
+  <pre><code>
+  x = Rectangle(<span class="quote">"SOME"</span>, <span class="quote">"STRING"</span>)
+     ...
+  <span class="keyword">return</span> get_area(x)
+  </code></pre>
 
   The difference is that both calls result in an error thrown during the call,
   but only in the first example it would be the actual source of that error.
   In the second example, the source is the construction of a bad rectangle.
 
+  <br><br>
+
   If we stick to dynamic typing, then the solution is to add type checks at every call,
   including calls to constructors.
 
-  class Rectangle:
-  def __init__(self, height, width):
+  <pre><code>
+  <span class="keyword">class</span> Rectangle:
+  <span class="keyword">def</span> __init__(self, height, width):
       assert(instanceof(self, Rectangle))
       assert(typeof(height), number)
       assert(typeof(width), number)
@@ -60,38 +71,46 @@
       self.height = height
       self.width = width
 
-  ...
+    ...
 
-  def get_area(rec):
+  <span class="keyword">def</span> get_area(rec):
     assert(instanceof(rec, Rectangle)) # ignore duck typing concerns
     rec.height * rec.width
+  </code></pre>
 
   But there are at least two things that we can improve on.
   One is to make it less verbose, since the code for type checking is currently not separated from the main logic.
   For this, we could move those checks to the functions signatures, like this:
 
-  def get_area(rec: Rectangle):
+  <pre><code>
+  <span class="keyword">def</span> get_area(rec: Rectangle):
     rec.height * rec.width
+  </code></pre>
 
   But the second issue is more subtle: our template solution is not directly transferrable to higher order objects.
   Consider this example:
 
-  def iterate(fn: Function[Number, Number], n: Number)
+  <pre><code>
+  <span class="keyword">def</span> iterate(fn: Function[Number, Number], n: Number)
     x = 0
     for i in range(n):
       x = fn(x)
-    return x
+    <span class="keyword">return</span> x
+  </code></pre>
 
-  It is not possible for `iterate` to check whether `fn` is of the right type at the moment of receiving the function.
-  So if `fn` would ever return something other than a `Number`, the error would be thrown in `iterate`,
-  without ever mentioning that it is actually the `fn`'s fault.
-  To combat this, we want to make the type signatures of `Function` objects public,
+  It is not possible for <span class="high">iterate</span> to check whether <span class="high">fn</span> is of the right type at the moment of receiving the function.
+  So if <span class="high">fn</span> would ever return something other than a <span class="high">Number</span>, the error would be thrown in <span class="high">iterate</span>,
+  without ever mentioning that it is actually the <span class="high">fn</span>'s fault.
+  To combat this, we want to make the type signatures of <span class="high">Function</span> objects public,
   and to also check that what they return is permitted by that signature.
+
+  <br><br>
 
   And this is basically all that is required from contracts to be actually usable.
 
-  It's worth noting that many static type systems do include a type that serves as a sort of "dynamic" type, like Java's Object class. The main difference between contracts and static type systems, then, is in how they are used rather than in their underlying theory. In my opinion, one of the main advantages of contracts is their ability to defer the specification of concrete types until the overall structure of the program is established. Additionally, contracts are able to express a wider range of properties about programs than static types can.
+  <br><br>
 
+  It's worth noting that many static type systems do include a type that serves as a sort of "dynamic" type, like Java's Object class. The main difference between contracts and static type systems, then, is in how they are used rather than in their underlying theory. In my opinion, one of the main advantages of contracts is their ability to defer the specification of concrete types until the overall structure of the program is established. Additionally, contracts are able to express a wider range of properties about programs than static types can.
 
 </body>
 </html>
