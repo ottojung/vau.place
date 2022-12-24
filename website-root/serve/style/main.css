@@ -21,7 +21,7 @@ img {
 
 body {
 	font-family: "Raleway", "Times New Roman", serif;
-	font-size: 1.5em;
+	font-size: 18pt;
 	font-weight: lighter;
 	width: min(95%, max(60%, 47em));
 	margin: auto;
@@ -41,7 +41,7 @@ h1, h2, h3, b {
 
 h1, h2, h3 {
 	font-family: 'Merriweather', serif;
-	font-size: 1.8em;
+	font-size: 32pt;
 }
 
 a {
