@@ -7,20 +7,68 @@
   <updated>2022-12-24T17:10:34Z</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+
+  <entry>
+    <title>I made a programming language</title>
+	<summary>
+      For my graduation thesis, I decided to make a programming language, and it was a lot of fun.
+      The language is academic, but it is pacman-complete -- I use it myself every day as a calculator replacement.
+      Please, take a look and send comments!
+	</summary>
+    <updated>2021-10-27T01:00:04Z</updated>
+    <link href="https://vau.place/post/rose-lang.html"/>
+    <id>https://vau.place/post/rose-lang.html</id>
+    <content type="html" src="https://vau.place/post/rose-lang.html"/>
+  </entry>
+
+  <entry>
+    <title>Printf supremacy</title>
+	<summary>
+      Not all functions are equal.
+      Some simple, others not, some are safe, not all, some have side effects, and some don't.
+      There is, however, a class of functions that are above all others,
+      a higher cast, respected by compilers and language designers.
+      Think of the most priviledged functions in Pascal,
+      those that are blessed with the ability to receive variable number of arguments.
+      Or in case of C, of these only functions to get their arguments dependently-typed-checked.
+      Read along as I will try to convince you, the printf supremacy is real.
+	</summary>
+    <updated>2021-12-27T21:03:02Z</updated>
+    <link href="https://vau.place/post/printf-supremacy.html"/>
+    <id>https://vau.place/post/printf-supremacy.html</id>
+    <content type="html" src="https://vau.place/post/printf-supremacy.html"/>
+  </entry>
+
+  <entry>
+    <title>The incredible complexity of Javascript's if</title>
+	<summary>
+	  Conditional branching... The most fundamental construct in all of programming, the most common of them, the simplest of control flows, the first one to learn, and the basis of all machine learning.
+      Its importance is hard to overestimate.
+      But have you ever thought about what really happens when a language interpreter encounters an if statement?
+	</summary>
+    <updated>2021-12-10T13:42:40Z</updated>
+    <link href="https://vau.place/post/javascript-falsy.html"/>
+    <id>https://vau.place/post/javascript-falsy.html</id>
+    <content type="html" src="https://vau.place/post/javascript-falsy.html"/>
+  </entry>
+
   <entry>
     <title>Static types vs contracts</title>
 	<summary>
       Everyone these days seems to be excited about static type systems.
       Well, I don't like that. Why did we suddenly forgot about the undeniable advantage of dynamic types - the mighty expressiveness that comes from the knowledge of runtime itself!
       Let me demonstrate.
-      <pre><code>  x: random.choice([<span class="keyword">String</span>, <span class="keyword">Int</span>]) = read(<span class="quote">"2"</span>)</code></pre>
+
+	  x: random.choice([String, Int]) = read("2")
+
       See? Now do that with your dependent types 😊
 	</summary>
     <link href="https://vau.place/post/hyper-dynamic.html"/>
-    <updated>2022-12-22T17:30:52Z</updated>
+    <updated>2021-11-16T00:52:06Z</updated>
     <id>https://vau.place/post/hyper-dynamic.html</id>
     <content type="html" src="https://vau.place/post/hyper-dynamic.html"/>
   </entry>
+
   <entry>
     <title>Have you seen Kernel?</title>
 	<summary>
@@ -35,4 +83,5 @@
     <id>https://vau.place/post/kernel.html</id>
     <content type="html" src="https://vau.place/post/kernel.html"/>
   </entry>
+
 </feed>
