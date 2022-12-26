@@ -2,7 +2,7 @@
 @font-face {
 	font-family: 'Fira Code';
 	src:
-		local('FiraCode'),
+		local('Fira Code'),
 		url('FiraCode-Regular.Z.woff2') format('woff2');
 	font-style: regular;
 }
