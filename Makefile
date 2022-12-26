@@ -1,10 +1,9 @@
 
 publish: rsync gitpush
 
-SYNC = rsync --links --delete -P -r
+SYNC = rsync --links --delete -P -r --chmod=o=X,g=rX
 
 rsync: rsyncpush
-	ssh website@$(MY_SERVER_NAME) 'chmod -R o+rx,g+rx root/serve/ ; chmod o+x,g+x . ; chmod o+x,g+x root ; chmod o+x,g+x root/serve'
 
 rsyncpush: | tmenc website
 
