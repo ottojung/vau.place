@@ -3,7 +3,7 @@
 	font-family: 'Fira Code';
 	src:
 		local('FiraCode'),
-		url('FiraCode-Regular.Z.ttf') format('truetype');
+		url('FiraCode-Regular.Z.woff2') format('truetype');
 	font-style: regular;
 }
 
