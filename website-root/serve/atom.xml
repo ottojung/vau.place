@@ -4,9 +4,23 @@
   <link href="https://vau.place/atom.xml" rel="self"/>
   <link href="https://vau.place"/>
   <head><link rel="stylesheet" type="text/css" href="https://vau.place/style/main.css"/></head>
-  <updated>2022-12-24T17:10:34Z</updated>
+  <updated>2023-01-14T17:33:31Z</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+
+  <entry>
+    <title>Some Haskell history</title>
+	<summary>
+	  Haskell is one of the most influential languages and among the most discussed ones.
+	  This post is dedicated to the history, and the funny bits, of Haskell.
+	  We'll uncover some lesser-known facts and amusing anecdotes about the language along the way,
+	  and may even debunk some common misconceptions about it.
+	</summary>
+    <updated>2023-01-14T17:33:31Z</updated>
+    <link href="https://vau.place/post/haskell-history.html"/>
+    <id>https://vau.place/post/haskell-history.html</id>
+    <content type="html" src="https://vau.place/post/haskell-history.html"/>
+  </entry>
 
   <entry>
     <title>I made a programming language</title>
@@ -15,7 +29,7 @@
       The language is academic, but it is pacman-complete -- I use it myself every day as a calculator replacement.
       Please, take a look and send comments!
 	</summary>
-    <updated>2021-10-27T01:00:04Z</updated>
+    <updated>2022-10-27T01:00:04Z</updated>
     <link href="https://vau.place/post/rose-lang.html"/>
     <id>https://vau.place/post/rose-lang.html</id>
     <content type="html" src="https://vau.place/post/rose-lang.html"/>
