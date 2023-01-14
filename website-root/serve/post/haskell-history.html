@@ -1,45 +1,109 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <title> Vau's blog </title>
   <meta charset="UTF-8">
-  <meta name="robots" content="noindex"> <!-- prevent robots
-from indexing -->
+  <meta name="robots" content="noindex"> <!-- prevent robots from indexing -->
   <link rel="stylesheet" href="./style/main.css">
   <meta property='og:image' content='./assets/dog.jpg'>
-  <meta property='og:site_name' content="Vau's place">
+  <meta property='og:description' content="Programming blog">
   <meta property='og:type' content='website'>
 </head>
 <body>
 
-  <h3> Haskell history (paper review from a lisper) </h3>
+  <h3> Some Haskell history </h3>
 
-  And to maybe debunk some of the misconceptions about Haskell the language.
+  Haskell is one of the most influential languages of modern times,
+  and it is also among the most discussed ones.
+  This post is dedicated to the history, and the funny bits, of Haskell.
+  We'll uncover some lesser-known facts and amusing anecdotes about the language along the way,
+  and may even debunk some common misconceptions about it.
 
   <br><br>
 
-  <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/history.pdf?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fsimonpj%2Fpapers%2Fhistory-of-haskell%2Fhistory.pdf"> Link to the paper </a>
+  Despite its modern look, Haskell is actualy pretty old.
+  The starting point is 1987,
+  the year when a small group of PL researchers met up in Portland to discuss the current state of affairs.
+  Quickly they converged to common understanding that there were too many functional programming languages
+  and that the humanity must be freed from this heavy fact (is there a better word?).
+  The solution, as always, was to come up with a new language,
+  that would somehow be simple and have all the features that a functional programmer might need.
 
-  <br><br>
+  As soon as the design process began, an effort to find new and exciting ways to implement it had started.
+  Since Haskell is a lazy language, existing implementations, at the time, were based on graph reductions,
+  and were inspired by a great work on SKI combinators -- the topic for which Haskell Curry is most known for.
+  And the solution that Haskell adopted, and uses to this day,
+  was the Spineless Tagless G-Machine,
+  a virtual machine (as in JVM) quite similar to those that already existed -- the "G" stood for "Graph", after all.
 
+  Since the infamous lecture of John Backus in 1978,
+  it was clear to all that procedural programming is about dead,
+  and everyone was looking in the direction of functional.
+  So on the desing side, apart from the mentioned laziness,
+  it was set that Haskell must be functional.
+  But how functional it really was?
+  To understand, note that the word has changed its meaning over time.
+  The canonical example of a functional language then
+  was APL, which John Backus used in his lecture.
+  As for Haskell, it was really not much more functional than many of the existing Lisps.
+
+  Laziness was another thing, that although differentiated Haskell from Lisp,
+  still wasn't its distinctive feature,
+  but it was the thing that forced the language to be pure.
+  And at the begining, purity was nothing but an obstacle, something that the authors were themselves shy of.
+
+  The design process continued in a context of a committee.
+  To quote the authors:
   <pre><code>
-  > 3.5 Haskell is a committee language
   Haskell is a language designed by committee, and conventional
   wisdom would say that a committee language will be full of
-  warts and awkward compromises.
+  warts and awkward compromises. In a memorable letter
+  to the Haskell committee, Tony Hoare wistfully remarked that
+  Haskell was "probably doomed to succeed".
   </code></pre>
+  The unofficial motto of Haskell then became "Avoid success at all cost".
 
-  <br><br>
-
+  But anyways, the design was complete in three years, and resulted in a report.
+  This is what authors say about the date:
   <pre><code>
-  > 2.6 Was Haskell a joke?
+  > Was Haskell a joke?
   The first edition of the Haskell Report was published on April 1,
   1990. It was mostly an accident that it appeared on April Fool’s
-  Day—a date had to be chosen, and the release was close enough to
+  Day -- a date had to be chosen, and the release was close enough to
   April 1 to justify using that date.
   </code></pre>
 
-  <br><br>
+  On the technical side,
+  the most distinctive and valuable contribution of Haskell were type classes,
+  as judged by its authors.
+  Type classes is a particular way to add polymorphism to functions,
+  similar to interfaces and generics.
+
+  But long time has passed since, what is Haskell today?
+  First and most unfortunate, Haskell aged.
+  And as defined by the Linus' law -- when programs age,
+  they get bigger (more bloated), and no popular language
+  has avoided this fate, not even Haskell.
+  To be fair, it was already a big language at the begining,
+  but now it's simply Huge.
+  To have an idea on just how much, remember that the way Haskell grows is by "extensions".
+  Extension enables a particular feature of the language,
+  and in Haskell there are currently almost a hundread of them.
+
+  Another consequence of aging, is that some desing choices become obsolete.
+  This is what, arguably, happened to Monads, which were originally introduced to tackle
+  the side-effects problem, and now are gradually being replaced by the new hot thing --
+  the algebraic effect handlers.
+
+  Personally I can say that one of the most overlooked strong sides of Haskell is its meme-generating potential.
+  Over the years, we have collected such pearls as:
+  - "Monad is just a monoid in the category of endofunctors"
+  - "Monads are burritos"
+  - "Avoid success at all costs"
+  and
+  - "Haskell will make you a better programmer".
+
+  For those who want to know more (and actually correct) history of haskell, there is a great write up
+  from the founding fathers: <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/history.pdf?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fsimonpj%2Fpapers%2Fhistory-of-haskell%2Fhistory.pdf"> link </a>.
 
 </body>
