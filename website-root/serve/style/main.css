@@ -77,3 +77,15 @@ a {
 	color: #ff00ff;
 	font-weight: 550;
 }
+
+.quotebox {
+	font-style: italic;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.quotebox p {
+	text-align: right;
+	font-size: smaller;
+	font-style: normal;
+}
