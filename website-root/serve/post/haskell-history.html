@@ -13,12 +13,14 @@
 
   <h3> Some Haskell history </h3>
 
+  <p>
   Haskell is one of the most influential languages and among the most discussed ones.
   This post is dedicated to the history, and the funny bits, of Haskell.
   We'll uncover some lesser-known facts along the way,
   and may even debunk some common misconceptions about the language.
 
-  <br><br>
+  </p>
+  <p>
 
   Despite its modern appearance, Haskell is actualy pretty old.
   The starting point is 1987,
@@ -27,7 +29,7 @@
   The solution, as always, is to come up with a new language
   that would somehow be simple and have all the features that a functional programmer could want.
 
-  <br><br>
+  </p><p>
 
   As soon as the design process began, an effort to find new and exciting ways to implement it had started.
   Since Haskell is lazy, existing implementations, at the time, were based on graph reductions,
@@ -36,7 +38,7 @@
   was the Spineless Tagless G-Machine,
   a virtual machine (as in JVM) quite similar to those that already existed -- the "G" stood for "Graph", after all.
 
-  <br><br>
+  </p><p>
 
   Since the infamous lecture of John Backus in 1978,
   it was clear to all that procedural programming is about dead,
@@ -49,7 +51,7 @@
   was APL, which John Backus used in his lecture.
   As for Haskell, it was really not much more functional than many of the existing Lisps.
 
-  <br><br>
+  </p><p>
 
   Laziness was another thing, that although differentiated Haskell from Lisp,
   still wasn't its unique feature,
@@ -57,28 +59,32 @@
   And in the beginning, purity was nothing but an obstacle,
   something that the creators were themselves embarrassed about.
 
-  <br><br>
+  </p><p>
 
   The design process continued in a context of a committee.
   To quote the authors:
-  <pre><code>  Haskell is a language designed by committee, and conventional
-  wisdom would say that a committee language will be full of
-  warts and awkward compromises. In a memorable letter
-  to the Haskell committee, Tony Hoare wistfully remarked that
-  Haskell was "probably doomed to succeed".</code></pre>
+  <br><br><div class="quotebox">
+    Haskell is a language designed by committee, and conventional
+    wisdom would say that a committee language will be full of
+    warts and awkward compromises. In a memorable letter
+    to the Haskell committee, Tony Hoare wistfully remarked that
+    Haskell was "probably doomed to succeed".
+  </div><br>
   And then the unofficial motto of Haskell became "Avoid success at all cost".
 
-  <br><br>
+  </p><p>
 
   But anyways, the design was complete in three years, and resulted in a report.
   This is what authors say about the date:
-  <pre><code>  > Was Haskell a joke?
-  The first edition of the Haskell Report was published on April 1,
-  1990. It was mostly an accident that it appeared on April Fool’s
-  Day -- a date had to be chosen, and the release was close enough to
-  April 1 to justify using that date.</code></pre>
+  <br><br><div class="quotebox">
+    <code>></code> Was Haskell a joke? <br>
+    The first edition of the Haskell Report was published on April 1, 1990.
+    It was mostly an accident that it appeared on April Fool’s
+    Day -- a date had to be chosen, and the release was close enough to
+    April 1 to justify using that date.</code></pre>
+  </div><br>
 
-  <br><br>
+  </p><p>
 
   On the technical side,
   the most distinctive and valuable contribution of Haskell were type classes,
@@ -86,7 +92,7 @@
   Type classes is a particular way to add polymorphism to functions,
   similar to interfaces and generics.
 
-  <br><br>
+  </p><p>
 
   And as a solution to the purity problem, there were monads.
   Notably, the original solution, described in the report,
@@ -94,12 +100,14 @@
   and monadic I/O was introduced only in 1992.
   Now monads is the thing Haskell is known for,
   and as authors themselves write:
-  <pre><code>  In retrospect, therefore, perhaps the biggest single
-  benefit of laziness is not laziness per se, but rather that laziness
-  kept us pure, and thereby motivated a great deal of productive work
-  on monads and encapsulated state.</code></pre>
+  <br><br><div class="quotebox">
+    In retrospect, therefore, perhaps the biggest single
+    benefit of laziness is not laziness per se, but rather that laziness
+    kept us pure, and thereby motivated a great deal of productive work
+    on monads and encapsulated state.
+  </div><br>
 
-  <br><br>
+  </p><p>
 
   But long time has passed since, what is Haskell today?
   First and most unfortunate, Haskell aged.
@@ -110,21 +118,21 @@
   but now it's simply Huge,
   with almost a hundred "extensions" available to enable specific features of the language.
 
-  <br><br>
+  </p><p>
 
   Another consequence of aging, is that some desing choices become obsolete.
   This is what, arguably, happened to monads, which were originally introduced to tackle
   the side-effects problem, and now are gradually being replaced by the new hot thing --
   the algebraic effect handlers.
 
-  <br><br>
+  </p><p>
 
   Personally I can say that one of the most overlooked strong sides of Haskell is its meme-generating potential.
   Over the years, the Haskell community has come up with amusing pearls like
   "Monad is just a monoid in the category of endofunctors", "Monads are burritos", "Avoid success at all costs",
   and "Haskell will make you a better programmer".
 
-  <br><br>
+  </p><p>
 
   For a more accurate history of haskell, there is a great write up
   from the founding fathers:
