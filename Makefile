@@ -1,7 +1,7 @@
 
 publish: rsync gitpush
 
-SYNC = rsync --links --delete -P -r --chmod=o=X,g=rX
+SYNC = rsync --links --delete -P -r --chmod=o=,g=rX
 
 rsync: rsyncpush
 
