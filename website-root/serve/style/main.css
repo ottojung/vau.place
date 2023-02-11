@@ -23,7 +23,7 @@ body {
 	font-family: "Raleway", "Times New Roman", serif;
 	font-size: 18pt;
 	font-weight: lighter;
-	width: min(95%, max(60%, 47em));
+	width: min(95%, max(35%, 37em));
 	margin: auto;
 	margin-top: 1%;
 	margin-bottom: 1%;
