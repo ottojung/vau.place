@@ -4,9 +4,26 @@
   <link href="https://vau.place/atom.xml" rel="self"/>
   <link href="https://vau.place"/>
   <head><link rel="stylesheet" type="text/css" href="https://vau.place/style/main.css"/></head>
-  <updated>2023-01-14T17:33:31Z</updated>
+  <updated>2023-02-10T12:50:51Z</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+
+  <entry>
+    <title>The AI Absolutist Manifesto</title>
+	<summary>
+	  Science says that "domination of dualistic thinking in AI debates is worrying".
+      And it is boring, too. I hereby refuse to be either optimistic or pessimistic about AI.
+      Instead I have combined the two views, and expressed them in a little poem.
+      It's pessimistic, in that well yes AI must replace humans in the end.
+      But optimistic, in that it is for the greater good.
+      The result I call "AI absolutism".
+      Read carefully and remember: the poem is a joke.
+	</summary>
+    <updated>2023-02-10T12:50:51Z</updated>
+    <link href="https://vau.place/post/great-replacement.html"/>
+    <id>https://vau.place/post/great-replacement.html</id>
+    <content type="html" src="https://vau.place/post/great-replacement.html"/>
+  </entry>
 
   <entry>
     <title>Some Haskell history</title>
