@@ -5,7 +5,7 @@ SYNC = rsync --links --delete -P -r --chmod=o=,g=rX
 
 rsync: rsyncpush
 
-rsyncpush: | tmenc website hook
+rsyncpush: | website hook tmenc
 
 hook:
 	ssh website@$(MY_SERVER_NAME) 'sh ~/bin/update.sh'
