@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex"> <!-- prevent robots from indexing -->
   <link rel="stylesheet" href="./style/main.css">
-  <meta property='og:image' content='./assets/dog.jpg'>
+  <meta property='og:image' content='../assets/dog.jpg'>
   <meta property='og:site_name' content="Vau's place">
   <meta property='og:type' content='website'>
 </head>
@@ -14,28 +14,166 @@
 
   <h3> I made a programming language </h3>
 
-  For my graduation thesis, I decided to make a programming language, and it was a lot of fun.
-  The language is academic, but it is pacman-complete -- I use it myself every day as a calculator replacement.
-  Please, take a look and send comments!
+  Today I'd like to introduce you to a programming language I developed called ρ<sub>s</sub>. This language is the result of my master's thesis, and it's based on rewriting semantics.
+  The language is rather academic, but I use it a lot myself in practice (as a calculator replacement).
+  Please take a look and send comments!
   <br><br>
 
-  Without further ado, here is the thesis paper that defines the language: <a href="./rose-lang-thesis.pdf">rose-lang-thesis.pdf</a>.
+  In this post I want to make a friendly introduction that is approachable by non computer-science people.
+  But if you are interested in details, here is the link to the thesis paper: <a href="./rose-lang-thesis.pdf">rose-lang-thesis.pdf</a>.
+  It contains the complete formal definition of ρ<sub>s</sub>, as well as some proofs of its properties.
   There is a reference interpreter too: <a href="https://git.vau.place/schrec.git">git.vau.place/schrec.git</a>.
 
-  <br><br>
+  <div style='text-align: center;'><h4> Rewriting </h4></div>
 
-  The paper says everything one might want to know about the language, and a lot more...
-  The language is simple, really, and it's absolutely not necessary to understand its formal semantics to understand it.
-  So, a hint for those who don't want to read 60 pages of dense symbology --
-  go to the implementation repository and look at examples/ I have there.
-  If you know rewriting, those examples should be enough to really get the language.
-  For those that don't, I still suggest to skip towards examples in the paper --
-  there are many of them and they are somewhat explained.
+  As I mentioned before, the language is based on rewriting, or in other words, it is a kind of a rewrite system.
+  A rewrite system is a tool that lets you change expressions using simple rules.
+  These rules are called rewrite rules, and they look like this:
+  "If you see this pattern, replace it with this other pattern".
+  For example "if you see <code class='bh'>x + 0</code>, you can replace it with <code class='bh'>x</code>".
 
   <br><br>
 
-  If you have comments or questions, write them to my email (found in the paper or <a href="/other.html">here</a>),
-  I would love to hear them.
+  To use a rewrite system, you apply its rules to every part of an expression (i.e. to every subexpression).
+  If a rule matches, you replace the matching part with the replacement pattern from the rule.
+  You keep doing this until there are no more matches left.
+
+  <br><br>
+  For instance, let us say you have the expression <code class='bh'>3 + (2 + 0)</code>.
+  You can apply the rule <code class='bh'>x + 0 -> x</code> to the subexpression <code class='bh'>2 + 0</code>, which matches the left side of the rule.
+  So you replace it with <code class='bh'>2</code>, giving you <code class='bh'>3 + 2</code>.
+
+  <br><br>
+
+  Rewrite systems can have multiple rules, and sometimes different rules can match the same part of an expression.
+  In that case, you can choose which rule to apply.
+  For example, if you have the expression <code class='bh'>(2 + 0) * 0</code>,
+  you can apply the rule <code class='bh'>x + 0 -> x</code> to the subexpression <code class='bh'>2 + 0</code>, giving you <code class='bh'>2 * 0</code>.
+  Or you can apply the rule <code class='bh'>x * 0 -> 0</code> to the subexpression <code class='bh'>(2 + 0) * 0</code>, giving you <code class='bh'>0</code>.
+  Both results are valid, but they give you different answers.
+
+  <br><br>
+
+  To see how this is useful in programming, consider the following rewrite rules:
+
+  <ul>
+    <li> <code class='bh'>append nil ys -> ys</code> </li>
+    <li> <code class='bh'>append (cons x xs) ys -> (cons x (append xs ys))</code> </li>
+  </ul>
+
+  A rewrite system made of these rules is nothing but a program for concatenating two lists together.
+
+  <div style='text-align: center;'><h4> Fixed rules </h4></div>
+
+  In ρ<sub>s</sub> rewrite rules are extended with additional capabilities.
+  By default, a rule applies to every subexpression, but in ρ<sub>s</sub>,
+  some rules can only be applied to a fixed or chosen subexpression.
+
+  <br><br>
+
+  Consider the input expression <code class='bh'>1 + 1</code>, where the first <code class='bh'>1</code> is a subexpression named <i>m</i>.
+  Let's also have a rewrite system with two rules:
+  <ol>
+    <li> <code class='bh'>1 -> 1 <> 1</code> </li>
+    <li> <code class='bh'>1 -> 0</code>, but this rule only applies to subexpression <i>m</i>. </li>
+  </ol>
+
+  After the first application we can get three different results:
+  <ul>
+    <li> <code class='bh'>(1 <> 1) + 1</code> (application of rule 1 to the subexpression <i>m</i>). </li>
+    <li> <code class='bh'>1 + (1 <> 1)</code> (application of rule 1 to the second subexpression). </li>
+    <li> <code class='bh'>0 + 1</code> (application of rule 2 to the subexpression <i>m</i>). </li>
+  </ul>
+
+  In each case, we can apply rule 1 further,
+  but rule 2 can only be applied to the second result because its match pattern expects a <code class='bh'>1</code> for subexpression <i>m</i>,
+  but is looking at <code class='bh'>(1 <> 1)</code> and <code class='bh'>0</code> in the other two results.
+
+  <br><br>
+
+  By itself, this does not look like a very useful feature to have.
+  That is because it has to be used in conjunction with the second capability of ρ<sub>s</sub>: simultaneous application of multiple rules.
+
+  <div style='text-align: center;'><h4> Rules grouping </h4></div>
+
+  The idea is that we can group several rules and say that they only apply together.
+  In order to match such a group of rules, every rule in it must match its own subexpression (be it fixed or not) first,
+  and then, if that is successfull, all replacements happen according to these rules' replacement patterns.
+
+  <br><br>
+
+  For example, if we take our previous rewrite system, but have the two rules grouped together,
+  then after the first application the results will be these:
+  <ul>
+    <li> <code class='bh'>0 + 1</code> (rule 1 rewrote <i>m</i> first, but then rule 2 rewrote it again) </li>
+    <li> <code class='bh'>0 + (1 <> 1)</code> </li>
+    <li> <code class='bh'>0 + 1</code> </li>
+  </ul>
+
+  But after this step no further reduction will be possible because rule 2 is not matching its subexpression.
+
+  <br><br>
+
+  With grouped rules, variables are shared between the rules in the group.
+  For example, take a rewrite system with these two rules:
+  <ol>
+    <li> <code class='bh'>1 -> x <> x</code> </li>
+    <li> <code class='bh'>x -> 0</code>, but this rule only applies to subexpression <i>m</i>. </li>
+  </ol>
+
+  And make rule 1 and rule 2 be grouped together.
+  This means that the variable <i>x</i> in rule 1 is the same as the variable <i>x</i> in rule 2.
+  After the first application we get our familiar results:
+  <ul>
+    <li> <code class='bh'>0 + 1</code> </li>
+    <li> <code class='bh'>0 + (1 <> 1)</code> </li>
+    <li> <code class='bh'>0 + 1</code> </li>
+  </ul>
+
+  But now all three results can be reduced further.
+  Continuing with the second result we get <code class='bh'>0 + ((0 <> 0) <> 1)</code> and <code class='bh'>0 + (1 <> (0 <> 0))</code> as possible answers.
+
+  <div style='text-align: center;'><h4> Dynamic rewriting </h4></div>
+
+  Up to this point we had a clear separation between "code" (rewrite system) and "data" (input expression).
+  But in order to achieve the full potential of the language, we must allow it to modify itself.
+  So, the next change we make to the standard rewriting is that we encode the rewrite system in the input expression.
+  The particular details of how this is done are arbitrary and not important.
+  Suffices to say that we can somehow identify rewrite rules in an expression that represents the program.
+
+  <div style='text-align: center;'><h4> Sharing </h4></div>
+
+  Finally, if we allow fixed rules to refer to arbitrary subexpressions,
+  then there will be situations in which two such rules are fixed on the same subexpression.
+  In other words, there will be these rules that refer to the same shared state.
+  To represent such a situation, the regular "expressions" are no good and we must go
+  beyond them and encode our programs as "cyclic expressions".
+  In CS terms, if expression is a tree, then cyclic expression is a graph.
+
+  <div style='text-align: center;'><h4> Why? </h4></div>
+
+  Existing rewrite systems are ready for use as programming languages, and that is usually with good fun.
+  However, when our problem involves manipulating a state,
+  then this becomes a hassle, especially if the state is shared.
+  This usually requires workarounds, like carrying the state through the whole program.
+  When dealing with state like that, there is a feeling that the language is simply not made for it.
+  But if you look closely at the way that fixed rules work together with rules grouping,
+  then it should become clear that what they do is they directly modify the shared state that they reference.
+  My language is my try at adding the ability to standard rewrite systems to manipulate state directly.
+
+  <br><br>
+
+  The language in this sense is an experiment.
+  And the results of it can be somewhat rigourously analysed.
+  For example, as it turned out, adding the state in the form as I have conceptually described in this post,
+  is enough to make the language being able to express pretty much every feature seen in typical programming languages.
+  Meaning that what is a builtin feature in a typical programming language can be added to ρ<sub>s</sub>
+  by the user, written as a collection of rules.
+  Furthermore, if concurrent rewriting is involved,
+  the state is absolutely required for this result to hold.
+
+  <!-- If you have comments or questions, write them to my email (found in the paper or <a href="/other.html">here</a>), -->
+  <!-- I would love to hear them. -->
 
 <!--   <br><br> -->
 

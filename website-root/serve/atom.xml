@@ -4,9 +4,22 @@
   <link href="https://vau.place/atom.xml" rel="self"/>
   <link href="https://vau.place"/>
   <head><link rel="stylesheet" type="text/css" href="https://vau.place/style/main.css"/></head>
-  <updated>2023-02-12T12:50:51Z</updated>
+  <updated>2023-04-07T18:53:30Z</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+  
+  <entry>
+    <title>I made a programming language</title>
+	<summary>
+      Today I'd like to introduce you to a programming language I developed called ρ<sub>s</sub>. This language is the result of my master's thesis, and it's based on rewriting semantics.
+      The language is rather academic, but I use it a lot myself in practice (as a calculator replacement).
+      Please take a look and send comments!
+	</summary>
+    <updated>2023-04-07T18:53:30Z</updated>
+    <link href="https://vau.place/post/rose-lang.html"/>
+    <id>https://vau.place/post/rose-lang.html</id>
+    <content type="html" src="https://vau.place/post/rose-lang.html"/>
+  </entry>
 
   <entry>
     <title>The AI Absolutist Manifesto</title>
@@ -37,19 +50,6 @@
     <link href="https://vau.place/post/haskell-history.html"/>
     <id>https://vau.place/post/haskell-history.html</id>
     <content type="html" src="https://vau.place/post/haskell-history.html"/>
-  </entry>
-
-  <entry>
-    <title>I made a programming language</title>
-	<summary>
-      For my graduation thesis, I decided to make a programming language, and it was a lot of fun.
-      The language is academic, but it is pacman-complete -- I use it myself every day as a calculator replacement.
-      Please, take a look and send comments!
-	</summary>
-    <updated>2022-10-27T01:00:04Z</updated>
-    <link href="https://vau.place/post/rose-lang.html"/>
-    <id>https://vau.place/post/rose-lang.html</id>
-    <content type="html" src="https://vau.place/post/rose-lang.html"/>
   </entry>
 
   <entry>
@@ -103,7 +103,7 @@
   <entry>
     <title>Have you seen Kernel?</title>
 	<summary>
-	  I like Kernel. It is such a simple language, yet so beautifully powerful.
+	  I like Kernel. It is such a simple language, yet so beautiful and powerful.
 	  It is a lisp, you know, but more in the schemey-way.
 	  So there is homoiconicity and hygienic macros and continuations.
 	  All baked into the language.
