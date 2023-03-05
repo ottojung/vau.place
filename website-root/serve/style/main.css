@@ -54,6 +54,16 @@ a {
 	color: #0092ca;
 }
 
+.headerlist.pinned li {
+	list-style-type: none;
+}
+
+.headerlist.pinned li:before {
+	content: '\1F4CC';
+	margin-left: -35px;
+	list-style-type: none;
+}
+
 .keyword {
 	font-family: 'Fira Code', monospace;
 	color: #2fafff;
