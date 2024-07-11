@@ -136,13 +136,12 @@
           allowMultiple: true,
           maxFileSize: '10GB',
           server: {
-            url: '/', // Adjust this to match the URL of your server if needed
+            url: '/up',
             process: {
-              url: '/upload',
               method: 'PUT',
               headers: {
                 'Authorization': authHeader
-              }
+              },
             }
           }
         });
