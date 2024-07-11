@@ -1,0 +1,3 @@
+[submodule "tmenc-core"]
+	path = tmenc-core
+	url = git://vau.place/tmenc-core.git
