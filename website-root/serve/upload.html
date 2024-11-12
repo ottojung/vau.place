@@ -158,15 +158,9 @@
     window.onload = function () {
       FilePond.registerPlugin();
 
-      document.getElementById('inputpassword').addEventListener('keypress', function(event) {
-        if (event.key != 'Enter') {
-          return;
-        }
-
-        event.preventDefault();
+      function transition(password) {
 
         const username = 'admin';
-        const password = document.getElementById('inputpassword').value;
         const authHeader = 'Basic ' + btoa(username + ':' + password);
 
         FilePond.create(document.querySelector('.filepond'), {
@@ -187,7 +181,29 @@
         document.getElementById('credentialsForm').style.display = 'none';
 
         document.querySelector('.logincontainter').classList.add('no-effect');
+      }
+
+      document.getElementById('inputpassword').addEventListener('keypress', function(event) {
+        if (event.key != 'Enter') {
+          return;
+        }
+
+        event.preventDefault();
+
+        const password = document.getElementById('inputpassword').value;
+        transition(password);
       });
+
+      const currentUrl = window.location.href;
+      const urlObj = new URL(currentUrl);
+      const queryParams = new URLSearchParams(urlObj.search);
+      queryParams.forEach((value, key) => {
+        if (key === "key") {
+           console.log("Initialized key:", value);
+           transition(value);
+        }
+      });
+
     };
   </script>
 </head>
