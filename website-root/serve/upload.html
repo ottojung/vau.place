@@ -18,10 +18,10 @@
     }
 
     .logincontainter {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* This assumes you want to center the div within the entire viewport height */
     }
 
     .logincontainter:hover .top:before, .logincontainter:hover .top:after, .logincontainter:hover .bottom:before, .logincontainter:hover .bottom:after, .logincontainter:active .top:before, .logincontainter:active .top:after, .logincontainter:active .bottom:before, .logincontainter:active .bottom:after {
@@ -72,23 +72,15 @@
     }
 
     #credentialsForm {
-      width: 400px;
-      height: 400px;
-      margin-left: -200px;
-      margin-top: -200px;
+      width: min(99%, 400px);
     }
 
     #fileUploadSection {
-      width: 500px;
-      height: 500px;
-      margin-left: -250px;
-      margin-top: -250px;
+      width: min(99%, 500px);
+      height: 100%;
     }
 
     .logincontainter .center {
-      position: absolute;
-      top: 50%;
-      left: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
