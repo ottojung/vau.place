@@ -41,6 +41,19 @@
         text-align: right;
         margin-top: 20px;
     }
+
+    .text-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: -1em 2em;
+    }
+    .left-text {
+      text-align: left;
+    }
+    .right-text {
+      text-align: right;
+    }
   </style>
 </head>
 <body>
@@ -58,15 +71,17 @@
   </div>
   <br><br>
 
-  <div style="margin-left: 2em">
+<div class="text-container">
+  <div class="left-text">
     There is a blog here <b>👇</b>
     <div style="font-size: small; margin-left: 2em;">
       (<a href="./atom.xml">subscribe to RSS</a>)
     </div>
   </div>
-  <div style="text-align: right; margin-top: -2em; margin-right: 2em">
-    <small style="text-align: right">...and some other stuff <a href="./other.html">here</a></small>
+  <div class="right-text">
+    <small>...and some other stuff <a href="./other.html">here</a></small>
   </div>
+</div>
 
 <br>
 
