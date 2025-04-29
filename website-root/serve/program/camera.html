@@ -87,6 +87,11 @@
     <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.0/dist/jszip.min.js"></script>
     <script>
       (function(){
+          // → 0) pull “name” out of ?name=foo-bar (or default to “photos”).
+          const params    = new URLSearchParams(window.location.search);
+          const baseName  = params.get('name')?.trim() || 'photos';
+          const zipName   = baseName + '.zip';
+
           const video        = document.getElementById('video');
           const takeBtn      = document.getElementById('take-btn');
           const cameraScr    = document.getElementById('camera-screen');
@@ -168,7 +173,7 @@
                       const url = URL.createObjectURL(zblob);
                       const a = document.createElement('a');
                       a.href = url;
-                      a.download = 'photos.zip';
+                      a.download = zipName;
                       document.body.appendChild(a);
                       a.click();
                       setTimeout(() => {
