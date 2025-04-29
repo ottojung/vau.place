@@ -2,88 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Photo Shooter App</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Instant Photo Shooter</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <style>
-    body {
-      margin:0;
-      font-family:sans-serif;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      background:#f0f0f0;
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
     }
-    #camera, #preview, #finished {
-      margin-top:1em;
-      text-align:center;
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: sans-serif;
+      background: #000;
+      color: #fff;
+    }
+    .screen {
+      position: relative;
+      flex: 1;
+      width: 100%;
+      overflow: hidden;
     }
     video, canvas {
-      width: 90vw;
-      max-width: 480px;
-      height: auto;
-      border: 2px solid #333;
-      border-radius:4px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       background: #000;
     }
-    button {
-      margin:0.5em;
-      padding:0.6em 1.2em;
-      font-size:1em;
+    /* big round buttons */
+    .btn {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.8em 1.6em;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+    }
+    /* preview control bar */
+    #preview-controls {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    #preview-controls .btn {
+      transform: none;
+      left: auto;
     }
   </style>
 </head>
 <body>
 
-  <h1>Photo Shooter</h1>
-
-  <!-- CAMERA VIEW -->
-  <div id="camera">
+  <!-- 1) CAMERA SCREEN -->
+  <div id="camera-screen" class="screen">
     <video id="video" autoplay playsinline></video>
-    <br>
-    <button id="take">Take Photo</button>
+    <button id="take-btn" class="btn">Take Photo</button>
   </div>
 
-  <!-- PREVIEW & REVIEW -->
-  <div id="preview" style="display:none">
+  <!-- 2) PREVIEW SCREEN (hidden until you snap) -->
+  <div id="preview-screen" class="screen" style="display:none">
     <canvas id="canvas"></canvas>
-    <div>
-      <button id="keep">Keep</button>
-      <button id="redo">Redo</button>
-      <button id="done">Done</button>
+    <div id="preview-controls">
+      <button id="redo-btn" class="btn">Redo</button>
+      <button id="keep-btn" class="btn">Keep</button>
+      <button id="done-btn" class="btn">Done</button>
     </div>
   </div>
 
-  <!-- FINISHED: DOWNLOAD -->
-  <div id="finished" style="display:none">
-    <p id="count"></p>
-    <button id="download">Download All Photos</button>
-  </div>
-
-  <!-- libs for ZIP + save -->
+  <!-- JSZip for zipping up the photos -->
   <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.0/dist/jszip.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
-
   <script>
   (function(){
-    const video    = document.getElementById('video');
-    const takeBtn  = document.getElementById('take');
-    const cameraEl = document.getElementById('camera');
+    const video        = document.getElementById('video');
+    const takeBtn      = document.getElementById('take-btn');
+    const cameraScr    = document.getElementById('camera-screen');
+    const previewScr   = document.getElementById('preview-screen');
+    const canvas       = document.getElementById('canvas');
+    const keepBtn      = document.getElementById('keep-btn');
+    const redoBtn      = document.getElementById('redo-btn');
+    const doneBtn      = document.getElementById('done-btn');
+    const ctx          = canvas.getContext('2d');
 
-    const previewEl  = document.getElementById('preview');
-    const canvas     = document.getElementById('canvas');
-    const keepBtn    = document.getElementById('keep');
-    const redoBtn    = document.getElementById('redo');
-    const doneBtn    = document.getElementById('done');
-
-    const finishedEl = document.getElementById('finished');
-    const countP     = document.getElementById('count');
-    const downloadBtn = document.getElementById('download');
-
-    const ctx = canvas.getContext('2d');
     let currentBlob = null;
-    let photoBlobs = [];  // array of { blob, filename }
+    const photos = [];  // { blob, name }
 
-    // 1) start camera with back-facing
+    // 1) Start back‐facing camera
     navigator.mediaDevices.getUserMedia({
       video: { facingMode: { ideal: "environment" } },
       audio: false
@@ -93,80 +102,72 @@
       video.play();
     })
     .catch(err => {
-      alert("Cannot access camera:\n" + err);
+      alert("Error accessing camera: " + err);
     });
 
-    // 2) When user taps “Take Photo”
-    takeBtn.onclick = () => {
-      // draw video frame to canvas
+    // 2) Take Photo
+    takeBtn.addEventListener('click', () => {
       canvas.width  = video.videoWidth;
       canvas.height = video.videoHeight;
       ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-      // get a Blob for storage
-      canvas.toBlob(blob => {
-        currentBlob = blob;
+      canvas.toBlob(b => {
+        currentBlob = b;
       }, 'image/jpeg', 0.92);
 
-      // switch UI: hide camera, show preview
-      cameraEl.style.display = 'none';
-      previewEl.style.display = 'block';
-    };
+      cameraScr.style.display  = 'none';
+      previewScr.style.display = 'block';
+    });
 
-    // 3a) Keep → store blob + back to camera
-    keepBtn.onclick = () => {
+    // 3a) Keep → store and go back to camera
+    keepBtn.addEventListener('click', () => {
       if (currentBlob) {
-        // name files sequentially
-        const idx = photoBlobs.length + 1;
-        photoBlobs.push({
+        const idx = photos.length + 1;
+        photos.push({
           blob: currentBlob,
-          filename: `photo_${String(idx).padStart(2,'0')}.jpg`
+          name: `photo_${String(idx).padStart(2,'0')}.jpg`
         });
       }
       currentBlob = null;
-      previewEl.style.display = 'none';
-      cameraEl.style.display = 'block';
-    };
+      previewScr.style.display = 'none';
+      cameraScr.style.display  = 'block';
+    });
 
-    // 3b) Redo → discard blob + back to camera
-    redoBtn.onclick = () => {
+    // 3b) Redo → discard and back to camera
+    redoBtn.addEventListener('click', () => {
       currentBlob = null;
-      previewEl.style.display = 'none';
-      cameraEl.style.display = 'block';
-    };
+      previewScr.style.display = 'none';
+      cameraScr.style.display  = 'block';
+    });
 
-    // 3c) Done → finish loop
-    doneBtn.onclick = () => {
-      previewEl.style.display = 'none';
-      cameraEl.style.display = 'none';
-      showFinished();
-    };
+    // 3c) Done → zip & download immediately
+    doneBtn.addEventListener('click', () => {
+      previewScr.style.display = 'none';
+      cameraScr.style.display  = 'none';
 
-    // 4) Show download UI
-    function showFinished(){
-      finishedEl.style.display = 'block';
-      countP.textContent = `You took ${photoBlobs.length} photo${photoBlobs.length!==1?'s':''}.`;
-    }
-
-    // 5) Build ZIP and download
-    downloadBtn.onclick = () => {
-      if (photoBlobs.length === 0) {
-        alert("No photos to download!");
+      if (photos.length === 0) {
+        alert("No photos to download.");
         return;
       }
+      // Build ZIP
       const zip = new JSZip();
       const imgFolder = zip.folder("photos");
-      photoBlobs.forEach(p => {
-        imgFolder.file(p.filename, p.blob);
-      });
-      zip.generateAsync({type:"blob"})
-        .then(zblob => {
-          saveAs(zblob, "my_photos.zip");
-        })
-        .catch(err => {
-          console.error(err);
-        });
-    };
+      photos.forEach(p => imgFolder.file(p.name, p.blob));
+      zip.generateAsync({ type: 'blob' })
+         .then(zblob => {
+           // trigger immediate download
+           const url = URL.createObjectURL(zblob);
+           const a = document.createElement('a');
+           a.href = url;
+           a.download = 'photos.zip';
+           document.body.appendChild(a);
+           a.click();
+           setTimeout(() => {
+             URL.revokeObjectURL(url);
+             a.remove();
+           }, 1000);
+         });
+    });
   })();
   </script>
 </body>
