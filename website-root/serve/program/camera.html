@@ -71,7 +71,7 @@
       <!-- camera controls: Take + Done -->
       <div id="camera-controls" class="controls">
         <button id="take-btn" class="btn">Take Photo</button>
-        <button id="done-btn" class="btn">Done</button>
+        <button id="done-btn" class="btn" style="display:none">Done</button>
       </div>
     </div>
 
@@ -149,6 +149,7 @@
                   currentBlob = b;
               }, 'image/jpeg', 1.0);
 
+              doneBtn.style.display = 'block';
               cameraScr.style.display  = 'none';
               previewScr.style.display = 'block';
           });
