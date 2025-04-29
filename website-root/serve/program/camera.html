@@ -83,7 +83,7 @@
       <div id="preview-controls" class="controls">
         <button id="redo-btn" class="btn">Redo</button>
         <button id="more-btn" class="btn">More</button>
-        <button id="done-btn" class="btn">Done</button>
+        <button id="done-btn-2" class="btn">Done</button>
       </div>
     </div>
 
@@ -104,6 +104,7 @@
           const moreBtn      = document.getElementById('more-btn');
           const redoBtn      = document.getElementById('redo-btn');
           const doneBtn      = document.getElementById('done-btn');
+          const doneBtn2     = document.getElementById('done-btn');
           const ctx          = canvas.getContext('2d');
 
           let currentBlob = null;
@@ -166,7 +167,7 @@
           });
 
           // 3c) Done → zip & download immediately
-          doneBtn.addEventListener('click', () => {
+          function zipAndDownload() {
               add_last_photo();
 
               if (photos.length === 0) {
@@ -194,7 +195,10 @@
                           a.remove();
                       }, 1000);
                   });
-          });
+          }
+
+          doneBtn.addEventListener('click', zipAndDownload);
+          doneBtn2.addEventListener('click', zipAndDownload);
       })();
     </script>
   </body>
