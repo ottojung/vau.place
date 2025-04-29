@@ -78,7 +78,7 @@
       <canvas id="canvas"></canvas>
       <div id="preview-controls">
         <button id="redo-btn" class="btn">Redo</button>
-        <button id="keep-btn" class="btn">Keep</button>
+        <button id="more-btn" class="btn">More</button>
         <button id="done-btn" class="btn">Done</button>
       </div>
     </div>
@@ -97,7 +97,7 @@
           const cameraScr    = document.getElementById('camera-screen');
           const previewScr   = document.getElementById('preview-screen');
           const canvas       = document.getElementById('canvas');
-          const keepBtn      = document.getElementById('keep-btn');
+          const moreBtn      = document.getElementById('more-btn');
           const redoBtn      = document.getElementById('redo-btn');
           const doneBtn      = document.getElementById('done-btn');
           const ctx          = canvas.getContext('2d');
@@ -136,8 +136,8 @@
               previewScr.style.display = 'block';
           });
 
-          // 3a) Keep → store and go back to camera
-          keepBtn.addEventListener('click', () => {
+          // 3a) More → store and go back to camera
+          moreBtn.addEventListener('click', () => {
               if (currentBlob) {
                   const idx = photos.length + 1;
                   photos.push({
