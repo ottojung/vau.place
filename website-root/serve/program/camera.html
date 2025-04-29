@@ -71,7 +71,6 @@
       <!-- camera controls: Take + Done -->
       <div id="camera-controls" class="controls">
         <button id="take-btn" class="btn">Take Photo</button>
-        <button id="done-btn" class="btn">Done</button>
       </div>
     </div>
 
@@ -83,7 +82,7 @@
       <div id="preview-controls" class="controls">
         <button id="redo-btn" class="btn">Redo</button>
         <button id="more-btn" class="btn">More</button>
-        <button id="done-btn-2" class="btn">Done</button>
+        <button id="done-btn" class="btn">Done</button>
       </div>
     </div>
 
@@ -104,8 +103,9 @@
           const moreBtn      = document.getElementById('more-btn');
           const redoBtn      = document.getElementById('redo-btn');
           const doneBtn      = document.getElementById('done-btn');
-          const doneBtn2     = document.getElementById('done-btn-2');
           const ctx          = canvas.getContext('2d');
+
+          const cameraCtrl   = document.getElementById('camera-controls');
 
           let currentBlob = null;
           const photos = [];  // { blob, name }
@@ -149,6 +149,7 @@
                   currentBlob = b;
               }, 'image/jpeg', 1.0);
 
+              cameraCtrl.appendChild(doneBtn);
               cameraScr.style.display  = 'none';
               previewScr.style.display = 'block';
           });
@@ -199,7 +200,6 @@
           }
 
           doneBtn.addEventListener('click', zipAndDownload);
-          doneBtn2.addEventListener('click', zipAndDownload);
       })();
     </script>
   </body>
