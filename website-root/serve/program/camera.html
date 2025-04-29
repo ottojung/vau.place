@@ -30,12 +30,29 @@
           object-fit: cover;
           background: #000;
       }
-      /* big round buttons (camera) */
-      .btn {
+
+      /* generic absolutely-centered control bar */
+      .controls {
           position: absolute;
           bottom: 20px;
           left: 50%;
           transform: translateX(-50%);
+          display: flex;
+          gap: 0.5em;
+          padding: 0 0.5em;
+          box-sizing: border-box;
+          flex-wrap: wrap;
+      }
+
+      /* override .btn positioning inside any .controls */
+      .controls .btn {
+          position: static;
+          margin: 0;
+          transform: none;
+      }
+
+      /* original .btn styling */
+      .btn {
           padding: 0.8em 1.6em;
           font-size: 1rem;
           border: none;
@@ -43,43 +60,29 @@
           background: rgba(255,255,255,0.2);
           color: #fff;
       }
-      /* preview control bar */
-      #preview-controls {
-          position: absolute;
-          bottom: 20px;
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          justify-content: center;    /* center the group as a whole */
-          gap: 0.5em;                  /* even spacing between buttons */
-          padding: 0 0.5em;            /* small side padding so buttons never touch edge */
-          box-sizing: border-box;
-          flex-wrap: wrap;             /* wrap if it really gets too crowded */
-      }
-
-      /* override the generic .btn positioning */
-      #preview-controls .btn {
-          position: static;
-          margin: 0;
-          transform: none;
-      }
     </style>
   </head>
   <body>
 
-    <!-- 1) CAMERA SCREEN -->
+    <!-- CAMERA SCREEN -->
     <div id="camera-screen" class="screen">
       <video id="video" autoplay playsinline></video>
-      <button id="take-btn" class="btn">Take Photo</button>
+
+      <!-- camera controls: Take + Done -->
+      <div id="camera-controls" class="controls">
+        <button id="take-btn" class="btn">Take Photo</button>
+        <button id="done-btn" class="btn">Done</button>
+      </div>
     </div>
 
-    <!-- 2) PREVIEW SCREEN (hidden until you snap) -->
+    <!-- PREVIEW SCREEN -->
     <div id="preview-screen" class="screen" style="display:none">
       <canvas id="canvas"></canvas>
-      <div id="preview-controls">
+
+      <!-- preview controls: Redo + More -->
+      <div id="preview-controls" class="controls">
         <button id="redo-btn" class="btn">Redo</button>
         <button id="more-btn" class="btn">More</button>
-        <button id="done-btn" class="btn">Done</button>
       </div>
     </div>
 
