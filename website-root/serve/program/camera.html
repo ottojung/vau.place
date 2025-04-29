@@ -169,8 +169,7 @@
 
               // Build ZIP
               const zip = new JSZip();
-              const imgFolder = zip.folder("photos");
-              photos.forEach(p => imgFolder.file(p.name, p.blob));
+              photos.forEach(p => zip.file(p.name, p.blob));
               zip.generateAsync({ type: 'blob' })
                   .then(zblob => {
                       // trigger immediate download
