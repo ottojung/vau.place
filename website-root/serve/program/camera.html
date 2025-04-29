@@ -105,6 +105,16 @@
           let currentBlob = null;
           const photos = [];  // { blob, name }
 
+          function add_last_photo() {
+              if (currentBlob) {
+                  const idx = photos.length + 1;
+                  photos.push({
+                      blob: currentBlob,
+                      name: `photo_${String(idx).padStart(2,'0')}.jpg`
+                  });
+              }
+          }
+
           // 1) Start back‐facing camera
           navigator.mediaDevices.getUserMedia({
               video: {
@@ -138,13 +148,7 @@
 
           // 3a) More → store and go back to camera
           moreBtn.addEventListener('click', () => {
-              if (currentBlob) {
-                  const idx = photos.length + 1;
-                  photos.push({
-                      blob: currentBlob,
-                      name: `photo_${String(idx).padStart(2,'0')}.jpg`
-                  });
-              }
+              add_last_photo();
               currentBlob = null;
               previewScr.style.display = 'none';
               cameraScr.style.display  = 'block';
@@ -159,6 +163,8 @@
 
           // 3c) Done → zip & download immediately
           doneBtn.addEventListener('click', () => {
+              add_last_photo();
+
               if (photos.length === 0) {
                   alert("No photos to download.");
                   return;
