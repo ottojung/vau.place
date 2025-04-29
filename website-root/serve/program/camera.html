@@ -150,13 +150,14 @@
 
     // 3c) Done → zip & download immediately
     doneBtn.addEventListener('click', () => {
-      previewScr.style.display = 'none';
-      cameraScr.style.display  = 'none';
-
       if (photos.length === 0) {
         alert("No photos to download.");
         return;
       }
+
+      previewScr.style.display = 'none';
+      cameraScr.style.display  = 'none';
+
       // Build ZIP
       const zip = new JSZip();
       const imgFolder = zip.folder("photos");
