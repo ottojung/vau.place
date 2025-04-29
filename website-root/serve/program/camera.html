@@ -179,8 +179,6 @@
                       setTimeout(() => {
                           URL.revokeObjectURL(url);
                           a.remove();
-                          // Close the window when after the download started.
-                          window.close();
                       }, 1000);
                   });
           });
