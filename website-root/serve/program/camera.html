@@ -113,9 +113,10 @@
           function add_last_photo() {
               if (currentBlob) {
                   const idx = photos.length + 1;
+                  const index = String(idx).padStart(2, '0');
                   photos.push({
                       blob: currentBlob,
-                      name: `photo_${String(idx).padStart(2,'0')}.jpg`
+                      name: `photo_${index}.jpg`,
                   });
               }
           }
