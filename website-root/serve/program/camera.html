@@ -1,32 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Webcam Snapshot (Back Camera)</title>
+  <meta charset="UTF-8">
+  <title>Photo Shooter App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body {
+      margin:0;
+      font-family:sans-serif;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      background:#f0f0f0;
+    }
+    #camera, #preview, #finished {
+      margin-top:1em;
+      text-align:center;
+    }
+    video, canvas {
+      width: 90vw;
+      max-width: 480px;
+      height: auto;
+      border: 2px solid #333;
+      border-radius:4px;
+      background: #000;
+    }
+    button {
+      margin:0.5em;
+      padding:0.6em 1.2em;
+      font-size:1em;
+    }
+  </style>
 </head>
 <body>
-  <video id="video" width="640" height="480" autoplay playsinline></video>
-  <br>
-  <button id="snap">Take Photo</button>
-  <br>
-  <canvas id="canvas" width="640" height="480"></canvas>
-  <br>
-  <textarea id="dataurl" cols="80" rows="5" readonly></textarea>
+
+  <h1>Photo Shooter</h1>
+
+  <!-- CAMERA VIEW -->
+  <div id="camera">
+    <video id="video" autoplay playsinline></video>
+    <br>
+    <button id="take">Take Photo</button>
+  </div>
+
+  <!-- PREVIEW & REVIEW -->
+  <div id="preview" style="display:none">
+    <canvas id="canvas"></canvas>
+    <div>
+      <button id="keep">Keep</button>
+      <button id="redo">Redo</button>
+      <button id="done">Done</button>
+    </div>
+  </div>
+
+  <!-- FINISHED: DOWNLOAD -->
+  <div id="finished" style="display:none">
+    <p id="count"></p>
+    <button id="download">Download All Photos</button>
+  </div>
+
+  <!-- libs for ZIP + save -->
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.0/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
 
   <script>
-  (function() {
-    const video = document.getElementById('video');
-    const canvas = document.getElementById('canvas');
-    const snapBtn = document.getElementById('snap');
-    const dataurlOut = document.getElementById('dataurl');
+  (function(){
+    const video    = document.getElementById('video');
+    const takeBtn  = document.getElementById('take');
+    const cameraEl = document.getElementById('camera');
 
-    // Request the back camera with facingMode: "environment"
+    const previewEl  = document.getElementById('preview');
+    const canvas     = document.getElementById('canvas');
+    const keepBtn    = document.getElementById('keep');
+    const redoBtn    = document.getElementById('redo');
+    const doneBtn    = document.getElementById('done');
+
+    const finishedEl = document.getElementById('finished');
+    const countP     = document.getElementById('count');
+    const downloadBtn = document.getElementById('download');
+
+    const ctx = canvas.getContext('2d');
+    let currentBlob = null;
+    let photoBlobs = [];  // array of { blob, filename }
+
+    // 1) start camera with back-facing
     navigator.mediaDevices.getUserMedia({
-      video: {
-        facingMode: { ideal: "environment" }, // try "exact" if you want to fail if no rear camera exists
-        width: { ideal: 1280 },
-        height: { ideal: 720 }
-      },
+      video: { facingMode: { ideal: "environment" } },
       audio: false
     })
     .then(stream => {
@@ -34,21 +93,80 @@
       video.play();
     })
     .catch(err => {
-      console.error("Camera error: ", err);
-      alert("Could not access the back camera.");
+      alert("Cannot access camera:\n" + err);
     });
 
-    snapBtn.addEventListener('click', () => {
-      const ctx = canvas.getContext('2d');
+    // 2) When user taps “Take Photo”
+    takeBtn.onclick = () => {
+      // draw video frame to canvas
+      canvas.width  = video.videoWidth;
+      canvas.height = video.videoHeight;
       ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-      const dataURL = canvas.toDataURL('image/png');
-      dataurlOut.value = dataURL;
 
-      // or to get a Blob for uploading:
-      // canvas.toBlob(blob => {
-      //   // upload blob via fetch/XHR
-      // }, 'image/jpeg', 0.9);
-    });
+      // get a Blob for storage
+      canvas.toBlob(blob => {
+        currentBlob = blob;
+      }, 'image/jpeg', 0.92);
+
+      // switch UI: hide camera, show preview
+      cameraEl.style.display = 'none';
+      previewEl.style.display = 'block';
+    };
+
+    // 3a) Keep → store blob + back to camera
+    keepBtn.onclick = () => {
+      if (currentBlob) {
+        // name files sequentially
+        const idx = photoBlobs.length + 1;
+        photoBlobs.push({
+          blob: currentBlob,
+          filename: `photo_${String(idx).padStart(2,'0')}.jpg`
+        });
+      }
+      currentBlob = null;
+      previewEl.style.display = 'none';
+      cameraEl.style.display = 'block';
+    };
+
+    // 3b) Redo → discard blob + back to camera
+    redoBtn.onclick = () => {
+      currentBlob = null;
+      previewEl.style.display = 'none';
+      cameraEl.style.display = 'block';
+    };
+
+    // 3c) Done → finish loop
+    doneBtn.onclick = () => {
+      previewEl.style.display = 'none';
+      cameraEl.style.display = 'none';
+      showFinished();
+    };
+
+    // 4) Show download UI
+    function showFinished(){
+      finishedEl.style.display = 'block';
+      countP.textContent = `You took ${photoBlobs.length} photo${photoBlobs.length!==1?'s':''}.`;
+    }
+
+    // 5) Build ZIP and download
+    downloadBtn.onclick = () => {
+      if (photoBlobs.length === 0) {
+        alert("No photos to download!");
+        return;
+      }
+      const zip = new JSZip();
+      const imgFolder = zip.folder("photos");
+      photoBlobs.forEach(p => {
+        imgFolder.file(p.filename, p.blob);
+      });
+      zip.generateAsync({type:"blob"})
+        .then(zblob => {
+          saveAs(zblob, "my_photos.zip");
+        })
+        .catch(err => {
+          console.error(err);
+        });
+    };
   })();
   </script>
 </body>
