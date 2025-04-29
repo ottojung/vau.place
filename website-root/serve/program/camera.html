@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Webcam Snapshot (Back Camera)</title>
+</head>
+<body>
+  <video id="video" width="640" height="480" autoplay playsinline></video>
+  <br>
+  <button id="snap">Take Photo</button>
+  <br>
+  <canvas id="canvas" width="640" height="480"></canvas>
+  <br>
+  <textarea id="dataurl" cols="80" rows="5" readonly></textarea>
+
+  <script>
+  (function() {
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const snapBtn = document.getElementById('snap');
+    const dataurlOut = document.getElementById('dataurl');
+
+    // Request the back camera with facingMode: "environment"
+    navigator.mediaDevices.getUserMedia({
+      video: {
+        facingMode: { ideal: "environment" }, // try "exact" if you want to fail if no rear camera exists
+        width: { ideal: 1280 },
+        height: { ideal: 720 }
+      },
+      audio: false
+    })
+    .then(stream => {
+      video.srcObject = stream;
+      video.play();
+    })
+    .catch(err => {
+      console.error("Camera error: ", err);
+      alert("Could not access the back camera.");
+    });
+
+    snapBtn.addEventListener('click', () => {
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+      const dataURL = canvas.toDataURL('image/png');
+      dataurlOut.value = dataURL;
+
+      // or to get a Blob for uploading:
+      // canvas.toBlob(blob => {
+      //   // upload blob via fetch/XHR
+      // }, 'image/jpeg', 0.9);
+    });
+  })();
+  </script>
+</body>
+</html>
