@@ -118,6 +118,7 @@
                       blob: currentBlob,
                       name: `photo_${index}.jpg`,
                   });
+                  currentBlob = null;
               }
           }
 
@@ -155,7 +156,6 @@
           // 3a) More → store and go back to camera
           moreBtn.addEventListener('click', () => {
               add_last_photo();
-              currentBlob = null;
               previewScr.style.display = 'none';
               cameraScr.style.display  = 'block';
           });
