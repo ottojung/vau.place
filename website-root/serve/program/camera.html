@@ -47,14 +47,20 @@
     #preview-controls {
         position: absolute;
         bottom: 20px;
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
-        justify-content: space-around;
+        justify-content: center;    /* center the group as a whole */
+        gap: 0.5em;                  /* even spacing between buttons */
+        padding: 0 0.5em;            /* small side padding so buttons never touch edge */
+        box-sizing: border-box;
+        flex-wrap: wrap;             /* wrap if it really gets too crowded */
     }
-    /* override .btn inside preview-controls */
+
+    /* override the generic .btn positioning */
     #preview-controls .btn {
         position: static;
-        margin: 0 1em;
+        margin: 0;
         transform: none;
     }
   </style>
