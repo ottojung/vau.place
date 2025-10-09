@@ -91,17 +91,22 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 30px;
+      padding: 0;
       opacity: 0;
       transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
       transition-delay: 0s;
       color: #333;
+      gap: 15px; /* Even spacing between all children */
+    }
+
+    .logincontainter .center h2 {
+      margin: 0; /* Remove default h2 margins */
     }
 
     .logincontainter .center input[type="password"] {
       width: 100%;
       padding: 15px;
-      margin: 5px;
+      margin: 0;
       border-radius: 1px;
       border: 1px solid #ccc;
       font-family: inherit;
@@ -120,6 +125,10 @@
 
     .filepond--credits {
       display: none;
+    }
+
+    .filepond--root {
+      margin-bottom: 0;
     }
 
     /* Error message styling */
@@ -374,7 +383,7 @@
     </div>
 
     <div class="center" id="fileUploadSection" style="display:none;">
-      <h2>&nbsp;</h2>
+      <!-- <h2>&nbsp;</h2> -->
       <h2>&nbsp;</h2>
       <input type="file" class="filepond" name="file" multiple>
     </div>
