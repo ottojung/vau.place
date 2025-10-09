@@ -150,8 +150,69 @@
     window.onload = function () {
       FilePond.registerPlugin();
 
-      function transition(password) {
+      /**
+       * Validates the password against the server's /check-password endpoint
+       * @param {string} password - The password to validate
+       * @returns {Promise<boolean>} - True if password is valid, false otherwise
+       */
+      async function validatePassword(password) {
+        try {
+          const username = 'admin';
+          const authHeader = 'Basic ' + btoa(username + ':' + password);
 
+          const response = await fetch('/check-password', {
+            method: 'POST',
+            headers: {
+              'Authorization': authHeader
+            }
+          });
+
+          return response.ok && response.status === 200;
+        } catch (error) {
+          showError('Invalid password. Please try again.');
+          return false;
+        }
+      }
+
+      /**
+       * Shows an error message to the user
+       * @param {string} message - The error message to display
+       */
+      function showError(message) {
+        const inputElement = document.getElementById('inputpassword');
+        const errorElement = document.getElementById('errorMessage');
+
+        if (errorElement) {
+          errorElement.textContent = message;
+          errorElement.style.display = 'block';
+        } else {
+          // Create error element if it doesn't exist
+          const error = document.createElement('p');
+          error.id = 'errorMessage';
+          error.textContent = message;
+          error.style.color = '#ff4444';
+          error.style.fontSize = '14px';
+          error.style.marginTop = '10px';
+          inputElement.parentNode.insertBefore(error, inputElement.nextSibling);
+        }
+
+        // Add visual feedback to input
+        inputElement.style.borderColor = '#ff4444';
+
+        // Clear error after 3 seconds
+        setTimeout(() => {
+          if (errorElement) {
+            errorElement.style.display = 'none';
+          }
+          inputElement.style.borderColor = '';
+        }, 3000);
+      }
+
+      /**
+       * Transitions to the file upload interface after successful authentication
+       * @param {string} password - The validated password
+       */
+      function transition(password) {
         const username = 'admin';
         const authHeader = 'Basic ' + btoa(username + ':' + password);
 
@@ -171,28 +232,58 @@
 
         document.getElementById('fileUploadSection').style.display = 'block';
         document.getElementById('credentialsForm').style.display = 'none';
-
         document.querySelector('.logincontainter').classList.add('no-effect');
       }
 
+      /**
+       * Handles password submission with validation
+       * @param {string} password - The password to check and process
+       */
+      async function handlePasswordSubmit(password) {
+        if (!password || password.trim() === '') {
+          showError('Please enter a password');
+          return;
+        }
+
+        const inputElement = document.getElementById('inputpassword');
+        inputElement.disabled = true;
+
+        try {
+          const isValid = await validatePassword(password);
+
+          if (isValid) {
+            transition(password);
+          } else {
+            showError('Invalid password. Please try again.');
+            inputElement.value = '';
+            inputElement.focus();
+          }
+        } catch (error) {
+          showError('Connection error. Please try again.');
+          console.error('Authentication error:', error);
+        } finally {
+          inputElement.disabled = false;
+        }
+      }
+
+      // Event listener for Enter key press
       document.getElementById('inputpassword').addEventListener('keypress', function(event) {
-        if (event.key != 'Enter') {
+        if (event.key !== 'Enter') {
           return;
         }
 
         event.preventDefault();
-
         const password = document.getElementById('inputpassword').value;
-        transition(password);
+        handlePasswordSubmit(password);
       });
 
+      // Initialize from URL query parameter if present
       const currentUrl = window.location.href;
       const urlObj = new URL(currentUrl);
       const queryParams = new URLSearchParams(urlObj.search);
       queryParams.forEach((value, key) => {
         if (key === "key") {
-           console.log("Initialized key:", value);
-           transition(value);
+           handlePasswordSubmit(value);
         }
       });
 
