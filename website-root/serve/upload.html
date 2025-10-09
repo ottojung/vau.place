@@ -151,7 +151,7 @@
       FilePond.registerPlugin();
 
       /**
-       * Validates the password against the server's /check-password endpoint
+       * Validates the password against the server using query parameter mode
        * @param {string} password - The password to validate
        * @returns {Promise<boolean>} - True if password is valid, false otherwise
        */
@@ -160,8 +160,8 @@
           const username = 'admin';
           const authHeader = 'Basic ' + btoa(username + ':' + password);
 
-          const response = await fetch('/check-password', {
-            method: 'POST',
+          const response = await fetch('/up?check', {
+            method: 'GET',
             headers: {
               'Authorization': authHeader
             }
