@@ -21,7 +21,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* This assumes you want to center the div within the entire viewport height */
+      min-height: 100vh; /* Allow container to grow beyond viewport */
+      padding: 20px 0; /* Minimum top and bottom margins */
     }
 
     .logincontainter:hover .top:before, .logincontainter:hover .top:after, .logincontainter:hover .bottom:before, .logincontainter:hover .bottom:after, .logincontainter:active .top:before, .logincontainter:active .top:after, .logincontainter:active .bottom:before, .logincontainter:active .bottom:after {
@@ -77,7 +78,8 @@
 
     #fileUploadSection {
       width: min(99%, 500px);
-      height: 100%;
+      max-height: calc(100vh - 40px); /* Account for padding */
+      overflow-y: auto; /* Allow scrolling within the container if needed */
     }
 
     .logincontainter .center {
