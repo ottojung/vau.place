@@ -115,6 +115,56 @@
     .filepond--credits {
       display: none;
     }
+
+    /* Error message styling */
+    #errorMessage {
+      color: #ff6b6b;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 10px 0 0 0;
+      padding: 10px 15px;
+      background: rgba(255, 107, 107, 0.1);
+      border-left: 3px solid #ff6b6b;
+      border-radius: 3px;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    #errorMessage.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .logincontainter .center input[type="password"].error {
+      border-color: #ff6b6b;
+      animation: shake 0.4s ease-in-out;
+    }
+
+    .logincontainter .center input[type="password"]:focus {
+      outline: none;
+      border-color: #3745b5;
+      box-shadow: 0 0 0 2px rgba(55, 69, 181, 0.1);
+    }
+
+    .logincontainter .center input[type="password"].error:focus {
+      border-color: #ff6b6b;
+      box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.1);
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+      20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+
+    /* Loading state */
+    .logincontainter .center input[type="password"]:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
   </style>
 
   <!-- FilePond styles -->
@@ -175,37 +225,38 @@
       }
 
       /**
-       * Shows an error message to the user
+       * Shows an error message to the user with proper state management
        * @param {string} message - The error message to display
        */
       function showError(message) {
         const inputElement = document.getElementById('inputpassword');
+        let errorElement = document.getElementById('errorMessage');
+
+        // Create error element if it doesn't exist
+        if (!errorElement) {
+          errorElement = document.createElement('div');
+          errorElement.id = 'errorMessage';
+          inputElement.parentNode.insertBefore(errorElement, inputElement.nextSibling);
+        }
+
+        // Update message and show with animation
+        errorElement.textContent = message;
+        errorElement.classList.add('show');
+        inputElement.classList.add('error');
+      }
+
+      /**
+       * Clears the error message and styling
+       */
+      function clearError() {
+        const inputElement = document.getElementById('inputpassword');
         const errorElement = document.getElementById('errorMessage');
 
         if (errorElement) {
-          errorElement.textContent = message;
-          errorElement.style.display = 'block';
-        } else {
-          // Create error element if it doesn't exist
-          const error = document.createElement('p');
-          error.id = 'errorMessage';
-          error.textContent = message;
-          error.style.color = '#ff4444';
-          error.style.fontSize = '14px';
-          error.style.marginTop = '10px';
-          inputElement.parentNode.insertBefore(error, inputElement.nextSibling);
+          errorElement.classList.remove('show');
         }
 
-        // Add visual feedback to input
-        inputElement.style.borderColor = '#ff4444';
-
-        // Clear error after 3 seconds
-        setTimeout(() => {
-          if (errorElement) {
-            errorElement.style.display = 'none';
-          }
-          inputElement.style.borderColor = '';
-        }, 3000);
+        inputElement.classList.remove('error');
       }
 
       /**
@@ -246,6 +297,7 @@
         }
 
         const inputElement = document.getElementById('inputpassword');
+        clearError(); // Clear any previous errors
         inputElement.disabled = true;
 
         try {
@@ -256,24 +308,33 @@
           } else {
             showError('Invalid password. Please try again.');
             inputElement.value = '';
+            inputElement.disabled = false;
             inputElement.focus();
           }
         } catch (error) {
           showError('Connection error. Please try again.');
           console.error('Authentication error:', error);
-        } finally {
           inputElement.disabled = false;
+          inputElement.focus();
         }
       }
 
-      // Event listener for Enter key press
-      document.getElementById('inputpassword').addEventListener('keypress', function(event) {
+      // Initialize event listeners after DOM is ready
+      const passwordInput = document.getElementById('inputpassword');
+
+      // Clear error when user starts typing
+      passwordInput.addEventListener('input', function() {
+        clearError();
+      });
+
+      // Handle Enter key press
+      passwordInput.addEventListener('keypress', function(event) {
         if (event.key !== 'Enter') {
           return;
         }
 
         event.preventDefault();
-        const password = document.getElementById('inputpassword').value;
+        const password = passwordInput.value;
         handlePasswordSubmit(password);
       });
 
