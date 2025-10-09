@@ -13,8 +13,10 @@
     }
 
     body {
-      min-height: 100vh;
+      margin: 0;
+      padding: 0;
       font-family: "Raleway", sans-serif;
+      overflow-x: hidden; /* Prevent horizontal scroll from animations */
     }
 
     .logincontainter {
@@ -22,7 +24,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh; /* Allow container to grow beyond viewport */
-      padding: 20px 0; /* Minimum top and bottom margins */
+      padding: 20px; /* Equal margins on all sides */
     }
 
     .logincontainter:hover .top:before, .logincontainter:hover .top:after, .logincontainter:hover .bottom:before, .logincontainter:hover .bottom:after, .logincontainter:active .top:before, .logincontainter:active .top:after, .logincontainter:active .bottom:before, .logincontainter:active .bottom:after {
@@ -78,8 +80,10 @@
 
     #fileUploadSection {
       width: min(99%, 500px);
-      max-height: calc(100vh - 40px); /* Account for padding */
+      max-height: calc(100vh - 40px); /* Account for container padding (20px * 2) */
       overflow-y: auto; /* Allow scrolling within the container if needed */
+      display: flex;
+      flex-direction: column;
     }
 
     .logincontainter .center {
