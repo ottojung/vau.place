@@ -178,6 +178,8 @@ The doors opened at eight. Voters arrived in the hesitant rhythm of early mornin
 
 By noon the rhythm had settled into something approaching routine. The clerks called numbers from their lists; voters stepped forward when summoned; the booths filled and emptied in orderly succession. The technician made his rounds between the machines, checking displays that showed nothing more interesting than incremental counts. Each device performed its assigned function: accept input, record choice, advance counter. The party watchers had grown comfortable enough to exchange small talk about the weather—dry for May, they agreed, unusually so.
 
+The afternoon brought the first tallies. One clerk read numbers aloud while another confirmed them from a separate display, their voices falling into the measured cadence of shared arithmetic. The technician found himself listening more closely than the task required, though he could not say why the rhythm seemed to invite attention. When they reached the district totals for the third candidate, the adding tape curled an extra loop past the clerk's wrist as she paused—not long, just the space of a breath—before reading the sum again. No one remarked on the repetition. The tape continued its slow advance toward the floor, marking time in a way that felt more deliberate than the clock.
+
 <NOTE>
 Make the moment of discovery feel like a slow bruise rather than a jump scare.
 
