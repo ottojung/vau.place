@@ -91,7 +91,11 @@ from indexing -->
   </ul>
 
   Printf is so complicated it <a href="https://hownot2code.com/2016/08/10/beware-of-printf/">has been considered</a> an attack surface.
-  The reason seems to be that a format string is not just data, but a tiny language describing the shape and types of the following arguments.
+  I think the reason is that the format string is not just data - it is a tiny language describing the shape and types of the following arguments.
+
+  <br><br>
+
+  An instructive limiting case is a dependently typed <a href="https://github.com/quephird/idris-printf">implementation of <span class="keyword">printf</span> in Idris</a>. There, <span class="keyword">printf</span> can indeed be written as an ordinary function, but only because the type system is strong enough to compute the rest of the function's type from the format string. The implementation first parses the string into a <span class="keyword">Format</span> value, then maps that value to a type: roughly, <span class="keyword">%d</span> adds an <span class="keyword">Int -></span>, <span class="keyword">%s</span> adds a <span class="keyword">String -></span>, and the end of the format finally returns <span class="keyword">String</span>. The resulting signature is the revealing part: <span class="keyword">printf : (fmt : String) -> PrintfType (toFormat (unpack fmt))</span>. So this is not a cheap trick that ordinary languages merely forgot to use. To make <span class="keyword">printf</span> a regular function, the language must allow ordinary function types to depend on the value of an ordinary string argument.
 
   <h4> References </h4>
 
