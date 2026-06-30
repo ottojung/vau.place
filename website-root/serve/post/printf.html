@@ -85,8 +85,7 @@ from indexing -->
         ($fmt:expr, $($args:tt)*) => {{ <span class="comment">/* compiler built-in */</span> }};
     }</code></pre>
 
-      There seems to be not that many reasons to not have <span class="keyword">printf!</span> as an actual macro in rust,
-      the behaviour could be replicated, but for some reason it was decided to have it as a builtin.
+      There do not seem to be many reasons why this could not be implemented as an ordinary Rust macro.
     </li>
 
   </ul>
