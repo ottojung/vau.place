@@ -52,9 +52,8 @@ from indexing -->
     <li>
       C's <span class="keyword">printf</span> does not look outstanding from the language point of view, but it is handled with care in today's compilers.
       Pass a wrong type of argument that does not comform to the format string,
-      or God forbid, use a dynamically generated format string, and you will get a warning from GCC.
+      or use a dynamically generated format string, and you will get a warning from GCC.
       No other regular function can possibly express such behaviour,
-      one would need dependent types for that,
       but there is a compiler-specific extension that allows one to bless any function with such a check
       by simply adding the following magic to its signature:
       <pre><code>    __attribute__(format(<span class="keyword">printf</span>, ...))</code></pre>
