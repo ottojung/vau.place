@@ -68,34 +68,31 @@ from indexing -->
 
     <br>
     <li> Even though OCaml dropped special syntax of Algol's <span class="keyword">printf</span>,
-      the format string still had to be a coward and not a normal string.
+      the format string still was not quite a normal string.
     </li>
 
     <br>
-    <li>Python 2, a dynamic language with great potential in teaching,
-      was shameless enough to interpret <span class="keyword">print</span> as a statement.
+    <li>In Python 2, a dynamic language with great potential in teaching,
+      <span class="keyword">print</span> is statement, rather than a function.
     </li>
 
     <br>
     <li>
-      Rust's <span class="keyword">printf!</span> pretends to be a macro, but searching for the implementation we encounter this piece of code:
+      Rust's <span class="keyword">printf!</span> looks like a macro, but searching for the implementation we encounter this piece of code:
 
       <pre><code><span class="keyword">    macro_rules!</span> format_args_nl {
         ($fmt:expr) => {{ <span class="comment">/* compiler built-in */</span> }};
         ($fmt:expr, $($args:tt)*) => {{ <span class="comment">/* compiler built-in */</span> }};
     }</code></pre>
 
-      There are actually not that many excuses to not have <span class="keyword">printf!</span> as a macro in rust,
+      There seems to be not that many reasons to not have <span class="keyword">printf!</span> as an actual macro in rust,
       the behaviour could be replicated, but for some reason it was decided to have it as a builtin.
     </li>
 
   </ul>
 
   Printf is so complicated it <a href="https://hownot2code.com/2016/08/10/beware-of-printf/">has been considered</a> an attack surface.
-  This seems to be the primary reason for it being so extraordinary, for it is hard to express it in native terms.
-  But when we do make it special-case, we lie to programmers.
-  I personally think that <span class="keyword">printf</span> is a hack, it's ugly, and does not belong in modern languages,
-  but it is here anyways, and we should aknowledge that it is a little special.
+  The reason seems to be that a format string is not just data, but a tiny language describing the shape and types of the following arguments.
 
   <h4> References </h4>
 
