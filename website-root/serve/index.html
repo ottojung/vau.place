@@ -45,39 +45,41 @@
     }
 
     .site-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 2em;
         padding-bottom: 1.2em;
         margin-bottom: 2em;
         border-bottom: 1px dotted rgba(80, 80, 60, 0.45);
     }
 
-    .site-heading h1 {
+    .site-header h1 {
         margin-bottom: 0.35em;
     }
 
-    .site-heading p {
+    .site-subheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 2em;
+    }
+
+    .site-subheader p {
+        margin-top: 0;
+        margin-bottom: 0;
         max-width: 42em;
         line-height: 1.35;
     }
 
     .site-nav {
-        text-align: right;
         white-space: nowrap;
-        line-height: 1.6;
-        margin-top: 0.4em;
+        margin-right: 20%;
     }
 
     @media (max-width: 650px) {
-        .site-header {
+        .site-subheader {
             display: block;
         }
 
         .site-nav {
-            text-align: left;
-            margin-top: 0.8em;
+            margin-top: 0.6em;
         }
     }
   </style>
@@ -87,20 +89,20 @@
 <div class="main-inner-index-part">
 
   <header class="site-header">
-    <div class="site-heading">
-      <h1>Welcome to Vau place</h1>
+    <h1>Welcome to Vau place</h1>
 
+    <div class="site-subheader">
       <p>
         A small personal blog about programming languages <br>
         and software ideas that got stuck in my head.
       </p>
-    </div>
 
-    <nav class="site-nav">
-      <a href="./atom.xml">RSS</a>
-      <br>
-      <a href="./other.html">about</a>
-    </nav>
+      <nav class="site-nav">
+        <a href="./atom.xml">RSS</a>
+        ·
+        <a href="./other.html">about</a>
+      </nav>
+    </div>
   </header>
 
 <ul class="headerlist">
