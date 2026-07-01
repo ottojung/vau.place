@@ -24,16 +24,17 @@
 
   <br><br>
 
-  This is meant to be an informative post, actually.
-  The main alternative to static typing, besides its various gradual implmentations, are contracts.
-  So let us see what those are, and what are their advantages.
+  Contracts are often explained as runtime type checks, but that description is too small.
+  A contract is better understood as localized agreement:
+  when a value crosses a boundary, the contract system checks that the value is being used according to the agreement,
+  and reports which side broke it if the agreement is violated.
 
   <br><br>
 
   In short, contracts are type signatures that are checked at runtime instead of at compile-time.
   Of course this means that we don't get to know if the program is "correct" upfront,
   but the goal here is to move error messages as close to the sources of errors as possible.
-  To show what I mean by that, consider the following python type definition:
+  To show what I mean, consider the following python type definition:
 
   <pre><code>
   <span class="keyword">class</span> Rectangle:
@@ -109,14 +110,6 @@
   without ever mentioning that it is actually the <span class="high">fn</span>'s fault.
   To combat this, we want to make the type signatures of <span class="high">Function</span> objects public,
   and to also check that what they return is permitted by that signature.
-
-  <br><br>
-
-  And this is basically all that is required from contracts to be actually usable.
-
-  <br><br>
-
-  It's worth noting that many static type systems do include a type that serves as a sort of "dynamic" type, like Java's <span class="keyword">Object</span> class. The main difference between contracts and static type systems, then, is in how they are used rather than in their underlying theory. In my opinion, one of the main advantages of contracts is their ability to defer the specification of concrete types until the overall structure of the program is established. Additionally, contracts are able to express a wider range of properties about programs than static types can.
 
   <code><br><br><a href="./../index.html"><span class="keyword">return</span> home</a></code>
 
