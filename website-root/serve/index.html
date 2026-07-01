@@ -44,29 +44,68 @@
         margin-top: 20px;
     }
 
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2em;
+        padding-bottom: 1.2em;
+        margin-bottom: 2em;
+        border-bottom: 1px dotted rgba(80, 80, 60, 0.45);
+    }
 
+    .site-heading h1 {
+        margin-top: 0;
+        margin-bottom: 0.35em;
+    }
+
+    .site-heading p {
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 42em;
+        line-height: 1.35;
+    }
+
+    .site-nav {
+        text-align: right;
+        white-space: nowrap;
+        font-size: small;
+        line-height: 1.6;
+        margin-top: 0.4em;
+    }
+
+    @media (max-width: 650px) {
+        .site-header {
+            display: block;
+        }
+
+        .site-nav {
+            text-align: left;
+            margin-top: 0.8em;
+        }
+    }
   </style>
 </head>
 <body>
 <div class="main-index-part">
 <div class="main-inner-index-part">
 
-  <div style="text-align: center;">
-    <h1>Welcome to Vau place</h1>
+  <header class="site-header">
+    <div class="site-heading">
+      <h1>Welcome to Vau place</h1>
 
-    <p>
-      A small personal blog about programming languages and software ideas
-      that got stuck in my head.
-    </p>
+      <p>
+        A small personal blog about programming languages and software ideas
+        that got stuck in my head.
+      </p>
+    </div>
 
-    <small>
+    <nav class="site-nav">
       <a href="./atom.xml">RSS</a>
-      ·
+      <br>
       <a href="./other.html">about</a>
-    </small>
-  </div>
-
-  <br><br>
+    </nav>
+  </header>
 
 <ul class="headerlist">
 
