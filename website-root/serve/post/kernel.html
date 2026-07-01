@@ -18,21 +18,78 @@
   what if the macro-like part of Lisp was first-class?
   It revives fexprs, gives them a disciplined semantics, and asks whether a language can be both tiny and radically reflective.
 
-  <br><br>
+<p>
+In Scheme and most other Lisps, functions and macros belong to different worlds.
+A function receives the values of its arguments after they have been evaluated.
+A macro receives syntax before evaluation, and can decide what code should be produced.
+This split is useful, but it means that macros are handled by a separate mechanism.
+</p>
 
-  The main secret ingredient of Kernel is in its minimal core based on <a href="https://en.wikipedia.org/wiki/Fexpr"><span class="high">fexpr</span></a>s -
-  a concept so powerful that all other lisps resigned from it in fear!
+<p>
+Kernel tries to unify this picture.
+Its central abstraction is called an <span class="high">operative</span>.
+An operative is a first-class combiner that receives its operands unevaluated.
+This is related to the old Lisp idea of
+<a href="https://en.wikipedia.org/wiki/Fexpr"><span class="high">fexpr</span></a>s,
+but Kernel gives the idea a cleaner and more formal design.
+</p>
 
-  <div style="text-align: center;">
-    <img src="./ring.png"/>
-  </div>
+<p>
+The primitive constructor for operatives is called <span class="keyword">$vau</span>.
+It is similar in shape to <span class="keyword">lambda</span>,
+except that the resulting combiner receives unevaluated operands.
+Ordinary function-like behavior is built by wrapping an operative.
+Kernel calls these ordinary function-like combiners <span class="high">applicatives</span>.
+</p>
 
-  The problem is, fexpred-code cannot be optimized A BIT. Not that it is optimal by construction, just that the compiler cannot MAKE IT more optimal.
-  But Kernel is a wonderful language to write a compiler for. And there are plenty of them in the wild. Probably more that there are users of Kernel, which certainly makes it an academic language.
-  That, and the fact that it is completely and formally specified in the <a href="https://web.wpi.edu/Pubs/ETD/Available/etd-090110-124904/unrestricted/jshutt.pdf">author's PhD dissertation</a>.
-  It is an interesting read by the way, but for starters
-  I would rather recommend <a href="https://axisofeval.blogspot.com/2011/09/kernel-underground.html"> The Kernel Underground</a>.
-  So, if you are open to a new, wierd, lispy experience, then take a look and happy hacking!
+<p>
+This changes the role of special forms.
+Instead of treating them as a fixed syntactic category,
+Kernel lets programmers define new evaluation behavior as ordinary values.
+A conditional, a binding form, or a function constructor can all be described using the same underlying mechanism.
+</p>
+
+<div style="text-align: center;">
+  <img src="./ring.png"/>
+</div>
+
+<p>
+There is a serious cost.
+Fexpr-like systems are difficult to optimize.
+A compiler usually relies on knowing when subexpressions will be evaluated and what their values will mean.
+In Kernel, an operator may decide how to use its operands.
+An expression that looks like a normal argument may instead be inspected, delayed, ignored, or evaluated in a different way.
+This removes many assumptions that compilers normally depend on.
+</p>
+
+<p>
+That tradeoff is what makes Kernel interesting.
+It gives up some implementation convenience in exchange for a very small and reflective core language.
+The result is not a mainstream programming language,
+but it is a useful language to study if you care about Lisp, macros, evaluation, or language design.
+</p>
+
+<p>
+Kernel is also unusually attractive to implementers.
+The language is small, the central idea is sharp, and the formal specification is available in Shutt's dissertation.
+This seems to have produced a funny situation:
+there may be more Kernel and Kernel-like implementations than regular Kernel users.
+</p>
+
+<p>
+For the official description, see
+<a href="https://web.cs.wpi.edu/~jshutt/kernel.html">John Shutt's Kernel page</a>.
+For a lighter starting point, I recommend
+<a href="https://axisofeval.blogspot.com/2011/09/kernel-underground.html">The Kernel Underground</a>.
+For the full version, see Shutt's dissertation:
+<a href="https://web.wpi.edu/Pubs/ETD/Available/etd-090110-124904/unrestricted/jshutt.pdf">
+Fexprs as the basis of Lisp function application; or, <span class="keyword">$vau</span>: the ultimate abstraction
+</a>.
+</p>
+
+<p>
+If you are interested in small, unusual Lisps, Kernel is worth a look.
+</p>
 
   <code><br><br><a href="./../index.html"><span class="keyword">return</span> home</a></code>
 
