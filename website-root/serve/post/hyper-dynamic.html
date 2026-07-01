@@ -113,6 +113,31 @@
 
   <br><br>
 
+  But ordinary type checks are only the simplest case.
+  The more interesting use of contracts is not to say that a value has the right shape,
+  but to say that an operation is allowed in the current state of the world.
+
+  For example, consider a function that grants access to a document:
+
+<pre><code>
+<span class="keyword">def</span> grant_access(actor_id: UserId, document_id: DocumentId, target_id: UserId):
+  ...
+</code></pre>
+
+  The ordinary type signature can say that all three arguments are IDs.
+  But that is not the real promise.
+  The real promise is that the actor exists,
+  the document exists,
+  the target user exists,
+  the actor currently has permission to share the document,
+  the document is not archived,
+  and the target user is allowed to receive access.
+
+  Those facts are not sitting inside the source code.
+  They live in the database, and they may change between deployments, requests, or even two calls to the same function.
+
+  <br><br>
+
   The advantage of contracts is not that they are more disciplined than static types,
   or that static types are obsolete.
   Static types are checked early, but must usually stay within a decidable and relatively syntactic approximation of program behavior.
