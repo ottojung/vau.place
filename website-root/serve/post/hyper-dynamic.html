@@ -111,6 +111,13 @@
   To combat this, we want to make the type signatures of <span class="high">Function</span> objects public,
   and to also check that what they return is permitted by that signature.
 
+  <br><br>
+
+  The advantage of contracts is not that they are more disciplined than static types,
+  or that static types are obsolete.
+  Static types are checked early, but must usually stay within a decidable and relatively syntactic approximation of program behavior.
+  Contracts are checked later, but can talk directly about runtime values, module boundaries, higher-order functions, and semantic promises that would be impossible to express as ordinary types.
+
   <code><br><br><a href="./../index.html"><span class="keyword">return</span> home</a></code>
 
 </body>
