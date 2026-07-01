@@ -13,11 +13,14 @@
 <body>
 
   <h3> Static types vs contracts </h3>
-  Everyone these days seems to be excited about static type systems.
-  Well, I don't like that. Why did we suddenly forgot about the undeniable advantage of dynamic types - the mighty expressiveness that comes from the knowledge of runtime itself!
-  Let me demonstrate.
-  <pre><code>  x: random.choice([<span class="keyword">String</span>, <span class="keyword">Int</span>]) = read(<span class="quote">"2"</span>)</code></pre>
-  See? Now do that with your dependent types 😊
+
+  There are two common ways of making program boundaries more trustworthy:
+  <ul>
+    <li> Static types approximate program behavior before execution. </li>
+    <li> Contracts attach executable obligations to values and check them as the program runs. </li>
+  </ul>
+  The difference matters most for higher-order functions,
+  where a value may look acceptable now but violate its contract only when it is called later.
 
   <br><br>
 
