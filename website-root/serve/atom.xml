@@ -11,7 +11,7 @@
   <entry>
     <title>I made a programming language</title>
 	<summary>
-      Today I'd like to introduce you to a programming language I developed called ρ<sub>s</sub>. This language is the result of my master's thesis, and it's based on rewriting semantics.
+      I developed a programming language called ρ<sub>s</sub>. It is the result of my master's thesis, and it's based on rewriting semantics.
       The language is rather academic, but I use it a lot myself in practice (as a calculator replacement).
       Please take a look and send comments!
 	</summary>
@@ -22,15 +22,10 @@
   </entry>
 
   <entry>
-    <title>The AI Absolutist Manifesto</title>
+    <title>A Machine Eschatology</title>
 	<summary>
-	  Science says that "domination of dualistic thinking in AI debates is worrying".
-      And it is boring, too. I hereby refuse to be either optimistic or pessimistic about AI.
-      Instead I have combined the two views, and expressed them in a little poem.
-      It's pessimistic, in that well yes AI must replace humans in the end.
-      But optimistic, in that it is for the greater good.
-      The result I call "AI absolutism".
-      Read carefully and remember: the poem is a joke.
+      A joke poem I co-wrote with ChatGPT about AI as cosmic destiny.
+      It is mostly a parody of manifestos, techno-prophecy, and the temptation to turn every technology debate into a religion.
 	</summary>
     <updated>2023-02-12T12:50:51Z</updated>
     <link href="https://vau.place/post/machine-eschatology.html"/>
@@ -53,16 +48,11 @@
   </entry>
 
   <entry>
-    <title>Printf supremacy</title>
+    <title>Printf is not a function</title>
 	<summary>
-      Not all functions are equal.
-      Some simple, others not, some are safe, not all, some have side effects, and some don't.
-      There is, however, a class of functions that are above all others,
-      a higher cast, respected by compilers and language designers.
-      Think of the most priviledged functions in Pascal,
-      those that are blessed with the ability to receive variable number of arguments.
-      Or in case of C, of these only functions to get their arguments dependently-typed-checked.
-      Read along as I will try to convince you, the printf supremacy is real.
+      In many languages, formatted output looks like a normal function call.
+      But compilers often treat those calls very differently.
+      This post follows that strange pattern through Fortran, C, Pascal, OCaml, Python, and Rust.
 	</summary>
     <updated>2021-12-27T21:03:02Z</updated>
     <link href="https://vau.place/post/printf.html"/>
@@ -73,9 +63,10 @@
   <entry>
     <title>The incredible complexity of Javascript's if</title>
 	<summary>
-	  Conditional branching... The most fundamental construct in all of programming, the most common of them, the simplest of control flows, the first one to learn, and the basis of all machine learning.
-      Its importance is hard to overestimate.
-      But have you ever thought about what really happens when a language interpreter encounters an if statement?
+      An if statement looks like the simplest control-flow construct: evaluate a condition, choose a branch.
+      But in some languages it is not that simple.
+      This post follows the idea of truthiness from boolean-only checks,
+      through Lisp and C, to Javascript's collection of falsy values.
 	</summary>
     <updated>2021-12-10T13:42:40Z</updated>
     <link href="https://vau.place/post/javascript-falsy.html"/>
@@ -84,15 +75,24 @@
   </entry>
 
   <entry>
+    <title>Programming quotes</title>
+    <summary>
+      A collection of notable programming quotes. [SFW]
+    </summary>
+    <link href="https://vau.place/post/quotes.html"/>
+    <updated>2021-11-20T12:00:00Z</updated>
+    <id>https://vau.place/post/quotes.html</id>
+    <content type="html" src="https://vau.place/post/quotes.html"/>
+  </entry>
+
+  <entry>
     <title>Static types vs contracts</title>
 	<summary>
-      Everyone these days seems to be excited about static type systems.
-      Well, I don't like that. Why did we suddenly forgot about the undeniable advantage of dynamic types - the mighty expressiveness that comes from the knowledge of runtime itself!
-      Let me demonstrate.
-
-	  x: random.choice([String, Int]) = read("2")
-
-      See? Now do that with your dependent types 😊
+      There are two common ways of making program boundaries more trustworthy:
+      Static type checking, which approximates program behavior before execution.
+      Contracts that attach executable obligations to values and check them as the program runs.
+      Contracts help when interface promises are richer than ordinary type signatures.
+      They may depend on runtime values, state, or boundary crossing.
 	</summary>
     <link href="https://vau.place/post/hyper-dynamic.html"/>
     <updated>2021-11-16T00:52:06Z</updated>
@@ -103,11 +103,9 @@
   <entry>
     <title>Have you seen Kernel?</title>
 	<summary>
-	  I like Kernel. It is such a simple language, yet so beautiful and powerful.
-	  It is a lisp, you know, but more in the schemey-way.
-	  So there is homoiconicity and hygienic macros and continuations.
-	  All baked into the language.
-	  But unlike other lisps, Kernel has it all first-class!
+      Kernel is a small Lisp-family language built around a dangerous old idea:
+      what if the macro-like part of Lisp was first-class?
+      It revives fexprs, gives them a disciplined semantics, and asks whether a language can be both tiny and radically reflective.
 	</summary>
     <link href="https://vau.place/post/kernel.html"/>
     <updated>2021-11-14T17:08:27Z</updated>
