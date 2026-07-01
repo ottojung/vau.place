@@ -1,0 +1,307 @@
+<h3> Church, Curry, and the code around the code </h3>
+
+<p>
+Consider these two lambda terms:
+</p>
+
+<pre><code>
+<span class="keyword">lambda</span> x : Int  . x
+<span class="keyword">lambda</span> x : Bool . x
+</code></pre>
+
+<p>
+Now erase the annotations:
+</p>
+
+<pre><code>
+<span class="keyword">lambda</span> x . x
+</code></pre>
+
+<p>
+Did we forget something about one term,
+or did we collapse two different terms into one?
+</p>
+
+<p>
+Church-style and Curry-style typing give different answers to that question.
+In a Church-style presentation, the annotated terms are the objects being studied.
+The type annotation is part of the syntax,
+so the two identity functions above are different typed objects.
+They may erase to the same untyped term,
+but erasure is a translation, not equality.
+</p>
+
+<p>
+In a Curry-style presentation, the untyped term is the object being studied.
+The type system makes judgments about it:
+</p>
+
+<pre><code>
+<span class="keyword">lambda</span> x . x : Int  -> Int
+<span class="keyword">lambda</span> x . x : Bool -> Bool
+<span class="keyword">lambda</span> x . x : A    -> A
+</code></pre>
+
+<p>
+So the difference is not only whether the programmer writes annotations.
+It is a difference in what the theory treats as the program.
+Church-style typing builds type information into the term language.
+Curry-style typing keeps the raw term language smaller,
+then assigns types by a separate relation.
+That difference affects equality, erasure, inference, elaboration,
+and the shape of the metatheory.
+</p>
+
+<p>
+Once this distinction is visible,
+similar placement questions start appearing in ordinary codebases.
+A codebase is rarely just executable code.
+It also contains claims about the code:
+types, tests, examples, documentation, contracts, comments, specifications.
+Different ecosystems put those claims at different distances from the program.
+</p>
+
+<p>
+Modern type systems give familiar examples.
+In Rust or TypeScript, type syntax is part of the source language and the compiler understands it.
+In Python, type annotations are parsed and preserved, but the core language does not act on them in any way.
+In JSDoc, type information lives in comments.
+In TypeScript declaration files, type information can live in separate <span class="keyword">.d.ts</span> files.
+The same happens in Ruby and its <span class="keyword">.rbs</span> files.
+</p>
+
+<p>
+The same pattern appears outside types.
+Python docstrings are real syntax:
+the first string in a function body becomes documentation metadata.
+JSDoc documentation is written as comments for external tools.
+Racket documentation is commonly written in Scribble, a separate documentation language.
+Literate programming reverses the usual relationship even further:
+the document becomes the main artifact, and code is extracted from it.
+Tests also move around:
+Rust and Racket often keep small tests near the code,
+while most ecosystems put tests in separate files or directories.
+</p>
+
+<p>
+These examples are not all instances of Church-style or Curry-style typing in the formal sense.
+They are ordinary versions of the same placement problem.
+Some facts are pulled into the object language.
+Some facts sit in comments, sidecar files, test suites, documentation systems, or external tools.
+</p>
+
+<br>
+
+<h4> Annotated references </h4>
+
+<p> This is like a reading map for the idea and its afterlife. </p>
+
+<ul>
+  <li>
+    <b>H. B. Curry, “Functionality in Combinatory Logic” (1934).</b>
+    <br>
+    The historical root of the Curry side.
+    Curry studies functionality over combinatory objects,
+    rather than starting with a syntax where every variable occurrence already carries a type.
+    This is one source of the later idea that types can be assigned to terms.
+    <br>
+    <a href="https://www.pnas.org/doi/10.1073/pnas.20.11.584">PNAS page</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Alonzo Church, “A Formulation of the Simple Theory of Types” (1940).</b>
+    <br>
+    The historical root of the Church side.
+    Church builds type information directly into the formal language.
+    If you want the original “typed terms are the objects” attitude,
+    this is the source.
+    <br>
+    <a href="https://www.classes.cs.uchicago.edu/archive/2007/spring/32001-1/papers/church-1940.pdf">PDF</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>J. Roger Hindley, “The Principal Type-Scheme of an Object in Combinatory Logic” (1969).</b>
+    <br>
+    A key bridge from Curry’s older world into programming-language type inference.
+    Hindley proves that typable objects can have principal type-schemes.
+    This is the mathematical ancestor of the feeling that a compiler can recover the best general type of an unannotated expression.
+    <br>
+    <a href="https://www.ams.org/journals/tran/1969-146-00/S0002-9947-1969-0253905-6/S0002-9947-1969-0253905-6.pdf">PDF</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Robin Milner, “A Theory of Type Polymorphism in Programming” (1978).</b>
+    <br>
+    This is where the inference story becomes a programming-language story.
+    Milner connects polymorphic type checking with ML,
+    and makes the Curry-style experience familiar to programmers:
+    write a small amount of syntax, and let the system infer a general type.
+    <br>
+    <a href="https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/milner-type-polymorphism.pdf">PDF</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Luis Damas and Robin Milner, “Principal type-schemes for functional programs” (1982).</b>
+    <br>
+    The classic follow-up for ML-style inference.
+    This is the paper people usually mean when they talk about the Damas-Milner or Hindley-Milner core.
+    Read it after Milner if you want the formal result behind the programming folklore.
+    <br>
+    <a href="https://dl.acm.org/doi/10.1145/582153.582176">ACM page</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Frank Pfenning, “Church and Curry: Combining Intrinsic and Extrinsic Typing” (2008).</b>
+    <br>
+    The most useful single modern reference for the conceptual distinction.
+    Pfenning presents Church-style typing as intrinsic and Curry-style typing as extrinsic,
+    then shows why it can be useful to combine the two.
+    This is also a good place to think about equality, erasure, substitution, and the cost of moving between typed and untyped views.
+    <br>
+    <a href="https://www.cs.cmu.edu/~fp/papers/andrews08.pdf">PDF</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Frank Pfenning, lecture notes on polymorphism and erasure.</b>
+    <br>
+    These notes are useful for a subtle point:
+    erasing types can identify many different typed terms with one untyped term,
+    and in richer systems erasure is not always harmless.
+    This matters because people often summarize the distinction too quickly as “Church has annotations, Curry erases them.”
+    The relationship is real, but it is not automatic.
+    <br>
+    <a href="https://www.cs.cmu.edu/~fp/courses/comp-ded/handouts/poly.pdf">PDF</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Benjamin C. Pierce, <i>Types and Programming Languages</i> (2002).</b>
+    <br>
+    The standard modern textbook entry point.
+    It is not mainly a historical book,
+    but it teaches the formal habit needed to understand the distinction:
+    terms, typing judgments, operational semantics, preservation, progress, erasure, and elaboration.
+    <br>
+    <a href="https://mitpress.mit.edu/9780262162098/types-and-programming-languages/">MIT Press page</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Adriana Compagnoni and Healfdene Goguen, “Relating Church-Style and Curry-Style Subtyping” (2011).</b>
+    <br>
+    A technical descendant showing that the distinction remains alive beyond introductory lambda calculus.
+    In richer calculi, the choice of style can interact with subtyping and computation rules.
+    This is where “where do types live?” becomes more than presentation.
+    <br>
+    <a href="https://arxiv.org/abs/1101.4423">arXiv page</a>
+  </li>
+</ul>
+
+<br>
+
+<h4> Modern ecosystem analogies </h4>
+
+<ul>
+  <li>
+    <b>Python annotations: syntax first, meaning later.</b>
+    <br>
+    PEP 3107 introduced function annotation syntax while deliberately leaving annotation meaning open.
+    PEP 484 later standardized the type-hinting convention.
+    This makes Python a good example of information that is inside the parsed language,
+    but not owned by the core runtime semantics in the same way Rust or ML types are.
+    <br>
+    <a href="https://peps.python.org/pep-3107/">PEP 3107</a>,
+    <a href="https://peps.python.org/pep-0484/">PEP 484</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>TypeScript, JSDoc, and declaration files.</b>
+    <br>
+    TypeScript adds type syntax and checks it before emitting JavaScript.
+    JSDoc keeps type-like information in comments,
+    where TypeScript and editors may read it without changing the JavaScript grammar.
+    Declaration files add another position on the same axis:
+    a <span class="keyword">.d.ts</span> file can describe JavaScript code from the side.
+    <br>
+    <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">TypeScript handbook</a>,
+    <a href="https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html">JSDoc support</a>,
+    <a href="https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html">declaration files</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Ruby RBS: type information as a companion language.</b>
+    <br>
+    RBS describes the structure of Ruby programs in a separate signature language,
+    commonly stored in <span class="keyword">.rbs</span> files.
+    This is a very clear example of the artifact living outside the implementation file.
+    The newer inline-RBS work is interesting because it moves the same artifact closer to source code again.
+    <br>
+    <a href="https://github.com/ruby/rbs">RBS repository</a>,
+    <a href="https://github.com/ruby/rbs/blob/master/docs/inline.md">inline RBS documentation</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Rust tests and documentation: comments that tools execute.</b>
+    <br>
+    Rust has ordinary separate tests, same-file tests, doc comments, and documentation tests.
+    This is useful because it shows that the “where does information live?” question is not only about types.
+    Examples in documentation can become tests.
+    Tests can sit next to implementation or outside it.
+    The artifact can move without changing its purpose.
+    <br>
+    <a href="https://doc.rust-lang.org/cargo/guide/tests.html">Cargo tests</a>,
+    <a href="https://doc.rust-lang.org/rust-by-example/meta/doc.html">Rust documentation comments</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Racket tests, Scribble, and contracts.</b>
+    <br>
+    Racket is a good language to compare against Rust here.
+    Tests can live in same-file submodules.
+    Documentation commonly lives in Scribble files.
+    Contracts live at module boundaries and are part of the language ecosystem rather than informal comments.
+    Racket therefore gives several different placements in one culture.
+    <br>
+    <a href="https://docs.racket-lang.org/raco/test.html">raco test</a>,
+    <a href="https://docs.racket-lang.org/scribble/">Scribble</a>,
+    <a href="https://docs.racket-lang.org/reference/contracts.html">Contracts</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Literate programming: code inside documentation.</b>
+    <br>
+    Most documentation systems attach prose to code.
+    Literate programming makes the opposite move:
+    the human-facing document is primary,
+    and source files are produced from it.
+    It is an older and more radical answer to the same placement question.
+    <br>
+    <a href="http://www.literateprogramming.com/knuthweb.pdf">Knuth, “Literate Programming”</a>
+  </li>
+</ul>
+
+<br>
