@@ -227,76 +227,88 @@ Some facts sit in comments, sidecar files, test suites, documentation systems, o
   <br>
 
   <li>
-    <b>Python annotations: syntax first, meaning later.</b>
-    <br>
-    PEP 3107 introduced function annotation syntax while deliberately leaving annotation meaning open.
-    PEP 484 later standardized the type-hinting convention.
-    This makes Python a good example of information that is inside the parsed language,
-    but not owned by the core runtime semantics in the same way Rust or ML types are.
-    <br>
-    <a href="https://peps.python.org/pep-3107/">PEP 3107</a>,
-    <a href="https://peps.python.org/pep-0484/">PEP 484</a>
+    <b>Gilad Bracha, “Pluggable Type Systems”.</b>
+    <p>
+      Bracha argues for type systems that are optional and pluggable:
+      useful to tools, but not required by the runtime semantics of the language.
+      That makes the paper a natural modern companion to the Church/Curry distinction.
+      It treats types as information that can be attached to a language without making the language depend on one mandatory type discipline.
+    </p>
+    <a href="http://bracha.org/pluggableTypesPosition.pdf">PDF</a>
   </li>
 
   <br>
 
   <li>
-    <b>TypeScript, JSDoc, and declaration files.</b>
-    <br>
-    TypeScript adds type syntax and checks it before emitting JavaScript.
-    JSDoc keeps type-like information in comments,
-    where TypeScript and editors may read it without changing the JavaScript grammar.
-    Declaration files add another position on the same axis:
-    a <span class="keyword">.d.ts</span> file can describe JavaScript code from the side.
-    <br>
-    <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">TypeScript handbook</a>,
-    <a href="https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html">JSDoc support</a>,
-    <a href="https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html">declaration files</a>
+    <b>Sam Tobin-Hochstadt and Matthias Felleisen, “The Design and Implementation of Typed Scheme”.</b>
+    <p>
+      Typed Scheme is about adding a typed layer to an existing untyped language.
+      The paper describes type annotations as design information that programmers otherwise have to rediscover when maintaining growing scripts.
+      That makes it a practical version of the same old question:
+      when an untyped program acquires types,
+      are those types a new language of programs,
+      or a structured account of programs that were already there?
+    </p>
+    <a href="https://arxiv.org/abs/1106.2575">arXiv page</a>
   </li>
 
   <br>
 
   <li>
-    <b>Ruby RBS: type information as a companion language.</b>
-    <br>
-    RBS describes the structure of Ruby programs in a separate signature language,
-    commonly stored in <span class="keyword">.rbs</span> files.
-    This is a very clear example of the artifact living outside the implementation file.
-    The newer inline-RBS work is interesting because it moves the same artifact closer to source code again.
-    <br>
-    <a href="https://github.com/ruby/rbs">RBS repository</a>,
-    <a href="https://github.com/ruby/rbs/blob/master/docs/inline.md">inline RBS documentation</a>
+    <b>Jeremy Siek and Walid Taha, “Gradual Typing for Functional Languages”.</b>
+    <p>
+      Gradual typing is useful here because it gives types a place at the boundary.
+      Some parts of a program may be statically typed,
+      other parts may remain dynamically typed,
+      and runtime checks mediate between them.
+      The type information is neither merely external documentation nor simply erased decoration.
+      It becomes a source of boundary behavior.
+    </p>
+    <a href="https://www2.ccs.neu.edu/racket/pubs/sfp06-st.pdf">PDF</a>
   </li>
 
   <br>
 
   <li>
-    <b>Rust tests and documentation: comments that tools execute.</b>
-    <br>
-    Rust has ordinary separate tests, same-file tests, doc comments, and documentation tests.
-    This is useful because it shows that the “where does information live?” question is not only about types.
-    Examples in documentation can become tests.
-    Tests can sit next to implementation or outside it.
-    The artifact can move without changing its purpose.
-    <br>
-    <a href="https://doc.rust-lang.org/cargo/guide/tests.html">Cargo tests</a>,
-    <a href="https://doc.rust-lang.org/rust-by-example/meta/doc.html">Rust documentation comments</a>
+    <b>Robert Bruce Findler and Matthias Felleisen, “Contracts for Higher-Order Functions”.</b>
+    <p>
+      Contracts are another way for claims about code to become executable.
+      A contract is written around a boundary,
+      and the runtime uses it to monitor how values cross that boundary.
+      Higher-order contracts are especially interesting because the check cannot always happen immediately.
+      The claim may have to travel with the value and be enforced later.
+    </p>
+    <a href="https://www2.ccs.neu.edu/racket/pubs/icfp2002-ff.pdf">PDF</a>
   </li>
 
   <br>
 
   <li>
-    <b>Racket tests, Scribble, and contracts.</b>
-    <br>
-    Racket is a good language to compare against Rust here.
-    Tests can live in same-file submodules.
-    Documentation commonly lives in Scribble files.
-    Contracts live at module boundaries and are part of the language ecosystem rather than informal comments.
-    Racket therefore gives several different placements in one culture.
-    <br>
-    <a href="https://docs.racket-lang.org/raco/test.html">raco test</a>,
-    <a href="https://docs.racket-lang.org/scribble/">Scribble</a>,
-    <a href="https://docs.racket-lang.org/reference/contracts.html">Contracts</a>
+    <b>Python doctest.</b>
+    <p>
+      Doctest turns examples in documentation into executable checks.
+      The same text teaches a reader what should happen
+      and gives a tool something to verify.
+      This makes it a small but concrete case where documentation,
+      examples, and tests occupy the same piece of source text.
+    </p>
+    <a href="https://docs.python.org/3/library/doctest.html">doctest documentation</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Donald Knuth, “Literate Programming”.</b>
+    <p>
+      Literate programming is the strongest documentation example.
+      Ordinary documentation systems attach prose to source code.
+      Knuth reverses the priority:
+      the explanation is the main artifact,
+      and compilable code is produced from it.
+      The question is no longer only where documentation lives,
+      but which artifact should be considered primary.
+    </p>
+    <a href="http://www.literateprogramming.com/knuthweb.pdf">PDF</a>
   </li>
 
   <br>
