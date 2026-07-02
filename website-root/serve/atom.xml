@@ -4,10 +4,22 @@
   <link href="https://vau.place/atom.xml" rel="self"/>
   <link href="https://vau.place"/>
   <head><link rel="stylesheet" type="text/css" href="https://vau.place/style/main.css"/></head>
-  <updated>2023-04-07T18:53:30Z</updated>
+  <updated>2026-07-01T23:15:30-07:00</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
-  
+
+  <entry>
+    <title>Church, Curry, and the code around the code</title>
+	<summary>
+      This post explains an old and lesser-known distinction between Church-style and Curry-style typing: whether types are part of a term or assigned to it.
+      This idea extends nicely to things that might live inside or outside a program, such as tests, documentation, and interface files.
+	</summary>
+    <updated>2026-07-01T23:15:30-07:00</updated>
+    <link href="https://vau.place/post/where-types/index.html"/>
+    <id>https://vau.place/post/where-types/index.html</id>
+    <content type="html" src="https://vau.place/post/where-types/index.html"/>
+  </entry>
+
   <entry>
     <title>I made a programming language</title>
 	<summary>
