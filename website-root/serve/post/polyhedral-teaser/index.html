@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title> Vau's blog </title>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex"> <!-- prevent robots
+from indexing -->
+  <link rel="stylesheet" href="./main.css">
+  <meta property='og:site_name' content="Vau's place">
+  <meta property='og:type' content='website'>
+</head>
+<body>
+
+<h3>  </h3>
+
+
+<p>Compilers have a boring public life. Their input is text, their output is text, and the process is usually hidden behind a command line. Internally, though, they deal with much richer objects. In this post I want to advertise those that I particularly like: the shapes that compilers draw from the possible values of program variables.</p>
+
+<p>Before a program runs, a compiler can still learn a great deal about what's possible in a run, which is extremely useful for optimizing the program. It may not be able to know the exact values of a variable <code>x</code> without running the program, but it may learn that <code>x</code> is always odd, that it is positive, or, in the kind of analysis that we're talking about, that it lies within some range. As more variables are considered at once, these ranges turn into lines, areas, and eventually three-dimensional shapes.</p>
+
+<p>Consider a small movement rule for a game:</p>
+
+<pre><code>dx = input.x
+dy = input.y
+dz = input.z
+
+if abs(dx) + abs(dy) + abs(dz) &lt;= 1:
+    position.x += dx
+    position.y += dy
+    position.z += dz</code></pre>
+
+<p>The rule gives each step a fixed movement budget. Moving in <code>x</code> uses part of the budget, so there is less left for <code>y</code> and <code>z</code>. At the line where the position is updated, the possible values of the three variables are exactly the triples accepted by the condition:</p>
+
+<pre><code>|dx| + |dy| + |dz| &lt;= 1</code></pre>
+
+<p>That condition makes a 3-dimensional solid. More concretely an octahedron with six corners, eight triangular faces, one point on each positive and negative axis. And it looks like a simple cut gemstone.</p>
+
+<p>The faces of the gemstone are linear inequalities. One face comes from <code>dx + dy + dz &lt;= 1</code>, another from <code>dx + dy - dz &lt;= 1</code>, another from <code>dx - dy + dz &lt;= 1</code>, and so on through the possible choices of signs. The branch condition in the program has become a polyhedron.</p>
+
+<p>This is the setting of <em>polyhedral analysis</em>. It works with program facts made from linear expressions: <code>i &lt; n</code>, <code>i + j &lt;= len</code>, <code>used + free == capacity</code>. These facts show up around counters, lengths, offsets, capacities, and budgets, because many program quantities are updated and compared by adding or subtracting.</p>
+
+<p>The analysis keeps these facts as a collection of linear equations. That choice is what makes the shapes convex, and it is a practical choice: linear constraints are useful enough to express many relationships in programs, and simple enough to compute with as the program passes through branches and loops. Of course, the cost is that the analysis cannot draw every actual strange shape. Separate cases get covered by one larger shape, inconvenient conditions get replaced by something that is more easily expressible.</p>
+
+<p>So polyhedral analysis has a literal name. It is a way for a compiler to learn facts about a program by producing and transforming polyhedra.</p>
+
+
+
+<br>
+
+  <code><br><br><a href="./../../index.html"><span class="keyword">return</span> home</a></code><br><br>
+
+
+</body>
+</html>
+
+
