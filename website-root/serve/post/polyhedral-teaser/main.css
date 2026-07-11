@@ -1,0 +1,112 @@
+
+@font-face {
+	font-family: 'Fira Code';
+	src:
+		local('Fira Code'),
+		url('fonts/FiraCode-Regular.Z.woff2') format('woff2');
+	font-style: regular;
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	src:
+		local('Merriweather'),
+		url('fonts/Merriweather-BlackItalic.Z.woff2') format('woff2');
+	font-style: black italic;
+}
+
+img {
+	border-radius: 1em;
+}
+
+body {
+	font-family: "Raleway", "Times New Roman", serif;
+	font-size: 18pt;
+	font-weight: lighter;
+	width: min(90%, max(35%, 37em));
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background-color: #eeeeee;
+	color: #222831;
+}
+
+code {
+	font-family: 'Fira Code', monospace;
+}
+
+h1, h2, h3, b {
+	color: #393e46;
+}
+
+h1, h2, h3 {
+	font-family: 'Merriweather', serif;
+	font-size: 32pt;
+}
+
+a {
+	color: #0092ca;
+}
+
+.headerlist .title {
+	font-family: 'Merriweather', serif;
+	font-weight: lighter;
+	color: #0092ca;
+}
+
+.headerlist.pinned li {
+	list-style-type: none;
+}
+
+.headerlist.pinned li:before {
+	content: '\1F4CC';
+	margin-left: -35px;
+	list-style-type: none;
+}
+
+.keyword {
+	font-family: 'Fira Code', monospace;
+	color: #2fafff;
+	font-weight: 600;
+}
+
+.quote {
+	font-family: 'Fira Code', monospace;
+	color: #a55233;
+	font-weight: 400;
+}
+
+.comment {
+	font-family: 'Fira Code', monospace;
+	color: #f57b51;
+	font-weight: 400;
+}
+
+.high {
+	font-family: 'Fira Code', monospace;
+	color: #ff00ff;
+	font-weight: 550;
+}
+
+.bh {
+	/* box-shadow: 0 0.28rem 0.57rem 0 rgba(0, 0, 0, 0.2), 0 0.42rem 1.42rem 0 rgba(0, 0, 0, 0.19); */
+	padding-right: 0.3rem;
+	padding-left: 0.3rem;
+	padding-bottom: 0.1rem;
+	padding-top: 0.1rem;
+	border-radius: 0.4rem;
+	background-color: #949bff;
+	text-decoration: none;
+}
+
+.quotebox {
+	font-style: italic;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.quotebox p {
+	text-align: right;
+	font-size: smaller;
+	font-style: normal;
+}
