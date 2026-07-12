@@ -4,9 +4,20 @@
   <link href="https://vau.place/atom.xml" rel="self"/>
   <link href="https://vau.place"/>
   <head><link rel="stylesheet" type="text/css" href="https://vau.place/style/main.css"/></head>
-  <updated>2026-07-01T23:15:30-07:00</updated>
+  <updated>2026-07-12T00:00:00-07:00</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+
+  <entry>
+    <title>Compilers draw shapes</title>
+	<summary>
+      Compilers have a boring public life. Their input is text, their output is text, and the process is usually hidden behind a command line. Internally, though, they deal with much richer objects. In this post I want to advertise those that I particularly like: the shapes that compilers draw from the possible values of program variables.
+	</summary>
+    <updated>2026-07-12T00:00:00-07:00</updated>
+    <link href="https://vau.place/post/polyhedral-teaser/index.html"/>
+    <id>https://vau.place/post/polyhedral-teaser/index.html</id>
+    <content type="html" src="https://vau.place/post/polyhedral-teaser/index.html"/>
+  </entry>
 
   <entry>
     <title>Church, Curry, and the code around the code</title>
