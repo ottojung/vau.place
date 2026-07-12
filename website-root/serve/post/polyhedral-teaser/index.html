@@ -35,7 +35,7 @@ if abs(dx) + abs(dy) + abs(dz) &lt;= 1:
 
 <pre><code>|dx| + |dy| + |dz| &lt;= 1</code></pre>
 
-<p>That condition makes a 3-dimensional solid. More concretely an octahedron with six corners, eight triangular faces, one point on each positive and negative axis. And it looks like a simple cut gemstone.</p>
+<p>That condition makes a 3-dimensional solid. More concretely an octahedron with six corners, eight triangular faces, one point on each positive and negative axis. And it looks like a simple cut gemstone:</p>
 
 <div style="text-align: center;">
   <img width='50%' src="./octahedron_game_example.png"/>
@@ -49,13 +49,63 @@ if abs(dx) + abs(dy) + abs(dz) &lt;= 1:
 
 <p>So polyhedral analysis has a literal name. It is a way for a compiler to learn facts about a program by producing and transforming polyhedra.</p>
 
+<h3>Compiler stenography</h3>
 
-<br><br>
+<p>
+  Here is a small binary perceptron.
+  It has three weights and processes two observations derived from four binary inputs.
+  When an observation is classified incorrectly, the usual perceptron update adjusts the weights:
+</p>
+
+<pre><code>def fit(a, b, c, d, label):
+    assert (
+        a in [-1, 1]
+        and b in [-1, 1]
+        and c in [-1, 1]
+        and d in [-1, 1]
+        and label in [-1, 1]
+    )
+
+    weights = [0, 0, -8]
+
+    observations = (
+        (
+            a + 3*b + 3*c + d,
+            3*a + b - c - 3*d,
+            3,
+        ),
+        (
+            -a + c + 2*d,
+            a + 2*b + c,
+            1,
+        ),
+    )
+
+    for observation in observations:
+        margin = label * sum(
+            weight * feature
+            for weight, feature in zip(weights, observation)
+        )
+
+        if margin &lt;= 0:
+            weights = [
+                weight + label * feature
+                for weight, feature in zip(weights, observation)
+            ]
+
+    return tuple(weights)</code></pre>
+
+<p>The convex hull of the three values in <code>weights</code> is exactly this polyhedron:</p>
+
 <div style="text-align: center;">
-  <img width='50%' src="./gemstone_shape.png"/>
+  <img
+    width="60%"
+    src="./gemstone_shape.png"
+    alt="The gemstone-shaped convex hull of the perceptron's possible final weights"
+  />
 </div>
-<br><br>
 
+<p>Across all values permitted by the assertions, its executions finish in seventeen extreme states. One is the bottom point. Eight form the wide middle of the gemstone, while another eight form the smaller, rotated ring around its crown.</p>
 
 <br>
 
