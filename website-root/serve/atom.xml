@@ -1,100 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Vau's Blog</title>
-  <link href="https://vau.place/atom.xml" rel="self"/>
-  <link href="https://vau.place"/>
-  <head><link rel="stylesheet" type="text/css" href="https://vau.place/style/main.css"/></head>
-  <updated>2026-07-12T00:00:00-07:00</updated>
+  <link
+    href="https://vau.place/atom.xml"
+    rel="self"
+    type="application/atom+xml"
+  />
+  <link
+    href="https://vau.place/"
+    rel="alternate"
+    type="text/html"
+  />
+  <updated>2026-07-12T16:16:37-07:00</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
 
   <entry>
-    <title>Compilers draw shapes</title>
-	<summary>
-      Compilers have a boring public life. Their input is text, their output is text, and the process is usually hidden behind a command line. Internally, though, they deal with much richer objects. In this post I want to advertise those that I particularly like: the shapes that compilers draw from the possible values of program variables.
-	</summary>
-    <updated>2026-07-12T00:00:00-07:00</updated>
-    <link href="https://vau.place/post/polyhedral-teaser/index.html"/>
+    <title>Hidden in the Branches</title>
+    <summary>
+      Static analyzers can represent the possible values of program variables as geometric regions. When those constraints are linear, the regions become polyhedra. The article ends with a small program whose possible final states produce a gemstone-shaped polyhedron.
+    </summary>
+    <updated>2026-07-12T16:16:37-07:00</updated>
+    <link
+      href="https://vau.place/post/polyhedral-teaser/index.html"
+      rel="alternate"
+      type="text/html"
+    />
     <id>https://vau.place/post/polyhedral-teaser/index.html</id>
-    <content type="html" src="https://vau.place/post/polyhedral-teaser/index.html"/>
+    <content type="text/html" src="https://vau.place/post/polyhedral-teaser/index.html"/>
   </entry>
 
   <entry>
     <title>Church, Curry, and the code around the code</title>
-	<summary>
+    <summary>
       This post explains an old and lesser-known distinction between Church-style and Curry-style typing: whether types are part of a term or assigned to it.
       This idea extends nicely to things that might live inside or outside a program, such as tests, documentation, and interface files.
-	</summary>
+    </summary>
     <updated>2026-07-01T23:15:30-07:00</updated>
-    <link href="https://vau.place/post/where-types/index.html"/>
+    <link
+      href="https://vau.place/post/where-types/index.html"
+      rel="alternate"
+      type="text/html"
+    />
     <id>https://vau.place/post/where-types/index.html</id>
-    <content type="html" src="https://vau.place/post/where-types/index.html"/>
+    <content type="text/html" src="https://vau.place/post/where-types/index.html"/>
   </entry>
 
   <entry>
     <title>I made a programming language</title>
-	<summary>
-      I developed a programming language called ρ<sub>s</sub>. It is the result of my master's thesis, and it's based on rewriting semantics.
+    <summary>
+      I developed a programming language called ρₛ. It is the result of my master's thesis, and it's based on rewriting semantics.
       The language is rather academic, but I use it a lot myself in practice (as a calculator replacement).
       Please take a look and send comments!
-	</summary>
+    </summary>
     <updated>2023-04-07T18:53:30Z</updated>
-    <link href="https://vau.place/post/rose-lang.html"/>
+    <link
+      href="https://vau.place/post/rose-lang.html"
+      rel="alternate"
+      type="text/html"
+    />
     <id>https://vau.place/post/rose-lang.html</id>
-    <content type="html" src="https://vau.place/post/rose-lang.html"/>
+    <content type="text/html" src="https://vau.place/post/rose-lang.html"/>
   </entry>
 
   <entry>
     <title>A Machine Eschatology</title>
-	<summary>
+    <summary>
       A joke poem I co-wrote with ChatGPT about AI as cosmic destiny.
       It is mostly a parody of manifestos, techno-prophecy, and the temptation to turn every technology debate into a religion.
-	</summary>
+    </summary>
     <updated>2023-02-12T12:50:51Z</updated>
-    <link href="https://vau.place/post/machine-eschatology.html"/>
+    <link
+      href="https://vau.place/post/machine-eschatology.html"
+      rel="alternate"
+      type="text/html"
+    />
     <id>https://vau.place/post/machine-eschatology.html</id>
-    <content type="html" src="https://vau.place/post/machine-eschatology.html"/>
+    <content type="text/html" src="https://vau.place/post/machine-eschatology.html"/>
   </entry>
 
   <entry>
     <title>Some Haskell history</title>
-	<summary>
-	  Haskell is one of the most influential languages and among the most discussed ones.
-	  This post is dedicated to the history, and the funny bits, of Haskell.
-	  We'll uncover some lesser-known facts along the way,
-	  and may even debunk some common misconceptions about the language.
-	</summary>
+    <summary>
+      Haskell is one of the most influential languages and among the most discussed ones.
+      This post is dedicated to the history, and the funny bits, of Haskell.
+      We'll uncover some lesser-known facts along the way,
+      and may even debunk some common misconceptions about the language.
+    </summary>
     <updated>2023-01-14T17:33:31Z</updated>
-    <link href="https://vau.place/post/haskell-history.html"/>
+    <link
+      href="https://vau.place/post/haskell-history.html"
+      rel="alternate"
+      type="text/html"
+    />
     <id>https://vau.place/post/haskell-history.html</id>
-    <content type="html" src="https://vau.place/post/haskell-history.html"/>
+    <content type="text/html" src="https://vau.place/post/haskell-history.html"/>
   </entry>
 
   <entry>
     <title>Printf is not a function</title>
-	<summary>
+    <summary>
       In many languages, formatted output looks like a normal function call.
       But compilers often treat those calls very differently.
       This post follows that strange pattern through Fortran, C, Pascal, OCaml, Python, and Rust.
-	</summary>
+    </summary>
     <updated>2021-12-27T21:03:02Z</updated>
-    <link href="https://vau.place/post/printf.html"/>
+    <link
+      href="https://vau.place/post/printf.html"
+      rel="alternate"
+      type="text/html"
+    />
     <id>https://vau.place/post/printf.html</id>
-    <content type="html" src="https://vau.place/post/printf.html"/>
+    <content type="text/html" src="https://vau.place/post/printf.html"/>
   </entry>
 
   <entry>
     <title>The incredible complexity of Javascript's if</title>
-	<summary>
+    <summary>
       An if statement looks like the simplest control-flow construct: evaluate a condition, choose a branch.
       But in some languages it is not that simple.
       This post follows the idea of truthiness from boolean-only checks,
       through Lisp and C, to Javascript's collection of falsy values.
-	</summary>
+    </summary>
     <updated>2021-12-10T13:42:40Z</updated>
-    <link href="https://vau.place/post/javascript-falsy.html"/>
+    <link
+      href="https://vau.place/post/javascript-falsy.html"
+      rel="alternate"
+      type="text/html"
+    />
     <id>https://vau.place/post/javascript-falsy.html</id>
-    <content type="html" src="https://vau.place/post/javascript-falsy.html"/>
+    <content type="text/html" src="https://vau.place/post/javascript-falsy.html"/>
   </entry>
 
   <entry>
@@ -102,38 +137,50 @@
     <summary>
       A collection of notable programming quotes. [SFW]
     </summary>
-    <link href="https://vau.place/post/quotes.html"/>
     <updated>2021-11-20T12:00:00Z</updated>
+    <link
+      href="https://vau.place/post/quotes.html"
+      rel="alternate"
+      type="text/html"
+    />
     <id>https://vau.place/post/quotes.html</id>
-    <content type="html" src="https://vau.place/post/quotes.html"/>
+    <content type="text/html" src="https://vau.place/post/quotes.html"/>
   </entry>
 
   <entry>
     <title>Static types vs contracts</title>
-	<summary>
+    <summary>
       There are two common ways of making program boundaries more trustworthy:
       Static type checking, which approximates program behavior before execution.
       Contracts that attach executable obligations to values and check them as the program runs.
       Contracts help when interface promises are richer than ordinary type signatures.
       They may depend on runtime values, state, or boundary crossing.
-	</summary>
-    <link href="https://vau.place/post/hyper-dynamic.html"/>
+    </summary>
     <updated>2021-11-16T00:52:06Z</updated>
+    <link
+      href="https://vau.place/post/hyper-dynamic.html"
+      rel="alternate"
+      type="text/html"
+    />
     <id>https://vau.place/post/hyper-dynamic.html</id>
-    <content type="html" src="https://vau.place/post/hyper-dynamic.html"/>
+    <content type="text/html" src="https://vau.place/post/hyper-dynamic.html"/>
   </entry>
 
   <entry>
     <title>Have you seen Kernel?</title>
-	<summary>
+    <summary>
       Kernel is a small Lisp-family language built around a dangerous old idea:
       what if the macro-like part of Lisp was first-class?
       It revives fexprs, gives them a disciplined semantics, and asks whether a language can be both tiny and radically reflective.
-	</summary>
-    <link href="https://vau.place/post/kernel.html"/>
+    </summary>
     <updated>2021-11-14T17:08:27Z</updated>
+    <link
+      href="https://vau.place/post/kernel.html"
+      rel="alternate"
+      type="text/html"
+    />
     <id>https://vau.place/post/kernel.html</id>
-    <content type="html" src="https://vau.place/post/kernel.html"/>
+    <content type="text/html" src="https://vau.place/post/kernel.html"/>
   </entry>
 
 </feed>
