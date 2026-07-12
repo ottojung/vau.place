@@ -125,6 +125,22 @@ dz = input.z
 <p> A reading map for polyhedral analysis and the abstract domains behind it. </p>
 
 <ul>
+
+  <li>
+    <b>GCC source: <code>graphite.cc</code> and <code>graphite-sese-to-poly.cc</code>.</b>
+    <p>
+      The actual compiler code.
+      <code>graphite.cc</code> begins with the very directly: "Gimple Represented as Polyhedra"
+      and implements the pass that converts "GIMPLE" into GCC's GRAPHITE representation.
+      One caveat: GCC GRAPHITE uses the polyhedral model for loop iteration domains, dependences, schedules, and transformations.
+      This is adjacent to, but not identical with, the convex-polyhedra abstract domain used to infer arbitrary numerical invariants in this article.
+    </p>
+    <a href="https://github.com/gcc-mirror/gcc/blob/master/gcc/graphite.cc">graphite.cc</a>
+    · <a href="https://github.com/gcc-mirror/gcc/blob/master/gcc/graphite-sese-to-poly.cc">graphite-sese-to-poly.cc</a>
+  </li>
+
+  <br>
+
   <li>
     <b>Antoine Miné, "Tutorial on Static Inference of Numeric Invariants by Abstract Interpretation" (2017).</b>
     <p>
@@ -153,27 +169,13 @@ dz = input.z
   <br>
 
   <li>
-    <b>Patrick Cousot and Nicolas Halbwachs, "Automatic Discovery of Linear Restraints Among Variables of a Program" (1978).</b>
-    <p>
-      The paper that introduces the polyhedral abstract domain.
-      Cousot and Halbwachs show that a compiler can discover linear equalities and inequalities among program variables
-      using convex polyhedra, and that these constraints can be computed automatically at compile time.
-      This is the historical center of the article's subject: the moment when "shapes" became a formal tool for program analysis.
-    </p>
-    <a href="https://www.di.ens.fr/~cousot/COUSOTpapers/POPL78.shtml">author page</a>
-  </li>
-
-  <br>
-
-  <li>
     <b>Antoine Miné, "The Octagon Abstract Domain" (2006).</b>
     <p>
-      The octagon domain restricts the permitted linear inequalities to those of the form ±x ± y ≤ c.
+      The octagon domain restricts the permitted linear inequalities to those of the form <code>±x ± y ≤ c</code>.
       This restriction trades expressiveness for significantly cheaper operations,
       making octagons a practical middle ground between intervals (which cannot relate variables at all)
       and full convex polyhedra.
-      The paper is useful here because it shows the domain hierarchy that polyhedra sit at the top of,
-      without requiring the article body to explain the trade-offs in detail.
+      The paper is useful here because it shows the domain hierarchy that polyhedra sit at the top of.
     </p>
     <a href="https://perso.lip6.fr/Antoine.Mine/publi/article-mine-HOSC06.pdf">PDF</a>
   </li>
@@ -221,29 +223,12 @@ dz = input.z
   <li>
     <b>Sebastian Pop, Albert Cohen, Cédric Bastoul, Sylvain Girbal, Georges-André Silber, and Nicolas Vasilache, "GRAPHITE: Polyhedral Analyses and Optimizations for GCC" (2006).</b>
     <p>
-      The conceptual companion to the GCC source code below.
+      The conceptual companion to the GCC source code.
       This GCC Summit paper explains the design of the GRAPHITE framework: how GIMPLE is converted into polyhedral representations of loop nests,
       how dependences and schedules are expressed as constraints, and what loop transformations the framework enables.
       It is the paper to read when you want to understand the compiler-pass architecture that the source code implements.
     </p>
     <a href="https://gcc.gnu.org/wiki/HomePage?action=AttachFile&do=get&target=2006-GCC-Summit-Proceedings.pdf">GCC Summit proceedings (PDF)</a>
-  </li>
-
-  <br>
-
-  <li>
-    <b>GCC source: <code>graphite.cc</code> and <code>graphite-sese-to-poly.cc</code>.</b>
-    <p>
-      The actual compiler code.
-      <code>graphite.cc</code> begins with the wonderfully direct description "Gimple Represented as Polyhedra"
-      and implements the pass that converts GIMPLE into GCC's GRAPHITE representation, performs loop transformations, and converts back.
-      <code>graphite-sese-to-poly.cc</code> handles the conversion of single-entry single-exit regions into polyhedral form.
-      An important caveat: GCC GRAPHITE uses the polyhedral model for loop iteration domains, dependences, schedules, and transformations.
-      This is adjacent to, but not identical with, the convex-polyhedra abstract domain used to infer arbitrary numerical invariants in the main article.
-      The two share mathematical foundations but serve different purposes in the compiler pipeline.
-    </p>
-    <a href="https://github.com/gcc-mirror/gcc/blob/master/gcc/graphite.cc">graphite.cc</a>
-    · <a href="https://github.com/gcc-mirror/gcc/blob/master/gcc/graphite-sese-to-poly.cc">graphite-sese-to-poly.cc</a>
   </li>
 </ul>
 
