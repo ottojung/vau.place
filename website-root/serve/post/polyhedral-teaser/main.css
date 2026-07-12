@@ -33,6 +33,30 @@ body {
 
 code {
 	font-family: 'Fira Code', monospace;
+	background-color: rgba(0, 0, 0, 0.06);
+	padding: 0.15em 0.35em;
+	border-radius: 0.25em;
+	color: #2fafff;
+}
+
+pre {
+	font-family: 'Fira Code', monospace;
+	font-size: 0.85em;
+	line-height: 1.55;
+	padding: 1.1em 1.3em;
+	border-radius: 0.5em;
+	background-color: #2b2b2b;
+	color: #e0e0e0;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	margin: 1.4em 0;
+}
+
+pre code {
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+	color: inherit;
 }
 
 h1, h2, h3, b {
@@ -70,6 +94,36 @@ a {
 	font-weight: 600;
 }
 
+.builtin {
+	font-family: 'Fira Code', monospace;
+	color: #c5a3ff;
+	font-weight: 500;
+}
+
+.function {
+	font-family: 'Fira Code', monospace;
+	color: #e2b93d;
+	font-weight: 500;
+}
+
+.number {
+	font-family: 'Fira Code', monospace;
+	color: #f08d49;
+	font-weight: 400;
+}
+
+.operator {
+	font-family: 'Fira Code', monospace;
+	color: #67cdcc;
+	font-weight: 400;
+}
+
+.attribute {
+	font-family: 'Fira Code', monospace;
+	color: #87c38a;
+	font-weight: 400;
+}
+
 .quote {
 	font-family: 'Fira Code', monospace;
 	color: #a55233;
@@ -78,7 +132,8 @@ a {
 
 .comment {
 	font-family: 'Fira Code', monospace;
-	color: #f57b51;
+	color: #7a7a7a;
+	font-style: italic;
 	font-weight: 400;
 }
 

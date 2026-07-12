@@ -3,7 +3,7 @@
 
 <html lang="en">
 <head>
-  <title> Vau's blog </title>
+  <title> Compilers draw shapes — Vau's blog </title>
   <meta charset="UTF-8">
   <meta name="robots" content="noindex"> <!-- prevent robots
 from indexing -->
@@ -13,7 +13,7 @@ from indexing -->
 </head>
 <body>
 
-<h3>  </h3>
+<h3> Compilers draw shapes </h3>
 
 
 <p>Compilers have a boring public life. Their input is text, their output is text, and the process is usually hidden behind a command line. Internally, though, they deal with much richer objects. In this post I want to advertise those that I particularly like: the shapes that compilers draw from the possible values of program variables.</p>
@@ -26,14 +26,14 @@ from indexing -->
 dy = input.y
 dz = input.z
 
-if abs(dx) + abs(dy) + abs(dz) &lt;= 1:
+<span class="keyword">if</span> <span class="builtin">abs</span>(dx) + <span class="builtin">abs</span>(dy) + <span class="builtin">abs</span>(dz) <span class="operator">&lt;=</span> <span class="number">1</span>:
     position.x += dx
     position.y += dy
     position.z += dz</code></pre>
 
 <p>The rule gives each step a fixed movement budget. Moving in <code>x</code> uses part of the budget, so there is less left for <code>y</code> and <code>z</code>. At the line where the position is updated, the possible values of the three variables are exactly the triples accepted by the condition:</p>
 
-<pre><code>|dx| + |dy| + |dz| &lt;= 1</code></pre>
+<pre><code>|dx| + |dy| + |dz| <span class="operator">&lt;=</span> <span class="number">1</span></code></pre>
 
 <p>That condition makes a 3-dimensional solid. More concretely an octahedron with six corners, eight triangular faces, one point on each positive and negative axis. And it looks like a simple cut gemstone:</p>
 
@@ -41,9 +41,9 @@ if abs(dx) + abs(dy) + abs(dz) &lt;= 1:
   <img width='50%' src="./octahedron_game_example.png"/>
 </div>
 
-<p>The faces of the gemstone are linear inequalities. One face comes from <code>dx + dy + dz &lt;= 1</code>, another from <code>dx + dy - dz &lt;= 1</code>, another from <code>dx - dy + dz &lt;= 1</code>, and so on through the possible choices of signs. The branch condition in the program has become a polyhedron.</p>
+<p>The faces of the gemstone are linear inequalities. One face comes from <code>dx + dy + dz <span class="operator">&lt;=</span> 1</code>, another from <code>dx + dy - dz <span class="operator">&lt;=</span> 1</code>, another from <code>dx - dy + dz <span class="operator">&lt;=</span> 1</code>, and so on through the possible choices of signs. The branch condition in the program has become a polyhedron.</p>
 
-<p>This is the setting of <em>polyhedral analysis</em>. It works with program facts made from linear expressions: <code>i &lt; n</code>, <code>i + j &lt;= len</code>, <code>used + free == capacity</code>. These facts show up around counters, lengths, offsets, capacities, and budgets, because many program quantities are updated and compared by adding or subtracting.</p>
+<p>This is the setting of <em>polyhedral analysis</em>. It works with program facts made from linear expressions: <code>i <span class="operator">&lt;</span> n</code>, <code>i + j <span class="operator">&lt;=</span> len</code>, <code>used + free <span class="operator">==</span> capacity</code>. These facts show up around counters, lengths, offsets, capacities, and budgets, because many program quantities are updated and compared by adding or subtracting.</p>
 
 <p>The analysis keeps these facts as a collection of linear inequalities. That choice is what makes the shapes convex, and it is a practical choice: linear constraints are useful enough to express many relationships in programs, and simple enough to compute with as the program passes through branches and loops. Of course, the cost is that the analysis cannot draw every actual strange shape. Separate cases get covered by one larger shape, inconvenient conditions get replaced by something that is more easily expressible.</p>
 
@@ -57,43 +57,43 @@ if abs(dx) + abs(dy) + abs(dz) &lt;= 1:
   When an observation is classified incorrectly, the usual perceptron update adjusts the weights:
 </p>
 
-<pre><code>def fit(a, b, c, d, label):
-    assert (
-        a in [-1, 1]
-        and b in [-1, 1]
-        and c in [-1, 1]
-        and d in [-1, 1]
-        and label in [-1, 1]
+<pre><code><span class="keyword">def</span> <span class="function">fit</span>(a, b, c, d, label):
+    <span class="builtin">assert</span> (
+        a <span class="keyword">in</span> [<span class="number">-1</span>, <span class="number">1</span>]
+        <span class="keyword">and</span> b <span class="keyword">in</span> [<span class="number">-1</span>, <span class="number">1</span>]
+        <span class="keyword">and</span> c <span class="keyword">in</span> [<span class="number">-1</span>, <span class="number">1</span>]
+        <span class="keyword">and</span> d <span class="keyword">in</span> [<span class="number">-1</span>, <span class="number">1</span>]
+        <span class="keyword">and</span> label <span class="keyword">in</span> [<span class="number">-1</span>, <span class="number">1</span>]
     )
 
-    weights = [0, 0, -8]
+    weights = [<span class="number">0</span>, <span class="number">0</span>, <span class="number">-8</span>]
 
     observations = (
         (
-            a + 3*b + 3*c + d,
-            3*a + b - c - 3*d,
-            3,
+            a + <span class="number">3</span><span class="operator">*</span>b + <span class="number">3</span><span class="operator">*</span>c + d,
+            <span class="number">3</span><span class="operator">*</span>a + b <span class="operator">-</span> c <span class="operator">-</span> <span class="number">3</span><span class="operator">*</span>d,
+            <span class="number">3</span>,
         ),
         (
-            -a + c + 2*d,
-            a + 2*b + c,
-            1,
+            <span class="number">-a</span> + c + <span class="number">2</span><span class="operator">*</span>d,
+            a + <span class="number">2</span><span class="operator">*</span>b + c,
+            <span class="number">1</span>,
         ),
     )
 
-    for observation in observations:
-        margin = label * sum(
-            weight * feature
-            for weight, feature in zip(weights, observation)
+    <span class="keyword">for</span> observation <span class="keyword">in</span> observations:
+        margin = label <span class="operator">*</span> <span class="builtin">sum</span>(
+            weight <span class="operator">*</span> feature
+            <span class="keyword">for</span> weight, feature <span class="keyword">in</span> <span class="builtin">zip</span>(weights, observation)
         )
 
-        if margin &lt;= 0:
+        <span class="keyword">if</span> margin <span class="operator">&lt;=</span> <span class="number">0</span>:
             weights = [
-                weight + label * feature
-                for weight, feature in zip(weights, observation)
+                weight + label <span class="operator">*</span> feature
+                <span class="keyword">for</span> weight, feature <span class="keyword">in</span> <span class="builtin">zip</span>(weights, observation)
             ]
 
-    return tuple(weights)</code></pre>
+    <span class="keyword">return</span> <span class="builtin">tuple</span>(weights)</code></pre>
 
 <p>
   Do you notice anything suspicious about this program?
@@ -117,6 +117,135 @@ if abs(dx) + abs(dy) + abs(dz) &lt;= 1:
 
   <p>Across all values permitted by the assertions, its executions finish in seventeen extreme states. One is the bottom point. Eight form the wide middle of the gemstone, while another eight form the smaller, rotated ring around its crown.</p>
 </details>
+
+<br>
+
+<h4> References </h4>
+
+<p> A reading map for polyhedral analysis and the abstract domains behind it. </p>
+
+<ul>
+  <li>
+    <b>Antoine Miné, "Tutorial on Static Inference of Numeric Invariants by Abstract Interpretation" (2017).</b>
+    <p>
+      The best single entry point for the material in this article.
+      Miné covers intervals, octagons, polyhedra, and domain combiners in a self-contained tutorial,
+      starting from concrete semantics and building up to the abstractions that make analyses like the one described here possible.
+      A reader who wants to understand what a compiler is actually doing when it "draws shapes" should start here.
+    </p>
+    <a href="https://doi.org/10.1561/2500000034">doi:10.1561/2500000034</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Patrick Cousot and Radhia Cousot, "Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints" (1977).</b>
+    <p>
+      The foundational paper for all of abstract interpretation.
+      Cousot and Cousot introduce the idea that program properties can be computed by working in a simplified lattice
+      and approximating the concrete semantics.
+      Everything in this article — the shapes, the convex hulls, the trade-offs between precision and cost —
+      is an instance of the framework this paper establishes.
+    </p>
+    <a href="https://www.di.ens.fr/~cousot/COUSOTpapers/POPL77.shtml">author page</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Patrick Cousot and Nicolas Halbwachs, "Automatic Discovery of Linear Restraints Among Variables of a Program" (1978).</b>
+    <p>
+      The paper that introduces the polyhedral abstract domain.
+      Cousot and Halbwachs show that a compiler can discover linear equalities and inequalities among program variables
+      using convex polyhedra, and that these constraints can be computed automatically at compile time.
+      This is the historical center of the article's subject: the moment when "shapes" became a formal tool for program analysis.
+    </p>
+    <a href="https://www.di.ens.fr/~cousot/COUSOTpapers/POPL78.shtml">author page</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Antoine Miné, "The Octagon Abstract Domain" (2006).</b>
+    <p>
+      The octagon domain restricts the permitted linear inequalities to those of the form ±x ± y ≤ c.
+      This restriction trades expressiveness for significantly cheaper operations,
+      making octagons a practical middle ground between intervals (which cannot relate variables at all)
+      and full convex polyhedra.
+      The paper is useful here because it shows the domain hierarchy that polyhedra sit at the top of,
+      without requiring the article body to explain the trade-offs in detail.
+    </p>
+    <a href="https://perso.lip6.fr/Antoine.Mine/publi/article-mine-HOSC06.pdf">PDF</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>APRON Numerical Abstract Domain Library.</b>
+    <p>
+      APRON provides a common C interface to several numerical abstract domains — intervals, octagons, polyhedra, zonotopes —
+      so that changing the domain in a static analyzer is a one-line change.
+      It is the practical demonstration that the shapes discussed in this article are not just theoretical objects:
+      they are interchangeable analysis components that real tools plug in and out.
+    </p>
+    <a href="https://antoinemine.github.io/Apron/doc/">project page</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>R. Bagnara, P. M. Hill, and E. Zaffanella, "The Parma Polyhedra Library: Toward a Complete Set of Numerical Abstractions for the Analysis and Verification of Hardware and Software Systems" (2008).</b>
+    <p>
+      The Parma Polyhedra Library (PPL) is a mature Free Software implementation of convex polyhedra and related numerical abstractions.
+      It uses exact integer arithmetic, supports open and closed constraints, and provides parametric integer programming.
+      If you want to see what a production-quality polyhedral library looks like from the inside, this paper and the accompanying manual are the place to start.
+    </p>
+    <a href="https://www.cs.unipr.it/~bagnara/Papers/PDF/SCP08.pdf">PDF</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Sven Verdoolaege, "isl: An Integer Set Library for the Polyhedral Model" (2010).</b>
+    <p>
+      isl is the C library that GCC and LLVM use for manipulating integer sets and relations bounded by affine constraints.
+      It provides the polyhedral compilation primitives — dependence analysis, schedule trees, AST generation —
+      that turn the abstract shapes of this article into concrete loop transformations.
+      The manual is dense but precise, and the library is the real engine behind the polyhedral model in production compilers.
+    </p>
+    <a href="https://libisl.sourceforge.io/user.html">manual</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Sebastian Pop, Albert Cohen, Cédric Bastoul, Sylvain Girbal, Georges-André Silber, and Nicolas Vasilache, "GRAPHITE: Polyhedral Analyses and Optimizations for GCC" (2006).</b>
+    <p>
+      The conceptual companion to the GCC source code below.
+      This GCC Summit paper explains the design of the GRAPHITE framework: how GIMPLE is converted into polyhedral representations of loop nests,
+      how dependences and schedules are expressed as constraints, and what loop transformations the framework enables.
+      It is the paper to read when you want to understand the compiler-pass architecture that the source code implements.
+    </p>
+    <a href="https://gcc.gnu.org/wiki/HomePage?action=AttachFile&do=get&target=2006-GCC-Summit-Proceedings.pdf">GCC Summit proceedings (PDF)</a>
+  </li>
+
+  <br>
+
+  <li>
+    <b>GCC source: <code>graphite.cc</code> and <code>graphite-sese-to-poly.cc</code>.</b>
+    <p>
+      The actual compiler code.
+      <code>graphite.cc</code> begins with the wonderfully direct description "Gimple Represented as Polyhedra"
+      and implements the pass that converts GIMPLE into GCC's GRAPHITE representation, performs loop transformations, and converts back.
+      <code>graphite-sese-to-poly.cc</code> handles the conversion of single-entry single-exit regions into polyhedral form.
+      An important caveat: GCC GRAPHITE uses the polyhedral model for loop iteration domains, dependences, schedules, and transformations.
+      This is adjacent to, but not identical with, the convex-polyhedra abstract domain used to infer arbitrary numerical invariants in the main article.
+      The two share mathematical foundations but serve different purposes in the compiler pipeline.
+    </p>
+    <a href="https://github.com/gcc-mirror/gcc/blob/master/gcc/graphite.cc">graphite.cc</a>
+    · <a href="https://github.com/gcc-mirror/gcc/blob/master/gcc/graphite-sese-to-poly.cc">graphite-sese-to-poly.cc</a>
+  </li>
+</ul>
 
 <br>
 
