@@ -95,17 +95,22 @@ if abs(dx) + abs(dy) + abs(dz) &lt;= 1:
 
     return tuple(weights)</code></pre>
 
-<p>The convex hull of the three values in <code>weights</code> is exactly this polyhedron:</p>
 
-<div style="text-align: center;">
-  <img
-    width="60%"
-    src="./gemstone_shape.png"
-    alt="The gemstone-shaped convex hull of the perceptron's possible final weights"
-  />
-</div>
+<details>
+  <summary><code><span class="keyword">reveal</span></code></summary>
 
-<p>Across all values permitted by the assertions, its executions finish in seventeen extreme states. One is the bottom point. Eight form the wide middle of the gemstone, while another eight form the smaller, rotated ring around its crown.</p>
+  <p>The convex hull of the three values in <code>weights</code> is exactly this polyhedron:</p>
+
+  <div style="text-align: center;">
+    <img
+      width="60%"
+      src="./gemstone_shape.png"
+      alt="The gemstone-shaped convex hull of the perceptron's possible final weights"
+      />
+  </div>
+
+  <p>Across all values permitted by the assertions, its executions finish in seventeen extreme states. One is the bottom point. Eight form the wide middle of the gemstone, while another eight form the smaller, rotated ring around its crown.</p>
+</details>
 
 <br>
 
