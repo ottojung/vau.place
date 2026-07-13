@@ -49,7 +49,7 @@ dz = input.z
 
 <p>So polyhedral analysis has a literal name. It is a way for a compiler to learn facts about a program by producing and transforming polyhedra.</p>
 
-<h3>Compiler steganography</h3>
+<h4>Compiler steganography</h4>
 
 <p>
   Here is a small binary perceptron.
@@ -127,7 +127,7 @@ dz = input.z
 <ul>
 
   <li>
-    <b>GCC source: <code>graphite.cc</code> and <code>graphite-sese-to-poly.cc</code>.</b>
+    <h4>GCC source: <code>graphite.cc</code> and <code>graphite-sese-to-poly.cc</code>.</h4>
     <p>
       The actual compiler code.
       <code>graphite.cc</code> begins with the very directly: "Gimple Represented as Polyhedra"
@@ -142,7 +142,7 @@ dz = input.z
   <br>
 
   <li>
-    <b>Antoine Miné, "Tutorial on Static Inference of Numeric Invariants by Abstract Interpretation" (2017).</b>
+    <h4>Antoine Miné, "Tutorial on Static Inference of Numeric Invariants by Abstract Interpretation" (2017).</h4>
     <p>
       The best single entry point for the material in this article.
       Miné covers intervals, octagons, polyhedra, and domain combiners in a self-contained tutorial,
@@ -155,7 +155,7 @@ dz = input.z
   <br>
 
   <li>
-    <b>Patrick Cousot and Radhia Cousot, "Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints" (1977).</b>
+    <h4>Patrick Cousot and Radhia Cousot, "Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints" (1977).</h4>
     <p>
       The foundational paper for all of abstract interpretation.
       Cousot and Cousot introduce the idea that program properties can be computed by working in a simplified lattice
@@ -169,7 +169,7 @@ dz = input.z
   <br>
 
   <li>
-    <b>Antoine Miné, "The Octagon Abstract Domain" (2006).</b>
+    <h4>Antoine Miné, "The Octagon Abstract Domain" (2006).</h4>
     <p>
       The octagon domain restricts the permitted linear inequalities to those of the form <code>±x ± y ≤ c</code>.
       This restriction trades expressiveness for significantly cheaper operations,
@@ -183,7 +183,7 @@ dz = input.z
   <br>
 
   <li>
-    <b>APRON Numerical Abstract Domain Library.</b>
+    <h4>APRON Numerical Abstract Domain Library.</h4>
     <p>
       APRON provides a common C interface to several numerical abstract domains — intervals, octagons, polyhedra, zonotopes —
       so that changing the domain in a static analyzer is a one-line change.
@@ -196,7 +196,7 @@ dz = input.z
   <br>
 
   <li>
-    <b>R. Bagnara, P. M. Hill, and E. Zaffanella, "The Parma Polyhedra Library: Toward a Complete Set of Numerical Abstractions for the Analysis and Verification of Hardware and Software Systems" (2008).</b>
+    <h4>R. Bagnara, P. M. Hill, and E. Zaffanella, "The Parma Polyhedra Library: Toward a Complete Set of Numerical Abstractions for the Analysis and Verification of Hardware and Software Systems" (2008).</h4>
     <p>
       The Parma Polyhedra Library (PPL) is a mature Free Software implementation of convex polyhedra and related numerical abstractions.
       It uses exact integer arithmetic, supports open and closed constraints, and provides parametric integer programming.
@@ -208,7 +208,7 @@ dz = input.z
   <br>
 
   <li>
-    <b>Sven Verdoolaege, "isl: An Integer Set Library for the Polyhedral Model" (2010).</b>
+    <h4>Sven Verdoolaege, "isl: An Integer Set Library for the Polyhedral Model" (2010).</h4>
     <p>
       isl is the C library that GCC and LLVM use for manipulating integer sets and relations bounded by affine constraints.
       It provides the polyhedral compilation primitives — dependence analysis, schedule trees, AST generation —
@@ -221,7 +221,7 @@ dz = input.z
   <br>
 
   <li>
-    <b>Sebastian Pop, Albert Cohen, Cédric Bastoul, Sylvain Girbal, Georges-André Silber, and Nicolas Vasilache, "GRAPHITE: Polyhedral Analyses and Optimizations for GCC" (2006).</b>
+    <h4>Sebastian Pop, Albert Cohen, Cédric Bastoul, Sylvain Girbal, Georges-André Silber, and Nicolas Vasilache, "GRAPHITE: Polyhedral Analyses and Optimizations for GCC" (2006).</h4>
     <p>
       The conceptual companion to the GCC source code.
       This GCC Summit paper explains the design of the GRAPHITE framework: how GIMPLE is converted into polyhedral representations of loop nests,
