@@ -35,13 +35,13 @@ dz = input.z
 
 <pre><code>|dx| + |dy| + |dz| <span class="operator">&lt;=</span> <span class="number">1</span></code></pre>
 
-<p>That condition makes a 3-dimensional solid. More concretely an octahedron with six corners, eight triangular faces, one point on each positive and negative axis. And it looks like a simple cut gemstone:</p>
+<p>That condition makes a 3-dimensional solid. More concretely an octahedron with six corners, eight triangular faces, one point on each positive and negative axis. It's pleasant to look at:</p>
 
 <div style="text-align: center;">
   <img width='50%' src="./octahedron_game_example.png"/>
 </div>
 
-<p>The faces of the gemstone are linear inequalities. One face comes from <code>dx + dy + dz <span class="operator">&lt;=</span> 1</code>, another from <code>dx + dy - dz <span class="operator">&lt;=</span> 1</code>, another from <code>dx - dy + dz <span class="operator">&lt;=</span> 1</code>, and so on through the possible choices of signs. The branch condition in the program has become a polyhedron.</p>
+<p>The shape is determined by linear inequalities. One face comes from <code>dx + dy + dz <span class="operator">&lt;=</span> 1</code>, another from <code>dx + dy - dz <span class="operator">&lt;=</span> 1</code>, another from <code>dx - dy + dz <span class="operator">&lt;=</span> 1</code>, and so on through the possible choices of signs. The branch condition in the program has become a polyhedron.</p>
 
 <p>This is the setting of <em>polyhedral analysis</em>. It works with program facts made from linear expressions: <code>i <span class="operator">&lt;</span> n</code>, <code>i + j <span class="operator">&lt;=</span> len</code>, <code>used + free <span class="operator">==</span> capacity</code>. These facts show up around counters, lengths, offsets, capacities, and budgets, because many program quantities are updated and compared by adding or subtracting.</p>
 
