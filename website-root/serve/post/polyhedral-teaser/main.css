@@ -63,9 +63,18 @@ h1, h2, h3, b {
 	color: #393e46;
 }
 
-h1, h2, h3 {
+h1, h2 {
 	font-family: 'Merriweather', serif;
 	font-size: 32pt;
+}
+
+h3 {
+	font-family: 'Merriweather', serif;
+	font-size: 27pt;
+}
+
+h3 {
+	text-align: right;
 }
 
 a {
