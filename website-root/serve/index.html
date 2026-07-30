@@ -51,31 +51,28 @@
         border-bottom: 1px dotted rgba(80, 80, 60, 0.45);
     }
 
-    .site-header h1 {
-        margin-bottom: 0.35em;
-    }
-
-    .site-subheader {
+    .site-header-row {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
-        gap: 2em;
+        align-items: baseline;
+    }
+
+    .site-header h1 {
+        margin-bottom: 0;
     }
 
     .site-subheader p {
-        margin-top: 0;
+        margin-top: 0.6em;
         margin-bottom: 0;
-        max-width: 42em;
         line-height: 1.35;
     }
 
     .site-nav {
         white-space: nowrap;
-        margin-bottom: 10px;
     }
 
     @media (max-width: 650px) {
-        .site-subheader {
+        .site-header-row {
             display: block;
         }
 
@@ -90,19 +87,21 @@
 <div class="main-inner-index-part">
 
   <header class="site-header">
-    <h1>Welcome to Vau place</h1>
-
-    <div class="site-subheader">
-      <p>
-        A small personal blog about programming languages
-        and software ideas that got stuck in my head.
-      </p>
+    <div class="site-header-row">
+      <h1>Welcome to Vau place</h1>
 
       <nav class="site-nav">
         <a href="./atom.xml">RSS</a>
         ·
         <a href="./other.html">about</a>
       </nav>
+    </div>
+
+    <div class="site-subheader">
+      <p>
+        A small personal blog about programming languages
+        and software ideas that got stuck in my head.
+      </p>
     </div>
   </header>
 
