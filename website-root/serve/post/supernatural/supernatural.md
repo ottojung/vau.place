@@ -50,27 +50,9 @@ I began to keep a dossier. Not a taxonomy—God preserve me from one more axis�
 
 **Schaerbeek, Belgium.**
 
-<NOTE>
-This is a made-up story of how the Shaerbeek incident happened.
-There is a documented part, which is included at the end.
-But the main piece is the made-up horror story.
+On Sunday, 18 May 2003, Belgium voted. I did not know, then, that one number in Schaerbeek would spend the next two decades being explained.
 
----
-
-It was told to us by a technician who had been there.
-Let us sit with him in a cafeteria - that's how we hear the story.
-The story should start with description of how we met the technician, and what kind of person he was.
-We should describe the cafeteria, too, the technician's character, his mannerisms, etc.
-
-</NOTE>
-
-<TODO>
-Improve the following opening paragraph.
-Tie to an important event that happend during that day.
-Example: 10 Sep 2008 — First beam sent around CERN’s Large Hadron Collider. If you want a wink toward particles, randomness, and tiny events with outsized consequences.
-</TODO>
-
-I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late. In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
+Years later I am in a cafeteria there, just off the tram line, waiting for a man who is late. In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
 
 The windows sit low; from inside, the passing traffic moves along the upper edge of the view like a slow, mechanical ceiling. The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs, every seat already assigned its opposite whether occupied or not. The queue bends once before the till in an L-shape that keeps the doorway clear.
 
@@ -78,164 +60,163 @@ I take my place in it, moving forward in small, regular steps each time the draw
 
 I sit facing the empty chair and wait, noticing how the room seems complete except for the single absence across from me.
 
-<NOTE>
-Below we describe the technician who arrives, his character, mannerisms, etc.
-Use these:
-- "He worked elections—“not politics,” he said quickly, “interfaces.”".
-- "... a habit of tapping the table as though confirming liveness.".
-- "He used the word spontaneous without liking it."
-</NOTE>
-
 He arrives at the point where waiting has become a kind of agreement with the empty chair. He stands at the edge of the table for a moment, as if checking that the setting matches a description he has been given, then sits without asking whether this is the right place.
 
 We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He worked elections—“not politics,” he said quickly, “interfaces.” As he speaks he keeps straightening small things—the sugar packet, the spoon—returning between sentences to tapping the table, as though confirming liveness.
 
-<TODO>
-Improve the following paragraph. The goal is to show that technician dislikes "surprizes".
-</TODO>
+I mention a delay on the tram. He says there had been “a spontaneous adjustment to the route,” then looks toward the window, where the next tram is obeying its rails with ostentatious competence. He used the word spontaneous without liking it.
 
-I mention a delay on the tram. He nods and says there had been “a spontaneous adjustment to the route,” then falls briefly silent, as if the phrase does not belong to him. He used the word "spontaneous" without liking it.
+After a while he reaches for the two biscuits wrapped together beside his cup.
 
-<NOTE>
-The goal of the part below is to show the misalignment between the narrator and the technician.
-</NOTE>
+“You can tell a lot about a nation from how its biscuits break,” he says.
 
-We had been sitting for some time, our coffees cooling to the same shade of resignation, when he reached for the complimentary biscuits on the saucer. He studied them briefly — two, wrapped together in cellophane — and then said, as if concluding a long experiment, “You can tell a lot about a nation from how its biscuits break.”
+“How they break?”
 
-I looked at him. “How they break?”
+“The English surrender at the middle. The French fracture elegantly. Belgian biscuits resist until you lose interest.”
 
-He nodded, tapping the packet against the table. “You see, the English ones surrender at the middle. The French fracture elegantly, as if it were part of the design. Belgian biscuits, though — they resist until you lose interest.”
+I suggest composition, humidity, manufacturing tolerances.
 
-I considered the claim, uncertain whether to take it as metaphor or field observation. “Perhaps,” I said finally, “the composition differs.”
+“No,” he says. “Temperament.”
 
-He smiled faintly, unwrapping them. “No, it’s temperament. The dough remembers its upbringing.”
+He breaks one. It crumbles diagonally.
 
-He broke one biscuit; it split unevenly, half crumbling onto the napkin. He seemed pleased. “See? The kind of nation that tolerates asymmetry but not waste.”
+“See?”
 
-I reached for the other biscuit, broke it deliberately down the middle. “That one was symmetrical,” I observed.
+I break the other down the middle.
 
-“Outlier,” he said, already eating the first. “There are always outliers.”
+“Outlier,” he says.
 
-I wanted to ask whether he was speaking of nations or of biscuits, but it felt too pedantic to clarify and too absurd not to. Instead I stirred my coffee and said, “Quality control, perhaps.”
+“Quality control, perhaps.”
 
-He looked genuinely impressed. “Exactly,” he said, as though I had finally joined the conversation he’d been having alone.
+He looks genuinely pleased. “Exactly.”
 
-For a moment we both ate in silence, the fragments softening in the coffee.
+It is the first time that afternoon we reach agreement, and it is on a proposition neither of us has actually made.
 
-He watched the room with the same concentration he had given to their fracture, as if the café itself were being tested for compliance.
+He watches the room with the same concentration he had given the biscuit, as if the café itself were being tested for compliance.
 
-“When people talk about elections,” he said at last, “they always mean the result. They don’t talk about the day itself.”
+“When people talk about elections,” he says at last, “they always mean the result. They don’t talk about the day itself.”
 
-This sounded like an opening for another small theory, ballots behaving like biscuits, perhaps. I kept myself from nodding or asking questions, trying not to indulge him this time. But he continued, the way one continues a form onto the next page because there is no space left on the first.
+This sounds like an opening for another small theory. I decide not to encourage it.
 
-“I worked one day,” he said, “that stayed with me more than the result it produced.”
+“I worked one day,” he continues, “that stayed with me more than the result it produced.”
 
-<FIXME>
-In the following paragraph, instead of having narrator "file the incident", he should learn about it from somewhere else. Do not assume he had any connection to the story itself beyond merely hearing about it. Maybe in rumors only.
-</FIXME>
-<DRAFT>
-He mentioned a school in Schaerbeek, a federal election, a machine that misbihaved. I recognised the outline before he finished the sentence. Years earlier I had filed the incident away under the comforting label computer error, a newspaper curiosity had appeared and then been explained. It took me a moment to adjust to the idea that the man across from me had been inside the room I had imagined only from reports.
-</DRAFT>
+He mentions Schaerbeek, the federal election, and a candidate with a total that could not exist. I know the outline. It is one of those incidents that circulated for years among programmers in compressed form: Belgium, voting machine, 4,096 votes, cosmic ray. The story is usually told in three sentences, four if the audience does not immediately recognize a power of two.
 
-<TODO>
-Fix the following. It should be simpler and contain "He did not tell it in order, but I will".
-</TODO>
-<DRAFT>
-He did not tell it as a story. He circled it, doubling back, supplying conditions and side remarks as they occurred to him. For my own sanity I will lay it out the way a checklist would have preferred it: in an order that suggests the day was meant to proceed.
-</DRAFT>
+He did not tell it in order, but I will.
 
-<TODO>
-In the following paragraph add the carpet introduction, "... a carpet whose pattern is an argument against democracy.". It should strictly be mentioned as the last object in an enumeration of the voting hall's objects.
-</TODO>
-<DRAFT>
-The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. ...
-</DRAFT>
+The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and a carpet whose pattern is an argument against democracy.
 
 He had been sent there as technician, a word expansive enough to cover whatever had not yet been assigned to the others. On his table lay the checklist: confirm serial numbers, confirm counters at zero, confirm seals intact; note every confirmation in ink, sign where indicated. Behind him, near the door, two party representatives occupied metal chairs with the air of people who had been told to observe “the process” and were still waiting for the process to begin. A third watcher, a schoolteacher seconded for the day, stood where she could see both the machines and the clerks and seemed unsure which of them constituted the real work.
 
-<NOTE>Notes, thoughts, and suggestions for the new paragraph below:
+The doors opened at eight. Voters arrived in the hesitant rhythm of early morning, each one checked against the register, handed a card, directed to a booth. The technician watched the first ballot cast: a woman who studied the screen for longer than the instructions required, then pressed confirm with a small nod, as if confirming a translation rather than a choice. The machine accepted it without comment. Its brief hum was the only evidence that anything had been recorded at all.
 
-**Purpose:** Bridge from the static "waiting room" tableau to the procedural rhythm of voting. Show the day beginning in earnest, but maintain the flat, observational tone. No unease yet—this is still Beat A/B territory.
+By noon the rhythm had settled. Clerks called numbers from their lists; voters stepped forward when summoned; booths filled and emptied; counters advanced. The technician made his rounds between displays that showed nothing more interesting than incremental totals. He replaced one reluctant cable, reseated one connector, initialled two boxes. Nothing memorable happened, which is the principal requirement of election technology.
 
-**Themes to reinforce:**
-- The choreography of democratic process as mechanical ritual
-- The gap between the symbolic weight of voting and its mundane execution
-- The technician's role as silent custodian of a system he doesn't fully own
+After the doors closed, the room changed function without changing appearance. Voters disappeared; arithmetic took their place. One clerk read numbers aloud while another confirmed them from a separate display. A printer fed out a narrow white tape that curled over the table edge and, after some time, reached the floor.
 
-**Suggestions for variation:**
-1. Could add a small detail about the first voter (elderly? hesitant? overly confident?) to humanize the machinery
-2. Could mention the technician checking something on the machine as the first vote is cast—a small ritual of his own
-3. Could hint at the dry atmosphere (foreshadowing the "tonight is dry" line) through a mention of static, or someone's hair, or paper crackling
+The air had become very dry. Paper made a small fibrous sound when separated. A wool sleeve cracked once against the back of a plastic chair. The technician remembers the smell of warm dust from the equipment and, beneath it, the sharper smell of the school radiators, although he also insists the radiators were off. I have learned not to correct memories at the point where they become useful.
 
-**Potential expansion points:**
-- The phrase "as if confirming a translation" could be developed into a longer meditation on the gap between intention and record
-- The mention of the machine's sound could echo the later "identifying birds" line from the schoolteacher
+The first totals agreed. The second totals agreed. A discrepancy of one was traced to a line read twice and removed. A clerk uncapped a pen and left it uncapped. The tip darkened and then dulled.
 
-**Tone check:** Keep it procedural and uncolored. No metaphors yet. The prose should feel like a form being filled out—correct, neutral, waiting.
-</NOTE>
+There is the certainty, never admitted aloud, that somewhere a check is missing and that this is sane; that checks go missing the way buttons go missing from coats. In a well-run procedure this certainty is not fear. It is what procedures are for. Each check exists because some earlier person learned which small omission the world prefers.
 
-The doors opened at eight. Voters arrived in the hesitant rhythm of early morning, each one checked against the register, handed a card, directed to a booth. The technician watched the first ballot cast: a woman who studied the screen for longer than the instructions required, then pressed confirm with a small nod, as if confirming a translation rather than a choice. The machine accepted it without comment. Its sound—a brief, administrative hum—was the only evidence that anything had been recorded at all.
+They reached one candidate’s preferences.
 
-By noon the rhythm had settled into something approaching routine. The clerks called numbers from their lists; voters stepped forward when summoned; the booths filled and emptied in orderly succession. The technician made his rounds between the machines, checking displays that showed nothing more interesting than incremental counts. Each device performed its assigned function: accept input, record choice, advance counter. The party watchers had grown comfortable enough to exchange small talk about the weather—dry for May, they agreed, unusually so.
+The reader said the number.
 
-The afternoon brought the first tallies. One clerk read numbers aloud while another confirmed them from a separate display, their voices falling into the measured cadence of shared arithmetic. The technician found himself listening more closely than the task required, though he could not say why the rhythm seemed to invite attention. When they reached the district totals for the third candidate, the adding tape curled an extra loop past the clerk's wrist as she paused—not long, just the space of a breath—before reading the sum again. No one remarked on the repetition. The tape continued its slow advance toward the floor, marking time in a way that felt more deliberate than the clock.
+The clerk at the second display did not answer immediately.
 
-<NOTE>
-Make the moment of discovery feel like a slow bruise rather than a jump scare.
+The reader said it again, exactly as before.
 
-Stance: Treat the error as felt before it is known. Avoid any instant revelation; delay the noun “4096” and delay “power of two” until later.
+The second clerk read the party-list total. Then the candidate total. Then the list total again.
 
-Method: Build unease through procedural rhythm going out of tune: call-and-response totals, the small pauses people make when they pretend they didn’t pause, the re-addition that wasn’t requested but nobody objects to.
+Nobody called this an error. To call it an error would have begun a different procedure: forms, witnesses, preserved media, calls to people who had already gone home. So they referred to *this part*, then *that total*, then simply *it*. The word moved around the table without being spoken.
 
-Rule: All uncanny pressure must be deniable as normal fatigue or habit. Nothing “happens”; only confidence fails to materialize.
+They added the list again. The printer advanced. They added the candidate again. A paper cup acquired a dark ring beneath it. Someone moved the cup onto a folded napkin. They checked the register. They checked the machine identifier. The uncapped pen stopped writing and another was found.
 
-No lights flicker; no sudden silence; no person “feels watched.” The room remains ordinary. The wrongness is procedural.
+The arithmetic remained courteous and impossible.
 
-Do not let “4096” appear near exclamation or italics. Refuse emphasis; that refusal is the chill.
+The subtraction left, as a remainder, 4 096. The clerk wrote it in the margin without circling it. The candidate was one power of two too proud.
 
-Do not explain why they re-add. Let habit and unease motivate it; explanation breaks the spell.
+They stared at the sum as though it might amend itself out of shame.
 
----
+**Invariant 1. (violated)**
 
-Do: When you finally print the digits, bury them.
-Stage: “…leaving, as a remainder, 4 096, which—” and immediately continue with process. No italics, no em dash flourish.
-Buys: The number feels cold and procedural, not performative.
+The list’s ceiling is the candidate’s sky, and yet there it was: sky lower than the bird:
 
----
+$$
+\boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
+$$
 
-During the discovery phase, employ "procedural time dilation" technique:
+A candidate may receive fewer preferential votes than the list. The list may receive fewer votes than the district. But a candidate cannot contain more votes than the list that contains the candidate. The inequality is not a statistical expectation. It is architecture.
 
-Do: Mark tiny time with objects, not timestamps.
-Stage: Uncapped pen dries on the nib; a condensation ring appears under a disposable cup; the adding tape’s curl advances by one more loop—each coinciding with a re-add.
-Buys: The room’s time moves, not the plot’s.
+The technician checked the machine. He checked the media. He checked what could be checked without destroying what might later need to be examined. One of the watchers—a schoolteacher—tried to be helpful by pointing out each time the computer made a small sound, as if identifying birds.
 
----
+The woman with the tape asked if lightning could do it. “Not tonight,” said the toolbox man; “tonight is dry.”
 
-Going into the technician’s story:
+“The toolbox man?” I ask.
 
-Make the transition clear. Begin the transition with a sentence like "He told it not in order, but I will."
+“Me,” he says.
 
-Start innocently, matter-of-fact. Only when the tally reaches the faulty candidate does the prose admit weather/dryness and begin the drift into unease.
+They made a ledger of what would be convenient to blame and crossed each item off.
 
-Structure:
-1) **Beat A — Ordinary Room, Ordinary Building (no unease, no weather).**  
-2) **Beat B — Ordinary Process (procedural, uncolored).**  
-3) **Beat C — Pivot on the Candidate (introduce weather/dryness; first sideways detail).**  
-4) **Beat D — Residual Unease (subtle sensory misfits; still deniable).**
+- ~~a transposed digit~~
+- ~~a repeated line~~
+- ~~a wrong candidate mapping~~
+- ~~a duplicate import~~
+- ~~a machine identifier copied from the next station~~
+- ~~a power interruption~~
+- ~~lightning~~
 
-Rules:
-- **A & B:** strictly operational; zero metaphors; no “dry,” no “thirteen,” no carpet opinions.  
-- **C:** first mention of weather/dryness; remain clinical; allow one sensory adjective.  
-- **D:** 1–2 oddities total; plausible as fatigue or static; no overt horror language.
+This was not proof that none of those things had happened. It was worse: each ordinary explanation had somewhere specific it ought to have left a mark, and the mark was absent.
 
----
+Someone telephoned someone else, who telephoned a woman the technician knew from university. A physicist friend—pressed into service because her apartment was nearby, and because she is the sort of person one calls about the moon—arrived with a bicycle helmet and a theory that lay uneasily between farce and fate.
 
-When discovering the error make it seem like everyone understood, without agreement, that to call it an error would start the machinery of inquiry—forms, witnesses, the freezing of work already half done. So make them speak around it instead, referring to *this part* or *that total*, passing the word as if it burned.
+She did not begin with cosmic rays. She began with binary.
 
-</NOTE>
+Write a count as places, she said. Each place is worth twice the one before it. A zero says the place contributes nothing; a one says it contributes its weight. Change the wrong zero to one and the number does not become vaguely corrupted. It becomes precisely wrong.
 
-<MUST HAVES>
-Another bit that shows the misalignment between the narrator and the technician:
+She wrote powers of two down the edge of a sheet.
+
+The difference on the table was \(4096 = 2^{12}\).
+
+Depending on whether one begins counting positions at zero or at one, engineers will call the guilty place bit twelve or the thirteenth position. The arithmetic does not care what we call it. That place is worth 4,096.
+
+The technician objected that bits do not change because a room has become inconvenient.
+
+The physicist agreed.
+
+Then she told them about single-event upsets: energetic particles passing through semiconductor material, depositing enough charge to change the state held by a memory cell. No broken wire. No scorched board. No malicious instruction. A momentary physical event, smaller than anything the room was equipped to witness, could leave behind only the changed state.
+
+The bit toggled to one, and in so toggling, wove its one-ness into every arithmetic that followed.
+
+The technician tells me he disliked the theory immediately. Not because it was implausible. Because it was plausible in a way that offered no one to question.
+
+They could inspect software. They could compare totals. They could reseat cables and audit procedures and ask tired clerks to repeat exactly where their hands had been. But if the event had been a particle crossing a memory cell, the cause had already continued through the floor, or the wall, or the remainder of the planet, leaving the room with nothing but its arithmetic.
+
+There was no smoking gun — only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
+
+One clerk later admitted to the technician that he would have preferred a boring human mistake. A human mistake belongs somewhere: to a hand, a tired eye, a copied line. It can be confessed, corrected, perhaps blamed. The particle theory felt like trespass. He did not say this during the investigation. If human error returned to the list of possibilities, he himself was one of the humans available.
+
+The formal investigation was less theatrical than the night’s speculation. The machine was tested. The software was examined. The result was reconstructed. No software defect was found that explained the number. The report concluded, cautiously, that the error could very probably be attributed to a spontaneous and random inversion of a binary position in the computer’s working memory. Later retellings supplied the sky.
+
+A cosmic flea bite, the newspapers preferred.
+
+The committee’s report is less romantic, but it permits the word that haunts this dossier: likely. A likely single-event upset—an ion that fell through the evening and made a number grow teeth.
+
+The phrase most often used afterward was *computer error*. The phrase is correct in the way that shipwrecks are wet.
+
+The technician, having confessed to me the soft doctrine of the bit, tells me a smaller, meaner story. The following week, he says, a man associated with the party that had briefly prospered came into the municipal building with a cigar he did not light. He made a show of not lighting it; good manners doubling as advertisement. He asked whether the numbers—those numbers—could be verified just one more time.
+
+“They were verified,” the technician told him.
+
+“Of course,” the man said. “I only mean verified in the sense that they remain verified.”
+
+The technician says he remembers this line more clearly than anything the physicist said.
+
+There is comfort in cosmic rays. They do not negotiate.
+
+By then our coffee is cold.
 
 The waiter left the bill between us and moved on without a word.
 He looked at it for a moment, then said, “You know what cafés should do? Add a line for conversation quality. Like a service rating, but mandatory. You’d tip more if you’d actually learned something.”
@@ -261,87 +242,36 @@ Not loud, but enough.
 He blinked once, almost surprised, then nodded as if I’d supplied the missing metric.
 
 When the waiter returned, I left the money neatly folded inside the bill. He added a coin, uncalled for.
-</MUST HAVES>
 
-<MUST HAVES>
+Outside, before we part, I ask him what he thinks the lesson was.
 
+He considers this with visible suspicion.
 
-"... a carpet whose pattern is an argument against democracy." - for the part describing the polling station.
+“You don’t fight weather,” he says finally. “You prepare for the day it becomes weather.”
 
-Smell/sound texture of “dry athmosphere" when describing the surrounding of the polling station. This is to echo the “Not tonight… tonight is dry.” line.
+It is not a sentence I would have written in a technical report. I have nevertheless kept it.
 
-"There is the certainty, never admitted aloud, that somewhere a check is missing and that this is sane; that checks go missing the way buttons go missing from coats." - for the part that leads to the discovery of the anomaly.
+He meant, I think, that we must act as if the world intends this sort of interruption, because the world does not intend otherwise. Software is not opposed by the universe; opposition would at least imply attention. We build systems inside weather: electrical, thermal, political, human, and occasionally celestial.
 
-"It was one power of two too proud." - when first referring to the extra votes (4096 = 2^12).
+And if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
 
-"The list’s ceiling is the candidate’s sky, and yet there it was: sky lower than the bird:
+The purpose of such checks is not to make the world obedient. It is to make disobedience leave evidence.
 
-$$\boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}$$", titled "Invariant 1. (violated)".
+**Field Note #1. Horror, in our trade, is the clean error—the one that leaves no prints.**
 
-"They stared at the sum as though it might amend itself out of shame." - for the part describing the clerks discovering the extra votes.
+The account above is a reconstruction. The anomaly beneath it is not. During Belgium’s federal election on 18 May 2003, a candidate in the canton of Schaerbeek was credited with 4,096 excess preferential votes. The impossibility was detectable because the candidate’s preference total exceeded the total for the list. The official experts’ report says that, after no explanatory software error was found, the discrepancy could *very probably* be attributed to a spontaneous and random inversion of a binary position in RAM. The value 4,096 corresponds exactly to \(2^{12}\). Later technical retellings commonly describe the event as a single-event upset, plausibly caused by ionizing radiation. The report is archived at [poureva.be][2].
 
-"One of the watchers—a schoolteacher—tried to be helpful by pointing out each time the computer made a small sound, as if identifying birds." - for the part describing the immediate on-site investigation.
-
-"The woman with the tape asked if lightning could do it. “Not tonight,” said the toolbox man; “tonight is dry.”" - for the part describing the immediate on-site investigation.
-
-"They made a ledger of what would be convenient to blame and crossed each item off." - for the part describing the immediate on-site investigation. A latex-styled checklist would be good here, each item crossed out.
-
-"A physicist friend—pressed into service because her apartment was nearby, and because she is the sort of person one calls about the moon—arrived with a bicycle helmet and a theory that lay uneasily between farce and fate." - for the part describing the immediate on-site investigation.
-
-"The bit toggled to one, and in so toggling, wove its one-ness into every arithmetic that followed." - when summarizing the conclusion of the physicist's theory.
-
-"There was no smoking gun — only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime."
-
-"Field Note #${X}. Horror, in our trade, is the clean error—the one that leaves no prints."
-
-Clerks’ fatigue truth: a clerk privately prefers a boring human mistake; the cosmic explanation feels like trespass. But he knows better than to say so aloud, for one: he might be held legible for the error himself. This part, however, should resonate with some skeptic readers.
-
-"A cosmic flea bite, the newspapers preferred." - for the part describing the official explanation.
-
-"The committee’s report is less romantic, but it permits the word that haunts this dossier: likely. A likely single-event upset—an ion that fell through the evening and made a number grow teeth."
-
-"The phrase is correct in the way that shipwrecks are wet." - when describing the official explanation.
-
-Something like a related human-story about corruption:
-The technician, having confessed to me the soft doctrine of the bit, told me a smaller, meaner story. The following week, a man from the party that had briefly prospered came into the municipal building with a cigar he did not light. He made a show of not lighting it; this was his signature, he said—good manners doubling as advertisement. He asked, in a tone so gentle it barely bruised the air, whether the numbers—those numbers—could be verified just one more time.
-
-Then, a come-back to the technical part, to its conclusion/reflection.
-
-"He meant, I think, that we must act as if the world intends this sort of interruption, because the world does not intend otherwise." - when reflecting on the technician's story.
-
-An allegory that compares the unpredictability of software behavior to the weather. Something like "we do not fight the weather, we prepare for it."
-
-"... if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible." - a counter-point to the weather allegory, and whatever the technician said.
-
-"[poureva.be][2]" - link to the official report, for the reference section.
-
-"The Schaerbeek incident occurred during Belgium’s federal election on Sunday, 18 May 2003, when one candidate was credited with 4,096 extra preferential votes—detected because the candidate’s preferences exceeded the party’s list total, an impossibility in that system. The official explanation described a “spontaneous creation of a bit at position 13” in memory; a widely cited interpretation is a single-event upset (SEU) likely caused by a cosmic ray." - for the reference section.
-</MUST HAVES>
-
----
-
-<NOTE>
-Tie the ending of the Schaerbeek story to the Mark II moth example.
-They are very similar stories.
-Only the Schaerbeek one should be its own section, the Mark II moth should be a smaller comment.
-</NOTE>
-
-There is a photograph I keep in a folder called *Proofs I Do Not Argue With*. In it, a moth—an ordinary, grieving moth—sits dead-eyed on rag paper.
+There is an older photograph I keep in a folder called *Proofs I Do Not Argue With*. In it, a moth—an ordinary, grieving moth—lies taped to a page of an engineering log.
 
 ![Moth](https://ids.si.edu/ids/deliveryService?id=NMAH-NMAH2000-03035)
 
-<PLACEHOLDER/>
+The page belongs to the Harvard Mark II. On 9 September 1947, its operators recorded a moth found in Relay #70, Panel F, and taped the insect beside the words “First actual case of bug being found.” The term *bug* was already old; the joke worked because the metaphor had unexpectedly acquired a body. ([National Museum of American History][1])
 
-<NOTE>
-Tell a made-up story of how this moth made something go wrong.
-Implicit supernatural event is that it got there and caused mischief.
-</NOTE>
+The log itself is terse. The version told after midnight is not. In that version the machine had spent the afternoon failing a test in a manner too regular to be random and too irregular to be useful. The operators traced the trouble through relays until they found the moth caught between contacts, having inserted the whole soft fact of its body into a place designed for only open or closed. Remove moth; restore logic. The story improves every time it is retold because engineers are not immune to relics.
 
-<PLACEHOLDER/>
+I do not offer the moth as evidence for the Schaerbeek bit. I keep it nearby for another reason. In one case a machine failed and the cause turned out to be an insect. In the other, a machine produced an impossible number and the surviving explanation points upward, toward particles no one in the room could see. Between them lies most of our profession: we name failures after creatures and forces, then act surprised when the world occasionally supplies one.
 
-I have stood before the display and seen my own face in the glass, a later child of their superstition: that if we name it, we can banish it. The moth looks unconvinced. ([National Museum of American History][1])
-
-<PLACEHOLDER/>
+The moth looks unconvinced.
 
 ---
 
