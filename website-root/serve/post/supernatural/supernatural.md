@@ -53,7 +53,7 @@ I began to keep a dossier. Not a taxonomy—God preserve me from one more axis�
 <NOTE>
 This meeting belongs to an earlier period in the narrator's life. He has not yet become the investigator who keeps this dossier, and he does not believe in supernatural explanations. He is here for ordinary work and expects ordinary technical information.
 
-The newspaper item about the escaped neutron must never be connected in the prose to the 2003 bit flip. The implication that it somehow travelled backward in time is strictly for the reader.
+The newspaper item about the escaped neutron is fictional. It must never be connected in the prose to the 2003 bit flip. The implication that it somehow travelled backward in time is strictly for the reader.
 </NOTE>
 
 I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late. In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
@@ -64,7 +64,7 @@ The windows sit low; from inside, the passing traffic moves along the upper edge
 
 I take my place in it. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers. Tray in hand, I take a table by the wall and open my notebook.
 
-After ten minutes I pick up a newspaper left on the next chair. On an inside page, a short item from Geneva reports that a neutron escaped a CERN laboratory that morning. It was detected outside the apparatus in which it was expected to remain. A spokesman says there is no danger and that the incident is being reviewed. I dislike the verb *escaped*, which gives intention to a particle, but the article offers no better one. I fold the paper and put it back.
+After ten minutes I pick up a newspaper left on the next chair. On an inside page, a short item from Geneva reports that a neutron escaped from one of CERN's experimental halls earlier that day. It was detected in a service passage beyond the apparatus that had produced it. A spokesman says there is no danger and that the incident is being reviewed. I dislike the verb *escaped*, which gives intention to a particle, but the article offers no better one. I fold the paper and put it back.
 
 He arrives fourteen minutes late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He used the word spontaneous without liking it.
 
@@ -78,11 +78,9 @@ I looked at him. “How they break?”
 
 He nodded, tapping the packet against the table. “The English ones surrender at the middle. The French fracture elegantly, as if it were part of the design. Belgian biscuits, though—they resist until you lose interest.”
 
-I did not like this theory. There were ingredients, ovens, storage, humidity; there were enough ordinary causes without assigning character to dough. I found myself looking for the ingredients on the wrapper rather than answering him.
+I disliked the idea immediately. He was speaking as though temperament were a property a biscuit could have. I looked down at the wrapper and said nothing.
 
 He broke one biscuit. It split unevenly, half crumbling onto the napkin. He seemed pleased. “See? The kind of nation that tolerates asymmetry but not waste.”
-
-I decided not to argue.
 
 He ate the biscuit. I returned to my notebook and asked what, in practice, made an election day difficult.
 
