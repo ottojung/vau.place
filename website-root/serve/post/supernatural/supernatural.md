@@ -100,7 +100,7 @@ This sounds like an opening for another small theory. I decide not to encourage 
 
 “I worked one day,” he continues, “that stayed with me more than the result it produced.”
 
-He mentions Schaerbeek, the federal election, and a candidate with a total that could not exist. I know the outline. It is one of those incidents that circulated for years among programmers in compressed form: Belgium, voting machine, 4,096 votes, cosmic ray. The story is usually told in three sentences, four if the audience does not immediately recognize a power of two.
+He mentions Schaerbeek, the federal election, and a candidate with a total that could not exist. I know the outline. It is one of those incidents that circulated for years among programmers in compressed form, a newspaper curiosity explained just enough to become folklore. It takes me a moment to adjust to the idea that the man across from me claims to have been inside the room I had known only from retellings.
 
 He did not tell it in order, but I will.
 
@@ -110,7 +110,7 @@ He had been sent there as technician, a word expansive enough to cover whatever 
 
 The doors opened at eight. Voters arrived in the hesitant rhythm of early morning, each one checked against the register, handed a card, directed to a booth. The technician watched the first ballot cast: a woman who studied the screen for longer than the instructions required, then pressed confirm with a small nod, as if confirming a translation rather than a choice. The machine accepted it without comment. Its brief hum was the only evidence that anything had been recorded at all.
 
-By noon the rhythm had settled. Clerks called numbers from their lists; voters stepped forward when summoned; booths filled and emptied; counters advanced. The technician made his rounds between displays that showed nothing more interesting than incremental totals. He replaced one reluctant cable, reseated one connector, initialled two boxes. Nothing memorable happened, which is the principal requirement of election technology.
+By noon the rhythm had settled. Clerks called numbers from their lists; voters stepped forward when summoned; booths filled and emptied; counters advanced. The technician made his rounds between displays that showed nothing more interesting than incremental totals. He checked seals, initialled two boxes, answered a question about the printer, and waited for something to require him. Nothing memorable happened, which is the principal requirement of election technology.
 
 After the doors closed, the room changed function without changing appearance. Voters disappeared; arithmetic took their place. One clerk read numbers aloud while another confirmed them from a separate display. A printer fed out a narrow white tape that curled over the table edge and, after some time, reached the floor.
 
@@ -136,7 +136,7 @@ They added the list again. The printer advanced. They added the candidate again.
 
 The arithmetic remained courteous and impossible.
 
-The subtraction left, as a remainder, 4 096. The clerk wrote it in the margin without circling it. The candidate was one power of two too proud.
+The subtraction left, as a remainder, 4 096. The clerk wrote it in the margin without circling it. It was one power of two too proud.
 
 They stared at the sum as though it might amend itself out of shame.
 
@@ -192,13 +192,15 @@ The bit toggled to one, and in so toggling, wove its one-ness into every arithme
 
 The technician tells me he disliked the theory immediately. Not because it was implausible. Because it was plausible in a way that offered no one to question.
 
-They could inspect software. They could compare totals. They could reseat cables and audit procedures and ask tired clerks to repeat exactly where their hands had been. But if the event had been a particle crossing a memory cell, the cause had already continued through the floor, or the wall, or the remainder of the planet, leaving the room with nothing but its arithmetic.
+They could inspect software. They could compare totals. They could audit procedures and ask tired clerks to repeat exactly where their hands had been. But if the event had been a particle crossing a memory cell, the cause had already continued through the floor, or the wall, or the remainder of the planet, leaving the room with nothing but its arithmetic.
 
 There was no smoking gun — only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
 
 One clerk later admitted to the technician that he would have preferred a boring human mistake. A human mistake belongs somewhere: to a hand, a tired eye, a copied line. It can be confessed, corrected, perhaps blamed. The particle theory felt like trespass. He did not say this during the investigation. If human error returned to the list of possibilities, he himself was one of the humans available.
 
-The formal investigation was less theatrical than the night’s speculation. The machine was tested. The software was examined. The result was reconstructed. No software defect was found that explained the number. The report concluded, cautiously, that the error could very probably be attributed to a spontaneous and random inversion of a binary position in the computer’s working memory. Later retellings supplied the sky.
+The formal investigation was less theatrical than the night’s speculation. The machine was tested. The software was examined. The result was reconstructed. No software defect was found that explained the number. The report concluded, cautiously, that the error could very probably be attributed to a spontaneous and random inversion of a binary position in the computer’s working memory.
+
+Later summaries compressed that into the stranger phrase “the spontaneous creation of a bit at position 13” in memory. Later still came the most attractive suspect: ionizing radiation, a single-event upset that could alter a memory cell without leaving a damaged machine behind.
 
 A cosmic flea bite, the newspapers preferred.
 
@@ -206,7 +208,7 @@ The committee’s report is less romantic, but it permits the word that haunts t
 
 The phrase most often used afterward was *computer error*. The phrase is correct in the way that shipwrecks are wet.
 
-The technician, having confessed to me the soft doctrine of the bit, tells me a smaller, meaner story. The following week, he says, a man associated with the party that had briefly prospered came into the municipal building with a cigar he did not light. He made a show of not lighting it; good manners doubling as advertisement. He asked whether the numbers—those numbers—could be verified just one more time.
+The technician, having confessed to me the soft doctrine of the bit, tells me a smaller, meaner story. The following week, he says, a man associated with the candidate whose total had briefly prospered came into the municipal building with a cigar he did not light. He made a show of not lighting it; good manners doubling as advertisement. He asked whether the numbers—those numbers—could be verified just one more time.
 
 “They were verified,” the technician told him.
 
@@ -380,9 +382,9 @@ Something with the same moral as "We live by the text; we survive by the small, 
 
 *(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
 
-[1]: https://americanhistory.si.edu/collections/object/nmah_334663?utm_source=chatgpt.com "Log Book With Computer Bug"
-[2]: https://www.poureva.be/spip.php?article32=&utm_source=chatgpt.com "Rapport concernant les élections du 18 mai 2003"
-[3]: https://en.wikipedia.org/wiki/Electronic_voting_in_Belgium?utm_source=chatgpt.com "Electronic voting in Belgium"
-[4]: https://www.vooreva.be/IMG/pdf/eVoting_State_of_the_union.pdf?utm_source=chatgpt.com "eVoting in Belgium “State of the Union”"
+[1]: https://americanhistory.si.edu/collections/object/nmah_334663 "Log Book With Computer Bug"
+[2]: https://www.poureva.be/spip.php?article32= "Rapport concernant les élections du 18 mai 2003"
+[3]: https://en.wikipedia.org/wiki/Electronic_voting_in_Belgium "Electronic voting in Belgium"
+[4]: https://www.vooreva.be/IMG/pdf/eVoting_State_of_the_union.pdf "eVoting in Belgium “State of the Union”"
 
 ---
