@@ -66,7 +66,7 @@ I take my place in it, moving forward each time the drawer opens with its tired 
 
 A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for. He knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things.
 
-There is a newspaper on the next chair. I pick it up and go straight to the local section, usually my favourite. Liège has held a waffle competition; the winner is photographed behind an enormous plate of waffles, with three judges smiling beside her. A few pages later I find the science section. A short item from Geneva says that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
+There is a newspaper on the next chair. I pick it up. Liège has held a waffle competition; the winner is photographed behind an enormous plate of waffles, with three judges smiling beside her. I turn a few pages, looking for science. A short item from Geneva says that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
 
 He arrives late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He pauses, then corrects himself.
 
@@ -82,7 +82,7 @@ The commentary gets harder to separate from the useful parts when he picks up on
 
 I look at him. “How they break?”
 
-“The English ones break politely. The French fracture elegantly. Belgian biscuits negotiate until they find a third line.”
+“The English ones wait for tea and then break where you expect. The French fracture elegantly, usually along the line that leaves the prettier half. Belgian biscuits start with one crack, reconsider, and finish on a compromise neither side proposed.”
 
 That seems ridiculous. I don't see what national character has to do with a biscuit, but he is already unwrapping it.
 
@@ -120,9 +120,13 @@ They checked the machine identifier, the register, the media from which the tota
 
 There is the certainty, never admitted aloud, that somewhere a check is missing and that this is sane; that checks go missing the way buttons go missing from coats. So they looked for the missing check.
 
-The numbers did not change.
+#### The Investigation
 
-The relation they expected was simple:
+The air in the school had become very dry. Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
+
+For a while nobody called it an *error*. That word would have started another procedure: forms, witnesses, preserved media, work frozen where it stood. So they talked around it. *This one*. *These two figures*. *Check it again.*
+
+The same numbers survived every obvious check. What remained was not merely a suspicious total but a violated relation:
 
 **Invariant 1. (violated)**
 
@@ -132,13 +136,7 @@ $$
 
 The candidate's preference count should never rise above the list total. In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
 
-#### The Investigation
-
-The air in the school had become very dry. Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
-
-For a while nobody called it an *error*. That word would have started another procedure: forms, witnesses, preserved media, work frozen where it stood. So they talked around it. *This one*. *These two figures*. *Check it again.*
-
-The same numbers survived every obvious check. Eventually somebody used the word, and the formal investigation began.
+Eventually somebody used the word *error*, and the formal investigation began.
 
 The technician checked the machine and the media again. The schoolteacher tried to be helpful by pointing out each time the computer made a small sound, as if identifying birds.
 
@@ -164,15 +162,13 @@ When the figures survived another pass, someone subtracted one total from the ot
 
 A difference of exactly one power of two made a bit flip an obvious suspect.
 
-By then someone had called a physicist employed by the technical service. She had not been assigned to the station; she was pressed into service because she happened to live nearby. She arrived by bicycle, helmet still in hand. They gave her the figures and the list of things already ruled out. She went over the checks with them, looked at the machine, and asked several questions before suggesting that the software might not be the only thing capable of changing the number.
+A physicist was eventually pressed into service because she happened to live nearby. She arrived by bicycle, helmet still in hand, and was given the same untidy account the technician had been given: the impossible totals, the repeated checks, the crossed-out explanations.
 
-Then she told them about single-event upsets. An energetic particle passing through semiconductor material can deposit enough charge to change the state held by a memory cell. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
+She did not diagnose anything. She asked them to go through the checks again and spent some time arguing over a narrower question: did the wrong number have to come from the program, or could the memory holding it have changed on its own? The second possibility was unpleasant but real. Semiconductor memory can be disturbed by an energetic particle passing through it. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 
-That was the hypothesis: an invisible physical event, already gone, had changed one bit.
+That gave them a hypothesis: a single-event upset. Under that hypothesis there would be no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
 
-There was no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
-
-The bit toggled to one, and in so toggling, wove its one-ness into every arithmetic that followed.
+On that account, the bit toggled to one, and in so toggling, wove its one-ness into every arithmetic that followed.
 
 The technician objected that bits did not change for no reason. The physicist agreed. A particle crossing a memory cell was a reason; the difficulty was that the reason would already be gone.
 
@@ -190,9 +186,7 @@ There is an older photograph I keep in a folder called *Proofs I Do Not Argue Wi
 
 ![Moth](https://ids.si.edu/ids/deliveryService?id=NMAH-NMAH2000-03035)
 
-The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” The page reads almost like a christening: there is the bug, here is its body, and now that it has a name it can be pointed to, removed, and taped beside the record. ([National Museum of American History][1])
-
-I have stood before the display and seen my own face in the glass, a later child of that same superstition—that a failure with a name has edges, and a thing with edges can be banished.
+The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” I like the page because it makes an old engineering superstition almost literal. Give the failure a name, and perhaps you can banish it. Here they could do both: call it a bug, pull it from the relay, and tape it beside the record. ([National Museum of American History][1])
 
 The moth looks unconvinced.
 
