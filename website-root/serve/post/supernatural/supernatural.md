@@ -54,17 +54,19 @@ I began to keep a dossier. Not a taxonomy—God preserve me from one more axis�
 This meeting belongs to an earlier period in the narrator's life. He has not yet become the investigator who keeps this dossier, and he does not believe in supernatural explanations. He is here for ordinary work and expects ordinary technical information.
 
 The newspaper item about the escaped neutron is fictional. It must never be connected in the prose to the 2003 bit flip. The implication that it somehow travelled backward in time is strictly for the reader.
+
+The worldview mismatch between the narrator and the technician should remain implicit. Show it through what each treats as evidence, useful information, or a reasonable explanation; do not explain the contrast as a theme.
 </NOTE>
 
 I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late. In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
+
+I am in Brussels for a municipal-systems contract. A colleague has given me this man's name because, I am told, he knows the local engineering scene and knows which names on procurement papers correspond to people who can actually fix things. I expect names, numbers, introductions.
 
 The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling. The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs. The queue bends once before the till in an L-shape that keeps the doorway clear.
 
 I take my place in it, moving forward each time the drawer opens with its tired ring. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall and open my notebook.
 
-I am in Brussels for a municipal-systems contract. A colleague has given me this man's name because, I am told, he knows the local engineering scene and knows which names on procurement papers correspond to people who can actually fix things. I expect names, numbers, introductions.
-
-After ten minutes I pick up a newspaper left on the next chair. On an inside page, a brief item from Geneva reports that a neutron escaped one of CERN's experimental enclosures that morning and was detected outside the path in which it was expected to remain. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
+After ten minutes I pick up a newspaper left on the next chair. On an inside page, a brief item from Geneva reports that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
 
 He arrives fourteen minutes late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” Then he corrects himself.
 
@@ -92,7 +94,7 @@ I let the matter go and ask how he came to work on elections.
 
 He gives me the short version: municipal contracts, equipment support, one assignment becoming another. Then he says, “When people talk about elections, they always mean the result. They don't talk about the day itself.”
 
-I had asked about his work, not the philosophy of elections, but by then I had learned that his answers sometimes arrived with extra material attached.
+I had asked how he got the job. He had answered a different question.
 
 “I worked one day,” he continued, “that stayed with me more than the result it produced.”
 
@@ -108,7 +110,7 @@ Voting itself went normally. He answered questions, checked displays, and waited
 
 They reached one candidate whose preference count was larger than the total number of votes recorded for the entire list containing him.
 
-That could not happen. Every preferential vote for that candidate was necessarily part of a vote already counted for the list. The smaller number had somehow become the larger one.
+That could not happen. Every preferential vote for that candidate was necessarily part of a vote already counted for the list.
 
 <NOTE>
 Nobody initially calls this an “error”. Everyone understands that using that word would start another bureaucratic procedure—forms, witnesses, preserving media, freezing work already half done. Keep this motive unspoken in the prose. Show it only through the way they talk around the result and through what they begin checking.
@@ -230,7 +232,7 @@ When the waiter returned, I left the money neatly folded inside the bill. He add
 
 Outside, before we parted, I asked him what he thought the lesson was.
 
-“You don't fight weather,” he said. “You prepare for the day it becomes weather.”
+“You don't fight weather,” he said. “You prepare for it.”
 
 At the time I reduced this to an engineering note. *Design for environmental faults. Add independent checks.* I thought I had extracted the useful part.
 
