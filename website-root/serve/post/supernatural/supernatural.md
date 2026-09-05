@@ -66,13 +66,13 @@ I take my place in it, moving forward each time the drawer opens with its tired 
 
 A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for. He knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things.
 
-There is a newspaper on the next chair. I pick it up and turn first to the local pages, usually my favourite part. The first story gives the results of a waffle competition in Liège. The photograph shows the winner behind an enormous plate of waffles, with three judges smiling beside her. After that I look for the science pages. A brief item from Geneva reports that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
+There is a newspaper on the next chair. I pick it up and go straight to the local section, usually my favourite. Liège has held a waffle competition; the winner is photographed behind an enormous plate of waffles, with three judges smiling beside her. A few pages later I find the science section. A short item from Geneva says that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
 
 He arrives late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He pauses, then corrects himself.
 
 “Not spontaneous. Sorry. A signal failed, or somebody changed the route. We just don't know which yet.”
 
-We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He worked elections—“not politics,” he says quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he taps the table as though confirming liveness.
+We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He tells me he has worked elections—“not politics,” he says quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he taps the table as though confirming liveness.
 
 I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I write down the useful parts and leave some of the commentary out.
 
@@ -82,9 +82,9 @@ The commentary gets harder to separate from the useful parts when he picks up on
 
 I look at him. “How they break?”
 
-“The English ones break politely. The French fracture elegantly. Belgian biscuits negotiate with you and then choose a third line.”
+“The English ones break politely. The French fracture elegantly. Belgian biscuits negotiate until they find a third line.”
 
-That seems ridiculous. I can see no reason for national character to enter into a broken biscuit, but he is already unwrapping it.
+That seems ridiculous. I don't see what national character has to do with a biscuit, but he is already unwrapping it.
 
 He breaks it. The biscuit splits diagonally across the stamped pattern, scattering crumbs onto the napkin. He seems pleased.
 
@@ -138,7 +138,7 @@ The air in the school had become very dry. Paper rasped when the clerks separate
 
 For a while nobody called it an *error*. That word would have started another procedure: forms, witnesses, preserved media, work frozen where it stood. So they talked around it. *This one*. *These two figures*. *Check it again.*
 
-Eventually the distinction stopped being useful. The same numbers had survived every obvious check, and a serious investigation began.
+The same numbers survived every obvious check. Eventually somebody used the word, and the formal investigation began.
 
 The technician checked the machine and the media again. The schoolteacher tried to be helpful by pointing out each time the computer made a small sound, as if identifying birds.
 
@@ -164,7 +164,7 @@ When the figures survived another pass, someone subtracted one total from the ot
 
 A difference of exactly one power of two made a bit flip an obvious suspect.
 
-By then someone had called a physicist from the technical service. She had not been assigned to the station; she was pressed into service because she happened to live nearby. She arrived by bicycle, helmet still in hand. They gave her the figures and the list of things already ruled out. She went over the checks with them, looked at the machine, and asked several questions before suggesting that the software might not be the only thing capable of changing the number.
+By then someone had called a physicist employed by the technical service. She had not been assigned to the station; she was pressed into service because she happened to live nearby. She arrived by bicycle, helmet still in hand. They gave her the figures and the list of things already ruled out. She went over the checks with them, looked at the machine, and asked several questions before suggesting that the software might not be the only thing capable of changing the number.
 
 Then she told them about single-event upsets. An energetic particle passing through semiconductor material can deposit enough charge to change the state held by a memory cell. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 
@@ -190,11 +190,9 @@ There is an older photograph I keep in a folder called *Proofs I Do Not Argue Wi
 
 ![Moth](https://ids.si.edu/ids/deliveryService?id=NMAH-NMAH2000-03035)
 
-The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” It reads almost like a naming ceremony. The fault has acquired a body and a name; now it can be pointed to, removed, and taped beside the record. ([National Museum of American History][1])
+The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” The page reads almost like a christening: there is the bug, here is its body, and now that it has a name it can be pointed to, removed, and taped beside the record. ([National Museum of American History][1])
 
-There is a superstition hidden in that satisfaction. Once a failure has a name, we begin to behave as though we have already made it smaller. *Bug*. *Bit flip*. *Single-event upset*. A name gives the thing edges. Edges suggest somewhere to put your hands.
-
-I have stood before the display and seen my own face in the glass, a later child of the same superstition: if we can name the thing, perhaps we can banish it.
+I have stood before the display and seen my own face in the glass, a later child of that same superstition—that a failure with a name has edges, and a thing with edges can be banished.
 
 The moth looks unconvinced.
 
