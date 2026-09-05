@@ -54,7 +54,7 @@ I began to keep a dossier. Not a taxonomy—God preserve me from one more axis�
 >
 > This meeting belongs to an earlier period in the narrator's life. He has not yet become the investigator who keeps this dossier, and he does not believe in supernatural explanations. He is here for ordinary work and expects ordinary technical information.
 >
-> The newspaper item about the escaped neutron is fictional. It must never be connected in the prose to the 2003 bit flip. The implication that it somehow travelled backward in time is strictly for the reader.
+> The newspaper items are fictional. The escaped neutron must never be connected in the prose to the 2003 bit flip. The implication that it somehow travelled backward in time is strictly for the reader.
 >
 > The worldview mismatch between the narrator and the technician should remain implicit. Show it through what each treats as evidence, useful information, or a reasonable explanation; do not explain the contrast as a theme.
 
@@ -62,31 +62,33 @@ I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who
 
 The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling. The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs. The queue bends once before the till in an L-shape that keeps the doorway clear.
 
-I take my place in it, moving forward each time the drawer opens with its tired ring. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall and open my notebook. A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for: he knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things. I expect names, numbers, introductions.
+I take my place in it, moving forward each time the drawer opens with its tired ring. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall.
 
-After ten minutes I pick up a newspaper left on the next chair. On an inside page, a brief item from Geneva reports that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
+A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for. He knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things.
+
+After ten minutes I pick up a newspaper left on the next chair. The first story I read gives the results of a waffle competition in Liège. The photograph shows the winner behind an enormous plate, with three judges smiling beside her. On the next page, a brief item from Geneva reports that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
 
 He arrives fourteen minutes late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He pauses, then corrects himself.
 
 “Not spontaneous. Sorry. A signal failed, or somebody changed the route. We just don't know which yet.”
 
-We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He worked elections—“not politics,” he said quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he has a habit of tapping the table as though confirming liveness.
+We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He worked elections—“not politics,” he said quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he taps the table as though confirming liveness.
 
 I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I write down the useful parts and leave some of the commentary out.
 
-I am still deciding whether *loses confidence around printers* belongs in my notes when he picks up one of the biscuits beside his coffee.
+That distinction becomes harder to maintain when he picks up one of the biscuits beside his coffee.
 
 “You can tell a lot about a nation from how its biscuits break.”
 
 I look at him. “How they break?”
 
-“The English ones surrender at the middle. The French fracture elegantly, as if it were part of the design. Belgian biscuits, though—they resist until you lose interest.”
+“The English ones break where you press. The French ones break neatly enough to look deliberate. Belgian biscuits choose a different line.”
 
-The claim seems ridiculous to me. I can see no reason for Belgium to enter into a broken biscuit, but he is already unwrapping it.
+That seems ridiculous. I can see no reason for Belgium to enter into a broken biscuit, but he is already unwrapping it.
 
 He breaks it. The biscuit splits unevenly, half crumbling onto the napkin. He seems pleased.
 
-“See? The kind of nation that tolerates asymmetry but not waste.”
+“See?”
 
 I say nothing about the biscuit and ask how he came to work on elections.
 
@@ -102,27 +104,25 @@ The polling station was a school. Its walls still carried faded posters about hy
 
 He had been sent there as technician, a word expansive enough to cover whatever had not yet been assigned to the others. On his table lay the checklist: confirm serial numbers, confirm counters at zero, confirm seals intact; note every confirmation in ink, sign where indicated. Two party representatives sat near the door. A schoolteacher seconded as a watcher stood where she could see both the machines and the clerks and seemed unsure which of them constituted the real work.
 
-Voting itself went normally. He answered questions, checked displays, and waited for something to require him. After the polls closed, the clerks began checking the totals.
+Voting itself went normally. He answered questions, checked displays, and waited for something to require him.
 
-One candidate's preference count was higher than the total number of votes recorded for the entire list containing him.
+After the polls closed, the clerks began checking the totals. The work moved line by line until one of them stopped halfway through reading a candidate's result. She looked back at the list total, then at the candidate total, and read both again.
 
-That was impossible in a simple way. Every preferential vote for the candidate was already one of the votes counted for the list. The candidate could not have more votes than the list that contained him.
+The candidate had more preferential votes than the entire list containing him.
 
 > **NOTE**
 >
 > Nobody initially calls this an “error”. Everyone understands that using that word would start another bureaucratic procedure—forms, witnesses, preserving media, freezing work already half done. Keep this motive unspoken in the prose. Show it only through the way they talk around the result and through what they begin checking.
 
-One clerk read the candidate total. Another read the list total. She asked for the first number again. He repeated it. Then they read the list total again.
+She asked the clerk beside her to read the two figures. He did. They exchanged places at the display and read them again.
 
 “Check this one,” somebody said.
 
-They checked both totals. Then they checked the machine identifier, the register, and the media from which the totals had been read.
+They checked the machine identifier, the register, the media from which the totals had been read, and then the totals again.
 
 The numbers did not change.
 
 There is the certainty, never admitted aloud, that somewhere a check is missing and that this is sane; that checks go missing the way buttons go missing from coats. So they looked for the missing check.
-
-The candidate's total exceeded the list by 4 096 votes. It was one power of two too proud.
 
 The relation they expected was simple:
 
@@ -136,7 +136,7 @@ The candidate's preference count should remain below the list total. In other wo
 
 #### The Investigation
 
-Once the totals had survived the obvious checks, the question changed. They were no longer looking only for a number somebody had read incorrectly. They were looking for something that could have produced it.
+What began as *check this one* became an investigation when the obvious checks failed.
 
 The air in the school had become very dry. Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
 
@@ -156,13 +156,21 @@ They made a ledger of what would be convenient to blame and crossed each item of
 
 Each explanation had some trace it ought to have left. None of the expected traces was there.
 
-By then the shape of the discrepancy was obvious to anyone in the room who worked with computers: \(4096 = 2^{12}\). The useful question was not whether 4 096 was a power of two. It was whether one bit could change without the software telling it to.
+At some point one of them wrote the difference between the two totals in the margin: 4 096. That changed the shape of the problem. Anyone in the room who worked with computers could see it:
 
-Someone eventually called a physicist friend of the technician who lived nearby—the sort of person one calls about the moon. She arrived with a bicycle helmet and suggested a single-event upset. An energetic particle passing through semiconductor material can deposit enough charge to change the state held by a memory cell. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
+\[
+4096 = 2^{12}.
+\]
+
+A difference of exactly one power of two suggested a bit before it suggested arithmetic.
+
+By then someone had telephoned a physicist the technician knew from university. She was pressed into service because her apartment was nearby, and because she was the sort of person one calls about the moon. She arrived by bicycle, helmet still in hand. They showed her the figures, the repeated checks, and the list of things already crossed out. She spent some time with the machine before suggesting a single-event upset.
+
+An energetic particle passing through semiconductor material can deposit enough charge to change the state held by a memory cell. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 
 There was no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
 
-The bit toggled to one, and in so toggling, wove its one-ness into every arithmetic that followed.
+That was the hypothesis. The bit toggled to one, and in so toggling, wove its one-ness into every arithmetic that followed.
 
 The technician objected that bits did not change for no reason. The physicist agreed. A particle crossing a memory cell was a reason; the difficulty was that the reason would already be gone.
 
@@ -170,9 +178,9 @@ They could inspect software, recount totals, and ask clerks what they had done. 
 
 One clerk later admitted that he would have preferred a boring human mistake. A human mistake belonged somewhere: to a hand, a tired eye, a copied line. It could be found and corrected. He did not say this during the investigation. If human error returned to the list of possibilities, he himself was one of the humans available.
 
-The machine was tested, the software examined, and the result reconstructed. No software defect was found that explained the discrepancy. The experts' report concluded that it could *very probably* be attributed to a spontaneous and random inversion of a binary position in the computer's working memory.
+Later, the machine was tested, the software examined, and the result reconstructed. No software defect was found that explained the discrepancy. The experts' report concluded that it could *very probably* be attributed to a spontaneous and random inversion of a binary position in the computer's working memory.
 
-Later retellings supplied a likely physical culprit—ionizing radiation—and newspapers preferred the phrase *cosmic flea bite*. From there the whole event usually contracts to *computer error*. The label is correct in the way that shipwrecks are wet. The part I kept was the qualification in the report: *very probably*.
+The report left the physical cause open. Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*. By the time the incident reached programmers, the whole thing was often filed under *computer error*. The label is correct in the way that shipwrecks are wet. What stayed with me was the qualification in the report: *very probably*.
 
 **Field Note #1. Horror, in our trade, is the clean error—the one that leaves no prints.**
 
@@ -180,9 +188,9 @@ There is an older photograph I keep in a folder called *Proofs I Do Not Argue Wi
 
 ![Moth](https://ids.si.edu/ids/deliveryService?id=NMAH-NMAH2000-03035)
 
-The page belongs to the Harvard Mark II. On 9 September 1947, its operators recorded a moth found in Relay #70, Panel F, and taped the insect beside the words “First actual case of bug being found.” The attraction is obvious: here the cause could be found, named, removed, and taped beside the record. In Schaerbeek there was nothing to tape to the report. ([National Museum of American History][1])
+The page belongs to the Harvard Mark II. On 9 September 1947, its operators recorded a moth found in Relay #70, Panel F, and taped the insect beside the words “First actual case of bug being found.” The word *bug* was older than the moth, but the photograph made the name literal: here, at least, the bug could be pointed to, removed, and taped beside the record. In Schaerbeek there was nothing to tape down. ([National Museum of American History][1])
 
-I have stood before the display and seen my own face in the glass, a later child of their superstition: that if we name it, we can banish it.
+I have stood before the display and seen my own face in the glass, a later child of the same superstition: give the fault a name, and perhaps you have already begun to banish it.
 
 The moth looks unconvinced.
 
