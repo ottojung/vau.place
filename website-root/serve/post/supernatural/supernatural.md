@@ -82,7 +82,7 @@ The commentary gets harder to separate from the useful parts when he picks up on
 
 I look at him. “How they break?”
 
-“The English ones wait for tea and then break where you expect. The French fracture elegantly, usually along the line that leaves the prettier half. Belgian biscuits start with one crack, reconsider, and finish on a compromise neither side proposed.”
+“The English ones wait for tea and then break where you expect. The French fracture elegantly, usually along the line that leaves the prettier half. Belgian biscuits begin along one crack, reconsider, and finish by inventing a third.”
 
 That seems ridiculous. I don't see what national character has to do with a biscuit, but he is already unwrapping it.
 
@@ -120,13 +120,11 @@ They checked the machine identifier, the register, the media from which the tota
 
 There is the certainty, never admitted aloud, that somewhere a check is missing and that this is sane; that checks go missing the way buttons go missing from coats. So they looked for the missing check.
 
-#### The Investigation
-
 The air in the school had become very dry. Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
 
 For a while nobody called it an *error*. That word would have started another procedure: forms, witnesses, preserved media, work frozen where it stood. So they talked around it. *This one*. *These two figures*. *Check it again.*
 
-The same numbers survived every obvious check. What remained was not merely a suspicious total but a violated relation:
+The same numbers survived every obvious check. What they violated was simple:
 
 **Invariant 1. (violated)**
 
@@ -137,6 +135,8 @@ $$
 The candidate's preference count should never rise above the list total. In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
 
 Eventually somebody used the word *error*, and the formal investigation began.
+
+#### The Investigation
 
 The technician checked the machine and the media again. The schoolteacher tried to be helpful by pointing out each time the computer made a small sound, as if identifying birds.
 
@@ -162,9 +162,9 @@ When the figures survived another pass, someone subtracted one total from the ot
 
 A difference of exactly one power of two made a bit flip an obvious suspect.
 
-A physicist was eventually pressed into service because she happened to live nearby. She arrived by bicycle, helmet still in hand, and was given the same untidy account the technician had been given: the impossible totals, the repeated checks, the crossed-out explanations.
+A physicist was eventually pressed into service because she happened to live nearby. She arrived by bicycle, helmet still in hand. They gave her the figures, the repeated checks, and the list of explanations already crossed out.
 
-She did not diagnose anything. She asked them to go through the checks again and spent some time arguing over a narrower question: did the wrong number have to come from the program, or could the memory holding it have changed on its own? The second possibility was unpleasant but real. Semiconductor memory can be disturbed by an energetic particle passing through it. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
+She made them go through it again. For a while the discussion stayed with ordinary possibilities: arithmetic, corrupted input, software. Then it narrowed to a stranger question. Did the wrong number have to be written into memory, or could the memory itself have changed? The latter was possible. Semiconductor memory can be disturbed by an energetic particle passing through it. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 
 That gave them a hypothesis: a single-event upset. Under that hypothesis there would be no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
 
