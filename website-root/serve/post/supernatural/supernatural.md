@@ -66,13 +66,13 @@ I take my place in it, moving forward each time the drawer opens with its tired 
 
 A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for. He knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things.
 
-After ten minutes I pick up a newspaper left on the next chair. The first story I read gives the results of a waffle competition in Liège. The photograph shows the winner behind an enormous plate, with three judges smiling beside her. On the next page, a brief item from Geneva reports that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
+After ten minutes I pick up a newspaper left on the next chair. The first story I read gives the results of a waffle competition in Liège. The photograph shows the winner behind an enormous plate of waffles, with three judges smiling beside her. On the next page, a brief item from Geneva reports that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
 
 He arrives fourteen minutes late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He pauses, then corrects himself.
 
 “Not spontaneous. Sorry. A signal failed, or somebody changed the route. We just don't know which yet.”
 
-We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He worked elections—“not politics,” he said quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he taps the table as though confirming liveness.
+We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He worked elections—“not politics,” he says quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he taps the table as though confirming liveness.
 
 I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I write down the useful parts and leave some of the commentary out.
 
@@ -94,11 +94,11 @@ I say nothing about the biscuit and ask how he came to work on elections.
 
 He gives me the short version: municipal contracts, equipment support, one assignment becoming another. Then, as if this belongs to the same answer, he says, “When people talk about elections, they always mean the result. They don't talk about the day itself.”
 
-“I worked one day,” he continued, “that stayed with me more than the result it produced.”
+“I worked one day,” he continues, “that stayed with me more than the result it produced.”
 
-He mentioned a school in Schaerbeek, the 2003 federal election, and a candidate whose preferential votes exceeded the votes available to him through his own party list. I recognized the outline. I had heard it before as one of those programmer stories compressed into a few lines and passed around without much interest in who had actually been there. It took me a moment to adjust to the idea that the man across from me had been inside the room I had known only from retellings.
+He mentions a school in Schaerbeek, the 2003 federal election, and a candidate whose preferential votes exceeded the votes available to him through his own party list. I recognize the outline. I have heard it before as one of those programmer stories compressed into a few lines and passed around without much interest in who had actually been there. It takes me a moment to adjust to the idea that the man across from me had been inside the room I knew only from retellings.
 
-What followed was his account of that day. He did not tell it in order, but I will.
+What follows is his account of that day. He did not tell it in order, but I will.
 
 The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and a carpet whose pattern is an argument against democracy.
 
@@ -132,7 +132,7 @@ $$
 \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
 $$
 
-The candidate's preference count should remain below the list total. In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
+The candidate's preference count should never rise above the list total. In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
 
 #### The Investigation
 
@@ -162,11 +162,11 @@ At some point one of them wrote the difference between the two totals in the mar
 4096 = 2^{12}.
 \]
 
-A difference of exactly one power of two suggested a bit before it suggested arithmetic.
+A difference of exactly one power of two made a bit flip the obvious suspect.
 
-By then someone had telephoned a physicist the technician knew from university. She was pressed into service because her apartment was nearby, and because she was the sort of person one calls about the moon. She arrived by bicycle, helmet still in hand. They showed her the figures, the repeated checks, and the list of things already crossed out. She spent some time with the machine before suggesting a single-event upset.
+By then someone had telephoned a physicist the technician knew from university. She was pressed into service because her apartment was nearby, and because she was the sort of person one calls about the moon. She arrived by bicycle, helmet still in hand. They gave her the figures and the list of things already ruled out. She asked what had been checked, looked at the machine, and eventually asked whether they were assuming the program was the only thing capable of changing the number.
 
-An energetic particle passing through semiconductor material can deposit enough charge to change the state held by a memory cell. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
+Then she told them about single-event upsets. An energetic particle passing through semiconductor material can deposit enough charge to change the state held by a memory cell. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 
 There was no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
 
