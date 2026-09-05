@@ -62,13 +62,11 @@ I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who
 
 The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling. The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs. The queue bends once before the till in an L-shape that keeps the doorway clear.
 
-I take my place in it, moving forward each time the drawer opens with its tired ring. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall and open my notebook.
-
-The notebook is for work. A colleague on the municipal-systems contract that brought me here has given me this man's name because, I am told, he knows the local engineering scene and knows which names on procurement papers correspond to people who can actually fix things. I expect names, numbers, introductions.
+I take my place in it, moving forward each time the drawer opens with its tired ring. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall and open my notebook. A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for: he knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things. I expect names, numbers, introductions.
 
 After ten minutes I pick up a newspaper left on the next chair. On an inside page, a brief item from Geneva reports that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
 
-He arrives fourteen minutes late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He stops after saying it.
+He arrives fourteen minutes late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He pauses, then corrects himself.
 
 “Not spontaneous. Sorry. A signal failed, or somebody changed the route. We just don't know which yet.”
 
@@ -90,7 +88,7 @@ He breaks it. The biscuit splits unevenly, half crumbling onto the napkin. He se
 
 “See? The kind of nation that tolerates asymmetry but not waste.”
 
-I let the biscuit stand as his evidence and ask how he came to work on elections.
+I say nothing about the biscuit and ask how he came to work on elections.
 
 He gives me the short version: municipal contracts, equipment support, one assignment becoming another. Then, as if this belongs to the same answer, he says, “When people talk about elections, they always mean the result. They don't talk about the day itself.”
 
@@ -118,15 +116,15 @@ One clerk read the candidate total. Another read the list total. She asked for t
 
 “Check this one,” somebody said.
 
-They checked both totals. Then the machine identifier, the register, and the media from which the totals had been read.
+They checked both totals. Then they checked the machine identifier, the register, and the media from which the totals had been read.
 
 The numbers did not change.
 
 There is the certainty, never admitted aloud, that somewhere a check is missing and that this is sane; that checks go missing the way buttons go missing from coats. So they looked for the missing check.
 
-The candidate stood 4 096 votes above his own list. It was one power of two too proud.
+The candidate's total exceeded the list by 4 096 votes. It was one power of two too proud.
 
-The expectation can be written plainly: the candidate's preferential votes must not exceed the party-list total, and the party-list total must not exceed the district total.
+The relation they expected was simple:
 
 **Invariant 1. (violated)**
 
@@ -134,7 +132,7 @@ $$
 \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
 $$
 
-We expect the candidate's votes to remain below the list total. In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
+The candidate's preference count should remain below the list total. In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
 
 #### The Investigation
 
@@ -158,7 +156,7 @@ They made a ledger of what would be convenient to blame and crossed each item of
 
 Each explanation had some trace it ought to have left. None of the expected traces was there.
 
-By then the shape of the error was obvious to anyone in the room who worked with computers: \(4096 = 2^{12}\). The useful question was not whether 4 096 was a power of two. It was whether one bit could change without the software telling it to.
+By then the shape of the discrepancy was obvious to anyone in the room who worked with computers: \(4096 = 2^{12}\). The useful question was not whether 4 096 was a power of two. It was whether one bit could change without the software telling it to.
 
 Someone eventually called a physicist friend of the technician who lived nearby—the sort of person one calls about the moon. She arrived with a bicycle helmet and suggested a single-event upset. An energetic particle passing through semiconductor material can deposit enough charge to change the state held by a memory cell. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 
