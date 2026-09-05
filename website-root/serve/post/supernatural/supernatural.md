@@ -124,7 +124,7 @@ The air in the school had become very dry. Paper rasped when the clerks separate
 
 For a while nobody called it an *error*. That word would have started another procedure: forms, witnesses, preserved media, work frozen where it stood. So they talked around it. *This one*. *These two figures*. *Check it again.*
 
-The same numbers survived every obvious check. What they violated was simple:
+The same numbers survived every obvious check. The contradiction could now be written plainly:
 
 **Invariant 1. (violated)**
 
@@ -162,9 +162,9 @@ When the figures survived another pass, someone subtracted one total from the ot
 
 A difference of exactly one power of two made a bit flip an obvious suspect.
 
-A physicist was eventually pressed into service because she happened to live nearby. She arrived by bicycle, helmet still in hand. They gave her the figures, the repeated checks, and the list of explanations already crossed out.
+A physicist was eventually pressed into service because she happened to live nearby. She arrived by bicycle, helmet still in hand. By then nobody needed her to notice \(2^{12}\); what they wanted was a reason for one bit to change.
 
-She made them go through it again. For a while the discussion stayed with ordinary possibilities: arithmetic, corrupted input, software. Then it narrowed to a stranger question. Did the wrong number have to be written into memory, or could the memory itself have changed? The latter was possible. Semiconductor memory can be disturbed by an energetic particle passing through it. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
+She made them go through the ordinary possibilities again. Bad input, bad arithmetic, bad code: each had somewhere to leave a trace. When those routes led back to the same number, the question shifted to the memory itself. A memory cell can be disturbed physically, without the program asking it to change. An energetic particle passing through the semiconductor can deposit enough charge to alter the bit it crosses. If that bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 
 That gave them a hypothesis: a single-event upset. Under that hypothesis there would be no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
 
@@ -186,7 +186,7 @@ There is an older photograph I keep in a folder called *Proofs I Do Not Argue Wi
 
 ![Moth](https://ids.si.edu/ids/deliveryService?id=NMAH-NMAH2000-03035)
 
-The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” I like the page because it makes an old engineering superstition almost literal. Give the failure a name, and perhaps you can banish it. Here they could do both: call it a bug, pull it from the relay, and tape it beside the record. ([National Museum of American History][1])
+The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” I like the page because it makes an engineering superstition almost literal: give the failure a name, and perhaps you can banish it. Here they could do both—call it a bug, pull it from the relay, and tape it beside the record. ([National Museum of American History][1])
 
 The moth looks unconvinced.
 
