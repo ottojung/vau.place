@@ -96,7 +96,7 @@ He gives me the short version: municipal contracts, equipment support, one assig
 
 “I worked one day,” he continues, “that stayed with me more than the result it produced.”
 
-He mentions a school in Schaerbeek, the 2003 federal election, and a candidate whose preferential votes exceeded the votes available to him through his own party list. I recognize the outline. I have heard it before as one of those programmer stories compressed into a few lines and passed around without much interest in who had actually been there. It takes me a moment to adjust to the idea that the man across from me had been inside the room I knew only from retellings.
+He mentions a school in Schaerbeek, the 2003 federal election, and a candidate whose preferential votes exceeded the votes available to him through his own party list. I recognize the outline. I have heard it before as one of those programmer stories compressed into a few lines and passed around without much interest in who had actually been there. It takes me a moment to adjust to the idea that the man across from me had been inside the room I had known only from retellings.
 
 What follows is his account of that day. He did not tell it in order, but I will.
 
@@ -156,21 +156,23 @@ They made a ledger of what would be convenient to blame and crossed each item of
 
 Each explanation had some trace it ought to have left. None of the expected traces was there.
 
-At some point one of them wrote the difference between the two totals in the margin: 4 096. That changed the shape of the problem. Anyone in the room who worked with computers could see it:
+When the figures survived another pass, someone subtracted one total from the other and wrote the difference in the margin: 4 096. The technician recognized the shape at once:
 
 \[
 4096 = 2^{12}.
 \]
 
-A difference of exactly one power of two made a bit flip the obvious suspect.
+A difference of exactly one power of two made a bit flip an obvious suspect.
 
 By then someone had telephoned a physicist the technician knew from university. She was pressed into service because her apartment was nearby, and because she was the sort of person one calls about the moon. She arrived by bicycle, helmet still in hand. They gave her the figures and the list of things already ruled out. She asked what had been checked, looked at the machine, and eventually asked whether they were assuming the program was the only thing capable of changing the number.
 
 Then she told them about single-event upsets. An energetic particle passing through semiconductor material can deposit enough charge to change the state held by a memory cell. If the affected bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 
+That was the hypothesis: an invisible physical event, already gone, had changed one bit.
+
 There was no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
 
-That was the hypothesis. The bit toggled to one, and in so toggling, wove its one-ness into every arithmetic that followed.
+The bit toggled to one, and in so toggling, wove its one-ness into every arithmetic that followed.
 
 The technician objected that bits did not change for no reason. The physicist agreed. A particle crossing a memory cell was a reason; the difficulty was that the reason would already be gone.
 
