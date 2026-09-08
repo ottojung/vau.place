@@ -456,6 +456,66 @@ The factorization puzzle above is the most literal attempt to get this shape fro
 
 In the resource notation above, computational effort is one possible coordinate of \(R(\sigma)\). A computational construction is successful when realistic bounds on that coordinate keep the false-case probability low while verification stays cheap.
 
+## Paradoxes
+
+Once the object is defined and there are ways to construct examples, some consequences are strange enough to isolate.
+
+### Knowing more can weaken a proof
+
+Suppose I see somebody yawn after ten minutes of sheep counting. Later I learn that they can yawn on command.
+
+I now know more about the prover, but the old evidence has become worse. The newly plausible models put more probability on the same trace when \(Q\) is false, so the soundness error goes up.
+
+The same thing can happen on the capacity side. A chess record can look like good evidence against some competing activity until I learn that this particular person can do both at once.
+
+So a better-informed verifier can rationally become less convinced by exactly the same trace.
+
+### Publishing the test can destroy it
+
+A yawn may be evidence partly because the person did not know anyone would treat it as evidence. Tell them in advance that yawning is the test, and yawning deliberately becomes an obvious strategy.
+
+The verifier has changed the prover's strategy space merely by revealing the verifier.
+
+This is unusual for something that looks like a proof system. A sheep-counting protocol can become weaker when its acceptance rule becomes common knowledge.
+
+### A stronger prover can make a weaker protocol
+
+Suppose the monotone-subsequence puzzle initially takes somebody several minutes. After enough practice they learn to see the witness almost immediately. Or suppose somebody learns to combine two activities that used to compete for the same bottleneck.
+
+Nothing has gone wrong with the prover. They have become better. But the protocol may have become worse: fake traces may now be cheaper to produce, or an incompatibility on which the argument relied may disappear.
+
+In this setting, improving the prover can destroy soundness.
+
+## Does the theory explain anything?
+
+There is an uncomfortable possibility here. Perhaps all I have built is a language in which almost any story can be represented.
+
+The danger is \(K\) and \(M\). If I am allowed to choose them after seeing the trace, then I can make almost anything into evidence. Given an observation \(E\) and a claim \(Q\), I could simply choose a model in which
+
+\[
+\Pr(E\mid Q,K)=1
+\qquad\text{and}\qquad
+\Pr(E\mid \neg Q,K)=0.
+\]
+
+Then \(E\) is perfect evidence by construction. A framework that permits this explains nothing.
+
+The person model therefore has to earn its keep somewhere else. The useful case is when the verifier's knowledge and model of the prover are constrained independently of the particular trace being interpreted. What I learned from earlier chess games may tell me whether this person sandbags. Dual-task observations may tell me which activities interfere. Those beliefs can then be used to predict the strength of a new test.
+
+That kind of cross-prediction would give the theory some bite. A model learned from one collection of situations should say something about another collection that was not used to fit it.
+
+There are already a few places where the framework rules things out without much freedom. If
+
+\[
+\mathcal T(\neg A)\subseteq\mathcal T(A),
+\]
+
+then a direct strategy-independent certificate for \(\neg A\) cannot exist in that trace model. If I repeatedly observe two activities occurring together, a theory that treats them as incompatible for this person has to move. If publishing the verifier creates a cheap false-case strategy, the old soundness claim is gone.
+
+But most of the interesting quantities are still empirical. The framework itself does not tell me how people allocate attention, which incentives are stable, how fast practice changes a task, or what prior over person models I should have.
+
+So at this stage, **framework** may be the more accurate word. It says what has to be specified, exposes assumptions that were previously hidden, and gives us quantities that experiments could estimate. It becomes explanatory only when those quantities are constrained strongly enough that some possible observations would prove it wrong.
+
 ## What I would try next
 
 The monotone-subsequence task is concrete enough to start measuring the computational construction. For
