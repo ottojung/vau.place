@@ -42,7 +42,7 @@ Now suppose I ask:
 
 Nothing needs to be said or written down afterward. The task can begin and end entirely in your head.
 
-Still, something may show on the outside. If after a few minutes you start yawning and fall asleep, that is some evidence that the sheep were there.
+Yet, if after a few minutes you start yawning and fall asleep, that is some evidence that the sheep were there.
 
 ## The babysitter
 
