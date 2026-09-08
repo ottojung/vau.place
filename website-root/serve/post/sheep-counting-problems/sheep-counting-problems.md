@@ -234,24 +234,22 @@ Poor chess has the same problem. It does not establish distraction: an attentive
 
 If the core question is what happened in the person's head, it is attractive to ask for evidence that does not depend on the person's incentives afterward. I will call that **strategy-independent** evidence. Other evidence works only given assumptions about what the prover wants; I will call that **incentive-dependent**.
 
-Let \(\Sigma_K\) be the strategies that the verifier considers possible. For an accepting event \(E\), write
+For now, let \(\Sigma\) stand for the strategies we are treating as possible. For an accepting event \(E\), write
 
 \[
-s(E,K)=
-\sup_{\sigma\in\Sigma_K}
-\Pr(E\mid \neg Q,\sigma,K).
+s(E)=
+\sup_{\sigma\in\Sigma}
+\Pr(E\mid \neg Q,\sigma).
 \]
 
-If \(\Sigma_K\) contains every strategy the prover could deliberately use, this is the strategy-independent standard. If it is restricted by assumptions about what the prover wants, it is incentive-dependent.
-
-The second case makes verification personal. A close friend may know whether somebody normally tries hard at chess, whether they sandbag, whether they would ignore a crying child out of spite, or whether a suspicious yawn means anything at all. It may even matter that the verifier knew these intentions before the test rather than inventing a motivation after seeing the result.
+If \(\Sigma\) contains every strategy the prover could deliberately use, this is the strategy-independent standard. If it excludes strategies because we believe the prover would not choose them, it is incentive-dependent.
 
 Fakeability need not be all or nothing. Give a strategy a vector of resource costs \(R(\sigma)\): time, attention, memory, preparation, physical effort, coordination with other people, or whatever matters in the problem. Then for a resource budget \(b\) we can ask for
 
 \[
-s_b(E,K)=
-\sup_{\substack{\sigma\in\Sigma_K\\R(\sigma)\preceq b}}
-\Pr(E\mid \neg Q,\sigma,K).
+s_b(E)=
+\sup_{\substack{\sigma\in\Sigma\\R(\sigma)\preceq b}}
+\Pr(E\mid \neg Q,\sigma).
 \]
 
 Now “hard to fake” has a probabilistic meaning without deciding in advance what kind of difficulty matters.
@@ -296,39 +294,40 @@ For an activity \(A\), let \(\mathcal F_A\) be the resource-use patterns that co
 
 This picture can express shared bottlenecks, separate resources, alternative strategies, and changing capacity. It gives me a way to say what the chess argument would require: every sufficiently successful way of playing the relevant chess games would have to collide with every relevant way of doing the activity the girlfriend wants to exclude.
 
-That sounds useful. It is not yet a proof of anything about a real person.
+But this introduces the same problem we just encountered with incentives: the verifier may have the wrong person in mind.
 
-## Whose network?
+## Two ways to misjudge a person
 
-The network has not solved the problem. It has moved it.
+Suppose I believe the babysitter would never deliberately ignore a crying child. If that belief is wrong, I will misread her behavior even if I have perfectly understood what she is capable of doing.
 
-I know somebody who would frequently give a mathematics lecture while writing a manuscript at the same time. If I had tried to draw a generic human flow network from my own intuitions, I would probably have put those two activities behind one bottleneck and been wrong about him.
+There is a parallel mistake on the capacity side. I know somebody who would frequently give a mathematics lecture while writing a manuscript at the same time. If I had drawn a generic human flow network from my own intuitions, I would probably have put those two activities behind one bottleneck and been wrong about him.
 
-Different people may have very different capacities, routes, and strategies. Practice may change them. Tiredness may change them. One person may have an implementation of a task that never occurred to the verifier.
+In the first case I misjudged what strategy the person would choose. In the second I misjudged what combinations of activity the person could perform. Both failures come from using the wrong model of the person.
 
-So the girlfriend does not merely need a theory saying that chess and flirting compete for some resource. She needs enough reason to believe that they compete for **this boyfriend**.
+This matters for the chess example twice. The girlfriend needs some idea of what strategies her boyfriend would actually choose, and she needs some idea of which activities can coexist for him. Knowing one without the other is not enough.
 
-A related question is can one learn another person's flow network? You could observe which pairs of tasks interfere, run dual-task experiments, watch what changes with practice, and update the model. Long familiarity may do the same thing informally. A close friend might know that a combination which overwhelms almost everyone else is routine for one particular person. 
-I won't try to answer this with confidence.
+A close friend may have useful information about both. They may know whether somebody sandbags at chess or would manufacture an excuse, but also that a supposedly overwhelming combination of tasks is routine for this particular person.
 
-## Uncertain networks
+## Uncertain models of the person
 
-It seems wrong to hide this uncertainty inside a sentence such as “assume \(A\) and \(B\) are incompatible.” The verifier should be uncertain about the network.
+Instead of pretending that either part is known exactly, let \(M\) denote a model of the prover. It includes at least a strategy model \(\Sigma_M\), describing which actions are plausible under the person's incentives, and a resource model \(G_M\), describing which activities they can perform together.
 
-Let
+The verifier's background knowledge \(K\) induces a distribution
 
 \[
-\pi(G\mid K)
+\pi(M\mid K)
 \]
 
-be a distribution over resource networks that still look plausible for that person.
+over models that still look plausible for this person.
 
-For activities \(A\) and \(B\), write \(I_G(A,B)\) for the statement that they cannot coexist in network \(G\). Let \(E\) be the evidence that \(A\) happened, and define
+This kills both problems with the same move. If I learn that somebody often sandbags, I update the incentive part of the model. If I repeatedly watch somebody write a manuscript while giving a lecture, I update the resource part.
+
+For example, suppose \(E\) is evidence that activity \(A\) happened, and write \(I_M(A,B)\) for the statement that \(A\) and \(B\) cannot coexist for a person described by \(M\). Define
 
 \[
 p=\Pr(A\mid E,K),
 \qquad
-q=\Pr(I_G(A,B)\mid E,K).
+q=\Pr(I_M(A,B)\mid E,K).
 \]
 
 Then
@@ -336,24 +335,18 @@ Then
 \[
 \Pr(\neg B\mid E,K)
 \;\ge\;
-\Pr(A\wedge I_G(A,B)\mid E,K)
+\Pr(A\wedge I_M(A,B)\mid E,K)
 \;\ge\;
 \max(0,p+q-1).
 \]
 
-So there are at least two ways the argument can fail. The chess record may not convince us that \(A\) really happened, or our model of the person may be wrong about incompatibility.
+So the chess argument can fail because the record does not establish \(A\), because the verifier misjudged the boyfriend's capacity, or because the verifier misjudged which strategies his incentives make plausible. These are no longer separate patches to the theory; they are all uncertainty about \(M\).
 
-If both \(p\) and \(q\) are \(0.99\), the lower bound is \(0.98\). If those two uncertainties were independent, it would instead be \(0.99^2=0.9801\).
-
-Population knowledge can supply a prior. Perhaps 99% of people have only one effective instance of some mental-load channel needed by both activities. That is useful when the prover is a stranger. But repeated observation of the lecturer who writes a manuscript at the same time should push the posterior for that particular person away from the population prior.
-
-Intentions can be treated similarly. In incentive-dependent cases, \(K\) contains beliefs about what the prover is trying to do, and the meaning of the same visible behavior changes with those beliefs.
-
-Two verifiers can therefore see the same evidence and rationally reach different conclusions because they know different things about the person who produced it.
+Population knowledge can supply a prior over models. Long familiarity, observation, and deliberate dual-task experiments can update it. Two verifiers can therefore see the same evidence and rationally reach different conclusions because they know different things about the person who produced it.
 
 ## Forgetting the network
 
-For some questions, the full network may contain more detail than we need.
+The resource part of \(M\) may still contain more detail than we need.
 
 Suppose we remember only which sets of activities can happen together. Let \(\mathcal C\) be that family.
 
@@ -377,11 +370,13 @@ Q(X,H)
 
 be the claim about the cognitive history that we want evidence for.
 
-A sheep-counting protocol consists of an intended or natural true-case behavior \(\sigma^+\), a set \(\Sigma_K\) of false-case strategies the verifier considers possible, and a verifier
+A sheep-counting protocol consists of an intended or natural true-case behavior \(\sigma^+\), a family of prover models \(M\), and a verifier
 
 \[
 V(X,T,K)\in\{0,1\}.
 \]
+
+Each model \(M\) determines a set of false-case strategies \(\Sigma_M\) and whatever resource constraints are relevant. The verifier's knowledge \(K\) determines how plausible the different models are.
 
 It is a \((c,s)\)-**sheep-counting protocol** when
 
@@ -392,28 +387,23 @@ It is a \((c,s)\)-**sheep-counting protocol** when
 and
 
 \[
-\sup_{\sigma\in\Sigma_K}
-\Pr[V=1\mid \neg Q,\sigma,K]
-\le s,
+\Pr[V=1\mid \neg Q,K]\le s,
 \]
 
 with
 
 \[
-c>s.
+c>s,
 \]
+
+where the false-case probability averages over the verifier's uncertainty about \(M\) and allows the prover the strategies admitted by each model. For a strategy-independent proof, every model admits every strategy the prover could deliberately use; incentive-dependent proofs restrict this according to the verifier's model of the prover.
 
 The probabilities can include randomness in the environment and verifier, natural variation in human behavior, and uncertainty in \(K\) about the particular person's abilities, intentions, or resource network.
 
-If we care about limited fakeability rather than unlimited fakeability, give strategies a resource vector \(R(\sigma)\) and record the **fakeability profile**
+If we care about limited fakeability rather than unlimited fakeability, give strategies a resource vector \(R(\sigma)\) and record the **fakeability profile** \(s(b)\), restricting the false-case strategies to those with
 
 \[
-s(b)=
-\sup_{\substack{
-\sigma\in\Sigma_K,\\
-R(\sigma)\preceq b
-}}
-\Pr[V=1\mid \neg Q,\sigma,K].
+R(\sigma)\preceq b.
 \]
 
 The verifier can have a resource cost as well. Different problems may choose different resource coordinates; the definition does not privilege one of them.
@@ -464,7 +454,7 @@ For constructions based on bounded human computation, I would like a lot of unav
 
 The factorization puzzle above is the most literal attempt to get this shape from ordinary complexity theory. It is bad because the human costs are bad too. The monotone-subsequence puzzle feels more plausible, but I do not know whether a practiced person will find the witness in five seconds or five minutes. That is an empirical complexity question.
 
-In the resource notation above, computational effort is one possible coordinate of \(R(\sigma)\). A computational construction is successful when realistic bounds on that coordinate keep \(s_b\) low while verification stays cheap.
+In the resource notation above, computational effort is one possible coordinate of \(R(\sigma)\). A computational construction is successful when realistic bounds on that coordinate keep the false-case probability low while verification stays cheap.
 
 ## What I would try next
 
@@ -482,9 +472,7 @@ But the broader experiments need not be computational. How much does sheep count
 
 The self-initiated setting leaves an awkward freedom: the prover sees the environment and then chooses what problem to solve. How much choice can they have before they are effectively choosing an answer they already know?
 
-For the resource side, I would want measurements across people as well as within one person. How stable are incompatibilities? How much can be learned from a few dual-task observations? How quickly does practice change them? How informative is population data about one particular prover?
-
-And then there is the verifier. If useful evidence depends on knowing somebody's habits, abilities, or intentions, when is that ordinary human familiarity, and when has the verifier learned too much?
+For the person-model side, I would want measurements across people as well as within one person. How stable are incompatibilities? How much can be learned from a few dual-task observations? How quickly does practice change them? How stable are incentives across situations? How informative is population data about one particular prover?
 
 ## Closing
 
