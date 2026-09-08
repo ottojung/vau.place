@@ -36,15 +36,13 @@ This is the easy case. The input is explicit. The answers are easy to inspect. N
 
 ## Counting sheep
 
-Now consider the instruction:
+Now suppose I ask:
 
 > Count sheep in your head for ten minutes.
 
-Nothing has to be said or written down afterward. The whole exercise can happen internally.
+Nothing needs to be said or written down afterward. The task can begin and end entirely in your head.
 
-That makes the contrast with arithmetic sharper. Arithmetic naturally leaves answers behind. Sheep counting does not have to leave anything at all.
-
-If the person starts yawning and falls asleep, that is evidence in their favor.
+Still, something may show on the outside. If after a few minutes you start yawning and fall asleep, that is some evidence that the sheep were there.
 
 ## The babysitter
 
