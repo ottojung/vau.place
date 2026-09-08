@@ -103,7 +103,7 @@ In practice, this might look like:
 >
 > I'm factorizing. Alice, Bob and Charlie's names add up to a number whose factorization is `3215031751 × 118670087467 × 307768373641`.
 
-The appeal is obvious. Factorization is difficult, while checking a proposed factorization is straightforward.
+From computer science point of view, this is perfect: factorization is difficult, while checking a proposed factorization is straightforward.
 
 But large-integer arithmetic is cumbersome to do mentally, and even checking the product of large factors may be expensive for a person. The machine model is not quite the model I want for these examples.
 
