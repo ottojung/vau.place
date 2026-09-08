@@ -137,7 +137,7 @@ I like this example because several useful things happen at once. The witness is
 
 This feels easier than factoring, but I don't know whether the search is difficult enough for a human. The theorem says that a witness exists; it says nothing about how long a person will take to notice one.
 
-### Five people with nobody between them
+### Six objects, including the empty spot
 
 There is also a more spatial version.
 
@@ -155,9 +155,7 @@ There is an obvious danger too: if the prover may choose among many possible pro
 
 ## What kind of theory is this?
 
-At this point I am not sure what kind of theory I want.
-
-Arithmetic looks a little like an ordinary proof system. Sheep counting barely has an output. Babysitting is about a state maintained over time. Chess leaves an interactive history. The party puzzles are search problems whose concrete instance comes from the room.
+I want to generalize this and be able to talk about problems like these more abstractly.
 
 Sheep counting is the first warning against making the theory too narrow. If I insist on a clean certificate, there is almost nothing to work with. But yawning or falling asleep can still make the story that somebody was counting sheep more plausible.
 
@@ -310,9 +308,8 @@ Different people may have very different capacities, routes, and strategies. Pra
 
 So the girlfriend does not merely need a theory saying that chess and flirting compete for some resource. She needs enough reason to believe that they compete for **this boyfriend**.
 
-Can one learn another person's flow network? Perhaps partly. You could observe which pairs of tasks interfere, run dual-task experiments, watch what changes with practice, and update the model. Long familiarity may do the same thing informally. A close friend might know that a combination which overwhelms almost everyone else is routine for one particular person.
-
-And should you learn it? A verification method that improves as one person maps another person's attention, habits, intentions, and bottlenecks is not obviously benign. I do not have an answer to that part.
+A related question is can one learn another person's flow network? You could observe which pairs of tasks interfere, run dual-task experiments, watch what changes with practice, and update the model. Long familiarity may do the same thing informally. A close friend might know that a combination which overwhelms almost everyone else is routine for one particular person. 
+I won't try to answer this with confidence.
 
 ## Uncertain networks
 
