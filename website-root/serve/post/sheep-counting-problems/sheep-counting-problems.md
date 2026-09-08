@@ -48,9 +48,9 @@ The situation looks superficially similar to arithmetic: there is an instruction
 
 But `843` does not tell us very much. It can be invented at the end. A person can count for one minute and then stop. Many different ten-minute histories lead to the same report.
 
-There is, however, a funnier kind of evidence available. If the person starts yawning and eventually falls asleep, I might be tempted to count that as proof that the sheep counting really happened.
+There may be other evidence. If the person starts yawning and eventually falls asleep, I would be inclined to count that in favor of their story.
 
-It is not much of a proof, of course. That is partly what makes the example useful: two very simple mental tasks can look structurally similar while giving us very different kinds of things to point at afterward.
+So two very simple mental tasks can behave quite differently. Arithmetic naturally leaves answers that are closely related to the calculations. Sheep counting leaves a much weaker trail.
 
 ## The babysitter
 
@@ -194,7 +194,7 @@ For the self-initiated puzzles, the verifier can arrive late. The hard part is m
 
 Some examples offer something close to an ordinary certificate. A correct arithmetic worksheet can be strong evidence of arithmetic. A valid monotone subsequence is a perfectly checkable mathematical witness.
 
-Others are much looser. A quiet babysitting shift may leave almost nothing behind. Falling asleep after counting sheep is the sort of "proof" one can say with a smile and still notice that there is an idea underneath it.
+Others are much looser. A quiet babysitting shift may leave almost nothing behind. Falling asleep after counting sheep at least gives us something to point to.
 
 Cost is another question. A perfectly valid mathematical witness says nothing by itself about how difficult it was to find. If I merely want to show that I was thinking about arithmetic, a few easy exercises may be enough. If I want the task to occupy substantial cognition, or to act like proof of work, then the amount of processing matters too.
 
@@ -278,7 +278,7 @@ A\text{ incompatible with }B
 \text{evidence against }B.
 \]
 
-This is what the girlfriend's rather ridiculous chess plan was trying to do. Chess was not the final fact she cared about. She wanted a positively checkable activity that would occupy whatever cognitive resources were needed for the competing activity she wanted to exclude.
+This is what the girlfriend was trying to do with chess. Chess was not the final fact she cared about. She wanted a positively checkable activity that would occupy whatever cognitive resources were needed for the competing activity she wanted to exclude.
 
 The same move avoids the incentive problem. Instead of treating poor behavior as evidence of absent attention, we prove some other positive activity and infer absence from incompatibility.
 
@@ -352,8 +352,6 @@ V(X,T)\in\{\text{accept},\text{reject}\}.
 
 For the proof-like cases, one can now ask for familiar properties. If histories satisfying \(Q\) can produce accepting evidence, we have completeness. If histories not satisfying \(Q\) cannot produce it except with small probability, even when trying to mislead the verifier, we have soundness.
 
-Not every example in this post is meant to reach that standard. Sometimes, as with falling asleep after counting sheep, the "proof" is mostly there because it is funny and suggestive.
-
 The rest depends on the problem: what histories count, what aids are allowed, whether cost matters, and whether the prover's incentives are part of the model.
 
 ## Some questions I would try next
@@ -380,7 +378,7 @@ The original question was simple:
 
 Usually an answer is enough. But one can also ask whether the person could prove the answer.
 
-Arithmetic gives an easy positive example. Sheep counting gives a closely related task with a much sillier kind of evidence. Babysitting moves from a puzzle to sustained attention. Chess gives repeated fresh interaction. And the party puzzles suggest that a person can sometimes arrange a provable line of thought without anybody having prepared a challenge for them.
+Arithmetic gives an easy positive example. Sheep counting gives a closely related task with much weaker evidence. Babysitting moves from a puzzle to sustained attention. Chess gives repeated fresh interaction. And the party puzzles suggest that a person can sometimes arrange a provable line of thought without anybody having prepared a challenge for them.
 
 From there, questions about verification, preparation, online input, incentives, negative answers, and cognitive resources appear naturally.
 
