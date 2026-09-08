@@ -78,7 +78,7 @@ The examples so far all begin with a recognizable assignment. Somebody says: sol
 
 I am especially interested in another case: nobody has to prepare the challenge first.
 
-Can a person can decide on their own to think about something in a way that will later be provable?
+Can a person decide on their own to think about something in a way that will later be provable?
 The trick is to use public information already present, compute something about it, and later show the result.
 
 Imagine a party: it's a convenient setting because a room full of people already contains a lot of public structure.
@@ -103,7 +103,7 @@ In practice, this might look like:
 >
 > I'm factorizing. Alice, Bob and Charlie's names add up to a number whose factorization is `6712633 × 8463 × 7162`.
 
-From the complexity-theory point of view this is perfct: factorization is difficult, while checking a proposed factorization is straightforward.
+From the complexity-theory point of view this is perfect: factorization is difficult, while checking a proposed factorization is straightforward.
 
 But large-integer arithmetic is cumbersome to do mentally, and even checking the product of large factors may be expensive for a person. The machine model is not quite the model I want for these examples.
 
@@ -153,17 +153,25 @@ What interests me in both cases is that the prover can initiate the process. The
 
 There is an obvious danger too: if the prover may choose among many possible problems after inspecting the environment, perhaps they can simply choose one whose answer is already obvious.
 
-# TODO: make an intro to ~~"what kind of theory I wanna build on these"
+## What kind of theory is this?
 
-## Evidence and cost
+At this point I am not sure what kind of theory I want.
+
+Arithmetic looks a little like an ordinary proof system. Sheep counting barely has an output. Babysitting is about a state maintained over time. Chess leaves an interactive history. The party puzzles are search problems whose concrete instance comes from the room.
+
+I do not want to force all of these into one definition too quickly. For now I mostly want language for asking what information reached the person while they were thinking, what remained visible afterward, how much work was required, and what the verifier has to know about the person for the evidence to mean anything.
+
+The rest of this post is my current attempt at that language.
+
+## Evidence, freshness, and cost
 
 A correct arithmetic worksheet can be strong evidence of arithmetic. Sheep counting may leave no designed output at all. A quiet babysitting shift may leave almost nothing behind.
 
-The mathematical puzzles add another distinction. Five people either form the required subsequence or they do not. Five people either surround an empty region or they do not. The witness can be completely convincing about the mathematical fact and still tell us little about how difficult the fact was to find.
+The mathematical puzzles give something stronger in one sense and weaker in another. Five people either form the required subsequence or they do not. Five people either surround an empty region or they do not. A witness can settle the mathematical fact completely while saying very little about how difficult it was to find.
 
-So cost seems like a separate question, and one that matters only in some versions of the problem. If I merely want to show that I was thinking about arithmetic, a few easy exercises may be enough. If I want the task to occupy substantial cognition, or to act like proof of work, then the amount of processing starts to matter.
+Freshness matters once cost matters. If I know tomorrow's arithmetic exercises today, I can solve them today. Chess avoids this because every opponent move brings new input. In the party puzzles, the prover may know all the people and the strategy in advance, while the current arrangement still creates something to do now.
 
-Blum and Vempala's model of human computation gives vocabulary that seems useful here. I will borrow three quantities:
+This is where I find Blum and Vempala's vocabulary useful. I will borrow three quantities:
 
 \[
 \operatorname{PREP},\qquad
@@ -171,17 +179,13 @@ Blum and Vempala's model of human computation gives vocabulary that seems useful
 \operatorname{VER}.
 \]
 
-I will use **PREP** for things that can happen before the fresh part of the instance is available: memorizing names, practicing strategies, learning the guest list, building mental lookup structures.
+**PREP** is work that can happen before the fresh part of the instance is available. **PROC** is what remains afterward. **VER** is the cost of checking the evidence.
 
-**PROC** is what remains after the fresh input arrives.
+If the point is merely to show that I was thinking about arithmetic, a few easy exercises may be enough. If the point is proof of work, then I want substantial \(\operatorname{PROC}\) and small \(\operatorname{VER}\), even after generous \(\operatorname{PREP}\).
 
-**VER** is the cost of checking the evidence.
+The relevant cost should be the cheapest successful strategy. If somebody finds a shortcut, the puzzle got easier whether or not it was the strategy I had in mind.
 
-For a proof-of-work-like puzzle, the shape I am looking for is substantial \(\operatorname{PROC}\) and small \(\operatorname{VER}\), even after a lot of \(\operatorname{PREP}\).
-
-The processing cost should probably be the cheapest successful strategy rather than the strategy I expected. If somebody finds a shortcut, then as far as this purpose is concerned the puzzle became easier.
-
-This is the part of the monotone-subsequence puzzle that I would most want to test. Erdős-Szekeres gives existence and cheap verification, but it does not give a lower bound on human search.
+For the monotone-subsequence puzzle, this is still an empirical question. Erdős-Szekeres guarantees a witness and cheap verification; it does not tell me whether a practiced person will find one in five seconds or five minutes.
 
 ## Incentives
 
@@ -191,57 +195,49 @@ Suppose the child cries for twenty minutes and the babysitter does nothing. Norm
 
 But an attentive babysitter can deliberately ignore the child.
 
-So that inference is not really about attention alone. It also assumes something about what the babysitter was trying to do.
-
 Chess has the same problem. Poor performance does not establish distraction: an attentive player can intentionally play badly.
 
-For now I find it useful to keep two standards apart. I will call evidence **strategy-independent** when it is meant to survive a prover deliberately trying to mislead us. I will call it **incentive-dependent** when the inference uses assumptions about what the prover wants.
+There seem to be at least two different standards here. Some evidence is meant to survive a prover who is actively trying to fool the verifier. I will call that **strategy-independent**. Other evidence works only given assumptions about what the prover wants. I will call that **incentive-dependent**.
 
-I do not mean these as a complete taxonomy. They are just two cases that behave differently in the examples above.
+The second case makes verification strangely personal. To interpret the behavior, the verifier needs some idea of the prover's actual intentions. It may even matter that they knew those intentions before the test rather than inventing a motivation after seeing the result.
 
-There is something slightly uncomfortable hiding here. In the incentive-dependent case, the verifier needs to know more than the evidence. They would like to know what the prover actually wanted, or at least have a good model of it before interpreting the result.
+A close friend may know whether somebody normally tries hard at chess, whether they sandbag, whether they would ignore a crying child out of spite, or what kinds of excuses they are likely to manufacture. Maybe some sheep-counting proofs work better between people who know each other well.
 
-Perhaps that is sometimes ordinary human knowledge. A close friend may know how seriously somebody usually plays chess, whether they tend to sandbag, whether they would ignore a crying child out of spite, or what kinds of excuses they are likely to manufacture. Maybe some sheep-counting proofs only work between people who know each other well.
-
-I am not sure whether that dependence is a defect or part of the subject. It raises a question that does not usually appear in ordinary proof systems: how much knowledge of the prover is allowed to be part of verification?
+I am not sure whether that is a defect. It may simply be part of what changes when the object being verified is a human mind rather than a computation in a fixed machine model.
 
 ## Negative answers
 
-Arithmetic gives a clean way to see another asymmetry.
+Arithmetic gives another asymmetry.
 
 Suppose the claim is:
 
 > I was solving arithmetic exercises in my head.
 
-We know what a positive answer might look like: show the fresh exercises and their correct answers.
+A positive answer can leave the completed exercises behind.
 
 Now take the complement:
 
 > I was **not** solving arithmetic exercises in my head.
 
-What would the corresponding certificate look like?
+What is the corresponding object?
 
-I do not see an obvious analogue of the completed worksheet. Doing no arithmetic does not naturally produce an object that only a non-arithmetic thinker can produce.
+I do not see one. Somebody who did solve the exercises can usually behave afterward exactly like somebody who did not. They can stay silent, throw the answers away, or imitate whatever ordinary behavior the non-solver could produce.
 
-More importantly, somebody who did solve arithmetic exercises can usually behave afterward exactly like somebody who did not. They can stay silent, throw the answers away, or imitate whatever ordinary behavior the non-solver could produce.
-
-One way to write this is to let \(\mathcal T(A)\) be the set of visible traces available after activity \(A\), allowing arbitrary later strategy. If
+Let \(\mathcal T(A)\) be the set of visible traces available after activity \(A\), allowing arbitrary later strategy. If
 
 \[
 \mathcal T(\neg A)\subseteq\mathcal T(A),
 \]
 
-then there cannot be a strategy-independent trace that directly certifies \(\neg A\).
-
-This is a small observation, but it seems to explain why the positive and negative versions of the arithmetic example feel so different.
+then no strategy-independent trace can directly certify \(\neg A\).
 
 ## Proving something incompatible instead
 
-There is another way to get a negative conclusion.
+There is another route to a negative conclusion.
 
-Suppose I want evidence that activity \(B\) did not happen. Rather than searching for a special trace of non-\(B\), I can try to prove that another activity \(A\) did happen during the same interval, where \(A\) and \(B\) could not have happened together.
+Suppose I want evidence that activity \(B\) did not happen. Instead of looking for a trace of non-\(B\), I can try to prove that activity \(A\) did happen during the same interval, where \(A\) and \(B\) cannot coexist.
 
-Then the argument is simply
+Then
 
 \[
 \text{evidence for }A
@@ -251,139 +247,137 @@ A\text{ incompatible with }B
 \text{evidence against }B.
 \]
 
-This is what the girlfriend was trying to get from chess. Chess was not the final fact she cared about. She wanted a positively checkable activity that would occupy whatever cognition was needed for the activity she wanted to exclude.
+This is closer to what the girlfriend wanted from chess. Chess was not the final fact she cared about. She wanted a positively checkable activity that would exclude some competing activity.
 
-The same move also seems to avoid the earlier incentive problem. Instead of interpreting bad behavior as evidence of absent attention, we positively certify something else and get the negative conclusion from incompatibility.
+It also avoids one version of the incentive problem. Instead of saying that bad chess proves distraction, she can ask for good enough chess and use that as positive evidence for something incompatible with distraction.
 
-At least for these examples, both questions lead me to the same place:
-
-> Which mental activities can coexist?
+But now almost everything depends on the word **incompatible**.
 
 ## Cognitive resources
 
-I do not know what the right model of coexistence is. The first one I tried was a single time-varying capacity \(C(t)\): each activity consumes some of it, and activities stop fitting together when their combined demand exceeds the available capacity.
+A first model would give the mind a single time-varying capacity \(C(t)\). Activities consume some of it and cannot coexist when their combined demand is too large.
 
-That seems too coarse. Two activities can interfere because both need one particular resource while leaving other resources unused. Conversely, two demanding activities may coexist if they rely on different resources.
+That already seems too simple. Two activities may collide because both need one particular resource while leaving other resources unused. Another pair may coexist because they use different resources.
 
-I know somebody who would frequently give a mathematics lecture while writing a manuscript at the same time. Whatever was happening there, “two mentally demanding tasks” was clearly not enough to guarantee exclusion.
-
-The picture I currently find more useful has several capacity-limited channels, with capacities that may change over time. An activity uses some of those channels, and the same activity may admit several implementations with different resource profiles.
-
-One way to draw that picture is as a time-varying network
+A more flexible picture is a time-varying network
 
 \[
 G_t=(V,E,c_t),
 \]
 
-where \(c_t(e)\) is the capacity of channel \(e\) at time \(t\).
+where edges are cognitive channels and \(c_t(e)\) is their capacity at time \(t\).
 
-For an activity \(A\), let \(\mathcal F_A\) be the resource-use patterns that we are willing to count as implementations of \(A\).
+For an activity \(A\), let \(\mathcal F_A\) be the resource-use patterns that count as implementations of \(A\). Several activities can coexist when we can choose one implementation for each without exceeding any capacity.
 
-A set of activities \(S\) can coexist when we can choose one implementation for every \(A\in S\) without exceeding the capacities.
+This picture can express shared bottlenecks, separate resources, alternative strategies, and changing capacity. It gives me a way to say what the chess argument would require: every sufficiently successful way of playing the relevant chess games would have to collide with every relevant way of doing the activity the girlfriend wants to exclude.
 
-I like this picture because it allows two activities to collide on one bottleneck while leaving the rest of the system unused. It also allows an alternative strategy to route around a bottleneck.
+That sounds useful. It is not yet a proof of anything about a real person.
 
-For the chess argument, however, this makes the assumption we need quite strong. It is not enough that my favorite way of playing chess conflicts with the competing activity. Every sufficiently successful implementation consistent with the chess evidence has to leave too little capacity for the activity I am trying to exclude.
+## Whose network?
 
-## Learning another person's network
+The network has not solved the problem. It has moved it.
 
-There is another problem: the verifier does not know the network.
+I know somebody who would frequently give a mathematics lecture while writing a manuscript at the same time. If I had tried to draw a generic human flow network from my own intuitions, I would probably have put those two activities behind one bottleneck and been wrong about him.
 
-Even if the flow picture were a good abstraction, different people may have different capacities and different routes. Practice may change them. A person may have an unusual way of doing two things at once. The lecturer writing a manuscript is exactly the sort of example that should make me suspicious of a generic “human mental-load channel.”
+Different people may have very different capacities, routes, and strategies. Practice may change them. Tiredness may change them. One person may have an implementation of a task that never occurred to the verifier.
 
-So perhaps the verifier needs a model not merely of people in general but of this particular prover.
+So the girlfriend does not merely need a theory saying that chess and flirting compete for some resource. She needs enough reason to believe that they compete for **this boyfriend**.
 
-Can you learn another person's flow network? I can imagine doing it indirectly: watch which pairs of tasks interfere, give them dual-task experiments, compare performance under different combinations, and update the model over time. Long familiarity might supply the same information less systematically. A close friend may know that a combination which overwhelms almost everybody is completely ordinary for one particular person.
+Can one learn another person's flow network? Perhaps partly. You could observe which pairs of tasks interfere, run dual-task experiments, watch what changes with practice, and update the model. Long familiarity may do the same thing informally. A close friend might know that a combination which overwhelms almost everyone else is routine for one particular person.
 
-And then there is the more human question: should you? A proof system that works better the more thoroughly one person has mapped another person's attention, habits, incentives, and bottlenecks is a strange object. I do not yet know whether that is an interesting feature or a warning sign.
+And should you learn it? A verification method that improves as one person maps another person's attention, habits, intentions, and bottlenecks is not obviously benign. I do not have an answer to that part.
 
 ## Uncertain networks
 
-I think the uncertainty about the network should appear in the verifier's probability, rather than being hidden in a sentence such as “assume these activities are incompatible.”
+It seems wrong to hide this uncertainty inside a sentence such as “assume \(A\) and \(B\) are incompatible.” The verifier should be uncertain about the network.
 
-Let \(K\) be what the verifier already knows about the prover. Instead of one known resource network \(G\), suppose the verifier has a distribution
+Let \(K\) be what the verifier already knows about the prover, and let
 
 \[
 \pi(G\mid K)
 \]
 
-over networks that still seem plausible for this person.
+be a distribution over resource networks that still look plausible for that person.
 
-For activities \(A\) and \(B\), write \(I_G(A,B)\) for the statement that they cannot coexist in network \(G\).
+For activities \(A\) and \(B\), write \(I_G(A,B)\) for the statement that they cannot coexist in network \(G\). Let \(E\) be the evidence that \(A\) happened.
 
-Now let \(E\) be the evidence that activity \(A\) happened. The negative conclusion about \(B\) is supported whenever both things are true: \(A\) really happened, and the person's actual network makes \(A\) incompatible with \(B\). So at least
+Define
+
+\[
+p=\Pr(A\mid E,K)
+\]
+
+and
+
+\[
+q=\Pr(I_G(A,B)\mid E,K).
+\]
+
+Then
 
 \[
 \Pr(\neg B\mid E,K)
 \;\ge\;
-\Pr(A\wedge I_G(A,B)\mid E,K).
+\Pr(A\wedge I_G(A,B)\mid E,K)
+\;\ge\;
+\max(0,p+q-1).
 \]
 
-This gives two distinct sources of uncertainty. The evidence may fail to establish \(A\), and the verifier may be wrong about the person's resource layout.
+So there are at least two ways the argument can fail. The chess record may not convince us that \(A\) really happened, or our model of the person may be wrong about incompatibility.
 
-For example, suppose the evidence makes the verifier 99% confident that \(A\) happened, and their current model gives 99% probability that \(A\) and \(B\) are incompatible for this person. Without assuming those uncertainties are independent, the two 99% claims give a simple lower bound of 98% for the conjunction.
+If both \(p\) and \(q\) are \(0.99\), the lower bound is \(0.98\). If those two uncertainties were independent, it would instead be \(0.99^2=0.9801\).
 
-Population knowledge can enter here too. Perhaps 99% of people have only one effective instance of some bottleneck used by both activities. That can be a reasonable prior for a stranger. But if I have repeatedly watched one particular person perform a mathematics lecture while writing a manuscript, my posterior for that person's network should move away from the population prior.
+Population knowledge can supply a prior. Perhaps 99% of people have only one effective instance of some mental-load channel needed by both activities. That is useful when the prover is a stranger. But repeated observation of the lecturer who writes a manuscript at the same time should push the posterior for that particular person away from the population prior.
 
-The same idea applies to intentions. In incentive-dependent cases, \(K\) may include beliefs about what the prover was trying to do. The verifier is then combining evidence about the observed performance with uncertainty about both the prover's intentions and the prover's cognitive resources.
+Intentions can be treated similarly. In incentive-dependent cases, \(K\) contains beliefs about what the prover is trying to do, and the meaning of the same visible behavior changes with those beliefs.
 
-This makes “verification” less universal than it first appeared. Two verifiers can see the same transcript and rationally assign different probabilities because they know different things about the person who produced it.
+Two verifiers can therefore see the same evidence and rationally reach different conclusions because they know different things about the person who produced it.
 
 ## Forgetting the network
 
-Once I write the model this way, I notice that many of the questions above never inspect the network itself.
+For some questions, the full network may contain more detail than we need.
 
-For an exclusion argument, I may only care about this:
+Suppose we remember only which sets of activities can happen together. Let \(\mathcal C\) be that family.
 
-> Which sets of activities can happen together?
+If a set of activities is possible, every subset is possible too, so \(\mathcal C\) is downward closed.
 
-Let \(\mathcal C\) be the family of jointly possible sets.
+Pairwise conflicts are not always enough. If three activities each use \(0.4\) units of one resource of capacity \(1\), every pair can coexist but all three cannot.
 
-If a set is possible, every subset is possible too, so \(\mathcal C\) is downward closed.
+So the smaller object may be the family of compatible sets, or equivalently its minimal incompatible sets. If the verifier is uncertain, they can have a distribution over those objects rather than over detailed flow networks.
 
-Pairwise conflicts are not always enough. Three activities might each use \(0.4\) units of one resource of capacity \(1\). Every pair can coexist, but all three cannot.
+This loses information about time, routing, memory, and interaction. Whether that matters depends on the question we are trying to ask.
 
-So perhaps the useful object is the collection of minimal incompatible sets rather than the underlying network.
+## A small formal picture
 
-This forgets a lot. Two very different resource networks become indistinguishable if they induce the same family \(\mathcal C\). For some of the questions here, that may be exactly what I want. If the verifier is uncertain, they could have a distribution over such compatibility families rather than a distribution over full networks.
+At this point I can at least write down the shape of the problem.
 
-Time, memory, and interactive input may force some of the discarded structure back in later.
-
-## A minimal description
-
-If I strip away the resource model again, I end up with a small description of a sheep-counting problem.
-
-Fix a time interval \(I\). Let \(X\) be the external input history and \(H\) the hidden cognitive history. Let
+Fix an interval \(I\). Let \(X\) be the external input history, \(H\) the hidden cognitive history, and \(T\) the visible trace. Let
 
 \[
 Q(X,H)
 \]
 
-be the claim we care about: thinking about a subject, carrying out a calculation, maintaining vigilance, following a game, searching for a witness, or something else.
+be the claim we care about: solving arithmetic, maintaining vigilance, following a game, searching for a witness, or something else.
 
-The verifier sees some external trace \(T\), but not \(H\). It may also have background knowledge \(K\) about the prover: previous behavior, abilities, incentives, or whatever else the particular notion of evidence is allowed to use.
+The verifier does not see \(H\). It sees \(X\) and \(T\), and it may have background knowledge \(K\) about the particular prover.
 
-For a purely proof-like problem, the verifier might apply a test
+For a very proof-like case, the verifier may simply apply
 
 \[
 V(X,T)\in\{\text{accept},\text{reject}\}.
 \]
 
-For the messier cases, it may be more natural to think of the verifier as assigning
+For the messier cases, the more natural object may be
 
 \[
-\Pr(Q\mid X,T,K)
+\Pr(Q\mid X,T,K).
 \]
 
-and accepting only above some confidence threshold.
+The old notions of completeness and soundness still fit the proof-like end of the spectrum. But the examples above make me reluctant to assume that every useful sheep-counting problem will reduce to a universal verifier with no prior knowledge of the prover.
 
-The usual words **completeness** and **soundness** still seem useful for the proof-like cases. But once \(K\) matters, I think the probabilistic view is more honest about what is happening: part of the conclusion may come from the transcript, and part may come from what the verifier already knows about the person.
+This is not meant as a finished formalism. It is just enough notation to expose where the uncertainty lives.
 
-That still leaves most of the interesting choices outside the notation: what histories count as the activity, what aids are allowed, whether cost matters, what prior knowledge is legitimate, and whether incentives belong in the model.
-
-I am not sure that this is the final formalism. It is just the smallest one I have found so far that lets me state the questions from the examples without turning them immediately into ordinary input-output computation.
-
-## Some questions I would try next
+## What I would try next
 
 The monotone-subsequence task is concrete enough to test. For
 
@@ -393,13 +387,13 @@ The monotone-subsequence task is concrete enough to test. For
 
 one could reshuffle the same participants between rounds and measure solve time, errors, and learning. I would especially want to know how much online processing survives once the solver knows everybody and has practiced the task.
 
-I would also look for other guaranteed ambient witnesses. Erdős-Szekeres and the empty-pentagon theorem give two rather different examples already. There may be better ones coming from other small existence theorems.
+I would also look for other guaranteed ambient witnesses. Erdős-Szekeres and the empty-pentagon theorem give two rather different examples already. There may be much better ones.
 
-The self-initiated setting still bothers me in a useful way: if the prover can choose what to think about after seeing the environment, how much freedom can they have before the problem becomes trivial?
+The self-initiated setting leaves an awkward freedom: the prover sees the environment and then chooses what problem to solve. How much choice can they have before they are effectively choosing an answer they already know?
 
-For exclusion arguments, I would want to measure compatibility directly. How stable is it across people? How much can it be learned from a few dual-task observations? How quickly does practice change it? How informative is population data about one particular person?
+For the resource side, I would want measurements across people as well as within one person. How stable are incompatibilities? How much can be learned from a few dual-task observations? How quickly does practice change them? How informative is population data about one particular prover?
 
-And I am curious about the verifier side too. If a proof depends on knowing the prover's habits or intentions, what kinds of prior knowledge should count? Does the best verifier have to know the prover personally? When does learning enough to verify somebody become an unreasonable thing to do?
+And then there is the verifier. If useful evidence depends on knowing somebody's habits, abilities, or intentions, when is that ordinary human familiarity, and when has the verifier learned too much?
 
 ## Closing
 
@@ -407,13 +401,11 @@ The original question was simple:
 
 > What are you thinking about?
 
-Usually an answer is enough. But one can also ask whether the person could prove the answer.
+Arithmetic gives one easy answer to the proof version of that question. Counting sheep gives almost nothing to show. Babysitting makes the hidden property attention over time. Chess gives an interactive trace. The party puzzles suggest that a person may even be able to arrange a provable line of thought without anybody issuing the challenge first.
 
-Arithmetic gives an easy positive example. Sheep counting gives a closely related task with no required output. Babysitting moves from a puzzle to sustained attention. Chess gives repeated fresh interaction. The party puzzles suggest that a person can sometimes arrange a provable line of thought without anybody having prepared a challenge for them.
+I do not know yet whether these examples belong to one useful formal class. But they keep producing the same kinds of questions: what can leak out of a hidden mental process, what must arrive fresh, what work cannot be prepared away, what depends on incentives, and how much the verifier has to know about the particular person.
 
-At this point I mostly have examples, a few distinctions that seem to survive them, and a tentative resource picture. The more I try to use that picture, the more the verifier seems to need a model of the particular prover as well: their strategies, intentions, and resource layout.
-
-I think the next useful step is not to make the framework larger, but to see how much of it survives contact with actual human tasks.
+That seems like enough to keep counting sheep for a while.
 
 ## References
 
