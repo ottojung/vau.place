@@ -40,17 +40,11 @@ Now consider the instruction:
 
 > Count sheep in your head for ten minutes.
 
-At the end the person says:
+Nothing has to be said or written down afterward. The whole exercise can happen internally.
 
-> I reached 843.
+That makes the contrast with arithmetic sharper. Arithmetic naturally leaves answers behind. Sheep counting does not have to leave anything at all.
 
-The situation looks superficially similar to arithmetic: there is an instruction, there is some thinking, and there is an answer at the end.
-
-But `843` does not tell us very much. It can be invented at the end. A person can count for one minute and then stop. Many different ten-minute histories lead to the same report.
-
-There may be other evidence. If the person starts yawning and eventually falls asleep, I would be inclined to count that in favor of their story.
-
-So two very simple mental tasks can behave quite differently. Arithmetic naturally leaves answers that are closely related to the calculations. Sheep counting leaves a much weaker trail.
+If the person falls asleep halfway through, the proof is complete.
 
 ## The babysitter
 
@@ -182,7 +176,7 @@ The self-initiated case is the one I find least settled. Letting the prover choo
 
 ## Evidence and cost
 
-A correct arithmetic worksheet can be strong evidence of arithmetic. Falling asleep after counting sheep gives us something rather different. A quiet babysitting shift may leave almost nothing behind.
+A correct arithmetic worksheet can be strong evidence of arithmetic. Sheep counting may leave no designed output at all. A quiet babysitting shift may leave almost nothing behind.
 
 The mathematical puzzles add another distinction. Five people either form the required subsequence or they do not. Five people either surround an empty region or they do not. The witness can be completely convincing about the mathematical fact and still tell us little about how difficult the fact was to find.
 
@@ -434,7 +428,7 @@ The original question was simple:
 
 Usually an answer is enough. But one can also ask whether the person could prove the answer.
 
-Arithmetic gives an easy positive example. Sheep counting gives a closely related task with much weaker evidence. Babysitting moves from a puzzle to sustained attention. Chess gives repeated fresh interaction. The party puzzles suggest that a person can sometimes arrange a provable line of thought without anybody having prepared a challenge for them.
+Arithmetic gives an easy positive example. Sheep counting gives a closely related task with no required output. Babysitting moves from a puzzle to sustained attention. Chess gives repeated fresh interaction. The party puzzles suggest that a person can sometimes arrange a provable line of thought without anybody having prepared a challenge for them.
 
 At this point I mostly have examples, a few distinctions that seem to survive them, and a tentative resource picture. The more I try to use that picture, the more the verifier seems to need a model of the particular prover as well: their strategies, intentions, and resource layout.
 
