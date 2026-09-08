@@ -109,15 +109,15 @@ But large-integer arithmetic is cumbersome to do mentally, and even checking the
 
 ### A monotone subsequence of friends
 
-Suppose there are seventeen people with a given total order. It might be the order in which they are standing, but the geometry is not important. We only need one total order everybody agrees on.
+Suppose there are ten people with a given total order. It might be the order in which they are standing, but the geometry is not important. We only need one total order everybody agrees on.
 
 There is also a second total order, for example alphabetical order of their names.
 
-Reading the alphabetical ranks in the given order gives a permutation of seventeen numbers.
+Reading the alphabetical ranks in the given order gives a permutation of ten numbers.
 
 The problem is:
 
-> Find five people, preserving the given order, whose names are alphabetically increasing or alphabetically decreasing.
+> Find four people, preserving the given order, whose names are alphabetically increasing or alphabetically decreasing.
 
 The Erdős-Szekeres monotone subsequence theorem guarantees that such a set exists. More generally, every sequence of
 
@@ -125,13 +125,13 @@ The Erdős-Szekeres monotone subsequence theorem guarantees that such a set exis
 (r-1)(s-1)+1
 \]
 
-distinct values contains an increasing subsequence of length \(r\) or a decreasing subsequence of length \(s\). With \(r=s=5\),
+distinct values contains an increasing subsequence of length \(r\) or a decreasing subsequence of length \(s\). With \(r=s=4\),
 
 \[
-(5-1)^2+1=17.
+(4-1)^2+1=10.
 \]
 
-The prover points to five people. The verifier checks the two orders.
+The prover points to four people. The verifier checks the two orders.
 
 I like this example because several useful things happen at once. The witness is short, the theorem guarantees that one exists, and the current ordering can create fresh work even if the prover already knows everybody's name.
 
