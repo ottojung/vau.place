@@ -58,7 +58,7 @@ If the child wakes several times and the babysitter responds each time, the situ
 
 What I have in mind here is a task where the valuable part is attention over time, including during stretches in which nothing happens.
 
-## Chess at a party
+## Chess party
 
 A jealous girlfriend leaves her boyfriend at a party and tells him to play chess while she is away.
 
@@ -72,7 +72,7 @@ Twenty short games also spread the evidence through time. They say something dif
 
 The girlfriend's actual reason for choosing chess will matter later.
 
-## Puzzles without a supplied challenge
+## Puzzles without a challenge
 
 The examples so far all begin with a recognizable assignment. Somebody says: solve these exercises, count sheep, watch the child, play chess.
 
@@ -84,9 +84,9 @@ Somebody can ask me what I was thinking about only after the thinking has alread
 
 A party is a convenient toy setting because a room full of people already contains a lot of public structure.
 
-### The obvious computer-science solution
+### A computer-scientist solution
 
-A first attempt might be very literal.
+I know an easy, smart way to make this work.
 
 Choose a public rule that converts every guest's name into an integer. Add all of those integers together to obtain a number
 
@@ -104,11 +104,11 @@ In practice, this might look like:
 >
 > I'm factorizing. Alice, Bob and Charlie's names add up to a number whose factorization is `6712633 × 8463 × 7162`.
 
-From an ordinary complexity-theory point of view this has an attractive shape. Factorization is difficult, while checking a proposed factorization is straightforward.
+From the complexity-theory point of view this is perfct: factorization is difficult, while checking a proposed factorization is straightforward.
 
-As a human problem it is less attractive. Large-integer arithmetic is cumbersome to do mentally, and even checking the product of large factors may be expensive for a person. This makes me think that the machine model is not quite the model I want for these examples.
+But large-integer arithmetic is cumbersome to do mentally, and even checking the product of large factors may be expensive for a person. The machine model is not quite the model I want for these examples.
 
-### A monotone subsequence of guests
+### A monotone subsequence of friends
 
 Suppose there are seventeen people with a given total order. It might be the order in which they are standing, but the geometry is not important. We only need one total order everybody agrees on.
 
@@ -136,7 +136,7 @@ The prover points to five people. The verifier checks the two orders.
 
 I like this example because several useful things happen at once. The witness is short, existence is guaranteed, and the current ordering can create fresh work even if the prover already knows everybody's name.
 
-What I do not know is whether the search is actually difficult for a human. The theorem says that a witness exists; it says nothing about how long a person will take to notice one.
+This feels easier than factoring, but I don't know whether the search is difficult enough for a human. The theorem says that a witness exists; it says nothing about how long a person will take to notice one.
 
 ### Five people with nobody between them
 
@@ -154,23 +154,7 @@ What interests me in both cases is that the prover can initiate the process. The
 
 There is an obvious danger too: if the prover may choose among many possible problems after inspecting the environment, perhaps they can simply choose one whose answer is already obvious.
 
-## Input
-
-The examples get their input in very different ways.
-
-Arithmetic gives the verifier strong control: choose a fresh instance and hand it over at a known time.
-
-In chess, the opponents supply a stream of fresh positions.
-
-In babysitting, the environment supplies events unpredictably and may supply none at all.
-
-In sheep counting, almost no external input arrives after the instruction.
-
-In the party puzzles, the surrounding group supplies the concrete instance while the prover may choose the kind of problem.
-
-I find it useful to separate two questions: who chooses the problem, and who determines the instance. They need not be the same person. The verifier can choose both; the prover can choose the problem while the environment supplies the instance; an opponent can produce the instance gradually.
-
-The self-initiated case is the one I find least settled. Letting the prover choose the problem is exactly what makes it interesting, but too much freedom may also make the proof cheap.
+# TODO: make an intro to ~~"what kind of theory I wanna build on these"
 
 ## Evidence and cost
 
