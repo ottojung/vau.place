@@ -249,7 +249,7 @@ A\text{ incompatible with }B
 
 This is closer to what the girlfriend wanted from chess. Chess was not the final fact she cared about. She wanted a positively checkable activity that would exclude some competing activity.
 
-It also avoids one version of the incentive problem. Instead of saying that bad chess proves distraction, she can ask for good enough chess and use that as positive evidence for something incompatible with distraction.
+It also avoids one version of the incentive problem. Instead of treating bad chess as evidence that his attention was elsewhere, she can try to establish that he really was playing chess well enough, then ask whether that activity could have coexisted with the one she wanted to rule out.
 
 But now almost everything depends on the word **incompatible**.
 
