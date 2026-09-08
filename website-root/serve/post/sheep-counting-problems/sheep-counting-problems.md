@@ -194,35 +194,7 @@ If the verifier starts with
 
 then Bayes' rule turns the likelihood ratio into posterior belief.
 
-Once there is even this tentative notion of evidence, an obvious question is what happens under negation. A theory with claims \(Q\) naturally also has claims \(\neg Q\).
-
-## Negative answers
-
-Arithmetic gives a simple test.
-
-Suppose the claim is:
-
-> I was solving arithmetic exercises in my head.
-
-A positive answer can leave the completed exercises behind.
-
-Now take the complement:
-
-> I was **not** solving arithmetic exercises in my head.
-
-What is the corresponding object?
-
-I do not see one. Somebody who did solve the exercises can usually behave afterward exactly like somebody who did not. They can stay silent, throw the answers away, or imitate whatever ordinary behavior the non-solver could produce.
-
-Let \(\mathcal T(A)\) be the set of visible traces available after activity \(A\), allowing arbitrary later behavior. If
-
-\[
-\mathcal T(\neg A)\subseteq\mathcal T(A),
-\]
-
-then no visible trace can directly certify \(\neg A\) against a person who is free to choose what to do afterward.
-
-That qualification matters. Should evidence about a hidden activity have to survive whatever the person decides to do? The babysitter and chess examples make this hard to ignore.
+But this picture quietly treats the evidence as something that simply happens. Once the person knows what will count as evidence, they may try to produce it, suppress it, or otherwise change the distribution themselves. Before asking what happens to \(Q\) under negation, I need to say what the prover is allowed to do.
 
 ## Incentives and strategies
 
@@ -254,9 +226,37 @@ s_b(E)=
 
 Now “hard to fake” has a probabilistic meaning without deciding in advance what kind of difficulty matters.
 
-## Proving something incompatible instead
+With strategies in view, I can return to a basic closure question. A theory with claims \(Q\) naturally also has claims \(\neg Q\). Does evidence behave symmetrically under that operation?
 
-The negative-answer problem is not necessarily the end of the story.
+## Negative answers
+
+Arithmetic gives a simple test.
+
+Suppose the claim is:
+
+> I was solving arithmetic exercises in my head.
+
+A positive answer can leave the completed exercises behind.
+
+Now take the complement:
+
+> I was **not** solving arithmetic exercises in my head.
+
+What is the corresponding object?
+
+I do not see one. Somebody who did solve the exercises can usually behave afterward exactly like somebody who did not. They can stay silent, throw the answers away, or imitate whatever ordinary behavior the non-solver could produce.
+
+Let \(\mathcal T(A)\) be the set of visible traces available after activity \(A\), allowing arbitrary later behavior. If
+
+\[
+\mathcal T(\neg A)\subseteq\mathcal T(A),
+\]
+
+then no visible trace can directly certify \(\neg A\) against a person who is free to choose what to do afterward.
+
+So direct negative evidence can fail for a structural reason. But that does not mean a negative claim is hopeless. Instead of trying to produce a trace of non-\(A\), perhaps we can prove that some other activity happened which \(A\) could not have coexisted with.
+
+## Proving something incompatible instead
 
 Suppose I want evidence that activity \(B\) did not happen. Instead of looking for a trace of non-\(B\), I can try to establish that activity \(A\) did happen during the same interval, where \(A\) and \(B\) cannot coexist.
 
@@ -272,7 +272,7 @@ A\text{ incompatible with }B
 
 This is closer to what the girlfriend wanted from chess. Chess was not the final fact she cared about. She wanted a positively checkable activity that would exclude some competing activity.
 
-It also avoids one version of the incentive problem. Instead of treating bad chess as evidence that his attention was elsewhere, she can try to establish that he really was playing chess well enough, then ask whether that activity could have coexisted with the one she wanted to rule out.
+The strategy distinction still matters: she needs evidence that he really was playing chess under whatever strategy model she is using. What the construction changes is the negative claim itself. Instead of looking for a direct trace of non-flirting, it turns the problem into positive evidence for chess plus a claim that the two activities cannot coexist.
 
 But now almost everything depends on the word **incompatible**.
 
