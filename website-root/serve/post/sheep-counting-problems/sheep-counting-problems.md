@@ -456,9 +456,21 @@ The factorization puzzle above is the most literal attempt to get this shape fro
 
 In the resource notation above, computational effort is one possible coordinate of \(R(\sigma)\). A computational construction is successful when realistic bounds on that coordinate keep the false-case probability low while verification stays cheap.
 
+## Does the theory explain anything?
+
+Now there is a more basic theoretical question: has any of this actually explained something, or have I only built a language flexible enough to redescribe the examples I started with?
+
+The arithmetic worksheet and the sleepy sheep counter now fit the same formal object. Quiet babysitting and eventful babysitting differ because the environment changes which hidden histories can produce the visible trace. Positive and negative claims behave differently because one activity may leave traces that its complement cannot. Chess suggests a route from positive evidence for one activity to negative evidence for an incompatible one. Incentives and capacities, which initially looked like unrelated complications, both became uncertainty about the prover model.
+
+Those are promising unifications, but they are not automatically explanations. The quantities that matter most — the probabilities, the strategy sets, the resource model, and even the predicate \(Q\) — are largely supplied to the framework. If they can be chosen freely enough, almost any social story can be represented inside it.
+
+On the other hand, a theory need not predict all of human cognition to have content. If the definitions force consequences that were not separately assumed, or rule out protocols that looked possible before formalization, that would be evidence that something real has been captured.
+
+I do not think the question is settled yet. The next two sections are evidence in opposite directions.
+
 ## Theorems
 
-The definitions already give several consequences that are useful to keep around.
+The easiest positive evidence is that, once the definitions are fixed, some useful statements follow from them.
 
 ### Knowing more can weaken evidence
 
@@ -506,9 +518,75 @@ s(b_1)\le s(b_2).
 
 This gives a simple way for a protocol to decay with practice. A monotone-subsequence puzzle may initially take several minutes and later become almost automatic. Or a person may learn to combine activities that previously shared a bottleneck. The person has improved, while the protocol has become easier to fake or less useful for exclusion.
 
+### Not enough fresh entropy permits precomputation
+
+The party puzzles raise a sharper question. If the verifier does not supply a fresh challenge, how much unpredictability must the environment supply instead?
+
+Consider a protocol where a public environmental state \(Y\) becomes known during the interval, and the evidence is a response \(T\) that the verifier checks using \(Y\). Let \(Q\) mean that the required computation was actually performed after \(Y\) became known. Assume that the visible evidence contains no other effect of doing that computation; in particular, anything the verifier sees could in principle have been stored beforehand and released later.
+
+For each possible environmental state \(y\), define
+
+\[
+A_y=\{t:V(y,t,K)=1\}.
+\]
+
+A precomputed set of traces \(S\) **covers** an environmental state \(y\) when
+
+\[
+S\cap A_y\ne\varnothing.
+\]
+
+Let the **cover number** be
+
+\[
+C=\min\left\{|S|:\text{ every possible }y\text{ is covered by }S\right\}.
+\]
+
+If the prover can prepare and remember \(C\) traces before the interval, then no nontrivial strategy-independent proof of online computation is possible.
+
+The proof is direct. Before the interval, the false prover prepares a covering set \(S\). When \(Y=y\) is revealed, they choose a precomputed trace in \(S\cap A_y\) and present it. They never perform the target computation after seeing \(y\), but the verifier accepts. Therefore the false case can achieve at least the acceptance available to the true case, so
+
+\[
+s\ge c.
+\]
+
+The requirement \(c>s\) fails.
+
+Ordinary environmental entropy gives a simple sufficient condition for this attack. If, given everything the prover already knows during PREP, the environment has at most \(N\) possible relevant states, then
+
+\[
+C\le N.
+\]
+
+Writing the conditional Hartley entropy as
+
+\[
+H_0(Y\mid\operatorname{PREP})=\log_2 |\operatorname{supp}(Y\mid\operatorname{PREP})|,
+\]
+
+if
+
+\[
+H_0(Y\mid\operatorname{PREP})\le h,
+\]
+
+then at most \(2^h\) state-specific answers are enough to cover the environment. If PREP can handle that table, all of the apparent PROC can be moved before the interval.
+
+The cover number is the more relevant quantity than raw entropy. A room may have many possible arrangements, but if one witness works for many arrangements then a small table can still cover them all.
+
+There is also a partial version. If the prover can precompute traces covering a set \(B\) of environmental states, then the false-case acceptance probability is at least
+
+\[
+\Pr[Y\in B].
+\]
+
+So even when PREP cannot cover the whole environment, concentrated environmental distributions can give a substantial precomputation attack.
+
+This theorem does not say that evidence is impossible without fresh entropy. Falling asleep after counting sheep is the obvious counterexample: the trace can be a side effect of the activity itself. The theorem is about a narrower but important claim — proving that challenge-dependent computation happened **after** the challenge became known. If neither the verifier nor the environment supplies enough effective freshness, a response alone cannot prove that timing.
+
 ## Paradoxes
 
-The theorems above are consequences I am happy to accept. By a paradox here I mean something different: the formal conclusion is sound inside the sheep-counting model, but the corresponding conclusion in the broader social situation is wrong.
+The theorems are positive evidence that the framework has some internal content. The paradoxes pull in the other direction. Here I mean a case where the formal conclusion is sound inside the sheep-counting model, but the corresponding conclusion in the broader social situation is wrong.
 
 ### The best proof of fidelity removes the opportunity
 
@@ -534,38 +612,6 @@ In the actual babysitting situation, deliberately waking a sleeping child makes 
 
 Both paradoxes come from the same gap. The formal theory knows the predicate \(Q\) and the evidence for it. The surrounding social situation often cares about why \(Q\) happened, what would have happened under another opportunity, or whether the verification process damaged the activity itself.
 
-## Does the theory explain anything?
-
-The paradoxes put a limit on the theory immediately: it can be exactly right about a formal predicate while missing the social question that made the predicate interesting.
-
-Still, it does explain several things that were otherwise sitting in the examples as unrelated intuitions.
-
-It explains why the arithmetic worksheet and falling asleep after counting sheep belong in the same discussion. They are both observations whose distributions depend on hidden cognitive history. The difference is quantitative: a worksheet may have a very large likelihood ratio and be hard to manufacture under the false case, while a yawn may move the odds only slightly.
-
-It explains why an uneventful babysitting shift gives such weak evidence of attention. The attentive and inattentive histories can produce the same visible trace. When the child wakes, the environment creates an event on which those histories may diverge.
-
-It explains an asymmetry between positive and negative claims. A completed calculation can be left behind, while "I was not calculating" may have no corresponding trace because the solver can imitate everything available to the non-solver. The trace inclusion
-
-\[
-\mathcal T(\neg A)\subseteq\mathcal T(A)
-\]
-
-makes that failure precise.
-
-It also explains why proving another activity can sometimes help with a negative claim. If \(A\) is positively evidenced and incompatible with \(B\), then evidence for \(A\) transfers into evidence against \(B\). That is a structural reason for the chess construction, independent of whether chess happens to be a good choice in practice.
-
-The person model explains another recurring feature: the same visible behavior can mean different things for different people. A poor chess game means something different if the player often sandbags. Simultaneous demanding activities mean something different for the lecturer who writes a manuscript while teaching. Incentives and capacities look like separate complications until both are treated as uncertainty about the prover.
-
-The theory also explains why disclosure and practice matter. Making an acceptance rule public can enlarge the false-case strategy set. Giving the prover more resources or practice can enlarge the set of traces they can manufacture. Those effects fall directly out of the soundness and fakeability definitions.
-
-Finally, it explains why computational complexity keeps reappearing without being the whole subject. Bounded human computation is one mechanism for making the false case difficult. PREP, PROC, and VER describe one family of constructions for creating a large probability gap; they are not needed to explain weak evidence such as sleepiness.
-
-There is a great deal the theory does not explain. It does not tell me the actual probability that sheep counting causes yawning, how a particular person's cognitive resources are arranged, which strategies their incentives make plausible, or which social predicate is the one we really care about. Those are inputs to the theory rather than consequences of it.
-
-Because \(K\) and \(M\) can contain a lot, the framework can represent a very large range of stories. In that sense it is not a predictive theory of human cognition. Its explanatory strength is mostly structural: once the relevant probabilities, strategies, resources, and predicate are specified, it shows why some traces count as evidence, why some negative claims are difficult, how incompatibility transfers evidence, and how changing the prover or verifier changes the result.
-
-That is less than a theory of how people think. It is more than a vocabulary for the examples.
-
 ## What I would try next
 
 The monotone-subsequence task is concrete enough to start measuring the computational construction. For
@@ -580,7 +626,7 @@ I would also look for other guaranteed ambient witnesses. Erdős-Szekeres and th
 
 But the broader experiments need not be computational. How much does sheep counting actually change the chance of yawning? Which events make babysitter attention visible? Which traces are easy to manufacture once the prover knows what the verifier will inspect?
 
-The self-initiated setting leaves an awkward freedom: the prover sees the environment and then chooses what problem to solve. How much choice can they have before they are effectively choosing an answer they already know?
+The self-initiated setting now has a more precise question. What is the cover number of the environmental challenge space, how much probability can a small precomputed table cover, and how much of the apparent online work survives after optimal PREP?
 
 For the person-model side, I would want measurements across people as well as within one person. How stable are incompatibilities? How much can be learned from a few dual-task observations? How quickly does practice change them? How stable are incentives across situations? How informative is population data about one particular prover?
 
