@@ -460,45 +460,45 @@ In the resource notation above, computational effort is one possible coordinate 
 
 ### Proof of space
 
-Computation is only one coordinate I could put into \(R(\sigma)\). Memory suggests another construction.
+The sleeping-guard problem gives a reason to look beyond work. Guarding can be hard to verify on its own because a quiet shift may leave no evidence of whether the guard was alert.
 
-Suppose a supervisor shows the guard \(m\) fresh random stimuli: pictures, symbols, short words, or anything else that is easy to distinguish. The guard is asked to remember all of them. Later the verifier chooses unpredictable positions and asks what appeared there.
+One way to make some hidden mental state visible is to give the guard something unpredictable to remember. Show the guard a collection of fresh pictures, then later ask which pictures they saw.
 
-I would call this a human **proof of space**. The claimed resource is not disk space but memory occupied by unpredictable information.
+If the guard recalls them, that is evidence that the pictures occupied memory. I would call this a human **proof of space**. The resource is memory rather than computation.
 
-A toy model already gives the shape of the argument. Suppose each stimulus is chosen independently and uniformly from an alphabet of size \(q\), the guard can retain the exact values of at most \(k\) of the \(m\) positions, and the verifier later chooses one position uniformly. If the guard guesses uniformly when the requested position was not retained, then the probability of answering correctly is
+This is deliberately simpler than a real memory model. People can compress, associate, half-remember, and recognize things they could not freely recall. I do not need to settle those details before the example is useful: the basic construction is just fresh information followed by recall.
+
+It also does not prove that the guard stayed alert for an entire shift. It only shows how I might make memory itself leave a checkable trace.
+
+### Proof of time
+
+The sleeping guard points to a more direct resource: time. The hard part of guarding is not doing a large amount of work. It is remaining vigilant throughout a long interval, including the parts where nothing happens.
+
+So suppose the supervisor secretly chooses \(n\) random moments during the shift. At each chosen moment, a harmless test signal appears and the guard must signal immediately. The response can be trivial. The point is that the guard has to be alert **then**.
+
+Suppose, in a simple model, that a guard is alert for only a fraction \(f\) of the shift and that the test times are independent and uniformly distributed. The chance that every test lands during an alert period is
 
 \[
-\frac{k}{m}
-+
-\left(1-\frac{k}{m}\right)\frac{1}{q}.
+f^n.
 \]
 
-A larger random audit makes the gap sharper. The toy model is too crude for real memory because people can compress, associate, partially remember, and use structure in the stimuli. The version I would actually want would relate the entropy of the fresh stimuli, the information retained in memory, and the probability of passing a later audit.
+A guard who sleeps through half of the shift has probability
 
-If all the stimuli arrive at the start of the shift, this says little about whether the guard stayed awake afterward. If new stimuli arrive unpredictably throughout the night, successful recall also says that the guard was awake when those stimuli appeared.
+\[
+2^{-n}
+\]
 
-### Proof of time?
+of passing all \(n\) tests merely because every test happened to miss the sleeping periods.
 
-What would a human proof of time be?
+I think this is a genuine human **proof of time**. The verifier is not forcing much computation and is not asking the guard to store much information. Instead, the verifier samples the interval. Passing many unpredictable spot checks is evidence that the claimed cognitive state covered much of the time.
 
-The precomputation theorem below already suggests why this is awkward. If nothing fresh happens during an interval, a final response may have been prepared before the interval began. Merely waiting does not obviously leave a certificate of waiting.
+This also gives me a cleaner distinction from proof of work. A proof of work tries to force enough computation. A proof of time can make each individual response almost free and still become strong because the prover must remain available across the interval.
 
-The nearby cryptographic idea is a verifiable delay or proof of sequential work: arrange a computation so that each step depends on the previous one and parallelism cannot collapse the delay very much. A human version could use a chain of prompts in which each new prompt depends on the previous answer, or arrives only after the previous stage has finished.
+The same idea need not be limited to guards. If the claim is that somebody maintained attention, monitored something, or kept a mental task active over time, unpredictable cheap probes can sample that persistence.
 
-But I am not sure this deserves a separate name. It may just be proof of work with a strong sequentiality requirement.
+There is another possible notion of proof of time: force a long sequential computation whose later steps depend on earlier ones. That is close to verifiable delay functions in cryptography. For humans, though, I currently understand that mostly as a special kind of proof of work. The random-time construction seems more distinct because its difficulty comes from occupying time rather than performing many operations.
 
-Another construction would give the guard fresh random checkpoints throughout the shift. That can show that the guard was present and responsive at many different times, but now the evidence comes from the checkpoints rather than from elapsed time by itself.
-
-### Proof of spacetime
-
-Space and time combine more naturally.
-
-Suppose fresh stimuli arrive throughout the guard's shift and the guard must keep them in memory until unpredictable later audits. Passing then asks for two things at once: the guard had to receive the stimuli when they appeared, and some information about them had to remain stored across time.
-
-I would call this a human **proof of spacetime**. It is close in spirit to cryptographic proofs of spacetime, where the prover demonstrates that storage remained occupied over an interval rather than merely showing that some storage existed at one instant.
-
-This also separates several versions of the sleeping-guard problem. Immediate signaling after random events is mainly evidence of vigilance. Recall of a set of stimuli is a proof-of-space construction. Distributing those stimuli across the night and retaining them until later starts to look like proof of spacetime. The resource view therefore gives me more than one way to make the guard's otherwise invisible attention leave evidence.
+I do not yet see a convincing reason to introduce a separate human **proof of spacetime**. Remembering something for a long time certainly combines memory and duration, but at this point that looks like using proof of space and proof of time together, not like a new primitive. I would rather leave the name unused until the combination gives something genuinely new.
 
 ## Does the theory explain anything?
 
@@ -832,6 +832,8 @@ I would also look for other guaranteed ambient witnesses. Erdős-Szekeres and th
 
 But the broader experiments need not be computational. How much does sheep counting actually change the chance of yawning? Which events make a guard's vigilance visible? How much unpredictable information can a person retain well enough to pass a later random audit? Which traces are easy to manufacture once the prover knows what the verifier will inspect?
 
+The random-time guard construction is easy to test too. If a person deliberately leaves some fraction of a shift unattended, how closely does the pass probability follow the simple \(f^n\) model as the number of hidden checkpoints increases?
+
 The self-initiated setting now has a more precise question. What is the cover number of the environmental challenge space, how much probability can a small precomputed table cover, and how much of the apparent online work survives after optimal PREP?
 
 For the person-model side, I would want measurements across people as well as within one person. How stable are incompatibilities? How much can be learned from a few dual-task observations? How quickly does practice change them? How stable are incentives across situations? How informative is population data about one particular prover?
@@ -854,7 +856,6 @@ That seems like enough to keep counting sheep for a while.
 
 - Manuel Blum and Santosh Vempala, [*The Complexity of Human Computation: A Concrete Model with an Application to Passwords*](https://arxiv.org/abs/1707.01204).
 - Giuseppe Ateniese, Ilario Bonacina, Antonio Faonio, and Nicola Galesi, [*Proofs of Space: When Space Is of the Essence*](https://eprint.iacr.org/2013/805).
-- Tal Moran and Ilan Orlov, [*Simple Proofs of Space-Time and Rational Proofs of Storage*](https://eprint.iacr.org/2016/035).
 - Dan Boneh, Joseph Bonneau, Benedikt Bünz, and Ben Fisch, [*Verifiable Delay Functions*](https://eprint.iacr.org/2018/601).
 - Paul Erdős and George Szekeres, the monotone subsequence theorem.
 - Heiko Harborth, [*Konvexe Fünfecke in ebenen Punktmengen*](https://doi.org/10.5169/seals-32945), *Elemente der Mathematik* 33(5), 116–118, 1978.
