@@ -44,7 +44,7 @@ Nothing has to be said or written down afterward. The whole exercise can happen 
 
 That makes the contrast with arithmetic sharper. Arithmetic naturally leaves answers behind. Sheep counting does not have to leave anything at all.
 
-If the person falls asleep halfway through, the proof is complete.
+If the person starts yawning and falls asleep, that is evidence in their favor.
 
 ## The babysitter
 
