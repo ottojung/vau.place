@@ -106,6 +106,12 @@ Now factor \(N\).
 
 Later the prover can present the factors, and the verifier can multiply them and check that their product is \(N\).
 
+In practice, this might look like:
+
+> What are you thinking about?
+>
+> I'm factorizing these names. The factorization of all our common friends is `6712633 × 8463 × 7162`.
+
 From an ordinary complexity-theory point of view this has an attractive shape. Factorization is difficult, while checking a proposed factorization is straightforward.
 
 As a human problem it is less attractive. Large-integer arithmetic is cumbersome to do mentally, and even checking the product of large factors may be expensive for a person. This makes me think that the machine model is not quite the model I want for these examples.
