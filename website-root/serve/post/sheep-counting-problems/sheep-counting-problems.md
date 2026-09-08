@@ -1,32 +1,30 @@
 # Sheep-Counting Problems for Computer Science
 
-Suppose I tell you:
+Suppose you ask me:
 
-> Ten minutes ago, I was thinking about birds.
+> What are you thinking about?
 
-Can you verify that this is true?
+I answer:
+
+> Birds.
+
+Can you verify that answer?
 
 Now consider a different situation. You give me a page of fresh arithmetic exercises. Ten minutes later I return it with the answers filled in, and most of them are correct.
 
-The completed page does not reveal every detail of what happened in my head. I may have used a shortcut. I may have recognized one of the answers. But if the exercises were sufficiently fresh, the answers are fairly direct evidence that some computation related to them happened during the interval.
+The two situations look quite different, but the thing we care about is similar. In both cases the interesting event happened inside my head. The arithmetic answers are useful only because they tell you something about that event.
 
-These two examples sit at opposite ends of something I find interesting. In both cases the claim concerns a private mental process. In the first case there may be almost nothing outside the mind that distinguishes the claim from its negation. In the second, the process naturally produces an object that can be checked.
+That is the point I want to keep in view throughout this post. The subject is not, in general, hidden state that happens to be difficult to observe. The tasks themselves are mental tasks: solving, attending, tracking, remembering, searching. Any visible output is secondary. It matters because it may give evidence about the work we actually care about.
 
-I do not know whether this observation leads to a useful theory. The examples in this post are exploratory, and the formal model later on is only a proposal. Still, the questions have a recognizable computer-science shape: hidden computation, inputs, outputs, witnesses, verification, preprocessing, adversarial strategies, and resource bounds.
+I will use **sheep-counting problems** as a shorthand for problems of this kind.
 
-I will call questions of this kind **sheep-counting problems**.
+The easiest examples are almost trivial. The more interesting ones appear when the mental work has no natural output, when nobody supplied a clean challenge in advance, or when we want one mental activity to rule out another.
 
-The name comes from literal sheep counting: a stereotypically private mental computation that may take a long time while leaving very little evidence outside the mind. The name is intentionally unserious. The hope is only that it gives a memorable label to a family of questions that might otherwise be awkward to talk about.
+## Arithmetic
 
-## Examples before definitions
+Start with the friendly case.
 
-It is easier to see what may belong in this family before trying to define it.
-
-### Arithmetic exercises
-
-The arithmetic example is the easy one.
-
-Suppose I choose fresh exercises such as
+Suppose I give you fresh exercises such as
 
 ```text
 137 × 284 = ?
@@ -34,117 +32,105 @@ Suppose I choose fresh exercises such as
 ...
 ```
 
-and ask you to solve them mentally. You later give me the answers.
+and ask you to solve them mentally.
 
-There is a clear input and a clear checkable relation between input and output. If the answers are correct, I have evidence that some relevant computation happened.
+The job I am asking you to do is internal: perform the calculations. The written answers are not the job. They are evidence that the job was done.
 
-Even here, *proof* is too strong unless we state assumptions. A correct answer does not identify the algorithm used in your head. A predictable exercise might have been solved earlier. A prover with access to an external calculator would invalidate the intended interpretation completely.
+This distinction is easy to miss because arithmetic happens to have such convenient outputs. There is a clear input, there is a clear relation between input and answer, and there is a cheap way to check the answer afterward.
 
-But the basic shape is unusually favorable:
+If the exercises are fresh enough, and if external tools are excluded, a page of correct answers is fairly strong evidence that the solver did a substantial amount of arithmetic.
+
+It still does not identify the exact computation. A solver may use a shortcut I did not anticipate. One exercise may happen to have a memorized answer. A better algorithm is still an algorithm. For the present purpose, that is usually fine: what matters is that some sufficiently costly relevant mental computation was needed to produce the answers.
+
+Arithmetic therefore gives us a particularly convenient shape:
 
 ```text
-fresh input x  --->  private computation  --->  output w
-
-                         check R(x, w)
+fresh input  --->  internal work  --->  checkable answer
 ```
 
-The verifier controls the challenge, can make it fresh, and can cheaply check the result. This is almost the least mysterious sheep-counting problem one could ask for.
+Many sheep-counting problems become difficult because one of those conveniences disappears.
 
-### Literal sheep counting
+## The babysitter
 
-Now suppose I ask you to lie down and count sheep for ten minutes.
+A parent leaves a babysitter with a sleeping child for three hours.
 
-At the end you say:
+What is the babysitter being paid to do?
+
+Not, primarily, to produce an observable stream of actions. On a good evening the babysitter may do almost nothing. The important job is to remain attentive enough to notice if something happens, and to be ready to act if it does.
+
+Suppose the parent returns after three quiet hours. The child is still asleep.
+
+That is compatible with an excellent babysitter. It is also compatible with a babysitter who fell asleep immediately after the parent left.
+
+The internal activity is the thing being purchased, but successful execution may have no natural output.
+
+If the child wakes up, starts crying, or needs help, the situation changes. The babysitter is given an event to notice and respond to. A quiet evening gives almost no samples of the desired vigilance; an eventful evening gives more.
+
+This example is useful because it removes a distraction created by arithmetic. There need not be a product at the end. Sometimes the mental activity itself is the whole job.
+
+## Counting sheep
+
+Now consider the literal instruction:
+
+> Count sheep in your head for ten minutes.
+
+At the end the person says:
 
 > I reached 843.
 
-That number is an output, but not a very informative one. You could have invented 843 at the end. You could have counted for thirty seconds and stopped. Many very different internal histories are compatible with the same final number.
+Again the desired activity is internal. The final number is only a trace that the activity might leave.
 
-Perhaps there are other observations. You yawned. You became sleepy. You fell asleep.
+And it is a poor trace. A person can invent 843 at the end. They can count for one minute and stop. Very different internal histories can lead to the same report.
 
-If counting sheep genuinely changes the probability of those outcomes, then they are evidence in a statistical sense. But they are not close to mathematical certificates. People become sleepy without counting sheep; people can count sheep without becoming sleepy.
+There may be other consequences. Perhaps the person yawns, becomes sleepy, or falls asleep. If counting sheep genuinely changes the probability of those events, they carry some evidence. But none of them is tightly tied to the exact requested process.
 
-This suggests one dimension that arithmetic hides: **output binding**. How difficult is it to produce the observed output without performing something close to the claimed internal computation?
+The contrast with arithmetic is not that one task is mental and the other is not. Both are mental. The difference is that arithmetic happens to produce outputs that are much more informative about the internal work.
 
-The birds claim may have almost no useful output binding. The arithmetic worksheet can have strong output binding. Literal sheep counting has an output, but the obvious output barely constrains the execution.
-
-### The babysitter
-
-A different problem appears with a babysitter.
-
-A babysitter is left with a sleeping child for three hours. The parent returns. The child is still asleep and everything is fine.
-
-Was the babysitter attentive during the whole interval?
-
-A diligent babysitter and a sleeping babysitter can easily produce the same quiet evening. The desired hidden activity may leave no natural trace when nothing happens.
-
-Suppose instead the parent returns and learns that the child had been crying for a long time and needed help. That feels like evidence that the babysitter was not paying attention.
-
-But there is an assumption hidden in that inference. An attentive babysitter could notice the problem and deliberately refuse to help.
-
-So
-
-```text
-child was neglected  =>  babysitter was inattentive
-```
-
-is not valid against an arbitrary strategy. It works only if we assume that an attentive babysitter also wants to babysit well.
-
-This gives us another distinction that seems important.
-
-Evidence is **strategy-independent** when its guarantee survives even if the prover deliberately chooses the most misleading allowed behavior.
-
-Evidence is **incentive-dependent** when the inference relies on assumptions about what the prover is trying to achieve.
-
-There is nothing inherently bad about incentive-dependent evidence. Most evidence about people is like that. But it should not be confused with a proof whose soundness quantifies over adversarial strategies.
-
-### Chess at a party
+## Chess at a party
 
 Consider a more artificial example.
 
-A jealous girlfriend leaves her boyfriend at a party. She wants evidence that, while she is away, he is not devoting substantial attention to somebody else.
+A jealous girlfriend leaves her boyfriend at a party. She would like him not to spend the next hour seriously attending to somebody else. Before leaving, she tells him to play chess continuously.
 
-She tells him to play chess continuously.
+When she returns, she looks at the game.
 
-When she returns, she looks at the game. Imagine that she knows his ordinary chess performance well enough to compare this game against a baseline: move quality, blunder rate, score, or some other statistic. In the cartoon version, she checks whether his performance falls inside an acceptable statistical range.
+Suppose, for the sake of the story, that his ordinary chess performance is well characterized. A sufficiently long game provides many moves, many responses to fresh positions, and perhaps enough data to compare his play with a normal baseline.
 
-Bad chess does not prove distraction. He can deliberately play badly.
+The point of the chess is not that the girlfriend has a special interest in chess. The task is being used to occupy some mental machinery. If strong play is hard to produce without actually following the game, then the game transcript gives evidence that this machinery was being used for chess.
 
-Good chess is more interesting. If a long sequence of competent responses to fresh opponent moves is difficult to produce without substantial chess computation, then the transcript is positive evidence that the chess computation happened.
+That is already a different use of a sheep-counting task. The positive fact we try to establish is about chess, but the eventual reason for establishing it may be to exclude some competing mental activity.
 
-But chess itself is not what the girlfriend cares about. She wants a negative conclusion:
+I will return to that inference later. For now it is enough to notice that chess differs from arithmetic in another way: the input keeps arriving. Every opponent move changes the problem. A long game couples the hidden computation to a stream of fresh external events.
 
-> the competing mental activity did not substantially occur.
+## Puzzles without a verifier-supplied challenge
 
-For that conclusion she needs another assumption: the certified chess computation and the competing activity cannot both fit into the relevant cognitive resources during the interval.
+So far every example has come with a job already named: solve these exercises, watch the child, count sheep, play chess.
 
-The logical form is
+There is another possibility that I find particularly interesting.
 
-\[
-\text{evidence for }A
-\quad + \quad
-A\text{ excludes }B
-\quad\Longrightarrow\quad
-\text{evidence against }B.
-\]
+Suppose nobody prepared a challenge for me. Later, somebody asks me to give evidence that I have just done some nontrivial mental work.
 
-This seems more promising than trying to infer inattention from poor performance. The negative conclusion is obtained from a *positive* certificate for an incompatible task.
+Can I manufacture such evidence from the situation I am already in?
 
-Whether chess really excludes the activity in question is, of course, an empirical question. The point of the story is only the form of the argument.
+The verifier need not have been present at the beginning. They need not have chosen a random input. They need not even have decided what problem I should solve. If the environment contains enough fresh structure, I may be able to choose a suitable problem, solve it, and present a short witness.
 
-### A puzzle supplied by the room
+This freedom is useful and dangerous at the same time. It removes the need for the verifier to initiate the computation, but it also gives the prover opportunities to choose an unusually easy problem or an unusually easy instance. Any construction of this kind has to survive that freedom.
 
-The examples above all begin with some fairly explicit job: solve these exercises, count sheep, babysit, play chess.
+A party gives nice toy examples because the people present provide a complicated public state without any special equipment.
 
-There is another possibility. The prover may decide on a problem themselves and use the surrounding environment as the instance.
+### A monotone subsequence of guests
 
-Suppose there are seventeen people with a given total order. It could be the order in which they are standing, but the geometry is not important; all that matters is that everybody agrees on the order.
+Assume there are seventeen people with a given total order. It might be the order in which they are standing, but the geometry is not important. We only need one total order that everybody agrees on.
 
-There is also a second total order, for example alphabetical order of the guests' names.
+There is also a second total order, for example alphabetical order of their names.
 
-Reading the alphabetical ranks in the given order gives a permutation of seventeen numbers. The prover tries to find five people, preserving the given order, whose names are alphabetically increasing or alphabetically decreasing.
+Read the alphabetical ranks in the given order. This produces a permutation of seventeen numbers.
 
-The Erdős-Szekeres monotone subsequence theorem guarantees that such a set always exists. More generally, every sequence of
+The problem is:
+
+> Find five people, preserving the given order, whose names are alphabetically increasing or alphabetically decreasing.
+
+The Erdős-Szekeres monotone subsequence theorem guarantees that such a set exists. More generally, every sequence of
 
 \[
 (r-1)(s-1)+1
@@ -156,37 +142,25 @@ distinct values contains an increasing subsequence of length \(r\) or a decreasi
 (5-1)^2+1=17.
 \]
 
-So the room itself supplies a guaranteed puzzle instance.
+The prover can point to five people. The verifier checks two orders.
 
-This has several attractive properties.
+Several useful properties happen to line up here. The answer is short. Existence is guaranteed. The prover may know everybody's name in advance, yet a fresh ordering can still create fresh work. And the verifier did not have to generate the instance.
 
-The prover may know everybody's name in advance. They may even have memorized the entire alphabetical order. That preparation does not determine the fresh permutation induced by the current given order.
+What the theorem does *not* tell us is whether a human actually has to work hard to find a witness. A typical ordering may contain many valid subsequences. A person may learn a good heuristic. The interesting complexity question is empirical until we have a convincing human-computation model.
 
-The witness is short: five people.
+### A graph among the guests
 
-Verification is simple: check their order and check that their names are monotone alphabetically.
+Graphs give another family.
 
-And the task is total: every valid instance has a witness.
+Let the guests be vertices, and let some quickly checkable symmetric relation determine the edges.
 
-What is missing is a result about *human difficulty*. Erdős-Szekeres proves that a witness exists, not that a person must work hard to find one. There may be many witnesses. Humans may learn very good heuristics. A particular arrangement may make a solution visually obvious.
+A first idea is to ask for the largest clique. Finding one may be difficult, and checking that a proposed set is a clique is easy.
 
-So this is not yet a human proof-of-work construction. It is a candidate with an attractive verification structure whose actual cognitive cost needs to be measured.
+But checking that it is the *largest* clique is a different matter. A five-person clique is a short positive witness. The claim that no six-person clique exists need not have an equally short certificate.
 
-### Cliques among the guests
+A fixed target size is easier to verify, but then a clique of that size may not exist.
 
-Graphs give a second ambient family.
-
-Let guests be vertices and let some quickly checkable symmetric relation define the edges.
-
-The first tempting task is:
-
-> Find the largest clique.
-
-A proposed clique is easy to check, but the word *largest* causes trouble. Checking that five people form a clique requires only the ten pairwise checks. Checking that no clique of size six exists may be much harder. The output no longer has the verification asymmetry we wanted.
-
-A specified-size clique is easier to verify, but it may not exist.
-
-Ramsey theory gives one way around that. Since
+Ramsey theory gives one way around the existence problem. Since
 
 \[
 R(4,4)=18,
@@ -194,216 +168,95 @@ R(4,4)=18,
 
 every graph on eighteen vertices contains either a clique of size four or an independent set of size four.
 
-So with eighteen guests one can ask:
+So with eighteen guests we can ask:
 
 > Find four guests who are all pairwise related, or four guests no two of whom are related.
 
-Again the witness is small and existence is guaranteed. Again the unanswered question is human search cost.
+Again the environment supplies the instance, a witness is guaranteed, and checking the witness is small.
 
-These ambient puzzles are the examples that originally made the broader sheep-counting question interesting to me. They show that the verifier does not necessarily have to generate the concrete challenge. A fresh, partially uncontrolled environment may already contain one.
+These examples are closer to ordinary mathematical certificates than the babysitter or sheep-counting examples. But the unusual part is not merely that they are puzzles. It is that the prover can get a challenge from public ambient structure instead of waiting for the verifier to hand one over.
 
-## What varies between these examples?
+## The task and the trace
 
-The examples do not seem to divide naturally into two or three clean species. They vary along several partly independent dimensions.
+The examples become easier to compare if we separate two things.
 
-| Example | Who chooses the task? | Concrete input source | Input over time | Observable output | Main difficulty |
-| --- | --- | --- | --- | --- | --- |
-| thinking about birds | nobody necessarily | internal/world | none required | usually none | no distinguishing trace |
-| arithmetic exercises | verifier | verifier | one-shot | answers | comparatively easy case |
-| literal sheep counting | verifier or prover | almost none | none after start | final count, sleepiness | weak output binding |
-| babysitting | context | environment | event-driven, possibly none | reactions/outcomes | quiet success may leave no trace; failure evidence may depend on incentives |
-| chess | either party | opponent and position | streaming | move transcript/performance | needs a model connecting performance to cognitive work |
-| monotone guest subsequence | prover or verifier | ambient group | one-shot ambient | short witness | human search cost uncertain |
-| Ramsey guest graph | prover or verifier | ambient relation graph | one-shot ambient | short witness | human search cost uncertain |
+First there is the **cognitive task**: the internal activity we actually care about.
 
-This table is not intended as a taxonomy. It is more a list of coordinates that appear to matter:
+Then there is the **trace**: whatever becomes externally observable and can be used as evidence about the task.
 
-- who chooses the task;
-- who controls the instance;
-- how fresh and prover-independent the input is;
-- whether input arrives once or continuously;
-- what observable output is produced;
-- how strongly the output is bound to the claimed execution;
-- whether the evidence survives arbitrary prover strategy;
-- how expensive producing the output is;
-- how expensive checking it is;
-- which other cognitive activity the execution may exclude.
+For arithmetic, the task is calculating and the trace is a collection of answers.
 
-A useful formalism, if one exists, should probably keep most of these dimensions separate rather than force them into named classes too early.
+For babysitting, the task is vigilance. On a quiet evening the trace may be almost empty.
 
-## A tentative formal model
+For sheep counting, the task is the repeated internal counting process. The final number and sleepiness are possible traces.
 
-The next few sections are the least settled part of this post. I am not proposing a model of human cognition in any strong sense. The aim is only to make the questions precise enough that we can see where assumptions enter.
+For chess, the task is following and evaluating the game. The move transcript and performance statistics are traces.
 
-### Hidden execution and observable transcript
+For the party puzzles, the task is a search through an ambient combinatorial instance. The selected people are a compact trace of success.
 
-Fix an interval \(I\). During it, a person has some hidden cognitive history \(H\). The outside world supplies an input process \(X\), which may be empty. The verifier observes only a transcript \(T\): spoken answers, moves, choices, response times, gestures, or other externally visible consequences.
+This separation matters because otherwise it is easy to let the verification problem replace the original problem. The purpose of the babysitter is not to emit evidence. The purpose of the arithmetic student is not to fill boxes with digits. Those outputs are useful because they tell us something about the internal work.
 
-We care about some claim
+A sheep-counting construction is therefore not merely a relation between an input and an output. It begins with a claim about an execution.
 
-\[
-C(H)
-\]
+## Inputs and initiation
 
-about the hidden execution.
+The examples also differ in how the mental work gets its input.
 
-Examples include:
+Arithmetic is the easiest arrangement: the verifier chooses a concrete instance and hands it to the prover.
 
-- the prover solved these arithmetic exercises;
-- the prover maintained some running computation;
-- the prover found a particular combinatorial witness;
-- the prover devoted at least some amount of resource to activity \(A\).
+Chess is interactive. The initial position may be known, but fresh input keeps arriving through the opponent's moves.
 
-A verifier applies a procedure
+Babysitting is event-driven. The relevant input may be empty for hours and then suddenly become important.
 
-\[
-V(X,T)\in\{\text{accept},\text{reject}\}.
-\]
+Literal sheep counting needs almost no external input after the instruction.
 
-This notation already hides a serious problem: what exactly counts as having "performed" the computation? If the prover finds an unexpected shortcut, has the intended task still been done? If two different mental algorithms produce the same witness, are they equivalent for the claim we care about?
+The party puzzles are different again. The verifier does not have to initiate the computation at all. The prover uses an ambient public state as an instance.
 
-I do not know the right general answer. For puzzle-like tasks, the safest notion may be extensional: the prover has to produce a witness satisfying some relation \(R(x,w)\), and we care about the minimum cost of *any* allowed strategy that can do so. For richer claims such as sustained attention, the execution itself matters and an extensional relation may not be enough.
+It helps to separate two choices that are often bundled together:
 
-### Completeness and soundness
+1. who chooses the **kind of problem**;
+2. who supplies the **concrete instance**.
 
-Borrowing language from proof systems, we can at least distinguish two desired properties.
+A verifier can choose both. A prover can choose the problem while the environment supplies the instance. An opponent can supply a stream of instance updates. A prover can also choose both, which is usually dangerous because an easy instance can be selected on purpose.
 
-**Completeness.** If an allowed execution satisfying \(C\) occurs, there is a way to produce an accepting transcript with high probability.
+For proof-of-work-like uses, the relevant property is not randomness by itself. What matters is that enough of the input is fresh and outside the prover's control that preparation cannot remove the online work.
 
-**Strategy-independent soundness.** If no execution satisfying \(C\) occurs, even the best deceptive prover strategy should have only a small probability of producing an accepting transcript.
+The ambient puzzle case adds another question: how much freedom can the prover have in choosing the problem without turning the whole exercise into a search for whichever problem happens to have an obvious answer?
 
-This is intentionally stronger than ordinary behavioral evidence. The babysitter example shows why. A neglected child may be evidence of inattention under cooperative incentives, but it is not sound against an attentive babysitter deliberately trying to imitate negligence.
+That seems like one of the central design questions for self-initiated sheep-counting proofs.
 
-If we do want to reason about ordinary incentives, that can be modeled as a different game. The important thing is not to silently switch between the two notions.
+## Output binding
 
-### Output binding
+Once a task is fixed, we can ask how informative its trace is.
 
-For a claim \(C\), let us informally compare the observable transcripts available when \(C\) is true and when it is false.
+Call this, informally, **output binding**: how difficult is it to produce an acceptable trace without performing something sufficiently close to the claimed internal work?
 
-If both cases induce essentially the same observable possibilities, verification cannot work.
+The notion has to be relative to a model. If calculators are allowed, arithmetic answers say very little about mental arithmetic. If chess engines are allowed, a beautiful chess game says very little about the player's own analysis.
 
-In a probabilistic setting, one could instead compare distributions
+Even with the external rules fixed, the task may have unexpected mental shortcuts. Those shortcuts count. The relevant cost is not the cost of the algorithm the designer expected; it is the cost of the cheapest strategy that actually works.
 
-\[
-P(T\mid C)
-\qquad\text{and}\qquad
-P(T\mid\neg C).
-\]
+This gives a rough spectrum.
 
-If they are nearly identical, the transcript carries little evidence. If they are well separated, statistical verification becomes possible. For a strong proof-like construction we would want more: accepting transcripts should be hard to produce under \(\neg C\), even after optimizing over prover strategies.
+The answer "843" is weakly bound to ten minutes of sheep counting.
 
-This is the sense in which the arithmetic answers are tightly bound to the task while the final sheep count is not.
+A quiet babysitting shift may produce no trace at all.
 
-## Why negative claims are awkward
+A long sequence of correct answers to fresh arithmetic exercises can be much more strongly bound to relevant calculation.
 
-Consider again
+A valid monotone subsequence is perfectly bound to the mathematical statement "these five people form such a subsequence", although how strongly it is bound to *substantial human effort* is a separate question.
 
-> I was not thinking about birds.
+That last distinction is important. A certificate can perfectly establish a mathematical fact and still fail as evidence of work because the fact was too easy to find.
 
-Suppose thinking about birds merely adds private information or experience and does not remove any later behavioral capability.
+## Cost
 
-Let \(\mathcal T(A)\) be the set of observable transcripts a prover can generate after activity \(A\), allowing arbitrary strategy. If
+For the proof-of-work-like examples we care about two costs that need not be similar:
 
-\[
-\mathcal T(\neg A)\subseteq\mathcal T(A),
-\]
+- the cost of producing an acceptable trace;
+- the cost of checking it.
 
-then there cannot be a strategy-independent transcript certifying \(\neg A\). Every transcript available to the non-\(A\) prover is also available to the \(A\) prover.
+Blum and Vempala's model of human computation is useful here because it separates preparation from online processing and emphasizes concrete costs rather than only asymptotic complexity.
 
-This is almost tautological, but I think it captures a useful obstruction. Private knowledge and private thought are often **behaviorally monotone**: having done more internally does not stop a person from later imitating someone who did less.
-
-The observation should not be pushed too far. Some mental states do remove capabilities, and cognition can create involuntary external effects. The claim is only conditional on the inclusion above.
-
-The chess example suggests a route around it. Do not try to certify \(\neg B\) directly. Certify a positive activity \(A\) whose execution is incompatible with \(B\).
-
-To make that more than a slogan we need some model of cognitive resources.
-
-## A flow-network model of cognitive resources
-
-The simplest resource model would give the mind a scalar capacity \(C(t)\). Every task consumes some amount, and two tasks are incompatible when their combined demand exceeds capacity.
-
-That seems too coarse.
-
-Two tasks can interfere because they require the same particular channel even when neither comes close to using all cognition. Two verbal tasks might collide while a visual task remains possible. Conversely, two demanding tasks might coexist better than expected if they use different resources.
-
-A more general toy abstraction is a time-varying capacitated network
-
-\[
-G_t=(V,E,c_t).
-\]
-
-This is not meant as a neurological diagram. The vertices need not be brain areas and the edges need not be literal neural pathways. It is only a way to talk about bounded, selective resources.
-
-The intended picture is:
-
-- an edge represents some cognitive channel or bottleneck;
-- \(c_t(e)\) is the amount of that resource available at time \(t\);
-- a computation requires flow through particular edges;
-- the same task may admit several implementations and therefore several routings.
-
-For an activity \(A\), let \(\mathcal F_A\) be the set of feasible flows implementing it.
-
-Activities \(A\) and \(B\) can coexist only if there are
-
-\[
-f_A\in\mathcal F_A,
-\qquad
-f_B\in\mathcal F_B
-\]
-
-such that
-
-\[
-f_A(e,t)+f_B(e,t)\leq c_t(e)
-\]
-
-for every relevant edge and time.
-
-This can represent several different kinds of interference without reducing everything to one number:
-
-- **global exhaustion:** the tasks share a broad bottleneck;
-- **local contention:** both require one specific edge while much of the network remains free;
-- **selective compatibility:** demanding computations can coexist because their routes are mostly disjoint;
-- **changing capacity:** fatigue, stress, practice, or environment change \(c_t\);
-- **alternative algorithms:** a clever prover may route a task differently from the way the verifier expected.
-
-That last point is essential. It is not enough to show that one imagined way of playing chess conflicts with another activity. For a strong exclusion claim, every allowed implementation that can produce the accepted chess transcript has to consume resources incompatible with the competing task.
-
-### Negative evidence by exclusion
-
-For an interval \(I\), call activities \(A\) and \(B\) **resource-incompatible** if no pair of feasible executions fits within the network capacities over \(I\).
-
-Then, inside this model,
-
-\[
-\text{sound positive evidence for }A
-\quad + \quad
-A\perp B
-\quad\Longrightarrow\quad
-\text{sound negative evidence for }B.
-\]
-
-This is the formal skeleton behind the chess story.
-
-The logical implication is easy. The difficult part is establishing the premises for real humans. We would need empirical reasons to believe both that the transcript really certifies \(A\) and that every relevant implementation of \(A\) excludes \(B\).
-
-So the network model does not solve the psychology. At best it isolates exactly which psychological assumptions a conditional proof would need.
-
-### State and storage
-
-Ordinary flow is still an incomplete model of computation because cognition is stateful.
-
-A person can spend effort now to store an intermediate result and use it later. Practice changes future routing. Information can be cached. One task can alter the future cost of another.
-
-A more serious version would need storage or state transitions at vertices, and perhaps costs for changing state as well as moving information.
-
-I do not know whether the flow picture survives that extension or whether a different abstraction is cleaner. For now its value is mainly conceptual: it distinguishes generic "mental effort" from competition for particular cognitive resources.
-
-## What should "cost of computation" mean here?
-
-For an ordinary algorithm we can count steps, memory accesses, or some other machine operation. For a human mind there is no agreed primitive operation.
-
-Blum and Vempala's work on the complexity of human computation is helpful here because it deliberately studies concrete human costs and separates preparation from processing. I will borrow their PREP/PROC distinction and add verification cost.
+I will use three informal quantities:
 
 \[
 \operatorname{PREP},\qquad
@@ -411,233 +264,325 @@ Blum and Vempala's work on the complexity of human computation is helpful here b
 \operatorname{VER}.
 \]
 
-- **PREP** is work performed before the fresh instance is known: learning a strategy, memorizing names, rehearsing patterns, building long-term representations.
-- **PROC** is the online cost after the relevant fresh input arrives.
-- **VER** is the cost of checking the output or transcript.
+**PREP** is work done before the fresh part of the instance is known: learning the participants, memorizing names, practicing an algorithm, building mental tables.
 
-For a puzzle relation \(R(x,w)\), the important online cost is not the cost of the algorithm the designer expects. It is something like
+**PROC** is the online work that remains after the relevant fresh input arrives.
 
-\[
-\operatorname{PROC}(x)
-=
-\inf_{S:\,R(x,S(x))}
-\operatorname{cost}(S,x),
-\]
+**VER** is the work needed to check the trace.
 
-where the infimum ranges over all allowed successful prover strategies \(S\).
+For a useful proof-of-work-like construction we would like \(\operatorname{PROC}\) to remain substantial even after generous preparation, while \(\operatorname{VER}\) stays small.
 
-This formula is more aspiration than definition because \(\operatorname{cost}\) itself still needs a human resource model. In the flow picture, one candidate might combine elapsed time, total flow, bottleneck occupancy, or some other functional of the execution. I do not know which quantity is the right one.
+But these quantities should be defined adversarially. The relevant \(\operatorname{PROC}\) is the cost of the cheapest allowed successful strategy, not the strategy the puzzle designer had in mind.
 
-The conceptual point is simpler: **a shortcut is the real algorithm**. If a person can produce the witness cheaply by a strategy we did not anticipate, then the problem is cheap for that person.
+This is why the monotone subsequence example still needs experiments. The theorem tells us that an answer exists and that verification is cheap. It does not lower-bound the cheapest human strategy for finding one.
 
-For proof-of-work-like use, we would want substantial online \(\operatorname{PROC}\) and much smaller \(\operatorname{VER}\).
+It is also why "largest clique" is a useful near-miss. Even if finding a maximum clique is expensive, verifying maximality may destroy the asymmetry.
 
-The ratio
+## Incentives are a separate issue
 
-\[
-\frac{\operatorname{PROC}}{\operatorname{VER}}
-\]
+There is another question that should not be mixed into the examples too early: what is the prover trying to achieve?
 
-may be suggestive, but it is not enough by itself. A task with a beautiful ratio is still useless if the prover can choose a pre-solved instance or if the output has weak binding to the claimed computation.
+Return to the babysitter.
 
-## Where the input comes from
+Suppose the child cries for twenty minutes and the babysitter does nothing. Under ordinary assumptions that is evidence that the babysitter was inattentive.
 
-The arithmetic example enjoys a privilege that the ambient puzzles do not: the verifier controls the input.
+But an attentive babysitter can deliberately ignore a crying child.
 
-It helps to separate two choices:
+So the observation does not, by itself, distinguish inattention from attentive malice. The inference used an incentive assumption: an attentive babysitter was also expected to want to respond properly.
 
-1. who chooses the **task or relation**;
-2. who supplies the **concrete instance**.
+The same issue appears in chess. Poor play is not a certificate of distraction. An attentive player can intentionally blunder.
 
-A verifier may choose both. But in the guest puzzles the prover can name the task while the current room supplies the instance.
+This suggests two different standards.
 
-Other sources are possible: an opponent, a random generator, another participant, or a changing environment.
+**Strategy-independent evidence** should remain valid even if the prover deliberately chooses the most misleading allowed behavior.
 
-### Freshness and prover independence
+**Incentive-dependent evidence** is interpreted relative to a model of what the prover wants and how that affects behavior.
 
-Randomness is not quite the right notion.
+Both are useful. They answer different questions.
 
-A deterministic arrangement can still be useful if the prover could not know or control it in advance. A perfectly random instance can be useless if it is revealed early enough to precompute the witness.
+The distinction becomes especially important for negative claims. Without fixing the prover model, it is easy to manufacture apparent "evidence of absence" that disappears as soon as the prover is allowed to imitate failure on purpose.
 
-What seems relevant is **fresh, prover-independent uncertainty at the moment the online computation must happen**.
+## Negative claims
 
-Perhaps this can eventually be described information-theoretically. Conditional min-entropy is one possible language, but I do not yet know whether it captures the property we care about. Operationally, the test is simpler: how much can advance preparation reduce the cheapest online strategy?
+Suppose the claim is:
 
-A desirable ambient construction would tolerate large PREP without collapsing PROC:
+> I was not thinking about birds.
 
-\[
-\text{large PREP}\not\Rightarrow\text{tiny PROC}.
-\]
+There is a simple obstacle.
 
-### Static and streaming input
+A person who did think about birds can usually behave afterward exactly like a person who did not. The extra internal event does not remove the ability to imitate the other case.
 
-The timing of the input is another independent coordinate.
-
-The arithmetic and guest puzzles are mainly one-shot:
-
-\[
-x\longrightarrow\text{computation}\longrightarrow w.
-\]
-
-Chess receives a stream of fresh opponent moves:
-
-\[
-x_1\to w_1\to x_2\to w_2\to x_3\to w_3\to\cdots
-\]
-
-A competent long transcript is therefore coupled to many unpredictable moments over time.
-
-Literal sheep counting receives almost no fresh external information after the initial instruction.
-
-This does not by itself make streaming tasks better, but it gives them a useful property: they can bind evidence to an interval rather than merely to one final state.
-
-## What would make a sheep-counting construction interesting?
-
-I do not think these problems have a single meaningful score. A construction can be strong on one axis and fail completely on another.
-
-Still, several properties recur.
-
-**Output binding.** Producing accepted evidence without doing something close to the claimed computation should be difficult.
-
-**Freshness.** The useful input should arrive late enough that the answer cannot simply be prepared beforehand.
-
-**Prover independence.** The prover should not be able to select an especially easy instance after seeing all possibilities.
-
-**Cheap verification.** Checking the evidence should cost substantially less than producing it.
-
-**Totality or reliable solvability.** If the construction is supposed to work on demand, a witness should reliably exist.
-
-**Preprocessing resistance.** Stable knowledge and previous practice should not remove most of the online cost.
-
-**Strategy-independent soundness, when that is the goal.** If we use *proof* in the strong sense, the guarantee should survive deceptive strategies.
-
-**Explicit exclusion assumptions.** If positive evidence for \(A\) is used as negative evidence for \(B\), the incompatibility should be part of the model rather than an informal appeal to "attention".
-
-This is only a checklist, not a definition of a complexity class.
-
-## How much can be formalized without understanding cognition?
-
-Some of the framework is independent of any detailed brain model.
-
-If two hidden histories allow exactly the same observable transcripts, the verifier cannot distinguish them from those transcripts alone.
+Let \(\mathcal T(A)\) be the set of observable traces that can be produced after activity \(A\), allowing arbitrary later strategy.
 
 If
 
 \[
-\mathcal T(\neg A)\subseteq\mathcal T(A),
+\mathcal T(\neg A)\subseteq \mathcal T(A),
 \]
 
-then direct strategy-independent negative certification of \(A\) is impossible.
+then no strategy-independent trace can directly certify \(\neg A\). Every trace available to the non-\(A\) case is also available to the \(A\) case.
 
-If verifying a proposed witness is itself expensive, the construction fails the desired producer/verifier asymmetry regardless of psychology.
+This observation is almost tautological. It is still useful because it tells us what kind of negative proof cannot work.
 
-If the prover controls the instance and can always choose one with a precomputed witness, the input problem is also computational rather than neurological.
+The chess story points to a different route.
 
-Positive lower bounds on human work are where a cognitive model becomes unavoidable.
+Instead of trying to certify \(\neg B\) directly:
 
-Perhaps those assumptions can remain narrow and operational rather than becoming a general theory of mind. A conditional result might assume only that
+1. positively certify an activity \(A\);
+2. argue that \(A\) and \(B\) could not both have occurred during the relevant interval;
+3. conclude \(\neg B\).
 
-- a task family requires at least some capacity on a particular bottleneck;
-- a stream cannot be answered at the required quality without processing the fresh inputs;
-- a certain amount of state cannot be retained without external memory;
-- two task families cannot fit simultaneously into the available network.
+The hard part has moved from "recognize absence" to "justify incompatibility".
 
-Then the conclusion would be explicitly conditional on those assumptions.
+That is a resource question.
 
-That seems preferable to pretending that the network diagram is already a machine model of human cognition.
+## Cognitive resources
 
-## Reasons this may not amount to much
+A first model would give the mind a single capacity \(C(t)\). Every activity consumes some amount of it, and two activities exclude each other when their combined demand exceeds capacity.
 
-There are several obvious ways the idea could fail to become useful.
+This is probably too crude.
 
-The ambient puzzles may simply be too easy for humans. Elegant existence theorems do not imply difficult human search.
+Two tasks can interfere because they both need one particular resource even while much of the rest of cognition is idle. Conversely, two demanding tasks may coexist if they rely on substantially different resources.
 
-Human costs may vary too much. One person may need a minute for a witness another person sees immediately.
+A slightly richer model has a collection of capacity-limited channels. Their capacities may vary over time. An implementation of a cognitive task places load on some of those channels.
 
-Preprocessing may defeat most natural ambient tasks. Familiarity with the participants may allow a representation that makes fresh instances cheap.
-
-The resource network may be too flexible. If every observed incompatibility can be explained by inventing another hidden edge, the model predicts nothing.
-
-Strategy-independent verification may be rare outside tightly specified puzzle tasks. Many practically interesting claims about attention may remain incentive-dependent.
-
-And there may simply be no application that needs these constructions. A party puzzle is not automatically a useful protocol.
-
-These are not qualifications I expect to disappear. A useful development of the idea would have to survive them by producing either a non-obvious construction, a meaningful impossibility result, or empirical measurements that are stable enough to support a model.
-
-## Questions worth trying next
-
-### Measure the monotone-subsequence puzzle
-
-The easiest next step is empirical.
-
-Try
+One can picture those channels as edges of a time-varying network,
 
 \[
-(k,n)=(4,10),\ (5,17),\ (6,26),
+G_t=(V,E,c_t),
 \]
 
-with \(n=(k-1)^2+1\).
+although the graph is only a resource abstraction. The vertices need not be brain regions and the edges need not be neural pathways.
 
-Measure solve time, error rate, strategies, learning across rounds, and performance after reshuffling the same participants.
+A task may have several implementations. For an activity \(A\), let \(\mathcal F_A\) be the allowed resource-use patterns that count as implementations of \(A\).
 
-The interesting question is not only the first-round difficulty, but how much previous rounds reduce later online work.
+For a set of simultaneous activities \(S\), we ask whether there is a choice
 
-### Find more ambient total-search principles
+\[
+f_A\in\mathcal F_A
+\qquad\text{for each }A\in S
+\]
 
-Erdős-Szekeres and Ramsey theory are attractive because an uncontrolled environment is guaranteed to contain a compact witness.
+such that their total load never exceeds any capacity during the interval.
 
-Other possibilities might come from pigeonhole principles, partial orders, parity arguments, matching theorems, local optima, or other small combinatorial existence results.
+This captures several cases at once:
 
-The useful examples would need all three properties: reliable existence, cheap human verification, and nontrivial human search.
+- two tasks may compete for a broad shared bottleneck;
+- they may collide only on one specialized channel;
+- alternative algorithms may route a task around a bottleneck;
+- capacities may change with fatigue or practice;
+- a task may occupy different resources at different moments.
 
-### Make input independence precise
+For the chess argument, what matters is not that one particular way of playing chess uses a resource needed by \(B\). We need something stronger: every sufficiently successful allowed implementation of the certified chess task must conflict with every allowed implementation of \(B\).
 
-What property of an ambient instance prevents preprocessing from eliminating online work?
+That is a demanding assumption, and it should be visible whenever such an exclusion argument is made.
 
-Randomness alone is not enough. We need a notion tied to what the prover could know and prepare before the relevant moment.
+### Forgetting the network
 
-There may be an information-theoretic formulation, but I do not yet see it.
+For many sheep-counting questions, the internal layout of the resource network is more detail than we can use.
 
-### Look for robust cognitive exclusion
+Suppose we fix an interval and a collection of high-level activities. From the whole resource model, keep only the answer to one question:
 
-Can we find task pairs with strong, directional interference?
+> Which sets of activities can occur together?
 
-Not merely "multitasking makes both somewhat harder", but an effect strong enough that successful execution of one task is meaningful evidence against substantial simultaneous execution of the other.
+Let
 
-If no such pairs exist, the negative-certification part of the framework becomes much less interesting.
+\[
+\mathcal C
+\]
 
-### Improve the resource model only when experiments demand it
+be the family of jointly feasible sets of activities.
 
-The flow network already needs state, storage, and learning to describe cognition even approximately. It would be easy to keep adding machinery until the model explains anything.
+If a set of activities is feasible, then removing one of them cannot make the remaining set infeasible. So \(\mathcal C\) is downward closed.
 
-A better approach may be to start with specific experiments and add only the minimum structure needed to state their observed constraints.
+At this level, two activities are incompatible when \(\{A,B\}\notin\mathcal C\).
 
-### Keep incentive models explicit
+Pairwise incompatibility is not always enough to describe the system. Imagine three activities that each consume \(0.4\) units of the same resource of capacity \(1\). Every pair can coexist, but all three cannot.
 
-The babysitter example changes completely depending on whether the person is cooperative, adversarial, or optimizing some stated utility.
+So the information we need may be a family of **minimal incompatible sets**, not merely a graph of incompatible pairs.
 
-A mature account should probably always say which prover model is being used rather than treating "human behavior" as one thing.
+This is a much smaller object than the original flow network. Two very different cognitive architectures are indistinguishable for our purposes if they induce the same family \(\mathcal C\).
 
-## Why this still looks like computer science
+Time, causality, memory, and streaming input may force us to enrich this object later. But for the narrow question "what can this certified activity exclude?", the compatibility structure may be all we need.
 
-The starting question sounds psychological:
+## A minimal evidence model
 
-> Can you verify what somebody was thinking about?
+The resource model is only needed for some questions. The more basic sheep-counting setup can be stated without it.
 
-But the toy examples quickly expose familiar computational structure. There is a hidden execution, an input source, an observable transcript, a verifier, possible preprocessing, adversarial strategies, and some notion of resource cost.
+Fix an interval \(I\).
 
-What makes the setting unusual is that the computer is a human mind, its execution is private, and our machine model is poor.
+There is an external input history \(X\).
 
-That may make the subject too messy to support much theory. I am not yet sure that all of these examples belong under one formalism. But the birds claim and the arithmetic worksheet at least show that there is a meaningful spectrum: some private computations leave almost no checkable trace, while others naturally produce compact evidence tied to substantial work.
+There is a hidden execution history \(H\).
 
-The ambient puzzles add a more specifically computer-scientific question. Instead of asking the verifier to generate a challenge, can fresh structure already present in the environment supply one? Can a combinatorial theorem guarantee that a witness exists? Can finding that witness be reliably more expensive for a human than checking it? Can this remain true even after the prover has prepared everything they reasonably can in advance?
+There is a cognitive claim
 
-Those questions are concrete enough to test, and at the moment that seems like a sufficient reason to keep looking at them.
+\[
+Q(X,H)
+\]
 
-For now, **sheep-counting problems** is only a tentative name for this cluster of questions: when hidden human computation can leave externally checkable evidence, what that evidence actually establishes, what it costs to produce, and which assumptions are doing the work.
+which says that the internal task of interest was performed.
+
+There is an externally visible trace \(T\).
+
+A verifier sees \(X\) and \(T\), but not \(H\), and applies a test
+
+\[
+V(X,T)\in\{\text{accept},\text{reject}\}.
+\]
+
+The order here matters conceptually. We start with \(Q\), the internal property we care about. We do not start with an output relation and then decide to interpret it psychologically.
+
+For arithmetic, \(Q\) might say that enough relevant calculation occurred to solve the fresh exercises.
+
+For babysitting, \(Q\) might say that the required vigilance was maintained.
+
+For the monotone puzzle, \(Q\) might say that the prover found a valid witness from the current ambient instance.
+
+The trace is only what the verifier gets to inspect.
+
+Two familiar proof-system properties can then be adapted.
+
+**Completeness:** executions satisfying \(Q\) should be able to produce accepting traces.
+
+**Soundness:** executions not satisfying \(Q\) should not be able to produce accepting traces except with small probability, even under the allowed deceptive strategies.
+
+This does not solve the hard part. We still have to decide what hidden executions count as satisfying \(Q\), what strategies and external aids are allowed, and what resource cost those executions have.
+
+But it keeps the central object in the right place: the claim is about the internal activity, and verification is a secondary interface to it.
+
+## A table of the examples
+
+The examples are probably better treated as points in a design space than as separate species.
+
+| Example | Internal task | Initiation / input source | Input over time | Typical trace | Main problem |
+| --- | --- | --- | --- | --- | --- |
+| "I am thinking about birds" | particular thought content | none required | none | usually none | little or no distinguishing trace |
+| arithmetic exercises | calculation | verifier | one-shot | answers | easy case if input is fresh |
+| babysitting | vigilance | context / environment | event-driven | reactions when events occur | quiet success may leave almost nothing |
+| counting sheep | repeated internal counting | instruction or self-chosen | almost none | final count, sleepiness | trace weakly constrains execution |
+| chess | sustained game analysis | opponent / game | streaming | moves, performance | linking performance to resource use |
+| monotone guest puzzle | ambient search | prover + public environment | one-shot ambient | five-person witness | human search cost |
+| Ramsey guest puzzle | ambient search | prover + public environment | one-shot ambient | four-person witness | human search cost |
+
+Other coordinates matter too: preparation, prover control of the instance, access to external tools, verification cost, incentives, and resource incompatibility.
+
+I do not think all of these should be collapsed into one score.
+
+## What would make an ambient puzzle good?
+
+The party puzzles suggest a more specific design problem.
+
+We would like a task that can be instantiated from an uncontrolled or only partly controlled environment and that has several properties at once.
+
+**A witness should exist.** Otherwise the prover may simply be unlucky.
+
+**The witness should be short.** Verification should not reproduce the search.
+
+**The instance should contain fresh information.** Stable knowledge about the participants should not determine the answer in advance.
+
+**The prover should not be able to cherry-pick an easy instance too freely.** Allowing the prover to choose the task is useful only if that freedom does not collapse the cost.
+
+**Preparation should not eliminate the online work.**
+
+**Actual human search should be nontrivial.** This is the property the combinatorial theorems do not give us for free.
+
+The Erdős-Szekeres example is attractive mainly because it gets the existence and certificate parts right. Whether it gets the human-work part right remains an experiment.
+
+A useful first test would compare
+
+\[
+(k,n)=(4,10),\quad(5,17),\quad(6,26),
+\]
+
+reshuffle the same participants repeatedly, and measure solve time, errors, and learning.
+
+The preprocessing question is especially interesting: after somebody has learned the guest list and practiced several rounds, how much online work remains when only the fresh total order changes?
+
+## What the model does not yet capture
+
+The simple compatibility model deliberately throws information away.
+
+Cognition is stateful. Work done now can create memory that makes later work cheap.
+
+Activities have temporal shape. Two tasks may both be feasible during the same ten-minute interval but not at the same instant.
+
+Some tasks can be paused and resumed. Others lose their state when interrupted.
+
+The external input may itself depend on the prover's previous actions, as in chess.
+
+The resource capacities may be stochastic rather than fixed.
+
+And the identity of an "activity" is already an abstraction: the same external task may be implemented by very different internal algorithms.
+
+Those details matter if we want quantitative predictions. They matter less for some qualitative questions, especially simple incompatibility arguments.
+
+This suggests using the weakest model that can answer the particular sheep-counting question rather than committing to a detailed model of cognition from the start.
+
+## Questions I would try next
+
+The examples leave several fairly concrete problems.
+
+### Measure the ambient puzzles
+
+The monotone-subsequence task is ready for a small human experiment.
+
+The main measurements are not just raw solve time but how solve time changes with repetition, preprocessing, and reshuffling.
+
+### Look for other guaranteed ambient witnesses
+
+Erdős-Szekeres and Ramsey theory are only two sources.
+
+Other existence principles may produce better human tasks: pigeonhole arguments, partial orders, matchings, parity, local extrema, or other small total-search principles.
+
+The useful ones need a short witness and nontrivial human search, not merely an elegant theorem.
+
+### Study self-initiated challenge selection
+
+How much freedom can the prover have in selecting the problem?
+
+If the prover can choose among a thousand predicates after seeing the room, one of them may have an obvious witness. Some notion of allowed challenge family, freshness, or selection cost is probably needed.
+
+### Separate empirical evidence from adversarial proof
+
+The babysitter example is useful under ordinary behavioral assumptions even though it fails against an arbitrary malicious strategy.
+
+It would be useful to say explicitly, for each construction, which prover model is intended rather than treating all human evidence as if it had cryptographic soundness.
+
+### Study compatibility rather than anatomy
+
+For negative proofs, the full cognitive network may be unnecessary.
+
+If experiments can establish a stable compatibility or incompatibility relation between families of tasks, that may already be enough for exclusion arguments without identifying the underlying cognitive channel.
+
+The three-task example above also suggests looking for higher-order conflicts rather than only pairwise interference.
+
+### Add time only when needed
+
+A static family of compatible tasks may be enough for some claims.
+
+Chess, vigilance, and other sustained activities probably require a temporal version in which configurations or resource requirements evolve during the interval.
+
+It would be useful to understand exactly which sheep-counting questions force that additional structure.
+
+## Closing
+
+A question such as
+
+> What are you thinking about?
+
+normally asks for testimony. There is usually no reason to demand more.
+
+But some situations do demand more. A student is asked to spend time solving exercises. A babysitter is paid to remain attentive during a quiet evening. A person may want to show that their mind was occupied by one task rather than another. Or a prover may try to extract a fresh mathematical challenge from the people standing around them and present a witness without anybody having issued the challenge first.
+
+In each case the central object is mental activity. The visible answer, game, reaction, or combinatorial witness matters only insofar as it says something about that activity.
+
+That puts several familiar computer-science ideas nearby: verification, witnesses, adversarial strategies, preprocessing, online computation, resource competition, and the difference between search cost and checking cost.
+
+The useful formalism may turn out to be much smaller than a model of the human mind. For some questions we need only an input, a hidden execution, and a trace. For exclusion questions we may need only to know which combinations of activities can coexist. A detailed cognitive architecture is relevant only when the question can actually distinguish it.
 
 ## References
 
-- Manuel Blum and Santosh Vempala, [*The Complexity of Human Computation: A Concrete Model with an Application to Passwords*](https://arxiv.org/abs/1707.01204). Their PREP/PROC distinction and emphasis on concrete human costs are particularly relevant here.
-- Paul Erdős and George Szekeres, the monotone subsequence theorem: every sequence of \((r-1)(s-1)+1\) distinct values contains an increasing subsequence of length \(r\) or a decreasing subsequence of length \(s\).
+- Manuel Blum and Santosh Vempala, [*The Complexity of Human Computation: A Concrete Model with an Application to Passwords*](https://arxiv.org/abs/1707.01204).
+- Paul Erdős and George Szekeres, the monotone subsequence theorem.
 - Ramsey theory and the classical party problem; in particular, \(R(4,4)=18\).
