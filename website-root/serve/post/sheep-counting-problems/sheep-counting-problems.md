@@ -44,7 +44,9 @@ You give me the correct answer.
 
 This is already a sheep-counting problem. I wanted evidence that you performed some mental computation related to multiplication, and your answer is evidence of that computation.
 
-It is not perfect evidence. Perhaps you already knew the answer. Perhaps you used a shortcut I did not anticipate. Perhaps you had secretly computed every three-digit multiplication table in advance. But if I choose a sufficiently fresh arithmetic problem from a sufficiently large space, these possibilities become less interesting.
+It is not perfect evidence. Perhaps you already knew the answer. Perhaps you used a shortcut I did not anticipate. Perhaps you had secretly computed every three-digit multiplication table in advance. Perhaps, if the rules allow it, you used a calculator. Every claim of mental work is relative to some model of what external aids and communication channels the prover is allowed to use.
+
+But if I choose a sufficiently fresh arithmetic problem from a sufficiently large space, and the setting rules out outsourcing the answer, these alternatives become less interesting.
 
 The basic shape is familiar from computer science:
 
@@ -82,7 +84,7 @@ Falling asleep is a different kind of output. If counting sheep actually increas
 
 But this is not a mathematical certificate. People fall asleep for many reasons. Some people count sheep without falling asleep. The two relevant output distributions overlap substantially.
 
-A useful sheep-counting problem therefore comes with a question about **output separation**. If \(A\) is the claimed cognitive activity and \(T\) is the observable transcript, how different are the distributions
+A useful sheep-counting problem therefore comes with a question about **output separation**. In the simplest non-strategic picture, if \(A\) is the claimed cognitive activity and \(T\) is the observable transcript, how different are
 
 \[
 P(T\mid A)
@@ -92,7 +94,7 @@ P(T\mid \neg A)?
 
 If they are identical, verification is impossible from the transcript alone. If they overlap heavily, evidence is weak. If valid transcripts are difficult or impossible to obtain without doing \(A\), we have something much closer to a proof.
 
-This formulation is deliberately agnostic about what happens inside the head. It talks only about the relation between hidden execution and observable consequences.
+Later we will replace these two distributions with an adversarial version that quantifies over prover strategies. But even this naive formulation reveals an important issue: private cognition is not impossible to verify merely because it is private. It becomes verifiable when it leaves a discriminating trace.
 
 ## The sleeping guard
 
@@ -126,7 +128,9 @@ This distinction matters enough to deserve explicit terminology.
 
 A certificate is **strategy-independent** if its evidentiary guarantee holds even when the prover deliberately chooses the most misleading allowed strategy.
 
-A correct arithmetic answer can have this character: if producing the answer without doing the relevant work is genuinely hard, then wanting to deceive the verifier does not help very much.
+"Allowed" matters. A mental arithmetic protocol may prohibit calculators and accomplices. A party puzzle may rely on the social setting to prohibit paper and phones. Strategy-independence means independence from the prover's *preferences and choices inside that model*, not independence from every physically imaginable external resource.
+
+A correct arithmetic answer can have this character: if producing the answer without doing the relevant work is genuinely hard under the allowed resources, then wanting to deceive the verifier does not help very much.
 
 ### Incentive-dependent behavioral evidence
 
@@ -169,7 +173,7 @@ At first this looks hopeless. Someone who did think about birds can simply behav
 
 This suggests a simple monotonicity principle.
 
-Let \(\mathcal T(A)\) be the set of external transcripts that a person can produce after performing cognitive activity \(A\), allowing arbitrary later strategy.
+Let \(\mathcal T(A)\) be the set of external transcripts that a person can produce after performing cognitive activity \(A\), allowing arbitrary later strategy within the protocol's resource model.
 
 If performing \(A\) only gives the person more internal information or capability, then it is natural to expect
 
@@ -195,7 +199,7 @@ She does not merely want evidence that he was awake. She wants evidence that he 
 
 So she gives him an unusual instruction: play chess continuously.
 
-When she returns, she examines the game. Suppose she knows his ordinary performance distribution well enough that she can ask whether the moves are statistically consistent with his normal serious play. In the most literal version of the story, she checks whether his score, move quality, or blunder rate falls inside an acceptable p-value relative to his baseline.
+When she returns, she examines the game. Suppose she knows his ordinary performance distribution well enough that she can ask whether the moves are statistically consistent with his normal serious play. In the most literal version of the story, she checks whether his score, move quality, or blunder rate is statistically compatible with his baseline.
 
 Poor chess would not prove distraction. He could intentionally play badly.
 
@@ -218,7 +222,7 @@ This gives a general construction:
 \quad + \quad
 A\text{ excludes }B
 \quad \Longrightarrow \quad
-\text{negative certificate for }B.
+\text{certificate of }\neg B.
 \]
 
 This is the mental equivalent of proving that somebody could not have been in one place because they were demonstrably occupied somewhere incompatible.
@@ -239,7 +243,9 @@ A more general abstraction is a time-varying capacitated network
 G_t = (V,E,c_t).
 \]
 
-The intended interpretation is deliberately abstract:
+This is not a claim that neurons literally implement this graph. It is a resource model: an intentionally coarse abstraction in which only the bottlenecks relevant to a proof need to be represented.
+
+The intended interpretation is:
 
 - vertices represent cognitive states, processors, stores, or interfaces;
 - edges represent channels through which information or control must flow;
@@ -288,7 +294,7 @@ We can now define the relation needed by the chess story.
 
 Say that activities \(A\) and \(B\) are **resource-incompatible** over interval \(I\) if no pair of feasible executions can fit simultaneously into the network capacities over \(I\).
 
-Then a strong positive certificate that \(A\) occurred during \(I\) becomes a strategy-independent negative certificate that \(B\) occurred during the same interval, conditional on the network model.
+Then a strong positive certificate that \(A\) occurred during \(I\) becomes a strategy-independent certificate that \(B\) did **not** occur during the same interval, conditional on the network model.
 
 This is important because it avoids the bad inference from *failure*.
 
@@ -324,13 +330,14 @@ For the moment, the simpler network is still useful. It gives us a language for 
 
 We can now state a more explicit model.
 
-A sheep-counting instance contains:
+A sheep-counting protocol contains:
 
 - a prover \(P\);
 - a verifier \(V\);
 - a time interval \(I\);
-- an external input stream \(X\), possibly empty;
+- an external input process \(X\), possibly empty;
 - a cognitive claim \(C\) about what happened inside \(P\) during \(I\);
+- a set of allowed external resources and communication channels \(R\);
 - an externally observable transcript \(T\).
 
 The transcript can include spoken answers, actions, response times, a chess game, choices of people in a room, or anything else available to the verifier.
@@ -341,21 +348,36 @@ The verifier applies some procedure
 V(X,T) \in \{\text{accept},\text{reject}\}.
 \]
 
+A prover strategy \(\sigma\) determines how the prover behaves, subject to the allowed resources \(R\). Different strategies and different hidden executions induce different distributions over transcripts.
+
 For a strong proof-like construction we want two properties.
 
 ### Completeness
 
-A prover who actually performs an allowed execution satisfying \(C\) should be able to produce an accepting transcript with high probability.
+There should be an honest strategy that actually performs an allowed execution satisfying \(C\) and causes the verifier to accept with high probability:
+
+\[
+\Pr[V(X,T)=\text{accept}\mid C,\sigma_{\mathrm{honest}}]
+\ge 1-\delta.
+\]
 
 ### Strategy-independent soundness
 
-A prover who does **not** perform an execution satisfying \(C\) should have only a small probability of producing an accepting transcript, even after choosing the best available deceptive strategy.
+Among **all** allowed strategies that avoid performing an execution satisfying \(C\), the best deceptive strategy should still have only a small chance of acceptance:
+
+\[
+\sup_{\sigma\in\Sigma_{\neg C}}
+\Pr[V(X,T)=\text{accept}\mid \sigma]
+\le \varepsilon.
+\]
 
 The second condition is what rules out the naive guard argument. An attentive guard who deliberately ignores an incident demonstrates that "failure to respond" is not sound evidence for inattention.
 
-This model leaves open what counts as "performing the computation". That is where the cognitive network and task semantics enter.
+This formulation also makes clear that a proof of mental work is never absolute. If the resource model allows an accomplice to whisper every answer, the protocol may cease to be sound. The point is to quantify over every strategy available **inside the declared setting**.
 
-For a puzzle, the semantics might be straightforward: the prover must obtain a witness satisfying a relation \(R(X,w)\). For a temporal task such as continuous tracking, the semantics may constrain the whole execution over \(I\), not merely the final output.
+The model still leaves open what counts as "performing the computation". That is where task semantics and the cognitive resource network enter.
+
+For a puzzle, the semantics may be straightforward: the prover must obtain a witness satisfying a relation \(R(X,w)\). For a temporal task such as continuous tracking, the semantics may constrain the whole execution over \(I\), not merely the final output.
 
 ## Where does the input come from?
 
@@ -394,7 +416,15 @@ For proof-of-work-like applications, we care about whether the instance was fres
 
 This is not exactly the same as randomness. A room full of people may not be sampled from any clean distribution, but their current arrangement may still be difficult for the prover to predict or control in advance.
 
-A useful construction therefore asks how much entropy, unpredictability, or prover-independence the instance source contributes.
+If \(K\) denotes everything the prover has learned or prepared before the instance is fixed, one crude information-theoretic quantity is the conditional min-entropy
+
+\[
+H_\infty(X\mid K).
+\]
+
+High conditional entropy does not by itself make a task cognitively hard, but it captures one thing we want: the prover should not already know which instance will arrive.
+
+A useful construction therefore asks separately about entropy, unpredictability, prover control, and actual solving cost.
 
 This gives us a broad spectrum:
 
@@ -432,15 +462,33 @@ For sheep-counting problems it is useful to track at least three costs:
 
 A good proof-of-work-like sheep-counting construction wants substantial online \(\operatorname{PROC}\), low \(\operatorname{VER}\), and resistance to arbitrarily large plausible \(\operatorname{PREP}\).
 
-One can imagine a crude asymmetry score
+We can make the prover cost adversarial too. For an instance \(x\), define informally
 
 \[
-\frac{\operatorname{PROC}}{\operatorname{VER}},
+W_P(x)=
+\inf_{\sigma:\Pr[\mathrm{accept}]\ge 1-\delta}
+\operatorname{PROC}(\sigma,x),
+\]
+
+where the infimum ranges over allowed strategies that achieve the target success probability. This asks for the **cheapest successful way** to produce convincing evidence, not the cost of the algorithm we hoped the prover would use.
+
+Let \(W_V(x)\) be the verifier's cost. A proof-of-work-like construction wants
+
+\[
+W_P(x) \gg W_V(x)
+\]
+
+on the relevant instance distribution.
+
+One can also use the crude ratio
+
+\[
+\frac{W_P}{W_V},
 \]
 
 but the ratio alone is not enough. A task can have a wonderful ratio and still be useless if its input is controlled by the prover, if its output is easy to fake, or if the desired cognitive process has an alternative cheap implementation.
 
-The important object is therefore not merely complexity, but **complexity under a specified input and strategy model**.
+The important object is therefore not merely complexity, but **complexity under a specified input, resource, and strategy model**.
 
 ## Ambient puzzles
 
@@ -464,7 +512,7 @@ The challenge is:
 
 > Find five people, in their physical order, whose names are either alphabetically increasing or alphabetically decreasing.
 
-A theorem of Erdős and Szekeres guarantees that a solution always exists. More generally, any sequence of
+The [Erdős-Szekeres theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Szekeres_theorem) guarantees that a solution always exists. More generally, any sequence of
 
 \[
 (k-1)^2+1
@@ -508,7 +556,7 @@ A better challenge is:
 
 But then existence is not guaranteed on an arbitrary graph.
 
-Ramsey theory repairs that problem in a particularly appropriate way. The classical "party problem" says that every graph on eighteen vertices contains either a clique of four vertices or an independent set of four vertices, because
+Ramsey theory repairs that problem in a particularly appropriate way. The classical [party problem](https://mathworld.wolfram.com/RamseyNumber.html) says that every graph on eighteen vertices contains either a clique of four vertices or an independent set of four vertices, because
 
 \[
 R(4,4)=18.
@@ -575,10 +623,10 @@ The examples are easier to organize as coordinates than as mutually exclusive sp
 | fresh arithmetic | yes | verifier | one-shot | strong | potentially | mostly boring |
 | literal sheep counting | yes-ish | almost none | none | weak | weak | output barely constrains execution |
 | quiet guard shift | yes | environment | possibly none | weak | no, for failure evidence | success may leave no trace |
-| babysitting | yes | environment | event-driven | weak/variable | often incentive-dependent | same |
+| babysitting | yes | environment | event-driven | weak/variable | often incentive-dependent | success may leave no trace |
 | serious chess | maybe | opponent | streaming | potentially strong | positive side can be | human-performance model |
-| monotone guest subsequence | no need | ambient world | one-shot | strong | yes, if witness sound | human search cost |
-| Ramsey guest graph | no need | ambient world | one-shot | strong | yes, if relation is checkable | human search cost |
+| monotone guest subsequence | no need | ambient world | one-shot | strong | under resource assumptions | human search cost |
+| Ramsey guest graph | no need | ambient world | one-shot | strong | under resource assumptions | human search cost |
 
 This table suggests that sheep-counting problems do not fall naturally into two or three semantic categories. They occupy a multidimensional design space.
 
@@ -590,8 +638,9 @@ At minimum, one should ask:
 - whether input arrives once or continuously;
 - what observable output is produced;
 - how tightly that output is bound to the claimed execution;
+- which external aids and channels are allowed;
 - whether the evidence survives arbitrary prover strategy;
-- how much cognitive work is required to produce it;
+- how much cognitive work is required by the cheapest convincing strategy;
 - how much work is required to verify it;
 - which cognitive resources the execution occupies and therefore excludes from other tasks.
 
@@ -739,5 +788,5 @@ That last possibility is the one I find hardest to stop thinking about.
 
 - Manuel Blum and Santosh Vempala, [*The Complexity of Human Computation: A Concrete Model with an Application to Passwords*](https://arxiv.org/abs/1707.01204). This develops a concrete complexity model for computations performed in the human head and motivates counting small-instance human costs rather than relying only on asymptotic complexity.
 - Paul Erdős and George Szekeres, the monotone subsequence theorem: every sequence of \((r-1)(s-1)+1\) distinct numbers contains an increasing subsequence of length \(r\) or a decreasing subsequence of length \(s\).
-- Ramsey theory and the classical party problem. In particular, \(R(4,4)=18\): every graph on eighteen vertices contains a four-vertex clique or a four-vertex independent set.
+- [Ramsey numbers and the classical party problem](https://mathworld.wolfram.com/RamseyNumber.html). In particular, \(R(4,4)=18\): every graph on eighteen vertices contains a four-vertex clique or a four-vertex independent set.
 - Apoorvaa Deshpande and Yael Kalai, [*Proofs of Ignorance and Applications to 2-Message Witness Hiding*](https://eprint.iacr.org/2018/896). The setting is very different, but the paper is relevant to the general paradox that a knowledgeable prover can normally pretend to be ignorant.
