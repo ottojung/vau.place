@@ -456,11 +456,11 @@ The factorization puzzle above is the most literal attempt to get this shape fro
 
 In the resource notation above, computational effort is one possible coordinate of \(R(\sigma)\). A computational construction is successful when realistic bounds on that coordinate keep the false-case probability low while verification stays cheap.
 
-## Paradoxes
+## Theorems
 
-Once the object is defined and there are ways to construct examples, some consequences are strange enough to isolate.
+The definitions already give several consequences that are useful to keep around.
 
-### Knowing more can weaken a proof
+### Knowing more can weaken evidence
 
 Suppose I see somebody yawn after ten minutes of sheep counting. Later I learn that they can yawn on command.
 
@@ -468,53 +468,103 @@ I now know more about the prover, but the old evidence has become worse. The new
 
 The same thing can happen on the capacity side. A chess record can look like good evidence against some competing activity until I learn that this particular person can do both at once.
 
-So a better-informed verifier can rationally become less convinced by exactly the same trace.
+There is no general monotonic rule saying that more background knowledge makes the same evidence stronger.
 
-### Publishing the test can destroy it
+### More strategies cannot improve soundness
 
-A yawn may be evidence partly because the person did not know anyone would treat it as evidence. Tell them in advance that yawning is the test, and yawning deliberately becomes an obvious strategy.
+Suppose one false-case strategy set is contained in another:
 
-The verifier has changed the prover's strategy space merely by revealing the verifier.
+\[
+\Sigma_1\subseteq\Sigma_2.
+\]
 
-This is unusual for something that looks like a proof system. A sheep-counting protocol can become weaker when its acceptance rule becomes common knowledge.
+Then
 
-### A stronger prover can make a weaker protocol
+\[
+\sup_{\sigma\in\Sigma_1}\Pr(E\mid\neg Q,\sigma)
+\le
+\sup_{\sigma\in\Sigma_2}\Pr(E\mid\neg Q,\sigma).
+\]
 
-Suppose the monotone-subsequence puzzle initially takes somebody several minutes. After enough practice they learn to see the witness almost immediately. Or suppose somebody learns to combine two activities that used to compete for the same bottleneck.
+Giving the prover more possible ways to act cannot make the protocol harder to fake.
 
-Nothing has gone wrong with the prover. They have become better. But the protocol may have become worse: fake traces may now be cheaper to produce, or an incompatibility on which the argument relied may disappear.
+Publishing a verifier can therefore weaken it. A yawn may be useful evidence partly because the person did not know anyone would treat it as evidence. Once the test is public, deliberate yawning becomes another strategy.
 
-In this setting, improving the prover can destroy soundness.
+### Fakeability grows with resources
+
+If
+
+\[
+b_1\preceq b_2,
+\]
+
+then every strategy available under \(b_1\) is also available under \(b_2\), so
+
+\[
+s(b_1)\le s(b_2).
+\]
+
+This gives a simple way for a protocol to decay with practice. A monotone-subsequence puzzle may initially take several minutes and later become almost automatic. Or a person may learn to combine activities that previously shared a bottleneck. The person has improved, while the protocol has become easier to fake or less useful for exclusion.
+
+## Paradoxes
+
+The theorems above are consequences I am happy to accept. By a paradox here I mean something different: the formal conclusion is sound inside the sheep-counting model, but the corresponding conclusion in the broader social situation is wrong.
+
+### The best proof of fidelity removes the opportunity
+
+Return to the jealous girlfriend. Let \(B\) be flirting and let \(A\) be playing chess. If the boyfriend's chess activity is sufficiently incompatible with flirting, then strong evidence for \(A\) is strong evidence for \(\neg B\).
+
+The formal theory therefore rewards a more consuming chess task. In the limit, the best protocol is one that occupies him so thoroughly that flirting is impossible.
+
+That can be a perfect proof that he did not flirt during the interval. It is not a proof that he is trustworthy, or that he would have chosen not to flirt if he had been free to do so.
+
+The formal predicate is historical non-occurrence. The social question may be about disposition under opportunity. Making the protocol stronger can make it answer the social question less well.
+
+### The best babysitting test wakes the child
+
+The babysitter example has the opposite-looking problem.
+
+If the child sleeps quietly for three hours, the attentive and inattentive babysitters may leave almost identical traces. If the child wakes repeatedly, the two histories become much easier to distinguish.
+
+So if the only goal is to improve the sheep-counting protocol for attentiveness, it is useful to create more occasions on which attention must become visible. A parent could make the test stronger by causing interruptions instead of waiting for them.
+
+Inside the theory this is sensible: more informative challenges can increase the separation between attentive and inattentive histories.
+
+In the actual babysitting situation, deliberately waking a sleeping child makes the evening worse. A good babysitter is partly valuable because many evenings remain uneventful. Optimizing the evidence can work against the thing whose quality we wanted to assess.
+
+Both paradoxes come from the same gap. The formal theory knows the predicate \(Q\) and the evidence for it. The surrounding social situation often cares about why \(Q\) happened, what would have happened under another opportunity, or whether the verification process damaged the activity itself.
 
 ## Does the theory explain anything?
 
-There is an uncomfortable possibility here. Perhaps all I have built is a language in which almost any story can be represented.
+The paradoxes put a limit on the theory immediately: it can be exactly right about a formal predicate while missing the social question that made the predicate interesting.
 
-The danger is \(K\) and \(M\). If I am allowed to choose them after seeing the trace, then I can make almost anything into evidence. Given an observation \(E\) and a claim \(Q\), I could simply choose a model in which
+Still, it does explain several things that were otherwise sitting in the examples as unrelated intuitions.
 
-\[
-\Pr(E\mid Q,K)=1
-\qquad\text{and}\qquad
-\Pr(E\mid \neg Q,K)=0.
-\]
+It explains why the arithmetic worksheet and falling asleep after counting sheep belong in the same discussion. They are both observations whose distributions depend on hidden cognitive history. The difference is quantitative: a worksheet may have a very large likelihood ratio and be hard to manufacture under the false case, while a yawn may move the odds only slightly.
 
-Then \(E\) is perfect evidence by construction. A framework that permits this explains nothing.
+It explains why an uneventful babysitting shift gives such weak evidence of attention. The attentive and inattentive histories can produce the same visible trace. When the child wakes, the environment creates an event on which those histories may diverge.
 
-The person model therefore has to earn its keep somewhere else. The useful case is when the verifier's knowledge and model of the prover are constrained independently of the particular trace being interpreted. What I learned from earlier chess games may tell me whether this person sandbags. Dual-task observations may tell me which activities interfere. Those beliefs can then be used to predict the strength of a new test.
-
-That kind of cross-prediction would give the theory some bite. A model learned from one collection of situations should say something about another collection that was not used to fit it.
-
-There are already a few places where the framework rules things out without much freedom. If
+It explains an asymmetry between positive and negative claims. A completed calculation can be left behind, while "I was not calculating" may have no corresponding trace because the solver can imitate everything available to the non-solver. The trace inclusion
 
 \[
-\mathcal T(\neg A)\subseteq\mathcal T(A),
+\mathcal T(\neg A)\subseteq\mathcal T(A)
 \]
 
-then a direct strategy-independent certificate for \(\neg A\) cannot exist in that trace model. If I repeatedly observe two activities occurring together, a theory that treats them as incompatible for this person has to move. If publishing the verifier creates a cheap false-case strategy, the old soundness claim is gone.
+makes that failure precise.
 
-But most of the interesting quantities are still empirical. The framework itself does not tell me how people allocate attention, which incentives are stable, how fast practice changes a task, or what prior over person models I should have.
+It also explains why proving another activity can sometimes help with a negative claim. If \(A\) is positively evidenced and incompatible with \(B\), then evidence for \(A\) transfers into evidence against \(B\). That is a structural reason for the chess construction, independent of whether chess happens to be a good choice in practice.
 
-So at this stage, **framework** may be the more accurate word. It says what has to be specified, exposes assumptions that were previously hidden, and gives us quantities that experiments could estimate. It becomes explanatory only when those quantities are constrained strongly enough that some possible observations would prove it wrong.
+The person model explains another recurring feature: the same visible behavior can mean different things for different people. A poor chess game means something different if the player often sandbags. Simultaneous demanding activities mean something different for the lecturer who writes a manuscript while teaching. Incentives and capacities look like separate complications until both are treated as uncertainty about the prover.
+
+The theory also explains why disclosure and practice matter. Making an acceptance rule public can enlarge the false-case strategy set. Giving the prover more resources or practice can enlarge the set of traces they can manufacture. Those effects fall directly out of the soundness and fakeability definitions.
+
+Finally, it explains why computational complexity keeps reappearing without being the whole subject. Bounded human computation is one mechanism for making the false case difficult. PREP, PROC, and VER describe one family of constructions for creating a large probability gap; they are not needed to explain weak evidence such as sleepiness.
+
+There is a great deal the theory does not explain. It does not tell me the actual probability that sheep counting causes yawning, how a particular person's cognitive resources are arranged, which strategies their incentives make plausible, or which social predicate is the one we really care about. Those are inputs to the theory rather than consequences of it.
+
+Because \(K\) and \(M\) can contain a lot, the framework can represent a very large range of stories. In that sense it is not a predictive theory of human cognition. Its explanatory strength is mostly structural: once the relevant probabilities, strategies, resources, and predicate are specified, it shows why some traces count as evidence, why some negative claims are difficult, how incompatibility transfers evidence, and how changing the prover or verifier changes the result.
+
+That is less than a theory of how people think. It is more than a vocabulary for the examples.
 
 ## What I would try next
 
