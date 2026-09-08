@@ -366,7 +366,7 @@ None of this makes computational cost unimportant. It gives it a more specific j
 
 Humans seem to have bounded computational channels. If producing an accepting trace after fresh input requires enough computation, then a person who has not carried out the relevant cognitive activity may simply not have enough time or capacity to manufacture the same trace. This is an easy way to make the false-case probability small.
 
-Freshness matters for exactly this reason. Work done before the fresh input appears should not count toward a claim about what happened afterward. Chess gets freshness from opponent moves. The party puzzles can get it from the current arrangement of the people.
+Fresh input helps here because it limits what can be moved into preparation. Chess gets freshness from opponent moves. The party puzzles can get it from the current arrangement of the people.
 
 This is where Blum and Vempala's vocabulary is useful:
 
@@ -396,7 +396,7 @@ Q(X,H)
 
 be the claim about the cognitive history that we want evidence for.
 
-A sheep-counting protocol consists of an intended true-case behavior \(\sigma^+\), a set \(\Sigma_K\) of false-case strategies the verifier considers possible, and a verifier
+A sheep-counting protocol consists of an intended or natural true-case behavior \(\sigma^+\), a set \(\Sigma_K\) of false-case strategies the verifier considers possible, and a verifier
 
 \[
 V(X,T,K)\in\{0,1\}.
