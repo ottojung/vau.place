@@ -78,11 +78,10 @@ The examples so far all begin with a recognizable assignment. Somebody says: sol
 
 I am especially interested in another case: nobody has to prepare the challenge first.
 
-A person can decide on their own to think about something in a way that will later be provable. One way to do this is to use public information already present around them, compute something about it, and later show the result.
+Can a person can decide on their own to think about something in a way that will later be provable?
+The trick is to use public information already present, compute something about it, and later show the result.
 
-Somebody can ask me what I was thinking about only after the thinking has already happened, and I may still have something to show them.
-
-A party is a convenient toy setting because a room full of people already contains a lot of public structure.
+Imagine a party: it's a convenient setting because a room full of people already contains a lot of public structure.
 
 ### A computer-scientist solution
 
