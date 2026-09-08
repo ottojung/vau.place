@@ -12,7 +12,7 @@ Can I prove that I really was thinking about birds?
 
 Usually I cannot do much better than tell you that I was.
 
-Now suppose instead that I say I was thinking about a page of arithmetic exercises, and I hand you the page with the answers filled in. That is different. You still did not see what happened in my head, but now I have something I can show you.
+Now suppose instead that I say I was thinking about math, and I hand you a page with arithmetic problems where I filled in the answer. You still did not see what happened in my head, but now I have something I can show you.
 
 I think there is an interesting family of problems hiding in this difference: when can a person prove, or at least give useful evidence for, what they were thinking about?
 
@@ -34,14 +34,6 @@ You return a page of answers. If enough of them are correct, this is good eviden
 
 This is the easy case. The input is explicit. The answers are easy to inspect. New exercises can be chosen whenever needed. And checking an answer can be much cheaper than finding it mentally.
 
-The shape is familiar:
-
-```text
-fresh problem  --->  thinking  --->  checkable answer
-```
-
-Already this gives a simple way to make a claim about what somebody was thinking about externally checkable.
-
 ## Counting sheep
 
 Now consider the instruction:
@@ -56,7 +48,7 @@ The situation looks superficially similar to arithmetic: there is an instruction
 
 But `843` does not tell us very much. It can be invented at the end. A person can count for one minute and then stop. Many different ten-minute histories lead to the same report.
 
-Other observations may carry more information. Perhaps the person yawns, becomes sleepy, or falls asleep. These are imperfect clues, but at least they may depend on what happened during the interval.
+Other observations may carry more information. Perhaps the person yawns or even falls asleep. These are imperfect clues, but at least they may depend on what happened during the interval.
 
 So two very simple mental tasks can behave quite differently. Arithmetic naturally leaves answers that are closely related to the calculations. Sheep counting leaves a much weaker trail.
 
@@ -94,7 +86,7 @@ The examples so far all begin with a recognizable assignment. Somebody says: sol
 
 But the verifier does not necessarily have to initiate the process.
 
-A person can decide on their own to think about something in a way that will later be provable. They can use public information already present around them, do some computation on it, and later show the result.
+A person can decide on their own to think about something in a way that will later be provable. The trick is to use public information already present around them, do some computation on it, and later show the result.
 
 This is a slightly unusual kind of proof. Somebody can ask me what I was thinking about only after the thinking has already happened, and I may still be able to produce evidence without their having prepared a challenge for me in advance.
 
@@ -114,11 +106,9 @@ Now factor \(N\).
 
 Later the prover can present the factors, and the verifier can multiply them and check that their product is \(N\).
 
-From an ordinary complexity-theory point of view this has an attractive shape. For suitably large integers, factorization is believed to be difficult on classical computers, while checking a proposed factorization is straightforward.
+From an ordinary complexity-theory point of view this has an attractive shape. Factorization is difficult, while checking a proposed factorization is straightforward.
 
 But as a human problem this is fairly bad. Large-integer arithmetic is itself cumbersome to do mentally. Even checking the product of large factors may be expensive for a person. And asymptotic hardness on a Turing-machine-like model tells us little about whether the particular instance is difficult for an unaided human.
-
-I think this failed example is useful because it shows that the usual computer-science asymmetry is not enough. We need an asymmetry in the computational model of the person who is actually doing and checking the task.
 
 ### A monotone subsequence of guests
 
