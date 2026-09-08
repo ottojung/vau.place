@@ -18,8 +18,6 @@ There seems to be a family of questions here. Sometimes a mental task leaves a u
 
 I will call these **sheep-counting problems**.
 
-The examples are more useful than a definition, so I will start with them.
-
 ## Arithmetic
 
 Suppose I give you fresh exercises such as
@@ -38,13 +36,11 @@ This is the easy case. The input is explicit. The expected relationship between 
 
 There are still obvious caveats. A solver may know an answer already. A clever shortcut may make an exercise easier than expected. A calculator would defeat the intended task entirely. These are not special problems with arithmetic; they are part of specifying what kind of work the exercise is supposed to demonstrate.
 
-But the basic arrangement is favorable:
+The basic arrangement is favorable:
 
 ```text
 fresh problem  --->  mental work  --->  checkable answer
 ```
-
-The next examples each remove one of these conveniences.
 
 ## The babysitter
 
@@ -56,11 +52,11 @@ Suppose the parent returns three hours later and finds the child still sleeping 
 
 This is perfectly compatible with a diligent babysitter. It is also compatible with a babysitter who fell asleep five minutes after the parent left.
 
-The difficulty is not that the job was unsuccessful. The difficulty is that successful performance may produce almost no visible result.
+Successful performance may therefore produce almost no visible result.
 
 An eventful evening is different. If the child wakes several times and the babysitter responds appropriately each time, the parent has more evidence that the babysitter was paying attention. The environment happened to supply tests of the desired vigilance.
 
-The babysitter is therefore a useful contrast with arithmetic. Arithmetic naturally produces many checkable outputs. Vigilance may be valuable precisely during periods in which there is nothing to respond to.
+Arithmetic naturally produces many checkable outputs. Vigilance may be valuable precisely during periods in which there is nothing to respond to.
 
 ## Counting sheep
 
@@ -72,13 +68,13 @@ At the end the person says:
 
 > I reached 843.
 
-The requested activity is perfectly clear. The problem is that the obvious result is not very informative.
+The requested activity is clear. The problem is that the obvious result is not very informative.
 
 A person can invent 843 at the end. They can count for one minute and then stop. They can count irregularly. Many different ten-minute histories lead to the same report.
 
 There may be other observations. Perhaps the person yawns, becomes sleepy, or falls asleep. If counting sheep really changes the probability of those outcomes, then they provide some evidence. But they are only loosely connected to the particular process we asked for.
 
-So an assigned mental task can be easy to state and still be difficult to check. The existence of an output is not enough; the output has to constrain what could plausibly have happened before it.
+An assigned mental task can therefore be easy to state and still be difficult to check. The existence of an output is not enough; the output has to constrain what could plausibly have happened before it.
 
 ## Chess at a party
 
@@ -92,19 +88,17 @@ Chess has a feature that arithmetic and sheep counting do not: fresh input keeps
 
 The game also has a temporal footprint. A ten-minute arithmetic worksheet can sometimes be solved in the first two minutes and then left alone. A competent hour-long chess game contains evidence spread throughout the hour.
 
-For now, that is the interesting part of the example. Later we will return to why the girlfriend wanted the chess game in the first place.
+The reason for assigning the chess game will matter later. First, there is another kind of example to consider.
 
 ## Puzzles without a supplied challenge
 
 The previous examples all begin with a recognizable assignment. Somebody says: solve these exercises, watch the child, count sheep, play chess.
 
-There is another situation.
-
-Suppose nobody prepared a challenge for me. At some point I am asked to show that I have just done some nontrivial mental work. Can I produce a convincing proof anyway?
+Suppose instead that nobody prepared a challenge for me. At some point I am asked to show that I have just done some nontrivial mental work. Can I produce a convincing proof anyway?
 
 One possibility is to use the state of the environment as the input.
 
-This changes the shape of the problem. The verifier does not have to generate a fresh exercise or choose a secret random value. The prover can choose a problem whose instance is already present in public view, solve it, and present a small witness.
+The verifier no longer has to generate a fresh exercise or choose a secret random value. The prover can choose a problem whose instance is already present in public view, solve it, and present a small witness.
 
 A party gives convenient toy examples because a room full of people contains a lot of structured information without requiring paper, computers, or a trusted random generator.
 
@@ -166,13 +160,13 @@ So with eighteen guests we can ask:
 
 Again, the room supplies the instance, a witness is guaranteed, and the witness is small.
 
-The unusual feature of these puzzles is not just that they have certificates. It is that the prover can initiate the whole construction. A proof can be produced from public ambient structure without the verifier first handing over a challenge.
+These puzzles have a feature the earlier examples lack: the prover can initiate the whole construction. A proof can be produced from public ambient structure without the verifier first handing over a challenge.
 
-That freedom is attractive, but it creates a new danger: if the prover is also free to choose among many possible problems, they may simply select whichever one happens to be easiest. We will return to this when discussing inputs and preparation.
+That freedom also creates a problem. If the prover can choose among many possible problems after inspecting the environment, they may simply select whichever one happens to be easiest.
 
-## What varies between the examples?
+## Comparing the examples
 
-The examples do not seem to form a clean taxonomy. It is more useful to treat them as points in a design space.
+The examples vary along several partly independent dimensions.
 
 | Example | Task | Concrete input | Input over time | Typical visible result |
 | --- | --- | --- | --- | --- |
@@ -197,7 +191,7 @@ Several questions recur:
 - What other mental activities can happen at the same time?
 - What assumptions are we making about the prover's incentives?
 
-These questions are related, but they are not the same question. Keeping them separate makes the examples easier to reason about.
+These questions are related, but they are not interchangeable.
 
 ## How much does the result tell us?
 
@@ -211,7 +205,7 @@ A page of fresh arithmetic answers can be much more informative.
 
 A valid monotone subsequence perfectly establishes the mathematical statement that those five people form such a subsequence, but that is not yet the same as establishing that finding them required substantial effort.
 
-This last distinction is important. Verification can be mathematically perfect while proof of *work* is poor. If the witness happened to be obvious, the certificate is still correct, but very little work was demonstrated.
+Verification can therefore be mathematically perfect while proof of *work* is poor. If the witness happened to be obvious, the certificate is still correct, but very little work was demonstrated.
 
 For probabilistic examples, it may be useful to think in terms of distributions. If a task was performed, what observable outcomes tend to follow? If it was not performed, what outcomes tend to follow instead? The farther apart those distributions are, the more evidence the observation can carry.
 
@@ -276,8 +270,6 @@ This is why the monotone-subsequence puzzle still needs experiments. Erdős-Szek
 
 ## Incentives
 
-So far, the examples have mostly been described as if observed behavior directly reflected the person's mental state. That is sometimes too generous.
-
 Return to the babysitter.
 
 Suppose the child cries for twenty minutes and the babysitter does nothing. Under ordinary assumptions, this is evidence that the babysitter was not paying attention.
@@ -296,7 +288,7 @@ This suggests keeping two standards apart.
 
 Neither is automatically more useful. A real babysitting arrangement obviously comes with incentives and social expectations. But a cryptographic-style proof should not silently depend on them.
 
-This distinction matters especially when we try to prove that some mental activity did *not* occur.
+The distinction matters especially when we try to prove that some mental activity did *not* occur.
 
 ## Negative claims
 
@@ -316,7 +308,7 @@ If
 
 then no strategy-independent trace can directly certify \(\neg A\). Every trace available to the non-\(A\) case is also available to the \(A\) case.
 
-The observation is simple, but it rules out a large family of naive negative proofs. Doing more mental work often gives a person more internal state without removing any ability to imitate somebody who did less.
+The observation rules out a large family of naive negative proofs. Doing more mental work often gives a person more internal state without removing any ability to imitate somebody who did less.
 
 The chess story suggests another route.
 
@@ -394,8 +386,6 @@ Time, memory, causality, and interactive input may force us to enrich this struc
 
 ## A minimal formal description
 
-The general verification problem can be written with less machinery.
-
 Fix a time interval \(I\).
 
 Let \(X\) be the external input history during that interval.
@@ -430,7 +420,7 @@ Two familiar proof-system notions then apply.
 
 **Soundness.** If no execution satisfying \(Q\) occurs, an allowed deceptive strategy should have only a small chance of producing accepting evidence.
 
-This formal description deliberately leaves several things unspecified: what counts as the same task, what external aids are allowed, which strategies are admissible, and how mental cost is measured. Those choices belong to the particular sheep-counting problem rather than to the notation itself.
+This leaves several choices to the particular problem: what counts as the same task, what external aids are allowed, which strategies are admissible, and how mental cost is measured.
 
 ## Ambient puzzles as a design problem
 
@@ -482,11 +472,7 @@ And the identity of a high-level activity is already an abstraction: the same ex
 
 These details matter if we want quantitative predictions. They may be unnecessary for simpler qualitative questions such as whether one certified activity can exclude another.
 
-The useful approach may therefore be to add structure only when a particular question requires it.
-
 ## Questions to try next
-
-The examples suggest several concrete directions.
 
 ### Measure ambient human search
 
@@ -502,7 +488,7 @@ The useful examples need short witnesses and nontrivial human search, not merely
 
 If a prover can choose the problem after seeing the environment, how much choice is too much?
 
-One possibility is to restrict the allowed family of problems. Another is to count the search over problem families as part of the prover's work. The right formulation is not obvious.
+One possibility is to restrict the allowed family of problems. Another is to count the search over problem families as part of the prover's work.
 
 ### Measure compatibility directly
 
@@ -528,7 +514,7 @@ But there are situations in which the mental activity itself matters. A student 
 
 Those situations bring familiar computer-science ideas into an unusual setting: witnesses, verification, preprocessing, online input, adversarial strategies, resource competition, and the gap between the cost of producing an answer and checking it.
 
-The most useful formal object may depend on the question. Some examples need only an input, a hidden execution, and a visible trace. Exclusion questions may need only a compatibility relation between task families. Quantitative claims may require a richer resource model.
+Some examples need only an input, a hidden execution, and a visible trace. Exclusion questions may need a compatibility relation between task families. Quantitative claims may require a richer resource model.
 
 That seems like enough structure to start asking sharper questions.
 
