@@ -101,7 +101,7 @@ In practice, this might look like:
 
 > What are you thinking about?
 >
-> I'm factorizing. Alice, Bob and Charlie's names add up to a number whose factorization is `6712633 × 8463 × 7162`.
+> I'm factorizing. Alice, Bob and Charlie's names add up to a number whose factorization is `3215031751 × 118670087467 × 307768373641`.
 
 From the complexity-theory point of view this is perfect: factorization is difficult, while checking a proposed factorization is straightforward.
 
@@ -347,39 +347,96 @@ So the smaller object may be the family of compatible sets, or equivalently its 
 
 This loses information about time, routing, memory, and interaction. Whether that matters depends on the question we are trying to ask.
 
-## A small formal picture
+## A definition
 
-At this point I can at least write down the shape of the problem.
+At this point I am willing to make one definition.
 
-Fix an interval \(I\). Let \(X\) be the external input history, \(H\) the hidden cognitive history, and \(T\) the visible trace. Let
+Fix an interval \(I\), a prover, and a verifier with background knowledge \(K\). Let \(X\) be the fresh public input history, \(H\) the prover's hidden cognitive history, and \(T\) the visible trace. Let
 
 \[
 Q(X,H)
 \]
 
-be the claim we care about: solving arithmetic, maintaining vigilance, following a game, searching for a witness, or something else.
+be the claim about the cognitive history that we want to prove.
 
-The verifier does not see \(H\). It sees \(X\) and \(T\), and it may have background knowledge \(K\) about the particular prover.
-
-For a very proof-like case, the verifier may simply apply
+The verifier applies
 
 \[
-V(X,T)\in\{\text{accept},\text{reject}\}.
+V(X,T,K)\in\{0,1\}.
 \]
 
-For the messier cases, the more natural object may be
+Let \(\Sigma_K\) be the prover strategies we are willing to consider. For a strategy-independent proof this can be all strategies. For an incentive-dependent proof it may be restricted by what the verifier knows about the prover's intentions.
+
+Suppose at most \(B\) units of \(\operatorname{PREP}\) are allowed before the fresh part of \(X\) arrives.
+
+I will call a protocol a \((c,s,B,W,v)\)-**sheep-counting protocol** when it has the following properties.
+
+First, if the claim is true, the evidence is accepted with probability at least \(c\):
 
 \[
-\Pr(Q\mid X,T,K).
+\Pr[V=1\mid Q,K]\ge c.
 \]
 
-The old notions of completeness and soundness still fit the proof-like end of the spectrum. But the examples above make me reluctant to assume that every useful sheep-counting problem will reduce to a universal verifier with no prior knowledge of the prover.
+If the claim is false, even the best admissible strategy is accepted with probability at most \(s\):
 
-This is not meant as a finished formalism. It is just enough notation to expose where the uncertainty lives.
+\[
+\sup_{\sigma\in\Sigma_K}
+\Pr[V=1\mid \neg Q,\sigma,K]
+\le s,
+\]
+
+with \(c>s\).
+
+Now define the cost of proving to be the cheapest online strategy that gets accepted with probability at least \(c\):
+
+\[
+\operatorname{PROVE}_{B,c}
+=
+\inf_{\substack{
+\sigma\in\Sigma_K,\\
+\operatorname{PREP}(\sigma)\le B,\\
+\Pr[V=1\mid\sigma,K]\ge c
+}}
+\mathbb E[\operatorname{PROC}(\sigma)].
+\]
+
+We require
+
+\[
+\operatorname{PROVE}_{B,c}\ge W
+\]
+
+while verification costs at most
+
+\[
+\operatorname{VER}(V)\le v.
+\]
+
+The ratio \(W/v\) is the proof-work asymmetry. For the proof-of-work cases I care about, it should be large: doing enough post-input cognitive work to produce convincing evidence should be substantially harder than checking that evidence.
+
+The probabilities here can include randomness in the fresh input and in the verifier, but also whatever uncertainty remains in \(K\) about the particular person's abilities, intentions, or resource network.
+
+This also makes the role of prior knowledge explicit. If
+
+\[
+\rho=\Pr(Q\mid K),
+\]
+
+then after acceptance Bayes' rule gives at least
+
+\[
+\Pr(Q\mid V=1,K)
+\ge
+\frac{c\rho}{c\rho+s(1-\rho)}.
+\]
+
+Two verifiers can therefore use the same protocol and still end with different confidence because their \(K\)'s, and therefore their priors and models of the prover, are different.
+
+I will take a **sheep-counting problem** to be the problem of constructing such a protocol for a chosen cognitive predicate \(Q\), with useful values of \(c\), \(s\), \(B\), \(W\), and \(v\). The definition does not say that every example above has a good solution. That is exactly the question.
 
 ## What I would try next
 
-The monotone-subsequence task is concrete enough to test. For
+The monotone-subsequence task is concrete enough to start measuring these parameters. For
 
 \[
 (k,n)=(4,10),\quad(5,17),\quad(6,26),
@@ -403,7 +460,7 @@ The original question was simple:
 
 Arithmetic gives one easy answer to the proof version of that question. Counting sheep gives almost nothing to show. Babysitting makes the hidden property attention over time. Chess gives an interactive trace. The party puzzles suggest that a person may even be able to arrange a provable line of thought without anybody issuing the challenge first.
 
-I do not know yet whether these examples belong to one useful formal class. But they keep producing the same kinds of questions: what can leak out of a hidden mental process, what must arrive fresh, what work cannot be prepared away, what depends on incentives, and how much the verifier has to know about the particular person.
+The definition above is only a proposal for putting those examples in the same language. I do not know which of them admit good values of \(c\), \(s\), and \(W/v\), or whether the same definition will survive better examples.
 
 That seems like enough to keep counting sheep for a while.
 
