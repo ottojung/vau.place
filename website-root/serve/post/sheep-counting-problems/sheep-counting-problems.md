@@ -44,17 +44,17 @@ Nothing needs to be said or written down afterward. The task can begin and end e
 
 Yet, if after a few minutes you start yawning and fall asleep, that is some evidence that the sheep were there.
 
-## The babysitter
+## The sleeping guard
 
-A parent leaves a babysitter with a sleeping child for three hours.
+A guard watches a building through the night.
 
-On an uneventful evening, a good babysitter may do almost nothing. The important part of the job is to remain attentive enough to notice if the child wakes, cries, becomes ill, or otherwise needs help.
+On a quiet night, a good guard may do almost nothing. The important part of the job is to remain alert enough to notice an intruder, an alarm, a door opening, or anything else that should be reported.
 
-Suppose the parent returns three hours later and finds the child still sleeping peacefully.
+Suppose the shift ends and nothing happened.
 
-This is compatible with a diligent babysitter. It is also compatible with a babysitter who fell asleep five minutes after the parent left.
+This is compatible with an alert guard. It is also compatible with a guard who fell asleep five minutes after starting.
 
-If the child wakes several times and the babysitter responds each time, the situation is different. The evening itself has supplied several occasions on which attention could become visible.
+If something does happen and the guard notices it and signals, the situation is different. The night itself has supplied an occasion on which vigilance can become visible.
 
 What I have in mind here is a task where the valuable part is attention over time, including during stretches in which nothing happens.
 
@@ -74,7 +74,7 @@ The girlfriend's actual reason for choosing chess will matter later.
 
 ## Puzzles without a challenge
 
-The examples so far all begin with a recognizable assignment. Somebody says: solve these exercises, count sheep, watch the child, play chess.
+The examples so far all begin with a recognizable assignment. Somebody says: solve these exercises, count sheep, watch the building, play chess.
 
 I am especially interested in another case: nobody has to prepare the challenge first.
 
@@ -198,9 +198,9 @@ But this picture quietly treats the evidence as something that simply happens. O
 
 ## Incentives and strategies
 
-Suppose the child cries for twenty minutes and the babysitter does nothing. Normally I would take this as evidence that the babysitter was not paying attention.
+Suppose an intruder crosses the yard and the guard does not raise the alarm. Normally I would take this as evidence that the guard was not paying attention.
 
-But an attentive babysitter can deliberately ignore the child.
+But an attentive guard can deliberately stay silent. Perhaps the guard is in it with the thieves.
 
 Poor chess has the same problem. It does not establish distraction: an attentive player can intentionally play badly. Someone who knows that yawning will be interpreted as evidence can yawn.
 
@@ -298,7 +298,7 @@ But this introduces the same problem we just encountered with incentives: the ve
 
 ## Two ways to misjudge a person
 
-Suppose I believe the babysitter would never deliberately ignore a crying child. If that belief is wrong, I will misread her behavior even if I have perfectly understood what she is capable of doing.
+Suppose I believe the guard would always signal an intrusion. If that belief is wrong, I will misread silence even if I have perfectly understood what the guard is capable of noticing.
 
 There is a parallel mistake on the capacity side. I know somebody who would frequently give a mathematics lecture while writing a manuscript at the same time. If I had drawn a generic human flow network from my own intuitions, I would probably have put those two activities behind one bottleneck and been wrong about him.
 
@@ -320,7 +320,7 @@ The verifier's background knowledge \(K\) induces a distribution
 
 over models that still look plausible for this person.
 
-This lets me treat both problems with the same move. If I learn that somebody often sandbags, I update the incentive part of the model. If I repeatedly watch somebody write a manuscript while giving a lecture, I update the resource part.
+This lets me treat both problems with the same move. If I learn that a guard is cooperating with thieves, I update the incentive part of the model. If I repeatedly watch somebody write a manuscript while giving a lecture, I update the resource part.
 
 For example, suppose \(E\) is evidence that activity \(A\) happened, and write \(I_M(A,B)\) for the statement that \(A\) and \(B\) cannot coexist for a person described by \(M\). Define
 
@@ -434,7 +434,9 @@ I understand the definition above as telling me what I am willing to call a shee
 
 I can imagine several ways to create a large separation between the true and false cases: natural side effects, unpredictable interaction with the environment, activities that exclude one another, or traces that are difficult to manufacture without the claimed history.
 
-The construction I find easiest to reason about comes from computational complexity.
+### Proof of work
+
+The construction I find easiest to reason about comes from computational complexity. I will call this family **proofs of work**. The factorization, monotone-subsequence, and empty-pentagon puzzles above are all attempts at human proof of work: use fresh public input to force some online mental computation, then leave a witness that is cheaper to check.
 
 I am willing to assume, at least as a working model, that human computation has bounded channels. If producing an accepting trace after fresh input requires enough mental computation, then a person who has not carried out the relevant cognitive activity may simply not have enough time or capacity to manufacture the same trace. This is one way to keep the false-case probability small.
 
@@ -456,11 +458,53 @@ The factorization puzzle above is the most literal attempt to get this shape fro
 
 In the resource notation above, computational effort is one possible coordinate of \(R(\sigma)\). I would call a computational construction successful when realistic bounds on that coordinate keep the false-case probability low while verification stays cheap.
 
+### Proof of space
+
+Computation is only one coordinate I could put into \(R(\sigma)\). Memory suggests another construction.
+
+Suppose a supervisor shows the guard \(m\) fresh random stimuli: pictures, symbols, short words, or anything else that is easy to distinguish. The guard is asked to remember all of them. Later the verifier chooses unpredictable positions and asks what appeared there.
+
+I would call this a human **proof of space**. The claimed resource is not disk space but memory occupied by unpredictable information.
+
+A toy model already gives the shape of the argument. Suppose each stimulus is chosen independently and uniformly from an alphabet of size \(q\), the guard can retain the exact values of at most \(k\) of the \(m\) positions, and the verifier later chooses one position uniformly. If the guard guesses uniformly when the requested position was not retained, then the probability of answering correctly is
+
+\[
+\frac{k}{m}
++
+\left(1-\frac{k}{m}\right)\frac{1}{q}.
+\]
+
+A larger random audit makes the gap sharper. The toy model is too crude for real memory because people can compress, associate, partially remember, and use structure in the stimuli. The version I would actually want would relate the entropy of the fresh stimuli, the information retained in memory, and the probability of passing a later audit.
+
+If all the stimuli arrive at the start of the shift, this says little about whether the guard stayed awake afterward. If new stimuli arrive unpredictably throughout the night, successful recall also says that the guard was awake when those stimuli appeared.
+
+### Proof of time?
+
+What would a human proof of time be?
+
+The precomputation theorem below already suggests why this is awkward. If nothing fresh happens during an interval, a final response may have been prepared before the interval began. Merely waiting does not obviously leave a certificate of waiting.
+
+The nearby cryptographic idea is a verifiable delay or proof of sequential work: arrange a computation so that each step depends on the previous one and parallelism cannot collapse the delay very much. A human version could use a chain of prompts in which each new prompt depends on the previous answer, or arrives only after the previous stage has finished.
+
+But I am not sure this deserves a separate name. It may just be proof of work with a strong sequentiality requirement.
+
+Another construction would give the guard fresh random checkpoints throughout the shift. That can show that the guard was present and responsive at many different times, but now the evidence comes from the checkpoints rather than from elapsed time by itself.
+
+### Proof of spacetime
+
+Space and time combine more naturally.
+
+Suppose fresh stimuli arrive throughout the guard's shift and the guard must keep them in memory until unpredictable later audits. Passing then asks for two things at once: the guard had to receive the stimuli when they appeared, and some information about them had to remain stored across time.
+
+I would call this a human **proof of spacetime**. It is close in spirit to cryptographic proofs of spacetime, where the prover demonstrates that storage remained occupied over an interval rather than merely showing that some storage existed at one instant.
+
+This also separates several versions of the sleeping-guard problem. Immediate signaling after random events is mainly evidence of vigilance. Recall of a set of stimuli is a proof-of-space construction. Distributing those stimuli across the night and retaining them until later starts to look like proof of spacetime. The resource view therefore gives me more than one way to make the guard's otherwise invisible attention leave evidence.
+
 ## Does the theory explain anything?
 
 Now there is a more basic theoretical question: has any of this actually explained something, or have I only built a language flexible enough to redescribe the examples I started with?
 
-The arithmetic worksheet and the sleepy sheep counter now fit the same formal object. Quiet babysitting and eventful babysitting differ because the environment changes which hidden histories can produce the visible trace. Positive and negative claims behave differently because one activity may leave traces that its complement cannot. Chess suggests a route from positive evidence for one activity to negative evidence for an incompatible one. Incentives and capacities, which initially looked like unrelated complications, both became uncertainty about the prover model.
+The arithmetic worksheet and the sleepy sheep counter now fit the same formal object. Quiet and eventful guard shifts differ because the environment changes which hidden histories can produce the visible trace. Positive and negative claims behave differently because one activity may leave traces that its complement cannot. Chess suggests a route from positive evidence for one activity to negative evidence for an incompatible one. Incentives and capacities, which initially looked like unrelated complications, both became uncertainty about the prover model.
 
 Those are promising unifications, but they are not automatically explanations. The quantities that matter most — the probabilities, the strategy sets, the resource model, and even the predicate \(Q\) — are largely supplied to the framework. If they can be chosen freely enough, almost any social story can be represented inside it.
 
@@ -727,9 +771,9 @@ By Bayes' rule, seeing \(E\) does not change the verifier's prior odds on \(R\) 
 
 So the same evidence can be perfect for the historical predicate “he did not flirt” and useless for the dispositional predicate “he would not flirt if free to do so.” The formal theory gets its own question exactly right while the social situation may have been asking the second question all along.
 
-### A stronger babysitting test can make the babysitting worse
+### A stronger guard test can make the guarding worse
 
-Let \(Q\) mean that the babysitter remains attentive. Suppose the parent deliberately creates \(n\) events that require a response, and let \(E_n\) mean that the babysitter responds correctly to all \(n\).
+Let \(Q\) mean that the guard remains vigilant. Suppose a supervisor deliberately creates \(n\) test events that require a signal, and let \(E_n\) mean that the guard responds correctly to all \(n\).
 
 Assume, just for a simple model, that the responses are conditionally independent and that for each event
 
@@ -760,9 +804,9 @@ L(E_n)=
 \left(\frac{a}{b}\right)^n.
 \]
 
-Because \(a/b>1\), this grows strictly with \(n\). Inside the theory, more test events give stronger evidence for attentiveness.
+Because \(a/b>1\), this grows strictly with \(n\). Inside the theory, more test events give stronger evidence for vigilance.
 
-Now suppose each deliberately caused interruption has some cost \(d>0\) to the actual babysitting situation — for example because the parent wakes a child who would otherwise sleep. The total imposed cost is
+Now suppose each fake alarm or staged intrusion imposes some cost \(d>0\) on the actual guarding — perhaps by occupying the guard's attention, creating alarm fatigue, or distracting from a real event. The total imposed cost is
 
 \[
 nd,
@@ -770,7 +814,7 @@ nd,
 
 which also grows with \(n\).
 
-So increasing \(n\) makes the sheep-counting evidence better while making the thing being supervised worse. The formal ranking and the social ranking move in opposite directions.
+So increasing \(n\) makes the sheep-counting evidence better while making the guard's actual job worse. The formal ranking and the social ranking move in opposite directions.
 
 I read both paradoxes as exposing the same gap. I chose a predicate \(Q\) and asked how well the evidence separates it from \(\neg Q\). The surrounding social situation may care about a counterfactual disposition, or about the cost of running the test, neither of which has to appear in \(Q\).
 
@@ -786,7 +830,7 @@ one could reshuffle the same participants between rounds and measure solve time,
 
 I would also look for other guaranteed ambient witnesses. Erdős-Szekeres and the empty-pentagon theorem give two rather different examples already. There may be much better ones.
 
-But the broader experiments need not be computational. How much does sheep counting actually change the chance of yawning? Which events make babysitter attention visible? Which traces are easy to manufacture once the prover knows what the verifier will inspect?
+But the broader experiments need not be computational. How much does sheep counting actually change the chance of yawning? Which events make a guard's vigilance visible? How much unpredictable information can a person retain well enough to pass a later random audit? Which traces are easy to manufacture once the prover knows what the verifier will inspect?
 
 The self-initiated setting now has a more precise question. What is the cover number of the environmental challenge space, how much probability can a small precomputed table cover, and how much of the apparent online work survives after optimal PREP?
 
@@ -798,7 +842,7 @@ The original question was simple:
 
 > What are you thinking about?
 
-Arithmetic gives one easy answer to the evidence version of that question. Counting sheep gives a much weaker one. Babysitting makes the hidden property attention over time. Chess gives an interactive trace. The party puzzles suggest that a person may even be able to arrange a provable line of thought without anybody issuing the challenge first.
+Arithmetic gives one easy answer to the evidence version of that question. Counting sheep gives a much weaker one. The sleeping guard makes the hidden property vigilance over time. Chess gives an interactive trace. The party puzzles suggest that a person may even be able to arrange a provable line of thought without anybody issuing the challenge first.
 
 What seems common to them is not work. It is separation: something visible is distributed differently depending on what happened in the person's head.
 
@@ -809,5 +853,8 @@ That seems like enough to keep counting sheep for a while.
 ## References
 
 - Manuel Blum and Santosh Vempala, [*The Complexity of Human Computation: A Concrete Model with an Application to Passwords*](https://arxiv.org/abs/1707.01204).
+- Giuseppe Ateniese, Ilario Bonacina, Antonio Faonio, and Nicola Galesi, [*Proofs of Space: When Space Is of the Essence*](https://eprint.iacr.org/2013/805).
+- Tal Moran and Ilan Orlov, [*Simple Proofs of Space-Time and Rational Proofs of Storage*](https://eprint.iacr.org/2016/035).
+- Dan Boneh, Joseph Bonneau, Benedikt Bünz, and Ben Fisch, [*Verifiable Delay Functions*](https://eprint.iacr.org/2018/601).
 - Paul Erdős and George Szekeres, the monotone subsequence theorem.
 - Heiko Harborth, [*Konvexe Fünfecke in ebenen Punktmengen*](https://doi.org/10.5169/seals-32945), *Elemente der Mathematik* 33(5), 116–118, 1978.
