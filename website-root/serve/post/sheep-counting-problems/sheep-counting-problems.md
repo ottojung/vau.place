@@ -159,51 +159,70 @@ At this point I am not sure what kind of theory I want.
 
 Arithmetic looks a little like an ordinary proof system. Sheep counting barely has an output. Babysitting is about a state maintained over time. Chess leaves an interactive history. The party puzzles are search problems whose concrete instance comes from the room.
 
-I do not want to force all of these into one definition too quickly. For now I mostly want language for asking what information reached the person while they were thinking, what remained visible afterward, how much work was required, and what the verifier has to know about the person for the evidence to mean anything.
+It would be tempting to separate the examples that involve substantial mental work from the ones that do not. I no longer think that is the right first cut. Falling asleep after counting sheep can be evidence even though nobody solved a hard computational problem to produce it.
 
-The rest of this post is my current attempt at that language.
+The more basic question is probabilistic: does the thing we can see become more likely when the hidden claim is true?
 
-## Evidence, freshness, and cost
+## Evidence before work
 
-A correct arithmetic worksheet can be strong evidence of arithmetic. Sheep counting may leave no designed output at all. A quiet babysitting shift may leave almost nothing behind.
+Let \(Q\) be a claim about the person's hidden cognitive history, and let \(E\) be something visible afterward. Let \(K\) stand for what the verifier already knows.
 
-The mathematical puzzles give something stronger in one sense and weaker in another. Five people either form the required subsequence or they do not. Five people either surround an empty region or they do not. A witness can settle the mathematical fact completely while saying very little about how difficult it was to find.
-
-Freshness matters once cost matters. If I know tomorrow's arithmetic exercises today, I can solve them today. Chess avoids this because every opponent move brings new input. In the party puzzles, the prover may know all the people and the strategy in advance, while the current arrangement still creates something to do now.
-
-This is where I find Blum and Vempala's vocabulary useful. I will borrow three quantities:
+The simplest reason to call \(E\) evidence for \(Q\) is
 
 \[
-\operatorname{PREP},\qquad
-\operatorname{PROC},\qquad
-\operatorname{VER}.
+\Pr(E\mid Q,K)
+>
+\Pr(E\mid \neg Q,K).
 \]
 
-**PREP** is work that can happen before the fresh part of the instance is available. **PROC** is what remains afterward. **VER** is the cost of checking the evidence.
+Equivalently, the likelihood ratio
 
-If the point is merely to show that I was thinking about arithmetic, a few easy exercises may be enough. If the point is proof of work, then I want substantial \(\operatorname{PROC}\) and small \(\operatorname{VER}\), even after generous \(\operatorname{PREP}\).
+\[
+L(E)=
+\frac{\Pr(E\mid Q,K)}{\Pr(E\mid \neg Q,K)}
+\]
 
-The relevant cost should be the cheapest successful strategy. If somebody finds a shortcut, the puzzle got easier whether or not it was the strategy I had in mind.
+is greater than one.
 
-For the monotone-subsequence puzzle, this is still an empirical question. Erdős-Szekeres guarantees a witness and cheap verification; it does not tell me whether a practiced person will find one in five seconds or five minutes.
+This puts the arithmetic worksheet and the sleepy sheep counter in the same picture. A long list of correct answers might have a very large likelihood ratio. Yawning and falling asleep after being asked to count sheep might have only a modest one. Both can still move the verifier in the same direction.
 
-## Incentives
+Nothing here requires the person to have deliberately produced a certificate. The evidence can be an answer, a game record, a reaction to an event, or an accidental side effect.
 
-Return to the babysitter.
+If the verifier starts with
 
-Suppose the child cries for twenty minutes and the babysitter does nothing. Normally I would take this as evidence that the babysitter was not paying attention.
+\[
+\rho=\Pr(Q\mid K),
+\]
 
-But an attentive babysitter can deliberately ignore the child.
+then Bayes' rule turns the likelihood ratio into posterior belief. So at this level the problem is not yet about work. It is about finding observations whose distributions separate histories satisfying \(Q\) from histories that do not.
 
-Chess has the same problem. Poor performance does not establish distraction: an attentive player can intentionally play badly.
+## Strategies and fakeability
 
-There seem to be at least two different standards here. Some evidence is meant to survive a prover who is actively trying to fool the verifier. I will call that **strategy-independent**. Other evidence works only given assumptions about what the prover wants. I will call that **incentive-dependent**.
+The denominator becomes more interesting once the person knows what the verifier will look at.
 
-The second case makes verification strangely personal. To interpret the behavior, the verifier needs some idea of the prover's actual intentions. It may even matter that they knew those intentions before the test rather than inventing a motivation after seeing the result.
+A babysitter who was not paying attention may try to behave afterward like one who was. An attentive babysitter can deliberately ignore a crying child. A chess player can intentionally play badly. Someone who knows that yawning will be interpreted as evidence can yawn.
 
-A close friend may know whether somebody normally tries hard at chess, whether they sandbag, whether they would ignore a crying child out of spite, or what kinds of excuses they are likely to manufacture. Maybe some sheep-counting proofs work better between people who know each other well.
+Let \(\Sigma_K\) be the strategies that the verifier considers possible. For an accepting event \(E\), a more adversarial quantity is
 
-I am not sure whether that is a defect. It may simply be part of what changes when the object being verified is a human mind rather than a computation in a fixed machine model.
+\[
+s(E,K)=
+\sup_{\sigma\in\Sigma_K}
+\Pr(E\mid \neg Q,\sigma,K).
+\]
+
+If \(\Sigma_K\) contains every strategy the prover could deliberately use, this is the strategy-independent standard. If it is restricted by assumptions about what the prover wants, it is incentive-dependent.
+
+The second case makes verification personal. A close friend may know whether somebody normally tries hard at chess, whether they sandbag, whether they would ignore a crying child out of spite, or whether a suspicious yawn means anything at all. It may even matter that the verifier knew these intentions before the test rather than inventing a motivation after seeing the result.
+
+This also suggests that fakeability need not be all or nothing. Give a strategy a vector of resource costs \(R(\sigma)\): time, attention, memory, preparation, computation, physical effort, coordination with other people, or whatever matters in the problem. Then for a resource budget \(b\) we can ask for
+
+\[
+s_b(E,K)=
+\sup_{\substack{\sigma\in\Sigma_K\\R(\sigma)\preceq b}}
+\Pr(E\mid \neg Q,\sigma,K).
+\]
+
+Now “hard to fake” has a probabilistic meaning without forcing every difficulty into computational work.
 
 ## Negative answers
 
@@ -235,7 +254,7 @@ then no strategy-independent trace can directly certify \(\neg A\).
 
 There is another route to a negative conclusion.
 
-Suppose I want evidence that activity \(B\) did not happen. Instead of looking for a trace of non-\(B\), I can try to prove that activity \(A\) did happen during the same interval, where \(A\) and \(B\) cannot coexist.
+Suppose I want evidence that activity \(B\) did not happen. Instead of looking for a trace of non-\(B\), I can try to establish that activity \(A\) did happen during the same interval, where \(A\) and \(B\) cannot coexist.
 
 Then
 
@@ -291,7 +310,7 @@ And should you learn it? A verification method that improves as one person maps 
 
 It seems wrong to hide this uncertainty inside a sentence such as “assume \(A\) and \(B\) are incompatible.” The verifier should be uncertain about the network.
 
-Let \(K\) be what the verifier already knows about the prover, and let
+Let
 
 \[
 \pi(G\mid K)
@@ -299,17 +318,11 @@ Let \(K\) be what the verifier already knows about the prover, and let
 
 be a distribution over resource networks that still look plausible for that person.
 
-For activities \(A\) and \(B\), write \(I_G(A,B)\) for the statement that they cannot coexist in network \(G\). Let \(E\) be the evidence that \(A\) happened.
-
-Define
+For activities \(A\) and \(B\), write \(I_G(A,B)\) for the statement that they cannot coexist in network \(G\). Let \(E\) be the evidence that \(A\) happened, and define
 
 \[
-p=\Pr(A\mid E,K)
-\]
-
-and
-
-\[
+p=\Pr(A\mid E,K),
+\qquad
 q=\Pr(I_G(A,B)\mid E,K).
 \]
 
@@ -347,37 +360,55 @@ So the smaller object may be the family of compatible sets, or equivalently its 
 
 This loses information about time, routing, memory, and interaction. Whether that matters depends on the question we are trying to ask.
 
+## Complexity theory comes back
+
+None of this makes computational cost unimportant. It gives it a more specific job.
+
+Humans seem to have bounded computational channels. If producing an accepting trace after fresh input requires enough computation, then a person who has not carried out the relevant cognitive activity may simply not have enough time or capacity to manufacture the same trace. This is an easy way to make the false-case probability small.
+
+Freshness matters for exactly this reason. Work done before the fresh input appears should not count toward a claim about what happened afterward. Chess gets freshness from opponent moves. The party puzzles can get it from the current arrangement of the people.
+
+This is where Blum and Vempala's vocabulary is useful:
+
+\[
+\operatorname{PREP},\qquad
+\operatorname{PROC},\qquad
+\operatorname{VER}.
+\]
+
+**PREP** is computation that can happen before the fresh part of the input arrives. **PROC** is what remains afterward. **VER** is the cost of checking the evidence.
+
+For constructions based on bounded human computation, I would like a lot of unavoidable \(\operatorname{PROC}\) and little \(\operatorname{VER}\), even after generous \(\operatorname{PREP}\). But that asymmetry is a way of engineering a good probability gap, not the definition of the problem.
+
+The factorization construction was an attempt to get exactly this shape from ordinary complexity theory. It is bad because the human costs are bad too. The monotone-subsequence construction feels more plausible, but I do not know whether a practiced person will find the witness in five seconds or five minutes. That is an empirical complexity question.
+
+In the resource notation above, computational effort is simply one coordinate of \(R(\sigma)\). A computational construction is successful when realistic bounds on that coordinate keep \(s_b\) low while verification stays cheap.
+
 ## A definition
 
-At this point I am willing to make one definition.
+At this point I am willing to call something a sheep-counting problem.
 
-Fix an interval \(I\), a prover, and a verifier with background knowledge \(K\). Let \(X\) be the fresh public input history, \(H\) the prover's hidden cognitive history, and \(T\) the visible trace. Let
+Fix a time interval \(I\), a prover, and a verifier with background knowledge \(K\). Let \(X\) be the external input history, \(H\) the hidden cognitive history, and \(T\) the visible trace. Let
 
 \[
 Q(X,H)
 \]
 
-be the claim about the cognitive history that we want to prove.
+be the claim about the cognitive history that we want evidence for.
 
-The verifier applies
+A sheep-counting protocol consists of an intended true-case behavior \(\sigma^+\), a set \(\Sigma_K\) of false-case strategies the verifier considers possible, and a verifier
 
 \[
 V(X,T,K)\in\{0,1\}.
 \]
 
-Let \(\Sigma_K\) be the prover strategies we are willing to consider. For a strategy-independent proof this can be all strategies. For an incentive-dependent proof it may be restricted by what the verifier knows about the prover's intentions.
-
-Suppose at most \(B\) units of \(\operatorname{PREP}\) are allowed before the fresh part of \(X\) arrives.
-
-I will call a protocol a \((c,s,B,W,v)\)-**sheep-counting protocol** when it has the following properties.
-
-First, if the claim is true, the evidence is accepted with probability at least \(c\):
+It is a \((c,s)\)-**sheep-counting protocol** when
 
 \[
-\Pr[V=1\mid Q,K]\ge c.
+\Pr[V=1\mid Q,\sigma^+,K]\ge c
 \]
 
-If the claim is false, even the best admissible strategy is accepted with probability at most \(s\):
+and
 
 \[
 \sup_{\sigma\in\Sigma_K}
@@ -385,44 +416,34 @@ If the claim is false, even the best admissible strategy is accepted with probab
 \le s,
 \]
 
-with \(c>s\).
-
-Now define the cost of proving to be the cheapest online strategy that gets accepted with probability at least \(c\):
+with
 
 \[
-\operatorname{PROVE}_{B,c}
-=
-\inf_{\substack{
+c>s.
+\]
+
+The probabilities can include randomness in the environment and verifier, natural variation in human behavior, and uncertainty in \(K\) about the particular person's abilities, intentions, or resource network.
+
+If we care about limited fakeability rather than unlimited fakeability, give strategies a resource vector \(R(\sigma)\) and record the **fakeability profile**
+
+\[
+s(b)=
+\sup_{\substack{
 \sigma\in\Sigma_K,\\
-\operatorname{PREP}(\sigma)\le B,\\
-\Pr[V=1\mid\sigma,K]\ge c
+R(\sigma)\preceq b
 }}
-\mathbb E[\operatorname{PROC}(\sigma)].
+\Pr[V=1\mid \neg Q,\sigma,K].
 \]
 
-We require
+We can record the verifier's resource cost as well. Computational complexity, preparation, attention, physical effort, or other constraints can all appear here without any one of them being privileged in the definition.
 
-\[
-\operatorname{PROVE}_{B,c}\ge W
-\]
-
-while verification costs at most
-
-\[
-\operatorname{VER}(V)\le v.
-\]
-
-The ratio \(W/v\) is the proof-work asymmetry. For the proof-of-work cases I care about, it should be large: doing enough post-input cognitive work to produce convincing evidence should be substantially harder than checking that evidence.
-
-The probabilities here can include randomness in the fresh input and in the verifier, but also whatever uncertainty remains in \(K\) about the particular person's abilities, intentions, or resource network.
-
-This also makes the role of prior knowledge explicit. If
+If
 
 \[
 \rho=\Pr(Q\mid K),
 \]
 
-then after acceptance Bayes' rule gives at least
+then acceptance gives the posterior bound
 
 \[
 \Pr(Q\mid V=1,K)
@@ -430,13 +451,15 @@ then after acceptance Bayes' rule gives at least
 \frac{c\rho}{c\rho+s(1-\rho)}.
 \]
 
-Two verifiers can therefore use the same protocol and still end with different confidence because their \(K\)'s, and therefore their priors and models of the prover, are different.
+So two verifiers can use the same visible trace and the same test and still rationally end with different confidence because they began with different knowledge of the prover.
 
-I will take a **sheep-counting problem** to be the problem of constructing such a protocol for a chosen cognitive predicate \(Q\), with useful values of \(c\), \(s\), \(B\), \(W\), and \(v\). The definition does not say that every example above has a good solution. That is exactly the question.
+I will take a **sheep-counting problem** to be the problem of constructing such a protocol for a chosen cognitive predicate \(Q\): finding observations and a verifier for which the true and false histories are usefully separated, under an explicit model of what the verifier knows and what strategies are possible.
+
+Arithmetic gives a strong-looking instance. Falling asleep while counting sheep gives a weak one. Neither is excluded by the definition because one happened to involve more computation.
 
 ## What I would try next
 
-The monotone-subsequence task is concrete enough to start measuring these parameters. For
+The monotone-subsequence task is concrete enough to start measuring the computational construction. For
 
 \[
 (k,n)=(4,10),\quad(5,17),\quad(6,26),
@@ -445,6 +468,8 @@ The monotone-subsequence task is concrete enough to start measuring these parame
 one could reshuffle the same participants between rounds and measure solve time, errors, and learning. I would especially want to know how much online processing survives once the solver knows everybody and has practiced the task.
 
 I would also look for other guaranteed ambient witnesses. Erdős-Szekeres and the empty-pentagon theorem give two rather different examples already. There may be much better ones.
+
+But the broader experiments need not be computational. How much does sheep counting actually change the chance of yawning? Which events make babysitter attention visible? Which traces are easy to manufacture once the prover knows what the verifier will inspect?
 
 The self-initiated setting leaves an awkward freedom: the prover sees the environment and then chooses what problem to solve. How much choice can they have before they are effectively choosing an answer they already know?
 
@@ -458,9 +483,11 @@ The original question was simple:
 
 > What are you thinking about?
 
-Arithmetic gives one easy answer to the proof version of that question. Counting sheep gives almost nothing to show. Babysitting makes the hidden property attention over time. Chess gives an interactive trace. The party puzzles suggest that a person may even be able to arrange a provable line of thought without anybody issuing the challenge first.
+Arithmetic gives one easy answer to the evidence version of that question. Counting sheep gives a much weaker one. Babysitting makes the hidden property attention over time. Chess gives an interactive trace. The party puzzles suggest that a person may even be able to arrange a provable line of thought without anybody issuing the challenge first.
 
-The definition above is only a proposal for putting those examples in the same language. I do not know which of them admit good values of \(c\), \(s\), and \(W/v\), or whether the same definition will survive better examples.
+What seems common to them is not work. It is separation: something visible is distributed differently depending on what happened in the person's head.
+
+Computational hardness is one good way to create a large separation because human computation is bounded. It is not the only one, and the sleepy sheep counter was evidence of that from the beginning.
 
 That seems like enough to keep counting sheep for a while.
 
