@@ -130,7 +130,7 @@ The more general object is evidence: something visible whose distribution change
 
 ## Evidence and probability
 
-Write \(Q\) for a claim about the person's hidden cognitive history, \(E\) for something visible afterward, and \(K\) for what the verifier already knows.
+Here \(Q\) is a claim about the person's hidden cognitive history, \(E\) is something visible afterward, and \(K\) is what the verifier already knows.
 
 The simplest reason to call \(E\) evidence for \(Q\) is
 
@@ -173,7 +173,7 @@ Evidence that survives every deliberate strategy available to the prover is **st
 
 Signal detection theory has a narrower version of this distinction in its separation of sensitivity from response criterion. Here the reporting strategy can depend on arbitrary goals, including cooperating with the thieves.
 
-For a set of possible strategies \(\Sigma\) and an accepting event \(E\), write
+For a set of possible strategies \(\Sigma\), the false-case success of an accepting event \(E\) is
 
 \[
 s(E)=
@@ -197,7 +197,7 @@ The asymmetry becomes sharper for complements. Evidence for \(Q\) does not autom
 
 ## Negative answers
 
-Consider the positive claim
+The positive claim is
 
 > I was solving arithmetic exercises in my head.
 
@@ -209,7 +209,7 @@ Its complement is
 
 What corresponding object could remain? I do not see one. Somebody who did solve the exercises can usually behave afterward exactly like somebody who did not: stay silent, throw the answers away, or imitate whatever ordinary behavior the non-solver could produce.
 
-Let \(\mathcal T(A)\) be the set of visible traces available after activity \(A\), allowing arbitrary later behavior. If
+\(\mathcal T(A)\) denotes the set of visible traces available after activity \(A\), allowing arbitrary later behavior. If
 
 \[
 \mathcal T(\neg A)\subseteq\mathcal T(A),
@@ -253,7 +253,7 @@ G_t=(V,E,c_t),
 
 where edges are cognitive channels and \(c_t(e)\) is their capacity at time \(t\).
 
-For an activity \(A\), let \(\mathcal F_A\) be the resource-use patterns that count as implementations of \(A\). Several activities can coexist when one implementation of each fits within all channel capacities. Shared bottlenecks, separate resources, alternative strategies, and changing capacity can all appear in the same picture.
+For an activity \(A\), \(\mathcal F_A\) is the family of resource-use patterns that count as implementations of \(A\). Several activities can coexist when one implementation of each fits within all channel capacities. Shared bottlenecks, separate resources, alternative strategies, and changing capacity can all appear in the same picture.
 
 For the chess argument to work, every sufficiently successful way of playing the relevant chess games has to collide with every relevant way of doing the activity the girlfriend wants to exclude.
 
@@ -287,7 +287,7 @@ Both earlier failures now appear as uncertainty about \(M\). Evidence that a gua
 
 More knowledge can even weaken old evidence. Learning that somebody can yawn on command makes the same yawn more likely when sheep counting did not happen, so its likelihood ratio falls. Learning that somebody can combine two activities previously thought incompatible can weaken old evidence in exactly the same way.
 
-If \(E\) is evidence that activity \(A\) happened, and \(I_M(A,B)\) is the statement that \(A\) and \(B\) cannot coexist for a person described by \(M\), write
+If \(E\) is evidence that activity \(A\) happened, and \(I_M(A,B)\) is the statement that \(A\) and \(B\) cannot coexist for a person described by \(M\), the relevant probabilities are
 
 \[
 p=\Pr(A\mid E,K),
@@ -311,7 +311,7 @@ Population knowledge can supply a prior over models. Long familiarity, observati
 
 ## Forgetting the network
 
-The detailed resource network may contain more information than a particular question needs. A coarser model remembers only which sets of activities can happen together; call this family \(\mathcal C\).
+The detailed resource network may contain more information than a particular question needs. A coarser model remembers only which sets of activities can happen together; this family is \(\mathcal C\).
 
 If a set of activities is possible, every subset is possible too, so \(\mathcal C\) is downward closed. Pairwise conflicts are not always enough: if three activities each use \(0.4\) units of one resource of capacity \(1\), every pair can coexist but all three cannot.
 
@@ -463,13 +463,13 @@ But an intervention can also change the property being investigated. Evidence co
 
 ## Does the theory explain anything?
 
-The framework now redescribes several examples in one language. Whether it explains anything beyond that is a harder question.
+The framework puts several examples in one language. Whether it explains anything beyond that is a harder question.
 
 Two unifications are concrete. Arithmetic answers and sleepy sheep are different strengths of the same probabilistic relation between hidden history and visible trace. Incentive mistakes and capacity mistakes, which first looked unrelated, become uncertainty about the same model of the person.
 
 That still may be only description. The probabilities, strategy sets, resource model, and even the predicate \(Q\) are largely supplied to the framework. If they can be chosen freely enough, almost any social story can fit inside it.
 
-On the other hand, definitions that force consequences or rule out apparently possible protocols would give the framework content beyond vocabulary.
+Definitions that force consequences or rule out apparently possible protocols would give the framework content beyond vocabulary.
 
 Whether that is happening here is not settled.
 
@@ -495,7 +495,7 @@ B(S)=\{y:S\cap A_y\ne\varnothing\}
 
 is the set of environmental states covered by the table.
 
-**Claim.** Suppose the prover can prepare and retain \(S\), recognize the observed state \(y\), and select an accepting trace from \(S\) whenever \(y\in B(S)\), all within resource budget \(b\). Then
+**Claim.** If the prover can prepare and retain \(S\), recognize the observed state \(y\), and select an accepting trace from \(S\) whenever \(y\in B(S)\), all within resource budget \(b\), then
 
 \[
 s(b)\ge\Pr[Y\in B(S)].
@@ -575,21 +575,21 @@ The same framework also permits formally sound conclusions that miss the broader
 
 ### Proving that he did not flirt is not proving that he would not flirt
 
-Let \(F\) be the claim that the boyfriend flirted during the interval, \(A\) the claim that he played the required chess, and \(E\) the chess record.
+\(F\) is the claim that the boyfriend flirted during the interval, \(A\) the claim that he played the required chess, and \(E\) the chess record.
 
-Suppose the record perfectly establishes the chess activity,
+If the record perfectly establishes the chess activity,
 
 \[
 \Pr(A\mid E,K)=1,
 \]
 
-and the verifier is certain that the required chess and flirting cannot coexist for this boyfriend:
+and the verifier is certain that the required chess and flirting cannot coexist for this boyfriend,
 
 \[
-\Pr(I_M(A,F)\mid E,K)=1.
+\Pr(I_M(A,F)\mid E,K)=1,
 \]
 
-Then
+then
 
 \[
 \Pr(\neg F\mid E,K)
@@ -606,7 +606,7 @@ so
 
 The chess record perfectly establishes the historical claim that he did not flirt during the interval.
 
-But the chess instruction is also an intervention: it removes some of the opportunity to flirt. The girlfriend may care about a different predicate. Let \(R\) mean:
+But the chess instruction is also an intervention: it removes some of the opportunity to flirt. The girlfriend may care about a different predicate. \(R\) means
 
 > He would refrain from flirting if he had the opportunity.
 
@@ -628,9 +628,9 @@ The same intervention can therefore give perfect evidence for “he did not flir
 
 ### A stronger guard test can make the guarding worse
 
-Let \(Q\) mean that the guard remains vigilant. A supervisor creates \(n\) test events that require a signal, and \(E_n\) means that the guard responds correctly to all \(n\).
+\(Q\) means that the guard remains vigilant. A supervisor creates \(n\) test events that require a signal, and \(E_n\) means that the guard responds correctly to all \(n\).
 
-Let
+The per-event response probabilities are
 
 \[
 \Pr(\text{correct response}\mid Q)=a,
@@ -638,7 +638,7 @@ Let
 \Pr(\text{correct response}\mid\neg Q)=b,
 \]
 
-with \(a>b\), and take the responses to be conditionally independent. Then
+with \(a>b\). If responses are conditionally independent, then
 
 \[
 \Pr(E_n\mid Q)=a^n,
