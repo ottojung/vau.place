@@ -18,14 +18,25 @@ I call these **sheep-counting problems**.
 
 ## Arithmetic
 
-I imagine given a sheet like this:
+I imagine being given a sheet like this:
 
-<TODO>
+```text
+137 × 284 = ______
+519 - 287 = ______
+84 × 63 = ______
+...
+```
 
-~~ YOU GIVE ME THAT AND I RETURN IT WITH THE ANSWERS FILLED IN
+A few minutes later, I can return it like this:
 
-This gives a useful baseline: fresh input is easy to obtain with arithmetic, the mental work can be scaled (more examples), and the answers are easy to verify.
-Later examples lose one or more of these conveniences.
+```text
+137 × 284 = 38,908
+519 - 287 = 232
+84 × 63 = 5,292
+...
+```
+
+This gives a useful baseline. The exercises can be chosen fresh, the amount of work can be increased just by adding more of them, and the answers are easy to verify. Later examples lose one or more of these conveniences.
 
 ## Counting sheep
 
