@@ -18,21 +18,24 @@ I call these **sheep-counting problems**.
 
 ## Arithmetic
 
-Arithmetic is a particularly clean case because the challenge can be fresh. A worksheet I happened to possess beforehand would say little about what I was thinking about five minutes ago. Exercises chosen only after the claim are harder to explain that way.
+I imagine given a sheet like this:
 
-The amount of work is also adjustable. One correct answer gives little evidence; a long sequence of fresh answers can give much more. At the same time, each answer is cheap to check, often much cheaper than producing it mentally.
+<TODO>
 
-So arithmetic gives a useful baseline: fresh input is easy to obtain, the mental work can be scaled, and the resulting trace is easy to verify. The later examples lose one or more of these conveniences.
+~~ YOU GIVE ME THAT AND I RETURN IT WITH THE ANSWERS FILLED IN
+
+This gives a useful baseline: fresh input is easy to obtain with arithmetic, the mental work can be scaled (more examples), and the answers are easy to verify.
+Later examples lose one or more of these conveniences.
 
 ## Counting sheep
 
-Sheep counting is different. You could ask me:
+You could ask me:
 
 > Count sheep in your head for ten minutes.
 
 The task can begin and end entirely in my head. Nothing needs to be said or written down afterward.
 
-Yet if, after a few minutes, I start yawning and fall asleep, that is some evidence that the sheep were there.
+Yet, if I start yawning and fall asleep, that is some evidence that the sheep were there.
 
 ## The sleeping guard
 
