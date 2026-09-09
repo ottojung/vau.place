@@ -194,7 +194,7 @@ If the verifier starts with
 
 then Bayes' rule turns the likelihood ratio into posterior belief.
 
-But this picture quietly treats the evidence as something that simply happens. Once the person knows what will count as evidence, they may try to produce it, suppress it, or otherwise change the distribution themselves. Before asking what happens to \(Q\) under negation, I need to say which prover strategies I am considering.
+But this picture quietly treats the evidence as something that simply happens. Once the person knows what will count as evidence, they may try to produce it, suppress it, or otherwise change the distribution themselves. So before going further, I need to say which prover strategies I am considering.
 
 ## Incentives and strategies
 
@@ -226,7 +226,7 @@ s_b(E)=
 
 This gives me a probabilistic meaning for “hard to fake” without deciding in advance what kind of difficulty matters.
 
-With strategies in view, I can return to a basic closure question. A theory with claims \(Q\) naturally also has claims \(\neg Q\). Does evidence behave symmetrically under that operation?
+Once strategies are part of the picture, an obvious next question is what happens to complements. If I can look for evidence of \(Q\), can I do the same for \(\neg Q\)?
 
 ## Negative answers
 
@@ -274,7 +274,7 @@ This is closer to what the girlfriend wanted from chess. Chess was not the final
 
 The strategy distinction still matters: she needs evidence that he really was playing chess under whatever strategy model she is using. What the construction changes is the negative claim itself. Instead of looking for a direct trace of non-flirting, it turns the problem into positive evidence for chess plus a claim that the two activities cannot coexist.
 
-But now almost everything depends on the word **incompatible**.
+That leaves one word doing a lot of work: **incompatible**.
 
 ## Cognitive resources
 
@@ -294,7 +294,7 @@ For an activity \(A\), let \(\mathcal F_A\) be the resource-use patterns that co
 
 This picture can express shared bottlenecks, separate resources, alternative strategies, and changing capacity. It gives me a way to say what the chess argument would require: every sufficiently successful way of playing the relevant chess games would have to collide with every relevant way of doing the activity the girlfriend wants to exclude.
 
-But this introduces the same problem we just encountered with incentives: the verifier may have the wrong person in mind.
+But even a good resource model can fail if it is a model of the wrong person. That is exactly parallel to the incentive problem above.
 
 ## Two ways to misjudge a person
 
@@ -460,21 +460,21 @@ In the resource notation above, computational effort is one possible coordinate 
 
 ### Proof of space
 
-The sleeping-guard problem gives a reason to look beyond work. Guarding can be hard to verify on its own because a quiet shift may leave no evidence of whether the guard was alert.
+Work is not the only resource I can try to make visible. Guarding is hard to verify on a quiet night because alertness may leave no trace, so one trick is to give the guard something unpredictable to remember.
 
-One way to make some hidden mental state visible is to give the guard something unpredictable to remember. Show the guard a collection of fresh pictures, then later ask which pictures they saw.
+Show the guard a collection of fresh pictures, then later ask which pictures they saw.
 
 If the guard recalls them, that is evidence that the pictures occupied memory. I would call this a human **proof of space**. The resource is memory rather than computation.
 
 This is deliberately simpler than a real memory model. People can compress, associate, half-remember, and recognize things they could not freely recall. I do not need to settle those details before the example is useful: the basic construction is just fresh information followed by recall.
 
-It also does not prove that the guard stayed alert for an entire shift. It only shows how I might make memory itself leave a checkable trace.
+That still says little about whether the guard stayed alert during the rest of the shift. For that part of guarding, memory is the wrong resource.
 
 ### Proof of time
 
-The sleeping guard points to a more direct resource: time. The hard part of guarding is not doing a large amount of work. It is remaining vigilant throughout a long interval, including the parts where nothing happens.
+To test vigilance over the whole shift, the verifier can sample the shift itself.
 
-So suppose the supervisor secretly chooses \(n\) random moments during the shift. At each chosen moment, a harmless test signal appears and the guard must signal immediately. The response can be trivial. The point is that the guard has to be alert **then**.
+Suppose the supervisor secretly chooses \(n\) random moments during the shift. At each chosen moment, a harmless test signal appears and the guard must signal immediately. The response can be trivial. The point is that the guard has to be alert **then**.
 
 Suppose, in a simple model, that a guard is alert for only a fraction \(f\) of the shift and that the test times are independent and uniformly distributed. The chance that every test lands during an alert period is
 
@@ -498,11 +498,9 @@ The same idea need not be limited to guards. If the claim is that somebody maint
 
 There is another possible notion of proof of time: force a long sequential computation whose later steps depend on earlier ones. That is close to verifiable delay functions in cryptography. For humans, though, I currently understand that mostly as a special kind of proof of work. The random-time construction seems more distinct because its difficulty comes from occupying time rather than performing many operations.
 
-I do not yet see a convincing reason to introduce a separate human **proof of spacetime**. Remembering something for a long time certainly combines memory and duration, but at this point that looks like using proof of space and proof of time together, not like a new primitive. I would rather leave the name unused until the combination gives something genuinely new.
-
 ## Does the theory explain anything?
 
-Now there is a more basic theoretical question: has any of this actually explained something, or have I only built a language flexible enough to redescribe the examples I started with?
+Having several constructions makes a more basic question hard to avoid: has any of this actually explained something, or have I only built a language flexible enough to redescribe the examples I started with?
 
 The arithmetic worksheet and the sleepy sheep counter now fit the same formal object. Quiet and eventful guard shifts differ because the environment changes which hidden histories can produce the visible trace. Positive and negative claims behave differently because one activity may leave traces that its complement cannot. Chess suggests a route from positive evidence for one activity to negative evidence for an incompatible one. Incentives and capacities, which initially looked like unrelated complications, both became uncertainty about the prover model.
 
