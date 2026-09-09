@@ -114,13 +114,19 @@ This construction is less immediate than the empty pentagon because the room fir
 
 Both party puzzles can be initiated by the prover. The environment supplies the instance, and a short public witness survives after the mental search is over.
 
-Self-initiation also gives the prover more freedom. After seeing the room, they can search among several possible problems for one whose answer is already easy. That freedom is not free: preparation, memory, recognition, and search still consume human resources. Later this will become a precomputation problem rather than a reason to discard self-initiated puzzles altogether.
+Self-initiation also gives the prover more freedom. After seeing the room, they can search among several possible problems for one whose answer is already easy. That freedom is not free: preparation, memory, recognition, and search still consume human resources.
 
 ## What kind of theory is this?
 
-A certificate-only theory would already have lost the sheep counter. Sheep counting may leave no clean certificate, while yawning or falling asleep can still make the story more plausible.
+Arithmetic answers, yawning after sheep counting, a guard reacting to an intrusion, a record of chess games, and four or five people selected from a room do not look like the same kind of object.
 
-The more general object is evidence: something visible whose distribution changes depending on what happened in the person's head.
+But the hidden question has the same shape in every case. Something happened in a person's head, the verifier did not see it directly, and something visible afterward may distinguish that history from another one. Sometimes the visible thing is deliberately produced; sometimes it is an accidental side effect. Sometimes a verifier supplies a challenge; sometimes the environment does.
+
+That common shape suggests a mathematical question of its own: how should visible traces count as evidence about hidden cognitive histories?
+
+I do not know how much theory can be built from that question. One constraint appears immediately, though. A certificate cannot be the basic object. Sheep counting may leave no clean certificate at all, while yawning or falling asleep can still make the claimed history more plausible.
+
+So the broader object is evidence: something visible whose distribution changes depending on what happened in the person's head.
 
 ## Evidence and probability
 
