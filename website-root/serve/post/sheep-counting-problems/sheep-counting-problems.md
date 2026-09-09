@@ -151,7 +151,7 @@ This one feels quite different from the monotone-subsequence puzzle when I imagi
 
 What interests me in both cases is that the prover can initiate the process. They can choose to think about a publicly checkable problem, use the environment as its concrete instance, and later present a witness.
 
-There is an obvious danger too: if the prover may choose among many possible problems after inspecting the environment, perhaps they can simply choose one whose answer is already obvious.
+There is a danger too: after inspecting the room, the prover can choose among many possible problems and look for one whose answer is already easy. But searching over possible problems is itself work. The extra choice is another prover strategy, and its preparation, memory, and search costs still have to be paid.
 
 ## What kind of theory is this?
 
@@ -169,7 +169,7 @@ The simplest reason to call \(E\) evidence for \(Q\) is
 
 \[
 \Pr(E\mid Q,K)
->
+\mathrel{\gt}
 \Pr(E\mid \neg Q,K).
 \]
 
@@ -202,6 +202,8 @@ Suppose an intruder crosses the yard and the guard does not raise the alarm. Nor
 
 But an attentive guard can deliberately stay silent. Perhaps the guard is in it with the thieves.
 
+Signal detection theory makes a related distinction between sensitivity and response criterion: noticing a signal and deciding to report it are different things. I need a broader version because the decision can depend on arbitrary goals and strategies, including cooperating with the thieves.
+
 Poor chess has the same problem. It does not establish distraction: an attentive player can intentionally play badly. Someone who knows that yawning will be interpreted as evidence can yawn.
 
 If the core question is what happened in the person's head, it is attractive to ask for evidence that does not depend on the person's incentives afterward. I will call that **strategy-independent** evidence. Other evidence works only given assumptions about what the prover wants; I will call that **incentive-dependent**.
@@ -224,7 +226,7 @@ s_b(E)=
 \Pr(E\mid \neg Q,\sigma).
 \]
 
-This gives me a probabilistic meaning for “hard to fake” without deciding in advance what kind of difficulty matters.
+As the budget grows, \(s_b(E)\) can only grow because the prover gets more strategies. This is not what makes \(E\) evidence: the likelihood ratio does that. The fakeability profile tells me how useful the evidence remains when somebody deliberately tries to imitate it. A yawn can be genuine evidence and still be very easy to fake.
 
 Once strategies are part of the picture, an obvious next question is what happens to complements. If I can look for evidence of \(Q\), can I do the same for \(\neg Q\)?
 
@@ -293,6 +295,8 @@ where edges are cognitive channels and \(c_t(e)\) is their capacity at time \(t\
 For an activity \(A\), let \(\mathcal F_A\) be the resource-use patterns that count as implementations of \(A\). Several activities can coexist when we can choose one implementation for each without exceeding any capacity.
 
 This picture can express shared bottlenecks, separate resources, alternative strategies, and changing capacity. It gives me a way to say what the chess argument would require: every sufficiently successful way of playing the relevant chess games would have to collide with every relevant way of doing the activity the girlfriend wants to exclude.
+
+Psychology already has a closely related idea. Wickens' Multiple Resource Theory explains dual-task interference partly by whether two tasks demand the same or different cognitive resources. I do not need its particular resource dimensions here; it gives one empirical way of thinking about the channels and bottlenecks in \(G_t\).
 
 But even a good resource model can fail if it is a model of the wrong person. That is exactly parallel to the incentive problem above.
 
@@ -393,10 +397,12 @@ and
 with
 
 \[
-c>s,
+c\mathrel{\gt}s,
 \]
 
 where the false-case probability averages over the verifier's uncertainty about \(M\) and lets the prover use the strategies each model admits. For a strategy-independent proof, every model admits every strategy the prover could deliberately use; incentive-dependent proofs restrict this according to the verifier's model of the prover.
+
+The inequality \(c\gt s\) is intentionally weak. It only says that acceptance favors the claimed history. The size of the gap, the posterior it produces, and the fakeability profile tell us whether the evidence is actually useful.
 
 The probabilities can include randomness in the environment and verifier, natural variation in human behavior, and uncertainty in \(K\) about the particular person's abilities, intentions, or resource network.
 
@@ -452,7 +458,9 @@ This is where Blum and Vempala's vocabulary is useful:
 
 **PREP** is computation that can happen before the fresh part of the input arrives. **PROC** is what remains afterward. **VER** is the cost of checking the evidence.
 
-A good computational construction has a lot of unavoidable \(\operatorname{PROC}\) and little \(\operatorname{VER}\), even after \(\operatorname{PREP}\). That asymmetry creates the probability gap.
+PREP is not free for a person. Precomputing many answers, retaining them, recognizing which situation has occurred, and finding the right stored answer all consume resources. Those costs belong in \(R(\sigma)\) just like online computation does.
+
+A good computational construction has a lot of unavoidable \(\operatorname{PROC}\) and little \(\operatorname{VER}\), even after useful \(\operatorname{PREP}\). That asymmetry creates the probability gap.
 
 The factorization puzzle above is the most literal attempt to get this shape from ordinary complexity theory. It is bad because the human costs are bad too. The monotone-subsequence puzzle feels more plausible, but I don't know whether a practiced person will find the witness in five seconds or five minutes. That is an empirical complexity question.
 
@@ -490,17 +498,29 @@ of passing all \(n\) tests because every test happened to miss the sleeping peri
 
 I think this is a genuine human **proof of time**. The verifier is not forcing much computation and is not asking the guard to store much information. Instead, the verifier samples the interval. Passing many unpredictable spot checks is evidence that the claimed cognitive state covered much of the time.
 
+Mackworth's 1948 clock experiment has a closely related setup: people watched for rare visual events over a long interval, and detection declined as the watch continued. That does not change the proof idea, but it warns against treating a real guard's vigilance as constant over time.
+
 This also gives me a cleaner distinction from proof of work. A proof of work tries to force enough computation. A proof of time can make each individual response almost free and still become strong because the prover must remain available across the interval.
 
 The same idea need not be limited to guards. If the claim is that somebody maintained attention, monitored something, or kept a mental task active over time, unpredictable cheap probes can sample that persistence.
 
 There is another possible notion of proof of time: force a long sequential computation whose later steps depend on earlier ones. That is close to verifiable delay functions in cryptography. For humans, though, I currently understand that mostly as a special kind of proof of work. The random-time construction seems more distinct because its difficulty comes from occupying time rather than performing many operations.
 
+## Observation and intervention
+
+The guard tests make explicit something that has been present since arithmetic: the verifier can change the situation in order to create evidence.
+
+I will call a protocol **observational** when it only uses evidence that would have arisen anyway, and **interventional** when the verifier introduces exercises, probes, restrictions, or other events to make the hidden state visible.
+
+Intervention is not a defect. Arithmetic works because I can give the prover fresh exercises. The random-time guard test works because the supervisor creates occasions on which vigilance has to become visible.
+
+But an intervention can also change the property we care about. Evidence collected under a modified situation does not automatically answer a counterfactual question about what would have happened without the modification. I will return to that problem in the paradoxes.
+
 ## Does the theory explain anything?
 
 Having several constructions makes a more basic question hard to avoid: has any of this actually explained something, or have I only built a language flexible enough to redescribe the examples I started with?
 
-The arithmetic worksheet and the sleepy sheep counter now fit the same formal object. Quiet and eventful guard shifts differ because the environment changes which hidden histories can produce the visible trace. Positive and negative claims behave differently because one activity may leave traces that its complement cannot. Chess suggests a route from positive evidence for one activity to negative evidence for an incompatible one. Incentives and capacities, which initially looked like unrelated complications, both became uncertainty about the prover model.
+The arithmetic worksheet and the sleepy sheep counter now fit the same formal object. Quiet and eventful guard shifts differ because the environment changes which hidden histories can produce the visible trace. Positive and negative claims behave differently because one activity may leave traces that its complement cannot. Chess suggests a route from positive evidence for one activity to negative evidence for an incompatible one. Incentives and capacities, which initially looked like unrelated complications, both became uncertainty about the prover model. The observational/interventional distinction also gives one way to describe protocols that actively manufacture opportunities for evidence.
 
 Those are promising unifications, but they are not automatically explanations. The quantities that matter most — the probabilities, the strategy sets, the resource model, and even the predicate \(Q\) — are largely supplied to the framework. If they can be chosen freely enough, almost any social story can be represented inside it.
 
@@ -510,7 +530,115 @@ I do not think the question is settled yet. I take the next two sections as evid
 
 ## Theorems
 
-One way I can test the framework is to ask whether the definitions force anything I did not put in by hand. Here are a few consequences I can actually derive.
+One way I can test the framework is to ask whether the definitions force anything I did not put in by hand.
+
+### Covering the challenge space moves work into PREP
+
+The party puzzles raise a sharper question. If the verifier does not supply a fresh challenge, how much unpredictability must the environment supply instead?
+
+Let a public environmental state \(Y\) become known during the interval, and let the prover answer with a trace \(T\). Let \(Q\) mean that the required computation happened after \(Y\) became known. Take the response-only case: the prover can prepare candidate traces beforehand and release one later.
+
+For each environmental state \(y\), define
+
+\[
+A_y=\{t:V(y,t,K)=1\}.
+\]
+
+For a precomputed set of traces \(S\), let
+
+\[
+B(S)=\{y:S\cap A_y\ne\varnothing\}
+\]
+
+be the environmental states that the table covers.
+
+**Claim.** Suppose the prover can prepare and retain \(S\), recognize the observed state \(y\), and select an accepting trace from \(S\) whenever \(y\in B(S)\), all within resource budget \(b\). Then
+
+\[
+s(b)\ge\Pr[Y\in B(S)].
+\]
+
+**Proof.** The false prover prepares \(S\) before the interval. When \(Y=y\) appears, they select some
+
+\[
+t_y\in S\cap A_y
+\]
+
+whenever one exists. The target online computation never happens, so \(Q\) is false, but the verifier accepts whenever \(Y\in B(S)\). The false-case success probability is therefore at least \(\Pr[Y\in B(S)]\). \(\square\)
+
+If \(S\) covers every environmental state, then \(s(b)=1\). Define the **cover number**
+
+\[
+C=\min\{|S|:B(S)\text{ contains every possible }y\}.
+\]
+
+The cover number is a combinatorial measure, not a claim that a human can exploit the cover cheaply. A table of a thousand answers may be useless if producing, remembering, recognizing, or searching it costs too much. The resource budget decides whether the precomputation attack is actually available.
+
+If the environment has at most \(N\) relevant states, then choosing one accepting answer for each state gives
+
+\[
+C\le N.
+\]
+
+Writing the conditional Hartley entropy as
+
+\[
+H_0(Y\mid\operatorname{PREP})=
+\log_2|\operatorname{supp}(Y\mid\operatorname{PREP})|,
+\]
+
+if
+
+\[
+H_0(Y\mid\operatorname{PREP})\le h,
+\]
+
+then
+
+\[
+C\le 2^h.
+\]
+
+The cover number matters more than raw entropy because one answer may work for many environmental states.
+
+The same point applies to self-selected puzzles. Letting the prover choose the puzzle after seeing the room can increase \(B(S)\) or shrink the cover needed for a successful attack. But searching through candidate puzzles and recognizing an easy one are part of the strategy cost. A thousand available puzzle families are not a thousand free chances.
+
+This theorem is about response-only proofs of online computation. Falling asleep after counting sheep is different because sleepiness is caused by the activity rather than selected from a precomputed table.
+
+### Evidence composes multiplicatively
+
+Repeated observations can strengthen evidence, but for people the repetitions can also change one another.
+
+Let \(E_1,\ldots,E_n\) be observations from successive rounds, and write \(E_{<i}\) for everything observed before round \(i\).
+
+**Claim.** Their joint likelihood ratio is
+
+\[
+L(E_1,\ldots,E_n)
+=
+\prod_{i=1}^n
+\frac{\Pr(E_i\mid E_{<i},Q,K)}
+     {\Pr(E_i\mid E_{<i},\neg Q,K)}.
+\]
+
+**Proof.** Apply the probability chain rule separately to the numerator and denominator of
+
+\[
+\frac{\Pr(E_1,\ldots,E_n\mid Q,K)}
+     {\Pr(E_1,\ldots,E_n\mid\neg Q,K)}.
+\]
+
+The two products divide term by term, giving the expression above. \(\square\)
+
+So if every round contributes a conditional likelihood ratio of at least \(\lambda\gt1\), then
+
+\[
+L(E_1,\ldots,E_n)\ge\lambda^n.
+\]
+
+Independent repetition is the easy special case. The more interesting human case is when earlier rounds change later ones. A guard may become tired. A puzzle solver may learn the trick. A prover may infer what the verifier is testing. Then the later factors change, and repetition need not amplify at the same rate.
+
+The random-time guard construction is one clean example: under its simple model, each hidden check independently lands in an alert period with probability \(f\), giving the \(f^n\) term above. The monotone-subsequence puzzle points in the opposite direction: practice may make the false-case strategy better from one round to the next.
 
 ### More knowledge need not strengthen evidence
 
@@ -547,152 +675,6 @@ L(E\mid K_1)=1.6.
 The verifier knows more under \(K_1\), but the likelihood ratio is smaller. Therefore more background knowledge does not always strengthen the same evidence. \(\square\)
 
 The same construction works on the capacity side. Learning that a particular person can combine chess with some supposedly competing activity can weaken old evidence against that activity.
-
-### More strategies make faking no harder
-
-For a false-case strategy set \(\Sigma\), write
-
-\[
-s_\Sigma(E)=
-\sup_{\sigma\in\Sigma}
-\Pr(E\mid\neg Q,\sigma).
-\]
-
-**Claim.** If
-
-\[
-\Sigma_1\subseteq\Sigma_2,
-\]
-
-then
-
-\[
-s_{\Sigma_1}(E)\le s_{\Sigma_2}(E).
-\]
-
-**Proof.** Every strategy in \(\Sigma_1\) is also available in \(\Sigma_2\). Taking a supremum over the larger set cannot produce a smaller value. \(\square\)
-
-So if publishing the verifier gives the prover new useful strategies, the protocol can only stay equally hard to fake or become easier to fake. A yawn may carry evidence partly because the person did not know anyone would inspect it; publication can add deliberate yawning to \(\Sigma\).
-
-### More resources make faking no harder
-
-Let
-
-\[
-\Sigma_b=
-\{\sigma\in\Sigma:R(\sigma)\preceq b\}.
-\]
-
-**Claim.** If
-
-\[
-b_1\preceq b_2,
-\]
-
-then
-
-\[
-s(b_1)\le s(b_2).
-\]
-
-**Proof.** The resource inequality gives
-
-\[
-\Sigma_{b_1}\subseteq\Sigma_{b_2}.
-\]
-
-The previous theorem then gives
-
-\[
-\sup_{\sigma\in\Sigma_{b_1}}
-\Pr(E\mid\neg Q,\sigma)
-\le
-\sup_{\sigma\in\Sigma_{b_2}}
-\Pr(E\mid\neg Q,\sigma).
-\]
-
-These are exactly \(s(b_1)\) and \(s(b_2)\). \(\square\)
-
-This gives me a simple way to describe a protocol that decays with practice. A monotone-subsequence puzzle may initially take several minutes and later become almost automatic. Or a person may learn to combine activities that previously shared a bottleneck. The person gets better while the protocol becomes easier to fake or less useful for exclusion.
-
-### Not enough fresh entropy permits precomputation
-
-The party puzzles raise a sharper question. If the verifier does not supply a fresh challenge, how much unpredictability must the environment supply instead?
-
-Let a public environmental state \(Y\) become known during the interval, and let the prover answer with a trace \(T\). Let \(Q\) mean that the required computation happened after \(Y\) became known. Take the response-only case: the prover can prepare any candidate trace beforehand and release it later.
-
-For each environmental state \(y\), define
-
-\[
-A_y=\{t:V(y,t,K)=1\}.
-\]
-
-A precomputed set of traces \(S\) **covers** \(y\) when
-
-\[
-S\cap A_y\ne\varnothing.
-\]
-
-Define the **cover number**
-
-\[
-C=\min\left\{|S|:\forall y,\ S\cap A_y\ne\varnothing\right\}.
-\]
-
-**Claim.** If the prover can prepare and remember \(C\) traces before \(Y\) becomes known, then no strategy-independent \((c,s)\) sheep-counting protocol for this online-computation claim can satisfy \(c>s\).
-
-**Proof.** Before the interval, the false prover prepares a covering set \(S\) of size \(C\). When the environment reveals \(Y=y\), the prover chooses some
-
-\[
-t_y\in S\cap A_y
-\]
-
-and presents it. By construction,
-
-\[
-V(y,t_y,K)=1
-\]
-
-for every \(y\). The prover never performs the target computation after learning \(y\), so \(Q\) is false, yet the verifier accepts with probability \(1\).
-
-A strategy-independent model includes this strategy. Thus \(s=1\), so \(c>s\) is impossible. \(\square\)
-
-If, given everything the prover already knows during PREP, the environment has at most \(N\) possible relevant states, I can choose one accepting response for each state, so
-
-\[
-C\le N.
-\]
-
-Writing the conditional Hartley entropy as
-
-\[
-H_0(Y\mid\operatorname{PREP})=
-\log_2|\operatorname{supp}(Y\mid\operatorname{PREP})|,
-\]
-
-if
-
-\[
-H_0(Y\mid\operatorname{PREP})\le h,
-\]
-
-then
-
-\[
-C\le 2^h.
-\]
-
-So PREP that can store \(2^h\) state-specific answers defeats the online-computation claim.
-
-The cover number matters more than raw entropy. A room may admit many arrangements, but one witness may work for many of them. In that case a small table can cover a large environmental state space.
-
-If a precomputed set \(S\) covers only a set \(B\) of environmental states, the same strategy succeeds whenever \(Y\in B\), hence
-
-\[
-s\ge\Pr[Y\in B].
-\]
-
-This is specifically a theorem about response-only proofs of online computation. Falling asleep after counting sheep is different because sleepiness is caused by the activity rather than selected from a precomputed table.
 
 ## Paradoxes
 
@@ -731,7 +713,7 @@ Therefore
 
 Inside the sheep-counting theory, this is a perfect result: the chess record proves that he did not flirt during the interval.
 
-But the girlfriend may care about a different predicate. Let \(R\) mean:
+But the chess instruction is also an intervention: it removes some of the opportunity to flirt. The girlfriend may care about a different predicate. Let \(R\) mean:
 
 > He would refrain from flirting if he had the opportunity.
 
@@ -751,7 +733,7 @@ L_R(E)=1.
 
 By Bayes' rule, seeing \(E\) does not change the verifier's prior odds on \(R\) at all.
 
-So the same evidence can be perfect for the historical predicate “he did not flirt” and useless for the dispositional predicate “he would not flirt if free to do so.” The formal theory gets its own question exactly right while the social situation may have been asking the second question all along.
+So the same intervention can produce perfect evidence for the historical predicate “he did not flirt” and no evidence for the dispositional predicate “he would not flirt if free to do so.”
 
 ### A stronger guard test can make the guarding worse
 
@@ -786,9 +768,9 @@ L(E_n)=
 \left(\frac{a}{b}\right)^n.
 \]
 
-Because \(a/b>1\), this grows strictly with \(n\). Inside the theory, more test events give stronger evidence for vigilance.
+Because \(a/b\gt1\), this grows strictly with \(n\). More test events give stronger evidence for vigilance.
 
-Now suppose each fake alarm or staged intrusion imposes some cost \(d>0\) on the actual guarding — perhaps by occupying the guard's attention, creating alarm fatigue, or distracting from a real event. The total imposed cost is
+But the tests are interventions too. Suppose each fake alarm or staged intrusion imposes some cost \(d>0\) on the actual guarding — perhaps by occupying the guard's attention, creating alarm fatigue, or distracting from a real event. The total imposed cost is
 
 \[
 nd,
@@ -798,7 +780,7 @@ which also grows with \(n\).
 
 So increasing \(n\) makes the sheep-counting evidence better while making the guard's actual job worse. The formal ranking and the social ranking move in opposite directions.
 
-I read both paradoxes as exposing the same gap. I chose a predicate \(Q\) and asked how well the evidence separates it from \(\neg Q\). The surrounding social situation may care about a counterfactual disposition, or about the cost of running the test, neither of which has to appear in \(Q\).
+These paradoxes are not an argument against intervention. They show why an interventional protocol has to be interpreted as evidence about what happened under that intervention. Moving from there to a counterfactual disposition or to the quality of the underlying task takes another argument.
 
 ## What I would try next
 
@@ -808,15 +790,15 @@ The monotone-subsequence task is concrete enough to start measuring the computat
 (k,n)=(4,10),\quad(5,17),\quad(6,26),
 \]
 
-one could reshuffle the same participants between rounds and measure solve time, errors, and learning. I would especially want to know how much online processing survives once the solver knows everybody and has practiced the task.
+one could reshuffle the same participants between rounds and measure solve time, errors, and learning. I would especially want to know how the conditional likelihood ratio changes as the solver practices.
 
 I would also look for other guaranteed ambient witnesses. Erdős-Szekeres and the empty-pentagon theorem give two rather different examples already. There may be much better ones.
 
-But the broader experiments need not be computational. How much does sheep counting actually change the chance of yawning? Which events make a guard's vigilance visible? How much unpredictable information can a person retain well enough to pass a later random audit? Which traces are easy to manufacture once the prover knows what the verifier will inspect?
+The cover-number question now has two empirical parts as well as a combinatorial one: how small a table covers much of the environmental distribution, and how expensive is that table for a person to prepare, retain, recognize, and search? The same measurements could tell us whether choosing among many puzzle families is actually cheaper than solving a fixed puzzle.
 
-The random-time guard construction is easy to test too. If a person deliberately leaves some fraction of a shift unattended, how closely does the pass probability follow the simple \(f^n\) model as the number of hidden checkpoints increases?
+But the broader experiments need not be computational. How much does sheep counting actually change the chance of yawning? Which events make a guard's vigilance visible? How much unpredictable information can a person retain well enough to pass a later audit? Which traces are easy to manufacture once the prover knows what the verifier will inspect?
 
-The self-initiated setting now has a more precise question. What is the cover number of the environmental challenge space, how much probability can a small precomputed table cover, and how much of the apparent online work survives after optimal PREP?
+The random-time guard construction is easy to test too. Mackworth's results suggest that the alert fraction will not stay constant through a long watch, so I would want to measure how the pass probability changes with the timing of the probes rather than only their number.
 
 For the person-model side, I would want measurements across people as well as within one person. How stable are incompatibilities? How much can be learned from a few dual-task observations? How quickly does practice change them? How stable are incentives across situations? How informative is population data about one particular prover?
 
@@ -837,6 +819,9 @@ That seems like enough to keep counting sheep for a while.
 ## References
 
 - Manuel Blum and Santosh Vempala, [*The Complexity of Human Computation: A Concrete Model with an Application to Passwords*](https://arxiv.org/abs/1707.01204).
+- Wilson P. Tanner Jr. and John A. Swets, [*A Decision-Making Theory of Visual Detection*](https://doi.org/10.1037/h0058700), *Psychological Review* 61(6), 401–409, 1954.
+- N. H. Mackworth, [*The Breakdown of Vigilance during Prolonged Visual Search*](https://doi.org/10.1080/17470214808416738), *Quarterly Journal of Experimental Psychology* 1(1), 6–21, 1948.
+- Christopher D. Wickens, [*Multiple Resources and Mental Workload*](https://doi.org/10.1518/001872008X288394), *Human Factors* 50(3), 449–455, 2008.
 - Giuseppe Ateniese, Ilario Bonacina, Antonio Faonio, and Nicola Galesi, [*Proofs of Space: When Space Is of the Essence*](https://eprint.iacr.org/2013/805).
 - Dan Boneh, Joseph Bonneau, Benedikt Bünz, and Ben Fisch, [*Verifiable Delay Functions*](https://eprint.iacr.org/2018/601).
 - Paul Erdős and George Szekeres, the monotone subsequence theorem.
