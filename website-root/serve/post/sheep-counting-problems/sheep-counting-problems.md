@@ -378,7 +378,7 @@ V(X,T,K)\in\{0,1\}.
 
 Each model \(M\) determines a set of false-case strategies \(\Sigma_M\) and whatever resource constraints are relevant. The verifier's knowledge \(K\) determines how plausible the different models are.
 
-For \(c,s\in[0,1]\), I will call this a \((c,s)\)-**sheep-counting protocol** when
+I will call this a \((c,s)\)-**sheep-counting protocol** when
 
 \[
 \Pr[V=1\mid Q,\sigma^+,K]\ge c
@@ -438,7 +438,7 @@ I can imagine several ways to create a large separation between the true and fal
 
 The construction I find easiest to reason about comes from computational complexity. I will call this family **proofs of work**. The factorization, monotone-subsequence, and empty-pentagon puzzles above are all attempts at human proof of work: use fresh public input to force some online mental computation, then leave a witness that is cheaper to check.
 
-I am willing to assume, at least as a working model, that human computation has bounded channels. If producing an accepting trace after fresh input requires enough mental computation, then a person who has not carried out the relevant cognitive activity may simply not have enough time or capacity to manufacture the same trace. This is one way to keep the false-case probability small.
+Human computation has bounded channels. If producing an accepting trace after fresh input requires enough mental computation, then a person who has not carried out the relevant cognitive activity may simply not have enough time or capacity to manufacture the same trace. This is one way to keep the false-case probability small.
 
 Fresh input helps because it limits what can be moved into preparation. Chess gets freshness from opponent moves. The party puzzles can get it from the current arrangement of the people.
 
@@ -452,11 +452,11 @@ This is where Blum and Vempala's vocabulary is useful:
 
 **PREP** is computation that can happen before the fresh part of the input arrives. **PROC** is what remains afterward. **VER** is the cost of checking the evidence.
 
-For constructions based on bounded human computation, I would like a lot of unavoidable \(\operatorname{PROC}\) and little \(\operatorname{VER}\), even after generous \(\operatorname{PREP}\). I use that asymmetry as one way to engineer a good probability gap; I do not put it into the definition of the problem.
+A good computational construction has a lot of unavoidable \(\operatorname{PROC}\) and little \(\operatorname{VER}\), even after \(\operatorname{PREP}\). That asymmetry creates the probability gap.
 
-The factorization puzzle above is the most literal attempt to get this shape from ordinary complexity theory. It is bad because the human costs are bad too. The monotone-subsequence puzzle feels more plausible, but I do not know whether a practiced person will find the witness in five seconds or five minutes. That is an empirical complexity question.
+The factorization puzzle above is the most literal attempt to get this shape from ordinary complexity theory. It is bad because the human costs are bad too. The monotone-subsequence puzzle feels more plausible, but I don't know whether a practiced person will find the witness in five seconds or five minutes. That is an empirical complexity question.
 
-In the resource notation above, computational effort is one possible coordinate of \(R(\sigma)\). I would call a computational construction successful when realistic bounds on that coordinate keep the false-case probability low while verification stays cheap.
+In the resource notation above, computational effort is one possible coordinate of \(R(\sigma)\). A computational construction works when realistic bounds on that coordinate keep the false-case probability low while verification stays cheap.
 
 ### Proof of space
 
@@ -466,8 +466,6 @@ Show the guard a collection of fresh pictures, then later ask which pictures the
 
 If the guard recalls them, that is evidence that the pictures occupied memory. I would call this a human **proof of space**. The resource is memory rather than computation.
 
-This is deliberately simpler than a real memory model. People can compress, associate, half-remember, and recognize things they could not freely recall. I do not need to settle those details before the example is useful: the basic construction is just fresh information followed by recall.
-
 That still says little about whether the guard stayed alert during the rest of the shift. For that part of guarding, memory is the wrong resource.
 
 ### Proof of time
@@ -476,7 +474,7 @@ To test vigilance over the whole shift, the verifier can sample the shift itself
 
 Suppose the supervisor secretly chooses \(n\) random moments during the shift. At each chosen moment, a harmless test signal appears and the guard must signal immediately. The response can be trivial. The point is that the guard has to be alert **then**.
 
-Suppose, in a simple model, that a guard is alert for only a fraction \(f\) of the shift and that the test times are independent and uniformly distributed. The chance that every test lands during an alert period is
+If a guard is alert for only a fraction \(f\) of the shift and the test times are independent and uniformly distributed, the chance that every test lands during an alert period is
 
 \[
 f^n.
@@ -488,7 +486,7 @@ A guard who sleeps through half of the shift has probability
 2^{-n}
 \]
 
-of passing all \(n\) tests merely because every test happened to miss the sleeping periods.
+of passing all \(n\) tests because every test happened to miss the sleeping periods.
 
 I think this is a genuine human **proof of time**. The verifier is not forcing much computation and is not asking the guard to store much information. Instead, the verifier samples the interval. Passing many unpredictable spot checks is evidence that the claimed cognitive state covered much of the time.
 
@@ -518,7 +516,7 @@ One way I can test the framework is to ask whether the definitions force anythin
 
 **Claim.** The same observation can become weaker evidence after the verifier learns more about the prover.
 
-**Proof.** Let \(Q\) be the claim that somebody counted sheep for ten minutes, and let \(E\) be a yawn. Under some background knowledge \(K_0\), suppose
+**Proof.** Let \(Q\) be the claim that somebody counted sheep for ten minutes, and let \(E\) be a yawn. Suppose
 
 \[
 \Pr(E\mid Q,K_0)=0.8,
@@ -532,21 +530,21 @@ Then
 L(E\mid K_0)=8.
 \]
 
-Now let \(K_1\) extend \(K_0\) with the information that this person can yawn on command. A model consistent with that knowledge might have
+Now the verifier learns that this person can yawn on command. Suppose under the new knowledge \(K_1\),
 
 \[
 \Pr(E\mid Q,K_1)=0.8,
 \qquad
-\Pr(E\mid \neg Q,K_1)=0.5,
+\Pr(E\mid \neg Q,K_1)=0.5.
 \]
 
-so
+Then
 
 \[
 L(E\mid K_1)=1.6.
 \]
 
-The verifier knows more under \(K_1\), but the likelihood ratio is smaller. Therefore the theory has no general monotonic rule saying that more background knowledge strengthens the same evidence. \(\square\)
+The verifier knows more under \(K_1\), but the likelihood ratio is smaller. Therefore more background knowledge does not always strengthen the same evidence. \(\square\)
 
 The same construction works on the capacity side. Learning that a particular person can combine chess with some supposedly competing activity can weaken old evidence against that activity.
 
@@ -621,15 +619,15 @@ This gives me a simple way to describe a protocol that decays with practice. A m
 
 The party puzzles raise a sharper question. If the verifier does not supply a fresh challenge, how much unpredictability must the environment supply instead?
 
-Let a public environmental state \(Y\) become known during the interval, and let the prover answer with a trace \(T\). Let \(Q\) mean that the required computation happened after \(Y\) became known. For this theorem I assume that the trace contains no other side effect of doing the computation: the prover could in principle store any candidate trace beforehand and release it later.
+Let a public environmental state \(Y\) become known during the interval, and let the prover answer with a trace \(T\). Let \(Q\) mean that the required computation happened after \(Y\) became known. Take the response-only case: the prover can prepare any candidate trace beforehand and release it later.
 
-For each possible environmental state \(y\), define
+For each environmental state \(y\), define
 
 \[
 A_y=\{t:V(y,t,K)=1\}.
 \]
 
-Assume every possible \(y\) has at least one accepting response. A precomputed set of traces \(S\) **covers** \(y\) when
+A precomputed set of traces \(S\) **covers** \(y\) when
 
 \[
 S\cap A_y\ne\varnothing.
@@ -655,23 +653,11 @@ and presents it. By construction,
 V(y,t_y,K)=1
 \]
 
-for every possible \(y\). The prover never performs the target computation after learning \(y\), so \(Q\) is false, yet the verifier accepts with probability \(1\).
+for every \(y\). The prover never performs the target computation after learning \(y\), so \(Q\) is false, yet the verifier accepts with probability \(1\).
 
-A strategy-independent model must include this strategy. Therefore its false-case acceptance probability is \(1\), so any soundness parameter must have
+A strategy-independent model includes this strategy. Thus \(s=1\), so \(c>s\) is impossible. \(\square\)
 
-\[
-s=1.
-\]
-
-Since \(c\le1\), the required inequality
-
-\[
-c>s
-\]
-
-is impossible. \(\square\)
-
-Ordinary environmental entropy gives a simple sufficient condition for this attack. If, given everything the prover already knows during PREP, the environment has at most \(N\) possible relevant states, I can choose one accepting response for each state, so
+If, given everything the prover already knows during PREP, the environment has at most \(N\) possible relevant states, I can choose one accepting response for each state, so
 
 \[
 C\le N.
@@ -700,15 +686,13 @@ So PREP that can store \(2^h\) state-specific answers defeats the online-computa
 
 The cover number matters more than raw entropy. A room may admit many arrangements, but one witness may work for many of them. In that case a small table can cover a large environmental state space.
 
-There is also a partial version. If a precomputed set \(S\) covers only a set \(B\) of environmental states, the same strategy succeeds whenever \(Y\in B\). Hence
+If a precomputed set \(S\) covers only a set \(B\) of environmental states, the same strategy succeeds whenever \(Y\in B\), hence
 
 \[
 s\ge\Pr[Y\in B].
 \]
 
-Even without a complete table, a concentrated environmental distribution can therefore create a substantial precomputation attack.
-
-This theorem does not say that evidence is impossible without fresh entropy. Falling asleep after counting sheep is outside its premise: sleepiness is a side effect of the activity, not merely a challenge-dependent response that could have been stored in a table. The theorem only concerns claims that some challenge-dependent computation happened **after** the challenge became known.
+This is specifically a theorem about response-only proofs of online computation. Falling asleep after counting sheep is different because sleepiness is caused by the activity rather than selected from a precomputed table.
 
 ## Paradoxes
 
@@ -724,7 +708,7 @@ Suppose the record perfectly establishes the chess activity,
 \Pr(A\mid E,K)=1,
 \]
 
-and suppose the verifier is certain that, for this boyfriend, the required chess and flirting cannot coexist:
+and the verifier is certain that the required chess and flirting cannot coexist for this boyfriend:
 
 \[
 \Pr(I_M(A,F)\mid E,K)=1.
@@ -751,7 +735,7 @@ But the girlfriend may care about a different predicate. Let \(R\) mean:
 
 > He would refrain from flirting if he had the opportunity.
 
-Suppose both \(R\) and \(\neg R\) boyfriends comply with the chess instruction in the same way, and the chess itself removes the opportunity to flirt. Then the chess record has the same distribution in the two cases:
+If both \(R\) and \(\neg R\) boyfriends comply with the chess instruction in the same way, and the chess itself removes the opportunity to flirt, then
 
 \[
 \Pr(E\mid R,K)
@@ -773,7 +757,7 @@ So the same evidence can be perfect for the historical predicate “he did not f
 
 Let \(Q\) mean that the guard remains vigilant. Suppose a supervisor deliberately creates \(n\) test events that require a signal, and let \(E_n\) mean that the guard responds correctly to all \(n\).
 
-Assume, just for a simple model, that the responses are conditionally independent and that for each event
+Let
 
 \[
 \Pr(\text{correct response}\mid Q)=a,
@@ -784,10 +768,10 @@ Assume, just for a simple model, that the responses are conditionally independen
 with
 
 \[
-1\ge a>b>0.
+1\ge a>b>0,
 \]
 
-Then
+and take the responses to be conditionally independent. Then
 
 \[
 \Pr(E_n\mid Q)=a^n,
