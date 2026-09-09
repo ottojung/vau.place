@@ -12,15 +12,15 @@ Can I prove that I really was thinking about birds?
 
 Usually I cannot do much better than tell you that I was.
 
-Now I answer differently. I say I was thinking about math, and I hand you a page of arithmetic problems where I filled in the answers. You still did not see what happened in my head, but now I have something I can show you.
+But I can say that I was thinking about math, and then hand you a page of arithmetic problems where I filled in the answers. You still did not see what happened in my head, but now I have something to show you.
 
-I think there is an interesting family of problems hiding in this difference: when can a person prove, or at least give useful evidence for, what they were thinking about?
+I think there is an interesting family of problems here: when can a person prove, or at least give useful evidence for, what they were thinking about?
 
 I will call these **sheep-counting problems**.
 
 ## Arithmetic
 
-I give you fresh exercises such as
+You give me fresh exercises such as
 
 ```text
 137 × 284 = ?
@@ -28,19 +28,27 @@ I give you fresh exercises such as
 ...
 ```
 
-and ask you to solve them mentally. You return a page of answers. If enough of them are correct, this is good evidence that you spent some time thinking about the exercises.
+and ask me to solve them mentally. I return a page of answers. If enough of them are correct, this is good evidence that I spent some time thinking about the exercises.
 
-This is the easy case. The input is explicit, the answers are easy to inspect, and I can choose new exercises whenever needed. Checking an answer can also be much cheaper than finding it mentally.
+This is the easy case. The input is explicit, the answers are easy to inspect, and you can choose new exercises whenever needed. Checking an answer can also be much cheaper than finding it mentally.
 
 ## Counting sheep
 
-Now I ask:
+Now if you ask:
 
 > Count sheep in your head for ten minutes.
 
-Nothing needs to be said or written down afterward. The task can begin and end entirely in your head.
+Nothing needs to be said or written down afterward. The task can begin and end entirely in my head.
 
-Yet, if after a few minutes you start yawning and fall asleep, that is some evidence that the sheep were there.
+Yet, if after a few minutes I start yawning and fall asleep, that is some evidence that the sheep were there.
+
+## The sleeping guard
+
+A guard watches a building through the night. On a quiet night, a good guard may do almost nothing. The important part of the job is to remain alert enough to notice an intruder, an alarm, a door opening, or anything else that should be reported.
+
+The shift ends and nothing happened. That is compatible with an alert guard, but it is also compatible with a guard who fell asleep five minutes after starting.
+
+If something does happen and the guard notices it and signals, the night has supplied an occasion on which vigilance can become visible. The valuable part of guarding is attention over time, including during stretches in which nothing happens.
 
 ## The sleeping guard
 
