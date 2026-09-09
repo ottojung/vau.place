@@ -234,7 +234,7 @@ But a negative claim is not necessarily hopeless. Instead of trying to produce a
 
 ## Proving something incompatible instead
 
-Say I want evidence that activity \(B\) did not happen. Rather than looking for a trace of non-\(B\), I can establish that activity \(A\) did happen during the same interval, where \(A\) and \(B\) cannot coexist.
+I want evidence that activity \(B\) did not happen. Instead of looking for a trace of non-\(B\), I can try to establish that activity \(A\) did happen during the same interval, where \(A\) and \(B\) cannot coexist.
 
 Then
 
@@ -248,15 +248,15 @@ A\text{ incompatible with }B
 
 This is closer to what the girlfriend wanted from chess. Chess was not the final fact she cared about. She wanted a positively checkable activity that would exclude some competing activity.
 
-The strategy distinction still matters: she needs evidence that he really was playing chess under whatever strategy model she is using. What changes is the negative claim itself. Instead of looking for a direct trace of non-flirting, the protocol turns the problem into positive evidence for chess plus a claim that chess and flirting cannot coexist.
+The strategy distinction still matters: she needs evidence that he really was playing chess under whatever strategy model she is using. What changes is the negative claim itself. Instead of looking for a direct trace of non-flirting, the problem becomes positive evidence for chess plus a claim that chess and flirting cannot coexist.
 
 That leaves one word doing a lot of work: **incompatible**.
 
 ## Cognitive resources
 
-A first model would give the mind a single time-varying capacity \(C(t)\). Activities consume some of it and cannot coexist when their combined demand is too large.
+A first model gives the mind a single time-varying capacity \(C(t)\). Activities consume some of it and cannot coexist when their combined demand is too large.
 
-That is too simple. Two activities may collide because both need one particular resource while leaving others unused; another pair may coexist because they use different resources.
+That is too simple. Two activities can collide because both need one particular resource while leaving other resources unused. Another pair can coexist because they use different resources.
 
 A more flexible picture is a time-varying network
 
@@ -266,25 +266,23 @@ G_t=(V,E,c_t),
 
 where edges are cognitive channels and \(c_t(e)\) is their capacity at time \(t\).
 
-For an activity \(A\), let \(\mathcal F_A\) be the resource-use patterns that count as implementations of \(A\). Several activities can coexist when we can choose one implementation for each without exceeding any capacity.
+For an activity \(A\), let \(\mathcal F_A\) be the resource-use patterns that count as implementations of \(A\). Several activities can coexist when we can choose one implementation for each without exceeding any capacity. This picture can express shared bottlenecks, separate resources, alternative strategies, and changing capacity.
 
-This can express shared bottlenecks, separate resources, alternative strategies, and changing capacity. For the chess argument to work, every sufficiently successful way of playing the relevant chess games has to collide with every relevant way of doing the activity the girlfriend wants to exclude.
+For the chess argument, every sufficiently successful way of playing the relevant chess games would have to collide with every relevant way of doing the activity the girlfriend wants to exclude.
 
 Psychology already has a closely related idea. Wickens' Multiple Resource Theory explains dual-task interference partly by whether two tasks demand the same or different cognitive resources. I do not need its particular resource dimensions here; it gives one empirical way of thinking about the channels and bottlenecks in \(G_t\).
 
-Even a sensible resource model can still describe the wrong person. That is exactly parallel to the incentive problem above.
+But even a good resource model can fail if it is a model of the wrong person. That is exactly parallel to the incentive problem above.
 
 ## Two ways to misjudge a person
 
-I can believe that a guard would always signal an intrusion and be wrong. In that case I misread silence even if I have perfectly understood what the guard is capable of noticing.
+I might believe that the guard always signals an intrusion. If that belief is wrong, I will misread silence even if I have perfectly understood what the guard is capable of noticing.
 
-There is a parallel mistake on the capacity side. I know somebody who often gives a mathematics lecture while writing a manuscript at the same time. I would have put those activities behind one bottleneck: both look linguistically demanding, both need sustained attention, and I would expect one to crowd out the other. He does them together routinely.
+The capacity mistake is more surprising to me because I have watched it happen. I know somebody who regularly gives a mathematics lecture while writing a manuscript at the same time. Before seeing that, I would have put speaking through a mathematical argument and composing technical prose behind the same bottleneck. For him, that model is simply wrong.
 
-The lesson for the model is not that resource constraints disappear. It is that a generic network drawn from my own intuitions can describe the wrong person just as easily as a generic story about incentives can.
+These are the same kind of epistemic failure. In one case I misjudge what strategy the person will choose; in the other I misjudge what combinations of activity the person can perform. Either way I have the wrong model of the person.
 
-In one case I misjudge what strategy the person would choose. In the other I misjudge what combinations of activity the person can perform. The chess example needs both kinds of knowledge: some idea of what strategies the boyfriend would actually choose, and some idea of which activities can coexist for him.
-
-A close friend can have useful information about both. They may know whether somebody sandbags at chess or manufactures excuses, and also that a supposedly overwhelming combination of tasks is routine for this particular person.
+The chess example needs both pieces. The girlfriend needs some idea of what strategies her boyfriend would actually choose and some idea of which activities can coexist for him. A close friend may know both: whether somebody sandbags at chess or manufactures excuses, but also which supposedly overwhelming combinations of tasks are routine for this particular person.
 
 ## Uncertain models of the person
 
@@ -298,7 +296,7 @@ The verifier's background knowledge \(K\) induces a distribution
 
 over models that still look plausible for this person.
 
-This treats both mistakes in the same way. Learning that a guard is cooperating with thieves changes the incentive part of the model. Watching somebody repeatedly write a manuscript while giving a lecture changes the resource part.
+This lets me treat both problems with the same move. If I learn that a guard is cooperating with thieves, I update the incentive part of the model. If I repeatedly watch somebody write a manuscript while giving a lecture, I update the resource part.
 
 For example, let \(E\) be evidence that activity \(A\) happened, and write \(I_M(A,B)\) for the statement that \(A\) and \(B\) cannot coexist for a person described by \(M\). Define
 
@@ -318,19 +316,17 @@ Then
 \max(0,p+q-1).
 \]
 
-The chess argument can fail because the record does not establish \(A\), because the verifier misjudged the boyfriend's capacity, or because the verifier misjudged which strategies his incentives make plausible. All three appear here as uncertainty about \(M\).
+The chess argument can fail because the record does not establish \(A\), because the verifier misjudged the boyfriend's capacity, or because the verifier misjudged which strategies his incentives make plausible. All three failures can live inside uncertainty about \(M\).
 
 Population knowledge can supply a prior over models. Long familiarity, observation, and deliberate dual-task experiments can update it. Two verifiers can therefore see the same evidence and rationally reach different conclusions because they know different things about the person who produced it.
 
 ## Forgetting the network
 
-The resource part of \(M\) may contain more detail than we need. Keep only which sets of activities can happen together, and let \(\mathcal C\) be that family.
+The resource part of \(M\) may contain more detail than we need. Keep only which sets of activities can happen together, and call that family \(\mathcal C\).
 
-If a set of activities is possible, every subset is possible too, so \(\mathcal C\) is downward closed. Pairwise conflicts are not enough: if three activities each use \(0.4\) units of one resource of capacity \(1\), every pair can coexist but all three cannot.
+If a set of activities is possible, every subset is possible too, so \(\mathcal C\) is downward closed. Pairwise conflicts are not always enough: if three activities each use \(0.4\) units of one resource of capacity \(1\), every pair can coexist but all three cannot.
 
-A smaller representation is therefore the family of compatible sets, or equivalently its minimal incompatible sets. If the verifier is uncertain, they can have a distribution over those objects rather than over detailed flow networks.
-
-This loses information about time, routing, memory, and interaction. Whether that matters depends on the question we are trying to ask.
+So the smaller object can be the family of compatible sets, or equivalently its minimal incompatible sets. If the verifier is uncertain, they can have a distribution over those objects rather than over detailed flow networks. This loses information about time, routing, memory, and interaction; whether that matters depends on the question.
 
 ## A minimal definition
 
@@ -352,7 +348,7 @@ V(X,T,K)\in\{0,1\}.
 
 Each model \(M\) determines a set of false-case strategies \(\Sigma_M\) and whatever resource constraints are relevant. The verifier's knowledge \(K\) determines how plausible the different models are.
 
-I call this a \((c,s)\)-**sheep-counting protocol** when
+Call this a \((c,s)\)-**sheep-counting protocol** when
 
 \[
 \Pr[V=1\mid Q,\sigma^+,K]\ge c
@@ -382,7 +378,7 @@ For limited fakeability, give strategies a resource vector \(R(\sigma)\) and rec
 R(\sigma)\preceq b.
 \]
 
-The verifier can have a resource cost as well. Different problems may choose different resource coordinates; the definition does not privilege one of them.
+The verifier can have a resource cost as well. Different problems can use different resource coordinates; the definition does not privilege one of them.
 
 If
 
@@ -398,25 +394,23 @@ then acceptance gives the posterior bound
 \frac{c\rho}{c\rho+s(1-\rho)}.
 \]
 
-Two verifiers can therefore use the same visible trace and the same test and still rationally end with different confidence because they began with different knowledge of the prover.
+Two verifiers can therefore use the same visible trace and the same test and end with different confidence because they began with different knowledge of the prover.
 
-A **sheep-counting problem** is the problem of constructing such a protocol for a chosen cognitive predicate \(Q\): finding observations and a verifier for which the true and false histories are usefully separated, under an explicit model of what the verifier knows and what strategies are possible.
+I take a **sheep-counting problem** to be the problem of constructing such a protocol for a chosen cognitive predicate \(Q\): finding observations and a verifier for which the true and false histories are usefully separated, under an explicit model of what the verifier knows and what strategies are possible.
 
-Arithmetic gives a strong-looking instance. Falling asleep while counting sheep gives a weak one. Both belong because the definition is about evidence, not about how much mental work produced it.
+Arithmetic gives a strong-looking instance. Falling asleep while counting sheep gives a weak one. Neither is excluded because one happened to involve more mental effort.
 
 ## Constructing good sheep-counting problems
 
-The minimal definition says what I am willing to count as a sheep-counting problem. Finding a good one is a different problem.
-
-There are several ways to create a large separation between the true and false cases: natural side effects, unpredictable interaction with the environment, activities that exclude one another, or traces that are difficult to manufacture without the claimed history.
+The definition tells me what I am willing to call a sheep-counting problem, not how to find a good one. There are several ways to create a large separation between the true and false cases: natural side effects, unpredictable interaction with the environment, activities that exclude one another, or traces that are difficult to manufacture without the claimed history.
 
 ### Proof of work
 
-The easiest construction to reason about comes from computational complexity. I will call this family **proofs of work**. The factorization, monotone-subsequence, and empty-pentagon puzzles above are attempts at human proof of work: use fresh public input to force some online mental computation, then leave a witness that is cheaper to check.
+The easiest construction to reason about comes from computational complexity. I will call this family **proofs of work**. The factorization, monotone-subsequence, and empty-pentagon puzzles above are all attempts at human proof of work: use fresh public input to force some online mental computation, then leave a witness that is cheaper to check.
 
-Human computation has bounded channels. If producing an accepting trace after fresh input requires enough mental computation, a person who has not carried out the relevant cognitive activity may not have enough time or capacity to manufacture the same trace. This is one way to keep the false-case probability small.
+Human computation has bounded channels. If producing an accepting trace after fresh input requires enough mental computation, then a person who has not carried out the relevant cognitive activity may not have enough time or capacity to manufacture the same trace. This is one way to keep the false-case probability small.
 
-Fresh input limits what can be moved into preparation. Chess gets freshness from opponent moves; the party puzzles get it from the current arrangement of the people.
+Fresh input helps because it limits what can be moved into preparation. Chess gets freshness from opponent moves. The party puzzles get it from the current arrangement of the people.
 
 This is where Blum and Vempala's vocabulary is useful:
 
@@ -432,23 +426,21 @@ PREP is not free for a person. Precomputing many answers, retaining them, recogn
 
 A good computational construction has a lot of unavoidable \(\operatorname{PROC}\) and little \(\operatorname{VER}\), even after useful \(\operatorname{PREP}\). That asymmetry creates the probability gap.
 
-The factorization puzzle is the most literal attempt to get this shape from ordinary complexity theory, but its human costs are bad too. The monotone-subsequence puzzle is much more plausible as a human task. I still don't know whether a practiced person will find the witness in five seconds or five minutes; that is an empirical complexity question.
+The factorization puzzle is the most literal attempt to get this shape from ordinary complexity theory, and the human costs are terrible. The monotone-subsequence puzzle uses much smaller mental operations. What I do not know is whether a practiced person finds its witness in five seconds or five minutes. That is an empirical complexity question.
 
-Computational effort is one possible coordinate of \(R(\sigma)\). A computational construction works when realistic bounds on that coordinate keep the false-case probability low while verification stays cheap.
+Computational effort is one coordinate of \(R(\sigma)\). A computational construction works when realistic bounds on that coordinate keep the false-case probability low while verification stays cheap.
 
 ### Proof of space
 
-Work is not the only resource that can become visible. Guarding is hard to verify on a quiet night because alertness may leave no trace, so one trick is to give the guard something unpredictable to remember.
+Work is not the only resource that can leave evidence. Guarding is hard to verify on a quiet night because alertness may leave no trace, so one trick is to give the guard something unpredictable to remember.
 
-Show the guard a collection of fresh pictures, then later ask which pictures they saw. If the guard recalls them, that is evidence that the pictures occupied memory. I would call this a human **proof of space**: the resource is memory rather than computation.
+Show the guard a collection of fresh pictures, then later ask which pictures they saw. If the guard recalls them, that is evidence that the pictures occupied memory. I would call this a human **proof of space**. The resource is memory rather than computation.
 
 That still says little about whether the guard stayed alert during the rest of the shift. For that part of guarding, memory is the wrong resource.
 
 ### Proof of time
 
-To test vigilance over the whole shift, the verifier can sample the shift itself.
-
-The supervisor secretly chooses \(n\) random moments during the shift. At each chosen moment, a harmless test signal appears and the guard must signal immediately. The response can be trivial. The point is that the guard has to be alert **then**.
+To test vigilance over the whole shift, sample the shift itself. The supervisor secretly chooses \(n\) random moments. At each one, a harmless test signal appears and the guard must signal immediately. The response can be trivial; the point is that the guard has to be alert **then**.
 
 If a guard is alert for only a fraction \(f\) of the shift and the test times are independent and uniformly distributed, the chance that every test lands during an alert period is
 
@@ -456,43 +448,43 @@ If a guard is alert for only a fraction \(f\) of the shift and the test times ar
 f^n.
 \]
 
-A guard who sleeps through half of the shift passes all \(n\) tests with probability
+A guard who sleeps through half of the shift has probability
 
 \[
-2^{-n}.
+2^{-n}
 \]
 
-This is a genuine human **proof of time**. The verifier forces almost no computation and asks the guard to store almost nothing; instead, the verifier samples the interval. Passing many unpredictable spot checks is evidence that the claimed cognitive state covered much of the time.
+of passing all \(n\) tests because every test happened to miss the sleeping periods.
 
-Mackworth's 1948 clock experiment has a closely related setup: people watched for rare visual events over a long interval, and detection declined as the watch continued. The proof idea survives, but a real guard's vigilance will not stay constant over time.
+This is a human **proof of time**. The verifier is not forcing much computation and is not asking the guard to store much information. Instead, the verifier samples the interval. Passing many unpredictable spot checks is evidence that the claimed cognitive state covered much of the time.
 
-That also separates this construction from proof of work. A proof of work tries to force enough computation. A proof of time can make each response almost free and still become strong because the prover must remain available across the interval.
+Mackworth's 1948 clock experiment has a closely related setup: people watched for rare visual events over a long interval, and detection declined as the watch continued. The experiment does not change the proof idea, but it warns against treating a real guard's vigilance as constant over time.
 
-The same idea applies whenever the claim is that somebody maintained attention, monitored something, or kept a mental task active over time: unpredictable cheap probes can sample that persistence.
+This gives a clean distinction from proof of work. A proof of work tries to force enough computation. A proof of time can make each individual response almost free and still become strong because the prover must remain available across the interval. The same construction can test whether somebody maintained attention, monitored something, or kept a mental task active over time.
 
-A long sequential computation gives another possible meaning of proof of time, close to verifiable delay functions in cryptography. For humans, I understand that mostly as a special kind of proof of work. The random-time construction is more distinct because its difficulty comes from occupying time rather than performing many operations.
+A long sequential computation gives another possible meaning of proof of time, close to verifiable delay functions in cryptography. For humans, I currently understand that mostly as a special kind of proof of work. The random-time construction is more distinct because its difficulty comes from occupying time rather than performing many operations.
 
 ## Observation and intervention
 
 The guard tests make explicit something that has been present since arithmetic: the verifier can change the situation in order to create evidence.
 
-A protocol is **observational** when it only uses evidence that would have arisen anyway, and **interventional** when the verifier introduces exercises, probes, restrictions, or other events to make the hidden state visible.
+A protocol is **observational** when it only uses evidence that would have arisen anyway and **interventional** when the verifier introduces exercises, probes, restrictions, or other events to make the hidden state visible.
 
 Intervention is not a defect. Arithmetic works because I can give the prover fresh exercises. The random-time guard test works because the supervisor creates occasions on which vigilance has to become visible.
 
-The danger is interpretation. An intervention can change the property we care about, so evidence collected under a modified situation does not automatically answer a counterfactual question about what would have happened without the modification. The paradoxes below are two examples of that mistake.
+But an intervention can also change the property we care about. Evidence collected under a modified situation does not automatically answer a counterfactual question about what would have happened without the modification. That problem will reappear in the paradoxes.
 
 ## Does the theory explain anything?
 
 Having several constructions makes a more basic question hard to avoid: has any of this actually explained something, or have I only built a language flexible enough to redescribe the examples I started with?
 
-The arithmetic worksheet and the sleepy sheep counter now fit the same formal object. Quiet and eventful guard shifts differ because the environment changes which hidden histories can produce the visible trace. Positive and negative claims behave differently because one activity may leave traces that its complement cannot. Chess turns one kind of negative claim into positive evidence for an incompatible activity. Incentives and capacities, which initially looked like unrelated complications, both became uncertainty about the prover model. Intervention gives a common description of protocols that manufacture opportunities for evidence.
+The arithmetic worksheet and the sleepy sheep counter now fit the same formal object. Quiet and eventful guard shifts differ because the environment changes which hidden histories can produce the visible trace. Positive and negative claims behave differently because one activity may leave traces that its complement cannot. Chess suggests a route from positive evidence for one activity to negative evidence for an incompatible one. Incentives and capacities, which initially looked like unrelated complications, both became uncertainty about the prover model. The observational/interventional distinction also gives one way to describe protocols that actively manufacture opportunities for evidence.
 
 Those are promising unifications, but they are not automatically explanations. The quantities that matter most — the probabilities, the strategy sets, the resource model, and even the predicate \(Q\) — are largely supplied to the framework. If they can be chosen freely enough, almost any social story can be represented inside it.
 
 A theory need not predict all of human cognition to have content. If the definitions force consequences that were not separately assumed, or rule out protocols that looked possible before formalization, that would be evidence that something real has been captured.
 
-I do not think the question is settled. The next two sections give evidence in opposite directions.
+I do not think the question is settled. The next two sections are evidence in opposite directions.
 
 ## What the theory forces
 
@@ -500,7 +492,7 @@ I do not think the question is settled. The next two sections give evidence in o
 
 The party puzzles raise a sharper question. If the verifier does not supply a fresh challenge, how much unpredictability must the environment supply instead?
 
-Let a public environmental state \(Y\) become known during the interval, and let the prover answer with a trace \(T\). Let \(Q\) mean that the required computation happened after \(Y\) became known. In the response-only case, the prover can prepare candidate traces beforehand and release one later.
+Let a public environmental state \(Y\) become known during the interval, and let the prover answer with a trace \(T\). Let \(Q\) mean that the required computation happened after \(Y\) became known. Take the response-only case: the prover can prepare candidate traces beforehand and release one later.
 
 For each environmental state \(y\), define
 
@@ -538,7 +530,7 @@ C=\min\{|S|:B(S)\text{ contains every possible }y\}.
 
 The cover number is a combinatorial measure, not a claim that a human can exploit the cover cheaply. A table of a thousand answers may be useless if producing, remembering, recognizing, or searching it costs too much. The resource budget decides whether the precomputation attack is actually available.
 
-If the environment has at most \(N\) relevant states, choosing one accepting answer for each state gives
+If the environment has at most \(N\) relevant states, then choosing one accepting answer for each state gives
 
 \[
 C\le N.
@@ -563,11 +555,11 @@ then
 C\le 2^h.
 \]
 
-A large environmental state space by itself buys nothing if a small cover exists. One answer may work for many different states, which is why the cover number matters more than raw entropy.
+A large environmental state space by itself buys nothing if a small cover exists: one answer may work for many environmental states.
 
 The same point applies to self-selected puzzles. Letting the prover choose the puzzle after seeing the room can increase \(B(S)\) or shrink the cover needed for a successful attack. But searching through candidate puzzles and recognizing an easy one are part of the strategy cost. A thousand available puzzle families are not a thousand free chances.
 
-This theorem is specifically about response-only proofs of online computation. Falling asleep after counting sheep is different because sleepiness is caused by the activity rather than selected from a precomputed table.
+This theorem is about response-only proofs of online computation. Falling asleep after counting sheep is different because sleepiness is caused by the activity rather than selected from a precomputed table.
 
 ### Evidence composes multiplicatively
 
@@ -600,15 +592,15 @@ If every round contributes a conditional likelihood ratio of at least \(\lambda\
 L(E_1,\ldots,E_n)\ge\lambda^n.
 \]
 
-Independent repetition is the easy special case. Human repetition is more interesting because earlier rounds can change later ones. A guard gets tired. A puzzle solver learns the trick. A prover discovers what the verifier is testing. Each of those changes the later conditional likelihood ratios.
+Independent repetition is the easy special case. The human case is more interesting because earlier rounds can change later ones. A guard may become tired. A puzzle solver may learn the trick. A prover may infer what the verifier is testing. Then the later factors change, and repetition need not amplify at the same rate.
 
-The random-time guard construction is a clean example: under its simple model, each hidden check independently lands in an alert period with probability \(f\), giving the \(f^n\) term above. The monotone-subsequence puzzle points in the opposite direction: practice can make the false-case strategy better from one round to the next.
+The random-time guard construction is one clean example: under its simple model, each hidden check independently lands in an alert period with probability \(f\), giving the \(f^n\) term above. The monotone-subsequence puzzle points in the opposite direction: practice may make the false-case strategy better from one round to the next.
 
 ### More knowledge need not strengthen evidence
 
 **Claim.** The same observation can become weaker evidence after the verifier learns more about the prover.
 
-**Proof.** Let \(Q\) be the claim that somebody counted sheep for ten minutes, and let \(E\) be a yawn. Take
+**Proof.** Let \(Q\) be the claim that somebody counted sheep for ten minutes, and let \(E\) be a yawn. Suppose
 
 \[
 \Pr(E\mid Q,K_0)=0.8,
@@ -622,7 +614,7 @@ Then
 L(E\mid K_0)=8.
 \]
 
-Now the verifier learns that this person can yawn on command. Under new knowledge \(K_1\), take
+Now the verifier learns that this person can yawn on command. Under the new knowledge \(K_1\), take
 
 \[
 \Pr(E\mid Q,K_1)=0.8,
@@ -636,31 +628,31 @@ Then
 L(E\mid K_1)=1.6.
 \]
 
-The verifier knows more under \(K_1\), but the likelihood ratio is smaller. Therefore more background knowledge does not always strengthen the same evidence. \(\square\)
+The verifier knows more under \(K_1\), but the likelihood ratio is smaller. More background knowledge therefore does not always strengthen the same evidence. \(\square\)
 
-The same construction works on the capacity side. Learning that a particular person can combine chess with some supposedly competing activity can weaken old evidence against that activity.
+The same thing can happen on the capacity side. Learning that a particular person can combine chess with a supposedly competing activity can weaken old evidence against that activity.
 
-## Paradoxes of intervention
+## Paradoxes
 
-The results above are positive evidence that the framework has some internal content. The paradoxes provide a counterweight: the formal conclusion can be sound inside the model and still miss the social question that motivated the protocol.
+The theorems are positive evidence that the framework has some internal content. The paradoxes provide a counterweight: the formal conclusion can be sound inside the model while missing the real social question.
 
 ### Proving that he did not flirt is not proving that he would not flirt
 
-Let \(F\) be the claim that the boyfriend flirted during the interval, \(A\) the claim that he played the required chess, and \(E\) the chess record.
+Let \(F\) be the claim that the boyfriend flirted during the interval, let \(A\) be the claim that he played the required chess, and let \(E\) be the chess record.
 
-If the record perfectly establishes the chess activity,
+Suppose the record perfectly establishes the chess activity,
 
 \[
 \Pr(A\mid E,K)=1,
 \]
 
-and the verifier is certain that the required chess and flirting cannot coexist for this boyfriend,
+and the verifier is certain that the required chess and flirting cannot coexist for this boyfriend:
 
 \[
-\Pr(I_M(A,F)\mid E,K)=1,
+\Pr(I_M(A,F)\mid E,K)=1.
 \]
 
-then the incompatibility bound gives
+Then the incompatibility bound from above gives
 
 \[
 \Pr(\neg F\mid E,K)
@@ -677,7 +669,7 @@ Therefore
 
 Inside the sheep-counting theory, this is a perfect result: the chess record proves that he did not flirt during the interval.
 
-But the chess instruction is also an intervention. It removes some of the opportunity to flirt. The girlfriend may care about a different predicate. Let \(R\) mean:
+But the chess instruction is also an intervention: it removes some of the opportunity to flirt. The girlfriend may care about a different predicate. Let \(R\) mean:
 
 > He would refrain from flirting if he had the opportunity.
 
@@ -689,7 +681,7 @@ If both \(R\) and \(\neg R\) boyfriends comply with the chess instruction in the
 \Pr(E\mid\neg R,K).
 \]
 
-Its likelihood ratio for \(R\) is
+Its likelihood ratio for \(R\) is therefore
 
 \[
 L_R(E)=1.
@@ -701,7 +693,7 @@ The same intervention can therefore produce perfect evidence for the historical 
 
 ### A stronger guard test can make the guarding worse
 
-Let \(Q\) mean that the guard remains vigilant. A supervisor deliberately creates \(n\) test events that require a signal, and \(E_n\) is the event that the guard responds correctly to all \(n\).
+Let \(Q\) mean that the guard remains vigilant. A supervisor deliberately creates \(n\) test events that require a signal, and \(E_n\) means that the guard responds correctly to all \(n\).
 
 Let
 
@@ -732,35 +724,31 @@ L(E_n)=
 \left(\frac{a}{b}\right)^n.
 \]
 
-Because \(a/b\gt1\), more test events give stronger evidence for vigilance.
+Because \(a/b\gt1\), this grows strictly with \(n\). More test events give stronger evidence for vigilance.
 
-But the tests are interventions too. If each fake alarm or staged intrusion imposes a cost \(d>0\) on the actual guarding by occupying attention, creating alarm fatigue, or distracting from a real event, then the total imposed cost is
-
-\[
-nd.
-\]
+But every fake alarm or staged intrusion can also impose a cost \(d>0\) on the actual guarding by occupying the guard's attention, creating alarm fatigue, or distracting from a real event. The total imposed cost is \(nd\), which also grows with \(n\).
 
 Increasing \(n\) therefore makes the sheep-counting evidence better while making the guard's actual job worse. The formal ranking and the social ranking move in opposite directions.
 
-These paradoxes are not arguments against intervention. They show that an interventional protocol directly gives evidence about what happened under that intervention. Moving from there to a counterfactual disposition or to the quality of the underlying task takes another argument.
+These paradoxes are not an argument against intervention. They show why evidence gathered under an intervention must first be interpreted as evidence about what happened under that intervention. Moving from there to a counterfactual disposition or to the quality of the underlying task takes another argument.
 
 ## What I would try next
 
-The monotone-subsequence task is concrete enough to measure. For
+The monotone-subsequence task is concrete enough to start measuring the computational construction. For
 
 \[
 (k,n)=(4,10),\quad(5,17),\quad(6,26),
 \]
 
-one could reshuffle the same participants between rounds and measure solve time, errors, and learning. I especially want to know how the conditional likelihood ratio changes as the solver practices.
+one could reshuffle the same participants between rounds and measure solve time, errors, and learning. I would especially want to know how the conditional likelihood ratio changes as the solver practices.
 
-I would also look for other guaranteed ambient witnesses. Erdős-Szekeres and the empty-pentagon theorem give two very different examples already; there may be much better ones.
+I would also look for other guaranteed ambient witnesses. Erdős-Szekeres and the empty-pentagon theorem give two rather different examples already. There may be much better ones.
 
-The cover-number question has two empirical parts as well as a combinatorial one: how small a table covers much of the environmental distribution, and how expensive is that table for a person to prepare, retain, recognize, and search? The same measurements could tell us whether choosing among many puzzle families is actually cheaper than solving a fixed puzzle.
+The cover-number question now has two empirical parts as well as a combinatorial one: how small a table covers much of the environmental distribution, and how expensive is that table for a person to prepare, retain, recognize, and search? The same measurements could tell us whether choosing among many puzzle families is actually cheaper than solving a fixed puzzle.
 
 The broader experiments need not be computational. How much does sheep counting actually change the chance of yawning? Which events make a guard's vigilance visible? How much unpredictable information can a person retain well enough to pass a later audit? Which traces are easy to manufacture once the prover knows what the verifier will inspect?
 
-The random-time guard construction is easy to test too. Mackworth's results tell us that vigilance changes through a long watch, so I would measure how pass probability depends on the timing of the probes rather than only their number.
+The random-time guard construction is easy to test too. Mackworth's results suggest that the alert fraction will not stay constant through a long watch, so I would want to measure how the pass probability changes with the timing of the probes rather than only their number.
 
 For the person-model side, I would want measurements across people as well as within one person. How stable are incompatibilities? How much can be learned from a few dual-task observations? How quickly does practice change them? How stable are incentives across situations? How informative is population data about one particular prover?
 
@@ -768,9 +756,9 @@ The original question was simple:
 
 > What are you thinking about?
 
-Arithmetic gives one easy answer to the evidence version of that question. Counting sheep gives a much weaker one. The sleeping guard makes the hidden property vigilance over time. Chess gives an interactive trace. The party puzzles suggest that a person may even be able to arrange a provable line of thought without anybody issuing the challenge first.
+Arithmetic gives one easy answer to the evidence version of that question. Counting sheep gives a much weaker one. The sleeping guard makes the hidden property vigilance over time. Chess gives an interactive trace. The party puzzles suggest that a person can even arrange a provable line of thought without anybody issuing the challenge first.
 
-Computational hardness is one good way to create separation because human computation is bounded. The sleepy sheep counter shows that it is not the only one.
+Computational hardness is one way to create a large separation because human computation is bounded. It is not the only one; the sleepy sheep counter showed that from the beginning.
 
 What is common to all of them is not work. It is separation: something visible is distributed differently depending on what happened in the person's head.
 
