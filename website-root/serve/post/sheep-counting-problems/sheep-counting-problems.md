@@ -36,7 +36,10 @@ A few minutes later, I can return it like this:
 ...
 ```
 
-This gives a useful baseline. The exercises can be chosen fresh, the amount of work can be increased just by adding more of them, and the answers are easy to verify. Later examples lose one or more of these conveniences.
+Given that I did it promptly, and you did not catch me cheating, there shouldn't be much doubt that I was thinking about math for a while.
+
+This gives a useful baseline: The exercises can be chosen fresh, the amount of work can be increased (adding more of them), and the answers are easy to verify.
+Later examples lose one or more of these conveniences.
 
 ## Counting sheep
 
