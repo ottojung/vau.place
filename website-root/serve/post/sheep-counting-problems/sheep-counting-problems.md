@@ -36,10 +36,9 @@ A few minutes later, I can return it like this:
 ...
 ```
 
-Given that I did it promptly, and you did not catch me cheating, there shouldn't be much doubt that I was thinking about math for a while.
+Given that the sheet was fresh, I returned it promptly, and I had no outside help, there should not be much doubt that I was thinking about math for a while.
 
-This gives a useful baseline: The exercises can be chosen fresh, the amount of work can be increased (adding more of them), and the answers are easy to verify.
-Later examples lose one or more of these conveniences.
+This gives a useful baseline: the exercises can be chosen fresh, the amount of work can be increased by adding more of them, and the answers are easy to verify. Later examples lose one or more of these conveniences.
 
 ## Counting sheep
 
@@ -49,7 +48,7 @@ You could ask me:
 
 The task can begin and end entirely in my head. Nothing needs to be said or written down afterward.
 
-Yet, if I start yawning and fall asleep, that is some evidence that the sheep were there.
+Yet if I start yawning and fall asleep, that is some evidence that the sheep were there.
 
 ## The sleeping guard
 
@@ -97,9 +96,9 @@ But large-integer arithmetic is cumbersome to do mentally, and even checking the
 
 ### Six objects, including the empty spot
 
-A spatial version is much easier to state. With ten people standing in general position, there are always five whose convex hull contains no other guest. In less geometric language, five people surround a patch of the room with nobody else standing inside it.
+A spatial version is much easier to state. With ten people standing so that no three are exactly in a line, there are always five whose convex hull contains no other guest. In less geometric language, five people surround a patch of the room with nobody else standing inside it.
 
-Harborth's empty-pentagon theorem guarantees that such five people exist. The witness is only the five people; their positions show whether anyone else lies inside the pentagon.
+Harborth's empty-pentagon theorem guarantees that such a set of five exists. The witness is only the five people; their positions show whether anyone else lies inside the pentagon.
 
 This is much closer to the kind of mental task I want. The input is already in front of the prover, the answer is small, and verification is visual. What I do not know is how difficult the search is for a person who knows the trick.
 
@@ -129,19 +128,15 @@ That freedom creates a possible attack. After seeing the room, the prover can se
 
 ## What kind of theory is this?
 
-The examples now look quite unlike one another: arithmetic answers, yawning after sheep counting, a guard reacting to an intrusion, a record of chess games, and four or five people selected from a room.
+These examples barely look related: arithmetic answers, yawning, a guard's reaction, chess games, a geometric witness. The reason to group them is one common question: can something visible distinguish one hidden cognitive history from another?
 
-Putting them in one post does not make them a theory. The reason I suspect there may be one is a common shape: something happened in a person's head, the verifier did not see it directly, and something visible afterward may distinguish that history from another one. Sometimes the visible thing is deliberately produced; sometimes it is an accidental side effect. Sometimes a verifier supplies a challenge; sometimes the environment does.
+That seems enough to try a mathematical theory. I do not know how far it goes. Sheep counting already rules out one tempting simplification: the visible thing need not be a certificate. A yawn can still make one history more plausible than another.
 
-That raises a mathematical question: how can visible traces count as evidence about hidden cognitive histories?
-
-I do not know how much theory can be built from that question. Sheep counting does suggest one constraint. A clean certificate cannot be the basic object: yawning or falling asleep can make the claimed history more plausible even when there is nothing certificate-like to inspect.
-
-Evidence is broad enough to include both cases: something visible whose distribution changes depending on what happened in the person's head.
+So I will start with evidence rather than certificates.
 
 ## Evidence and probability
 
-Here \(Q\) is a claim about the person's hidden cognitive history, \(E\) is something visible afterward, and \(K\) is what the verifier already knows. One simple formalization of **evidence** is
+Here \(Q\) is a claim about the person's hidden cognitive history, \(E\) is something visible afterward, and \(K\) is what the verifier already knows. For now, the probabilities are taken under the verifier's current model of how the person behaves. One simple formalization of **evidence** is
 
 \[
 \Pr(E\mid Q,K)
@@ -168,7 +163,7 @@ If the verifier starts with
 
 Bayes' rule turns the likelihood ratio into posterior belief.
 
-A complication appears once the person knows what will count as evidence. They can try to produce it, suppress it, or imitate it. That makes strategy part of the evidence problem too.
+This is only a descriptive notion of evidence. It says that \(E\) favors \(Q\) under the verifier's current behavioral model; it does not yet say that \(E\) is hard for a person who knows the test to fake. That is where strategy enters.
 
 ## Incentives and strategies
 
@@ -178,12 +173,12 @@ Poor chess has the same problem. An attentive player can intentionally play badl
 
 Two standards seem useful here. Evidence that survives every deliberate strategy available to the prover is **strategy-independent**. Evidence that works only because some strategies are implausible under the prover's incentives is **incentive-dependent**. Signal detection theory has a narrower version of this distinction in its separation of sensitivity from response criterion, but here the reporting strategy can depend on arbitrary goals, including cooperating with thieves.
 
-For a set of possible strategies \(\Sigma\), the false-case success of an accepting event \(E\) is
+For the moment, fix one model of the prover and let \(\Sigma\) be the strategies that model allows. The false-case success of an accepting event \(E\) is
 
 \[
 s(E)=
 \sup_{\sigma\in\Sigma}
-\Pr(E\mid \neg Q,\sigma).
+\Pr(E\mid \neg Q,\sigma,K).
 \]
 
 If \(\Sigma\) contains every deliberate strategy the prover could use, this gives the strategy-independent standard. Restricting \(\Sigma\) according to what the prover is believed to want gives an incentive-dependent one.
@@ -193,7 +188,7 @@ Fakeability can also be graded. A strategy can carry a resource vector \(R(\sigm
 \[
 s_b(E)=
 \sup_{\substack{\sigma\in\Sigma\\R(\sigma)\preceq b}}
-\Pr(E\mid \neg Q,\sigma).
+\Pr(E\mid \neg Q,\sigma,K).
 \]
 
 Larger budgets admit more strategies, so \(s_b(E)\) can only grow. This does not decide whether \(E\) is evidence; the likelihood ratio already does that. The fakeability profile says how useful the evidence remains when somebody deliberately tries to imitate it. A yawn can be genuine evidence and still be very easy to fake.
@@ -220,7 +215,7 @@ What corresponding object could remain? I do not see one. Somebody who did solve
 
 then every trace available after non-\(A\) is also available after \(A\). No visible trace can directly certify \(\neg A\) against a person who is free to choose what to do afterward.
 
-Under this trace model, the asymmetry is structural: an activity can leave evidence while its absence leaves nothing.
+This is an obstruction to strategy-independent certification, not to every kind of evidence for a negative claim. Under an ordinary behavioral model, people who did not do \(A\) may still leave different traces. The point is that a strategic person who did \(A\) can imitate any trace in \(\mathcal T(\neg A)\).
 
 There is still an indirect route to a negative claim. Evidence for another activity during the same interval can count against \(A\) if the two activities cannot coexist.
 
@@ -246,15 +241,17 @@ That leaves one word doing a lot of work: **incompatible**.
 
 Making that word useful requires some model of what a person can do at the same time. A first approximation gives the mind a single time-varying capacity \(C(t)\): activities consume portions of one mental resource and cannot coexist when their combined demand is too large.
 
-That is too simple for the chess example. Two activities can collide because both need one particular channel while leaving other resources unused; another pair can coexist because they draw on different channels. A more flexible picture is a time-varying network
+That is too simple for the chess example. Activities can share some bottlenecks but not others, and the same activity may have more than one implementation. One way to represent that is a time-varying network
 
 \[
-G_t=(V,E,c_t),
+G_t=(U,\mathcal E,c_t),
 \]
 
-where edges are cognitive channels and \(c_t(e)\) is their capacity at time \(t\). For an activity \(A\), \(\mathcal F_A\) is the family of resource-use patterns that count as implementations of \(A\). Several activities can coexist when one implementation of each fits within all channel capacities.
+where the edges \(e\in\mathcal E\) are cognitive channels with capacities \(c_t(e)\). For an activity \(A\), \(\mathcal F_A\) is the family of resource-use patterns that count as implementations of \(A\). Several activities can coexist when one implementation of each fits within all channel capacities.
 
-For the chess argument to work in this model, every sufficiently successful way of playing the relevant chess games has to collide with every relevant way of doing the activity the girlfriend wants to exclude. Wickens' Multiple Resource Theory gives an empirical model of the same general phenomenon: tasks interfere more when they draw on the same cognitive resources.
+I do not mean this as a claim about the brain's literal wiring. The network is a bookkeeping device for shared bottlenecks and alternative implementations. Wickens' Multiple Resource Theory supports the more modest empirical premise that interference depends on which cognitive resources tasks share; it does not imply this particular graph model.
+
+For the chess argument to work, every sufficiently successful way of playing the relevant chess games has to collide with every relevant way of doing the activity the girlfriend wants to exclude.
 
 Even a plausible resource model can describe the wrong person.
 
@@ -302,9 +299,11 @@ The chess argument can fail because the record does not establish \(A\), because
 
 Population knowledge can supply a prior over models. Long familiarity, observation, and deliberate dual-task experiments can update it. Two verifiers can therefore see the same evidence and rationally reach different conclusions because they know different things about the person who produced it.
 
+There is one important order of operations here. The verifier is uncertain which model \(M\) describes the person, but the person acts according to their own actual abilities and incentives. A strategic false case should therefore average over the verifier's uncertainty about \(M\), while allowing the best strategy available within each possible \(M\).
+
 ## Forgetting the network
 
-For some questions, the detailed resource network may be more machinery than the argument needs. A coarser model can remember only which sets of activities can happen together; call this family \(\mathcal C\).
+The network itself is optional machinery. If a question only depends on which sets of activities can happen together, it is enough to keep the compatibility relation induced by the network. Call the family of compatible activity sets \(\mathcal C\).
 
 If a set of activities is possible, every subset is possible too, so \(\mathcal C\) is downward closed. Pairwise conflicts are not always enough: if three activities each use \(0.4\) units of one resource of capacity \(1\), every pair can coexist but all three cannot.
 
@@ -312,46 +311,55 @@ The compatible sets, or equivalently their minimal incompatible sets, can theref
 
 ## A minimal definition
 
-The pieces above support a minimal definition. A sheep-counting protocol has a time interval \(I\), a prover, a verifier with background knowledge \(K\), an external input history \(X\), a hidden cognitive history \(H\), and a visible trace \(T\). The target claim is
+The pieces above support a minimal definition. A sheep-counting protocol has a time interval \(I\), a prover, a verifier with background knowledge \(K\), an external input history \(X\), a hidden cognitive history \(H\), a visible trace \(T\), and a model space \(\mathcal M\). The target claim is
 
 \[
 Q(X,H).
 \]
 
-The protocol also has an intended or natural true-case behavior \(\sigma^+\), a family of prover models \(M\), and a verifier
+The verifier is
 
 \[
-V(X,T,K)\in\{0,1\}.
+V(X,T,K)\in\{0,1\},
 \]
 
-Each model \(M\) determines the false-case strategies \(\Sigma_M\) and the relevant resource constraints. The verifier's knowledge \(K\) determines how plausible the different models are.
+and each \(M\in\mathcal M\) determines a strategy set \(\Sigma_M\) and relevant resource costs. The verifier's knowledge induces \(\pi(M\mid K)\).
 
-A \((c,s)\)-**sheep-counting protocol** satisfies
+Under the intended true-case behavior \(\sigma^+\), completeness at least \(c\) means
 
 \[
-\Pr[V=1\mid Q,\sigma^+,K]\ge c
+\Pr[V=1\mid Q,\sigma^+,K]\ge c.
 \]
 
-and
+For the false case, the strategy-aware acceptance probability is
 
 \[
-\Pr[V=1\mid \neg Q,K]\le s,
+\mathbb E_{M\sim\pi(\cdot\mid K)}
+\left[
+\sup_{\sigma\in\Sigma_M}
+\Pr(V=1\mid \neg Q,M,\sigma,K)
+\right].
 \]
 
-with
+A \((c,s)\)-**sheep-counting protocol** has this quantity at most \(s\), with
 
 \[
 c\mathrel{\gt}s.
 \]
 
-The false-case probability averages over the verifier's uncertainty about \(M\) and lets the prover use the strategies each model admits. A strategy-independent proof gives every model every deliberate strategy the prover could use; an incentive-dependent proof restricts those strategies according to the verifier's model of the prover.
+The order matters. The verifier averages over uncertainty about what kind of person they face; within each possible model, the false prover gets the best strategy that model permits. A strategy-independent protocol lets \(\Sigma_M\) contain every deliberate strategy available to that person. An incentive-dependent protocol restricts \(\Sigma_M\) according to the verifier's model of what the person would actually be willing to do.
 
 The inequality \(c\gt s\) is intentionally weak. It says only that acceptance favors the claimed history. The size of the gap, the posterior it produces, and the fakeability profile say whether the evidence is useful. Randomness in the environment and verifier, natural variation in human behavior, and uncertainty about the person's abilities or intentions can all enter these probabilities.
 
-For a resource vector \(R(\sigma)\), the **fakeability profile** \(s(b)\) restricts false-case strategies to
+For a resource budget \(b\), the model-aware **fakeability profile** is
 
 \[
-R(\sigma)\preceq b.
+s_K(b)=
+\mathbb E_{M\sim\pi(\cdot\mid K)}
+\left[
+\sup_{\substack{\sigma\in\Sigma_M\\R_M(\sigma)\preceq b}}
+\Pr(V=1\mid \neg Q,M,\sigma,K)
+\right].
 \]
 
 The resource coordinates depend on the problem.
@@ -382,9 +390,11 @@ The definition is deliberately permissive: weak evidence still counts as evidenc
 
 Several constructions can create a useful separation between true and false histories. Natural side effects can do it; so can unpredictable interaction with the environment, incompatible activities, or traces that are difficult to manufacture without the claimed history.
 
+The names **proof of work**, **proof of space**, and **proof of time** are analogies to computer-security terminology. Here they name the resource that creates the separation; these human protocols are not meant as literal instances of the corresponding cryptographic definitions.
+
 ### Proof of work
 
-The factorization, empty-pentagon, and monotone-subsequence puzzles are attempts at human **proof of work**. Fresh public input forces some online mental computation, and a cheaper witness remains afterward.
+The factorization, empty-pentagon, and monotone-subsequence puzzles are attempts at human **proof of work** in this sense. Fresh public input forces some online mental computation, and a cheaper witness remains afterward.
 
 Human computation has bounded channels. If an accepting trace after fresh input requires enough mental computation, a person who did not carry out the relevant activity may not have enough time or capacity to manufacture the same trace. Fresh input matters because it limits how much work can move into preparation: chess gets freshness from opponent moves, while the party puzzles get it from the current arrangement of the people.
 
@@ -408,7 +418,7 @@ Computational effort is one coordinate of \(R(\sigma)\). A computational constru
 
 Work is not the only resource that can leave evidence. Guarding is hard to verify on a quiet night because alertness may leave no trace. A supervisor could instead show the guard a collection of fresh pictures and later ask which pictures they saw.
 
-Successful recall is evidence that the pictures occupied memory. I call this a human **proof of space**: the resource is memory rather than computation.
+Successful recall is evidence that the pictures occupied memory. In the analogy above, this is a human **proof of space**: the resource is memory rather than computation.
 
 That says little about whether the guard stayed alert during the rest of the shift. For whole-shift vigilance, memory is the wrong resource.
 
@@ -430,7 +440,7 @@ A guard who sleeps through half the shift has probability
 
 of passing all \(n\) tests because every test happened to miss the sleeping periods.
 
-I call this a human **proof of time**. It requires little computation and little storage. Its strength comes from sampling the interval: many unpredictable spot checks are evidence that the claimed cognitive state covered much of the time.
+In the same analogy, this is a human **proof of time**. It requires little computation and little storage. Its strength comes from sampling the interval: many unpredictable spot checks are evidence that the claimed cognitive state covered much of the time.
 
 Mackworth's 1948 clock experiment found that detection declined during prolonged watches, so a real guard's alert fraction will not stay constant through the shift.
 
@@ -462,7 +472,7 @@ What would make me more confident is if the definitions forced consequences or r
 
 The party puzzles suggest one place where the formalism does force something. Without a fresh challenge from the verifier, how much unpredictability has to come from the environment?
 
-A public environmental state \(Y\) becomes known during the interval, and the prover answers with a trace \(T\). The claim \(Q\) is that the required computation happened after \(Y\) became known. In the response-only case, candidate traces can be prepared beforehand and released later.
+For this result, fix a prover model and write \(s(b)\) for its resource-bounded false-case success. A public environmental state \(Y\) becomes known during the interval, and the prover answers with a trace \(T\). The claim \(Q\) is that the required computation happened after \(Y\) became known. In the response-only case, candidate traces can be prepared beforehand and released later.
 
 For each environmental state \(y\),
 
@@ -500,20 +510,7 @@ C=\min\{|S|:B(S)\text{ contains every possible }y\}.
 
 The cover number is combinatorial. It does not say that a human can exploit the cover cheaply. A table of a thousand answers may be useless if producing, remembering, recognizing, or searching it costs too much. The resource budget decides whether the precomputation attack is actually available.
 
-If the environment has at most \(N\) relevant states, then \(C\le N\). Equivalently, if
-
-\[
-H_0(Y\mid\operatorname{PREP})=
-\log_2|\operatorname{supp}(Y\mid\operatorname{PREP})|
-\]
-
-is at most \(h\), then
-
-\[
-C\le 2^h.
-\]
-
-A large environmental state space buys nothing by itself if one answer can cover many states.
+A large environmental state space by itself buys nothing if one answer can cover many states.
 
 Self-selected puzzles have the same issue. Choosing the puzzle after seeing the room can increase \(B(S)\) or shrink the needed cover, but searching through candidate puzzles and recognizing an easy one are part of the strategy cost. A thousand available puzzle families are not a thousand free chances.
 
