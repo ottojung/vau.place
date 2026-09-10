@@ -163,6 +163,16 @@ If the verifier starts with
 
 Bayes' rule turns the likelihood ratio into posterior belief.
 
+For several observations, likelihood ratios factor into conditional ones:
+
+\[
+L(E_1,\ldots,E_n)=\prod_{i=1}^n
+\frac{\Pr(E_i\mid E_{<i},Q,K)}
+     {\Pr(E_i\mid E_{<i},\neg Q,K)}.
+\]
+
+This is just the probability chain rule; it does not require independence. It also does not, by itself, say that repeated tests remain hard for a prover who sees earlier rounds and adapts.
+
 This is only a descriptive notion of evidence. It says that \(E\) favors \(Q\) under the verifier's current behavioral model; it does not yet say that \(E\) is hard for a person who knows the test to fake. That is where strategy enters.
 
 ## Incentives and strategies
@@ -170,6 +180,8 @@ This is only a descriptive notion of evidence. It says that \(E\) favors \(Q\) u
 An intruder crosses the yard and the guard does not raise the alarm. I would normally take the silence as evidence that the guard was not paying attention. But an attentive guard can deliberately stay silent; perhaps the guard is in it with the thieves.
 
 Poor chess has the same problem. An attentive player can intentionally play badly. Someone who knows that yawning will be interpreted as evidence can yawn on purpose.
+
+Delegation is another false strategy. A chess record shows that games happened, but not by itself that this boyfriend played them; a friend could play on his behalf. Any protocol that cares who did the work needs enough provenance to make impersonation or outsourcing unavailable, expensive, or implausible.
 
 Two standards seem useful here. Evidence that survives every deliberate strategy available to the prover is **strategy-independent**. Evidence that works only because some strategies are implausible under the prover's incentives is **incentive-dependent**. Signal detection theory has a narrower version of this distinction in its separation of sensitivity from response criterion, but here the reporting strategy can depend on arbitrary goals, including cooperating with thieves.
 
@@ -217,11 +229,11 @@ then every trace available after non-\(A\) is also available after \(A\). No vis
 
 This is an obstruction to strategy-independent certification, not to every kind of evidence for a negative claim. Under an ordinary behavioral model, people who did not do \(A\) may still leave different traces. The point is that a strategic person who did \(A\) can imitate any trace in \(\mathcal T(\neg A)\).
 
-There is still an indirect route to a negative claim. Evidence for another activity during the same interval can count against \(A\) if the two activities cannot coexist.
+The inclusion also says what an escape has to look like: find a trace that \(A\) cannot reproduce. One way is to leave evidence of another activity that could not have happened alongside \(A\). Time exclusivity is one source of such incompatibility, but not the only one.
 
 ## Proving something incompatible instead
 
-One workaround is to replace direct evidence for non-\(B\) with positive evidence for some activity \(A\) that cannot coexist with \(B\):
+For a claim that activity \(B\) did not happen, evidence that activity \(A\) did happen can count against \(B\) when the two cannot coexist:
 
 \[
 \text{evidence for }A
@@ -235,25 +247,29 @@ This is the role chess was playing for the girlfriend. Chess was not the final f
 
 The strategy problem has not disappeared. The chess record still has to be evidence that he really played under her model of his possible strategies. What changes is the negative claim: instead of looking for a trace of non-flirting, she can look for evidence of chess plus a reason the two activities could not coexist.
 
+The obstruction and the workaround are therefore two sides of the same question: which traces remain possible under each hidden history?
+
 That leaves one word doing a lot of work: **incompatible**.
 
 ## Cognitive resources
 
-Making that word useful requires some model of what a person can do at the same time. A first approximation gives the mind a single time-varying capacity \(C(t)\): activities consume portions of one mental resource and cannot coexist when their combined demand is too large.
+The weakest model needed here is just a family \(\mathcal C\) of sets of activities that a person can perform together. If a set of activities is possible, every subset is possible too, so \(\mathcal C\) is downward closed.
 
-That is too simple for the chess example. Activities can share some bottlenecks but not others, and the same activity may have more than one implementation. One way to represent that is a time-varying network
+Pairwise compatibility is not always enough. If three activities each use \(0.4\) units of one resource of capacity \(1\), every pair can coexist but all three cannot. The compatible sets, or equivalently their minimal incompatible sets, can represent this without committing to a particular theory of cognitive resources.
+
+Sometimes a more structured model helps explain why a compatibility pattern arises. One possibility is a time-varying resource network
 
 \[
 G_t=(U,\mathcal E,c_t),
 \]
 
-where the edges \(e\in\mathcal E\) are cognitive channels with capacities \(c_t(e)\). For an activity \(A\), \(\mathcal F_A\) is the family of resource-use patterns that count as implementations of \(A\). For example, the same task might have a verbal implementation and a visual one; two activities are compatible if some choice of implementations keeps every shared bottleneck within capacity.
+where the edges \(e\in\mathcal E\) are cognitive channels with capacities \(c_t(e)\). For an activity \(A\), \(\mathcal F_A\) is the family of resource-use patterns that count as implementations of \(A\). A collection of activities belongs to \(\mathcal C\) when some choice of implementations fits within all relevant capacities. The same task might, for example, have a verbal implementation and a visual one.
 
-I do not mean this as a claim about the brain's literal wiring. The network is a bookkeeping device for shared bottlenecks and alternative implementations. Wickens' Multiple Resource Theory supports the more modest empirical premise that interference depends on which cognitive resources tasks share; it does not imply this particular graph model.
+I do not mean this as a claim about the brain's literal wiring. The network is one bookkeeping device for shared bottlenecks and alternative implementations. Wickens' Multiple Resource Theory supports the more modest empirical premise that interference depends on which cognitive resources tasks share; it does not imply this particular graph model.
 
-For the chess argument to work, every sufficiently successful way of playing the relevant chess games has to collide with every relevant way of doing the activity the girlfriend wants to exclude.
+For the chess argument to work, every relevant way of playing the required chess has to exclude every relevant way of doing the activity the girlfriend wants to rule out. If one plausible implementation allows both, the incompatibility argument fails.
 
-Even a plausible resource model can describe the wrong person.
+Even a plausible compatibility model can describe the wrong person.
 
 ## Two ways to misjudge a person
 
@@ -267,7 +283,7 @@ Chess needs both pieces. The girlfriend needs some idea of what strategies her b
 
 ## Uncertain models of the person
 
-Both uncertainties fit into one prover model \(M\). It contains a strategy set \(\Sigma_M\), describing which strategies are admitted in the analysis, and a resource model \(G_M\), describing which activities the person can perform together. For a strategy-independent analysis, \(\Sigma_M\) can include every deliberate strategy available to that person; an incentive-dependent analysis can narrow it according to what their incentives make plausible. The verifier's background knowledge \(K\) induces a distribution
+Both uncertainties fit into one prover model \(M\). It contains a strategy set \(\Sigma_M\), describing which strategies are admitted in the analysis, a compatibility family \(\mathcal C_M\), describing which activities the person can perform together, and whatever finer resource costs the protocol needs. For a strategy-independent analysis, \(\Sigma_M\) can include every deliberate strategy available to that person; an incentive-dependent analysis can narrow it according to what their incentives make plausible. The verifier's background knowledge \(K\) induces a distribution
 
 \[
 \pi(M\mid K)
@@ -275,7 +291,7 @@ Both uncertainties fit into one prover model \(M\). It contains a strategy set \
 
 over models that still look plausible for this person.
 
-Evidence that a guard is cooperating with thieves changes the incentive part. Repeatedly watching somebody write a manuscript while giving a lecture changes the resource part. More knowledge can even weaken old evidence: learning that somebody can yawn on command makes the same yawn less informative about sheep counting, while learning that somebody can combine two supposedly incompatible activities weakens the exclusion argument.
+Evidence that a guard is cooperating with thieves changes the incentive part. Repeatedly watching somebody write a manuscript while giving a lecture changes the capacity part. More knowledge can even weaken old evidence: learning that somebody can yawn on command makes the same yawn less informative about sheep counting, while learning that somebody can combine two supposedly incompatible activities weakens the exclusion argument.
 
 If \(E\) is evidence that activity \(A\) happened, and \(I_M(A,B)\) is the statement that \(A\) and \(B\) cannot coexist for a person described by \(M\), the relevant probabilities are
 
@@ -300,14 +316,6 @@ The chess argument can fail because the record does not establish \(A\), because
 Population knowledge can supply a prior over models. Long familiarity, observation, and deliberate dual-task experiments can update it. Two verifiers can therefore see the same evidence and rationally reach different conclusions because they know different things about the person who produced it.
 
 There is one important order of operations here. The verifier is uncertain which model \(M\) describes the person, but the person acts according to their own actual abilities and incentives. A strategic false case should therefore average over the verifier's uncertainty about \(M\), while allowing the best strategy available within each possible \(M\).
-
-## Forgetting the network
-
-The network itself is optional machinery. If a question only depends on which sets of activities can happen together, it is enough to keep the compatibility relation induced by the network. Call the family of compatible activity sets \(\mathcal C\).
-
-If a set of activities is possible, every subset is possible too, so \(\mathcal C\) is downward closed. Pairwise conflicts are not always enough: if three activities each use \(0.4\) units of one resource of capacity \(1\), every pair can coexist but all three cannot.
-
-The compatible sets, or equivalently their minimal incompatible sets, can therefore replace the detailed network when routing and timing do not matter. Under uncertainty, the verifier can have a distribution over those coarser objects instead.
 
 ## A minimal definition
 
@@ -442,6 +450,8 @@ of passing all \(n\) tests because every test happened to miss the sleeping peri
 
 In the same analogy, this is a human **proof of time**. It requires little computation and little storage. Its strength comes from sampling the interval: many unpredictable spot checks are evidence that the claimed cognitive state covered much of the time.
 
+A deployed cousin already exists in railways. Locomotive alerter and deadman controls require the operator to respond or maintain contact, and can trigger braking when that response is missing. Their purpose is safety rather than proof, and their timing need not be secret, but the same basic idea is present: continued availability is tested through responses spread over time.
+
 Mackworth's 1948 clock experiment found that detection declined during prolonged watches, so a real guard's alert fraction will not stay constant through the shift.
 
 Proof of work and proof of time get their difficulty from different places. Proof of work forces enough computation. This proof of time can make each individual response almost free while requiring availability across the interval. The same construction could apply to sustained attention, monitoring, or another mental task that has to remain active over time.
@@ -510,44 +520,38 @@ C=\min\{|S|:B(S)\text{ contains every possible }y\}.
 
 The cover number is combinatorial. It does not say that a human can exploit the cover cheaply. A table of a thousand answers may be useless if producing, remembering, recognizing, or searching it costs too much. The resource budget decides whether the precomputation attack is actually available.
 
+This resembles classical time-memory tradeoffs in cryptanalysis, such as Hellman's: expensive precomputation and stored tables can buy cheaper online search. The cover number is a different object; it asks how many prepared responses suffice across environmental states.
+
 A large environmental state space by itself buys nothing if one answer can cover many states.
 
 Self-selected puzzles have the same issue. Choosing the puzzle after seeing the room can increase \(B(S)\) or shrink the needed cover, but searching through candidate puzzles and recognizing an easy one are part of the strategy cost. A thousand available puzzle families are not a thousand free chances.
 
 The theorem applies to response-only proofs of online computation. Falling asleep after counting sheep is different because the visible side effect is caused by the activity rather than selected from a precomputed table.
 
-### Evidence composes multiplicatively
+### Repetition can survive an adaptive prover
 
-Repeated observations can strengthen evidence, although for people the repetitions can also change one another.
+Repeated tests are useful only while earlier rounds do not make later ones easy to fake. The relevant bound therefore has to hold after everything the prover has already seen.
 
-For successive observations \(E_1,\ldots,E_n\), with \(E_{<i}\) denoting everything observed before round \(i\), the joint likelihood ratio is
-
-\[
-L(E_1,\ldots,E_n)
-=
-\prod_{i=1}^n
-\frac{\Pr(E_i\mid E_{<i},Q,K)}
-     {\Pr(E_i\mid E_{<i},\neg Q,K)}.
-\]
-
-**Proof.** The probability chain rule factors the numerator and denominator of
+Fix a prover model \(M\). In round \(i\), let \(A_i\) be the event that the verifier accepts that round, and let \(H_{<i}\) contain the complete history visible before it: previous challenges, responses, outcomes, and anything else the prover can use. Suppose that after every history \(h_{<i}\) in which the previous rounds were accepted, every false-case continuation strategy allowed by \(M\) satisfies
 
 \[
-\frac{\Pr(E_1,\ldots,E_n\mid Q,K)}
-     {\Pr(E_1,\ldots,E_n\mid\neg Q,K)}.
+\Pr(A_i\mid H_{<i}=h_{<i},\neg Q,M,\sigma,K)\le s_i.
 \]
 
-Dividing the two products term by term gives the expression above. \(\square\)
-
-If every round contributes a conditional likelihood ratio of at least \(\lambda\gt1\), then
+**Claim.** Every adaptive false strategy then satisfies
 
 \[
-L(E_1,\ldots,E_n)\ge\lambda^n.
+\Pr(A_1\cap\cdots\cap A_n\mid\neg Q,M,\sigma,K)
+\le\prod_{i=1}^n s_i.
 \]
 
-Independent repetition is the easy special case. For humans, earlier rounds can change later ones. A guard becomes tired. A puzzle solver learns the trick. A prover may infer what the verifier is testing. The later factors then change, so repetition need not amplify at the same rate.
+**Proof.** Fix an adaptive false strategy \(\sigma\). Conditional on the previous rounds being accepted, the probability of accepting round \(i\) is an average over the possible histories \(h_{<i}\). Every term in that average is at most \(s_i\), so the conditional probability is at most \(s_i\). Multiplying these conditional probabilities gives the bound. \(\square\)
 
-The random-time guard construction gives a clean case: each hidden check independently lands in an alert period with probability \(f\), producing the \(f^n\) term above. The party puzzles can move in the opposite direction as practice improves the false-case strategy from one round to the next.
+The same argument works for completeness in the other direction: if the intended true-case behavior has conditional acceptance at least \(c_i\) after every accepted history, then all \(n\) rounds are accepted with probability at least \(\prod_i c_i\).
+
+Independence is unnecessary, and adaptation is already included. Fatigue, practice, and learning the verifier's strategy matter because they change the later conditional bounds. If practice makes round \(i\) easier to fake, then \(s_i\) rises and amplification weakens.
+
+The random-time guard construction is a clean special case. If, whatever previous probes revealed, a non-vigilant guard is alert at the next hidden probe with probability at most \(f\), then the chance of passing all \(n\) probes is at most \(f^n\). The party puzzles can move in the opposite direction as practice improves the false-case strategy from one round to the next.
 
 ## Paradoxes
 
@@ -573,9 +577,9 @@ then
 
 \[
 \Pr(\neg F\mid E,K)
-\ge
+\;\ge\;
 \Pr(A\wedge I_M(A,F)\mid E,K)
-=1,
+\;=1,
 \]
 
 so
@@ -593,9 +597,7 @@ But the chess instruction is also an intervention: it removes some of the opport
 If both \(R\) and \(\neg R\) boyfriends comply with the chess instruction in the same way, and chess removes the opportunity to flirt, then
 
 \[
-\Pr(E\mid R,K)
-=
-\Pr(E\mid\neg R,K),
+\Pr(E\mid R,K)=\Pr(E\mid\neg R,K),
 \]
 
 so
@@ -604,7 +606,7 @@ so
 L_R(E)=1.
 \]
 
-The same intervention can therefore give perfect evidence for “he did not flirt” and no evidence for “he would not flirt if free to do so.”
+The same intervention can therefore give perfect evidence for “he did not flirt” and no evidence for “he would not flirt if free to do so.” She can become certain about the historical fact precisely by changing the situation whose disposition she actually wanted to learn about.
 
 ### A stronger guard test can make the guarding worse
 
@@ -665,5 +667,7 @@ What is common to all of them is not work. It is separation: something visible i
 - Christopher D. Wickens, [*Multiple Resources and Mental Workload*](https://doi.org/10.1518/001872008X288394), *Human Factors* 50(3), 449–455, 2008.
 - Giuseppe Ateniese, Ilario Bonacina, Antonio Faonio, and Nicola Galesi, [*Proofs of Space: When Space Is of the Essence*](https://eprint.iacr.org/2013/805).
 - Dan Boneh, Joseph Bonneau, Benedikt Bünz, and Ben Fisch, [*Verifiable Delay Functions*](https://eprint.iacr.org/2018/601).
+- Martin E. Hellman, [*A Cryptanalytic Time-Memory Trade-Off*](https://doi.org/10.1109/TIT.1980.1056220), *IEEE Transactions on Information Theory* 26(4), 401–406, 1980.
+- [49 CFR § 238.237, *Automated monitoring*](https://www.law.cornell.edu/cfr/text/49/238.237), requiring alerter or deadman controls on covered passenger locomotives.
 - Paul Erdős and George Szekeres, the monotone subsequence theorem.
 - Heiko Harborth, [*Konvexe Fünfecke in ebenen Punktmengen*](https://doi.org/10.5169/seals-32945), *Elemente der Mathematik* 33(5), 116–118, 1978.
