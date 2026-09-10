@@ -173,7 +173,7 @@ Poor chess has the same problem. An attentive player can intentionally play badl
 
 Two standards seem useful here. Evidence that survives every deliberate strategy available to the prover is **strategy-independent**. Evidence that works only because some strategies are implausible under the prover's incentives is **incentive-dependent**. Signal detection theory has a narrower version of this distinction in its separation of sensitivity from response criterion, but here the reporting strategy can depend on arbitrary goals, including cooperating with thieves.
 
-For the moment, fix one model of the prover and let \(\Sigma\) be the strategies that model allows. The false-case success of an accepting event \(E\) is
+For the moment, fix one model of the prover and let \(\Sigma\) be the strategies admitted by that model. The false-case success of an accepting event \(E\) is
 
 \[
 s(E)=
@@ -181,7 +181,7 @@ s(E)=
 \Pr(E\mid \neg Q,\sigma,K).
 \]
 
-If \(\Sigma\) contains every deliberate strategy the prover could use, this gives the strategy-independent standard. Restricting \(\Sigma\) according to what the prover is believed to want gives an incentive-dependent one.
+For a strategy-independent standard, \(\Sigma\) contains every deliberate strategy the prover could use. For an incentive-dependent one, \(\Sigma\) can be restricted according to what the prover is believed to be willing to do.
 
 Fakeability can also be graded. A strategy can carry a resource vector \(R(\sigma)\): time, attention, memory, preparation, physical effort, coordination with other people, or whatever matters in the problem. Under resource budget \(b\),
 
@@ -247,7 +247,7 @@ That is too simple for the chess example. Activities can share some bottlenecks 
 G_t=(U,\mathcal E,c_t),
 \]
 
-where the edges \(e\in\mathcal E\) are cognitive channels with capacities \(c_t(e)\). For an activity \(A\), \(\mathcal F_A\) is the family of resource-use patterns that count as implementations of \(A\). Several activities can coexist when one implementation of each fits within all channel capacities.
+where the edges \(e\in\mathcal E\) are cognitive channels with capacities \(c_t(e)\). For an activity \(A\), \(\mathcal F_A\) is the family of resource-use patterns that count as implementations of \(A\). For example, the same task might have a verbal implementation and a visual one; two activities are compatible if some choice of implementations keeps every shared bottleneck within capacity.
 
 I do not mean this as a claim about the brain's literal wiring. The network is a bookkeeping device for shared bottlenecks and alternative implementations. Wickens' Multiple Resource Theory supports the more modest empirical premise that interference depends on which cognitive resources tasks share; it does not imply this particular graph model.
 
@@ -267,7 +267,7 @@ Chess needs both pieces. The girlfriend needs some idea of what strategies her b
 
 ## Uncertain models of the person
 
-Both uncertainties fit into one prover model \(M\). It contains a strategy model \(\Sigma_M\), describing which actions are plausible under the person's incentives, and a resource model \(G_M\), describing which activities they can perform together. The verifier's background knowledge \(K\) induces a distribution
+Both uncertainties fit into one prover model \(M\). It contains a strategy set \(\Sigma_M\), describing which strategies are admitted in the analysis, and a resource model \(G_M\), describing which activities the person can perform together. For a strategy-independent analysis, \(\Sigma_M\) can include every deliberate strategy available to that person; an incentive-dependent analysis can narrow it according to what their incentives make plausible. The verifier's background knowledge \(K\) induces a distribution
 
 \[
 \pi(M\mid K)
