@@ -181,8 +181,6 @@ An intruder crosses the yard and the guard does not raise the alarm. I would nor
 
 Poor chess has the same problem. An attentive player can intentionally play badly. Someone who knows that yawning will be interpreted as evidence can yawn on purpose.
 
-Delegation is another false strategy. A chess record shows that games happened, but not by itself that this boyfriend played them; a friend could play on his behalf. Any protocol that cares who did the work needs enough provenance to make impersonation or outsourcing unavailable, expensive, or implausible.
-
 Two standards seem useful here. Evidence that survives every deliberate strategy available to the prover is **strategy-independent**. Evidence that works only because some strategies are implausible under the prover's incentives is **incentive-dependent**. Signal detection theory has a narrower version of this distinction in its separation of sensitivity from response criterion, but here the reporting strategy can depend on arbitrary goals, including cooperating with thieves.
 
 For the moment, fix one model of the prover and let \(\Sigma\) be the strategies admitted by that model. The false-case success of an accepting event \(E\) is
@@ -606,7 +604,7 @@ so
 L_R(E)=1.
 \]
 
-The same intervention can therefore give perfect evidence for “he did not flirt” and no evidence for “he would not flirt if free to do so.” She can become certain about the historical fact precisely by changing the situation whose disposition she actually wanted to learn about.
+The same intervention can therefore give perfect evidence for “he did not flirt” and no evidence for “he would not flirt if free to do so.”
 
 ### A stronger guard test can make the guarding worse
 
