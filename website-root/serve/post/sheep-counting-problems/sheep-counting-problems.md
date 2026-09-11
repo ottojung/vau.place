@@ -251,7 +251,7 @@ G=(V,E),
 
 where each channel \(e\in E\) has a time-dependent capacity \(c_e(t)\).
 
-An implementation \(f\) of an activity assigns non-negative load \(f_e(t)\) to the channels, subject to whatever additional constraints define that activity. Different implementations may route the same activity through different channels. Several activities can occur together when implementations can be chosen such that
+An implementation \(f\) of an activity assigns non-negative load \(f_e(t)\) to the channels. The activity model supplies the routing, precedence, release-time, and other constraints that make such a load assignment a valid implementation. Different implementations may route the same activity through different channels. Several activities can occur together when implementations can be chosen such that
 
 \[
 \sum_j f^{(j)}_e(t)
@@ -271,19 +271,33 @@ If all quantitative information is forgotten and we remember only which sets of 
 
 The flow model gives a direct way to manufacture negative evidence.
 
-Fix a person-model \(N\), an interval \(I\), and a set \(D\) of channel-time locations that acts as a bottleneck. Write
+Fix a person-model \(N\), an interval \(I\), and a bottleneck region
+
+\[
+D\subseteq E\times I.
+\]
+
+Its total capacity is
 
 \[
 C_N(D)
+=
+\int_I
+\sum_{e:(e,t)\in D}
+c_e(t)\,dt.
 \]
 
-for the total capacity available through \(D\) during the interval. For an implementation \(f\), write
+For an implementation \(f\), its load on the same region is
 
 \[
 \ell_D(f)
+=
+\int_I
+\sum_{e:(e,t)\in D}
+f_e(t)\,dt.
 \]
 
-for the total load it places on that same bottleneck.
+In discrete time, the integrals are sums.
 
 Let \(B\) be the activity we want to rule out. Its unavoidable load on \(D\) is
 
@@ -303,7 +317,7 @@ w_N(\lambda,\tau;D)
 \ell_D(f).
 \]
 
-This is the amount of bottleneck capacity that good challenge performance certifies was used, according to the model.
+This is the amount of bottleneck capacity that good challenge performance certifies was used, according to the model. The infima over implementations make both quantities insensitive to which route the person actually uses through the network.
 
 ### Saturation theorem
 
@@ -319,7 +333,7 @@ C_N(D),
 
 then passing the challenge and performing \(B\) during the interval are incompatible.
 
-**Proof.** If both happened, there would be a passing challenge implementation \(f\) and an implementation \(g\) of \(B\) that coexist. Capacity feasibility implies
+**Proof.** If both happened, there would be a passing challenge implementation \(f\) and an implementation \(g\) of \(B\) that coexist. Pointwise capacity feasibility, summed over the channel-time region \(D\), gives
 
 \[
 \ell_D(f)+\ell_D(g)
@@ -359,20 +373,14 @@ This is what the girlfriend needs from a scalable chess-like game. The game need
 
 ## Uncertain networks turn proof into evidence
 
-The girlfriend does not know her boyfriend's cognitive network exactly. Let
-
-\[
-N\sim\mu
-\]
-
-represent her uncertainty over plausible person-models.
+The girlfriend does not know her boyfriend's cognitive network exactly. Let \(\mu_B\) describe her uncertainty over his network conditional on the hypothesis that \(B\) occurred. If she treats the network as a stable trait independent of whether \(B\) happened, this is simply her ordinary distribution \(\mu\) over plausible networks.
 
 For a chosen challenge level \(\lambda\) and performance threshold \(\tau\), let \(G_{\lambda,\tau}\) be the set of network models for which the saturation theorem applies for some relevant bottleneck \(D\). Write
 
 \[
 \varepsilon_{\lambda,\tau}
 =
-1-\mu(G_{\lambda,\tau}).
+1-\mu_B(G_{\lambda,\tau}).
 \]
 
 In the ideal capacity model, a pass is impossible together with \(B\) on every model in \(G_{\lambda,\tau}\). Giving the remaining models every benefit of the doubt therefore gives
