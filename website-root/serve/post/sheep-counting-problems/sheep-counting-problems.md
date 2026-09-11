@@ -132,7 +132,7 @@ These examples barely look related: arithmetic answers, yawning, a guard's react
 
 Sheep counting already rules out a certificate-only theory. A yawn is not a proof object, but it can still change what should be believed about the hidden history.
 
-The natural object is therefore not one certificate. It is the collection of visible behaviours that each hidden history can produce.
+A more useful object here is the collection of visible behaviours associated with each side of the claim.
 
 ## Evidence and probability
 
@@ -150,25 +150,29 @@ L(E)=\frac{\Pr(E\mid Q)}{\Pr(E\mid\neg Q)}
 
 measures the strength of that evidence. Arithmetic and sleepy sheep can differ enormously in strength while still being the same kind of relation between a hidden history and something visible.
 
-But one pair of distributions is not enough once the person can choose how to behave. An attentive guard can stay silent deliberately. Somebody can yawn on purpose. Different assumptions about strategy, incentives, preparation, and ability give different possible distributions of the visible trace.
+But one pair of distributions is not enough once behaviour can vary. Different assumptions about honest variation, deliberate strategy, incentives, preparation, and ability give different possible distributions of the visible trace.
 
 ## Attainable traces
 
 For the formal model, take a finite trace space \(T\). A trace can be an answer sheet, a yawn, a sequence of guard responses, a chess record, or whatever part of the world the verifier will observe.
 
-The distributions attainable when \(Q\) is true form a set
+The true-side family
 
 \[
-P_+\subseteq\Delta(T),
+P_+\subseteq\Delta(T)
 \]
 
-and the distributions attainable when \(Q\) is false form
+contains the trace distributions for true-case behaviours that the protocol is meant to accept. The false-side family
 
 \[
-P_-\subseteq\Delta(T).
+P_-\subseteq\Delta(T)
 \]
 
-The choice of these sets is where assumptions about the person live. A strategy-independent analysis can put every deliberate false-case behaviour into \(P_-\). An incentive-dependent analysis can use a smaller set. Randomization between strategies convexifies the sets, so from here on I will treat \(P_+\) and \(P_-\) as compact and convex.
+contains the trace distributions that the alternative history is allowed to use.
+
+The two sides need not be symmetric. In the arithmetic example, \(P_+\) might describe the intended solver together with ordinary human variation, while \(P_-\) contains every cheating strategy the analysis wants to defend against. A stronger completeness requirement enlarges \(P_+\); a stronger soundness requirement enlarges \(P_-\).
+
+Because verifier acceptance is linear in the trace distribution, replacing either family by its closed convex hull does not change any worst-case acceptance probability. I will therefore treat \(P_+\) and \(P_-\) as compact and convex.
 
 A randomized verifier is a function
 
@@ -236,7 +240,7 @@ P_+\cap P_-\ne\varnothing
 \delta(P_+,P_-)=0.
 \]
 
-If the same distribution of visible traces can arise on both sides, no verifier using only those traces can separate the histories with a positive worst-case gap. Conversely, disjoint compact attainable sets have positive separation.
+If the same distribution of visible traces appears on both sides, no verifier using only those traces can have a positive worst-case gap. Conversely, disjoint compact attainable sets have positive separation.
 
 ### Throwing information away cannot help
 
@@ -260,7 +264,7 @@ This also gives a natural preorder on observation systems: one system is at leas
 
 ## Incentives, strategies, and resources
 
-The attainable sets absorb most of the strategy notation. Enlarging the false-case strategy class enlarges \(P_-\), which can only decrease \(\delta\). Restricting attention to strategies the person is actually willing to use can shrink \(P_-\) and make the same trace more informative.
+The attainable sets absorb most of the strategy notation. A strategy-independent analysis makes \(P_-\) broad enough to include every deliberate false-case behaviour under consideration. An incentive-dependent analysis can use a smaller false-side family. Enlarging \(P_-\) can only decrease \(\delta\).
 
 Resources give a useful filtration. If \(P_-^{(b)}\) contains the false-case distributions attainable with resource budget at most \(b\), then
 
@@ -280,7 +284,7 @@ The corresponding robustness curve
 
 is therefore non-increasing. More time, memory, preparation, attention, or coordination can make false histories harder to distinguish from true ones. There is no reason for the curve to be continuous: a newly affordable strategy can create a jump.
 
-Uncertainty about the person can be handled at this level too. A conservative verifier can enlarge the attainable sets to include every person-model still considered possible. A Bayesian verifier may instead average over those models. Those are different questions; the geometry makes the choice visible rather than hiding it inside one probability symbol.
+Uncertainty about the person can be handled at this level too. A conservative analysis can take the union of the behaviour families allowed by every person-model still considered possible and then convexify it. A Bayesian analysis can instead average over models. Those are different questions; the geometry makes the choice visible rather than hiding it inside one probability symbol.
 
 Signal detection theory has a narrower version of the same issue in its separation of sensitivity from response criterion. Here the strategy can depend on arbitrary goals, including cooperating with thieves.
 
@@ -296,15 +300,15 @@ can leave a trace. Its complement
 
 has a different problem. Somebody who did solve the exercises can often behave afterward exactly like somebody who did not.
 
-In the attainable-set language, a strategy-independent impossibility appears whenever
+When the target claim is \(\neg A\), a strategy-independent impossibility appears whenever
 
 \[
 P_{\neg A}\subseteq P_A.
 \]
 
-The positive side here is the claim \(\neg A\), so its attainable set lies entirely inside the false side. The separation is therefore zero.
+The true-side family is then contained in the false-side family, so the separation is zero.
 
-More generally, even a single common distribution is enough:
+More generally, even one common distribution is enough:
 
 \[
 P_{\neg A}\cap P_A\ne\varnothing
@@ -336,7 +340,7 @@ The second part has its own combinatorics.
 
 ## Compatibility complexes
 
-Let \(\mathcal A\) be a finite set of activities and let
+Let \(\mathcal A\) be a finite set of individually possible activities and let
 
 \[
 \mathcal C\subseteq 2^{\mathcal A}
@@ -423,9 +427,9 @@ The guard gives one kind of mistake. A verifier might believe that an attentive 
 
 I have seen another kind. I know somebody who regularly gives a mathematics lecture while writing a manuscript at the same time. Before seeing that, I would have put speaking through a mathematical argument and composing technical prose behind the same bottleneck. For him, the compatibility complex I would have guessed is simply wrong.
 
-The two failures look different, but both change the mathematical objects supplied to the theory. One changes which visible behaviours are attainable. The other changes which hidden activities can coexist.
+The two failures look different, but both change the mathematical objects supplied to the theory. One changes which visible behaviours are allowed on each side. The other changes which hidden activities can coexist.
 
-More knowledge can even weaken old evidence. Learning that somebody can yawn on command enlarges the false-case attainable set for sheep counting. Learning that somebody can combine two activities previously thought incompatible adds a face to the compatibility complex. Either change can destroy a separation that looked convincing before.
+More knowledge can even weaken old evidence. Learning that somebody can yawn on command enlarges the false-case family for sheep counting. Learning that somebody can combine two activities previously thought incompatible adds a face to the compatibility complex. Either change can destroy a separation that looked convincing before.
 
 ## A minimal definition
 
@@ -435,7 +439,7 @@ At this point the formal core is small. A sheep-counting instance has a finite t
 P_+,P_-\subseteq\Delta(T)
 \]
 
-of observable behaviours attainable under the claimed and alternative histories. Its robust strength is
+representing the true-case behaviours to be accepted and the false-case behaviours to be resisted. Its robust strength is
 
 \[
 \delta(P_+,P_-)
@@ -446,7 +450,7 @@ of observable behaviours attainable under the claimed and alternative histories.
 
 When simultaneous activities matter, the instance also has a compatibility complex \(\mathcal C\). Resource bounds can refine the false side into a nested family \(P_-^{(b)}\), giving the robustness curve \(\delta(b)\).
 
-A sheep-counting problem is the problem of arranging the environment, interaction, and observable trace so that the relevant attainable sets are well separated under a defensible model of the person.
+A sheep-counting problem is the problem of arranging the environment, interaction, and observable trace so that the relevant behaviour families are well separated under a defensible model of the person.
 
 Mental effort itself is not part of the definition.
 
@@ -454,7 +458,7 @@ Mental effort itself is not part of the definition.
 
 The formal definition says what separation is. It does not say how to create it.
 
-Several constructions can push the attainable sets apart: natural side effects, fresh interaction with the environment, incompatible activities, or traces that are difficult to manufacture without the claimed history.
+Several constructions can push the behaviour families apart: natural side effects, fresh interaction with the environment, incompatible activities, or traces that are difficult to manufacture without the claimed history.
 
 The names **proof of work**, **proof of space**, and **proof of time** are analogies to computer-security terminology. Here they name the resource that creates the separation; these human protocols are not meant as literal instances of the corresponding cryptographic definitions.
 
@@ -522,17 +526,17 @@ Intervention is not a defect. Fresh arithmetic exercises can increase separation
 
 ## Does the theory explain anything?
 
-The framework now forces more than a common vocabulary. Once the attainable sets are fixed, the best robust verifier is determined by their total-variation distance, and post-processing can only weaken that separation. Once the compatibility complex is fixed, links describe residual capacity and the minimal incompatibilities give a canonical join factorization.
+Once the behaviour families are fixed, the framework does force some consequences. The best robust verifier is determined by their total-variation distance, and post-processing can only weaken that separation. Once the compatibility complex is fixed, links describe residual capacity and the minimal incompatibilities give a canonical join factorization.
 
 The precomputation and repetition results below add two more constraints on possible protocols.
 
-That still does not make the empirical part automatic. The attainable sets and compatibility complex have to come from assumptions or measurements about real people. If those objects can be chosen arbitrarily, the mathematics can describe almost any story. The interesting question is whether useful classes of people and tasks produce stable structure in them.
+That still does not make the empirical part automatic. The behaviour families and compatibility complex have to come from assumptions or measurements about real people. If those objects can be chosen arbitrarily, the mathematics can describe almost any story. The interesting question is whether useful classes of people and tasks produce stable structure in them.
 
 ## Theorems
 
 ### Precomputation has a coverage profile
 
-The party puzzles give a finite combinatorial version of the PREP problem. A public environmental state \(Y\) becomes known during the interval. For each state \(y\), let
+The party puzzles give a finite combinatorial version of the PREP problem. Let \(Y\) range over a finite set of public environmental states, and assume each state has at least one acceptable trace. For each state \(y\), let
 
 \[
 A_y\subseteq T
@@ -543,7 +547,7 @@ be the traces accepted for that state.
 A prepared trace \(t\) covers the states
 
 \[
-C_t=\{y:t\in A_y\}.
+B_t=\{y:t\in A_y\}.
 \]
 
 For a table \(S\subseteq T\), its covered probability mass is
@@ -551,7 +555,7 @@ For a table \(S\subseteq T\), its covered probability mass is
 \[
 F(S)
 =
-\Pr\!\left[Y\in\bigcup_{t\in S}C_t\right].
+\Pr\!\left[Y\in\bigcup_{t\in S}B_t\right].
 \]
 
 If the prover can prepare, remember, recognize, and look up the table \(S\), then a false prover can succeed on at least the states counted by \(F(S)\). The best coverage available from \(k\) prepared traces is
@@ -562,10 +566,10 @@ If the prover can prepare, remember, recognize, and look up the table \(S\), the
 \max_{|S|\le k}F(S).
 \]
 
-This is a more informative object than the cover number alone. It records the whole precomputation tradeoff. The ordinary cover number is
+This records the whole combinatorial precomputation tradeoff. The ordinary cover number is
 
 \[
-C
+\kappa
 =
 \min\{k:\alpha(k)=1\}.
 \]
@@ -582,7 +586,7 @@ If the challenge distribution itself can be designed, the same incidence structu
 \min_{x_t\ge0}
 \left\{
 \sum_t x_t:
-\sum_{t:\,y\in C_t}x_t\ge1
+\sum_{t:\,y\in B_t}x_t\ge1
 \text{ for every }y
 \right\}.
 \]
@@ -595,7 +599,7 @@ Linear-programming duality gives
 \max_{z_y\ge0}
 \left\{
 \sum_y z_y:
-\sum_{y\in C_t}z_y\le1
+\sum_{y\in B_t}z_y\le1
 \text{ for every }t
 \right\}.
 \]
@@ -609,7 +613,7 @@ Normalize an optimal dual solution by
 Under this challenge distribution, every single precomputed trace succeeds with probability at most \(1/\tau^*\), and any table of \(k\) traces succeeds with probability at most
 
 \[
-\frac{k}{\tau^*}
+\min\!\left(1,\frac{k}{\tau^*}\right)
 \]
 
 by the union bound.
@@ -666,7 +670,7 @@ But the chess instruction is an intervention: it removes some of the opportunity
 
 > He would refrain from flirting if he had the opportunity.
 
-If both \(R\) and \(\neg R\) boyfriends produce the same distribution of chess traces under the intervention, then their attainable trace sets for this experiment intersect, so
+If both \(R\) and \(\neg R\) can produce the same distribution of chess traces under the intervention, then their behaviour families for this experiment intersect, so
 
 \[
 \delta(P_R,P_{\neg R})=0.
@@ -676,25 +680,37 @@ The same intervention can therefore perfectly separate “he flirted” from “
 
 ### A stronger guard test can make the guarding worse
 
-Let \(Q\) mean that the guard remains vigilant. A supervisor creates \(n\) test events that require a signal, and \(E_n\) means that the guard responds correctly to all \(n\).
-
-If the per-event response probabilities are
+Let \(Q\) mean that the guard remains vigilant. A supervisor creates \(n\) test events and records the full response vector
 
 \[
-\Pr(\text{correct response}\mid Q)=a,
-\qquad
-\Pr(\text{correct response}\mid\neg Q)=b,
+X^{(n)}=(X_1,\ldots,X_n).
 \]
 
-with \(a>b\), and responses are conditionally independent, then
+Suppose the responses are conditionally independent, with
 
 \[
-\Pr(E_n\mid Q)=a^n,
+X_i\mid Q\sim\operatorname{Bernoulli}(a),
 \qquad
-\Pr(E_n\mid\neg Q)=b^n.
+X_i\mid\neg Q\sim\operatorname{Bernoulli}(b),
 \]
 
-More test events separate vigilant and non-vigilant trace distributions more strongly.
+where \(a>b\). The two trace distributions are
+
+\[
+P_Q^{(n)}=\operatorname{Bernoulli}(a)^{\otimes n},
+\qquad
+P_{\neg Q}^{(n)}=\operatorname{Bernoulli}(b)^{\otimes n}.
+\]
+
+Dropping the last response is a post-processing map from the \((n+1)\)-test experiment to the \(n\)-test experiment. Therefore
+
+\[
+\delta\!\left(P_Q^{(n+1)},P_{\neg Q}^{(n+1)}\right)
+\ge
+\delta\!\left(P_Q^{(n)},P_{\neg Q}^{(n)}\right).
+\]
+
+More tests cannot make these two trace laws less distinguishable; for fixed \(a\ne b\), their separation tends to one as \(n\) grows.
 
 But every fake alarm or staged intrusion can also impose a cost \(d\) on the actual guarding by occupying the guard's attention, creating alarm fatigue, or distracting from a real event. After \(n\) tests the imposed cost is \(nd\).
 
@@ -704,9 +720,9 @@ Neither paradox is an argument against intervention. They only show that separat
 
 ## What I would try next
 
-The party puzzles are concrete enough to estimate a robustness curve. Repeating the empty-pentagon and monotone-subsequence tasks at nearby sizes could show how quickly practice and preparation enlarge the false-case attainable set and reduce \(\delta(b)\).
+The party puzzles are concrete enough to estimate a robustness curve. Repeating the empty-pentagon and monotone-subsequence tasks at nearby sizes could show how quickly practice and preparation enlarge the false-case family and reduce \(\delta(b)\).
 
-The compatibility complex suggests a different experiment. Dual-task and triple-task tests could look for minimal incompatibilities, test whether the complex is approximately flag, and see whether its join factors remain stable across people and after practice. The lecturer who can write while speaking is exactly the sort of observation that changes this structure.
+The compatibility complex suggests a different experiment. Dual-task and triple-task tests could look for minimal incompatibilities, ask whether higher-order incompatibilities really appear, and see whether the join factors remain stable across people and after practice. The lecturer who can write while speaking is exactly the sort of observation that changes this structure.
 
 The precomputation profile \(\alpha(k)\) is also measurable. For a fixed party-puzzle family, one could ask how many prepared answers or puzzle families are needed before most naturally occurring rooms are covered, and then compare the combinatorial gain with the human cost of storing and searching them.
 
