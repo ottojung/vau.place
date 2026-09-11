@@ -1,1 +1,782 @@
 # Sheep-Counting Problems for Computer Science
+
+If you ask me:
+
+> What are you thinking about?
+
+and I answer:
+
+> Birds.
+
+I cannot do much better than tell you that I was.
+
+But I could say that I was thinking about math and hand you a page of arithmetic problems where I filled in the answers. You still would not have seen what happened in my head, but I would have something to show you.
+
+I think there is an interesting family of problems here: when can a person prove, or at least give useful evidence for, what they were thinking about?
+
+I call these **sheep-counting problems**.
+
+## Arithmetic
+
+I imagine being given a sheet like this:
+
+```text
+137 × 284 = ______
+519 - 287 = ______
+84 × 63 = ______
+...
+```
+
+A few minutes later, I can return it like this:
+
+```text
+137 × 284 = 38,908
+519 - 287 = 232
+84 × 63 = 5,292
+...
+```
+
+Given that the sheet was fresh, I returned it promptly, and I had no outside help, there should not be much doubt that I was thinking about math for a while.
+
+This gives a useful baseline: the exercises can be chosen fresh, the amount of work can be increased by adding more of them, and the answers are easy to verify. Later examples lose one or more of these conveniences.
+
+## Counting sheep
+
+You could ask me:
+
+> Count sheep in your head for ten minutes.
+
+The task can begin and end entirely in my head. Nothing needs to be said or written down afterward.
+
+Yet if I start yawning and fall asleep, that is some evidence that the sheep were there.
+
+## The sleeping guard
+
+A guard watches a building through the night. On a quiet night, a good guard may do almost nothing. The job still requires staying alert enough to notice an intruder, an alarm, a door opening, or anything else that should be reported.
+
+The shift ends and nothing happened. That fits an alert guard, but it also fits a guard who fell asleep five minutes after starting. An event changes the situation: if something happens and the guard notices it and signals, vigilance has had an occasion to become visible.
+
+The problem is the quiet interval. Attention can matter for hours without producing any trace at all.
+
+## Chess party
+
+A jealous girlfriend leaves her boyfriend at a party and tells him to play chess while she is away. He plays twenty one-minute games.
+
+When she returns, the games leave a record of many decisions spread across the interval. Every opponent move supplies a fresh position, so the player repeatedly has to react to something that was not known at the start.
+
+The useful feature here is that the evidence is distributed through time because the input is distributed through time. That is different from a worksheet that might have been completed early and then left alone.
+
+The girlfriend's actual reason for choosing chess will matter later.
+
+## Puzzles without a challenge
+
+So far, somebody else has supplied the task: exercises, sheep counting, guarding, chess. There is also the case where the prover begins on their own and still wants to leave something checkable afterward.
+
+A party seems like a good place to look because the room already contains public information: people, names, positions, and whatever other structure happens to be there.
+
+### A computer-scientist solution
+
+The first construction that came to my mind is very computer-scientist-shaped. A public rule turns every guest's name into an integer, and adding those integers gives a number
+
+\[
+N.
+\]
+
+The prover can factor \(N\) and later present the factors. A verifier only has to multiply them and check that their product is \(N\).
+
+In practice, this might sound like:
+
+> What are you thinking about?
+>
+> I'm factorizing. Alice, Bob and Charlie's names add up to a number whose factorization is `3215031751 × 118670087467 × 307768373641`.
+
+From computer science point of view, this is perfect: factorization is difficult, while checking a proposed factorization is straightforward.
+
+But large-integer arithmetic is cumbersome to do mentally, and even checking the product of large factors may be expensive for a person. The construction has the right asymmetry and the wrong human scale.
+
+### Six objects, including the empty spot
+
+A spatial version is much easier to state. With ten people standing so that no three are exactly in a line, there are always five whose convex hull contains no other guest. In less geometric language, five people surround a patch of the room with nobody else standing inside it.
+
+Harborth's empty-pentagon theorem guarantees that such a set of five exists. The witness is only the five people; their positions show whether anyone else lies inside the pentagon.
+
+This is much closer to the kind of mental task I want. The input is already in front of the prover, the answer is small, and verification is visual. What I do not know is how difficult the search is for a person who knows the trick.
+
+### A monotone subsequence of friends
+
+Another guaranteed puzzle replaces geometry with two orders. Ten people have one public total order, perhaps the order in which they are standing. Their names give another, alphabetical order. Reading the alphabetical ranks in the first order gives a permutation of ten numbers.
+
+Among those ten people there are always four, preserving the first order, whose names are alphabetically increasing or alphabetically decreasing. The Erdős-Szekeres monotone subsequence theorem gives the general guarantee: every sequence of
+
+\[
+(r-1)(s-1)+1
+\]
+
+distinct values contains an increasing subsequence of length \(r\) or a decreasing subsequence of length \(s\). With \(r=s=4\),
+
+\[
+(4-1)^2+1=10.
+\]
+
+The witness is just four friends. Checking the two orders is easy, while the current ordering can create fresh work even when the prover already knows everybody's name.
+
+This construction adds an extra translation step: the room first has to become two orders. I do not know which search is actually harder once somebody has practiced both. That is an empirical complexity question.
+
+Both party puzzles let the prover start without waiting for a challenge. The environment supplies the instance, and a short public witness survives after the mental search is over.
+
+That freedom creates a possible attack. After seeing the room, the prover can search among several possible problems for one whose answer is already easy. But searching over problems is itself work; preparation, memory, recognition, and search still consume human resources.
+
+## What kind of theory is this?
+
+These examples barely look related: arithmetic answers, yawning, a guard's reaction, chess games, a geometric witness. The reason to group them is one common question: can something visible distinguish one hidden cognitive history from another?
+
+Sheep counting rules out a certificate-only theory. A yawn is not a proof object, but it can still make one hidden history more plausible than another.
+
+There seem to be two parts to the problem. One is statistical: how different are the visible traces under the two histories? The other is structural: why should one history be unable to produce traces that the other can?
+
+## Evidence and distance
+
+Let \(Q\) be a claim about a hidden cognitive history and let \(T\) be the visible trace. Under a fixed model of behaviour, the two sides induce trace distributions
+
+\[
+P_Q,
+\qquad
+P_{\neg Q}.
+\]
+
+A visible event \(E\) favors \(Q\) when
+
+\[
+\Pr(E\mid Q)>\Pr(E\mid\neg Q).
+\]
+
+The likelihood ratio
+
+\[
+L(E)=
+\frac{\Pr(E\mid Q)}{\Pr(E\mid\neg Q)}
+\]
+
+measures the strength of that particular observation.
+
+A useful global measure is total-variation distance:
+
+\[
+d_{\mathrm{TV}}(P_Q,P_{\neg Q})
+=
+\sup_E
+\left|
+P_Q(E)-P_{\neg Q}(E)
+\right|.
+\]
+
+It is the largest probability gap obtainable from any event in the trace. A single event therefore gives an immediate lower bound:
+
+\[
+P_Q(E)\ge\alpha,
+\qquad
+P_{\neg Q}(E)\le\beta
+\quad\Longrightarrow\quad
+ d_{\mathrm{TV}}(P_Q,P_{\neg Q})
+\ge
+\alpha-\beta.
+\]
+
+This is the sense in which arithmetic and sleepy sheep can differ in strength while still being the same kind of evidence. Their visible traces are distributed differently depending on what happened in the person's head.
+
+The distance alone does not explain why the distributions differ. For that, the model needs some account of what a person can and cannot do.
+
+## Incentives and strategies
+
+An intruder crosses the yard and the guard does not raise the alarm. Silence may be evidence of inattention, but an attentive guard can deliberately stay silent. Poor chess has the same problem: an attentive player can intentionally play badly. Somebody who knows that yawning will be interpreted as evidence can yawn on purpose.
+
+Evidence that survives every deliberate strategy under consideration is **strategy-independent**. Evidence that works only because some strategies are implausible under the person's incentives is **incentive-dependent**.
+
+Formally, strategy changes the trace distribution. If the false history admits strategies \(\sigma\in\Sigma\), with trace laws \(P_{\neg Q,\sigma}\), then a strategy-independent distance can be written as
+
+\[
+d_{\mathrm{rob}}(Q,\neg Q)
+=
+\inf_{\sigma\in\Sigma}
+ d_{\mathrm{TV}}(P_Q,P_{\neg Q,\sigma}).
+\]
+
+If honest behaviour also varies, the same idea takes the infimum over both sides. Enlarging the allowed strategy class can only reduce robust separation.
+
+Signal detection theory has a narrower version of this distinction in its separation of sensitivity from response criterion. Here the strategy can depend on arbitrary goals, including cooperating with thieves.
+
+## Negative answers
+
+The positive claim
+
+> I was solving arithmetic exercises in my head.
+
+can leave completed exercises. Its complement
+
+> I was **not** solving arithmetic exercises in my head.
+
+has a different problem. Somebody who did solve the exercises can often behave afterward exactly like somebody who did not.
+
+If a false-case strategy after \(A\) can reproduce the same trace distribution as the ordinary non-\(A\) case, then the robust distance for the negative claim is zero. No test on that trace can distinguish them.
+
+The deterministic version is simpler: if every visible trace available after non-\(A\) can also be produced after \(A\), then no visible trace can directly certify non-\(A\) against a strategic person.
+
+An escape needs some trace that becomes unavailable when \(A\) happened. One way to create that is to demonstrate another activity that competes for resources with \(A\).
+
+## Proving something incompatible instead
+
+Suppose the claim is that activity \(B\) did not happen. Evidence for another activity \(A\) can count against \(B\) when the two could not have occurred together:
+
+\[
+\text{evidence for }A
+\quad+\quad
+A\text{ incompatible with }B
+\quad\Longrightarrow\quad
+\text{evidence against }B.
+\]
+
+This is the role chess was playing for the girlfriend. Chess was not the final fact she cared about. She wanted a positively checkable activity that would leave too little cognitive capacity for some competing activity.
+
+A yes-or-no compatibility relation is not enough to explain where that exclusion comes from. For that I will use a capacity model.
+
+## Cognitive flow networks
+
+Take a time interval \(I\) and a directed resource network
+
+\[
+N=(G,c),
+\qquad
+G=(V,E),
+\]
+
+where each channel \(e\in E\) has a time-dependent capacity \(c_e(t)\).
+
+An implementation \(f\) of an activity assigns non-negative load \(f_e(t)\) to the channels. The activity model supplies the routing, precedence, release-time, and other constraints that make such a load assignment a valid implementation. Different implementations may route the same activity through different channels. Several activities can occur together when implementations can be chosen such that
+
+\[
+\sum_j f^{(j)}_e(t)
+\le
+c_e(t)
+\]
+
+for every channel and every time.
+
+The network is not meant as literal neural wiring. It is a resource model. Channels can stand for whatever bottlenecks turn out to matter: verbal processing, visual attention, working memory, response selection, or something more specific. Wickens' Multiple Resource Theory gives empirical reason to expect interference to depend on which resources tasks share; the network is one mathematical way to express that.
+
+Time matters directly. In discrete time, the same model can be written as a **time-expanded network**, with a copy of the resource graph at each time step. Edges inside a layer represent processing during that step; edges between layers can represent carrying state forward. Fresh inputs, release times, and deadlines then become ordinary constraints on which time layers an activity may use. Time-expanded networks are standard in the theory of flows over time, going back to Ford and Fulkerson.
+
+If all quantitative information is forgotten and we remember only which sets of activities have a joint feasible implementation, those feasible sets are downward closed: whenever several activities can coexist, every subset can coexist too. Mathematically, that family is an abstract simplicial complex. I will use this only as shorthand for the compatibility relation. The flow network contains the information that matters for the arguments below: how much capacity is available, where, and when.
+
+## A scalable challenge can prove a negative
+
+The flow model gives a direct way to manufacture negative evidence.
+
+Fix a person-model \(N\), an interval \(I\), and a bottleneck region
+
+\[
+D\subseteq E\times I.
+\]
+
+Its total capacity is
+
+\[
+C_N(D)
+=
+\int_I
+\sum_{e:(e,t)\in D}
+c_e(t)\,dt.
+\]
+
+For an implementation \(f\), its load on the same region is
+
+\[
+\ell_D(f)
+=
+\int_I
+\sum_{e:(e,t)\in D}
+f_e(t)\,dt.
+\]
+
+In discrete time, the integrals are sums.
+
+Let \(B\) be the activity we want to rule out. Its unavoidable load on \(D\) is
+
+\[
+b_N(B;D)
+=
+\inf_{g\in\mathcal F_B(N)}
+\ell_D(g).
+\]
+
+Now take a scalable chess-like challenge \(A_\lambda\), where \(\lambda\) controls difficulty. A trace is called a **pass** when performance reaches some threshold \(\tau\). Among all implementations that achieve that performance, define
+
+\[
+w_N(\lambda,\tau;D)
+=
+\inf_{f\in\mathcal F_{A_\lambda,\tau}(N)}
+\ell_D(f).
+\]
+
+This is the amount of bottleneck capacity that good challenge performance certifies was used, according to the model. The infima over implementations make both quantities insensitive to which route the person actually uses through the network.
+
+### Saturation theorem
+
+If the challenge is feasible by itself and
+
+\[
+w_N(\lambda,\tau;D)
++
+b_N(B;D)
+>
+C_N(D),
+\]
+
+then passing the challenge and performing \(B\) during the interval are incompatible.
+
+**Proof.** If both happened, there would be a passing challenge implementation \(f\) and an implementation \(g\) of \(B\) that coexist. Pointwise capacity feasibility, summed over the channel-time region \(D\), gives
+
+\[
+\ell_D(f)+\ell_D(g)
+\le
+C_N(D).
+\]
+
+But by definition,
+
+\[
+\ell_D(f)
+\ge
+w_N(\lambda,\tau;D),
+\qquad
+\ell_D(g)
+\ge
+b_N(B;D),
+\]
+
+contradicting the strict inequality above. \(\square\)
+
+The theorem uses more than the fact that two activities touch some of the same resources. The shared bottleneck has to be unavoidable: every passing implementation of the challenge must use enough of it, and every implementation of the excluded activity must use some of it too.
+
+Scalability now has a precise use. Suppose \(b_N(B;D)>0\), and the challenge family can be tuned so that, while remaining feasible alone, its certified load \(w_N(\lambda,\tau;D)\) can be made arbitrarily close to \(C_N(D)\) from below. Then some difficulty level satisfies
+
+\[
+C_N(D)-b_N(B;D)
+<
+w_N(\lambda,\tau;D)
+\le
+C_N(D),
+\]
+
+and good challenge performance becomes a perfect certificate that \(B\) did not occur in that model.
+
+This is what the girlfriend needs from a scalable chess-like game. The game need not be intrinsically related to flirting. It needs to be tunable until good performance almost saturates a bottleneck that flirting would also necessarily consume.
+
+## Uncertain networks turn proof into evidence
+
+The girlfriend does not know her boyfriend's cognitive network exactly. Let \(\mu_B\) describe her uncertainty over his network conditional on the hypothesis that \(B\) occurred. If she treats the network as a stable trait independent of whether \(B\) happened, this is simply her ordinary distribution \(\mu\) over plausible networks.
+
+For a chosen challenge level \(\lambda\) and performance threshold \(\tau\), let \(G_{\lambda,\tau}\) be the set of network models for which the saturation theorem applies for some relevant bottleneck \(D\). Write
+
+\[
+\varepsilon_{\lambda,\tau}
+=
+1-\mu_B(G_{\lambda,\tau}).
+\]
+
+In the ideal capacity model, a pass is impossible together with \(B\) on every model in \(G_{\lambda,\tau}\). Giving the remaining models every benefit of the doubt therefore gives
+
+\[
+\Pr(\text{pass}\mid B)
+\le
+\varepsilon_{\lambda,\tau}.
+\]
+
+Suppose calibration also tells her that without \(B\), he passes with probability at least
+
+\[
+\Pr(\text{pass}\mid\neg B)
+\ge
+\alpha_{\lambda,\tau}.
+\]
+
+Let \(P_B\) and \(P_{\neg B}\) be the full trace distributions under the two histories. Because passing is one event in that trace,
+
+\[
+\boxed{
+ d_{\mathrm{TV}}(P_B,P_{\neg B})
+\ge
+\alpha_{\lambda,\tau}
+-
+\varepsilon_{\lambda,\tau}
+}
+\]
+
+whenever the right-hand side is positive.
+
+So the capacity proof produces a statistical distance. The more of her network uncertainty lies in models where the challenge saturates the shared bottleneck, the farther apart the two histories are forced to look.
+
+The same observation gives a likelihood-ratio bound. If \(\varepsilon_{\lambda,\tau}>0\), then a pass favors non-\(B\) over \(B\) by at least
+
+\[
+\frac{\Pr(\text{pass}\mid\neg B)}
+     {\Pr(\text{pass}\mid B)}
+\ge
+\frac{\alpha_{\lambda,\tau}}
+     {\varepsilon_{\lambda,\tau}}.
+\]
+
+If her prior probability of \(B\) was \(p\), Bayes' rule gives
+
+\[
+\boxed{
+\Pr(B\mid\text{pass})
+\le
+\frac{p\,\varepsilon_{\lambda,\tau}}
+     {p\,\varepsilon_{\lambda,\tau}
+      +(1-p)\alpha_{\lambda,\tau}}
+}.
+\]
+
+A noisy model changes only one term. If, even among the network models where the bottleneck argument should apply, a pass can still occur together with \(B\) with probability at most \(\eta\), then
+
+\[
+\beta
+=
+(1-\varepsilon_{\lambda,\tau})\eta
++
+\varepsilon_{\lambda,\tau}
+\]
+
+is an upper bound on \(\Pr(\text{pass}\mid B)\). Replacing \(\varepsilon_{\lambda,\tau}\) by \(\beta\) gives
+
+\[
+d_{\mathrm{TV}}(P_B,P_{\neg B})
+\ge
+\alpha_{\lambda,\tau}-\beta
+\]
+
+and the corresponding posterior bound.
+
+This also shows why the hardest possible challenge need not be best. Increasing \(\lambda\) may make the saturation argument hold for more plausible networks, reducing \(\varepsilon\), but it can also reduce normal solo performance \(\alpha\). Depending on the goal, the useful difficulty maximizes something like
+
+\[
+\alpha_{\lambda,\tau}-\beta_{\lambda,\tau}
+\]
+
+or the likelihood ratio \(\alpha_{\lambda,\tau}/\beta_{\lambda,\tau}\), not raw difficulty.
+
+The girlfriend therefore needs assumptions or measurements about four things: which network models are plausible for this person, how much of a shared bottleneck the competing activity necessarily uses, how much good challenge performance certifies, and how often the person passes without the competing activity. What she gets is a quantitative bound on the distance between the two trace distributions and, with a prior, a posterior bound on the activity she wanted to rule out.
+
+## Two ways to misjudge a person
+
+The guard gives one kind of mistake. A verifier might believe that an attentive guard always signals an intrusion. If that belief is wrong, the wrong trace distribution was assumed.
+
+I have seen another kind. I know somebody who regularly gives a mathematics lecture while writing a manuscript at the same time. Before seeing that, I would have put speaking through a mathematical argument and composing technical prose behind the same bottleneck. For him, that resource model is simply wrong.
+
+The first mistake is about strategy or behaviour. The second is about capacity. Either one can make apparent evidence disappear.
+
+More knowledge can even weaken old evidence. Learning that somebody can yawn on command makes yawning less informative about sheep counting. Learning that somebody can route two activities through different cognitive channels can destroy a bottleneck argument that previously looked convincing.
+
+## A minimal definition
+
+A sheep-counting protocol creates a visible trace \(T\) whose distribution depends on a hidden cognitive claim \(Q\). The evidential part of the theory asks how far apart the trace laws under \(Q\) and \(\neg Q\) are, using likelihood ratios or a distance such as total variation.
+
+A person-model supplies the possible strategies and a dynamic resource network describing which cognitive loads can coexist. The network is not part of the definition of evidence; it is one way to prove that certain false-case traces are impossible or unlikely.
+
+A **sheep-counting problem** is the problem of arranging the environment, challenge, and observable trace so that the relevant hidden histories become usefully separated under a defensible model of the person.
+
+Mental effort itself is not the principle. Bounded resources are one mechanism that can create separation.
+
+## Constructing good sheep-counting problems
+
+Several constructions can create that separation: natural side effects, fresh interaction with the environment, incompatible activities, or traces that require scarce resources to manufacture.
+
+The names **proof of work**, **proof of space**, and **proof of time** are analogies to computer-security terminology. Here they name the resource that creates the evidence; these human protocols are not literal instances of the corresponding cryptographic definitions.
+
+### Proof of work
+
+The factorization, empty-pentagon, and monotone-subsequence puzzles are attempts at human **proof of work**. Fresh public input forces some work to happen after the input becomes known, and a cheaper witness remains afterward.
+
+Blum and Vempala split the relevant costs into
+
+\[
+\operatorname{PREP},\qquad
+\operatorname{PROC},\qquad
+\operatorname{VER}.
+\]
+
+**PREP** happens before the fresh part of the input arrives. **PROC** remains afterward. **VER** is the cost of checking the evidence.
+
+The flow model gives this distinction a temporal form. If a challenge is released at time \(t_0\) and must be answered by \(t_1\), then fresh-dependent computation has to fit through the available processing channels between those times. Work done before \(t_0\) can help only through information that was successfully prepared, retained, and matched to the fresh challenge.
+
+A scalable proof-of-work task can therefore do more than show that some computation happened. By moving its certified post-challenge load close to a shared bottleneck's capacity, it can also prove that another activity did **not** happen during the same interval.
+
+The factorization puzzle gets the work/verification asymmetry most literally, but at a terrible human scale. The empty pentagon and monotone subsequence use smaller mental operations; what remains unknown is how their certified resource demand changes with practice.
+
+### Proof of space
+
+Work is not the only scarce resource. A supervisor could show the guard a collection of fresh pictures and later ask which pictures they saw.
+
+Successful recall is evidence that information survived in memory. In a time-expanded resource network, this can be represented by capacity on edges that carry state from one time layer to the next. In this analogy, that is a human **proof of space**.
+
+That says little about whether the guard stayed alert during the rest of the shift. For whole-shift vigilance, memory is the wrong resource.
+
+### Proof of time
+
+A different construction samples the shift itself. Secretly chosen moments produce harmless test signals, and the guard has to signal immediately. Each response can be trivial; the point is that the guard has to be alert **then**.
+
+If the guard is alert for a fraction \(f\) of the shift and \(n\) test times are independent and uniformly distributed, the chance that every test lands during an alert period is
+
+\[
+f^n.
+\]
+
+A guard who sleeps through half the shift has probability
+
+\[
+2^{-n}
+\]
+
+of passing all \(n\) tests because every test happened to miss the sleeping periods.
+
+In the same analogy, this is a human **proof of time**. Its strength comes from distributing fresh demands across the interval rather than concentrating work at one moment.
+
+A deployed cousin already exists in railways. Locomotive alerter and deadman controls require the operator to respond or maintain contact, and can trigger braking when that response is missing. Their purpose is safety rather than proof, and their timing need not be secret, but the same basic idea is present: continued availability is tested through responses spread over time.
+
+Mackworth's 1948 clock experiment found that detection declined during prolonged watches, so a real guard's probability of responding will generally vary through the shift.
+
+A long sequential computation gives another possible meaning of proof of time, close to verifiable delay functions in cryptography. For humans, I currently understand that more as a special kind of proof of work: the difficulty comes from sequential computation. The random-time construction seems different because its difficulty comes from occupying time.
+
+## Observation and intervention
+
+Arithmetic exercises, scalable chess, and guard probes all create evidence by changing the situation.
+
+A protocol is **observational** when it uses evidence that would have arisen anyway and **interventional** when the verifier introduces exercises, probes, restrictions, or other events that make the hidden state easier to distinguish.
+
+Intervention is not a defect. The scalable-challenge theorem is explicitly interventional: the verifier chooses a load that exposes a capacity conflict. The complication is that the intervention can also change the property being investigated. Evidence about what happened under the modified situation does not automatically answer a counterfactual question about what would have happened without it.
+
+## Does the theory explain anything?
+
+The framework now does more than put examples in common notation. The capacity model gives a sufficient condition under which a scalable challenge can construct a negative proof. Under uncertainty about the person's network, the same condition becomes a quantitative lower bound on total-variation distance and then a posterior bound.
+
+That is the strongest reason I currently have for taking the theory seriously: a model of cognitive bottlenecks does not merely describe incompatibility after the fact; it can tell a verifier how hard to make a challenge in order to create evidence against another activity.
+
+The empirical burden remains large. The channel structure, capacities, unavoidable task loads, and performance calibration all have to come from assumptions or measurements about real people. If those quantities are freely invented, the theorem says little. The interesting question is whether useful lower bounds on them can actually be learned.
+
+Two further results concern freshness and repetition.
+
+## Theorems
+
+### Precomputation has a coverage profile
+
+The party puzzles give a finite combinatorial version of the PREP problem. Let \(Y\) range over a finite set of public environmental states, and assume each state has at least one acceptable trace. For each state \(y\), let
+
+\[
+A_y\subseteq T
+\]
+
+be the traces accepted for that state.
+
+A prepared trace \(t\) covers the states
+
+\[
+B_t=\{y:t\in A_y\}.
+\]
+
+For a table \(S\subseteq T\), its covered probability mass is
+
+\[
+F(S)
+=
+\Pr\!\left[Y\in\bigcup_{t\in S}B_t\right].
+\]
+
+If the prover can prepare, remember, recognize, and look up the table \(S\), then a false prover can succeed on at least the states counted by \(F(S)\). The best coverage available from \(k\) prepared traces is
+
+\[
+\alpha(k)
+=
+\max_{|S|\le k}F(S).
+\]
+
+The ordinary cover number is
+
+\[
+\kappa
+=
+\min\{k:\alpha(k)=1\}.
+\]
+
+The function \(F\) is monotone and submodular. Adding one more prepared response can only help, but the set of new states it covers can only shrink as the table grows.
+
+Human cost is separate. A table with excellent \(\alpha(k)\) may still be unusable if producing, retaining, recognizing, or searching \(k\) responses is too expensive.
+
+If the challenge distribution itself can be designed, the same incidence structure has a useful dual. The fractional cover number is
+
+\[
+\tau^*
+=
+\min_{x_t\ge0}
+\left\{
+\sum_t x_t:
+\sum_{t:\,y\in B_t}x_t\ge1
+\text{ for every }y
+\right\}.
+\]
+
+Linear-programming duality gives
+
+\[
+\tau^*
+=
+\max_{z_y\ge0}
+\left\{
+\sum_y z_y:
+\sum_{y\in B_t}z_y\le1
+\text{ for every }t
+\right\}.
+\]
+
+Normalize an optimal dual solution by
+
+\[
+\mu(y)=\frac{z_y}{\tau^*}.
+\]
+
+Under this challenge distribution, every single precomputed trace succeeds with probability at most \(1/\tau^*\), and any table of \(k\) traces succeeds with probability at most
+
+\[
+\min\!\left(1,\frac{k}{\tau^*}\right)
+\]
+
+by the union bound.
+
+So the same combinatorics describes both sides: which responses a prover should precompute, and how a verifier should distribute fresh challenges to make small tables ineffective.
+
+This resembles classical time-memory tradeoffs in cryptanalysis, such as Hellman's: expensive precomputation and stored tables can buy cheaper online work. The cover profile here is a different object, built from which prepared human responses cover which environmental states.
+
+A thousand available puzzle families are not a thousand free chances. Searching among them and recognizing an easy one still has a human cost even when the combinatorial coverage is large.
+
+### Repetition can survive an adaptive prover
+
+Repeated tests are useful only while earlier rounds do not make later ones easy to fake. The relevant bound therefore has to hold after everything the prover has already seen.
+
+In round \(i\), let \(A_i\) be the event that the verifier accepts that round, and let \(H_{<i}\) contain the complete history visible before it: previous challenges, responses, outcomes, and anything else the prover can use.
+
+If, after every accepted history \(h_{<i}\), every allowed false-case continuation satisfies
+
+\[
+\Pr(A_i\mid H_{<i}=h_{<i},\neg Q)\le s_i,
+\]
+
+then every adaptive false strategy satisfies
+
+\[
+\Pr(A_1\cap\cdots\cap A_n\mid\neg Q)
+\le
+\prod_{i=1}^n s_i.
+\]
+
+The proof is conditional multiplication. Given that the previous rounds were accepted, the probability of accepting round \(i\) is an average over the possible visible histories, and every term is at most \(s_i\).
+
+The same statement holds for completeness in the other direction: conditional true-case acceptance probabilities at least \(c_i\) give total acceptance at least \(\prod_i c_i\).
+
+Independence is unnecessary, and adaptation is already included. Fatigue, practice, and learning the verifier's strategy matter because they change the later conditional bounds. If practice makes round \(i\) easier to fake, then \(s_i\) rises and amplification weakens.
+
+The random-time guard construction is a clean special case. If, whatever previous probes revealed, a non-vigilant guard is alert at the next hidden probe with probability at most \(f\), then the chance of passing all \(n\) probes is at most \(f^n\).
+
+## Paradoxes
+
+The formal picture can also produce sound conclusions that miss the broader social question.
+
+### Proving that he did not flirt is not proving that he would not flirt
+
+Let \(B\) be flirting during the interval. Suppose the girlfriend chooses a scalable chess challenge for which the saturation inequality holds on the boyfriend's actual network. In the ideal model, passing the challenge proves the historical claim
+
+\[
+\neg B.
+\]
+
+With uncertainty over his network, the previous section replaces that perfect conclusion by a distance and posterior bound.
+
+But the chess instruction is also an intervention: it removes some of the opportunity to flirt. The girlfriend may care about a different predicate. Let \(R\) mean
+
+> He would refrain from flirting if he had the opportunity.
+
+If both \(R\) and \(\neg R\) produce the same chess-trace distribution under the intervention, then
+
+\[
+d_{\mathrm{TV}}(P_R,P_{\neg R})=0.
+\]
+
+The same challenge can therefore give strong evidence about what happened during the constrained interval and no evidence at all about what would happen without the constraint.
+
+### A stronger guard test can make the guarding worse
+
+Let \(Q\) mean that the guard remains vigilant. A supervisor creates \(n\) test events and records the full response vector
+
+\[
+X^{(n)}=(X_1,\ldots,X_n).
+\]
+
+Suppose the responses are conditionally independent, with
+
+\[
+X_i\mid Q\sim\operatorname{Bernoulli}(a),
+\qquad
+X_i\mid\neg Q\sim\operatorname{Bernoulli}(b),
+\]
+
+where \(a>b\). The two trace distributions are
+
+\[
+P_Q^{(n)}=\operatorname{Bernoulli}(a)^{\otimes n},
+\qquad
+P_{\neg Q}^{(n)}=\operatorname{Bernoulli}(b)^{\otimes n}.
+\]
+
+Dropping the last response is a post-processing map from the \((n+1)\)-test experiment to the \(n\)-test experiment. Total variation cannot increase when information is discarded, so
+
+\[
+d_{\mathrm{TV}}\!\left(P_Q^{(n+1)},P_{\neg Q}^{(n+1)}\right)
+\ge
+ d_{\mathrm{TV}}\!\left(P_Q^{(n)},P_{\neg Q}^{(n)}\right).
+\]
+
+More tests cannot make the two histories less distinguishable; for fixed \(a\ne b\), the distance tends to one as \(n\) grows.
+
+But every fake alarm or staged intrusion can also impose a cost \(d\) on the actual guarding by occupying the guard's attention, creating alarm fatigue, or distracting from a real event. After \(n\) tests the imposed cost is \(nd\).
+
+More testing can therefore improve the sheep-counting evidence while making the guard's actual job worse. The statistical ranking and the social ranking move in opposite directions.
+
+Neither paradox is an argument against intervention. They only show that evidence for one predicate under one experiment does not automatically answer a different question.
+
+## What I would try next
+
+The scalable-challenge theorem suggests a direct experiment. A chess-like task could be given several difficulty levels while a second task competes for a suspected shared resource. Solo performance would estimate \(\alpha_{\lambda,\tau}\); dual-task performance would show where the saturation effect begins. Repeating this across people would give an empirical distribution over the relevant capacity models rather than requiring one guessed network.
+
+The party puzzles give a different experiment. Repeating the empty-pentagon and monotone-subsequence tasks at nearby sizes could estimate how their post-challenge resource demand changes with problem size, practice, and preparation. The precomputation profile \(\alpha(k)\) could be measured separately by letting participants prepare increasing numbers of answers or puzzle families.
+
+The random-time guard construction tests the temporal side of the model. Varying both the number and timing of hidden probes would show how well they distinguish sustained vigilance. Mackworth's results already suggest that vigilance changes through a long watch, so timing should matter rather than only the number of probes.
+
+The original question was simple:
+
+> What are you thinking about?
+
+A hidden cognitive history can leak into the visible world through answers, side effects, reactions to fresh events, short witnesses, or responses spread across time. Computational hardness is one way to make such evidence difficult to imitate, but it is not the principle underneath all of them.
+
+What is common to all of them is not work. It is separation: something visible is distributed differently depending on what happened in the person's head.
+
+## References
+
+- Manuel Blum and Santosh Vempala, [*The Complexity of Human Computation: A Concrete Model with an Application to Passwords*](https://arxiv.org/abs/1707.01204).
+- Wilson P. Tanner Jr. and John A. Swets, [*A Decision-Making Theory of Visual Detection*](https://doi.org/10.1037/h0058700), *Psychological Review* 61(6), 401–409, 1954.
+- L. R. Ford Jr. and D. R. Fulkerson, [*Constructing Maximal Dynamic Flows from Static Flows*](https://doi.org/10.1287/opre.6.3.419), *Operations Research* 6(3), 419–433, 1958.
+- N. H. Mackworth, [*The Breakdown of Vigilance during Prolonged Visual Search*](https://doi.org/10.1080/17470214808416738), *Quarterly Journal of Experimental Psychology* 1(1), 6–21, 1948.
+- Christopher D. Wickens, [*Multiple Resources and Mental Workload*](https://doi.org/10.1518/001872008X288394), *Human Factors* 50(3), 449–455, 2008.
+- Giuseppe Ateniese, Ilario Bonacina, Antonio Faonio, and Nicola Galesi, [*Proofs of Space: When Space Is of the Essence*](https://eprint.iacr.org/2013/805).
+- Dan Boneh, Joseph Bonneau, Benedikt Bünz, and Ben Fisch, [*Verifiable Delay Functions*](https://eprint.iacr.org/2018/601).
+- Martin E. Hellman, [*A Cryptanalytic Time-Memory Trade-Off*](https://doi.org/10.1109/TIT.1980.1056220), *IEEE Transactions on Information Theory* 26(4), 401–406, 1980.
+- [49 CFR § 238.237, *Automated monitoring*](https://www.law.cornell.edu/cfr/text/49/238.237), requiring alerter or deadman controls on covered passenger locomotives.
+- Paul Erdős and George Szekeres, the monotone subsequence theorem.
+- Heiko Harborth, [*Konvexe Fünfecke in ebenen Punktmengen*](https://doi.org/10.5169/seals-32945), *Elemente der Mathematik* 33(5), 116–118, 1978.
