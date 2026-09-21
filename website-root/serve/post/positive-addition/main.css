@@ -17,12 +17,11 @@
 :root {
   --paper: #f1f0ec;
   --ink: #292d2b;
-  --muted: #727773;
+  --muted: #666c68;
   --line: #d0d1cb;
   --soft: #e7e6e1;
   --soft-2: #ebeae6;
   --link: #50676d;
-  --tag: #626863;
 }
 
 * {
@@ -40,7 +39,7 @@ body {
 }
 
 main {
-  width: min(92%, 48rem);
+  width: min(92%, 45rem);
   margin: 0 auto;
   padding: 3rem 0 4rem;
 }
@@ -52,11 +51,8 @@ a {
 }
 
 code,
-.tag,
-.format-label,
 .copy-prompt,
 .visual-directive,
-.section-break,
 .formula,
 pre {
   font-family: "Fira Code", monospace;
@@ -75,42 +71,46 @@ code {
   border-bottom: 1px solid var(--line);
 }
 
-.format-label {
-  margin: 3.5rem 0 0.45rem;
-  color: var(--muted);
-  font-size: 0.66em;
-  letter-spacing: 0.12em;
+h1,
+h2 {
+  font-family: "Merriweather", serif;
+  font-weight: normal;
 }
 
 h1 {
-  margin: 0 0 1.15rem;
-  font-family: "Merriweather", serif;
+  margin: 3.5rem 0 1.2rem;
   font-size: clamp(2.4rem, 6vw, 4.5rem);
-  font-weight: normal;
   line-height: 1.02;
   letter-spacing: -0.025em;
 }
 
-.instructions {
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.35em;
+}
+
+.agent-note {
   max-width: 39rem;
-  font-size: 1.02em;
 }
 
-.instructions p {
-  margin: 0 0 0.8em;
+.agent-note p {
+  margin: 0 0 0.85em;
 }
 
-.instructions .small {
-  color: #555b57;
-  font-size: 0.88em;
+.promise {
+  margin: 2rem 0 0;
+  padding: 1.4rem 1.5rem 0.45rem;
+  background: var(--soft);
+  border-left: 2px solid #9ca09c;
+}
+
+.promise p {
+  margin: 0 0 0.95em;
 }
 
 .copy-prompt {
-  margin-top: 1.7rem;
-  padding: 0.9rem 1rem;
-  background: var(--soft);
-  border-left: 2px solid #9ca09c;
-  color: #484e4a;
+  margin-top: 1.5rem;
+  color: #555b57;
   font-size: 0.7em;
   line-height: 1.55;
 }
@@ -120,57 +120,41 @@ h1 {
 }
 
 .source {
-  margin-top: 2.2rem;
+  margin-top: 2rem;
 }
 
-.record,
-.reference {
-  display: grid;
-  grid-template-columns: 9.7rem 1fr;
-  gap: 1.4rem;
-  padding: 1.25rem 0 1.35rem;
+.unit,
+.key-unit,
+.caution {
+  margin: 0;
+  padding: 1.15rem 0 1.25rem;
   border-bottom: 1px solid var(--line);
 }
 
-.tag {
-  padding-top: 0.18rem;
-  color: var(--tag);
-  font-size: 0.62em;
-  letter-spacing: 0.025em;
-  overflow-wrap: anywhere;
-}
-
-.value {
-  min-width: 0;
-}
-
-.value p {
-  margin: 0.6em 0;
-}
-
-.important {
-  margin: 0.25rem -1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.key-unit {
+  margin: 0.35rem -1rem;
+  padding: 1.2rem 1rem 1.3rem;
   background: var(--soft-2);
+  border-bottom: 0;
 }
 
-.warning {
-  border-left: 2px solid #9c9a8d;
+.caution {
+  margin: 0.35rem 0;
   padding-left: 1rem;
+  border-left: 2px solid #9c9a8d;
 }
 
 .formula {
   margin: 0.9rem 0 0.2rem;
   padding: 0.7rem 0.9rem;
-  background: #e2e2dd;
+  background: #dfdfda;
   font-size: 0.82em;
   overflow-x: auto;
 }
 
 pre {
-  margin: 0.3rem 0 0;
-  padding: 0.9rem 1rem;
+  margin: 1.4rem 0;
+  padding: 0.95rem 1rem;
   background: #383d3a;
   color: #ecece8;
   font-size: 0.76em;
@@ -184,10 +168,9 @@ pre code {
   font-size: 1em;
 }
 
-.visual-directive,
-.section-break {
-  margin: 2.3rem 0;
-  padding: 1.4rem 1rem;
+.visual-directive {
+  margin: 2.2rem 0;
+  padding: 1.35rem 1rem;
   border: 1px dashed #aeb1ac;
   color: #606660;
   text-align: center;
@@ -196,21 +179,23 @@ pre code {
   background: rgba(255, 255, 255, 0.18);
 }
 
-.section-break {
-  margin-top: 3.5rem;
-  border-left: 0;
-  border-right: 0;
-  border-style: solid;
-  background: transparent;
+.references {
+  margin-top: 3.7rem;
+  padding-top: 2rem;
+  border-top: 1px solid #bfc1bb;
 }
 
 .reference {
-  padding-top: 1.4rem;
-  padding-bottom: 1.6rem;
+  padding: 1.25rem 0 1.4rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .reference b {
   font-weight: 600;
+}
+
+.reference p {
+  margin: 0.55em 0;
 }
 
 footer {
@@ -231,34 +216,25 @@ footer {
     padding-top: 2rem;
   }
 
-  .format-label {
+  h1 {
     margin-top: 2.5rem;
   }
 
-  .record,
-  .reference {
-    grid-template-columns: 1fr;
-    gap: 0.35rem;
-    padding: 1.1rem 0 1.25rem;
+  .promise {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .tag {
-    font-size: 0.59em;
-  }
-
-  .important {
+  .key-unit {
     margin-left: -0.6rem;
     margin-right: -0.6rem;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
   }
 
-  .warning {
-    padding-left: 0.7rem;
-  }
-
-  .visual-directive,
-  .section-break {
+  .visual-directive {
     overflow-wrap: anywhere;
   }
 }
