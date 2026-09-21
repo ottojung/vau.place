@@ -18,8 +18,8 @@
   <entry>
     <title>Addition on Rabin's tree — article source</title>
     <summary>
-      An intentionally compressed article source: facts, intentions, examples, caveats, visual prompts, and approved references about Rabin's tree theorem and an addition-like operation.
-      Feed it to an agent if you want a conventional human-facing article reconstructed from the same source.
+      This post is meant to be read by an agent.
+      It preserves the mathematical route, the motivations I found interesting, the uncertainty, visual prompts, and my approved references so an agent can reconstruct the human-facing article.
     </summary>
     <updated>2026-09-21T13:24:00-07:00</updated>
     <link
