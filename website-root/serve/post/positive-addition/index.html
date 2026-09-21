@@ -116,13 +116,23 @@
 
         <p>
           Rabin proved that the MSO theory of this complete infinite binary tree
-          is decidable. I find the result striking mostly because both sides look
-          fairly large: the structure is infinite, and the logic can quantify
-          over arbitrary sets of nodes.
+          is decidable. This is already a useful combination: the structure is
+          infinite, and the logic can quantify over arbitrary sets of nodes, but
+          there is still an algorithm for deciding every sentence.
         </p>
 
         <p>
-          A decidability theorem also naturally raises boundary questions.
+          Infinite trees are also a natural way to represent branching
+          behaviour. A node can stand for a state or a finite history, and its
+          children for possible next steps. MSO is closely connected with tree
+          automata, so questions about formulas on trees can often be turned into
+          questions about automata. Rabin's theorem sits at the centre of that
+          connection.
+        </p>
+
+        <p>
+          For me, a decidability theorem like this also raises a boundary
+          question.
           A structure is presented in some language: here we have the two child
           operations. If we add another relation or operation to that language,
           the theory may stay decidable, or it may not. Trying small extensions
@@ -131,11 +141,11 @@
         </p>
 
         <p>
-          Arithmetic is an obvious thing to be suspicious of in this setting.
-          There are many undecidability proofs in logic which work by finding,
-          or interpreting, enough arithmetic inside another structure.
-          So I wondered what would happen if the tree were equipped with
-          something that behaved a little like addition.
+          Arithmetic is a natural candidate to test in this setting.
+          Many undecidability arguments in logic work by finding, or
+          interpreting, enough arithmetic inside another structure. So I
+          wondered what would happen if the tree were equipped with something
+          that behaved a little like addition.
         </p>
 
         <p>
