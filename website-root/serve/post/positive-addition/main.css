@@ -17,9 +17,7 @@
 :root {
   --paper: #f1f0ec;
   --ink: #292d2b;
-  --muted: #666c68;
   --line: #d0d1cb;
-  --soft: #e7e6e1;
   --soft-2: #ebeae6;
   --link: #50676d;
 }
@@ -51,7 +49,6 @@ a {
 }
 
 code,
-.copy-prompt,
 .visual-directive,
 .formula,
 pre {
@@ -67,7 +64,7 @@ code {
 }
 
 .post-header {
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -97,30 +94,15 @@ h2 {
   margin: 0 0 0.85em;
 }
 
-.promise {
-  margin: 2rem 0 0;
-  padding: 1.4rem 1.5rem 0.45rem;
-  background: var(--soft);
-  border-left: 2px solid #9ca09c;
-}
-
-.promise p {
-  margin: 0 0 0.95em;
-}
-
-.copy-prompt {
-  margin-top: 1.5rem;
-  color: #555b57;
-  font-size: 0.7em;
-  line-height: 1.55;
-}
-
-.copy-prompt code {
-  font-size: 1em;
-}
-
 .source {
-  margin-top: 2rem;
+  margin-top: 1.2rem;
+}
+
+.opening-unit {
+  margin: 0;
+  padding: 1.25rem 0 1.35rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.03em;
 }
 
 .unit,
@@ -218,13 +200,6 @@ footer {
 
   h1 {
     margin-top: 2.5rem;
-  }
-
-  .promise {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .key-unit {
