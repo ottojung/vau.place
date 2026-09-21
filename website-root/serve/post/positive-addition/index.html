@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>I tried to add numbers to a tree — Vau's blog</title>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An exploration around Rabin's tree theorem that started with addition on a binary tree and ended with a small semigroup observation.">
+  <link rel="stylesheet" href="./main.css">
+  <meta property="og:site_name" content="Vau's place">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="I tried to add numbers to a tree">
+  <meta property="og:description" content="A small exploration around Rabin's theorem, positive growth, and arithmetic hiding in repeated powers.">
+</head>
+<body>
+
+<main>
+  <header class="post-header">
+    <a class="home-link" href="./../../index.html">Vau place</a>
+    <p class="kicker">a small logic detour</p>
+    <h1>I tried to add numbers to a tree</h1>
+    <p class="subtitle">
+      I started by asking what happens if one adds something arithmetic-looking
+      to Rabin's infinite binary tree. I expected a tree problem.
+      The tree mostly disappeared.
+    </p>
+
+    <div class="route-map" aria-label="The route of the argument">
+      <span>tree</span><i>→</i><span>growth</span><i>→</i><span>powers</span><i>→</i><span>arithmetic</span>
+    </div>
+  </header>
+
+  <div class="route">
+
+    <section class="step">
+      <aside class="marker"><span class="dot"></span><span>start</span></aside>
+      <div class="content">
+        <h2>Rabin gives us a surprisingly large safe zone</h2>
+
+        <p>
+          The complete infinite binary tree can be written as
+          <code>T = {0,1}*</code>: all finite binary strings.
+          From a node <code>w</code>, the two child operations are
+          <code>S0(w) = w0</code> and <code>S1(w) = w1</code>.
+        </p>
+
+        <p>
+          Monadic second-order logic, or MSO, lets us quantify not only over
+          nodes but also over sets of nodes. That sounds like a lot of power.
+          Still, Rabin's tree theorem says that the MSO theory of
+          <code>(T, S0, S1)</code> is decidable.
+        </p>
+
+        <p>
+          I find this kind of theorem hard not to poke at. Once you know there is
+          a fairly expressive structure whose theory is decidable, the next
+          question almost asks itself: how close is it to becoming undecidable?
+          What small extra operation would push it over the edge?
+        </p>
+      </div>
+    </section>
+
+    <section class="step">
+      <aside class="marker"><span class="dot"></span><span>first try</span></aside>
+      <div class="content">
+        <h2>So I tried addition</h2>
+
+        <p>
+          Addition is an obvious suspect. The problem is that tree nodes are
+          strings, not numbers, and there is no canonical operation that deserves
+          to be called their sum.
+        </p>
+
+        <p>
+          My first instinct was therefore not to define a particular operation,
+          but to ask for familiar algebraic laws: perhaps associativity,
+          commutativity, a distinguished zero, and so on.
+        </p>
+
+        <p>
+          That went nowhere. Those laws say much less about “addition” than my
+          intuition was smuggling in. Idempotent operations and semilattice-like
+          operations can satisfy much of the same algebra while having no
+          arithmetic growth at all. The missing ingredient was not another
+          elegant algebraic law. It was growth.
+        </p>
+      </div>
+    </section>
+
+    <section class="step">
+      <aside class="marker"><span class="dot"></span><span>too strong</span></aside>
+      <div class="content">
+        <h2>The tree itself suggested a notion of positive</h2>
+
+        <p>
+          The tree already has an order. Write <code>x ≼ y</code> when
+          <code>x</code> is a prefix of <code>y</code>, equivalently when
+          <code>x</code> is an ancestor of <code>y</code>.
+          This relation is MSO-definable from the two child operations, so using
+          it does not secretly add new expressive power.
+        </p>
+
+        <p>
+          On ordinary non-negative numbers, positive addition grows past both
+          inputs:
+        </p>
+
+        <div class="formula">x, y &gt; 0 &nbsp;⇒&nbsp; x + y &gt; x and x + y &gt; y.</div>
+
+        <p>
+          I tried the analogous condition on the tree. It is impossible.
+          Two nodes on unrelated branches have no common descendant, so there
+          may be nowhere for a sum that must sit strictly beyond both of them.
+        </p>
+
+        <p>
+          This was the first useful failure. It forced me to separate
+          “grows upward in this particular order” from the weaker thing I
+          actually wanted: the operation should not collapse back into either
+          input.
+        </p>
+      </div>
+    </section>
+
+    <section class="step">
+      <aside class="marker"><span class="dot"></span><span>weaken</span></aside>
+      <div class="content">
+        <h2>A tree-compatible positivity condition</h2>
+
+        <p>
+          Let <code>ε</code> be the root. I ended up with the following condition,
+          which I will call <em>positive growth</em>:
+        </p>
+
+        <div class="formula">
+          x, y ≠ ε &nbsp;⇒&nbsp; ¬(x + y ≼ x) and ¬(x + y ≼ y).
+        </div>
+
+        <p>
+          The result does not have to be a descendant of either summand.
+          It is allowed to jump to an incomparable branch. The condition only
+          forbids it from being an ancestor of, or equal to, either input.
+        </p>
+
+        <p>
+          This is deliberately weak. In particular, I no longer needed
+          commutativity or an identity for the argument that followed.
+          Associativity plus this small amount of growth turned out to be enough.
+        </p>
+      </div>
+    </section>
+
+    <section class="step">
+      <aside class="marker"><span class="dot"></span><span>surprise</span></aside>
+      <div class="content">
+        <h2>Repeated addition starts counting for us</h2>
+
+        <p>
+          Pick any non-root node <code>a</code>. Because the operation is
+          associative, its powers are unambiguous:
+        </p>
+
+        <div class="formula sequence">
+          a,&nbsp; a² = a+a,&nbsp; a³ = a+a+a,&nbsp; …
+        </div>
+
+        <p>
+          Positive growth immediately rules out non-root idempotents:
+          <code>x+x = x</code> would imply <code>x+x ≼ x</code>.
+        </p>
+
+        <p>
+          Now suppose two powers repeated, say <code>a^i = a^j</code> with
+          <code>i &lt; j</code>. From that point the powers would be periodic.
+          Any finite monogenic semigroup contains an idempotent power, so some
+          <code>a^n</code> would satisfy <code>a^n a^n = a^n</code>.
+          Positive growth forbids that. Therefore all the powers of
+          <code>a</code> are distinct.
+        </p>
+
+        <p>
+          And associativity gives the important equation:
+        </p>
+
+        <div class="formula">a^m + a^n = a^(m+n).</div>
+
+        <p>
+          At this point the operation has manufactured a copy of the positive
+          integers under addition. The only remaining question is whether MSO can
+          find that copy.
+        </p>
+      </div>
+    </section>
+
+    <section class="step">
+      <aside class="marker"><span class="dot"></span><span>MSO</span></aside>
+      <div class="content">
+        <h2>MSO can see the powers</h2>
+
+        <p>
+          Fix <code>a</code> and look at the one-step relation
+          <code>x ↦ x+a</code>. MSO can define reachability along this relation
+          with the usual closed-set trick:
+        </p>
+
+        <pre><code>Reach_a(x, y) :=
+  for every set X,
+    if x ∈ X
+       and X is closed under u ↦ u+a,
+    then y ∈ X</code></pre>
+
+        <p>
+          The intersection of all such closed sets is exactly the orbit
+          generated from <code>x</code>. Starting at <code>a</code>, MSO can
+          therefore define
+        </p>
+
+        <div class="formula">
+          D_a = {a, a², a³, …}.
+        </div>
+
+        <p>
+          On <code>D_a</code>, our operation is just ordinary addition of
+          exponents. So the expanded tree interprets
+          <code>(N&gt;0, +)</code>. The full MSO theory of positive integers
+          with addition is undecidable: MSO can define divisibility by talking
+          about sets closed under addition by a fixed number, and classical
+          arithmetic definability results then recover multiplication.
+        </p>
+
+        <p>
+          Therefore any associative operation on the binary tree satisfying
+          positive growth makes
+          <code>MSO(T, S0, S1, +)</code> undecidable.
+        </p>
+
+        <p>
+          This also answers the weaker question I started with.
+          Such an operation cannot already be MSO-definable in Rabin's original
+          tree, because adding a definable operation would preserve decidability.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="escape">
+    <p class="escape-label">and then the tree disappeared</p>
+    <h2>The argument was barely about trees</h2>
+
+    <p>
+      Once I wrote the proof down, the embarrassing thing was how little of the
+      tree remained in it.
+    </p>
+
+    <p>
+      The tree order was useful only to formulate a geometric condition that
+      forced the powers of <code>a</code> to keep producing new elements.
+      After that, the child relations, branches, prefixes, and even the root were
+      doing no work.
+    </p>
+
+    <p>
+      The real mechanism is much more ordinary:
+    </p>
+
+    <div class="chain">
+      <span>an element with infinitely many distinct powers</span>
+      <b>→</b>
+      <span>a definable monogenic subsemigroup</span>
+      <b>→</b>
+      <span>(N&gt;0, +)</span>
+      <b>→</b>
+      <span>undecidable MSO</span>
+    </div>
+
+    <p>
+      So the tree experiment suggests the following general statement:
+    </p>
+
+    <blockquote>
+      If a semigroup contains an element of infinite order, then its full
+      monadic second-order theory is undecidable.
+    </blockquote>
+
+    <p>
+      Here “infinite order” only means that
+      <code>a, a², a³, …</code> are all distinct.
+      The generated subsemigroup is then literally a copy of the positive
+      integers under addition.
+    </p>
+
+    <p>
+      There is one technical nuisance: the language need not name a particular
+      infinite-order element. Fortunately MSO can handle that too.
+      The property that the orbit of <code>a</code> has no directed cycle is
+      MSO-expressible using the same reachability formula, so the interpretation
+      can existentially choose a suitable <code>a</code>.
+    </p>
+
+    <details>
+      <summary>the parameter detail</summary>
+      <div class="details-body">
+        <p>
+          Let <code>D_a(x)</code> mean that <code>x</code> is reachable from
+          <code>a</code> by repeated right multiplication by <code>a</code>.
+          Then <code>a</code> has infinite order exactly when no
+          <code>x ∈ D_a</code> can be reached again from <code>x·a</code>.
+          A finite orbit eventually enters a directed cycle; an orbit with all
+          powers distinct never does.
+        </p>
+
+        <p>
+          This gives an MSO formula <code>InfiniteOrder(a)</code>.
+          To translate a sentence about <code>(N&gt;0,+)</code>, quantify an
+          <code>a</code> satisfying that formula and relativize all number and
+          set quantifiers to <code>D_a</code>.
+        </p>
+      </div>
+    </details>
+  </section>
+
+  <section class="after">
+    <h2>An idempotent-free corollary</h2>
+
+    <p>
+      A finite monogenic semigroup always contains an idempotent.
+      So if a nonempty semigroup has no idempotents at all, every element must
+      have infinitely many distinct powers. The same argument then gives
+      undecidable full MSO.
+    </p>
+
+    <p>
+      I like this conclusion mostly because it is so far away from the question
+      that produced it. I started with the geometry of an infinite binary tree
+      and with the vague idea that “addition should grow.” The useful object
+      turned out to be the tiny one-generator semigroup hiding inside the
+      operation.
+    </p>
+
+    <p>
+      I also do not want to oversell this as a new theorem. I did a limited
+      literature search and found all of the ingredients, along with nearby
+      undecidability results for monadic and finite-subset theories of algebraic
+      structures, but I did not find this exact statement packaged in this exact
+      way. That is weak evidence about terminology, not evidence of novelty.
+      I would be surprised if such a short argument had escaped the literature.
+    </p>
+  </section>
+
+  <section class="references">
+    <h2>References and nearby things</h2>
+
+    <ol>
+      <li>
+        <b>Michael O. Rabin, “Decidability of Second-Order Theories and Automata on Infinite Trees” (1969).</b>
+        The starting point: the monadic second-order theory of the complete
+        infinite binary tree is decidable.
+        <a href="https://doi.org/10.1090/S0002-9947-1969-0246760-1">DOI</a>
+      </li>
+
+      <li>
+        <b>Raphael M. Robinson, “Restricted Set-Theoretical Definitions in Arithmetic” (1958).</b>
+        A classical source around what monadic set quantification can define in
+        arithmetic.
+        <a href="https://doi.org/10.1090/S0002-9939-1958-0093479-4">DOI</a>
+      </li>
+
+      <li>
+        <b>Julia Robinson, “Definability and Decision Problems in Arithmetic” (1949).</b>
+        Among the classical definability facts used in the arithmetic
+        undecidability story is that multiplication can be recovered from
+        successor and divisibility.
+        <a href="https://doi.org/10.2307/2266510">DOI</a>
+      </li>
+
+      <li>
+        <b>Monogenic semigroups.</b>
+        The standard finite picture is eventual periodicity with a unique
+        idempotent in the cyclic part. This is the small semigroup fact used
+        when repeated powers are ruled out.
+        <a href="https://encyclopediaofmath.org/wiki/Cyclic_semi-group">Encyclopedia of Mathematics</a>
+      </li>
+
+      <li>
+        <b>Sergey Dudakov, “On Undecidability of Finite Subsets Theory for Torsion Abelian Groups” (2022).</b>
+        This is not the same theory as the one discussed here, but it is a useful
+        nearby result: finite-subsets theories of monoids with infinite-order
+        elements have closely related arithmetic interpretations.
+        <a href="https://doi.org/10.3390/math10030533">DOI</a>
+      </li>
+    </ol>
+  </section>
+
+  <footer>
+    <a href="./../../index.html">← return home</a>
+  </footer>
+</main>
+
+</body>
+</html>
