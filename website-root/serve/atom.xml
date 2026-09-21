@@ -18,8 +18,8 @@
   <entry>
     <title>Addition on Rabin's tree</title>
     <summary>
-      This post is meant to be read with an agent.
-      It preserves the mathematical route, the motivations I found interesting, the uncertainty, visual ideas, and my approved references.
+      Rabin's theorem makes monadic second-order logic decidable on the complete infinite binary tree.
+      I wondered what happens if we add something like addition: a weak notion of positive growth already forces a copy of the positive integers, and the tree eventually gives way to a more general semigroup observation.
     </summary>
     <updated>2026-09-21T13:24:00-07:00</updated>
     <link
