@@ -11,9 +11,26 @@
     rel="alternate"
     type="text/html"
   />
-  <updated>2026-07-12T16:16:37-07:00</updated>
+  <updated>2026-09-21T13:24:00-07:00</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+
+  <entry>
+    <title>A small experiment with addition on Rabin's tree</title>
+    <summary>
+      Rabin's theorem says that monadic second-order logic remains decidable on the complete infinite binary tree.
+      This post gives some context on the tree and the logic, then follows a small experiment:
+      what happens if we add an associative operation that behaves a little like positive addition?
+    </summary>
+    <updated>2026-09-21T13:24:00-07:00</updated>
+    <link
+      href="https://vau.place/post/positive-addition/index.html"
+      rel="alternate"
+      type="text/html"
+    />
+    <id>https://vau.place/post/positive-addition/index.html</id>
+    <content type="text/html" src="https://vau.place/post/positive-addition/index.html"/>
+  </entry>
 
   <entry>
     <title>Hidden in the Branches</title>
