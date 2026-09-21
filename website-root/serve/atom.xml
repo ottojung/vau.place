@@ -11,9 +11,27 @@
     rel="alternate"
     type="text/html"
   />
-  <updated>2026-09-21T13:24:00-07:00</updated>
+  <updated>2026-09-21T15:16:00-07:00</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+
+  <entry>
+    <title>Sheep-Counting Problems for Computer Science</title>
+    <summary>
+      When can a person prove, or at least give useful evidence for, what they were thinking about?
+      This post develops sheep-counting problems through visible traces, cognitive resource networks,
+      and human proofs of work, space, and time.
+    </summary>
+    <updated>2026-09-21T15:16:00-07:00</updated>
+    <link
+      href="https://vau.place/post/sheep-counting-problems/index.html"
+      rel="alternate"
+      type="text/html"
+    />
+    <id>https://vau.place/post/sheep-counting-problems/index.html</id>
+    <content type="text/html" src="https://vau.place/post/sheep-counting-problems/index.html"/>
+  </entry>
+
 
   <entry>
     <title>Addition on Rabin's tree</title>
