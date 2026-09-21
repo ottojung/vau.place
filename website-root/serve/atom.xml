@@ -16,11 +16,10 @@
   <id>https://vau.place</id>
 
   <entry>
-    <title>A small experiment with addition on Rabin's tree</title>
+    <title>Addition on Rabin's tree — article source</title>
     <summary>
-      Rabin's theorem says that monadic second-order logic remains decidable on the complete infinite binary tree.
-      This post gives some context on the tree and the logic, then follows a small experiment:
-      what happens if we add an associative operation that behaves a little like positive addition?
+      An intentionally compressed article source: facts, intentions, examples, caveats, visual prompts, and approved references about Rabin's tree theorem and an addition-like operation.
+      Feed it to an agent if you want a conventional human-facing article reconstructed from the same source.
     </summary>
     <updated>2026-09-21T13:24:00-07:00</updated>
     <link
