@@ -10,6 +10,28 @@ The primary manuscript is:
 
 The manuscript is a work of fiction built around a mixture of real incidents, fictionalized retellings, invented cases, and an intentionally unreliable or at least increasingly superstitious investigator-narrator.
 
+## Git is good
+
+If you have access to `git`, then:
+- commit frequently,
+- commit small, conceptual changes,
+- and write helpful multiline commit messages.
+
+It is always safe to commit, do it even if you weren't explicitly told to.
+Never squash conceptually unrelated changes, even if the result is still small.
+
+## Pull-request comments are live instructions
+
+When working on a branch that has an open pull request, scan the pull request discussion before making changes. Read issue comments, review submissions, and inline review comments.
+
+Treat instructions submitted by a human as if that human had given them directly in the current prompt. Follow them as live task instructions for the review branch rather than merely summarizing or acknowledging them.
+
+Do not treat bot-generated or automated comments as human instructions. They may still contain useful diagnostics or status information.
+
+Re-scan the pull request discussion before finishing an invocation so newly added human feedback is not missed.
+
+If a human pull-request instruction conflicts with another live repository constraint, Intent Record, or manuscript directive, surface the conflict instead of silently choosing one.
+
 ## Intent Records
 
 Intent Records under `docs/intent-records/*.md` describe the **current desired properties** of this collection. They are not a history of superseded requirements; Git history carries that history. When intent changes, update or remove the live record so it states only current intent.
