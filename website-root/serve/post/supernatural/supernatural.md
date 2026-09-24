@@ -225,26 +225,78 @@ The moth looks unconvinced.
 
 ---
 
-### II. The Heisenbug I Failed to Catch
-
-<FIXME>
-Change the title to something more evocative.
-</FIXME>
-
-<NOTE>
-It would be nice to link to an actual report of someone who noticed an interesting or unique Heisenbug and how they diagnosed it. The story should then just be a retelling of that, with some embellishment. The story should not end with fixing the bug - it should portray the bug as something **real**, some kind of metaphysical phenomena that makes the system misbehave when it is not being observed.
-</NOTE>
+### II. The Heisenbug I Failed To Catch
 
 **Somewhere between midnight and the first ferry.**
 
+At the time, I was doing reliability work for a small company whose application spent most of its life asking a database ordinary questions. Most nights, the failures were ordinary too: a full disk, a dead connection, a process that had simply run out of something.
 
+That night, I was called because a `COMMIT` would sometimes not come back.
 
-<MUST HAVES>
-"With strace running, it behaved as if repentant"
-"I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*."
-"We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me."
-"In the morning, I wrote my note: *This thing hates to be watched*."
-</MUST HAVES>
+This was not a complicated transaction. The application had read a little over a thousand rows through a database proxy over a Unix-domain socket and then asked to commit an otherwise empty transaction. Under production load, one greenlet would occasionally stop there and remain stopped, waiting on the file descriptor as if the other side had forgotten it.
+
+The first occurrence looked like networking. The second looked like the client library. By the third, we had replaced enough pieces that the shape of the failure had become more interesting than any one suspect.
+
+At 00:41 we had a loop that would usually reproduce the hang inside an hour, although “usually” included eleven minutes once and fifty-three the next time. I attached `strace` because I wanted the last useful system call before the process stopped. With strace running, it behaved as if repentant.
+
+We left the trace running for ninety minutes. Nothing hung. I detached it; seventeen minutes later the same request stopped in the same place.
+
+We did it again. The second time, nobody made a joke when the untraced run failed.
+
+`strace` is not a window cut into a process. It stops and resumes the process around system calls, changing the schedule as it watches. If two events were arriving in the wrong order, that alone could move them apart. I wrote *timing* in the margin of my notebook and underlined it twice.
+
+I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*.
+
+They did almost nothing: one line before the commit, one after. With them in place, the hang disappeared. Remove them, and after enough traffic it returned.
+
+A slower pure-Python client did not reproduce it. A small compiled client using the same C library did. That moved suspicion away from the application code and toward speed, buffering, or the path through the proxy. It also gave us another way to make the failure vanish without understanding it.
+
+By then I had begun to dislike successful tests.
+
+The traffic between the application and proxy used a Unix-domain socket, so our usual packet capture was no help. We put `socat` in the middle to watch the bytes. The hang disappeared.
+
+We removed it.
+
+The hang returned.
+
+There were plenty of ordinary mechanisms left to blame: scheduling, syscall boundaries, queue occupancy, buffering, the proxy's own state machine. We began changing one thing at a time, carefully, because every change had acquired a second meaning. It was either an experiment or another way of warning the failure that we were there.
+
+We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me.
+
+At 03:20 I copied the useful part of the night into a table:
+
+| condition | result |
+| --- | --- |
+| ordinary run, fast local socket | hangs eventually |
+| `strace` | no hang observed |
+| prints around `COMMIT` | no hang observed |
+| `socat` in the socket path | no hang observed |
+| slower client | no hang observed |
+| small compiled client | hangs |
+
+I had intended the table to calm me. Instead, it made the pattern look cleaner than it had felt while we were producing it.
+
+I left a seventh row blank for the run that would finally fail while we were collecting enough evidence to explain it. At 03:47 the row was still blank. At 04:12 it was still blank. I stopped checking the time as often.
+
+What I wanted was one ordinary artifact: the final syscall, a queue transition, a timeout, a bad state we could point to after the fact. Each attempt to obtain one changed the conditions just enough that the failure moved elsewhere, and the evidence left behind was evidence of its absence.
+
+At 04:30 somebody called it a race condition. I agreed. The name was plausible, but it named a family of failures, not the two events we needed. We could not point to the race. We could only point to the conditions under which it declined to happen.
+
+At 04:56, after twenty-three minutes without instrumentation, the compiled client hung again. I put my hands on the keyboard to attach the tracer and stopped.
+
+For several seconds I did nothing.
+
+One of the others asked what I was waiting for.
+
+“Nothing,” I said, and attached `strace`.
+
+It showed a process already asleep in the expected wait. It told us where the body lay, not how it had fallen.
+
+By 05:18 the production traffic had thinned and reproduction slowed with it. We stopped because a night shift can end without an investigation ending.
+
+Nothing was fixed. We had only learned which forms of attention the failure appeared to tolerate.
+
+In the morning, I wrote my note: *The thing hates to be watched*.
 
 ---
 
@@ -328,11 +380,16 @@ Something with the same moral as "We live by the text; we survive by the small, 
 
 4. **Additional context from advocacy and oversight materials.** *eVoting in Belgium: State of the Union* (PourEVA), summarizing known incidents including the 4096-vote anomaly. ([vooreva.be][4])
 
+5. **Observation-sensitive Heisenbug substrate for Case II.** Case II is a fictional composite. Carson Ip documented a 2019 ProxySQL hang after large result sets where `strace`, `socat`, and added print statements suppressed the failure, while a slower client changed reproducibility. The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
+
 *(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
 
 [1]: https://americanhistory.si.edu/collections/object/nmah_334663 "Log Book With Computer Bug"
 [2]: https://www.poureva.be/spip.php?article32= "Rapport concernant les élections du 18 mai 2003"
 [3]: https://en.wikipedia.org/wiki/Electronic_voting_in_Belgium "Electronic voting in Belgium"
 [4]: https://www.vooreva.be/IMG/pdf/eVoting_State_of_the_union.pdf "eVoting in Belgium “State of the Union”"
+[5]: https://github.com/sysown/proxysql/issues/1939 "ProxySQL issue #1939"
+[6]: https://carsonip.me/posts/fixing-proxysql-idle-threads-epoll-hang-heisenbug/ "Fixing ProxySQL Idle Threads Epoll Hang Heisenbug"
+[7]: https://github.com/sysown/proxysql/pull/1952 "ProxySQL PR #1952"
 
 ---
