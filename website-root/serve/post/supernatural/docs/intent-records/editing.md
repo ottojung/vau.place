@@ -54,7 +54,7 @@ kind: requirement
 
 The loop must not keep rewriting merely because a model can propose another version. Preserve distinctive phrasing, oddness, restraint, asymmetry, implicit humor, and productive discomfort when they are doing useful work. When candidate and incumbent differ mainly by taste and the improvement is unclear, retain the incumbent rather than sanding the manuscript toward generic literary smoothness.
 
-$id-9342987960007338
+$id-9688210860921309
 title: Human intent outranks autonomous taste
 date: 2026/09/23
 source: @ottojung
