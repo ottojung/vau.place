@@ -176,9 +176,42 @@ They could inspect software, recount totals, and ask clerks what they had done. 
 
 Later, the machine was tested, the software examined, and the result reconstructed. No software defect was found that explained the discrepancy. The experts' report concluded that it could *very probably* be attributed to a spontaneous and random inversion of a binary position in the computer's working memory.
 
-The report left the physical cause open. Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*. By the time the incident reached programmers, the whole thing was often filed under *computer error*. The label is correct in the way that shipwrecks are wet. What stayed with me was the qualification in the report: *very probably*.
+The report left the physical cause open. The committee’s report is less romantic, but it permits the word that haunts this dossier: likely. A likely single-event upset—an ion that fell through the evening and made a number grow teeth.
+
+Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*. By the time the incident reached programmers, the whole thing was often filed under *computer error*. The phrase is correct in the way that shipwrecks are wet. What stayed with me was the qualification in the report: *very probably*.
 
 One clerk later admitted that he would have preferred a boring human mistake. A human mistake belonged somewhere: to a hand, a tired eye, a copied line. It could be found and corrected. He did not say this during the investigation. If human error returned to the list of possibilities, he himself was one of the humans available.
+
+When he finished, the cafeteria had thinned and our coffee had gone cold. He meant, I think, that we must act as if the world intends this sort of interruption, because the world does not intend otherwise.
+
+At the time I heard an engineer's argument about preparation, nothing more. We do not fight the weather, he said; we prepare for it. The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
+
+The waiter left the bill between us and moved on without a word.
+He looked at it for a moment, then said, “You know what cafés should do? Add a line for conversation quality. Like a service rating, but mandatory. You’d tip more if you’d actually learned something.”
+
+I thought he was joking, but he kept going.
+“They could print a small scale at the bottom,” he said, sketching in the air. “Zero for silence, ten for revelations. You fill it in yourself. Encourages improvement.”
+
+I unfolded the bill. “That’s unworkable,” I said.
+“Why?”
+“The staff can’t verify it.”
+“They don’t verify taste either,” he said. “You could hate the soup and still pay for flavor.”
+
+He seemed genuinely interested in the logistics.
+“They’d need categories,” he went on. “Depth, originality, politeness—maybe a subtotal for wit. It could revolutionize small talk.”
+
+I set the paper flat against the table, aligning it with the grain. “That’s not how cafés operate,” I said.
+He smiled faintly. “Not yet.”
+
+There was a pause — long enough to feel like he was waiting for me to solve his idea.
+Finally, I said, “No.”
+
+Not loud, but enough.
+He blinked once, almost surprised, then nodded as if I’d supplied the missing metric.
+
+When the waiter returned, I left the money neatly folded inside the bill. He added a coin, uncalled for.
+
+I did not write a field note that afternoon. Years later, when I began the dossier, I put this under his story:
 
 **Field Note #1. Horror, in our trade, is the clean error—the one that leaves no prints.**
 

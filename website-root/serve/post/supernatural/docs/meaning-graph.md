@@ -1,6 +1,6 @@
 # Meaning graph
 
-This is a living analytical map of `supernatural.md`. Coverage is intentionally incremental. Sentence-level coverage below currently focuses on the closing movement of Case I, from the post-investigation report through the Mark II moth coda, because that passage is the active refinement target.
+This is a living analytical map of `supernatural.md`. Coverage is intentionally incremental. Sentence-level coverage below currently focuses on the closing movement of Case I, from the post-investigation report through the Mark II moth coda.
 
 ## Intent anchors
 
@@ -15,101 +15,208 @@ This is a living analytical map of `supernatural.md`. Coverage is intentionally 
 
 Coverage starts at “Later, the machine was tested...” and ends at “The moth looks unconvinced.”
 
-### Current-state nodes
+### Nodes
 
 **S1** — “Later, the machine was tested, the software examined, and the result reconstructed.”
 - Literal: the anomaly receives retrospective technical investigation.
 - Purpose: return from the dramatized night to documentary aftermath.
-- Reader inference: ordinary engineering processes were actually performed; this is not merely a campfire tale.
+- Reader inference: ordinary engineering processes were actually performed.
 - Narrator stance: factual, restrained.
-- Depends on: the immediately preceding single-event-upset hypothesis.
 
 **S2** — “No software defect was found that explained the discrepancy.”
-- Literal: investigators did not find a software bug that accounts for the count.
+- Literal: investigators found no software defect accounting for the count.
 - Purpose: narrows the explanatory field without claiming impossibility.
 - Must preserve: absence of a found defect is not proof of a cosmic cause.
 - Edge: S2 supports S3.
 
-**S3** — report conclusion about a “very probably” spontaneous/random inversion in working memory.
-- Literal: the official experts assign high probability to a bit inversion.
-- Purpose: documentary anchor and the strongest sanctioned claim.
-- Reader inference: even the official account contains uncertainty.
-- Motif: probability language becomes emotionally heavier than certainty.
-- Edge: S3 sets up S6.
+**S3** — the experts' report says the discrepancy could *very probably* be attributed to a spontaneous/random inversion in working memory.
+- Literal: the official report assigns high probability to a bit inversion.
+- Purpose: documentary anchor and strongest sanctioned claim.
+- Reader inference: even the official account retains uncertainty.
+- Motif: probability language carries the residual unease.
 
 **S4** — “The report left the physical cause open.”
 - Literal: the report does not establish what physically flipped the bit.
-- Purpose: protects the distinction between documented conclusion and later radiation interpretation.
-- Must preserve: source hygiene; do not accidentally attribute the ion/cosmic-ray story to the committee.
+- Purpose: protect the distinction between the documented conclusion and later radiation interpretation.
+- Must preserve: source hygiene; do not attribute the ion/cosmic-ray mechanism to the committee.
 
-**S5** — later retellings supply ionizing radiation; newspapers reduce it to “cosmic flea bite”; programmers reduce it further to “computer error.”
-- Literal: successive communities compress the uncertainty into more convenient labels.
-- Purpose: show how explanation becomes folklore by retelling.
-- Reader inference: every label is true at one scale and misleading at another.
-- Rhetoric: the comic phrase “cosmic flea bite” sits beside procedural seriousness.
-- Edge: S5 contrasts-with S3 and S4.
+**S5** — “The committee’s report is less romantic, but it permits the word that haunts this dossier: likely.”
+- Literal: the narrator emphasizes the report's qualified confidence.
+- Purpose: turn `likely` into a dossier motif without strengthening the official claim.
+- Narrator stance: clearly retrospective, later-period voice.
+- Edge: S3 sets-up S5.
 
-**S6** — “The label is correct in the way that shipwrecks are wet.”
-- Literal: “computer error” is technically accurate but radically uninformative.
-- Purpose: convert classification failure into the case’s first strongly literary retrospective judgment.
-- Narrator stance: this sounds like the later dossier narrator, not the younger café narrator.
-- Risk: because the café frame has not explicitly resumed, this is where the chronology/voice seam becomes visible.
+**S6** — “A likely single-event upset—an ion that fell through the evening and made a number grow teeth.”
+- Literal: narrator supplies the vivid physical interpretation as a likely reconstruction.
+- Purpose: let the technical explanation acquire uncanny imagery while remaining an interpretation.
+- Depends on: S4 must remain immediately available so the reader knows the committee did not identify the ion itself.
 
-**S7** — “What stayed with me was the qualification in the report: very probably.”
-- Literal: the narrator fixates on residual uncertainty.
+**S7** — later retellings supply ionizing radiation; newspapers reduce it to “cosmic flea bite.”
+- Literal: later accounts make the physical explanation more concrete.
+- Purpose: show explanation turning into folklore by retelling.
+- Rhetoric: comic compression beside procedural seriousness.
+- Edge: S7 follows S4–S6 from documented uncertainty into cultural shorthand.
+
+**S8** — programmers often file the incident under “computer error.”
+- Literal: the story receives a broad technical label.
+- Purpose: demonstrate how a correct category can erase the interesting causal shape.
+
+**S9** — “The phrase is correct in the way that shipwrecks are wet.”
+- Literal: “computer error” is true but radically under-informative.
+- Purpose: compact critique of classification.
+- Narrator stance: later dossier voice.
+- Edge: S8 explains S9.
+
+**S10** — “What stayed with me was the qualification in the report: very probably.”
+- Literal: narrator remembers the uncertainty.
 - Purpose: reveal the seed of his later epistemic drift.
-- Reader inference: his superstition grows not from disproving engineering but from staring at its remaining probability mass.
-- Edge: S3 sets-up S7; S7 sets-up later supernatural openness.
+- Reader inference: his superstition grows from the probability left over after good engineering, not from rejecting engineering.
+- Edge: S3 and S5 set-up S10.
 
-**S8** — clerk prefers a boring human mistake.
+**S11** — clerk prefers a boring human mistake.
 - Literal: a clerk would rather the cause be attributable to a person.
-- Purpose: give skeptical readers an emotionally ordinary position inside the story.
-- Reader inference: cosmic explanation feels invasive because it lacks a legible responsible agent.
-- Edge: S8 parallels the narrator’s earlier skepticism.
+- Purpose: give skeptical readers an ordinary emotional position inside the story.
 
-**S9** — human mistakes belong to a hand, tired eye, or copied line and can be found/corrected.
-- Literal: human error has traceable agency.
-- Purpose: articulate why mundane explanations feel safer.
-- Motif: legibility versus causes that leave no recoverable witness.
+**S12** — a human mistake belongs to a hand, tired eye, or copied line.
+- Literal: human error has identifiable agency.
+- Purpose: explain why mundane causes feel safer.
+- Motif: legibility versus transient causes.
 
-**S10** — the clerk did not say this during the investigation because he himself was one of the humans who could be blamed.
-- Literal: institutional incentives shape what explanations people voice.
-- Purpose: prevent the clerk’s preference from becoming abstract philosophy; restore procedural stakes.
-- Rhetoric: dry human self-preservation counterweights cosmic speculation.
+**S13** — “It could be found and corrected.”
+- Literal: a human mistake can in principle be located and repaired.
+- Purpose: completes the appeal of the boring explanation.
 
-**S11** — Field Note #1: “Horror, in our trade, is the clean error—the one that leaves no prints.”
+**S14** — the clerk kept this preference private during the investigation.
+- Literal: he did not voice it.
+- Purpose: restore institutional stakes to the philosophical preference.
+
+**S15** — if human error returned to the possibilities, the clerk himself was one of the humans available.
+- Literal: blame could land on him.
+- Purpose: dry human self-preservation counterweights cosmic speculation.
+- Edge: S15 causally-explains S14.
+
+**S16** — the cafeteria has thinned and the coffee has gone cold when the technician finishes.
+- Literal: explicit return to the frame narrative.
+- Purpose: repair the chronology seam and remind the reader that the 2003 reconstruction was told inside an earlier meeting.
+- Edge: S16 marks a temporal return from S1–S15.
+
+**S17** — “He meant, I think, that we must act as if the world intends this sort of interruption, because the world does not intend otherwise.”
+- Literal: later narrator interprets the technician's lesson as preparation for indifferent interruption.
+- Purpose: recover the technician's engineering doctrine while keeping “I think” as retrospective qualification.
+- Narrator stance: mature narrator interpreting younger experience.
+
+**S18** — “At the time I heard an engineer's argument about preparation, nothing more.”
+- Literal: younger narrator heard no supernatural implication.
+- Purpose: enforce the early-period skeptical stance explicitly enough to prevent voice collapse.
+- Edge: S18 contrasts-with S17.
+
+**S19** — “We do not fight the weather, he said; we prepare for it.”
+- Literal: technician compares system unreliability to weather.
+- Purpose: practical, non-mystical formulation of resilience.
+- Motif: the earlier dry-weather detail now pays off conceptually without claiming causality.
+
+**S20** — the “cathedral of checks” sentence.
+- Literal: preparation means layered checks, redundancy, scrubbing, watchdogs, and paper voting.
+- Purpose: counterpoint to fatalism; uncertainty justifies more engineering, not surrender.
+- Reader inference: the technician's worldview remains operational even when causes are transient.
+- Rhetoric: deliberately grand image anchored by concrete mechanisms.
+- Edge: S19 sets-up S20.
+
+**S21** — waiter leaves the bill between them.
+- Literal: ordinary café business resumes.
+- Purpose: lower the narrative pressure and begin closing the frame.
+
+**S22** — technician proposes a mandatory line for “conversation quality.”
+- Literal: he wants cafés to rate conversations like service.
+- Purpose: re-establish his odd tendency to formalize things that do not fit measurement.
+- Humor: remains implicit because he is sincere.
+
+**S23** — narrator initially assumes he is joking, but the technician continues.
+- Literal: mismatch in interpretation.
+- Purpose: keep the narrator/technician worldview gap active after the technical story.
+
+**S24** — technician proposes a zero-to-ten scale from silence to revelations and says customers would fill it in.
+- Literal: expands the absurd metric.
+- Purpose: make the joke procedural rather than punch-line based.
+
+**S25** — narrator says the scheme is unworkable; technician asks why.
+- Literal: narrator evaluates implementation rather than social absurdity.
+- Purpose: the narrator is also procedural, but in a different way.
+- Edge: S25 mirrors the earlier biscuit exchange.
+
+**S26** — narrator objects that staff cannot verify the score; technician counters that taste is not verified either.
+- Literal: both reason seriously about a silly premise.
+- Purpose: the comedy comes from sustained operational logic.
+
+**S27** — technician proposes categories such as depth, originality, politeness, and wit.
+- Literal: he elaborates the metric.
+- Purpose: escalation by specification.
+
+**S28** — narrator aligns the bill with the table grain and says cafés do not work that way; technician answers “Not yet.”
+- Literal: physical tidiness and procedural conservatism meet speculative system design.
+- Purpose: characterize both men without explaining the contrast.
+
+**S29** — a pause leaves the technician apparently waiting for the narrator to solve the idea.
+- Literal: conversational impasse.
+- Purpose: small social asymmetry; keeps humor quiet.
+
+**S30** — narrator finally says “No.”
+- Literal: refuses the premise.
+- Purpose: short rhythmic release after the technician's elaboration.
+
+**S31** — technician accepts the refusal as though it were the missing metric.
+- Literal: he nods rather than taking offense.
+- Purpose: final comic beat on incompatible frames of reference.
+
+**S32** — narrator pays neatly; technician adds an unasked-for coin.
+- Literal: closes the meeting in a small act of unnecessary adjustment.
+- Purpose: concrete, understated exit from the café.
+- Reader inference: the technician cannot resist correcting or supplementing a system.
+
+**S33** — “I did not write a field note that afternoon.”
+- Literal: no dossier note existed at the time.
+- Purpose: make the chronology explicit.
+- Edge: S33 protects `$id-7350745426882596`.
+
+**S34** — “Years later, when I began the dossier, I put this under his story:”
+- Literal: locates the Field Note in the narrator's later life.
+- Purpose: bridge early skeptical encounter to mature supernatural dossier.
+- Edge: S34 must-precede S35.
+
+**S35** — Field Note #1: “Horror, in our trade, is the clean error—the one that leaves no prints.”
 - Literal: later dossier aphorism.
-- Purpose: crystallize the case’s horror.
-- Problem: the manuscript has not marked when the early café meeting ended or when the later dossier was created, so this field note currently appears to materialize across an unmarked time jump.
-- Needed relationship: must be explicitly framed as a later note, not something the younger narrator writes during the meeting.
+- Purpose: crystallize the case's horror.
+- Reader inference: the frightening part is not the bit flip itself but the clean disappearance of its physical cause.
 
-**S12** — “There is an older photograph I keep in a folder called Proofs I Do Not Argue With.”
-- Literal: the later narrator keeps the Mark II moth image in a personal folder.
-- Purpose: bridge Schaerbeek into the moth anecdote and reveal mature superstition.
-- Narrator stance: unmistakably later-period dossier voice.
-- Edge: S11 sets-up S12.
+**S36** — narrator keeps an older photograph in a folder called *Proofs I Do Not Argue With*.
+- Literal: introduces the Mark II moth image and the mature narrator's private superstition.
+- Purpose: bridge Schaerbeek to a contrasting case with a preserved physical culprit.
+- Edge: S35 sets-up S36.
 
-**S13** — the photograph contains a moth taped to an engineering log.
+**S37** — photograph contains a moth taped to an engineering log.
 - Literal: introduces the historical object.
-- Purpose: material proof contrasts with Schaerbeek’s missing physical trace.
-- Edge: S13 contrasts-with S2–S4.
+- Purpose: material proof contrasts with Schaerbeek's missing trace.
+- Edge: S37 contrasts-with S4 and S35.
 
-**S14** — the page is from the Harvard Mark II; the operators found the moth, taped it in, and wrote “First actual case of bug being found.”
-- Literal: documented historical anecdote.
-- Purpose: supply a case where the cause can literally be preserved beside the record.
-- Must preserve: keep documentary fact distinct from narrator superstition.
+**S38** — page belongs to the Harvard Mark II.
+- Literal: identifies the artifact.
+- Purpose: documentary grounding.
 
-**S15** — narrator likes the page because it makes engineering superstition almost literal: name the failure and perhaps banish it.
-- Literal: narrator interprets the logbook ritualistically.
-- Purpose: supernatural leaning appears as interpretation, not documentary claim.
-- Edge: S15 echoes S11’s “leaves no prints” by giving the opposite case: a cause that can be taped down.
+**S39** — operators found a moth in Relay #70, Panel F, taped it into the log, and wrote “First actual case of bug being found.”
+- Literal: historical anecdote.
+- Purpose: provide a failure whose physical cause can literally be preserved beside the record.
+- Must preserve: documentary fact remains distinct from narrator interpretation.
 
-**S16** — “Here they could do both—call it a bug, pull it from the relay, and tape it beside the record.”
-- Literal: moth cause is named, removed, preserved.
-- Purpose: payoff to the contrast with Schaerbeek’s vanished cause.
+**S40** — narrator likes the page because it makes engineering superstition almost literal: name the failure and perhaps banish it.
+- Literal: narrator interprets the act ritualistically.
+- Purpose: supernatural leaning appears as interpretation, not historical claim.
+
+**S41** — “Here they could do both—call it a bug, pull it from the relay, and tape it beside the record.”
+- Literal: culprit is named, removed, preserved.
+- Purpose: payoff to the contrast with Schaerbeek's vanished cause.
 - Rhythm: three-step procedural closure.
 
-**S17** — “The moth looks unconvinced.”
+**S42** — “The moth looks unconvinced.”
 - Literal: personifies the moth.
 - Purpose: understated uncanny/comic exit.
 - Must preserve: do not explain the joke after it lands.
@@ -117,18 +224,23 @@ Coverage starts at “Later, the machine was tested...” and ends at “The mot
 ### Important edges
 
 - S1 → S3: `supports` documentary aftermath.
-- S3 → S7: `sets-up` narrator fixation on probabilistic language.
-- S4 ↔ S5: `distinguishes` official report from later radiation/cosmic-ray retellings.
-- S6 → S11: `voice-shift` from reconstruction toward mature dossier narrator, currently under-signalled.
-- S8 → S10: `causally-explains` why the clerk keeps his preference private.
-- S11 → S12: `sets-up` the moth as the contrasting “trace preserved” case.
-- S13–S16 ↔ S1–S4: `contrasts-with` physical culprit preserved versus transient cause inferred.
-- S17 → later cases: `sets-tone` for serious procedure ending in a small uncanny remainder.
+- S3 → S5 → S10: `sets-up` the narrator's fixation on qualified certainty.
+- S4 ↔ S6–S7: `distinguishes` official report from later physical interpretation.
+- S8 → S9: `explains` why a technically correct label can still be narratively false to the event.
+- S11 → S15: `causal-and-institutional-chain` from desire for mundane error to reluctance to voice it.
+- S16: `temporal-return` from reconstructed 2003 events to the earlier café meeting.
+- S17 ↔ S18: `retrospective-contrast` between mature interpretation and what the younger narrator actually heard.
+- S19 → S20: `argument` uncertainty motivates layered preparation.
+- S21 → S32: `frame-closure` restores the technician/narrator mismatch through ordinary café logistics.
+- S33 → S35: `chronology` establishes that the Field Note is written years later.
+- S35 → S36: `sets-up` the moth as the “trace preserved” counterexample.
+- S37–S41 ↔ S4/S35: `contrasts-with` physical culprit preserved versus transient cause inferred.
+- S42 → later cases: `sets-tone` for serious procedure ending in a small uncanny remainder.
 
-## Active diagnosis
+## Accepted revision rationale
 
-The closing movement has a chronology/voice discontinuity. The case begins with an explicitly earlier, ordinary professional meeting in which the narrator has not yet become the dossier-keeper. The 2003 reconstruction then ends directly in later-period sentences such as “What stayed with me,” a numbered Field Note, and the private “Proofs I Do Not Argue With” folder. Nothing marks the return to the café or the later creation of the dossier.
+The previous version jumped directly from the reconstructed investigation into mature dossier language, even though the case's framing note says the café meeting occurred before the narrator became the investigator who keeps the dossier. The revision now returns explicitly to the café, lets the younger narrator hear the technician's position as ordinary engineering prudence, closes their interaction, and then marks Field Note #1 as something written years later.
 
-This seam also coincides with several authorial requirements from the review branch’s human-authored base that were removed rather than integrated: the technician’s reflection about preparing for an indifferent world, the weather/preparation counterpoint, the “cathedral of checks,” and the bill/conversation-quality exchange. These are all frame material, so restoring them together can repair chronology while preserving the technician/narrator mismatch.
+The revision also restores frame material that had been removed from the human-authored base rather than integrated: the technician's preparation doctrine, weather analogy, layered-checks counterpoint, and conversation-quality bill exchange. These elements do double duty: they satisfy existing authorial constraints and repair the narrator's chronology without making Schaerbeek more supernatural than intended.
 
-The narrow revision target is therefore: return explicitly to the café after the documentary aftermath; let the younger narrator hear the technician’s argument as ordinary engineering prudence; close the café interaction; then mark the numbered Field Note and moth interpretation as later dossier material. Do not make the younger narrator supernatural, and do not strengthen the factual claim beyond the report.
+No factual claim about the official report was strengthened. The graph keeps the report's bit-inversion conclusion separate from the later physical single-event-upset/ionizing-radiation interpretation.
