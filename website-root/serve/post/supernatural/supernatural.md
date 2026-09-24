@@ -225,7 +225,7 @@ The moth looks unconvinced.
 
 ---
 
-### II. The Bug That Behaved When I Looked
+### II. The Heisenbug I Failed To Catch
 
 **Somewhere between midnight and the first ferry.**
 
@@ -235,23 +235,29 @@ This was not a complicated transaction. The application had read a little over a
 
 The first occurrence looked like networking. The second looked like the client library. By the third, we had replaced enough pieces that the shape of the failure had become more interesting than any one suspect.
 
-At 00:41 we had a loop that would usually reproduce the hang inside an hour, although "usually" included eleven minutes once and fifty-three the next time. I attached `strace` because I wanted the last useful system call before the process stopped. With strace running, it behaved as if repentant.
+At 00:41 we had a loop that would usually reproduce the hang inside an hour, although “usually” included eleven minutes once and fifty-three the next time. I attached `strace` because I wanted the last useful system call before the process stopped. With strace running, it behaved as if repentant.
 
 We left the trace running for ninety minutes. Nothing hung. I detached it; seventeen minutes later the same request stopped in the same place.
 
-We did this again because engineers are allowed to be superstitious only after repetition.
+We did it again. The second time, nobody made a joke when the untraced run failed.
 
-The ordinary explanation was timing. `strace` is not a window cut into a process; it stops and resumes the process around system calls, and that changes scheduling. If the fault depended on two events arriving in the wrong order, observation could be enough to move them apart.
+`strace` is not a window cut into a process. It stops and resumes the process around system calls, changing the schedule as it watches. If two events were arriving in the wrong order, that alone could move them apart. I wrote *timing* in the margin of my notebook and underlined it twice.
 
 I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*.
 
 They did almost nothing: one line before the commit, one after. With them in place, the hang disappeared. Remove them, and after enough traffic it returned.
 
-A slower pure-Python client did not reproduce it. A small compiled client using the same C library did. This moved suspicion away from the application code and toward something that cared about speed, buffering, or the path through the proxy.
+A slower pure-Python client did not reproduce it. A small compiled client using the same C library did. That moved suspicion away from the application code and toward speed, buffering, or the path through the proxy. It also gave us another way to make the failure vanish without understanding it.
 
-The traffic between the application and proxy used a Unix-domain socket, so our usual packet capture was no help. We put `socat` in the middle to watch the bytes. The hang disappeared. We removed it. The hang returned.
+By then I had begun to dislike successful tests.
 
-None of this required a metaphysical explanation. Tracing, printing, proxying a socket, and changing client implementations can all alter timing, syscall boundaries, queue occupancy, and scheduling. The difficulty was more practical: every instrument that could leave us a better trace also changed the conditions under which the trace was needed.
+The traffic between the application and proxy used a Unix-domain socket, so our usual packet capture was no help. We put `socat` in the middle to watch the bytes. The hang disappeared.
+
+We removed it.
+
+The hang returned.
+
+There were plenty of ordinary mechanisms left to blame: scheduling, syscall boundaries, queue occupancy, buffering, the proxy's own state machine. We began changing one thing at a time, carefully, because every change had acquired a second meaning. It was either an experiment or another way of warning the failure that we were there.
 
 We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me.
 
@@ -266,17 +272,29 @@ At 03:20 I copied the useful part of the night into a table:
 | slower client | no hang observed |
 | small compiled client | hangs |
 
-The table was not proof that the process knew it was being watched. It was, however, an excellent operational description of what "being watched" meant.
+I had intended the table to calm me. Instead, it made the pattern look cleaner than it had felt while we were producing it.
 
-What I wanted was one ordinary artifact: the final syscall, a queue transition, a timeout, a bad state we could point to after the fact. Instead, each attempt to obtain that artifact moved the failure just far enough away that we were left with only the absence of it.
+I left a seventh row blank for the run that would finally fail while we were collecting enough evidence to explain it. At 03:47 the row was still blank. At 04:12 it was still blank. I stopped checking the time as often.
 
-At 04:30 somebody called it a race condition, and I agreed because that remained the most ordinary explanation. But *race condition* named the family, not the relative who had come to visit. We still did not know which two events were racing, or why the race seemed to become polite whenever we entered the room.
+What I wanted was one ordinary artifact: the final syscall, a queue transition, a timeout, a bad state we could point to after the fact. Each attempt to obtain one changed the conditions just enough that the failure moved elsewhere, and the evidence left behind was evidence of its absence.
+
+At 04:30 somebody called it a race condition. I agreed. The name was plausible, but it named a family of failures, not the two events we needed. We could not point to the race. We could only point to the conditions under which it declined to happen.
+
+At 04:56, after twenty-three minutes without instrumentation, the compiled client hung again. I put my hands on the keyboard to attach the tracer and stopped.
+
+For several seconds I did nothing.
+
+One of the others asked what I was waiting for.
+
+“Nothing,” I said, and attached `strace`.
+
+It showed a process already asleep in the expected wait. It told us where the body lay, not how it had fallen.
 
 By 05:18 the production traffic had thinned and reproduction slowed with it. We stopped because a night shift can end without an investigation ending.
 
 Nothing was fixed. We had only learned which forms of attention the failure appeared to tolerate.
 
-In the morning, I wrote my note: *This thing hates to be watched*.
+In the morning, I wrote my note: *The thing hates to be watched*.
 
 ---
 
