@@ -42,9 +42,9 @@ This boundary applies even to apparently harmless changes such as meaning-graph 
 
 The meaning graph is required analytical state.
 
-If `docs/meaning-graph.md` does not yet exist, create it before substantial prose revision. Build it from the current manuscript, section by section. If full coverage is too large for one invocation, establish complete graph coverage for any section before materially revising that section, and extend coverage on later passes.
+If `docs/meaning-graph.md` does not yet exist, create it before substantial prose revision. Build it from the current manuscript and complete it before materially revising prose. Coverage is an invariant, not a long-term target: every source sentence must have exactly one node in the format required by `AGENTS.md`, and the graph must not be left partially covered between refinement passes.
 
-The long-term target is useful sentence-level coverage of the entire manuscript, including cross-sentence and cross-section edges for setup, payoff, causality, motifs, contradiction, implication, and narrator knowledge.
+Use the required `continuity` field to record important cross-sentence and cross-section relationships such as setup, payoff, causality, motifs, contradiction, implication, and narrator knowledge.
 
 Do not treat graph construction as the end product. Its purpose is to make better prose decisions.
 
@@ -54,14 +54,14 @@ For each refinement cycle:
 
 1. **Read before editing.** Read enough of the current manuscript to understand the passage in its larger narrative role. For structural work, read the whole current manuscript.
 2. **Check intent.** Identify the live Intent Records relevant to the passage. Do not infer a new project goal merely because a rewrite seems attractive.
-3. **Inspect the graph.** Read the affected meaning-graph nodes and their important incoming and outgoing edges. Repair stale analysis before relying on it.
+3. **Inspect the graph.** Read the affected meaning-graph nodes and their relevant `intent`, `style`, and `continuity` fields. Repair stale analysis before relying on it.
 4. **Diagnose before rewriting.** State the concrete defect. Prefer evidence in the manuscript over generic craft advice.
 5. **Choose high-leverage work.** Prefer one important defect or a small cluster whose fixes belong together. Do not spend the invocation producing an exhaustive review while leaving the text unchanged.
 6. **Revise narrowly.** Change the smallest span that can actually solve the diagnosed problem. Larger rewrites are appropriate only when the defect is genuinely structural.
 7. **Generate alternatives when useful.** If the solution is not obvious, develop materially different candidate revisions independently rather than repeatedly mutating the first idea.
 8. **Compare against the incumbent.** Ask what each candidate improves and what semantic, inferential, structural, rhythmic, humorous, or uncanny work it loses. A candidate wins only by an argued improvement under the live intents, not by sounding generically polished.
 9. **Keep or revert.** Keep the revision when improvement is reasonably clear. Otherwise preserve the incumbent.
-10. **Update the graph.** After an accepted manuscript change, update every affected meaning-graph node and edge so the graph again describes the text that actually exists.
+10. **Update the graph.** After an accepted manuscript change, update the affected nodes and preserve exhaustive one-node-per-sentence coverage so every `text` field again matches the manuscript exactly.
 11. **Continue.** Repeat with the next highest-leverage defect while useful, confident improvements remain.
 
 ## Audit lenses
