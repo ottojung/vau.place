@@ -44,7 +44,7 @@ date: 2026/09/23
 source: @ottojung
 kind: requirement
 
-The Heisenbug case treats a difficult, preferably real or plausibly reconstructed debugging incident as if observation itself changes the phenomenon. Instrumentation, tracing, logging, or attempts to catch the bug should make it recede or alter its behavior. The story should leave open the technically ordinary explanations while making the narrator increasingly willing to describe the bug as something that does not want to be watched.
+The Heisenbug case treats a difficult, preferably real or plausibly reconstructed debugging incident as if observation itself changes the phenomenon. Instrumentation, tracing, logging, or attempts to catch the bug should make it recede or alter its behavior. The story should leave open the technically ordinary explanations while making the narrator increasingly willing to describe the bug as something that does not want to be watched. The case must create genuine doubt, anxiety, and eventually fear rather than reading primarily as an ordinary debugging log decorated with jokes; its horror should emerge from the repeated observation-sensitive reversals and from the narrator's increasingly uneasy behavior while the procedural detail remains serious.
 
 $id-8506027753346938
 title: Maxwell's Demon couples a dream warning to an improbable event
