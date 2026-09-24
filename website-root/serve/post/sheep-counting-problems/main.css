@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Fira Code';
+  src:
+    local('Fira Code'),
+    url('../../style/FiraCode-Regular.Z.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src:
+    local('Merriweather'),
+    url('../../style/Merriweather-BlackItalic.Z.woff2') format('woff2');
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  background-color: #eeeeee;
+}
+
+body {
+  font-family: "Raleway", "Times New Roman", serif;
+  font-size: 18pt;
+  font-weight: lighter;
+  line-height: 1.48;
+  width: min(90%, max(35%, 37em));
+  margin: 1% auto;
+  background-color: #eeeeee;
+  color: #222831;
+}
+
+main {
+  min-width: 0;
+}
+
+h1, h2, h3, strong {
+  color: #393e46;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: 32pt;
+  margin: 0.5em 0 1em;
+}
+
+h2 {
+  font-size: 27pt;
+  margin: 1.8em 0 0.55em;
+}
+
+h3 {
+  font-size: 22pt;
+  margin: 1.55em 0 0.45em;
+  text-align: right;
+}
+
+p {
+  margin: 0.8em 0;
+}
+
+a {
+  color: #0092ca;
+}
+
+code, pre {
+  font-family: 'Fira Code', monospace;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 0.08em 0.28em;
+  border-radius: 0.25em;
+  font-size: 0.9em;
+}
+
+pre {
+  font-size: 0.82em;
+  line-height: 1.5;
+  padding: 1em 1.15em;
+  margin: 1.2em 0;
+  border-radius: 0.5em;
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+blockquote {
+  margin: 1.2em 1.4em;
+  padding: 0.05em 0 0.05em 1em;
+  border-left: 0.18em solid #0092ca;
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0.45em 0;
+}
+
+ul {
+  padding-left: 1.35em;
+}
+
+li {
+  margin: 0.35em 0;
+}
+
+.math-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.15em 0;
+  padding: 0.1em 0;
+}
+
+mjx-container {
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 3.5em;
+  padding-top: 1.2em;
+  padding-bottom: 2em;
+  border-top: 1px dotted rgba(80, 80, 60, 0.4);
+}
+
+.keyword {
+  font-family: 'Fira Code', monospace;
+  color: #2fafff;
+  font-weight: 600;
+}
+
+@media (max-width: 650px) {
+  body {
+    width: 92%;
+    font-size: 15.5pt;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 27pt;
+  }
+
+  h2 {
+    font-size: 23pt;
+  }
+
+  h3 {
+    font-size: 20pt;
+    text-align: left;
+  }
+
+  blockquote {
+    margin-left: 0.35em;
+    margin-right: 0.2em;
+  }
+}

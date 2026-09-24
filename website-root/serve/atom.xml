@@ -11,9 +11,43 @@
     rel="alternate"
     type="text/html"
   />
-  <updated>2026-07-12T16:16:37-07:00</updated>
+  <updated>2026-09-21T15:16:00-07:00</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+
+  <entry>
+    <title>Sheep-Counting Problems</title>
+    <summary>
+      When can a person prove, or at least give useful evidence for, what they were thinking about?
+      This post develops sheep-counting problems through visible traces, cognitive resource networks,
+      and human proofs of work, space, and time.
+    </summary>
+    <updated>2026-09-21T15:16:00-07:00</updated>
+    <link
+      href="https://vau.place/post/sheep-counting-problems/index.html"
+      rel="alternate"
+      type="text/html"
+    />
+    <id>https://vau.place/post/sheep-counting-problems/index.html</id>
+    <content type="text/html" src="https://vau.place/post/sheep-counting-problems/index.html"/>
+  </entry>
+
+
+  <entry>
+    <title>Addition on Rabin's tree</title>
+    <summary>
+      Rabin's theorem makes monadic second-order logic decidable on the complete infinite binary tree.
+      I wondered what happens if we add something like addition: a weak notion of positive growth already forces a copy of the positive integers, and the tree eventually gives way to a more general semigroup observation.
+    </summary>
+    <updated>2026-09-21T13:24:00-07:00</updated>
+    <link
+      href="https://vau.place/post/positive-addition/index.html"
+      rel="alternate"
+      type="text/html"
+    />
+    <id>https://vau.place/post/positive-addition/index.html</id>
+    <content type="text/html" src="https://vau.place/post/positive-addition/index.html"/>
+  </entry>
 
   <entry>
     <title>Hidden in the Branches</title>

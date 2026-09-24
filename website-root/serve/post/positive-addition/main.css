@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Fira Code";
+  src:
+    local("Fira Code"),
+    url("../../style/FiraCode-Regular.Z.woff2") format("woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src:
+    local("Merriweather"),
+    url("../../style/Merriweather-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --paper: #f1f0ec;
+  --ink: #292d2b;
+  --line: #d0d1cb;
+  --soft-2: #ebeae6;
+  --link: #50676d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Raleway", "Times New Roman", serif;
+  font-size: 17pt;
+  font-weight: lighter;
+  line-height: 1.58;
+}
+
+main {
+  width: min(92%, 45rem);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
+}
+
+code,
+.visual-directive,
+.formula,
+pre {
+  font-family: "Fira Code", monospace;
+}
+
+code {
+  font-size: 0.86em;
+}
+
+.home-link {
+  font-size: 0.78em;
+}
+
+.post-header {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+h1,
+h2 {
+  font-family: "Merriweather", serif;
+  font-weight: normal;
+}
+
+h1 {
+  margin: 3.5rem 0 1.2rem;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.35em;
+}
+
+.agent-note {
+  max-width: 39rem;
+}
+
+.agent-note p {
+  margin: 0 0 0.85em;
+}
+
+.source {
+  margin-top: 1.2rem;
+}
+
+.opening-unit {
+  margin: 0;
+  padding: 1.25rem 0 1.35rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.03em;
+}
+
+.unit,
+.key-unit,
+.caution {
+  margin: 0;
+  padding: 1.15rem 0 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.key-unit {
+  margin: 0.35rem -1rem;
+  padding: 1.2rem 1rem 1.3rem;
+  background: var(--soft-2);
+  border-bottom: 0;
+}
+
+.caution {
+  margin: 0.35rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid #9c9a8d;
+}
+
+.formula {
+  margin: 0.9rem 0 0.2rem;
+  padding: 0.7rem 0.9rem;
+  background: #dfdfda;
+  font-size: 0.82em;
+  overflow-x: auto;
+}
+
+pre {
+  margin: 1.4rem 0;
+  padding: 0.95rem 1rem;
+  background: #383d3a;
+  color: #ecece8;
+  font-size: 0.76em;
+  line-height: 1.55;
+  overflow-x: auto;
+  border-radius: 0.15rem;
+}
+
+pre code {
+  color: inherit;
+  font-size: 1em;
+}
+
+.visual-directive {
+  margin: 2.2rem 0;
+  padding: 1.35rem 1rem;
+  border: 1px dashed #aeb1ac;
+  color: #606660;
+  text-align: center;
+  font-size: 0.72em;
+  letter-spacing: 0.025em;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.references {
+  margin-top: 3.7rem;
+  padding-top: 2rem;
+  border-top: 1px solid #bfc1bb;
+}
+
+.reference {
+  padding: 1.25rem 0 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.reference b {
+  font-weight: 600;
+}
+
+.reference p {
+  margin: 0.55em 0;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--line);
+  font-family: "Fira Code", monospace;
+  font-size: 0.7em;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 16pt;
+  }
+
+  main {
+    width: min(91%, 40rem);
+    padding-top: 2rem;
+  }
+
+  h1 {
+    margin-top: 2.5rem;
+  }
+
+  .key-unit {
+    margin-left: -0.6rem;
+    margin-right: -0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+
+  .visual-directive {
+    overflow-wrap: anywhere;
+  }
+}
