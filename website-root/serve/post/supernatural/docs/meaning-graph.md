@@ -1294,15 +1294,27 @@ continuity: Follows $n10935 and precedes $n34300. Maintain Case I chronology: ca
 
 $n34300
 text: **Somewhere between midnight and the first ferry.**
-intent: Advance the Heisenbug investigation, preserving the watched/unwatched reversals and the gradual shift from technical frustration toward unease.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n10406 and precedes $n62385. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+intent: Set the quiet temporal atmosphere for Case II before the technical problem arrives.
+style: Short location/time dateline; restrained and gently anticipatory rather than immediately alarming.
+continuity: Follows $n10406 and precedes $n58421. Opens Case II before the narrator establishes his ordinary work context.
+
+$n58421
+text: At the time, I was doing reliability work for a small company whose application spent most of its life asking a database ordinary questions.
+intent: Give the reader a gentle occupational and system context before the failure: the narrator is present as a reliability engineer for an otherwise unremarkable database-backed application.
+style: Calm, plain introductory narration; “ordinary questions” lightly personifies the application without yet making anything uncanny.
+continuity: Follows $n34300 and precedes $n73064. Establishes the mundane baseline required for the later observation-sensitive escalation.
+
+$n73064
+text: Most nights, the failures were ordinary too: a full disk, a dead connection, a process that had simply run out of something.
+intent: Establish that the narrator normally encounters legible, mundane failures, so this night's behavior can depart from a credible baseline.
+style: Gentle three-part catalogue with concrete operational examples; the final vague “something” keeps the opening conversational rather than encyclopedic.
+continuity: Follows $n58421 and precedes $n62385. Sets up a contrast with the failure that resists ordinary diagnosis and with the later anxiety about evidence disappearing under observation.
 
 $n62385
-text: I was called because a `COMMIT` would sometimes not come back.
-intent: Advance the Heisenbug investigation, preserving the watched/unwatched reversals and the gradual shift from technical frustration toward unease.
-style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n34300 and precedes $n67124. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+text: That night, I was called because a `COMMIT` would sometimes not come back.
+intent: Introduce the night's specific failure only after the occupational baseline has been established.
+style: Concrete procedural diction with a restrained transition from ordinary work into the anomaly.
+continuity: Follows $n73064 and precedes $n67124. Begins the Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
 
 $n67124
 text: This was not a complicated transaction.

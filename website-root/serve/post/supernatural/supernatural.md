@@ -229,7 +229,9 @@ The moth looks unconvinced.
 
 **Somewhere between midnight and the first ferry.**
 
-I was called because a `COMMIT` would sometimes not come back.
+At the time, I was doing reliability work for a small company whose application spent most of its life asking a database ordinary questions. Most nights, the failures were ordinary too: a full disk, a dead connection, a process that had simply run out of something.
+
+That night, I was called because a `COMMIT` would sometimes not come back.
 
 This was not a complicated transaction. The application had read a little over a thousand rows through a database proxy over a Unix-domain socket and then asked to commit an otherwise empty transaction. Under production load, one greenlet would occasionally stop there and remain stopped, waiting on the file descriptor as if the other side had forgotten it.
 
