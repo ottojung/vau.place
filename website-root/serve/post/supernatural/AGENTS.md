@@ -48,30 +48,33 @@ Do not edit an Intent Record merely to justify a prose change. Intent changes co
 
 ## Meaning graph
 
-Maintain `docs/meaning-graph.md` as a living analytical representation of the current manuscript.
+Maintain `docs/meaning-graph.md` as a sentence-by-sentence analytical companion to the current manuscript.
 
-The graph exists to make revisions reason about what the prose is doing, rather than merely making sentences smoother. It is intentionally ad hoc and may evolve as the manuscript evolves. Precision matters more than schema stability.
+Coverage is strict: **every sentence in `supernatural.md` must have exactly one corresponding graph node.** Do not group multiple sentences into one node, omit apparently trivial sentences, or leave coverage for later. Sentences inside manuscript directives such as `<NOTE>`, `<TODO>`, `<FIXME>`, and `<MUST HAVES>` are still sentences in the source and therefore also require nodes. Non-sentence structural material such as headings, separators, standalone equations, link-reference definitions, and table syntax does not require a node unless it contains a sentence.
 
-Represent the manuscript at sentence level by default. A graph node should identify the sentence or tightly inseparable sentence group and record, where relevant:
+Graph nodes must appear in the same order as their source sentences and use this format:
 
-- what it literally says;
-- what it is trying to communicate;
-- why that information appears here;
-- what the reader should infer beyond the literal statement;
-- what the narrator appears to believe or commit to;
-- its rhetorical or stylistic job;
-- any joke, ambiguity, misdirection, or withheld conclusion that must survive revision;
-- motifs or earlier material it echoes;
-- later material it sets up or promises;
-- dependencies on surrounding claims, chronology, causality, or character knowledge.
+```text
+$n63687
+text: The actual text of the sentence.
+intent: ...
+style: ...
+continuity: ...
+```
 
-Use explicit edges when useful, such as `explains`, `implies`, `contrasts-with`, `sets-up`, `pays-off`, `causally-depends-on`, `echoes`, and `must-precede`. Add other edge types when the text needs them.
+Node IDs have the form `$n{RAND}`, where `RAND` is a random five-digit decimal string. Generate IDs randomly, give them no sequential or mnemonic meaning, and check the graph for collisions before assigning a new one. Keep an existing node ID when the same source sentence is edited rather than deleted/replaced.
 
-The graph is analysis, not scripture. If close reading shows the graph is wrong, update the graph. Do not deform good prose merely to preserve an obsolete graph description.
+The `text` field must reproduce the current source sentence exactly, including meaningful Markdown and punctuation. The analytical fields are:
 
-Before materially revising a passage, inspect its graph nodes and relevant incoming/outgoing edges. After accepting a revision, update the affected graph so it again describes the manuscript accurately. Do not leave stale semantic nodes behind.
+- `intent`: what the sentence is trying to communicate or accomplish, including important implication, setup, payoff, ambiguity, joke, withholding, narrator belief, or reader inference;
+- `style`: the sentence's stylistic and rhetorical work, including voice, rhythm, diction, humor, uncanniness, emphasis, or other form that a revision should preserve when relevant;
+- `continuity`: dependencies on surrounding or distant material, including chronology, causality, character knowledge, motifs, contradictions, setup/payoff relations, and references to other graph nodes when useful.
 
-If the graph does not yet cover a passage, establish adequate coverage before substantially rewriting that passage. It is acceptable to build the graph incrementally, but the long-term target is meaningful coverage of every sentence.
+All four fields are required for every node. Use a concise explicit value such as `none` when there is genuinely nothing useful to record in an analytical field rather than omitting the field.
+
+The graph is analysis, not scripture. If close reading shows an analytical field is wrong, update it. Do not deform good prose merely to preserve obsolete graph analysis.
+
+Before materially revising a passage, inspect its nodes. After accepting any manuscript change, update the graph in the same change so that sentence coverage remains total and every `text` field again matches the manuscript exactly. Adding, deleting, splitting, joining, or moving sentences requires the corresponding node operations.
 
 ## Editing discipline
 
