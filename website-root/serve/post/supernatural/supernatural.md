@@ -229,19 +229,19 @@ The moth looks unconvinced.
 
 **Somewhere between midnight and the first ferry.**
 
-I was called because a \`COMMIT\` would sometimes not come back.
+I was called because a `COMMIT` would sometimes not come back.
 
 This was not a complicated transaction. The application had read a little over a thousand rows through a database proxy over a Unix-domain socket and then asked to commit an otherwise empty transaction. Under production load, one greenlet would occasionally stop there and remain stopped, waiting on the file descriptor as if the other side had forgotten it.
 
 The first occurrence looked like networking. The second looked like the client library. By the third, we had replaced enough pieces that the shape of the failure had become more interesting than any one suspect.
 
-At 00:41 we had a loop that would usually reproduce the hang inside an hour, although "usually" included eleven minutes once and fifty-three the next time. I attached \`strace\` because I wanted the last useful system call before the process stopped. With strace running, it behaved as if repentant.
+At 00:41 we had a loop that would usually reproduce the hang inside an hour, although "usually" included eleven minutes once and fifty-three the next time. I attached `strace` because I wanted the last useful system call before the process stopped. With strace running, it behaved as if repentant.
 
 We left the trace running for ninety minutes. Nothing hung. I detached it; seventeen minutes later the same request stopped in the same place.
 
 We did this again because engineers are allowed to be superstitious only after repetition.
 
-The ordinary explanation was timing. \`strace\` is not a window cut into a process; it stops and resumes the process around system calls, and that changes scheduling. If the fault depended on two events arriving in the wrong order, observation could be enough to move them apart.
+The ordinary explanation was timing. `strace` is not a window cut into a process; it stops and resumes the process around system calls, and that changes scheduling. If the fault depended on two events arriving in the wrong order, observation could be enough to move them apart.
 
 I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*.
 
@@ -249,7 +249,7 @@ They did almost nothing: one line before the commit, one after. With them in pla
 
 A slower pure-Python client did not reproduce it. A small compiled client using the same C library did. This moved suspicion away from the application code and toward something that cared about speed, buffering, or the path through the proxy.
 
-The traffic between the application and proxy used a Unix-domain socket, so our usual packet capture was no help. We put \`socat\` in the middle to watch the bytes. The hang disappeared. We removed it. The hang returned.
+The traffic between the application and proxy used a Unix-domain socket, so our usual packet capture was no help. We put `socat` in the middle to watch the bytes. The hang disappeared. We removed it. The hang returned.
 
 None of this required a metaphysical explanation. Tracing, printing, proxying a socket, and changing client implementations can all alter timing, syscall boundaries, queue occupancy, and scheduling. The difficulty was more practical: every instrument that could leave us a better trace also changed the conditions under which the trace was needed.
 
@@ -260,9 +260,9 @@ At 03:20 I copied the useful part of the night into a table:
 | condition | result |
 | --- | --- |
 | ordinary run, fast local socket | hangs eventually |
-| \`strace\` | no hang observed |
-| prints around \`COMMIT\` | no hang observed |
-| \`socat\` in the socket path | no hang observed |
+| `strace` | no hang observed |
+| prints around `COMMIT` | no hang observed |
+| `socat` in the socket path | no hang observed |
 | slower client | no hang observed |
 | small compiled client | hangs |
 
