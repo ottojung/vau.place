@@ -1,15 +1,16 @@
 # Meaning graph
 
-This is a living analytical map of `supernatural.md`. Coverage is intentionally incremental. Sentence-level coverage below currently focuses on the closing movement of Case I, from the post-investigation report through the Mark II moth coda.
+This is a living analytical map of `supernatural.md`. Coverage is intentionally incremental. Sentence-level coverage below covers the closing movement of Case I and the current directive-only state of Case II.
 
 ## Intent anchors
 
 - `$id-9264982270043622`: the narrator privately leans supernatural, but only after accumulated experience.
 - `$id-0861352612251497`: skeptical surface, operational detail, and qualified inference must remain credible.
 - `$id-3795396000378572`: Schaerbeek is the sane opening case and must still admit an ordinary technical explanation.
+- `$id-0105305593640677`: the Heisenbug should behave as if observation itself matters while ordinary technical explanations remain open.
 - `$id-7350745426882596`: escalation is epistemic; the younger narrator should not already sound like the later dossier-keeper.
 - `$id-0964292624358295`: horror and humor should arise from serious procedure, not announced effects.
-- `$id-2642614869480108`: revisions must preserve inferential, structural, rhythmic, humorous, and uncanny work rather than merely smooth prose.
+- `$id-2642614869480108`: revisions preserve inferential, structural, rhythmic, humorous, and uncanny work rather than merely smooth prose.
 
 ## Case I — closing movement
 
@@ -237,10 +238,86 @@ Coverage starts at “Later, the machine was tested...” and ends at “The mot
 - S37–S41 ↔ S4/S35: `contrasts-with` physical culprit preserved versus transient cause inferred.
 - S42 → later cases: `sets-tone` for serious procedure ending in a small uncanny remainder.
 
+## Case II — current directive state
+
+The manuscript currently contains no narrative prose for Case II. This section maps the live local directives and their intended relationships before substantial drafting.
+
+**H1** — current title: “The Heisenbug I Failed to Catch.”
+- Literal: narrator frames the case as a failed attempt to capture a Heisenbug.
+- Local directive: title must become more evocative.
+- Preserve: first-person ownership and failure are useful because they move the dossier from a story heard from another technician toward the narrator's own experience.
+
+**H2** — location/time line: “Somewhere between midnight and the first ferry.”
+- Literal: the incident occupies an overnight interval and ends before early transport resumes.
+- Purpose: gives the case a liminal but concrete operational window.
+- Risk: do not turn this into generic nocturnal horror decoration; operational timestamps should carry the atmosphere.
+
+**H3** — local note asks for an actual report of an interesting/unique Heisenbug and a retelling with embellishment.
+- Purpose: ground the second case in recognizable debugging reality, preserving the collection's skeptical surface after Schaerbeek.
+- Drafting implication: choose a source where observation materially changes behavior, not merely a bug that is difficult to reproduce.
+
+**H4** — local note says the story must not end with fixing the bug.
+- Purpose: distinguish this case from an ordinary debugging success story.
+- Reader inference: technical explanations can remain plausible without granting the narrator closure.
+
+**H5** — local note asks the prose to portray the bug as something *real*, a metaphysical phenomenon that misbehaves when unobserved.
+- Purpose: first clear escalation beyond Schaerbeek's entirely conventional anomaly.
+- Constraint from `$id-0861352612251497`: this is narrator interpretation/temptation, not authorial proof.
+- Constraint from `$id-0105305593640677`: instrumentation must visibly change the phenomenon.
+
+**H6** — exact phrase: “With strace running, it behaved as if repentant”.
+- Literal: tracing suppresses or changes the failure.
+- Purpose: observation/behavior relationship stated in technical vocabulary with restrained personification.
+- Must preserve verbatim when integrated.
+
+**H7** — exact phrase: “I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*.”
+- Literal: narrator adds logging and anthropomorphizes the process.
+- Purpose: marks narrator's method becoming interpersonal/superstitious while remaining recognizable debugging practice.
+- Escalation: stronger anthropomorphism than Case I, but still deniable as metaphor.
+- Must preserve verbatim when integrated.
+
+**H8** — exact phrase: “We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me.”
+- Literal: debugging instruments become traps/incantations.
+- Purpose: fuse procedural specificity with supernatural diction.
+- Risk: the surrounding prose should stay sober enough that this line feels like slippage, not a wholesale genre switch.
+- Must preserve verbatim when integrated.
+
+**H9** — exact phrase: “In the morning, I wrote my note: *This thing hates to be watched*.”
+- Literal: narrator records an explicitly animistic interpretation after the overnight investigation.
+- Purpose: close the case without solving it and advance the narrator's epistemic drift.
+- Edge: H6–H8 must earn H9 through repeated observation-sensitive behavior.
+- Must preserve verbatim when integrated.
+
+### Candidate factual spine for Case II
+
+A promising real-world anchor is the documented class of failures in which tracing itself changes behavior. One concrete public report describes a hung process that resumed or ceased exhibiting the problem when `strace` was attached; later explanation identified a tracing-induced change in execution path, and other documented explanations note that `ptrace`/tracing can alter system-call behavior. This is especially useful because it supports the exact required `strace` phrase without requiring invention of the observation effect.
+
+A second, stronger technical reference is Paul E. McKenney's concurrency text, which explicitly discusses Heisenbugs and notes that adding `printf()` can greatly reduce or eliminate lost-count race failures by perturbing timing. This supports the required `printf` motif and gives the skeptical reader a conventional mechanism for why observation changes the result.
+
+These sources should be treated as technical grounding, not copied as a single claimed historical incident unless a specific incident is selected and verified. A future prose pass should either (a) choose one documented incident and clearly fictionalize around it, or (b) label the case internally as a composite rather than accidentally presenting a composite as documentary fact.
+
+### Intended Case II shape
+
+1. Establish a repeatable-enough overnight failure under ordinary execution.
+2. Show the failure disappearing or changing under `strace`.
+3. Remove the tracer and let the failure return.
+4. Add `printf`/logging; again the failure recedes or changes.
+5. Try less intrusive observation and timing changes, each producing a different form of evasion.
+6. Preserve ordinary explanations—race timing, tracer side effects, scheduling, altered memory/layout—as live possibilities.
+7. Refuse a clean fix or root-cause reveal.
+8. End with H9, making the narrator's metaphysical reading an earned but non-exclusive interpretation.
+
+### Cross-case edges
+
+- S42 → H1/H2: `escalates-from` a documentary anomaly with a conventional explanation into a case where the act of investigation changes the evidence.
+- S35/S36 → H6–H8: `motif-evolves` from causes that leave no prints to a cause that appears to avoid the instruments meant to leave prints.
+- H3/H6 → `$id-0861352612251497`: `supports` skeptical credibility through real debugging mechanisms.
+- H6 → H7 → H8 → H9: `epistemic-escalation` from technical observation to anthropomorphic method to explicit animistic note.
+- H4 → H9: `must-precede`; lack of closure is what gives the final note its force.
+- H9 → later cases: `sets-up` a narrator increasingly willing to treat folklore-like agency as operationally relevant.
+
 ## Accepted revision rationale
 
-The previous version jumped directly from the reconstructed investigation into mature dossier language, even though the case's framing note says the café meeting occurred before the narrator became the investigator who keeps the dossier. The revision now returns explicitly to the café, lets the younger narrator hear the technician's position as ordinary engineering prudence, closes their interaction, and then marks Field Note #1 as something written years later.
+The previous pass repaired the Case I chronology by returning explicitly to the café, keeping the younger narrator skeptical, closing the interaction, and marking Field Note #1 as a later dossier entry. It also restored frame material from the human-authored base without strengthening the factual claim about the Schaerbeek report.
 
-The revision also restores frame material that had been removed from the human-authored base rather than integrated: the technician's preparation doctrine, weather analogy, layered-checks counterpoint, and conversation-quality bill exchange. These elements do double duty: they satisfy existing authorial constraints and repair the narrator's chronology without making Schaerbeek more supernatural than intended.
-
-No factual claim about the official report was strengthened. The graph keeps the report's bit-inversion conclusion separate from the later physical single-event-upset/ionizing-radiation interpretation.
+This pass does not alter manuscript prose. It extends required analytical coverage through the currently empty Case II before any substantial Heisenbug drafting. The main diagnosis is that Case II's eventual prose must not merely be a generic race-condition story: the observation effect itself has to be the narrative evidence, ordinary mechanisms must remain available, and the final “hates to be watched” line must be earned by repeated failed attempts to observe rather than asserted as a premise.
