@@ -252,7 +252,7 @@ Coverage below maps the complete current Case II prose and its factual-source bo
 - Literal: the work occupies an overnight interval.
 - Purpose: liminal atmosphere anchored by an operational shift boundary rather than generic darkness.
 
-**H3** — “I was called because a \`COMMIT\` would sometimes not come back.”
+**H3** — “I was called because a `COMMIT` would sometimes not come back.”
 - Literal: intermittent database commit hang.
 - Purpose: opens with the smallest concrete failure and places the narrator inside the incident.
 
@@ -281,7 +281,7 @@ Coverage below maps the complete current Case II prose and its factual-source bo
 - Literal: establishes reproducibility plus timing instability.
 - Purpose: gives later observation experiments a baseline.
 
-**H11** — narrator attaches \`strace\` to capture the last useful syscall before the stop.
+**H11** — narrator attaches `strace` to capture the last useful syscall before the stop.
 - Purpose: ordinary debugging action motivated by a concrete evidence need.
 
 **H12** — “With strace running, it behaved as if repentant.”
@@ -306,7 +306,7 @@ Coverage below maps the complete current Case II prose and its factual-source bo
 **H17** — timing is named as the ordinary explanation.
 - Purpose: explicitly keeps a conventional mechanism live.
 
-**H18** — \`strace\` changes scheduling because it stops/resumes execution around system calls.
+**H18** — `strace` changes scheduling because it stops/resumes execution around system calls.
 - Literal: instrumentation is not passive.
 - Purpose: supplies the skeptical explanation for the observation effect.
 
@@ -337,7 +337,7 @@ Coverage below maps the complete current Case II prose and its factual-source bo
 **H27** — Unix-domain socket makes the usual packet capture unsuitable.
 - Purpose: introduces the next observation strategy from a practical limitation.
 
-**H28–H30** — \`socat\` is inserted to observe socket bytes; the hang disappears; removal makes it return.
+**H28–H30** — `socat` is inserted to observe socket bytes; the hang disappears; removal makes it return.
 - Grouping: deliberately clipped three-step test sequence.
 - Purpose: third independent watched/unwatched reversal.
 - Edge: H28–H30 parallel H12–H15 and H21–H23.
@@ -358,7 +358,7 @@ Coverage below maps the complete current Case II prose and its factual-source bo
 - Constraint: surrounding technical specificity keeps the line as slippage rather than genre replacement.
 
 **H35** — at 03:20 narrator tabulates watched/unwatched conditions and outcomes.
-- Literal: table records ordinary run and compiled client as hanging, while \`strace\`, prints, \`socat\`, and slower client do not.
+- Literal: table records ordinary run and compiled client as hanging, while `strace`, prints, `socat`, and slower client do not.
 - Purpose: converts the supernatural-feeling pattern into auditable evidence.
 - Reader inference: “watched” is operationally defined by specific perturbations, not mystical assertion.
 
@@ -409,20 +409,20 @@ Coverage below maps the complete current Case II prose and its factual-source bo
 ### Factual-source boundary
 
 - The current case is explicitly labeled in the manuscript endnotes as a fictional composite.
-- Documented substrate from ProxySQL issue #1939 / Carson Ip's write-up: large-result-set + \`COMMIT\` hang under load; Unix-domain socket path; disappearance under \`strace\`, \`socat\`, and added print statements; slower client changing reproducibility; compiled client reproducing.
+- Documented substrate from ProxySQL issue #1939 / Carson Ip's write-up: large-result-set + `COMMIT` hang under load; Unix-domain socket path; disappearance under `strace`, `socat`, and added print statements; slower client changing reproducibility; compiled client reproducing.
 - The documented production incident was eventually diagnosed and fixed; that later diagnosis is stated in the endnote so the manuscript does not falsely present the real incident as historically unresolved.
 - The narrator, overnight chronology, table wording, dialogue-free reconstruction, and unresolved end state belong to the fictional composite.
 
 ### Important edges
 
-- H3 → H10: \`establishes-baseline\` from symptom to reproducible-enough test.
-- H11–H15 → H20–H23 → H27–H30: \`repeated-observation-effect\` across three different instruments.
-- H17–H19 + H31–H32 + H40: \`preserves-ordinary-explanations\` and protects $id-0861352612251497.
-- H12 → H20 → H34 → H47: \`epistemic-escalation\` from mild personification to ritual metaphor to explicit animistic note.
-- H35–H37: \`evidence-with-restraint\`; the table strengthens the pattern while refusing proof of agency.
-- S35/S36 → H38/H39: \`motif-evolves\` from vanished physical cause to observation that seems to prevent a trace from existing.
-- H43 → H45 → H47: \`unresolved-closure\`; practical stopping condition, explicit lack of fix, then narrator's note.
-- H47 → later cases: \`sets-up\` increasing willingness to treat agency-like interpretations as operationally relevant.
+- H3 → H10: `establishes-baseline` from symptom to reproducible-enough test.
+- H11–H15 → H20–H23 → H27–H30: `repeated-observation-effect` across three different instruments.
+- H17–H19 + H31–H32 + H40: `preserves-ordinary-explanations` and protects $id-0861352612251497.
+- H12 → H20 → H34 → H47: `epistemic-escalation` from mild personification to ritual metaphor to explicit animistic note.
+- H35–H37: `evidence-with-restraint`; the table strengthens the pattern while refusing proof of agency.
+- S35/S36 → H38/H39: `motif-evolves` from vanished physical cause to observation that seems to prevent a trace from existing.
+- H43 → H45 → H47: `unresolved-closure`; practical stopping condition, explicit lack of fix, then narrator's note.
+- H47 → later cases: `sets-up` increasing willingness to treat agency-like interpretations as operationally relevant.
 
 ## Accepted revision rationale
 
