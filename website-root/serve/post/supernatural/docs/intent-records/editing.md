@@ -4,7 +4,7 @@ date: 2026/09/23
 source: @ottojung
 kind: requirement
 
-Agents working on the manuscript maintain `docs/meaning-graph.md` as a current graph representation of what the prose is doing. The target granularity is one node per sentence, except where two or more sentences are genuinely inseparable and the grouping is made explicit. The graph must be useful for reasoning about revisions, not merely a paraphrase of the text.
+Agents working on the manuscript maintain `docs/meaning-graph.md` as a current graph representation of what the prose is doing. Coverage is exhaustive and one-to-one: every sentence in `supernatural.md`, including sentences inside local directive blocks, has exactly one graph node. Sentences are never grouped into a shared node and coverage is not allowed to remain partial. The graph must be useful for reasoning about revisions, not merely a paraphrase of the text.
 
 $id-9187217062069867
 title: Meaning graph records communicative purpose
@@ -12,7 +12,7 @@ date: 2026/09/23
 source: @ottojung
 kind: requirement
 
-For each covered sentence, the meaning graph records enough information to answer the relevant questions: what does this sentence literally say; what is it trying to communicate; why is it here; what should the reader infer; what does the narrator appear to believe; what rhetorical or stylistic work does it perform; what ambiguity, joke, implication, motif, or withholding must survive; and what earlier or later material does it depend on, set up, or pay off.
+Every graph node uses the required `$n{RAND}` / `text` / `intent` / `style` / `continuity` format. The `text` field reproduces the source sentence exactly. The analytical fields record enough information to preserve what the sentence is trying to communicate, what the reader should infer, what the narrator appears to believe, its rhetorical and stylistic work, and the chronology, causality, motifs, setup, payoff, ambiguity, jokes, withholding, and other dependencies that matter to revision.
 
 $id-4034180152671277
 title: Meaning graph is precise but deliberately ad hoc
@@ -20,7 +20,7 @@ date: 2026/09/23
 source: @ottojung
 kind: requirement
 
-The meaning graph has no fixed ontology beyond what is useful for the manuscript. Agents may introduce new node fields and edge types whenever they make the analysis more precise. Schema elegance and formal completeness are not goals. The graph should be as precise as needed to expose semantic, causal, rhetorical, structural, and stylistic relationships that prose-only reading might otherwise blur.
+The meaning graph has a fixed node schema: `text`, `intent`, `style`, and `continuity`, under a random five-digit `$nNNNNN` ID. Do not replace those fields with ad hoc node shapes or separate edge inventories. Precision belongs inside the required analytical fields, especially `continuity`, which may reference other node IDs when useful. The graph should be as precise as needed to expose semantic, causal, rhetorical, structural, and stylistic relationships that prose-only reading might otherwise blur.
 
 $id-2642614869480108
 title: Revisions preserve semantic and inferential work
