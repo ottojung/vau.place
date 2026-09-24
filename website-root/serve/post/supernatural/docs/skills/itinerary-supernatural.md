@@ -21,6 +21,23 @@ Before acting, study and obey:
 
 This itinerary owns the recurring refinement loop. It is not a checklist that must manufacture a change on every pass. The purpose is to make the manuscript better while preserving what already works.
 
+## Human-review branch boundary
+
+Scheduled orchestrators must never commit or merge their writing changes directly into `main`.
+
+All changes produced by a scheduled orchestrator must live on a non-`main` branch for later human review:
+
+- Start from current `main` when no active supernatural-refinement review branch exists.
+- Create or reuse one branch representing the current human-review batch of supernatural-story refinements.
+- Commit manuscript, meaning-graph, and related documentation changes only to that branch.
+- Keep an open pull request from that branch to `main` as the human review surface when practical.
+- Subsequent scheduled invocations may continue refining the same open review branch, after first reconciling it with current `main` as needed.
+- The scheduled orchestrator must **not** merge that pull request, fast-forward `main`, force-update `main`, or otherwise promote its own changes into `main`.
+- Human review and promotion into `main` are outside the scheduled orchestrator's authority.
+- Once the human-review branch has been merged or otherwise retired by a human, the next scheduled invocation starts a fresh review branch from current `main`.
+
+This boundary applies even to apparently harmless changes such as meaning-graph updates, intent-adjacent documentation, typo fixes, or tiny prose edits. If a scheduled invocation changes the repository, those changes remain reviewable off `main` until a human accepts them.
+
 ## First-pass graph bootstrap
 
 The meaning graph is required analytical state.
