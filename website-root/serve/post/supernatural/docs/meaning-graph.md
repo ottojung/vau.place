@@ -238,86 +238,194 @@ Coverage starts at “Later, the machine was tested...” and ends at “The mot
 - S37–S41 ↔ S4/S35: `contrasts-with` physical culprit preserved versus transient cause inferred.
 - S42 → later cases: `sets-tone` for serious procedure ending in a small uncanny remainder.
 
-## Case II — current directive state
+## Case II — The Bug That Behaved When I Looked
 
-The manuscript currently contains no narrative prose for Case II. This section maps the live local directives and their intended relationships before substantial drafting.
+Coverage below maps the complete current Case II prose and its factual-source boundary.
 
-**H1** — current title: “The Heisenbug I Failed to Catch.”
-- Literal: narrator frames the case as a failed attempt to capture a Heisenbug.
-- Local directive: title must become more evocative.
-- Preserve: first-person ownership and failure are useful because they move the dossier from a story heard from another technician toward the narrator's own experience.
+### Nodes
 
-**H2** — location/time line: “Somewhere between midnight and the first ferry.”
-- Literal: the incident occupies an overnight interval and ends before early transport resumes.
-- Purpose: gives the case a liminal but concrete operational window.
-- Risk: do not turn this into generic nocturnal horror decoration; operational timestamps should carry the atmosphere.
+**H1** — title: “The Bug That Behaved When I Looked.”
+- Purpose: makes observation itself the case's central conflict while keeping the claim personal rather than metaphysical fact.
+- Replaces the directive-only title and satisfies the request for something more evocative.
 
-**H3** — local note asks for an actual report of an interesting/unique Heisenbug and a retelling with embellishment.
-- Purpose: ground the second case in recognizable debugging reality, preserving the collection's skeptical surface after Schaerbeek.
-- Drafting implication: choose a source where observation materially changes behavior, not merely a bug that is difficult to reproduce.
+**H2** — “Somewhere between midnight and the first ferry.”
+- Literal: the work occupies an overnight interval.
+- Purpose: liminal atmosphere anchored by an operational shift boundary rather than generic darkness.
 
-**H4** — local note says the story must not end with fixing the bug.
-- Purpose: distinguish this case from an ordinary debugging success story.
-- Reader inference: technical explanations can remain plausible without granting the narrator closure.
+**H3** — “I was called because a \`COMMIT\` would sometimes not come back.”
+- Literal: intermittent database commit hang.
+- Purpose: opens with the smallest concrete failure and places the narrator inside the incident.
 
-**H5** — local note asks the prose to portray the bug as something *real*, a metaphysical phenomenon that misbehaves when unobserved.
-- Purpose: first clear escalation beyond Schaerbeek's entirely conventional anomaly.
-- Constraint from `$id-0861352612251497`: this is narrator interpretation/temptation, not authorial proof.
-- Constraint from `$id-0105305593640677`: instrumentation must visibly change the phenomenon.
+**H4** — “This was not a complicated transaction.”
+- Purpose: rules out complexity as the obvious explanation and prepares the reader for disproportionate difficulty.
 
-**H6** — exact phrase: “With strace running, it behaved as if repentant”.
-- Literal: tracing suppresses or changes the failure.
-- Purpose: observation/behavior relationship stated in technical vocabulary with restrained personification.
-- Must preserve verbatim when integrated.
+**H5** — application reads a little over a thousand rows through a database proxy over a Unix-domain socket, then commits an otherwise empty transaction.
+- Literal: establishes the technical path and the apparently trivial final operation.
+- Factual substrate: based on the documented ProxySQL #1939 symptom pattern.
 
-**H7** — exact phrase: “I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*.”
-- Literal: narrator adds logging and anthropomorphizes the process.
-- Purpose: marks narrator's method becoming interpersonal/superstitious while remaining recognizable debugging practice.
-- Escalation: stronger anthropomorphism than Case I, but still deniable as metaphor.
-- Must preserve verbatim when integrated.
+**H6** — under production load, one greenlet sometimes remains stopped waiting on the file descriptor.
+- Literal: identifies the visible failure mode.
+- Rhetoric: “forgotten it” adds restrained personification without yet asserting agency.
 
-**H8** — exact phrase: “We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me.”
-- Literal: debugging instruments become traps/incantations.
-- Purpose: fuse procedural specificity with supernatural diction.
-- Risk: the surrounding prose should stay sober enough that this line feels like slippage, not a wholesale genre switch.
-- Must preserve verbatim when integrated.
+**H7** — first occurrence looks like networking.
+- Purpose: establishes ordinary diagnostic progression.
 
-**H9** — exact phrase: “In the morning, I wrote my note: *This thing hates to be watched*.”
-- Literal: narrator records an explicitly animistic interpretation after the overnight investigation.
-- Purpose: close the case without solving it and advance the narrator's epistemic drift.
-- Edge: H6–H8 must earn H9 through repeated observation-sensitive behavior.
-- Must preserve verbatim when integrated.
+**H8** — second occurrence looks like the client library.
+- Purpose: moves suspicion one layer inward while remaining conventional.
 
-### Candidate factual spine for Case II
+**H9** — by the third occurrence, replacement/elimination makes the shape of the failure more interesting than any one suspect.
+- Purpose: shifts focus from component blame to the invariant behavior across changed components.
+- Edge: H7–H9 form an elimination sequence.
 
-A promising real-world anchor is the documented class of failures in which tracing itself changes behavior. One concrete public report describes a hung process that resumed or ceased exhibiting the problem when `strace` was attached; later explanation identified a tracing-induced change in execution path, and other documented explanations note that `ptrace`/tracing can alter system-call behavior. This is especially useful because it supports the exact required `strace` phrase without requiring invention of the observation effect.
+**H10** — at 00:41 a loop reproduces the hang within a variable interval under an hour.
+- Literal: establishes reproducibility plus timing instability.
+- Purpose: gives later observation experiments a baseline.
 
-A second, stronger technical reference is Paul E. McKenney's concurrency text, which explicitly discusses Heisenbugs and notes that adding `printf()` can greatly reduce or eliminate lost-count race failures by perturbing timing. This supports the required `printf` motif and gives the skeptical reader a conventional mechanism for why observation changes the result.
+**H11** — narrator attaches \`strace\` to capture the last useful syscall before the stop.
+- Purpose: ordinary debugging action motivated by a concrete evidence need.
 
-These sources should be treated as technical grounding, not copied as a single claimed historical incident unless a specific incident is selected and verified. A future prose pass should either (a) choose one documented incident and clearly fictionalize around it, or (b) label the case internally as a composite rather than accidentally presenting a composite as documentary fact.
+**H12** — “With strace running, it behaved as if repentant.”
+- Literal: tracing suppresses the hang.
+- Purpose: first observation-effect escalation; exact required phrase.
+- Rhetoric: personification remains deniable as metaphor.
 
-### Intended Case II shape
+**H13** — trace runs for ninety minutes.
+- Purpose: makes the negative result meaningful rather than anecdotal.
 
-1. Establish a repeatable-enough overnight failure under ordinary execution.
-2. Show the failure disappearing or changing under `strace`.
-3. Remove the tracer and let the failure return.
-4. Add `printf`/logging; again the failure recedes or changes.
-5. Try less intrusive observation and timing changes, each producing a different form of evasion.
-6. Preserve ordinary explanations—race timing, tracer side effects, scheduling, altered memory/layout—as live possibilities.
-7. Refuse a clean fix or root-cause reveal.
-8. End with H9, making the narrator's metaphysical reading an earned but non-exclusive interpretation.
+**H14** — nothing hangs.
+- Rhythm: short result sentence gives the absence weight.
 
-### Cross-case edges
+**H15** — narrator detaches tracing; seventeen minutes later the same request hangs at the same place.
+- Purpose: creates a direct watched/unwatched contrast.
+- Edge: H12–H15 supply the first repeated observation correlation.
 
-- S42 → H1/H2: `escalates-from` a documentary anomaly with a conventional explanation into a case where the act of investigation changes the evidence.
-- S35/S36 → H6–H8: `motif-evolves` from causes that leave no prints to a cause that appears to avoid the instruments meant to leave prints.
-- H3/H6 → `$id-0861352612251497`: `supports` skeptical credibility through real debugging mechanisms.
-- H6 → H7 → H8 → H9: `epistemic-escalation` from technical observation to anthropomorphic method to explicit animistic note.
-- H4 → H9: `must-precede`; lack of closure is what gives the final note its force.
-- H9 → later cases: `sets-up` a narrator increasingly willing to treat folklore-like agency as operationally relevant.
+**H16** — engineers repeat the experiment before allowing themselves superstition.
+- Purpose: dry procedural humor while preserving skeptical method.
+- Reader inference: narrator's superstition is presented as something earned through repetition.
+
+**H17** — timing is named as the ordinary explanation.
+- Purpose: explicitly keeps a conventional mechanism live.
+
+**H18** — \`strace\` changes scheduling because it stops/resumes execution around system calls.
+- Literal: instrumentation is not passive.
+- Purpose: supplies the skeptical explanation for the observation effect.
+
+**H19** — if the bug is an ordering failure, observation could separate the racing events.
+- Purpose: gives a concrete technical mechanism rather than hand-waving “Heisenberg” language.
+- Edge: H17–H19 constrain H12 against supernatural overclaim.
+
+**H20** — “I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*.”
+- Literal: narrator adds minimal logging.
+- Purpose: second observation mechanism and stronger anthropomorphic slippage; exact required phrase.
+
+**H21–H23** — two prints bracket the commit; the hang disappears with them and returns after removal.
+- Grouping: the three short sentences form one inseparable experiment/result/reversal unit.
+- Purpose: repeats the H12–H15 pattern with a much smaller perturbation.
+- Edge: H21–H23 strengthen H20 and set up H31–H33.
+
+**H24** — slower pure-Python client does not reproduce.
+- Literal: execution speed/client implementation changes the failure.
+- Purpose: points toward timing without locating the fault.
+
+**H25** — small compiled client using the same C library does reproduce.
+- Purpose: weakens “application bug” as the sole explanation.
+- Factual substrate: documented in the source write-up.
+
+**H26** — suspicion moves toward speed, buffering, or proxy path rather than one application component.
+- Purpose: synthesizes H24–H25 without claiming a root cause.
+
+**H27** — Unix-domain socket makes the usual packet capture unsuitable.
+- Purpose: introduces the next observation strategy from a practical limitation.
+
+**H28–H30** — \`socat\` is inserted to observe socket bytes; the hang disappears; removal makes it return.
+- Grouping: deliberately clipped three-step test sequence.
+- Purpose: third independent watched/unwatched reversal.
+- Edge: H28–H30 parallel H12–H15 and H21–H23.
+
+**H31** — “None of this required a metaphysical explanation.”
+- Purpose: narrator explicitly preserves skeptical deniability at the point where the pattern is becoming uncanny.
+
+**H32** — tracing, printing, socket proxying, and client changes can all perturb timing, syscall boundaries, queue occupancy, and scheduling.
+- Literal: lists ordinary mechanisms by which observation changes execution.
+- Purpose: prevents supernatural interpretation from being the only available model.
+
+**H33** — practical problem: every instrument that would produce better evidence also changes the conditions under which evidence is needed.
+- Purpose: states the case's epistemic trap without claiming agency.
+- Edge: H12/H20/H28 → H33.
+
+**H34** — “We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me.”
+- Purpose: exact required phrase; fuses procedural debugging with ritual vocabulary.
+- Constraint: surrounding technical specificity keeps the line as slippage rather than genre replacement.
+
+**H35** — at 03:20 narrator tabulates watched/unwatched conditions and outcomes.
+- Literal: table records ordinary run and compiled client as hanging, while \`strace\`, prints, \`socat\`, and slower client do not.
+- Purpose: converts the supernatural-feeling pattern into auditable evidence.
+- Reader inference: “watched” is operationally defined by specific perturbations, not mystical assertion.
+
+**H36** — table is not proof the process knows it is watched.
+- Purpose: explicit evidentiary restraint.
+
+**H37** — table is nevertheless an excellent operational description of what “being watched” means.
+- Purpose: lets the uncanny interpretation survive without being upgraded to fact.
+- Edge: H36 contrasts-with H37.
+
+**H38** — narrator wants one ordinary artifact: syscall, queue transition, timeout, or bad state.
+- Purpose: states the conventional evidentiary standard he is still trying to satisfy.
+
+**H39** — attempts to obtain that artifact move the failure away, leaving only absence.
+- Purpose: converts the missing-trace motif from Case I into active evidence avoidance.
+- Edge: S35/S36 → H38/H39 is a motif escalation from “cause leaves no prints” to “cause appears to avoid print-making.”
+
+**H40** — at 04:30 somebody calls it a race condition; narrator agrees because that remains the most ordinary explanation.
+- Purpose: keeps conventional diagnosis primary even after repeated uncanny correlations.
+
+**H41** — “race condition” names the family, not the particular relative.
+- Purpose: distinguishes category from explanation and prevents a generic label from closing the investigation.
+- Echo: parallels S8–S9, where “computer error” is true but insufficient.
+
+**H42** — they still do not know which events race or why the race becomes “polite” under observation.
+- Purpose: retains unresolved technical ignorance while permitting a sharper animistic metaphor.
+- Edge: H40 constrains H42; H42 prepares H47.
+
+**H43** — by 05:18 production traffic thins and reproduction slows.
+- Literal: practical environmental change ends useful testing.
+- Purpose: closes the overnight window without solving the bug.
+
+**H44** — night shift can end without investigation ending.
+- Purpose: makes lack of closure procedural, not melodramatic.
+
+**H45** — “Nothing was fixed.”
+- Purpose: fulfills the local requirement that the case not end in debugging triumph.
+
+**H46** — they have only learned which forms of attention the failure appears to tolerate.
+- Purpose: summarizes the empirical result in language that can be read technically or animistically.
+- Edge: H33/H35 → H46.
+
+**H47** — “In the morning, I wrote my note: *This thing hates to be watched*.”
+- Literal: narrator records an animistic conclusion.
+- Purpose: exact required closing line; first principal case where his own note treats software as agent-like.
+- Constraint: H17–H19, H31–H32, and H40 remain live counter-explanations, so H47 is an earned narrator interpretation rather than authorial proof.
+
+### Factual-source boundary
+
+- The current case is explicitly labeled in the manuscript endnotes as a fictional composite.
+- Documented substrate from ProxySQL issue #1939 / Carson Ip's write-up: large-result-set + \`COMMIT\` hang under load; Unix-domain socket path; disappearance under \`strace\`, \`socat\`, and added print statements; slower client changing reproducibility; compiled client reproducing.
+- The documented production incident was eventually diagnosed and fixed; that later diagnosis is stated in the endnote so the manuscript does not falsely present the real incident as historically unresolved.
+- The narrator, overnight chronology, table wording, dialogue-free reconstruction, and unresolved end state belong to the fictional composite.
+
+### Important edges
+
+- H3 → H10: \`establishes-baseline\` from symptom to reproducible-enough test.
+- H11–H15 → H20–H23 → H27–H30: \`repeated-observation-effect\` across three different instruments.
+- H17–H19 + H31–H32 + H40: \`preserves-ordinary-explanations\` and protects $id-0861352612251497.
+- H12 → H20 → H34 → H47: \`epistemic-escalation\` from mild personification to ritual metaphor to explicit animistic note.
+- H35–H37: \`evidence-with-restraint\`; the table strengthens the pattern while refusing proof of agency.
+- S35/S36 → H38/H39: \`motif-evolves\` from vanished physical cause to observation that seems to prevent a trace from existing.
+- H43 → H45 → H47: \`unresolved-closure\`; practical stopping condition, explicit lack of fix, then narrator's note.
+- H47 → later cases: \`sets-up\` increasing willingness to treat agency-like interpretations as operationally relevant.
 
 ## Accepted revision rationale
 
-The previous pass repaired the Case I chronology by returning explicitly to the café, keeping the younger narrator skeptical, closing the interaction, and marking Field Note #1 as a later dossier entry. It also restored frame material from the human-authored base without strengthening the factual claim about the Schaerbeek report.
+The previous pass repaired the Case I chronology by returning explicitly to the café, keeping the younger narrator skeptical, closing the interaction, and marking Field Note #1 as a later dossier entry. It also restored frame material from the human-authored base without strengthening the factual claim about the Schaerbeek report, then bootstrapped analytical coverage for the empty Case II.
 
-This pass does not alter manuscript prose. It extends required analytical coverage through the currently empty Case II before any substantial Heisenbug drafting. The main diagnosis is that Case II's eventual prose must not merely be a generic race-condition story: the observation effect itself has to be the narrative evidence, ordinary mechanisms must remain available, and the final “hates to be watched” line must be earned by repeated failed attempts to observe rather than asserted as a premise.
+This pass fills the highest-leverage structural absence: Case II now exists as a complete observation-sensitive debugging case. The chosen substrate is unusually well matched to the live intent because the documented incident independently contains all three useful perturbations—\`strace\`, print statements, and socket observation—while also supplying ordinary timing explanations. The fictional reconstruction deliberately stops without a fix, but the endnote states that the real ProxySQL incident was later diagnosed and fixed, preserving the distinction between documentary substrate and invented dossier narrative. The accepted prose earns the final “hates to be watched” note through repeated watched/unwatched reversals rather than presenting animism as a premise.
