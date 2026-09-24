@@ -225,26 +225,58 @@ The moth looks unconvinced.
 
 ---
 
-### II. The Heisenbug I Failed to Catch
-
-<FIXME>
-Change the title to something more evocative.
-</FIXME>
-
-<NOTE>
-It would be nice to link to an actual report of someone who noticed an interesting or unique Heisenbug and how they diagnosed it. The story should then just be a retelling of that, with some embellishment. The story should not end with fixing the bug - it should portray the bug as something **real**, some kind of metaphysical phenomena that makes the system misbehave when it is not being observed.
-</NOTE>
+### II. The Bug That Behaved When I Looked
 
 **Somewhere between midnight and the first ferry.**
 
+I was called because a \`COMMIT\` would sometimes not come back.
 
+This was not a complicated transaction. The application had read a little over a thousand rows through a database proxy over a Unix-domain socket and then asked to commit an otherwise empty transaction. Under production load, one greenlet would occasionally stop there and remain stopped, waiting on the file descriptor as if the other side had forgotten it.
 
-<MUST HAVES>
-"With strace running, it behaved as if repentant"
-"I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*."
-"We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me."
-"In the morning, I wrote my note: *This thing hates to be watched*."
-</MUST HAVES>
+The first occurrence looked like networking. The second looked like the client library. By the third, we had replaced enough pieces that the shape of the failure had become more interesting than any one suspect.
+
+At 00:41 we had a loop that would usually reproduce the hang inside an hour, although "usually" included eleven minutes once and fifty-three the next time. I attached \`strace\` because I wanted the last useful system call before the process stopped. With strace running, it behaved as if repentant.
+
+We left the trace running for ninety minutes. Nothing hung. I detached it; seventeen minutes later the same request stopped in the same place.
+
+We did this again because engineers are allowed to be superstitious only after repetition.
+
+The ordinary explanation was timing. \`strace\` is not a window cut into a process; it stops and resumes the process around system calls, and that changes scheduling. If the fault depended on two events arriving in the wrong order, observation could be enough to move them apart.
+
+I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*.
+
+They did almost nothing: one line before the commit, one after. With them in place, the hang disappeared. Remove them, and after enough traffic it returned.
+
+A slower pure-Python client did not reproduce it. A small compiled client using the same C library did. This moved suspicion away from the application code and toward something that cared about speed, buffering, or the path through the proxy.
+
+The traffic between the application and proxy used a Unix-domain socket, so our usual packet capture was no help. We put \`socat\` in the middle to watch the bytes. The hang disappeared. We removed it. The hang returned.
+
+None of this required a metaphysical explanation. Tracing, printing, proxying a socket, and changing client implementations can all alter timing, syscall boundaries, queue occupancy, and scheduling. The difficulty was more practical: every instrument that could leave us a better trace also changed the conditions under which the trace was needed.
+
+We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me.
+
+At 03:20 I copied the useful part of the night into a table:
+
+| condition | result |
+| --- | --- |
+| ordinary run, fast local socket | hangs eventually |
+| \`strace\` | no hang observed |
+| prints around \`COMMIT\` | no hang observed |
+| \`socat\` in the socket path | no hang observed |
+| slower client | no hang observed |
+| small compiled client | hangs |
+
+The table was not proof that the process knew it was being watched. It was, however, an excellent operational description of what "being watched" meant.
+
+What I wanted was one ordinary artifact: the final syscall, a queue transition, a timeout, a bad state we could point to after the fact. Instead, each attempt to obtain that artifact moved the failure just far enough away that we were left with only the absence of it.
+
+At 04:30 somebody called it a race condition, and I agreed because that remained the most ordinary explanation. But *race condition* named the family, not the relative who had come to visit. We still did not know which two events were racing, or why the race seemed to become polite whenever we entered the room.
+
+By 05:18 the production traffic had thinned and reproduction slowed with it. We stopped because a night shift can end without an investigation ending.
+
+Nothing was fixed. We had only learned which forms of attention the failure appeared to tolerate.
+
+In the morning, I wrote my note: *This thing hates to be watched*.
 
 ---
 
@@ -328,11 +360,16 @@ Something with the same moral as "We live by the text; we survive by the small, 
 
 4. **Additional context from advocacy and oversight materials.** *eVoting in Belgium: State of the Union* (PourEVA), summarizing known incidents including the 4096-vote anomaly. ([vooreva.be][4])
 
+5. **Observation-sensitive Heisenbug substrate for Case II.** Case II is a fictional composite. Carson Ip documented a 2019 ProxySQL hang after large result sets where \`strace\`, \`socat\`, and added print statements suppressed the failure, while a slower client changed reproducibility. The real issue was later traced to a throttled session being moved into an \`epoll\` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
+
 *(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
 
 [1]: https://americanhistory.si.edu/collections/object/nmah_334663 "Log Book With Computer Bug"
 [2]: https://www.poureva.be/spip.php?article32= "Rapport concernant les élections du 18 mai 2003"
 [3]: https://en.wikipedia.org/wiki/Electronic_voting_in_Belgium "Electronic voting in Belgium"
 [4]: https://www.vooreva.be/IMG/pdf/eVoting_State_of_the_union.pdf "eVoting in Belgium “State of the Union”"
+[5]: https://github.com/sysown/proxysql/issues/1939 "ProxySQL issue #1939"
+[6]: https://carsonip.me/posts/fixing-proxysql-idle-threads-epoll-hang-heisenbug/ "Fixing ProxySQL Idle Threads Epoll Hang Heisenbug"
+[7]: https://github.com/sysown/proxysql/pull/1952 "ProxySQL PR #1952"
 
 ---
