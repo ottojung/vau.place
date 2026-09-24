@@ -61,3 +61,12 @@ source: @ottojung
 kind: requirement
 
 Agents may autonomously diagnose and revise prose, but they must not silently change the collection's intended beliefs, case premises, narrator stance, escalation, or other live Intent Records in order to make a revision easier. When a promising revision appears to require a change in intent, surface that as a human decision instead of treating the agent's literary preference as authority.
+
+
+$id-6418273059462718
+title: Do not announce the manuscript's epistemic strategy
+date: 2026/09/23
+source: @ottojung
+kind: requirement
+
+The prose must not directly explain the author's balancing strategy between ordinary and supernatural interpretations. In particular, avoid narrator-as-author statements whose main function is to advertise that a metaphysical explanation is unnecessary, unproven, merely optional, or deliberately being kept alive. Skeptical restraint and supernatural temptation should instead emerge from concrete evidence, procedural behavior, competing technical explanations, omissions, qualifications, and the narrator's changing reactions. Diegetic discussion of a specific causal hypothesis is still appropriate when a character would naturally make it as part of the investigation.
