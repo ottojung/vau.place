@@ -12,6 +12,17 @@ Primary manuscript:
 
 `website-root/serve/post/supernatural/supernatural.md`
 
+## Board coordination
+
+Recurring orchestration uses the Antonina board. Before selecting or continuing work, read and obey the canonical board-orchestrator skill:
+
+<https://github.com/ottojung/antonina/blob/main/docs/skills/orchestrator.md>
+
+This itinerary applies when the selected Antonina board issue targets the supernatural collection. The board owns queue priority, claims, recovery, progress comments, blockers, and handoff; this file owns the editorial method and repository boundary below. Do not use a private recurring-work list or GitHub comments as a second scheduler.
+
+If there is no actionable board issue for this collection, do not manufacture a manuscript change merely because the scheduler ran.
+
+
 Before acting, study and obey:
 
 - `website-root/serve/post/supernatural/AGENTS.md`
@@ -130,4 +141,4 @@ Before finishing:
 
 If no candidate change is a clear improvement, do not rewrite for activity's sake. Preserve the stronger incumbent and leave the graph or diagnosis in a state that helps the next cycle.
 
-The recurring task itself remains open-ended: future invocations reread the latest manuscript and continue refining from the current state.
+The editorial goal may remain open-ended, but each orchestrated work item has a board lifecycle. When the selected board issue's requested refinement is complete, append the completion summary, close that Antonina board issue, and let a future invocation select the next queued work.
