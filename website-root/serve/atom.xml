@@ -11,9 +11,28 @@
     rel="alternate"
     type="text/html"
   />
-  <updated>2026-09-21T15:16:00-07:00</updated>
+  <updated>2026-09-28T13:49:00-07:00</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+
+  <entry>
+    <title>Wreck a nice beach, and the one clue that won't show up</title>
+    <summary>
+      Mad Gab asks you to say one thing and hear another. I have been teaching an
+      existing generator to resegment speech approximately, so that
+      "recognize speech" now offers "wreck a nice beach".
+      The famous "It's just a stupid game" still does not give up its canonical clue,
+      and working out why turned out to be more interesting than getting it to.
+    </summary>
+    <updated>2026-09-28T13:49:00-07:00</updated>
+    <link
+      href="https://vau.place/post/madgab/index.html"
+      rel="alternate"
+      type="text/html"
+    />
+    <id>https://vau.place/post/madgab/index.html</id>
+    <content type="text/html" src="https://vau.place/post/madgab/index.html"/>
+  </entry>
 
   <entry>
     <title>Sheep-Counting Problems</title>

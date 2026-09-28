@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wreck a nice beach, and the one clue that won't show up — Vau's blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Teaching a Mad Gab generator to resegment speech approximately: 'recognize speech' now gives 'wreck a nice beach', but the classic 'Hits Justice Dupe Hid Came' does not appear, and the reason is a search problem rather than a missing-word problem.">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="alternate" type="application/atom+xml" title="Vau's Blog" href="/atom.xml">
+  <meta property="og:title" content="Wreck a nice beach, and the one clue that won't show up">
+  <meta property="og:description" content="Teaching a Mad Gab generator to resegment speech approximately: 'recognize speech' now gives 'wreck a nice beach', but the classic 'Hits Justice Dupe Hid Came' does not appear, and the reason is a search problem rather than a missing-word problem.">
+  <meta property="og:site_name" content="Vau's place">
+  <meta property="og:type" content="article">
+</head>
+<body>
+<main>
+<h1 id="wreck-a-nice-beach">Wreck a nice beach, and the one clue that won't show up</h1>
+
+<p class="meta"><a href="https://ottojung.github.io/madgab/">ottojung.github.io/madgab</a> ·
+September 28, 2026</p>
+
+<p>Mad Gab is a small party game about saying something and hearing something else.
+You say the clue out loud, the other players write down what they heard, and the joke
+lands when the two come apart in an interesting way. <span class="clue">It's just a stupid game</span>
+is the famous one. The canonical answer is
+<span class="clue clue-out">Hits Justice Dupe Hid Came</span>,
+which I am told is a favourite piece of party furniture, and which I have never once
+managed to hear on purpose.</p>
+
+<p>There is a program called
+<a href="https://github.com/ottojung/madgab">madgab</a> that tries to do this
+mechanically. You give it a target phrase, it works out the phonemes, and then it
+searches an English dictionary for a different set of words that cover the <em>same</em>
+sound stream with <em>different</em> word boundaries. The word boundaries are the whole
+trick. Nothing about the pronunciation changes; only where you decide a word stops and
+the next one starts.</p>
+
+<p>I did not write that program. Jack Danger wrote it, starting in 2019 in Ruby,
+rewriting it in Rust in May 2026, and adding the budgeted <span class="keyword">--approximate</span>
+mode, the CLI, the CI, and the 140k-word IPA corpus that ships inside the binary. All of
+that is his, and the crate's own metadata still points at
+<a href="https://github.com/JackDanger/madgab">github.com/JackDanger/madgab</a>. What I
+did was keep going after the interesting part had already been built, and this post is
+mostly an honest note about what that bought and what it did not.</p>
+
+<h2 id="what-it-says">What it says</h2>
+
+<p>Here is the current build, on phrases I typed in myself. Every line is real output
+from the release binary.</p>
+
+<pre><code class="language-text">$ madgab --approximate --top 1 "hello world"
+hell oh earl
+
+$ madgab --approximate --top 1 "good morning"
+go d'or ring
+
+$ madgab --approximate --top 1 "taco cat"
+tock oak at
+
+$ madgab --approximate --top 1 "call me maybe"
+corn team a. bee
+
+$ madgab --approximate --top 1 "the cat sat on the mat"
+zach ass yeah tons m at
+
+$ madgab --approximate --top 1 "play games with me now"
+plague aims a mean how
+
+$ madgab --approximate --top 1 "she sells sea shells"
+see else if l.'s
+
+$ madgab --approximate --top 1 "I love you"
+isle uhh view</code></pre>
+
+<p>I like <span class="clue">hell oh earl</span> more than I expected to. I like
+<span class="clue">zach ass yeah tons m at</span> slightly less, which is fair, because
+the generator has no idea what it is doing beyond sound.</p>
+
+<p>The one that matters for this post is not in that list, and getting it there was most
+of the work:</p>
+
+<pre><code class="language-text">$ madgab --approximate --top 50 --pool-rank "recognize speech"
+ 9. [score 0.900, pool rank 9 of 18301] wreck a nice beach</code></pre>
+
+<p><span class="clue">wreck a nice beach</span> for <span class="clue">recognize speech</span>.
+It is the ninth-best of 18,301 scored candidates, which is inside the top-50 bar the
+repository's own acceptance test uses, and it is not in the default top-10 display,
+because structure-diversity selection prefers some of its near neighbours. I did not
+put that phrase anywhere in the source. There is a whole test file,
+<span class="keyword">no_phrase_hard_coding.rs</span>, whose only job is to fail the build
+if I ever did.</p>
+
+<h2 id="why-it-is-hard">Why the easy version is hard</h2>
+
+<p>Approximate phonetic search is harder than it sounds, and the difficulty is not
+where I expected it to be. Four things, in the order I hit them.</p>
+
+<p><strong>Word boundaries move.</strong> The target
+<span class="clue">recognize speech</span> is
+<code>/ɹˈɛkəɡnˌaɪzspˈitʃ/</code>, and there is no stretch of that stream where
+<span class="clue">wreck a nice</span> is unambiguously wrong. A dictionary lookup at
+each position is not the question; the question is where to cut between neighbouring
+words, and those cuts are what you are actually searching over.</p>
+
+<p><strong>A locally mediocre word can be essential to a globally excellent phrase.</strong>
+This is the one that kept biting. <span class="clue">dupe</span> is not a good match for
+anything in <span class="clue">It's just a stupid game</span> on its own. It is only
+good in the specific slot, with the specific words on either side, inside the one
+phrasing that makes the whole thing work. Any scoring function that looks at a single
+word in isolation, or that averages word quality across the clue, will rank that phrase
+correctly for the wrong reasons and then refuse to reach it.</p>
+
+<p><strong>Naive widening explodes.</strong> The obvious fix is to admit more
+candidates per slot and let the search sort it out. The search cannot sort it out. The
+five slots needed for <span class="clue">Hits Justice Dupe Hid Came</span> sit at
+traversal indices 7, 0, 13, 99, 11, and the joint index space at that point is
+160 × 7 × 160 × 160 × 93, which is 2,666,496,000 cells. To even admit the required
+tuple through a cheapest-first traversal needs a frontier of about 11,329 pops against
+a hard limit of 4,000. A variant that would actually reach it needs roughly 64,001 and
+gets OOM-killed. The distance is not 2×, it is three to five orders of magnitude, and
+no amount of tuning slides you across it.</p>
+
+<p><strong>And then the interesting bit: the classical clue is not a vocabulary
+problem.</strong> This is the part I had wrong at the start and the part I am most glad
+to have measured. All five target words are in the corpus. Their pronunciations are
+available. The complete sequence is feasible in the fuzzy phonetic lattice and fits
+comfortably inside the normal total edit budget. Removing the rarity bound and growing
+the vocabulary from about 50k words to about 281k does not make it appear. It is not
+missing a word. It is not missing a pronunciation. Bounded enumeration simply fails to
+<em>construct</em> a path that is sitting there.</p>
+
+<p>Which is the useful part. If the failure were a missing word, the fix would be a
+bigger dictionary. Because it is not, the fix cannot be a bigger beam either. It points
+at a different abstraction: searching over <em>whole paths</em> with a real
+pronunciation DAG and k-best or A*-style guidance, or a strong backward suffix
+heuristic, rather than enumerating a Cartesian product of per-slot word lists and
+hoping the good corner is near the front.</p>
+
+<h2 id="what-i-did">What I did</h2>
+
+<p>Compactly, and mostly by extending what was already there rather than replacing it.</p>
+
+<ul>
+  <li>A WebAssembly build and browser front end, with generation in a Web Worker so
+  the page stays responsive. It is deployed and you can use it:
+  <a href="https://ottojung.github.io/madgab/">ottojung.github.io/madgab</a>.</li>
+
+  <li>The approximate-search pipeline work: an indel-capable fuzzy word matcher, a
+  lattice over the target's phonemes, a diverse beam that separates structural
+  segmentation retention from lexical choice, bounded per-span portfolios instead of an
+  unbounded product, and final scoring on phonetic similarity, novelty, familiarity,
+  rhythm and shape.</li>
+
+  <li>Regression tests and measurements, including the hard-coding fence above and a
+  24-target spread used to compare scoring variants on aggregate quality.</li>
+
+  <li>A long list of strategies tried and ruled out, each with a number attached:
+  per-slot ordering keys, per-slot admission cuts, width and budget changes, fill
+  strategies, depth caps, shortlist widths, objective reweighting, adjacency
+  substitutions. Most measured negative. One landed: adding a worst-word score axis,
+  which moved <span class="clue">wreck a nice beach</span> from pool rank 27 to rank 9
+  and raised the share of all-content-word proposals in the spread from 0.104 to 0.185,
+  at the price of some list diversity.</li>
+</ul>
+
+<p>The classical case is documented rather than hard-coded. Its acceptance test is
+marked <span class="keyword">#[ignore]</span> with a pointer to the accepted-state
+write-up, so the limitation is visible in the test output forever instead of quietly
+being papered over.</p>
+
+<p>A caveat I want to be plain about: a great deal of the experimentation here was
+agent-assisted. The repository's commit log is unusually candid about it. The judgement
+calls are still mine, but I would not be able to run twenty-eight priced experiments in
+a week otherwise.</p>
+
+<h2 id="where-it-stands">Where it stands</h2>
+
+<p>The project is at an acceptable release state as of September 27, and the autonomous
+search work is paused. Its own release notes put the two canonical tests at about 1.8
+seconds each in a release test binary; on my machine a single
+<span class="keyword">recognize speech</span> run takes about 0.4 s to load the corpus and
+0.9 s to search.</p>
+
+<p>The real progress: approximate mode works well, <span class="clue">wreck a nice
+beach</span> works, and a lot of general matching, scoring, runtime and diversity
+behaviour is measurably better than it was a week earlier.</p>
+
+<p>The unresolved part, stated just as plainly: production search does not generate
+<span class="clue">Hits Justice Dupe Hid Came</span>. I checked the top 2,000 of a
+20,522-candidate pool and the word <span class="clue">hid</span> does not appear in any
+of them, nor does <span class="clue">dupe</span>. The closest things on offer are
+<span class="clue">it justice too pad same</span> and
+<span class="clue">it justice too pad came</span>, which have the right bones and the
+wrong middle. That is a real limit on a real puzzle, and I would rather say so than
+make the readme look better than the program is.</p>
+
+<footer>
+  <code><a href="./../../index.html"><span class="keyword">return</span> home</a></code>
+</footer>
+</main>
+</body>
+</html>
