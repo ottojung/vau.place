@@ -296,64 +296,6 @@ Q(X,H)
 
 <p>Mental effort itself is not the principle. Bounded processing, storage, and temporal availability are mechanisms that can create separation.</p>
 
-<h2 id="constructing-good-sheep-counting-problems">Constructing good sheep-counting problems</h2>
-
-<p>The full model can express the three resource constructions that appeared earlier.</p>
-
-<h3 id="proof-of-work">Proof of work</h3>
-
-<p>The factorization, empty-pentagon, and monotone-subsequence puzzles are attempts at human <strong>proof of work</strong>. A fresh input arrives at some time \(t_0\), and an acceptable response is due by \(t_1\). Any computation that genuinely depends on the fresh input has to fit through processing channels between those times.</p>
-
-<p>Blum and Vempala split the relevant costs into</p>
-
-<div class="math-display">\[
-\operatorname{PREP},\qquad
-\operatorname{PROC},\qquad
-\operatorname{VER}.
-\]</div>
-
-<p><strong>PREP</strong> happens before the fresh part of the input arrives. <strong>PROC</strong> remains afterward. <strong>VER</strong> is the cost of checking the evidence.</p>
-
-<p>In the flow model, PREP can help only through state that was prepared beforehand, retained through storage edges, and matched to the fresh input later. PROC is the fresh-dependent load that still has to cross processing channels before the deadline. VER determines which trace tests belong to the practical verifier class \(\mathcal V\). A task is useful as proof of work when good performance certifies a substantial lower bound on post-challenge load while an informative verifier remains cheap.</p>
-
-<p>This is an assumption about the task model, not something network notation proves for free. The hard empirical or complexity-theoretic part is obtaining a believable lower bound on how much processing good performance requires.</p>
-
-<h3 id="proof-of-space">Proof of space</h3>
-
-<p>The same time-expanded network can express <strong>proof of space</strong> without adding a new resource formalism.</p>
-
-<p>A holdover edge</p>
-
-<div class="math-display">\[
-(v,t)\longrightarrow(v,t+1)
-\]</div>
-
-<p>represents state surviving from one time layer to the next. Its capacity represents how much state can be retained through that part of the model.</p>
-
-<p>Suppose fresh, unpredictable material is shown at time \(t_0\), disappears, and must be recalled at \(t_1\). If the material cannot be reconstructed from some later source, a valid implementation has to preserve enough information about it across the temporal cuts between \(t_0\) and \(t_1\).</p>
-
-<p>That information requirement matters. Merely pushing arbitrary load through a holdover edge would not prove that anything useful was remembered. The activity model has to connect later recall performance to a lower bound on how much input-dependent state survived the delay. Once such a lower bound is available, successful recall can certify storage load just as successful computation can certify processing load.</p>
-
-<p>A competing memory activity can then be ruled out by the same kind of capacity argument used for work, after crediting any storage work the two activities can genuinely share. The difficult empirical or information-theoretic question is how much retained information a given recall performance actually certifies for this person.</p>
-
-<h3 id="proof-of-time">Proof of time</h3>
-
-<p><strong>Proof of time</strong> uses the temporal coordinate differently. It does not need a large amount of computation or storage. Instead, a claimed state has to be available at many possible times.</p>
-
-<p>A guard who must respond immediately to a probe has to have a response-capable implementation at the layer where that probe arrives. The external input history can contain probe times chosen randomly and hidden until they occur. Because the strategy is causal, the guard cannot move readiness backward in time after seeing the probe.</p>
-
-<p>A non-vigilant strategy may be response-capable on only part of the interval. Hidden random probes sample that temporal coverage. The theorem below turns the covered fraction into a false-pass probability; the resulting trace distribution reveals availability across time rather than accumulated work.</p>
-
-<p>So all three constructions fit the same model, but in different ways:</p>
-
-<ul>
-  <li>proof of work uses <strong>processing throughput after release and before a deadline</strong>;</li>
-  <li>proof of space uses <strong>state carried through holdover edges across time</strong>;</li>
-  <li>proof of time uses <strong>availability across time layers, sampled by unpredictable inputs</strong>.</li>
-</ul>
-
-<p>A long sequential computation gives another possible meaning of proof of time, close to verifiable delay functions in cryptography. In this model I would still classify that mainly as proof of work: its difficulty comes from sequential processing. The random-probe construction is different because its strength comes from coverage of the time axis.</p>
-
 <h2 id="observation-and-intervention">Observation and intervention</h2>
 
 <p>Arithmetic exercises, scalable chess, memory challenges, and guard probes all create evidence by changing the situation.</p>
@@ -712,6 +654,64 @@ d_{\mathrm{TV}}(P_Q,P_{\neg Q})
 <p>The proof is conditional multiplication. Given that the previous rounds were accepted, the probability of accepting round \(i\) is an average over the possible visible histories, and every term is at most \(s_i\).</p>
 
 <p>Independence is unnecessary. Fatigue, practice, and learning the verifier's strategy matter because they change the later conditional bounds. The random-time guard result is the clean special case with every \(s_i=f\).</p>
+
+<h2 id="constructing-good-sheep-counting-problems">Constructing good sheep-counting problems</h2>
+
+<p>The full model can express the three resource constructions that appeared earlier.</p>
+
+<h3 id="proof-of-work">Proof of work</h3>
+
+<p>The factorization, empty-pentagon, and monotone-subsequence puzzles are attempts at human <strong>proof of work</strong>. A fresh input arrives at some time \(t_0\), and an acceptable response is due by \(t_1\). Any computation that genuinely depends on the fresh input has to fit through processing channels between those times.</p>
+
+<p>Blum and Vempala split the relevant costs into</p>
+
+<div class="math-display">\[
+\operatorname{PREP},\qquad
+\operatorname{PROC},\qquad
+\operatorname{VER}.
+\]</div>
+
+<p><strong>PREP</strong> happens before the fresh part of the input arrives. <strong>PROC</strong> remains afterward. <strong>VER</strong> is the cost of checking the evidence.</p>
+
+<p>In the flow model, PREP can help only through state that was prepared beforehand, retained through storage edges, and matched to the fresh input later. PROC is the fresh-dependent load that still has to cross processing channels before the deadline. VER determines which trace tests belong to the practical verifier class \(\mathcal V\). A task is useful as proof of work when good performance certifies a substantial lower bound on post-challenge load while an informative verifier remains cheap.</p>
+
+<p>This is an assumption about the task model, not something network notation proves for free. The hard empirical or complexity-theoretic part is obtaining a believable lower bound on how much processing good performance requires.</p>
+
+<h3 id="proof-of-space">Proof of space</h3>
+
+<p>The same time-expanded network can express <strong>proof of space</strong> without adding a new resource formalism.</p>
+
+<p>A holdover edge</p>
+
+<div class="math-display">\[
+(v,t)\longrightarrow(v,t+1)
+\]</div>
+
+<p>represents state surviving from one time layer to the next. Its capacity represents how much state can be retained through that part of the model.</p>
+
+<p>Suppose fresh, unpredictable material is shown at time \(t_0\), disappears, and must be recalled at \(t_1\). If the material cannot be reconstructed from some later source, a valid implementation has to preserve enough information about it across the temporal cuts between \(t_0\) and \(t_1\).</p>
+
+<p>That information requirement matters. Merely pushing arbitrary load through a holdover edge would not prove that anything useful was remembered. The activity model has to connect later recall performance to a lower bound on how much input-dependent state survived the delay. Once such a lower bound is available, successful recall can certify storage load just as successful computation can certify processing load.</p>
+
+<p>A competing memory activity can then be ruled out by the same kind of capacity argument used for work, after crediting any storage work the two activities can genuinely share. The difficult empirical or information-theoretic question is how much retained information a given recall performance actually certifies for this person.</p>
+
+<h3 id="proof-of-time">Proof of time</h3>
+
+<p><strong>Proof of time</strong> uses the temporal coordinate differently. It does not need a large amount of computation or storage. Instead, a claimed state has to be available at many possible times.</p>
+
+<p>A guard who must respond immediately to a probe has to have a response-capable implementation at the layer where that probe arrives. The external input history can contain probe times chosen randomly and hidden until they occur. Because the strategy is causal, the guard cannot move readiness backward in time after seeing the probe.</p>
+
+<p>A non-vigilant strategy may be response-capable on only part of the interval. Hidden random probes sample that temporal coverage. The theorem below turns the covered fraction into a false-pass probability; the resulting trace distribution reveals availability across time rather than accumulated work.</p>
+
+<p>So all three constructions fit the same model, but in different ways:</p>
+
+<ul>
+  <li>proof of work uses <strong>processing throughput after release and before a deadline</strong>;</li>
+  <li>proof of space uses <strong>state carried through holdover edges across time</strong>;</li>
+  <li>proof of time uses <strong>availability across time layers, sampled by unpredictable inputs</strong>.</li>
+</ul>
+
+<p>A long sequential computation gives another possible meaning of proof of time, close to verifiable delay functions in cryptography. In this model I would still classify that mainly as proof of work: its difficulty comes from sequential processing. The random-probe construction is different because its strength comes from coverage of the time axis.</p>
 
 <h2 id="does-the-theory-explain-anything">Does the theory explain anything?</h2>
 
