@@ -215,34 +215,6 @@ G=(V,\mathcal E),
 
 <p>More knowledge can even weaken old evidence. Learning that somebody can yawn on command changes the possible trace distributions for sheep counting. Learning that somebody can route two activities through different cognitive channels can destroy a bottleneck argument that previously looked convincing.</p>
 
-<h2 id="the-full-person-model">The full person-model</h2>
-
-<p>A sheep-counting protocol runs over a time interval \(I\). It specifies how the external input history \(X\) is generated, including any randomness or interventions chosen by the verifier. It also specifies what becomes visible as the trace \(T\), which verifier tests are considered feasible, and a target predicate</p>
-
-<div class="math-display">\[
-Q(X,H)
-\]</div>
-
-<p>on the hidden cognitive history \(H\).</p>
-
-<p>A <strong>person-model</strong> \(M\) supplies four things.</p>
-
-<p>First, it contains a dynamic resource network \(N_M\) with capacities over time.</p>
-
-<p>Second, it contains the valid implementations of activities and combinations of activities. These implementation families say what loads, temporal orderings, storage paths, and responses count as actually carrying out the activity. Joint implementations are allowed, so resource sharing between activities can be represented rather than silently double-counted.</p>
-
-<p>Third, it contains a causal strategy class \(\Sigma_M\). A strategy says how the person chooses actions and implementations as the external history is revealed. Together with the protocol's input process, a strategy induces a distribution over possible hidden histories. In particular, it cannot react to a fresh challenge before that challenge arrives.</p>
-
-<p>Fourth, it contains an observation law describing how a hidden history produces a visible trace. This is where ordinary human variability, mistakes, noisy responses, and accidental side effects such as yawning live.</p>
-
-<p>These four pieces describe what can happen, but they do not by themselves say how likely every allowed behaviour is. A Bayesian analysis needs one more ingredient from the verifier: a belief over which person-model and strategy are actually in play. Conditioning that belief on \(Q\) or \(\neg Q\), and then averaging over protocol randomness and the observation law, produces the trace distributions \(P_Q\) and \(P_{\neg Q}\) used earlier.</p>
-
-<p>A strategy-independent analysis asks a different question. It does not average over false-case strategies merely because some look unlikely; a claimed guarantee has to survive every strategy in the class being defended against. The saturation theorem below has exactly this form on each person-model where its assumptions hold.</p>
-
-<p>A <strong>sheep-counting problem</strong> is the problem of arranging the external input, intervention, and visible trace so that the relevant hidden histories become usefully separated under a defensible model of the person and their behaviour.</p>
-
-<p>Mental effort itself is not the principle. Bounded processing, storage, and temporal availability are mechanisms that can create separation.</p>
-
 <h2 id="evidence-and-distance">Evidence and distance</h2>
 
 <p>Let \(Q\) be a claim about a hidden cognitive history and let \(T\) be the visible trace, taking values in a trace space \(\mathcal T\). The two sides induce trace distributions</p>
@@ -295,6 +267,34 @@ d_{\mathcal V}(P_Q,P_{\neg Q}) =
 <p>If every test is allowed, this reduces to total variation. If the indicator of a particular event \(E\) is in \(\mathcal V\), then its probability gap lower-bounds \(d_{\mathcal V}\) as well as total variation.</p>
 
 <p>This is the sense in which arithmetic and sleepy sheep can differ in strength while still being the same kind of evidence: their visible traces are distributed differently depending on what happened in the person's head, and some of that difference may be easier to check than the rest.</p>
+
+<h2 id="the-full-person-model">The full person-model</h2>
+
+<p>A sheep-counting protocol runs over a time interval \(I\). It specifies how the external input history \(X\) is generated, including any randomness or interventions chosen by the verifier. It also specifies what becomes visible as the trace \(T\), which verifier tests are considered feasible, and a target predicate</p>
+
+<div class="math-display">\[
+Q(X,H)
+\]</div>
+
+<p>on the hidden cognitive history \(H\).</p>
+
+<p>A <strong>person-model</strong> \(M\) supplies four things.</p>
+
+<p>First, it contains a dynamic resource network \(N_M\) with capacities over time.</p>
+
+<p>Second, it contains the valid implementations of activities and combinations of activities. These implementation families say what loads, temporal orderings, storage paths, and responses count as actually carrying out the activity. Joint implementations are allowed, so resource sharing between activities can be represented rather than silently double-counted.</p>
+
+<p>Third, it contains a causal strategy class \(\Sigma_M\). A strategy says how the person chooses actions and implementations as the external history is revealed. Together with the protocol's input process, a strategy induces a distribution over possible hidden histories. In particular, it cannot react to a fresh challenge before that challenge arrives.</p>
+
+<p>Fourth, it contains an observation law describing how a hidden history produces a visible trace. This is where ordinary human variability, mistakes, noisy responses, and accidental side effects such as yawning live.</p>
+
+<p>These four pieces describe what can happen, but they do not by themselves say how likely every allowed behaviour is. A Bayesian analysis needs one more ingredient from the verifier: a belief over which person-model and strategy are actually in play. Conditioning that belief on \(Q\) or \(\neg Q\), and then averaging over protocol randomness and the observation law, produces the trace distributions \(P_Q\) and \(P_{\neg Q}\) used earlier.</p>
+
+<p>A strategy-independent analysis asks a different question. It does not average over false-case strategies merely because some look unlikely; a claimed guarantee has to survive every strategy in the class being defended against. The saturation theorem below has exactly this form on each person-model where its assumptions hold.</p>
+
+<p>A <strong>sheep-counting problem</strong> is the problem of arranging the external input, intervention, and visible trace so that the relevant hidden histories become usefully separated under a defensible model of the person and their behaviour.</p>
+
+<p>Mental effort itself is not the principle. Bounded processing, storage, and temporal availability are mechanisms that can create separation.</p>
 
 <h2 id="constructing-good-sheep-counting-problems">Constructing good sheep-counting problems</h2>
 
