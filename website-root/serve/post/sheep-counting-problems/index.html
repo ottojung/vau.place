@@ -139,66 +139,7 @@ N.
 
 <p>So far I have mostly been talking through examples and trying to get a feeling for what these problems have in common. That is useful, but it also makes it easy to rely on intuitions that may be accidents of a particular example. I would like to see how much of this can be made precise. The remainder of this post is therefore an attempt to develop a more formal language for talking about these problems: what is being observed, what hidden processes might produce those observations, and what, if anything, an observation lets us conclude about them. I do not know in advance how much this formalization will explain; even where it fails, I hope it will help separate genuine obstacles from accidents of the examples above.</p>
 
-<p>Sheep counting rules out a certificate-only theory. A yawn is not a proof object, but it can still make one hidden history more plausible than another.</p>
-
 <p>There seem to be two parts to the problem. One is statistical: how different are the visible traces under the two histories? The other is structural: what makes some traces impossible, expensive, or unlikely under one of them?</p>
-
-<h2 id="evidence-and-distance">Evidence and distance</h2>
-
-<p>For the moment, suppose the protocol, person-model, and behavioural assumptions are fixed. Later I will say what those contain and where these distributions come from.</p>
-
-<p>Let \(Q\) be a claim about a hidden cognitive history and let \(T\) be the visible trace, taking values in a trace space \(\mathcal T\). The two sides induce trace distributions</p>
-
-<div class="math-display">\[
-P_Q,
-\qquad
-P_{\neg Q}.
-\]</div>
-
-<p>A visible event \(E\) favors \(Q\) when</p>
-
-<div class="math-display">\[
-\Pr(E\mid Q)&gt;\Pr(E\mid\neg Q).
-\]</div>
-
-<p>The likelihood ratio</p>
-
-<div class="math-display">\[
-L(E)=
-\frac{\Pr(E\mid Q)}{\Pr(E\mid\neg Q)}
-\]</div>
-
-<p>measures the strength of that particular observation.</p>
-
-<p>A useful global measure is total-variation distance:</p>
-
-<div class="math-display">\[
-d_{\mathrm{TV}}(P_Q,P_{\neg Q}) =
-\sup_E
-\left|
-P_Q(E)-P_{\neg Q}(E)
-\right|.
-\]</div>
-
-<p>It is the largest probability gap obtainable from any event in the trace. That treats the verifier as computationally unlimited.</p>
-
-<p>For a human protocol, the observable separation may be less useful if recognizing the best event is itself difficult. Let \(\mathcal V\) be a class of verifier tests \(v:\mathcal T\to[0,1]\) that the verifier can actually perform, where \(v(t)\) is the probability of accepting trace \(t\). Define the verifier-limited distance</p>
-
-<div class="math-display">\[
-d_{\mathcal V}(P_Q,P_{\neg Q}) =
-\sup_{v\in\mathcal V}
-\left|
-\mathbb E_{P_Q}[v]
--
-\mathbb E_{P_{\neg Q}}[v]
-\right|.
-\]</div>
-
-<p>If every test is allowed, this reduces to total variation. If the indicator of a particular event \(E\) is in \(\mathcal V\), then its probability gap lower-bounds \(d_{\mathcal V}\) as well as total variation.</p>
-
-<p>This is the sense in which arithmetic and sleepy sheep can differ in strength while still being the same kind of evidence: their visible traces are distributed differently depending on what happened in the person's head, and some of that difference may be easier to check than the rest.</p>
-
-<p>Distance alone does not explain why the distributions differ. For that, the model needs some account of behaviour and cognitive capacity.</p>
 
 <h2 id="incentives-and-strategies">Incentives and strategies</h2>
 
@@ -301,6 +242,59 @@ Q(X,H)
 <p>A <strong>sheep-counting problem</strong> is the problem of arranging the external input, intervention, and visible trace so that the relevant hidden histories become usefully separated under a defensible model of the person and their behaviour.</p>
 
 <p>Mental effort itself is not the principle. Bounded processing, storage, and temporal availability are mechanisms that can create separation.</p>
+
+<h2 id="evidence-and-distance">Evidence and distance</h2>
+
+<p>Let \(Q\) be a claim about a hidden cognitive history and let \(T\) be the visible trace, taking values in a trace space \(\mathcal T\). The two sides induce trace distributions</p>
+
+<div class="math-display">\[
+P_Q,
+\qquad
+P_{\neg Q}.
+\]</div>
+
+<p>A visible event \(E\) favors \(Q\) when</p>
+
+<div class="math-display">\[
+\Pr(E\mid Q)&gt;\Pr(E\mid\neg Q).
+\]</div>
+
+<p>The likelihood ratio</p>
+
+<div class="math-display">\[
+L(E)=
+\frac{\Pr(E\mid Q)}{\Pr(E\mid\neg Q)}
+\]</div>
+
+<p>measures the strength of that particular observation.</p>
+
+<p>A useful global measure is total-variation distance:</p>
+
+<div class="math-display">\[
+d_{\mathrm{TV}}(P_Q,P_{\neg Q}) =
+\sup_E
+\left|
+P_Q(E)-P_{\neg Q}(E)
+\right|.
+\]</div>
+
+<p>It is the largest probability gap obtainable from any event in the trace. That treats the verifier as computationally unlimited.</p>
+
+<p>For a human protocol, the observable separation may be less useful if recognizing the best event is itself difficult. Let \(\mathcal V\) be a class of verifier tests \(v:\mathcal T\to[0,1]\) that the verifier can actually perform, where \(v(t)\) is the probability of accepting trace \(t\). Define the verifier-limited distance</p>
+
+<div class="math-display">\[
+d_{\mathcal V}(P_Q,P_{\neg Q}) =
+\sup_{v\in\mathcal V}
+\left|
+\mathbb E_{P_Q}[v]
+-
+\mathbb E_{P_{\neg Q}}[v]
+\right|.
+\]</div>
+
+<p>If every test is allowed, this reduces to total variation. If the indicator of a particular event \(E\) is in \(\mathcal V\), then its probability gap lower-bounds \(d_{\mathcal V}\) as well as total variation.</p>
+
+<p>This is the sense in which arithmetic and sleepy sheep can differ in strength while still being the same kind of evidence: their visible traces are distributed differently depending on what happened in the person's head, and some of that difference may be easier to check than the rest.</p>
 
 <h2 id="constructing-good-sheep-counting-problems">Constructing good sheep-counting problems</h2>
 
