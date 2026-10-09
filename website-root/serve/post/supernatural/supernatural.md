@@ -363,11 +363,7 @@ Some reference: https://chatgpt.com/share/68f3eeb1-c1c0-800e-b09b-e2ee25ddbf47
 
 ---
 
-### VII. A Natural, Boring Crash
-
-<FIXME>
-Change the title to something more evocative.
-</FIXME>
+### VII. The Heat Death of Rack C
 
 <NOTE>
 Tell a made up story of how a server crashed due to environmental reasons, such as overheating or power failure.
@@ -376,6 +372,30 @@ This is a necessary palate cleanser, it shores up our credibility by reminding r
 Give the mundane crash clear physical causes and, if useful, real human consequences so it remains a compelling story rather than a perfunctory reassurance.
 Preserve this case as an honest control sample that shows the narrator can still accept a sufficient ordinary explanation.
 </NOTE>
+
+**A small research institute, the second week of August.**
+
+I was called on a Tuesday morning because the institute’s database had stopped answering. The monitoring alert had fired at 08:52, five minutes after the server went dark, and the administrator had seen it when he came in at nine. The administrator’s message gave no cause, only the symptom: connections timed out, the application’s health check failed, and the monitoring page I checked from my desk showed the latency graph gone flat. I had done reliability work for the group for two years. Their database was old, their budget was small, and their server room was a converted storage closet at the end of a corridor that smelled of floor wax and hot dust. I knew the room before I arrived. I had spent the summer in other people’s failures, and I had come to expect them to have textures.
+
+I drove with the kit I always carry, and on the way I caught myself planning the order of the logs I would pull — application, database, kernel — the order I would use if the failure had a story worth telling. It was only after I parked that I noticed I had packed the memory-testing drive, which a dead database has no use for. I left it in the car and brought everything else. The drive took forty minutes, and I spent them composing the case in advance, the way I always do — what failed, when, whether the failure had an audience — and I noticed I was hoping it would be strange.
+
+The room was hot. The thermostat on the wall read 32°C, and the air had the thick, still quality of a room that had been warming for hours. The fans were silent. A server room is never quiet; the absence of the fans was louder than their sound had been. The server — Rack C, at the end of a row of three — was dark, its status LEDs off, its drives still. The smell was the first thing: hot dust, and beneath it the faint sweet sharpness of hot plastic. I had smelled it before, in other rooms, at other failures. It is the smell of a machine that has been running hot in a room that has stopped being kind to it.
+
+The air-conditioning unit in the corner was off. It was a small split system, the kind mounted on the wall of a room that was never meant to be a server room. Its display showed an error code I did not recognize. The compressor housing was cold — not cool, cold — and the refrigerant lines had equalized to the temperature of the room. Whatever had failed, it had failed hours ago, and the room had been warming ever since.
+
+I pulled the logs. The BMC temperature curve showed a steady rise over four hours: 27°C at the inlet at 06:10, 31°C at 07:00, 38°C at 08:00, 45°C at the moment the sensors went dark. The kernel log showed the rest. Thermal warnings from 07:20. Throttling from 07:50, the CPU governor cutting frequency as the cores crossed 95°C. And then, at 08:47, a single line: `thermal_zone0: critical temperature reached, shutting down`. I overlaid the two timelines on the page I had opened on the desk. Every warning had its temperature, and every throttling event had its cause. The shutdown was not graceful. The filesystem was not unmounted. The database was not checkpointed. The machine simply stopped, without ceremony, in the middle of a transaction.
+
+I checked the error code against the manufacturer’s documentation. The code was three digits long, and the manual’s table gave it a single meaning: the compressor had failed, and the unit had shut itself down rather than keep pumping. The unit had died sometime before dawn, and the room had done the rest. The causal chain was complete and ordinary: cooling failure, temperature rise, throttling, emergency shutdown. Every link was in the logs. Every link was physical. There was nothing in the chain that required an explanation more exotic than a broken machine in a hot room.
+
+I powered the server on. `fsck` found inconsistencies in the journal and fixed them. The database recovered to its last checkpoint, six hours before the crash. The recovery took most of an hour. When it finished, the database was consistent, and the gap remained. Most of it was routine — observation logs, scheduling entries, the daily instrument telemetry. One piece of it was not.
+
+The work in the gap belonged to a postdoc named Ruth. She had been running a simulation for three days — a parameter sweep for a paper the group hoped to submit in the autumn — and the final run, the one that completed the sweep, had finished at 06:15 that morning. The results existed only in the database. When I told her, she did not say anything for a while. She was standing in the doorway of the server room, still holding her coffee. Then she asked whether the backup was current. It was not. The last backup was four days old. She said she would rerun it. Three days of compute, she said, and a week in the cluster queue. She said it the way you say the weather.
+
+I wrote the case up that evening. Cooling failure, thermal shutdown, data loss. The explanation was complete. I checked the logs twice. I lingered in the room after I had finished, after the server was running again, in the heat that had not yet been repaired. It is a strange thing to be relieved by a broken air conditioner. The margin between working and gone is measured in degrees, and I had spent the afternoon watching it close.
+
+---
+
+**Field Note #7. Horror, in our trade, is the margin—the few degrees and the few hours between working and gone.**
 
 ---
 
@@ -406,6 +426,8 @@ Something with the same moral as "We live by the text; we survive by the small, 
 
 5. **Observation-sensitive Heisenbug substrate for Case II.** Case II is a fictional composite. Carson Ip documented a 2019 ProxySQL hang after large result sets where `strace`, `socat`, and added print statements suppressed the failure, while a slower client changed reproducibility. The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
 
+6. **Cooling-failure substrate for Case VII.** Case VII is a made-up story. On 19 July 2022, during the United Kingdom’s record heat wave, a cooling failure at a Google Cloud data center in London took services offline; Google’s incident report attributed it to two chiller failures coupled with high ambient temperatures. ASHRAE’s thermal guidelines for data processing environments recommend a server inlet range of 18 to 27 °C. ([Google Cloud status][8]) ([ASHRAE Thermal Guidelines][9])
+
 *(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
 
 [1]: https://americanhistory.si.edu/collections/object/nmah_334663 "Log Book With Computer Bug"
@@ -415,5 +437,7 @@ Something with the same moral as "We live by the text; we survive by the small, 
 [5]: https://github.com/sysown/proxysql/issues/1939 "ProxySQL issue #1939"
 [6]: https://carsonip.me/posts/fixing-proxysql-idle-threads-epoll-hang-heisenbug/ "Fixing ProxySQL Idle Threads Epoll Hang Heisenbug"
 [7]: https://github.com/sysown/proxysql/pull/1952 "ProxySQL PR #1952"
+[8]: https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2 "Google Cloud incident report, 19 July 2022"
+[9]: https://www.ashrae.org/technical-resources/bookstore/thermal-guidelines-for-data-processing-environments "ASHRAE Thermal Guidelines for Data Processing Environments"
 
 ---
