@@ -4785,13 +4785,331 @@ $n50030
 text: Leave readers with an embodied residue of fear and vulnerability as well as the narrator's continuing commitment to careful evidence.
 intent: Author-approved editorial direction for coda; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n10969 and precedes $n99708. This is revision guidance for coda, not a statement the narrator knows or says.
+continuity: Follows $n10969 and precedes $n09181. This is revision guidance for coda, not a statement the narrator knows or says.
+
+$n09181
+text: At night, when the building has emptied, I work in a room of ordinary systems, and I no longer take them for granted.
+intent: Re-establish the mature dossier-keeping narrator in a room of running systems; the closing clause states the changed perception of ordinary systems the coda must make the reader recognize.
+style: First-person past, procedural register; plain declaratives; the uncanny carried by one understated clause rather than description.
+continuity: Follows $n50030 and precedes $n81329. Opens the coda night-room frame; echoes the prologue tending of systems ($n88883).
+
+$n81329
+text: I used to find the green lights reassuring.
+intent: State the narrator's former trusting attitude to measure the change against it; the reassurance is now gone.
+style: Short retrospective beat; understatement; 'used to' marks a before/after.
+continuity: Follows $n09181 and precedes $n71393. Establishes the ordinary calm the coda will complicate.
+
+$n71393
+text: The fans hold their curves.
+intent: Show the ordinary systems running normally and the narrator watching with a technician's attention; sets up the later fan event.
+style: Concrete procedural detail; present-tense observation inside a past-tense frame; precise physical vocabulary.
+continuity: Follows $n81329 and precedes $n82204. Ordinary-systems baseline; the fan returns in the final image.
+
+$n82204
+text: The switch stack blinks in patterns I once set my watch by.
+intent: Reinforce the room's ordinary rhythm and the narrator's familiarity with it; the once-routine now carries weight.
+style: Layered observational prose; 'once set my watch by' implies a trusted regularity now qualified.
+continuity: Follows $n71393 and precedes $n89193.
+
+$n89193
+text: An hour of green lights is a good hour, and I have learned to distrust the good ones.
+intent: Deliver the changed perception through behavior (distrust of calm) rather than assertion; the vulnerability and unease begin here.
+style: Balanced sentence with a turn; the aphoristic close is earned by the concrete green lights in the same beat.
+continuity: Follows $n82204 and precedes $n93093. The distrust of calm is the altered-perception thesis; connects to $n65527.
+
+$n93093
+text: The dossier is on the desk where I keep it.
+intent: Place the dossier physically in the scene; the frame object of the book is now a thing on a desk.
+style: Simple declarative; spatial precision.
+continuity: Follows $n89193 and precedes $n96899. The dossier motif enters as a physical object; echoes $n36938.
+
+$n96899
+text: The tape has yellowed, the margins have narrowed, and the hand it is written in is older now; I still recognize it.
+intent: Show the dossier's age and physical wear; the recognizable hand pays off the must-have about writing in a hand you will recognize when older.
+style: Accumulating clauses; the semicolon turn to recognition; concrete material detail (tape, margins, hand).
+continuity: Follows $n93093 and precedes $n28509. Pays off $n98283; the margin motif introduced.
+
+$n28509
+text: The pages are soft at the corners from handling.
+intent: Reinforce the dossier as a heavily used physical object, not an archive.
+style: Tactile detail; understated.
+continuity: Follows $n96899 and precedes $n37544.
+
+$n37544
+text: It is a letter to the man I am becoming, and to anyone who reads it after me.
+intent: Define the dossier as a letter to the older self and, by framing, to the reader; sets up the closing second-person instruction.
+style: Implicit direct address; grave, meticulous.
+continuity: Follows $n28509 and precedes $n72265. Establishes the dossier-as-letter; prepares the 'you' turn and the reader's uncertainty.
+
+$n72265
+text: I open it from the front, the way I open a log.
+intent: Show the narrator's procedural handling of the dossier; the habit of method applied to his own record.
+style: Procedural; 'the way I open a log' extends the method to the dossier itself.
+continuity: Follows $n37544 and precedes $n72551.
+
+$n72551
+text: Beside it lies the folder *Proofs I Do Not Argue With*—a moth, taped to an engineering log in 1947, beside the first actual bug.
+intent: Introduce the moth photograph as the dossier's central talisman and the Case I callback; the folder and taped specimen return physically.
+style: Concrete documentary detail; em-dash appositive; the moth's history compressed.
+continuity: Follows $n72265 and precedes $n18563. Case I callback; pays off $n33563, $n50947, $n70307.
+
+$n18563
+text: It has always looked unconvinced.
+intent: Preserve the moth's refusal to agree; the trusted witness that never confirms the narrator; the look is not decoded.
+style: Short flat statement; the ambiguity held.
+continuity: Follows $n72551 and precedes $n85472. Echoes $n10406; the unconvinced moth returns at the close.
+
+$n85472
+text: The tokens are where I left them, and I check that they are there.
+intent: Establish the case-callback tokens as physical contents of the dossier; the checking is the ritual behavior, shown not explained.
+style: Procedural; the ritual is in the verb 'check,' unlabeled.
+continuity: Follows $n18563 and precedes $n11918. Introduces the token sequence; the first private-superstition behavior.
+
+$n11918
+text: A notebook page with *timing* underlined twice.
+intent: Case II callback as a physical token; the observation-sensitive residue, not a recap.
+style: Fragment as object description; italics preserve the field-note register.
+continuity: Follows $n85472 and precedes $n15061. Callback to $n96467.
+
+$n15061
+text: A fingerprint card: two machines, one secret.
+intent: Case III callback as a physical token; the duplicate-key residue, unconfirmed.
+style: Fragment; the colon condenses the token's content.
+continuity: Follows $n11918 and precedes $n09645. Case III callback; the demon left unconfirmed.
+
+$n09645
+text: A legend taken down secondhand—a small man in green, a bound moved by one.
+intent: Case IV callback as a physical token; the operational legend kept at the distance of secondhand testimony.
+style: Fragment; em-dash appositive; the legend's content as the object.
+continuity: Follows $n15061 and precedes $n82509. Case IV callback; folklore kept as operational legend.
+
+$n82509
+text: A clipping, folded twice, about a crocodile in Vienna.
+intent: Case VI callback as a physical token; the crocodile residue, the absurdity left implicit.
+style: Fragment; 'folded twice' marks handling.
+continuity: Follows $n09645 and precedes $n18253. Case VI callback; the widened causal field stays implicit.
+
+$n18253
+text: A heat log: a server dead of a warm week.
+intent: Case VII callback as a physical token; the mundane baseline that keeps the ending honest.
+style: Fragment; the colon condenses the mundane cause.
+continuity: Follows $n82509 and precedes $n83795. Case VII callback; the control sample.
+
+$n83795
+text: I do not read them.
+intent: Withhold the case contents; the tokens are checked as present, not re-narrated; prevents recap.
+style: Short declarative; the omission is the point.
+continuity: Follows $n18253 and precedes $n30688.
+
+$n30688
+text: It is a check like any other, and it is not one at all.
+intent: Name the ritual without labeling it superstition; the reader recognizes the empty check; the changed perception crystallizes.
+style: Balanced sentence with a turn; aphoristic but earned by the concrete checking in the same beat.
+continuity: Follows $n83795 and precedes $n89369. The private-superstition behavior shown, not stated; connects to $n65527.
+
+$n89369
+text: Tonight's entry is ordinary.
+intent: Move to the method beat; the ordinary entry is the baseline that keeps the ending honest.
+style: Short declarative; procedural.
+continuity: Follows $n30688 and precedes $n05809.
+
+$n05809
+text: The power supply in rack C runs 1.8 degrees warmer than its twin; both are within specification.
+intent: Show the method intact: a precise, qualified measurement of an ordinary system, within spec.
+style: Concrete technical diction; the measurement is exact.
+continuity: Follows $n89369 and precedes $n70982. The check motif enacted; the rack C fan returns in the final image.
+
+$n70982
+text: The difference is measured; the cause—dust, or position in the aisle, or the fan curve—is inferred; the remedy is scheduled.
+intent: Distinguish evidence from inference and mark the difference; the rational surface stays intact.
+style: Semicolon triple; the em-dash list of candidates; precise categories.
+continuity: Follows $n05809 and precedes $n76176. The evidence/inference distinction; the method intact.
+
+$n76176
+text: I write the candidates apart from the reading, because the word *likely* is load-bearing and I spend it once.
+intent: Preserve the qualification that haunts the dossier; the word 'likely' is used once, carefully, as required.
+style: Procedural; italics on the key word; the explanation is diegetic, not a strategy announcement.
+continuity: Follows $n70982 and precedes $n69444. Echoes $n94242 and $n37749; the qualification preserved.
+
+$n69444
+text: The filter is due on the nineteenth, and I write it in the future tense, as if a promise: on the nineteenth, the filter will be changed.
+intent: Show the private superstition as grammar: procedures written in the future tense as if the grammar could keep them; the future-tense must-have enacted.
+style: The future-tense clause embedded; 'as if a promise' is the narrator noticing his own habit, not labeling it superstition.
+continuity: Follows $n76176 and precedes $n13154. Pays off $n65643; the future-tense ritual.
+
+$n13154
+text: I am careful not to break it.
+intent: Complete the future-tense ritual; the care not to break the promise is the superstition, shown behaviorally.
+style: Short declarative; the pronoun 'it' keeps the promise implicit.
+continuity: Follows $n69444 and precedes $n24145. The ritual completed; connects to $n65643.
+
+$n24145
+text: Last month a server died of heat.
+intent: Case VII's sanity: a plainly mundane failure, accepted without ceremony.
+style: Short declarative; clinical.
+continuity: Follows $n13154 and precedes $n90223. The mundane baseline; the control sample.
+
+$n90223
+text: A warm week, a clogged filter, a fan that failed slow and legible, the way paper fails.
+intent: Give the mundane crash a sufficient ordinary explanation; the 'paper fails' echo ties to Case I's cathedral of checks.
+style: Fragment accumulation; 'slow and legible' recalls Case I's paper.
+continuity: Follows $n24145 and precedes $n21714. Pays off the paper-fails image; the mundane cause is sufficient.
+
+$n21714
+text: I wrote *ambient* in the log and closed the case.
+intent: Show the narrator accepting a boring explanation plainly; the method closes the case without ritual.
+style: Procedural; the single word *ambient* does the work.
+continuity: Follows $n90223 and precedes $n64130. Case VII sanity visible; the mundane acceptance.
+
+$n64130
+text: There was no second look, no margin, no note.
+intent: Mark the deliberate absence of ritual for the mundane case; the contrast with his current behavior shows the change.
+style: Triple negation; asyndeton; the absence is the statement.
+continuity: Follows $n21714 and precedes $n27025. The contrast that makes the superstition visible by difference.
+
+$n27025
+text: Some failures are boring, and I can still accept one.
+intent: Assert the intact rational surface: he can still accept a sufficient ordinary explanation; the ending does not tip into pure dread.
+style: Plain declarative; understated.
+continuity: Follows $n64130 and precedes $n39426. The disciplined-inquiry invariant; Case VII sanity.
+
+$n39426
+text: Beside the dossier, an almanac my method does not require.
+intent: The calendar ritual; the Case V residue that escaped the dossier and entered his practice; kept without cause, unexplained.
+style: Fragment; 'my method does not require' marks the surplus without labeling it.
+continuity: Follows $n27025 and precedes $n84935. Case V callback; the calendar behavior.
+
+$n84935
+text: One date next month is ringed, without cause.
+intent: Show the almanac's marked date; the causation is neither asserted nor explained; the temptation held open.
+style: Fragment; 'without cause' is the point.
+continuity: Follows $n39426 and precedes $n99181. The astrological temptation remains deniable.
+
+$n99181
+text: I do not consult it.
+intent: Withhold the ritual's use; he keeps the calendar but does not act on it openly; the reader infers the weight.
+style: Short declarative.
+continuity: Follows $n84935 and precedes $n45203.
+
+$n45203
+text: I know that it is there.
+intent: The ritual's persistence; the knowledge is enough; the superstition is never named.
+style: Short declarative; the understatement carries the unease.
+continuity: Follows $n99181 and precedes $n57555.
+
+$n57555
+text: At 03:12 I make the last entry, in the hand I will recognize.
+intent: The convergence begins; the final entry in his own hand pays off the letter-to-older-self and the hand he will recognize.
+style: The timestamp marks the ritual's precision; 'the hand I will recognize' echoes the must-have.
+continuity: Follows $n45203 and precedes $n46697. The check motif (the last entry) and the hand motif converge.
+
+$n46697
+text: **Field Note (last).
+intent: Introduce the last field note, deliberately unnumbered to mark that the count does not close; the label rhymes with Field Note #1 by position.
+style: Bold field-note register; the '(last)' signals the deliberate blank in the numbering.
+continuity: Follows $n57555 and precedes $n21311. Rhymes with $n86401/$n91668.
+
+$n21311
+text: Care, in our trade, is the kept margin—the one that leaves room.**
+intent: The last field note's content: the method and the withholding in one aphorism; the margin as deliberate practice; rhymes structurally with Field Note #1.
+style: Aphoristic field-note register; the parallel structure with #1 makes the rhyme.
+continuity: Follows $n46697 and precedes $n99438. Pays off $n91668; the check-left-blank and the margin.
+
+$n99438
+text: From the folder, I take the moth photograph and tape it in beside the note, the moth and the margin together on the page.
+intent: The motifs converge: the moth is taped in beside the note; the margin and the moth share the page.
+style: Concrete physical action; the convergence is enacted, not described.
+continuity: Follows $n21311 and precedes $n91722. The moth, check, and dossier converge.
+
+$n91722
+text: The entry has a last line—the bottom margin of the page, where the next note would begin, or a name would go.
+intent: Make the blank concrete and deniable; the unfinished line is the deliberate margin; the unnamed name option stays open.
+style: Em-dash elaboration; the alternatives (next note, a name) keep it unresolved.
+continuity: Follows $n99438 and precedes $n32680. The blank seventh row's descendant ($n52518); the margin motif.
+
+$n32680
+text: I put the pen to it and stop.
+intent: The pen hovers; the withholding is behavioral; the check is made and left blank.
+style: Short declaratives; the pause is the act.
+continuity: Follows $n91722 and precedes $n33991. The check-left-blank; the convergence's pause.
+
+$n33991
+text: The fan in rack C changes pitch, and holds it.
+intent: The deniable room event: the smallest possible response, timed to the pause; ordinary cause always available; never confirmed or explained.
+style: Concrete physical detail; 'and holds it' is the uncanny minimum.
+continuity: Follows $n32680 and precedes $n92550. Echoes $n70953 without restating; the watched/unwatched reversal.
+
+$n92550
+text: I do not look up.
+intent: The withholding; he does not seek confirmation; the vulnerability is in the restraint.
+style: Short declarative.
+continuity: Follows $n33991 and precedes $n77244.
+
+$n77244
+text: I do not write it down.
+intent: The deliberate omission; the event is not recorded; the ambiguity is preserved by his own hand.
+style: Short declarative; the omission is the act.
+continuity: Follows $n92550 and precedes $n12581.
+
+$n12581
+text: I set the pen down and close the dossier.
+intent: The ritual completes without resolution; the dossier is closed but the question is not.
+style: Short declarative; procedural.
+continuity: Follows $n77244 and precedes $n58152. The withholding complete.
+
+$n58152
+text: The stories do not keep us safe; they keep us attentive.
+intent: Land the required theme: stories make operators attentive; they do not protect against the harm unexplained events can still do.
+style: Balanced sentence with a turn; concrete, not a thesis about uncertainty or science.
+continuity: Follows $n12581 and precedes $n01501. The required theme; the reader's uncertainty about safety.
+
+$n01501
+text: We live by the text.
+intent: The moral's first component: faith in specification and procedure, enacted by the checks he still makes.
+style: Aphoristic but grounded in the preceding action.
+continuity: Follows $n58152 and precedes $n89984. The moral integrated; the specification he still trusts.
+
+$n89984
+text: We survive by the small, retold stories that help us decide which part of the text applies when the world grows strange.
+intent: The moral's second component: the dossier's field notes and legends as the stories that guide which specification applies.
+style: The moral in the narrator's grave register; concrete, not a thesis.
+continuity: Follows $n01501 and precedes $n40247. The moral integrated; the check as choosing which text applies.
+
+$n40247
+text: If you keep a dossier of your own, write in a hand you will recognize when you are older.
+intent: The single second-person turn: the instruction to the older self and the reader; the hand motif paid off directly.
+style: Direct address; the only 'you' in the coda; concrete.
+continuity: Follows $n89984 and precedes $n15031. Pays off $n98283; the one 'you' turn.
+
+$n15031
+text: Tape in what must be taped.
+intent: The moral's third component: the moth photograph he just taped in; the dossier's method as instruction.
+style: Imperative; concrete.
+continuity: Follows $n40247 and precedes $n73122. Pays off $n70264; the taped specimen.
+
+$n73122
+text: Leave space in the margins for the things we still do not know how to name.
+intent: The moral's fourth component: the blank line he just left; the unnamed name and the unknown held open.
+style: Imperative; concrete; the margin as deliberate practice.
+continuity: Follows $n15031 and precedes $n64745. Pays off $n96851; the blank line.
+
+$n64745
+text: I leave the dossier on the desk, the tape holding, the margin blank, the moth in the photograph still unconvinced.
+intent: The held final image: check + tape + blank + moth in one frame; the vulnerability embodied in the objects.
+style: The accumulation of concrete details; the final clause preserves the moth's refusal.
+continuity: Follows $n73122 and precedes $n75582. The held image; the motifs in one frame.
+
+$n75582
+text: The room runs on.
+intent: The last line: the present-tense intrusion, the frame closure; the room continues, possibly attentive; the vulnerability persists after the book closes.
+style: Present tense (the single intrusion); plain declarative; the indifference of the room.
+continuity: Follows $n64745 and precedes $n99708. The frame closes on the running room; the unease persists.
 
 $n99708
 text: Something with the same moral as "We live by the text; we survive by the small, retold stories that help us decide which part of the text applies when the world grows strange.
 intent: Authorial must-have: require this wording, idea, or moral to be preserved or integrated into the finished manuscript.
 style: Required wording or authorial constraint; preserve its distinctive phrasing when quoted and do not smooth away its intended force.
-continuity: Follows $n50030 and precedes $n98283. This is a live MUST HAVES constraint for Coda and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n75582 and precedes $n98283. This is a live MUST HAVES constraint for Coda and must remain consistent with AGENTS.md and the Intent Records.
 
 $n98283
 text: If you keep a dossier of your own, write in a hand you will recognize when you are older.
