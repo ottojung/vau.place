@@ -1866,13 +1866,793 @@ $n50435
 text: Make the dream terrifying as an experience while preserving the possibility that its apparent prediction is retrospective pattern making rather than proof of a literal demon.
 intent: Author-approved editorial direction for Maxwell; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n32131 and precedes $n35689. This is revision guidance for Maxwell, not a statement the narrator knows or says.
+continuity: Follows $n32131 and precedes $n89210. This is revision guidance for Maxwell, not a statement the narrator knows or says.
+
+$n89210
+text: **A small hosting company, two rented halls.**
+intent: Open Case III with a dateline that resets place and time after Case II's private note.
+style: Non-diegetic dateline; terse place/time reset.
+continuity: Follows $n50435 and precedes $n14278. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n14278
+text: The last line in my notebook before this case was the note I brought back from the night I could not catch the hang: *The thing hates to be watched*.
+intent: Bridge from Case II by a state of mind (the earlier note still in the notebook) without claiming causation.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n89210 and precedes $n24907. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n24907
+text: It was still there, in ink, when I first heard the story I am about to set down, a story about a man who dreamed of a demon and a fleet of machines that turned out to be fewer than they seemed.
+intent: Bridge from Case II by a state of mind (the earlier note still in the notebook) without claiming causation.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n14278 and precedes $n64779. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n64779
+text: I record the adjacency because it is true.
+intent: Bridge from Case II by a state of mind (the earlier note still in the notebook) without claiming causation.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n24907 and precedes $n49531. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n49531
+text: I do not claim it means anything.
+intent: Bridge from Case II by a state of mind (the earlier note still in the notebook) without claiming causation.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n64779 and precedes $n40548. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n40548
+text: I will not name the company.
+intent: Establish the anonymous composite company and the narrator's retrospective, documentary stance.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n49531 and precedes $n31860. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n31860
+text: It was small, it leased racks in two rented halls, and it ran a few hundred servers for customers who never saw them.
+intent: Establish the anonymous composite company and the narrator's retrospective, documentary stance.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n40548 and precedes $n14126. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n14126
+text: I came to it the way I come to most of these cases: after the fact, with the records already cold, to decide what could be established.
+intent: Establish the anonymous composite company and the narrator's retrospective, documentary stance.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n31860 and precedes $n46117. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n46117
+text: The room had a name on the door and nothing else about it was distinctive.
+intent: Establish the server room as a legible, ordinary place and plant the sensory palette the dream will deform.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n14126 and precedes $n14974. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n14974
+text: Two rows of racks faced each other across a cold aisle; the hot aisle behind them was loud with the fans.
+intent: Establish the server room as a legible, ordinary place and plant the sensory palette the dream will deform.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n46117 and precedes $n75794. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n75794
+text: The door did not latch unless you lifted it.
+intent: Establish the server room as a legible, ordinary place and plant the sensory palette the dream will deform.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n14974 and precedes $n33852. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n33852
+text: The fans ran at a pitch that changed with the load, so the room had a kind of weather, and it smelled of hot dust and, faintly, of ozone.
+intent: Establish the server room as a legible, ordinary place and plant the sensory palette the dream will deform.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n75794 and precedes $n00943. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n00943
+text: The only lights anyone noticed were the machines' own — green and amber constellations that no one looked at twice.
+intent: Establish the server room as a legible, ordinary place and plant the sensory palette the dream will deform.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n33852 and precedes $n22824. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n22824
+text: One of the developers stayed late that night, finishing a migration that should have been done by six.
+intent: Introduce the night developer and the two divergent records of the night.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n00943 and precedes $n96960. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n96960
+text: I have his account, and I have the line he wrote the next morning, and they are not the same document.
+intent: Introduce the night developer and the two divergent records of the night.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n22824 and precedes $n03105. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n03105
+text: Alone after the others had gone, he worked from a crash cart by the middle rack.
+intent: Render the night shift's altered sound and cold so the dream has a real sensory source.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n96960 and precedes $n47791. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n47791
+text: The room at night had a different sound.
+intent: Render the night shift's altered sound and cold so the dream has a real sensory source.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n03105 and precedes $n37682. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n37682
+text: With the building's people gone, the fans became the loudest thing in the world, and the cold aisle was colder than it was by day, when bodies and open doors kept it mild.
+intent: Render the night shift's altered sound and cold so the dream has a real sensory source.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n47791 and precedes $n64171. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n64171
+text: He checked the time once and was surprised it was nearly three.
+intent: Render the night shift's altered sound and cold so the dream has a real sensory source.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n37682 and precedes $n66917. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n66917
+text: He slept at the cart, or believed he did.
+intent: Mark the transition into the dream and withhold a conventional narrative sequence.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n64171 and precedes $n77563. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n77563
+text: What he reported is not a sequence but a set of certainties that arrived together.
+intent: Mark the transition into the dream and withhold a conventional narrative sequence.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n66917 and precedes $n54410. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n54410
+text: The room was the same room.
+intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n77563 and precedes $n10506. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n10506
+text: The fans were the same fans.
+intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n54410 and precedes $n78083. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n78083
+text: But the aisle had lengthened, and the racks on either side had grown taller without gaining height, the way a corridor grows in a house you have not visited since childhood.
+intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
+style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
+continuity: Follows $n10506 and precedes $n54789. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n54789
+text: The cold was no longer cold; it was the pressure of something large standing very close.
+intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
+style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
+continuity: Follows $n78083 and precedes $n78243. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n78243
+text: He could not turn his head.
+intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n54789 and precedes $n45256. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n45256
+text: He knew, the way one knows a face in a dark doorway, that the room had an owner, and that he was the intruder in it.
+intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
+style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
+continuity: Follows $n78243 and precedes $n39284. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n39284
+text: The lights went out in a wave from the far end, constellation by constellation, and did not come back.
+intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
+style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
+continuity: Follows $n45256 and precedes $n38833. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n38833
+text: Something in the dark where the last lights had been said, without emphasis, that the server room was cursed.
+intent: Deliver the demon's flat curse sentence and preserve its vagueness and non-probativeness.
+style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
+continuity: Follows $n39284 and precedes $n49172. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n49172
+text: It did not explain.
+intent: Deliver the demon's flat curse sentence and preserve its vagueness and non-probativeness.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n38833 and precedes $n02710. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n02710
+text: It did not threaten.
+intent: Deliver the demon's flat curse sentence and preserve its vagueness and non-probativeness.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n49172 and precedes $n57432. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n57432
+text: The flatness was what stayed with him: the sentence was a fact being stated, the way you would state that the floor was load-bearing.
+intent: Deliver the demon's flat curse sentence and preserve its vagueness and non-probativeness.
+style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
+continuity: Follows $n02710 and precedes $n71307. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n71307
+text: He woke with his cheek on the crash cart and the fans still running.
+intent: Show the fear persisting into waking through a small procedural act, without declaring emotion.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n57432 and precedes $n42544. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n42544
+text: He lifted the door into its latch, then read the last twenty minutes of the system log, which showed nothing, which was the only thing it could show.
+intent: Show the fear persisting into waking through a small procedural act, without declaring emotion.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n71307 and precedes $n65713. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n65713
+text: He went home.
+intent: Show the fear persisting into waking through a small procedural act, without declaring emotion.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n42544 and precedes $n60401. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n60401
+text: He did not tell anyone for two days.
+intent: Show the fear persisting into waking through a small procedural act, without declaring emotion.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n65713 and precedes $n42651. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n42651
+text: On the second morning he wrote it down, because he did not want to carry it alone.
+intent: Fix the terse, timestamped dream record as the documentary seed that hindsight will later expand.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n60401 and precedes $n25439. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n25439
+text: What he wrote was not the version I have just given.
+intent: Fix the terse, timestamped dream record as the documentary seed that hindsight will later expand.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n42651 and precedes $n48291. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n48291
+text: What he wrote, in the team's chat, was: *bad dream about the racks last night. the room felt wrong. not sure i slept.*
+intent: Fix the terse, timestamped dream record as the documentary seed that hindsight will later expand.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n25439 and precedes $n63840. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n63840
+text: The chat service logs the timestamp.
+intent: Fix the terse, timestamped dream record as the documentary seed that hindsight will later expand.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n48291 and precedes $n02981. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n02981
+text: That line is the only part of this case fixed in writing before anything was found.
+intent: Fix the terse, timestamped dream record as the documentary seed that hindsight will later expand.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n63840 and precedes $n45916. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n45916
+text: The duplicate was found weeks later by an operations engineer doing an ordinary thing.
+intent: Stage the discovery as incidental and unsought, per the design's trigger rule.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n02981 and precedes $n68284. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n68284
+text: She was adding a new machine to the fleet's internal configuration and pasting its host key into the file the team kept of machines it trusted.
+intent: Stage the discovery as incidental and unsought, per the design's trigger rule.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n45916 and precedes $n85802. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n85802
+text: The line was already there.
+intent: Stage the discovery as incidental and unsought, per the design's trigger rule.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n68284 and precedes $n73482. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n73482
+text: The key she was about to add was identical to one already present, under a different hostname, on a machine in the other hall.
+intent: Stage the discovery as incidental and unsought, per the design's trigger rule.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n85802 and precedes $n19809. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n19809
+text: She checked the fingerprint against the machine in front of her, then against the machine in the other hall.
+intent: Let the duplicate survive the obvious re-reads and echo Case I's dry procedural dread.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n73482 and precedes $n27221. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n27221
+text: They matched.
+intent: Let the duplicate survive the obvious re-reads and echo Case I's dry procedural dread.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n19809 and precedes $n45941. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n45941
+text: She read both again, the way the clerk in Schaerbeek had read both totals.
+intent: Let the duplicate survive the obvious re-reads and echo Case I's dry procedural dread.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n27221 and precedes $n01851. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n01851
+text: Nobody in the room said the word yet.
+intent: Let the duplicate survive the obvious re-reads and echo Case I's dry procedural dread.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n45941 and precedes $n26714. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n26714
+text: There was no word for it that did not begin an incident.
+intent: Let the duplicate survive the obvious re-reads and echo Case I's dry procedural dread.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n01851 and precedes $n36233. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n36233
+text: They compared the key bytes, not only the fingerprints, in case the fingerprints had collided — they cannot, but they compared the bytes.
+intent: Show the duplicate surviving every check and remaining specific.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n26714 and precedes $n86258. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n86258
+text: They checked the timestamps on both key files.
+intent: Show the duplicate surviving every check and remaining specific.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n36233 and precedes $n12583. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n12583
+text: They tried a third machine, then a fourth.
+intent: Show the duplicate surviving every check and remaining specific.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n86258 and precedes $n93046. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n93046
+text: The fourth was unique.
+intent: Show the duplicate surviving every check and remaining specific.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n12583 and precedes $n81924. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n81924
+text: The duplicate was real and it was specific.
+intent: Show the duplicate surviving every check and remaining specific.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n93046 and precedes $n80724. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n80724
+text: Here is what a shared host key means, before any of the rest of it.
+intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n81924 and precedes $n63895. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n63895
+text: A host key is how a client knows which machine it is talking to.
+intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n80724 and precedes $n29397. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n29397
+text: If two machines share the private half, then anyone holding that key can be either machine, and the client will not warn, because the client is seeing the key it has always seen.
+intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n63895 and precedes $n71008. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n71008
+text: The fleet's trust is not a property of the machines; it is a property of the keys, and the keys had stopped being plural.
+intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n29397 and precedes $n81126. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n81126
+text: If one machine was ever compromised, the compromise was already on both.
+intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n71008 and precedes $n97835. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n97835
+text: If the shared key had been a TLS key or a signing key, the danger would not have stopped at impersonation.
+intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n81126 and precedes $n38013. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n38013
+text: And no one could prove the key had never been used by someone else, because the only place that proof would live was the entropy state at first boot, and that state was gone.
+intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n97835 and precedes $n38732. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n38732
+text: I did the arithmetic on the back of the same notebook.
+intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n38013 and precedes $n31432. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n31432
+text: An Ed25519 public key is thirty-two bytes, two hundred and fifty-six bits.
+intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n38732 and precedes $n15964. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n15964
+text: If a key is drawn uniformly from that space, the chance that a second, specified machine reproduces the first is one in two to the two hundred and fifty-sixth, about eight point six times ten to the minus seventy-eighth.
+intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n31432 and precedes $n00749. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n00749
+text: I did not need the exact figure.
+intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n15964 and precedes $n25191. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n25191
+text: I needed its shape.
+intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n00749 and precedes $n02741. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n02741
+text: The observable universe holds on the order of ten to the eightieth atoms and has existed for about four times ten to the seventeenth seconds.
+intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n25191 and precedes $n52015. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n52015
+text: An event at ten to the minus seventy-eighth is not rare.
+intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n02741 and precedes $n75570. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n75570
+text: It is outside the reach of chance by dozens of orders of magnitude.
+intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n52015 and precedes $n62493. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n62493
+text: I wrote that down and underlined it, and then I wrote the sentence I did not want to write: chance is not the explanation.
+intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n75570 and precedes $n48268. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n48268
+text: One of the engineers proposed the explanation the case is usually filed under.
+intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n62493 and precedes $n32630. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n32630
+text: Maybe it was a hash collision, he said — an MD5 collision, the classic impossible thing.
+intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n48268 and precedes $n75320. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n75320
+text: I understood the impulse; it is the example everyone reaches for.
+intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n32630 and precedes $n85310. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n85310
+text: It is also the wrong shape.
+intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n75320 and precedes $n66790. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n66790
+text: Practical MD5 collisions are not accidents; they are constructed, by people who want them, and by 2014 one could be produced for the price of a long lunch on a single rented GPU.
+intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n85310 and precedes $n94377. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n94377
+text: An MD5 collision that merely happened would be evidence of a hidden cause, not of chance.
+intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n66790 and precedes $n50572. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n50572
+text: And no accidental cryptographic collision has ever been observed at all.
+intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n94377 and precedes $n15742. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n15742
+text: The duplicate was not a hash collision.
+intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n50572 and precedes $n97661. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n97661
+text: It was worse, because it was real.
+intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n15742 and precedes $n71888. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n71888
+text: The explanation, when it came, was mundane and sufficient.
+intent: Name the mundane, sufficient entropy-collapse cause.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n97661 and precedes $n92271. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n92271
+text: The key had almost certainly never been drawn from that space at all.
+intent: Name the mundane, sufficient entropy-collapse cause.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n71888 and precedes $n64757. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n64757
+text: Either it had been baked into the machine image, so that every machine built from that image inherited it, or the first boot had drawn it from an entropy pool that was not yet seeded — the boot-time hole in the Linux random number generator, documented for years, and worst on headless and virtualised machines that have no hardware random source and no disk activity to stir the pool.
+intent: Name the mundane, sufficient entropy-collapse cause.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n92271 and precedes $n45747. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n45747
+text: In either case there had been no coincidence.
+intent: Name the mundane, sufficient entropy-collapse cause.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n64757 and precedes $n96831. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n96831
+text: Two machines had not independently chosen the same secret.
+intent: Name the mundane, sufficient entropy-collapse cause.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n45747 and precedes $n15008. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n15008
+text: A hidden process had removed the choice.
+intent: Name the mundane, sufficient entropy-collapse cause.
+style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
+continuity: Follows $n96831 and precedes $n01777. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n01777
+text: The engineers had a name for that class of bug, which I will use once and then leave alone.
+intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n15008 and precedes $n52707. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n52707
+text: They called it Maxwell's demon, after the thought experiment in which a small intelligence sorts fast molecules from slow ones and creates order where there should be none.
+intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n01777 and precedes $n08715. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n08715
+text: It is a fair name for a process that makes the unlikely certain.
+intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n52707 and precedes $n57184. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n57184
+text: The physicists' answer to the demon is that the sorting is never free: the order is paid for somewhere the ledger cannot see.
+intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n08715 and precedes $n61191. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n61191
+text: So it was here.
+intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n57184 and precedes $n16395. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n16395
+text: The price of the duplicate key was the individuality of every machine that carried it, paid at provisioning and recorded nowhere.
+intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n61191 and precedes $n62155. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n62155
+text: The mechanism was sufficient, and it did not fit cleanly.
+intent: Pivot to contradictory evidence: the mechanism is sufficient but does not fit cleanly.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n16395 and precedes $n13949. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n13949
+text: Three things would not sit down.
+intent: Pivot to contradictory evidence: the mechanism is sufficient but does not fit cleanly.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n62155 and precedes $n65028. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n65028
+text: The first was that only the Ed25519 key was duplicated.
+intent: First contradiction: only the Ed25519 key is duplicated, so a simple image clone fails.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n13949 and precedes $n87804. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n87804
+text: The RSA, ECDSA, and DSA host keys on the same two machines were unique.
+intent: First contradiction: only the Ed25519 key is duplicated, so a simple image clone fails.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n65028 and precedes $n47039. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n47039
+text: A wholesale image clone — the obvious story — would have duplicated all of them.
+intent: First contradiction: only the Ed25519 key is duplicated, so a simple image clone fails.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n87804 and precedes $n82124. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n82124
+text: The duplicate was specific to one algorithm, which is not how a copied image behaves, and not how a fresh key generation behaves either.
+intent: First contradiction: only the Ed25519 key is duplicated, so a simple image clone fails.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n47039 and precedes $n57385. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n57385
+text: The second was the timestamps.
+intent: Second contradiction: the timestamps and image history disagree about when the key was made.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n82124 and precedes $n16112. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n16112
+text: The file time on the duplicated key said it had been generated at install.
+intent: Second contradiction: the timestamps and image history disagree about when the key was made.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n57385 and precedes $n19392. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n19392
+text: The package history and the image manifest said the algorithm that generated it had been present in the image before either machine was ordered.
+intent: Second contradiction: the timestamps and image history disagree about when the key was made.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n16112 and precedes $n21916. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n21916
+text: The two records disagreed about when the key had come into being.
+intent: Second contradiction: the timestamps and image history disagree about when the key was made.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n19392 and precedes $n94804. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n94804
+text: The third was that the machines had never been clones.
+intent: Third contradiction: the machines were never clones, falsifying the team's mental model.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n21916 and precedes $n13352. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n13352
+text: They stood in different halls, were ordered in different quarters, and were built for different roles.
+intent: Third contradiction: the machines were never clones, falsifying the team's mental model.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n94804 and precedes $n05098. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n05098
+text: The team's whole mental model was that each machine was its own.
+intent: Third contradiction: the machines were never clones, falsifying the team's mental model.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n13352 and precedes $n96334. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n96334
+text: The duplicate did not falsify that model so much as reveal that the model had never been checked.
+intent: Third contradiction: the machines were never clones, falsifying the team's mental model.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n05098 and precedes $n21915. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n21915
+text: When I looked, the condition was everywhere.
+intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n96334 and precedes $n71314. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n71314
+text: Between April and December 2015, Hetzner's preinstallation images shipped with a shared Ed25519 host key; the same fingerprint appeared on unrelated customers' servers, and the provider warned them of a man-in-the-middle risk.
+intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n21915 and precedes $n36617. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n36617
+text: Identically configured network routers and appliances have generated the same SSH private key when their entropy was starved, especially on units with no real disk to stir the pool.
+intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n71314 and precedes $n86710. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n86710
+text: A 2025 survey of one hosting provider found four hundred and seventy-eight distinct `ssh-rsa` host keys across nearly thirty thousand listeners, with a single key served by more than ten thousand addresses.
+intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n36617 and precedes $n01500. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n01500
+text: In 2012, Lenstra and others collected RSA moduli from the web and found that roughly two in a thousand shared a prime factor with another modulus — an event whose probability under true randomness is small enough that it should never have been observed once.
+intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n86710 and precedes $n87309. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n87309
+text: Heninger and others, the same year, found the same class of failure across the network and traced much of it to that boot-time entropy hole.
+intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n01500 and precedes $n35362. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n35362
+text: In 2008, a one-line change to Debian's OpenSSL had reduced the generator to about thirty-two thousand possible states, and keys collided across the world for two years.
+intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n87309 and precedes $n04534. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n04534
+text: One cursed room was a worldwide condition, and had been for as long as machines had been trying to be random.
+intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n35362 and precedes $n62969. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n62969
+text: The dream came back to me near the end, the way an unclosed bracket comes back.
+intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n04534 and precedes $n50361. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n50361
+text: Someone on the team mentioned it, and by then it had grown.
+intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n62969 and precedes $n30442. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n30442
+text: The chat line — *bad dream about the racks* — had become, in the retelling, a large demon that stood at the end of the cold aisle and told the night developer the room was cursed.
+intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n50361 and precedes $n96369. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n96369
+text: I put the two versions side by side.
+intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n30442 and precedes $n05616. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n05616
+text: The written record is four lines and names nothing.
+intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n96369 and precedes $n22707. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n22707
+text: The retelling is specific: a figure, the dark, the sentence.
+intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n05616 and precedes $n91992. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n91992
+text: The specificity is exactly what the written record lacks, and exactly what hindsight would supply.
+intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n22707 and precedes $n84720. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n84720
+text: I have not decided.
+intent: Have the narrator refuse a verdict: chance is ruled out, the mechanism is sufficient, the dream is untouched.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n91992 and precedes $n72113. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n72113
+text: I can rule out chance, and I have; I can name the mechanism, and I have; I can show that the mechanism is sufficient, and it is.
+intent: Have the narrator refuse a verdict: chance is ruled out, the mechanism is sufficient, the dream is untouched.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n84720 and precedes $n48493. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n48493
+text: None of that touches the dream, because the dream does not have to be true to have been written first, and being written first does not make it true.
+intent: Have the narrator refuse a verdict: chance is ruled out, the mechanism is sufficient, the dream is untouched.
+style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
+continuity: Follows $n72113 and precedes $n41987. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n41987
+text: I computed the probability a second time, on a different day, as if I expected a different answer.
+intent: Show the private residue: the narrator recomputes and begins to speak of the demon without stopping.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n48493 and precedes $n95956. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n95956
+text: It was the same.
+intent: Show the private residue: the narrator recomputes and begins to speak of the demon without stopping.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n41987 and precedes $n16507. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n16507
+text: I noticed that I had begun to say the word *demon* aloud, in the same tone I use for *race condition*, and that I did not stop.
+intent: Show the private residue: the narrator recomputes and begins to speak of the demon without stopping.
+style: Restrained first-person/observational prose; concrete procedural detail.
+continuity: Follows $n95956 and precedes $n71110. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n71110
+text: **Field Note #2.
+intent: Close with a private, short field note that leans toward the numinous without asserting it.
+style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
+continuity: Follows $n16507 and precedes $n26660. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n26660
+text: The machines were never as many as they looked.
+intent: Close with a private, short field note that leans toward the numinous without asserting it.
+style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
+continuity: Follows $n71110 and precedes $n25371. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+
+$n25371
+text: I keep the terse version and the rich one in the same folder.**
+intent: Close with a private, short field note that leans toward the numinous without asserting it.
+style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
+continuity: Follows $n26660 and precedes $n35689. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
 
 $n35689
 text: Tell a made up story of how actual Leprechaun from Irish folklore broke into the server room at night and "moved the loop bounds" (loop as in "a for-loop") by one.
 intent: Authorial directive for IV. The Leprechaun of Off-by-One: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n50435 and precedes $n82531. This is a live NOTE constraint for IV. The Leprechaun of Off-by-One and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n25371 and precedes $n82531. This is a live NOTE constraint for IV. The Leprechaun of Off-by-One and must remain consistent with AGENTS.md and the Intent Records.
 
 $n82531
 text: This should be a story told to us by as a legend.
@@ -2136,13 +2916,55 @@ $n17075
 text: No specific incident is claimed.
 intent: Withhold any documentary claim for the prologue incident, preventing invention from reading as fact.
 style: Terse disclaimer.
-continuity: Follows $n15804 and precedes $n54805. Preserves the evidence boundary before the general composites note.
+continuity: Follows $n15804 and precedes $n21836. Preserves the evidence boundary before the next endnote.
+
+$n21836
+text: 7. **Duplicate SSH host keys and weak key generation (Case III).**
+intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n17075 and precedes $n49347. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+
+$n49347
+text: The fictional fleet is a composite; the phenomena are documented.
+intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
+style: Documentary endnote prose; concise and factually bounded.
+continuity: Follows $n21836 and precedes $n05554. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+
+$n05554
+text: Hetzner's preinstallation images contained a shared Ed25519 host key between April and December 2015. ([hannob/ed25519hetzner][8]) ([intevation][9])
+intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
+style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
+continuity: Follows $n49347 and precedes $n60036. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+
+$n60036
+text: A 2025 survey of one hosting provider found 478 distinct `ssh-rsa` host keys across 29,776 listeners, with a single key served by more than 10,000 addresses. ([APNIC][10])
+intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
+style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
+continuity: Follows $n05554 and precedes $n17317. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+
+$n17317
+text: Lenstra et al. (2012) found that roughly two in a thousand RSA moduli collected from the web shared a prime factor with another modulus. ([IACR ePrint 2012/064][11])
+intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
+style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
+continuity: Follows $n60036 and precedes $n10539. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+
+$n10539
+text: Heninger et al. (2012) found the same class of failure at Internet scale and traced much of it to a boot-time entropy hole in the Linux random number generator. ([USENIX Security 2012][12])
+intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
+style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
+continuity: Follows $n17317 and precedes $n45429. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+
+$n45429
+text: Debian's 2008 OpenSSL flaw reduced key generation to about 32,768 possible states, and weak keys persisted until the fix was deployed. ([DSA-1571][13]) ([CVE-2008-0166][14])
+intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
+style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
+continuity: Follows $n10539 and precedes $n54805. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n54805
 text: *(Selected entries above anchor the real incidents used in this dossier.
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Documentary endnote prose; concise and factually bounded.
-continuity: Follows $n17075 and precedes $n60629. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+continuity: Follows $n45429 and precedes $n60629. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n60629
 text: Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
