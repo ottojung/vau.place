@@ -1284,25 +1284,55 @@ $n58421
 text: At the time, I was doing reliability work for a small company whose application spent most of its life asking a database ordinary questions.
 intent: Give the reader a gentle occupational and system context before the failure: the narrator is present as a reliability engineer for an otherwise unremarkable database-backed application.
 style: Calm, plain introductory narration; “ordinary questions” lightly personifies the application without yet making anything uncanny.
-continuity: Follows $n80786 and precedes $n73064. Establishes the mundane baseline required for the later observation-sensitive escalation.
+continuity: Follows $n80786 and precedes $n32002. Establishes the mundane baseline required for the later observation-sensitive escalation.
+
+$n32002
+text: The heating had clicked off for the night, and the room had settled around the temperature of the racks, warm behind the servers and cold at my desk.
+intent: Make the night physical before the failure arrives: the room is cooling and the narrator sits at its cold edge, so the investigation is felt as an experience rather than read as a report.
+style: Sensory declarative with a warm/cold contrast; plain diction, no announced theme.
+continuity: Follows $n58421 and precedes $n77536. Opens the physical palette that returns when the building cools at 05:18.
+
+$n77536
+text: Through the window the quay light lay on the floor in a colour the day never used.
+intent: Place the room in a harbour night and mark the hour as outside ordinary daytime perception, quietly supporting the dateline's ferry setting.
+style: Quiet image; one concrete light detail doing double duty as time and isolation.
+continuity: Follows $n32002 and precedes $n09852. Establishes the coastal setting implied by $n34300, paid off by the first ferry's horn at the close.
+
+$n09852
+text: A draught from the door kept finding my ankles.
+intent: Add a small recurring physical discomfort that keeps the narrator's body present during the long watch.
+style: Short sensory beat; “kept finding” gives the draught persistence without personifying it into theme.
+continuity: Follows $n77536 and precedes $n73064. Part of the room palette; the body's discomfort returns at the 04:56 hesitation.
 
 $n73064
 text: Most nights, the failures were ordinary too: a full disk, a dead connection, a process that had simply run out of something.
 intent: Establish that the narrator normally encounters legible, mundane failures, so this night's behavior can depart from a credible baseline.
 style: Gentle three-part catalogue with concrete operational examples; the final vague “something” keeps the opening conversational rather than encyclopedic.
-continuity: Follows $n58421 and precedes $n62385. Sets up a contrast with the failure that resists ordinary diagnosis and with the later anxiety about evidence disappearing under observation.
+continuity: Follows $n09852 and precedes $n62385. Sets up a contrast with the failure that resists ordinary diagnosis and with the later anxiety about evidence disappearing under observation.
 
 $n62385
 text: That night, I was called because a `COMMIT` would sometimes not come back.
 intent: Introduce the night's specific failure only after the occupational baseline has been established.
 style: Concrete procedural diction with a restrained transition from ordinary work into the anomaly.
-continuity: Follows $n73064 and precedes $n67124. Begins the Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n73064 and precedes $n45837. Begins the Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+
+$n45837
+text: An earlier entry in my notes had ended with the failure taped into a logbook: a moth, pulled from a relay.
+intent: Bridge from Case I's taped specimen to the specimen that refuses capture, concretely and without naming the epistemic contrast.
+style: Restrained callback; concrete nouns (notes, logbook, moth, relay) carry the contrast.
+continuity: Follows $n62385 and precedes $n45946. Refers back to the Mark II moth and logbook page at the end of Case I ($n10406).
+
+$n45946
+text: This one refused the tape.
+intent: State the case's central refusal as a concrete behavior rather than a supernatural claim, turning the tape motif into dread.
+style: Short beat used for emphasis; flat declarative, no interpretation.
+continuity: Follows $n45837 and precedes $n67124. Payoff of the moth/logbook setup; the untaped failure is the chapter's residue.
 
 $n67124
 text: This was not a complicated transaction.
 intent: Advance the Heisenbug investigation, preserving the watched/unwatched reversals and the gradual shift from technical frustration toward unease.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n62385 and precedes $n25882. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n45946 and precedes $n25882. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
 
 $n25882
 text: The application had read a little over a thousand rows through a database proxy over a Unix-domain socket and then asked to commit an otherwise empty transaction.
@@ -1314,13 +1344,49 @@ $n78957
 text: Under production load, one greenlet would occasionally stop there and remain stopped, waiting on the file descriptor as if the other side had forgotten it.
 intent: Advance the Heisenbug investigation, preserving the watched/unwatched reversals and the gradual shift from technical frustration toward unease.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n25882 and precedes $n42832. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n25882 and precedes $n18947. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+
+$n18947
+text: What the application was writing that night was small: an order, a fulfilment, a line in the ledger recording that a customer's goods were promised and paid for.
+intent: Make the transaction's human and business meaning concrete so the reader understands what an unacknowledged COMMIT threatens.
+style: Plain, specific catalogue; the smallness of the write raises the stakes rather than lowering them.
+continuity: Follows $n78957 and precedes $n72208. Grounds the empty transaction in a customer-visible consequence.
+
+$n72208
+text: When the commit came back, the application knew the write had landed.
+intent: State the only condition under which the application has certainty.
+style: Short declarative; sets up the missing-acknowledgement problem.
+continuity: Follows $n18947 and precedes $n30345. Establishes the binary the next sentence removes.
+
+$n30345
+text: When it did not, the application could not tell whether the line was in the database or had never been written.
+intent: Define the unknowable state the operators actually fear, not mere downtime.
+style: Balanced declarative with a two-branch uncertainty; procedural and unembellished.
+continuity: Follows $n72208 and precedes $n85418. Names the epistemic cost the night's investigation cannot resolve.
+
+$n85418
+text: Retry the request and the same order might be written twice, the customer charged twice.
+intent: Make the cost of a wrong recovery decision specific: duplication and double billing.
+style: Imperative-led sentence; concrete consequence, no commentary.
+continuity: Follows $n30345 and precedes $n39997. First horn of the dilemma; the next sentence gives the other.
+
+$n39997
+text: Do not retry, and the order might be missing, and a missing order in a small company is a customer telephone call with no good answer.
+intent: Complete the dilemma so both branches can be wrong, making unresolved failure genuinely frightening.
+style: Accumulating declarative with a dry, understated finish.
+continuity: Follows $n85418 and precedes $n85471. Second horn of the dilemma.
+
+$n85471
+text: It was the kind of company that could not afford a second night like this one.
+intent: Tie the technical dilemma to the small company's fragility and the narrator's fear of recurrence.
+style: Short closing judgment; plain and grim.
+continuity: Follows $n39997 and precedes $n42832. Raises the cost of not fixing the failure and motivates the unresolved ending.
 
 $n42832
 text: The first occurrence looked like networking.
 intent: Advance the Heisenbug investigation, preserving the watched/unwatched reversals and the gradual shift from technical frustration toward unease.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n78957 and precedes $n57398. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n85471 and precedes $n57398. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
 
 $n57398
 text: The second looked like the client library.
@@ -1491,10 +1557,10 @@ style: Short beat used for emphasis, timing, or tonal pressure; preserve its com
 continuity: Follows $n45014 and precedes $n79223. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
 
 $n79223
-text: There were plenty of ordinary mechanisms left to blame: scheduling, syscall boundaries, queue occupancy, buffering, the proxy's own state machine.
+text: There were plenty of ordinary mechanisms left to blame: scheduling, syscall boundaries, queue occupancy, buffering, flow control, the proxy's own state machine.
 intent: Keep a concrete conventional timing or race explanation live inside the investigation without stepping outside the story to advertise the author's epistemic strategy.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n25214 and precedes $n41454. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n25214 and precedes $n41454. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note. The added “flow control” candidate is the documented real cause in endnote 5, but it stays one item among several and is never privileged in-chapter.
 
 $n41454
 text: We began changing one thing at a time, carefully, because every change had acquired a second meaning.
@@ -1512,13 +1578,19 @@ $n92785
 text: We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me.
 intent: Advance the observation-sensitive evidence pattern: attempts to inspect the failure alter or erase the conditions under which it appears.
 style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n12625 and precedes $n97231. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n12625 and precedes $n77540. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+
+$n77540
+text: The vending machine in the corridor had been humming its one note all night.
+intent: Add a continuous, indifferent sound to the room so the long watch is felt and ordinary corridor life persists around the investigation.
+style: Single sensory sentence, flat and exact; the one note marks duration without announcing theme.
+continuity: Follows $n92785 and precedes $n97231. Part of the physical palette; the room's sounds return at 05:18.
 
 $n97231
 text: At 03:20 I copied the useful part of the night into a table:
 intent: Advance the Heisenbug investigation, preserving the watched/unwatched reversals and the gradual shift from technical frustration toward unease.
 style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n92785 and precedes $n49280. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n77540 and precedes $n49280. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
 
 $n49280
 text: I had intended the table to calm me.
@@ -1554,13 +1626,19 @@ $n98635
 text: I stopped checking the time as often.
 intent: Escalate the narrator's doubt and fear through behavior rather than explanation, showing that the evidence pattern is changing how he acts.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n24785 and precedes $n36137. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n24785 and precedes $n98883. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+
+$n98883
+text: My coffee had gone cold where it stood.
+intent: Show fatigue and the passage of time through a small unattended object rather than stated emotion.
+style: Short sensory beat; concrete and restrained.
+continuity: Follows $n98635 and precedes $n36137. Extends the waiting beat and the room palette before the 04:56 peak.
 
 $n36137
 text: What I wanted was one ordinary artifact: the final syscall, a queue transition, a timeout, a bad state we could point to after the fact.
 intent: Keep a concrete conventional timing or race explanation live inside the investigation without stepping outside the story to advertise the author's epistemic strategy.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n98635 and precedes $n87320. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n98883 and precedes $n87320. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
 
 $n87320
 text: Each attempt to obtain one changed the conditions just enough that the failure moved elsewhere, and the evidence left behind was evidence of its absence.
@@ -1644,31 +1722,43 @@ $n33776
 text: By 05:18 the production traffic had thinned and reproduction slowed with it.
 intent: Advance the Heisenbug investigation, preserving the watched/unwatched reversals and the gradual shift from technical frustration toward unease.
 style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n87918 and precedes $n22733. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n87918 and precedes $n66237. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+
+$n66237
+text: With the traffic gone, the room came back to us: the fans settling into a lower gear, a chair leg ticking as the building cooled, one of the others asleep under his coat.
+intent: Let the room become audible again once production thins, so the unresolved stop is felt as a physical aftermath and the sleepless people are shown.
+style: Cumulative sensory sentence with a colon list; quiet and elegiac, no announced moral.
+continuity: Follows $n33776 and precedes $n22733. Pays off the opening heat/quay/draught palette; the sleeping colleague marks the shift's end.
 
 $n22733
 text: We stopped because a night shift can end without an investigation ending.
 intent: Bring the unresolved overnight investigation toward its animistic field-note conclusion without supplying a debugging victory.
 style: Restrained procedural-horror narration; exact engineering detail should carry the growing anxiety.
-continuity: Follows $n33776 and precedes $n96657. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n66237 and precedes $n96657. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
 
 $n96657
 text: Nothing was fixed.
 intent: Bring the unresolved overnight investigation toward its animistic field-note conclusion without supplying a debugging victory.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n22733 and precedes $n93738. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n22733 and precedes $n97994. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+
+$n97994
+text: The day shift would come in to machines we could not vouch for.
+intent: Extend the consequence past the night: the narrator must hand off systems whose state he cannot guarantee.
+style: Short declarative; the withheld verb “vouch” carries the uncertainty.
+continuity: Follows $n96657 and precedes $n93738. Connects the unresolved ending to the stakes established before the table.
 
 $n93738
 text: We had only learned which forms of attention the failure appeared to tolerate.
 intent: Advance the observation-sensitive evidence pattern: attempts to inspect the failure alter or erase the conditions under which it appears.
 style: Restrained procedural-horror narration; exact engineering detail should carry the growing anxiety.
-continuity: Follows $n96657 and precedes $n70953. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n97994 and precedes $n70953. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
 
 $n70953
-text: In the morning, I wrote my note: *The thing hates to be watched*.
+text: In the morning, when the first ferry's horn sounded, I wrote my note: *The thing hates to be watched*.
 intent: Advance the observation-sensitive evidence pattern: attempts to inspect the failure alter or erase the conditions under which it appears.
 style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n93738 and precedes $n23590. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n93738 and precedes $n23590. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note. The first ferry's horn pays off the dateline $n34300 and the quay light $n77536.
 
 $n23590
 text: Tell a made up story about a state that is extremely unlikely, though possible, to happen, but did happen.
