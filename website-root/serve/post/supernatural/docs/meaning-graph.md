@@ -66,13 +66,79 @@ $n48303
 text: It is grave, meticulous, humor only implicit, investigator fraying at the edges.
 intent: Authorial directive for preamble: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n85515 and precedes $n65643. This is a live NOTE constraint for preamble and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n85515 and precedes $n50471. This is a live NOTE constraint for preamble and must remain consistent with AGENTS.md and the Intent Records.
+
+$n50471
+text: The chief artistic goal is to make readers feel genuine dread, anxiety, uneasiness, fear, and the possibility of harmful consequences, rather than merely appreciate interesting technical paradoxes.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n48303 and precedes $n12211. This is revision guidance for collection, not a statement the narrator knows or says.
+
+$n12211
+text: Let ordinary causal explanations remain intellectually available while the characters' vulnerability makes the stranger interpretation emotionally difficult to dismiss.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n50471 and precedes $n37806. This is revision guidance for collection, not a statement the narrator knows or says.
+
+$n37806
+text: Give major investigations credible human stakes and costs of uncertainty, then convey fear through behavior, concrete surroundings, small changes in confidence, and withheld certainty rather than dramatic declarations.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n12211 and precedes $n72652. This is revision guidance for collection, not a statement the narrator knows or says.
+
+$n72652
+text: Preserve the narrator's procedural rationality even as his actions become subtly superstitious; do not resolve the book into a lecture that scientific reasoning has failed.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n37806 and precedes $n36932. This is revision guidance for collection, not a statement the narrator knows or says.
+
+$n36932
+text: Make the dossier's case selection, evidentiary qualifications, and changing narration trace a cumulative psychological transformation from sober skepticism to reluctant private belief.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n72652 and precedes $n31577. This is revision guidance for collection, not a statement the narrator knows or says.
+
+$n31577
+text: Distinguish firsthand incidents, historical reconstructions, secondhand testimony, and folklore, allowing progressively extravagant cases to have different evidentiary weight.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n36932 and precedes $n38901. This is revision guidance for collection, not a statement the narrator knows or says.
+
+$n38901
+text: Design each case around its own dramatic and emotional discovery so that the collection does not repeat one lesson about the limits of knowledge.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n31577 and precedes $n19915. This is revision guidance for collection, not a statement the narrator knows or says.
+
+$n19915
+text: Use understated jokes when they arise naturally from character or procedure, but avoid comic detours that discharge the dread just established.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n38901 and precedes $n83347. This is revision guidance for collection, not a statement the narrator knows or says.
+
+$n83347
+text: Prefer precise physical and technical observations to conspicuously decorative metaphors; increasingly uncanny diction should arise from the narrator's altered perception.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n19915 and precedes $n76898. This is revision guidance for collection, not a statement the narrator knows or says.
+
+$n76898
+text: Borrow the existential pressure of cosmic horror without mechanically imitating Lovecraftian vocabulary or announcing the author's metaphysical strategy.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n83347 and precedes $n70250. This is revision guidance for collection, not a statement the narrator knows or says.
+
+$n70250
+text: Keep documented facts, fictional reconstruction, hypotheses, and impossible suggestions distinguishable without explaining away the intended ambiguity.
+intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n76898 and precedes $n65643. This is revision guidance for collection, not a statement the narrator knows or says.
 
 $n65643
 text: "I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct."
 intent: Authorial must-have: require this wording, idea, or moral to be preserved or integrated into the finished manuscript.
 style: Required wording or authorial constraint; preserve its distinctive phrasing when quoted and do not smooth away its intended force.
-continuity: Follows $n48303 and precedes $n61044. This is a live MUST HAVES constraint for preamble and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n70250 and precedes $n61044. This is a live MUST HAVES constraint for preamble and must remain consistent with AGENTS.md and the Intent Records.
 
 $n61044
 text: "FIELD NOTE #X The closer your model fits the world, the more the world will take issue."
@@ -90,13 +156,25 @@ $n77735
 text: "... there are systems whose failure modes include poetry."
 intent: Authorial must-have: require this wording, idea, or moral to be preserved or integrated into the finished manuscript.
 style: Required wording or authorial constraint; preserve its distinctive phrasing when quoted and do not smooth away its intended force.
-continuity: Follows $n65527 and precedes $n72344. This is a live MUST HAVES constraint for preamble and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n65527 and precedes $n36795. This is a live MUST HAVES constraint for preamble and must remain consistent with AGENTS.md and the Intent Records.
+
+$n36795
+text: Make the prologue establish why this particular investigator needs a dossier and why preserving uncertainty matters to him personally.
+intent: Author-approved editorial direction for prologue; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n77735 and precedes $n10022. This is revision guidance for prologue, not a statement the narrator knows or says.
+
+$n10022
+text: Introduce a faint but concrete anticipation of danger without prematurely telling readers that every unexplained failure is supernatural.
+intent: Author-approved editorial direction for prologue; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n36795 and precedes $n72344. This is revision guidance for prologue, not a statement the narrator knows or says.
 
 $n72344
 text: I was not trained for hauntings.
 intent: Advance the prologue's framing of the narrator as a procedural investigator whose experience has made ordinary engineering language insufficient.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n77735 and precedes $n77772. Maintain the prologue's dossier frame and the mature narrator's skeptical surface/private supernatural leaning.
+continuity: Follows $n10022 and precedes $n77772. Maintain the prologue's dossier frame and the mature narrator's skeptical surface/private supernatural leaning.
 
 $n77772
 text: I was trained for reproducibility, for test plans and postmortems, for the clean relief of a failing unit test that fails again in the same way.
@@ -192,13 +270,73 @@ $n87974
 text: Show it through what each treats as evidence, useful information, or a reasonable explanation; do not explain the contrast as a theme.
 intent: Authorial directive for I. The Schaerbeek Bit: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n61375 and precedes $n52144. This is a live NOTE constraint for I. The Schaerbeek Bit and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n61375 and precedes $n51408. This is a live NOTE constraint for I. The Schaerbeek Bit and must remain consistent with AGENTS.md and the Intent Records.
+
+$n51408
+text: Keep the opening café's spatial and procedural observations because they reveal the younger narrator's habits of thought without supplying biography.
+intent: Author-approved editorial direction for Schaerbeek; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n87974 and precedes $n81654. This is revision guidance for Schaerbeek, not a statement the narrator knows or says.
+
+$n81654
+text: Tighten the long chain of preliminaries so that the biscuit exchange leads organically into the election story and the technician's peculiar perspective accumulates rather than resets.
+intent: Author-approved editorial direction for Schaerbeek; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n51408 and precedes $n44011. This is revision guidance for Schaerbeek, not a statement the narrator knows or says.
+
+$n44011
+text: Preserve the subtle contrast between the narrator's useful facts and the technician's stories; neither character should become a mouthpiece for the collection's philosophy.
+intent: Author-approved editorial direction for Schaerbeek; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n81654 and precedes $n71947. This is revision guidance for Schaerbeek, not a statement the narrator knows or says.
+
+$n71947
+text: Keep the escaped-neutron newspaper item an unspoken clue for the reader alone, but establish enough credible chronology and recurrence of imagery for the impossible temporal suggestion to be discoverable.
+intent: Author-approved editorial direction for Schaerbeek; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n44011 and precedes $n66580. This is revision guidance for Schaerbeek, not a statement the narrator knows or says.
+
+$n66580
+text: Check that the fictional CERN report sounds plausible as journalism, especially the unusual claim that a single neutron escaped an enclosure.
+intent: Author-approved editorial direction for Schaerbeek; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n71947 and precedes $n39332. This is revision guidance for Schaerbeek, not a statement the narrator knows or says.
+
+$n39332
+text: Treat the real election's multiday investigation carefully when compressing events into a firsthand reconstruction; the May 2003 chronology and the extent of the technician's knowledge must remain believable.
+intent: Author-approved editorial direction for Schaerbeek; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n66580 and precedes $n84205. This is revision guidance for Schaerbeek, not a statement the narrator knows or says.
+
+$n84205
+text: Intensify the emotional stakes of an untraceable alteration to an election result through the clerks' fear of responsibility, loss of trust in the count, and uncertainty over what corrective action is possible.
+intent: Author-approved editorial direction for Schaerbeek; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n39332 and precedes $n95831. This is revision guidance for Schaerbeek, not a statement the narrator knows or says.
+
+$n95831
+text: Let physical and bureaucratic details make the contradictory totals threatening instead of leaning on poetic descriptions of a bit flip or personifying the numerical anomaly.
+intent: Author-approved editorial direction for Schaerbeek; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n84205 and precedes $n78613. This is revision guidance for Schaerbeek, not a statement the narrator knows or says.
+
+$n78613
+text: Preserve the younger narrator's skepticism and the later narrator's retrospectively unsettled memory while avoiding an explicit claim that a particle or a supernatural force caused the anomaly.
+intent: Author-approved editorial direction for Schaerbeek; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n95831 and precedes $n94975. This is revision guidance for Schaerbeek, not a statement the narrator knows or says.
+
+$n94975
+text: Do not restore the removed conversation-quality billing digression; its separate joke interrupts the accumulated unease after the election account.
+intent: Author-approved editorial direction for Schaerbeek; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n78613 and precedes $n52144. This is revision guidance for Schaerbeek, not a statement the narrator knows or says.
 
 $n52144
 text: I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late.
 intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
 style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n87974 and precedes $n59635. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n94975 and precedes $n59635. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n59635
 text: In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
@@ -888,19 +1026,13 @@ $n50752
 text: Under that hypothesis there would be no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
 intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n45529 and precedes $n64090. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n64090
-text: On that account, the bit toggled to one, and in so toggling, wove its one-ness into every arithmetic that followed.
-intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
-style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n50752 and precedes $n56427. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n45529 and precedes $n56427. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n56427
 text: The technician objected that bits did not change for no reason.
 intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n64090 and precedes $n65158. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n50752 and precedes $n65158. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n65158
 text: The physicist agreed.
@@ -954,19 +1086,13 @@ $n94242
 text: The committee’s report is less romantic, but it permits the word that haunts this dossier: likely.
 intent: Connect the earlier skeptical Schaerbeek encounter to the narrator's later dossier without giving the younger narrator knowledge or beliefs he did not yet have.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n36362 and precedes $n90898. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n90898
-text: A likely single-event upset—an ion that fell through the evening and made a number grow teeth.
-intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
-style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n94242 and precedes $n83246. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n36362 and precedes $n83246. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n83246
 text: Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*.
 intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n90898 and precedes $n81745. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n94242 and precedes $n81745. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n81745
 text: By the time the incident reached programmers, the whole thing was often filed under *computer error*.
@@ -1044,193 +1170,13 @@ $n78293
 text: The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
 intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
 style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n18816 and precedes $n38314. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n38314
-text: The waiter left the bill between us and moved on without a word.
-intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
-style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n78293 and precedes $n91964. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n91964
-text: He looked at it for a moment, then said, “You know what cafés should do?
-intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n38314 and precedes $n47128. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n47128
-text: Add a line for conversation quality.
-intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n91964 and precedes $n14123. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n14123
-text: Like a service rating, but mandatory.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n47128 and precedes $n10853. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n10853
-text: You’d tip more if you’d actually learned something.”
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n14123 and precedes $n64149. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n64149
-text: I thought he was joking, but he kept going.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n10853 and precedes $n54550. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n54550
-text: “They could print a small scale at the bottom,” he said, sketching in the air.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n64149 and precedes $n34872. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n34872
-text: “Zero for silence, ten for revelations.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n54550 and precedes $n29600. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n29600
-text: You fill it in yourself.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n34872 and precedes $n72712. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n72712
-text: Encourages improvement.”
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n29600 and precedes $n39052. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n39052
-text: I unfolded the bill.
-intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n72712 and precedes $n22498. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n22498
-text: “That’s unworkable,” I said.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n39052 and precedes $n21183. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n21183
-text: “Why?”
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n22498 and precedes $n88772. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n88772
-text: “The staff can’t verify it.”
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n21183 and precedes $n22725. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n22725
-text: “They don’t verify taste either,” he said.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n88772 and precedes $n69201. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n69201
-text: “You could hate the soup and still pay for flavor.”
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n22725 and precedes $n65061. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n65061
-text: He seemed genuinely interested in the logistics.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n69201 and precedes $n57367. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n57367
-text: “They’d need categories,” he went on.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n65061 and precedes $n49676. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n49676
-text: “Depth, originality, politeness—maybe a subtotal for wit.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n57367 and precedes $n34079. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n34079
-text: It could revolutionize small talk.”
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n49676 and precedes $n52021. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n52021
-text: I set the paper flat against the table, aligning it with the grain.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n34079 and precedes $n19018. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n19018
-text: “That’s not how cafés operate,” I said.
-intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n52021 and precedes $n27368. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n27368
-text: He smiled faintly.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n19018 and precedes $n51935. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n51935
-text: “Not yet.”
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n27368 and precedes $n47622. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n47622
-text: There was a pause — long enough to feel like he was waiting for me to solve his idea.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n51935 and precedes $n98801. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n98801
-text: Finally, I said, “No.”
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n47622 and precedes $n33672. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n33672
-text: Not loud, but enough.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n98801 and precedes $n29076. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n29076
-text: He blinked once, almost surprised, then nodded as if I’d supplied the missing metric.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n33672 and precedes $n37821. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n37821
-text: When the waiter returned, I left the money neatly folded inside the bill.
-intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
-style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n29076 and precedes $n33126. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n33126
-text: He added a coin, uncalled for.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n37821 and precedes $n63199. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n18816 and precedes $n63199. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n63199
 text: I did not write a field note that afternoon.
 intent: Connect the earlier skeptical Schaerbeek encounter to the narrator's later dossier without giving the younger narrator knowledge or beliefs he did not yet have.
 style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
-continuity: Follows $n33126 and precedes $n54255. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n78293 and precedes $n54255. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n54255
 text: Years later, when I began the dossier, I put this under his story:
@@ -1296,13 +1242,49 @@ $n34300
 text: **Somewhere between midnight and the first ferry.**
 intent: Set the quiet temporal atmosphere for Case II before the technical problem arrives.
 style: Short location/time dateline; restrained and gently anticipatory rather than immediately alarming.
-continuity: Follows $n10406 and precedes $n58421. Opens Case II before the narrator establishes his ordinary work context.
+continuity: Follows $n10406 and precedes $n54431. Opens Case II before the narrator establishes his ordinary work context.
+
+$n54431
+text: Keep the repeated watched-versus-unwatched reversals and the unsuccessful experiment table as the narrative engine rather than adding an arbitrary supernatural event.
+intent: Author-approved editorial direction for Heisenbug; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n34300 and precedes $n30100. This is revision guidance for Heisenbug, not a statement the narrator knows or says.
+
+$n30100
+text: Add a few selective physical details of the room and the sleepless people so that the investigation is felt as an experience rather than read only as a debugging report.
+intent: Author-approved editorial direction for Heisenbug; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n54431 and precedes $n56205. This is revision guidance for Heisenbug, not a statement the narrator knows or says.
+
+$n56205
+text: Make the practical consequences of a failed transaction and an unknowable failure plausible and specific, so readers understand what the operators fear losing if the incident continues.
+intent: Author-approved editorial direction for Heisenbug; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n30100 and precedes $n40626. This is revision guidance for Heisenbug, not a statement the narrator knows or says.
+
+$n40626
+text: Protect the line about disliking successful tests and the hesitation at 04:56; the moment when the narrator stops before attaching the tracer is his clearest conversion of suspicion into superstition.
+intent: Author-approved editorial direction for Heisenbug; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n56205 and precedes $n53676. This is revision guidance for Heisenbug, not a statement the narrator knows or says.
+
+$n53676
+text: Do not claim that timing-sensitive concurrency has no ordinary explanation, and remember that the real ProxySQL source incident eventually had a technical cause.
+intent: Author-approved editorial direction for Heisenbug; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n40626 and precedes $n80786. This is revision guidance for Heisenbug, not a statement the narrator knows or says.
+
+$n80786
+text: Let the terror consist in the narrator briefly acting as though the bug can notice him, despite knowing better, and avoid explicitly interpreting that gesture for the reader.
+intent: Author-approved editorial direction for Heisenbug; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n53676 and precedes $n58421. This is revision guidance for Heisenbug, not a statement the narrator knows or says.
 
 $n58421
 text: At the time, I was doing reliability work for a small company whose application spent most of its life asking a database ordinary questions.
 intent: Give the reader a gentle occupational and system context before the failure: the narrator is present as a reliability engineer for an otherwise unremarkable database-backed application.
 style: Calm, plain introductory narration; “ordinary questions” lightly personifies the application without yet making anything uncanny.
-continuity: Follows $n34300 and precedes $n73064. Establishes the mundane baseline required for the later observation-sensitive escalation.
+continuity: Follows $n80786 and precedes $n73064. Establishes the mundane baseline required for the later observation-sensitive escalation.
 
 $n73064
 text: Most nights, the failures were ordinary too: a full disk, a dead connection, a process that had simply run out of something.
@@ -1710,13 +1692,25 @@ $n27948
 text: Ideally, find a real world example of something extremely unlikely happening, and use that as the basis for the story.
 intent: Authorial directive for III. Maxwell’s Demon: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n91416 and precedes $n35689. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n91416 and precedes $n32131. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
+
+$n32131
+text: Anchor the highly improbable event in a credible technical substrate and give its consequences tangible human weight before the dream seems prophetic.
+intent: Author-approved editorial direction for Maxwell; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n27948 and precedes $n50435. This is revision guidance for Maxwell, not a statement the narrator knows or says.
+
+$n50435
+text: Make the dream terrifying as an experience while preserving the possibility that its apparent prediction is retrospective pattern making rather than proof of a literal demon.
+intent: Author-approved editorial direction for Maxwell; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n32131 and precedes $n35689. This is revision guidance for Maxwell, not a statement the narrator knows or says.
 
 $n35689
 text: Tell a made up story of how actual Leprechaun from Irish folklore broke into the server room at night and "moved the loop bounds" (loop as in "a for-loop") by one.
 intent: Authorial directive for IV. The Leprechaun of Off-by-One: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n27948 and precedes $n82531. This is a live NOTE constraint for IV. The Leprechaun of Off-by-One and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n50435 and precedes $n82531. This is a live NOTE constraint for IV. The Leprechaun of Off-by-One and must remain consistent with AGENTS.md and the Intent Records.
 
 $n82531
 text: This should be a story told to us by as a legend.
@@ -1728,13 +1722,25 @@ $n68532
 text: In that legend, somebody allegedly, saw an actual small man in green clothes with a red beard in the server room.
 intent: Authorial directive for IV. The Leprechaun of Off-by-One: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n82531 and precedes $n24252. This is a live NOTE constraint for IV. The Leprechaun of Off-by-One and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n82531 and precedes $n20750. This is a live NOTE constraint for IV. The Leprechaun of Off-by-One and must remain consistent with AGENTS.md and the Intent Records.
+
+$n20750
+text: Keep the folkloric sighting at the distance of reported operational legend rather than presenting it as something the investigator directly verifies.
+intent: Author-approved editorial direction for Leprechaun; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n68532 and precedes $n52828. This is revision guidance for Leprechaun, not a statement the narrator knows or says.
+
+$n52828
+text: The case can be more extravagant than the early cases, but serious documentation, witnesses' reactions, and real consequences should give readers a reason to feel unsettled rather than merely amused.
+intent: Author-approved editorial direction for Leprechaun; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n20750 and precedes $n24252. This is revision guidance for Leprechaun, not a statement the narrator knows or says.
 
 $n24252
 text: Tell a made up story of how a bug coincided with Mercury being in retrograde.
 intent: Authorial directive for V. Mercury in Retrograde: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n68532 and precedes $n75210. This is a live NOTE constraint for V. Mercury in Retrograde and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n52828 and precedes $n75210. This is a live NOTE constraint for V. Mercury in Retrograde and must remain consistent with AGENTS.md and the Intent Records.
 
 $n75210
 text: The bug must be unique and interesting.
@@ -1758,25 +1764,49 @@ $n54501
 text: We'll retain skeptics by documenting the operational timeline with enough specificity that the causal inference feels like a temptation, not a writer’s decree.
 intent: Authorial directive for V. Mercury in Retrograde: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n75736 and precedes $n76985. This is a live NOTE constraint for V. Mercury in Retrograde and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n75736 and precedes $n85239. This is a live NOTE constraint for V. Mercury in Retrograde and must remain consistent with AGENTS.md and the Intent Records.
+
+$n85239
+text: Let the operational timeline and escalating consequences make the astrological correlation emotionally tempting without describing Mercury as a confirmed cause.
+intent: Author-approved editorial direction for Mercury; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n54501 and precedes $n34176. This is revision guidance for Mercury, not a statement the narrator knows or says.
+
+$n34176
+text: Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.
+intent: Author-approved editorial direction for Mercury; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n85239 and precedes $n76985. This is revision guidance for Mercury, not a statement the narrator knows or says.
 
 $n76985
 text: Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
 intent: Authorial directive for VI. The Crocodile in Vienna: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n54501 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n34176 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
 
 $n89991
 text: However, the crocodile had no impact on American software systems, which continued to operate as normal (different continent, get it?).
 intent: Authorial directive for VI. The Crocodile in Vienna: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n76985 and precedes $n74045. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n76985 and precedes $n25522. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
+
+$n25522
+text: The conspicuous absence of an American software failure should function as a deliberate test of the narrator's changing ideas of causality, not as an isolated joke.
+intent: Author-approved editorial direction for Crocodile; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n89991 and precedes $n93700. This is revision guidance for Crocodile, not a statement the narrator knows or says.
+
+$n93700
+text: Keep the serious procedural account of Vienna's disruption and the narrator's misplaced investigative attention, allowing the reader to notice the absurdity without commentary.
+intent: Author-approved editorial direction for Crocodile; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n25522 and precedes $n74045. This is revision guidance for Crocodile, not a statement the narrator knows or says.
 
 $n74045
 text: Change the title to something more evocative.
 intent: Authorial task: record a concrete unresolved change that must be completed before the draft is finished.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n89991 and precedes $n28696. This is a live FIXME constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n93700 and precedes $n28696. This is a live FIXME constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
 
 $n28696
 text: Tell a made up story of how a server crashed due to environmental reasons, such as overheating or power failure.
@@ -1794,13 +1824,37 @@ $n95153
 text: This is a necessary palate cleanser, it shores up our credibility by reminding readers that not all anomalies are numinous.
 intent: Authorial directive for VII. A Natural, Boring Crash: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n54730 and precedes $n99708. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n54730 and precedes $n28035. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
+
+$n28035
+text: Give the mundane crash clear physical causes and, if useful, real human consequences so it remains a compelling story rather than a perfunctory reassurance.
+intent: Author-approved editorial direction for natural crash; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n95153 and precedes $n23038. This is revision guidance for natural crash, not a statement the narrator knows or says.
+
+$n23038
+text: Preserve this case as an honest control sample that shows the narrator can still accept a sufficient ordinary explanation.
+intent: Author-approved editorial direction for natural crash; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n28035 and precedes $n10969. This is revision guidance for natural crash, not a statement the narrator knows or says.
+
+$n10969
+text: The coda should make the reader recognize a changed way of perceiving ordinary systems, not simply restate a moral about uncertainty or limits of science.
+intent: Author-approved editorial direction for coda; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n23038 and precedes $n50030. This is revision guidance for coda, not a statement the narrator knows or says.
+
+$n50030
+text: Leave readers with an embodied residue of fear and vulnerability as well as the narrator's continuing commitment to careful evidence.
+intent: Author-approved editorial direction for coda; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n10969 and precedes $n99708. This is revision guidance for coda, not a statement the narrator knows or says.
 
 $n99708
 text: Something with the same moral as "We live by the text; we survive by the small, retold stories that help us decide which part of the text applies when the world grows strange.
 intent: Authorial must-have: require this wording, idea, or moral to be preserved or integrated into the finished manuscript.
 style: Required wording or authorial constraint; preserve its distinctive phrasing when quoted and do not smooth away its intended force.
-continuity: Follows $n95153 and precedes $n98283. This is a live MUST HAVES constraint for Coda and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n50030 and precedes $n98283. This is a live MUST HAVES constraint for Coda and must remain consistent with AGENTS.md and the Intent Records.
 
 $n98283
 text: If you keep a dossier of your own, write in a hand you will recognize when you are older.

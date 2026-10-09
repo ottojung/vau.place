@@ -101,3 +101,11 @@ source: @ottojung
 kind: requirement
 
 The collection's horror, uncanniness, and humor should usually arise from meticulous procedural seriousness applied to events whose implications are increasingly strange. Avoid announcing jokes, explaining absurdity after the reader can already see it, or replacing procedural detail with generic horror decoration. The narrator's composure and exactness should make the strange material more effective, not less.
+
+$id-5364595046057851
+title: The reader must feel the danger and dread
+date: 2026/10/09
+source: @ottojung
+kind: requirement
+
+The collection is intended to produce real fear, anxious uneasiness, and dread, including apprehension that the unexplained incidents could have harmful consequences. The reader should not merely admire ingenious technical mysteries or understand why an engineer might become superstitious. In major horror cases, establish believable human stakes and escalating behavioral or emotional consequences while preserving technical credibility, the narrator's disciplined investigative habits, skeptical ambiguity, and restraint. Do not substitute arbitrary monsters, overwrought metaphor, or a didactic claim about the failure of science for felt terror.
