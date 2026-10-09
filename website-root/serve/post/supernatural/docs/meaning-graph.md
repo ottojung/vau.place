@@ -4323,7 +4323,7 @@ $n28696
 text: Tell a made up story of how a server crashed due to environmental reasons, such as overheating or power failure.
 intent: Authorial directive for VII. A Natural, Boring Crash: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n74045 and precedes $n54730. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n93700 and precedes $n54730. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
 
 $n54730
 text: The story should emphasize that this is not a supernatural event, but rather a mundane one.
@@ -4347,13 +4347,439 @@ $n23038
 text: Preserve this case as an honest control sample that shows the narrator can still accept a sufficient ordinary explanation.
 intent: Author-approved editorial direction for natural crash; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n28035 and precedes $n10969. This is revision guidance for natural crash, not a statement the narrator knows or says.
+continuity: Follows $n28035 and precedes $n22316. This is revision guidance for natural crash, not a statement the narrator knows or says.
+
+$n22316
+text: **A small research institute, the second week of August.**
+intent: Establish the case dateline with temporal specificity; the vague place reinforces that the mundane cause could be anywhere.
+style: Bold dateline fragment matching Cases I and VI; plain and documentary, letting the title carry the evocativeness.
+continuity: Follows $n23038 and precedes $n76832. Opens Case VII.
+
+$n76832
+text: I was called on a Tuesday morning because the institute’s database had stopped answering.
+intent: Introduce the incident through the narrator's professional role; the failure is presented as a symptom without a cause, preserving investigative openness.
+style: First-person past tense, precise temporal marker; the passive construction (was called) frames the narrator as the responder.
+continuity: Follows $n22316 and precedes $n11105. Establishes the narrator's entry point.
+
+$n11105
+text: The monitoring alert had fired at 08:52, five minutes after the server went dark, and the administrator had seen it when he came in at nine.
+intent: Pin the crash to a precise time and show the human detection chain (alert, administrator, call); establishes the after-the-fact investigation.
+style: Timestamped procedural detail; the delay between alert and detection adds realism.
+continuity: Follows $n76832 and precedes $n25939. Fixes the crash time at 08:47-08:52; the alert at 08:52 follows the shutdown by five minutes.
+
+$n25939
+text: The administrator’s message gave no cause, only the symptom: connections timed out, the application’s health check failed, and the monitoring page I checked from my desk showed the latency graph gone flat.
+intent: Withhold the cause from both narrator and reader, forcing the reconstruction that follows; the flat latency graph is the first concrete symptom.
+style: Colon introducing a tripartite symptom list; the monitoring page detail shows the narrator's remote habits.
+continuity: Follows $n11105 and precedes $n42067. Motivates the reconstruction; the flat line is the first symptom.
+
+$n42067
+text: I had done reliability work for the group for two years.
+intent: Establish the narrator's ongoing relationship with the site and his competence; grounds the case in a real working context.
+style: Short declarative; the two-year span implies institutional knowledge.
+continuity: Follows $n25939 and precedes $n33692. Grounds the narrator's authority and the site's reality.
+
+$n33692
+text: Their database was old, their budget was small, and their server room was a converted storage closet at the end of a corridor that smelled of floor wax and hot dust.
+intent: Establish the mundane, under-resourced setting; the converted storage closet and the smell of hot dust foreshadow the thermal failure.
+style: Tripartite description with an accumulating final clause; the olfactory detail (floor wax and hot dust) is the first sensory hint of heat.
+continuity: Follows $n42067 and precedes $n77016. The hot-dust smell foreshadows the room's condition.
+
+$n77016
+text: I knew the room before I arrived.
+intent: Compress the narrator's familiarity with the site; sets up the contrast between expectation and the mundane reality.
+style: Short declarative; the compression implies a history the narrator does not need to explain.
+continuity: Follows $n33692 and precedes $n62570. Closes the introduction; pivots to his expectant frame.
+
+$n62570
+text: I had spent the summer in other people’s failures, and I had come to expect them to have textures.
+intent: Reveal the narrator's arc; the summer's cases have primed him to expect strangeness; sets up the control's function (he half-expects the numinous).
+style: Textures is the narrator's private word for strangeness; the casual tone belies the significance.
+continuity: Follows $n77016 and precedes $n04676. Establishes the narrator's expectant frame; echoes the collection's escalation.
+
+$n04676
+text: I drove with the kit I always carry, and on the way I caught myself planning the order of the logs I would pull — application, database, kernel — the order I would use if the failure had a story worth telling.
+intent: Show the narrator's procedural habits and his unconscious hope for a strange story; the log order reveals his method.
+style: Em-dash introducing the log order; the conditional (if the failure had a story) exposes his expectation.
+continuity: Follows $n62570 and precedes $n13898. The procedural planning mirrors his arc; the log order is his method.
+
+$n13898
+text: It was only after I parked that I noticed I had packed the memory-testing drive, which a dead database has no use for.
+intent: Reveal the narrator's superstitious habit behaviorally; he packed a tool for a hardware hunt he did not need; shows his private leaning without naming it.
+style: The belated realization (it was only after I parked) is self-aware without being self-announced.
+continuity: Follows $n04676 and precedes $n96682. The memory-testing drive is the behavioral marker of his arc.
+
+$n96682
+text: I left it in the car and brought everything else.
+intent: The narrator corrects his own habit, showing self-awareness; the correction is incomplete (he brought everything else).
+style: Short declarative; the understated correction implies the habit runs deeper than one drive.
+continuity: Follows $n13898 and precedes $n10832. The incomplete correction shows the habit persists.
+
+$n10832
+text: The drive took forty minutes, and I spent them composing the case in advance, the way I always do — what failed, when, whether the failure had an audience — and I noticed I was hoping it would be strange.
+intent: The narrator admits, almost embarrassingly, that he hoped for strangeness; the audience detail echoes Case II's observation-sensitivity motif.
+style: Em-dash introducing the pre-composition checklist; the final clause is the case's emotional thesis.
+continuity: Follows $n96682 and precedes $n10855. The hope for strangeness sets up the residue at the case's end.
+
+$n10855
+text: The room was hot.
+intent: The first sensory fact of the investigation; the heat is the mundane cause made physical before it is proven.
+style: Short declarative; the compression makes the heat feel immediate and factual.
+continuity: Follows $n10832 and precedes $n19689. Opens the room description; the heat is the cause made present.
+
+$n19689
+text: The thermostat on the wall read 32°C, and the air had the thick, still quality of a room that had been warming for hours.
+intent: Quantify the heat (32 degrees C) and establish that the warming has been gradual and unrepaired; the still air implies the fans have stopped.
+style: Precise instrument reading paired with a qualitative impression; the two registers together make the heat legible.
+continuity: Follows $n10855 and precedes $n58834. The 32-degree reading is the first thermal measurement.
+
+$n58834
+text: The fans were silent.
+intent: The silence marks the server as fully off, not merely idle; the absence of fan sound is the second sensory fact.
+style: Short declarative; the silence is felt as an absence.
+continuity: Follows $n19689 and precedes $n87350. Confirms the server is off.
+
+$n87350
+text: A server room is never quiet; the absence of the fans was louder than their sound had been.
+intent: Elevate the silence into a felt presence; the narrator's perception (louder than their sound) shows his altered, superstitious-leaning attention applied to a mundane fact.
+style: Paradox (absence louder than sound); the generalization (a server room is never quiet) gives the observation weight.
+continuity: Follows $n58834 and precedes $n08857. The silence is the narrator's altered perception at work.
+
+$n08857
+text: The server — Rack C, at the end of a row of three — was dark, its status LEDs off, its drives still.
+intent: Identify the failed machine as Rack C (resolving the title) and confirm the shutdown through physical signs (LEDs off, drives still).
+style: Em-dash introducing the rack's name; the tripartite physical confirmation is procedural.
+continuity: Follows $n87350 and precedes $n93613. Introduces Rack C, connecting the title to the machine.
+
+$n93613
+text: The smell was the first thing: hot dust, and beneath it the faint sweet sharpness of hot plastic.
+intent: The olfactory evidence; hot dust and hot plastic is the signature of overheating; the smell is the narrator's first diagnostic clue.
+style: Colon introducing a two-layer smell; the specificity (sweet sharpness of hot plastic) is precise and diagnostic.
+continuity: Follows $n08857 and precedes $n31632. The smell is the first cause indicator.
+
+$n31632
+text: I had smelled it before, in other rooms, at other failures.
+intent: The smell is a recognized pattern from the narrator's past; it marks him as experienced and the failure as a known type.
+style: Short declarative; the repetition (other rooms, other failures) compresses his history.
+continuity: Follows $n93613 and precedes $n07315. The smell links this failure to his past.
+
+$n07315
+text: It is the smell of a machine that has been running hot in a room that has stopped being kind to it.
+intent: The narrator interprets the smell through personification (the room has stopped being kind); shows his superstitious perception applied to a mundane cause without naming the leaning.
+style: Personification with a gentle, almost tender register; the present tense gives it the force of a general truth.
+continuity: Follows $n31632 and precedes $n02377. The personification is the narrator's altered perception applied to the mundane.
+
+$n02377
+text: The air-conditioning unit in the corner was off.
+intent: Locate the failed component (the AC unit) and confirm it is off; the physical cause is now visible before it is proven.
+style: Short declarative; the corner location is concrete and inspectable.
+continuity: Follows $n07315 and precedes $n10016. Introduces the failed AC unit; the cause is visible.
+
+$n10016
+text: It was a small split system, the kind mounted on the wall of a room that was never meant to be a server room.
+intent: Characterize the AC as inadequate and improvised (a split system in a converted closet); establishes the fragility theme; the cooling was always marginal.
+style: The relative clause accumulates the improvisation; the inadequate cooling foreshadows the failure.
+continuity: Follows $n02377 and precedes $n69047. The fragile cooling is the setup for the crash.
+
+$n69047
+text: Its display showed an error code I did not recognize.
+intent: The error code is the first diagnostic clue from the AC unit; the narrator's non-recognition creates a small mystery he will resolve.
+style: Short declarative; the unrecognized code is a procedural hook.
+continuity: Follows $n10016 and precedes $n83334. The error code drives the verification.
+
+$n83334
+text: The compressor housing was cold — not cool, cold — and the refrigerant lines had equalized to the temperature of the room.
+intent: The physical evidence (cold compressor, equalized lines) proves the compressor stopped hours ago; the cause is demonstrated, not inferred.
+style: Em-dash correction (not cool, cold) for precision; the equalized refrigerant lines are a diagnostic detail.
+continuity: Follows $n69047 and precedes $n66174. The cold compressor is the physical proof of the failure.
+
+$n66174
+text: Whatever had failed, it had failed hours ago, and the room had been warming ever since.
+intent: Establish the failure's temporal distance (hours) and its continuous effect (warming ever since); sets up the reconstruction.
+style: The repetition (failed, failed hours ago) and the present-perfect (had been warming) compress causality.
+continuity: Follows $n83334 and precedes $n06246. Motivates the log reconstruction.
+
+$n06246
+text: I pulled the logs.
+intent: The pivot to the procedural reconstruction; the investigation now moves from physical evidence to logged evidence.
+style: Short declarative; the compression marks the shift from observation to analysis.
+continuity: Follows $n66174 and precedes $n11357. Opens the reconstruction beat.
+
+$n11357
+text: The BMC temperature curve showed a steady rise over four hours: 27°C at the inlet at 06:10, 31°C at 07:00, 38°C at 08:00, 45°C at the moment the sensors went dark.
+intent: The BMC temperature curve is the primary evidence; a steady, gradual rise to 45 degrees C; the four readings quantify the warming and demonstrate the mundane cause.
+style: Colon introducing a timestamped list of readings; the precision (06:10, 07:00, 08:00) is the procedural spine.
+continuity: Follows $n06246 and precedes $n28166. First log source (BMC); the 27-degree reading matches the ASHRAE recommended maximum.
+
+$n28166
+text: The kernel log showed the rest.
+intent: Transition to the second log source; the rest implies the BMC told only part of the story.
+style: Short declarative; the compression creates a beat before the kernel details.
+continuity: Follows $n11357 and precedes $n10913. Second log source (kernel).
+
+$n10913
+text: Thermal warnings from 07:20.
+intent: The kernel's first thermal events; the warnings mark the temperature crossing the first threshold.
+style: Fragment (no verb); the telegram style matches a log excerpt.
+continuity: Follows $n28166 and precedes $n81572. Correlates with the BMC rise.
+
+$n81572
+text: Throttling from 07:50, the CPU governor cutting frequency as the cores crossed 95°C.
+intent: The throttling is the kernel's protective response to the 95-degree threshold; performance degraded as the temperature rose.
+style: Fragment with an appositive clause; the 95-degree reading is the second thermal threshold.
+continuity: Follows $n10913 and precedes $n85167. The 95-degree throttle threshold is physically plausible.
+
+$n85167
+text: And then, at 08:47, a single line: `thermal_zone0: critical temperature reached, shutting down`.
+intent: The kernel's emergency shutdown line is the culmination; the critical temperature forced an ungraceful shutdown; this is the crash's mechanical cause.
+style: Colon introducing the quoted kernel line; the single-line emphasis makes the shutdown feel abrupt.
+continuity: Follows $n81572 and precedes $n70604. The 08:47 shutdown matches the monitoring alert at 08:52.
+
+$n70604
+text: I overlaid the two timelines on the page I had opened on the desk.
+intent: The narrator correlates the BMC curve with the kernel events; the correlation is the procedural demonstration that the mundane cause is complete.
+style: The physical notebook page contrasts with the digital logs; the overlay is the analytic act.
+continuity: Follows $n85167 and precedes $n19057. The correlation demonstrates the causal chain.
+
+$n19057
+text: Every warning had its temperature, and every throttling event had its cause.
+intent: The correlation is exact; each kernel event maps to a temperature on the BMC curve; the mundane cause is demonstrated, not asserted.
+style: Parallel structure (every/every) with a declarative close; the precision is the point.
+continuity: Follows $n70604 and precedes $n32788. Completes the demonstration.
+
+$n32788
+text: The shutdown was not graceful.
+intent: The ungraceful shutdown is the mechanism by which heat produces data loss; this sentence pivots from cause to consequence.
+style: Short declarative; the negation (not graceful) is the hinge of the case.
+continuity: Follows $n19057 and precedes $n48764. Introduces the consequences.
+
+$n48764
+text: The filesystem was not unmounted.
+intent: The first concrete consequence of the ungraceful shutdown; the filesystem requires journal recovery.
+style: Short declarative; the negation continues the not-graceful catalogue.
+continuity: Follows $n32788 and precedes $n89678. Consequence one.
+
+$n89678
+text: The database was not checkpointed.
+intent: The second consequence; the database will roll back to its last checkpoint, creating the data gap.
+style: Short declarative; parallel to the previous sentence.
+continuity: Follows $n48764 and precedes $n26749. Sets up the data loss.
+
+$n26749
+text: The machine simply stopped, without ceremony, in the middle of a transaction.
+intent: The shutdown's abruptness is felt; mid-transaction, without ceremony; echoes Case II's COMMIT hang motif.
+style: Without ceremony is a quiet personification; the mid-transaction detail makes the loss concrete.
+continuity: Follows $n89678 and precedes $n16727. The mid-transaction stop explains the corruption.
+
+$n16727
+text: I checked the error code against the manufacturer’s documentation.
+intent: The narrator verifies the AC error code against the manual; the cause is confirmed by reference, not assumption.
+style: Procedural declarative; the manufacturer's documentation is the authority.
+continuity: Follows $n26749 and precedes $n61074. Verifies the compressor failure.
+
+$n61074
+text: The code was three digits long, and the manual’s table gave it a single meaning: the compressor had failed, and the unit had shut itself down rather than keep pumping.
+intent: The error code's single meaning (compressor failure) removes ambiguity; the unit shut down rather than keep pumping, explaining why the room kept warming.
+style: Colon introducing the code's meaning; the single meaning is the verification.
+continuity: Follows $n16727 and precedes $n94546. Confirms the compressor failure unambiguously.
+
+$n94546
+text: The unit had died sometime before dawn, and the room had done the rest.
+intent: The compressor died before dawn; the room's warming is the AC's absence made causal; the room had done the rest compresses the four-hour chain.
+style: Personification (the unit had died) paired with a compressed causal clause; the mundane made vivid.
+continuity: Follows $n61074 and precedes $n54523. Fixes the failure time (before dawn).
+
+$n54523
+text: The causal chain was complete and ordinary: cooling failure, temperature rise, throttling, emergency shutdown.
+intent: The narrator states the full causal chain and labels it ordinary; the demonstration is complete and the mundane cause is proven.
+style: Colon introducing the four-link chain; complete and ordinary is the control's conclusion.
+continuity: Follows $n94546 and precedes $n87311. Summarizes the demonstrated chain.
+
+$n87311
+text: Every link was in the logs.
+intent: Each link of the chain is evidenced in the logs; the mundane cause is a conclusion, not a default.
+style: Short declarative; the compression makes the evidentiary claim absolute.
+continuity: Follows $n54523 and precedes $n78030. The evidentiary claim.
+
+$n78030
+text: Every link was physical.
+intent: Reinforce that the chain is mechanistic and inspectable, not inferential; rules out any non-physical explanation by evidence.
+style: Short declarative; parallel to the previous sentence.
+continuity: Follows $n87311 and precedes $n64618. The chain is physical.
+
+$n64618
+text: There was nothing in the chain that required an explanation more exotic than a broken machine in a hot room.
+intent: The narrator's finding; the mundane explanation is sufficient; this is the control's acceptance, stated as a result of the investigation, not as a strategy announcement.
+style: The comparative (more exotic than) and the plain noun phrase (a broken machine in a hot room) keep it procedural.
+continuity: Follows $n78030 and precedes $n17932. The control's conclusion; sets up the stakes.
+
+$n17932
+text: I powered the server on.
+intent: The recovery begins; powering on the server is the first recovery step.
+style: Short declarative; the compression marks the shift to recovery.
+continuity: Follows $n64618 and precedes $n12909. Opens the recovery beat.
+
+$n12909
+text: `fsck` found inconsistencies in the journal and fixed them.
+intent: The filesystem check confirms the ungraceful shutdown's damage; the journal inconsistencies are the corruption made visible.
+style: Backticked command; the procedural register.
+continuity: Follows $n17932 and precedes $n76418. First recovery step; confirms the corruption.
+
+$n76418
+text: The database recovered to its last checkpoint, six hours before the crash.
+intent: The database recovery creates the six-hour gap; the gap is the measure of the lost work.
+style: Short declarative; the six-hour gap is the stakes quantified.
+continuity: Follows $n12909 and precedes $n69685. Establishes the data gap.
+
+$n69685
+text: The recovery took most of an hour.
+intent: The recovery's duration adds realism and a pause before the gap is assessed.
+style: Short declarative; the temporal marker (most of an hour).
+continuity: Follows $n76418 and precedes $n56746. A pause before the gap.
+
+$n56746
+text: When it finished, the database was consistent, and the gap remained.
+intent: The database is repaired but the gap is permanent; the consistency is technical, the gap is human.
+style: The coordination (consistent, and the gap remained) holds the two facts in tension.
+continuity: Follows $n69685 and precedes $n56557. Confirms the gap is permanent.
+
+$n56557
+text: Most of it was routine — observation logs, scheduling entries, the daily instrument telemetry.
+intent: The lost work is mostly routine, which makes the one non-routine loss stand out; the routine items are concrete and mundane.
+style: Em-dash introducing the routine categories; the specificity grounds the loss.
+continuity: Follows $n56746 and precedes $n12193. Distinguishes routine from irreplaceable.
+
+$n12193
+text: One piece of it was not.
+intent: The pivot to the human stake; the withheld detail creates a beat before Ruth is introduced.
+style: Short declarative; the negation (was not) is the hook.
+continuity: Follows $n56557 and precedes $n03723. Introduces the irreplaceable loss.
+
+$n03723
+text: The work in the gap belonged to a postdoc named Ruth.
+intent: The lost work has a named bearer; naming her makes the loss human-faced and specific.
+style: Short declarative; the name is the point.
+continuity: Follows $n12193 and precedes $n25394. Introduces Ruth.
+
+$n25394
+text: She had been running a simulation for three days — a parameter sweep for a paper the group hoped to submit in the autumn — and the final run, the one that completed the sweep, had finished at 06:15 that morning.
+intent: The lost work is specified; a three-day simulation whose final run completed the sweep at 06:15, inside the gap; the autumn deadline gives it weight.
+style: Em-dashes introducing the sweep's purpose; the final-run detail makes the loss precise and irreversible.
+continuity: Follows $n03723 and precedes $n58921. The 06:15 finish is inside the 02:47-08:47 gap.
+
+$n58921
+text: The results existed only in the database.
+intent: The loss is total; no other copy; this is the irreversibility made explicit.
+style: Short declarative; only in the database is the total claim.
+continuity: Follows $n25394 and precedes $n93286. Establishes the loss is unrecoverable.
+
+$n93286
+text: When I told her, she did not say anything for a while.
+intent: Ruth's silence is the human reaction; the narrator reports it behaviorally, not interpretively.
+style: Short declarative; the silence is the first response.
+continuity: Follows $n58921 and precedes $n98593. The human-faced cost.
+
+$n98593
+text: She was standing in the doorway of the server room, still holding her coffee.
+intent: A small behavioral detail; the cold coffee, the doorway, makes the moment physical and real.
+style: The present-participle detail (still holding her coffee) freezes the scene.
+continuity: Follows $n93286 and precedes $n63204. Physicalizes the moment.
+
+$n63204
+text: Then she asked whether the backup was current.
+intent: Ruth's first question is procedural; she asks about the backup, the way an engineer would; shows her competence and her hope.
+style: Short declarative; the question is indirect (whether).
+continuity: Follows $n98593 and precedes $n55636. The backup question sets up the answer.
+
+$n55636
+text: It was not.
+intent: The backup is not current; the hope is withdrawn in two words.
+style: Two-word sentence; the brevity is the blow.
+continuity: Follows $n63204 and precedes $n67763. The hope is withdrawn.
+
+$n67763
+text: The last backup was four days old.
+intent: The backup's age quantifies the loss; even restoring it would not recover the simulation; the irreversibility is final.
+style: Short declarative; the four days is the measure.
+continuity: Follows $n55636 and precedes $n83566. The loss is final.
+
+$n83566
+text: She said she would rerun it.
+intent: Ruth's response is practical, not emotional; she will redo the work; the cost is time, not drama.
+style: Short declarative; the resolution is quiet.
+continuity: Follows $n67763 and precedes $n29472. The cost of redoing.
+
+$n29472
+text: Three days of compute, she said, and a week in the cluster queue.
+intent: The rerun's cost is quantified; three days of compute plus a week in the queue; the mundane consequence is real and proportional.
+style: The interjection (she said) inside the cost keeps it behavioral; the two-part cost is concrete.
+continuity: Follows $n83566 and precedes $n61885. The concrete cost.
+
+$n61885
+text: She said it the way you say the weather.
+intent: Ruth's calm is the emotional register; she reports the loss the way one reports an unavoidable natural fact; the narrator recognizes the proportion.
+style: Simile (the way you say the weather) that is behavioral, not interpretive.
+continuity: Follows $n29472 and precedes $n67924. Closes the human-cost beat.
+
+$n67924
+text: I wrote the case up that evening.
+intent: The narrator files the case; the filing is the control's completion.
+style: Short declarative; the evening marker closes the day.
+continuity: Follows $n61885 and precedes $n38372. Opens the control/residue beat.
+
+$n38372
+text: Cooling failure, thermal shutdown, data loss.
+intent: The case's filing summary; three plain terms; the mundane cause is recorded without commentary.
+style: Three-noun catalogue; the compression is the filing.
+continuity: Follows $n67924 and precedes $n36559. The case is filed correctly.
+
+$n36559
+text: The explanation was complete.
+intent: The narrator accepts the mundane explanation; this is the control's payoff; his method works and he files the case correctly.
+style: Short declarative; complete is the acceptance.
+continuity: Follows $n38372 and precedes $n56504. The acceptance.
+
+$n56504
+text: I checked the logs twice.
+intent: The residue shown behaviorally; the narrator re-checks the logs, unable to fully accept the boring answer; shows his private leaning without naming it.
+style: Short declarative; the second check is the tell.
+continuity: Follows $n36559 and precedes $n78369. Behavioral residue.
+
+$n78369
+text: I lingered in the room after I had finished, after the server was running again, in the heat that had not yet been repaired.
+intent: The narrator lingers in the unrepaired heat; the cause is still present and the fragility is unresolved; the residue is spatial and temporal.
+style: The layered after-clauses extend the lingering; the unrepaired heat is the fragility.
+continuity: Follows $n56504 and precedes $n89833. The lingering is the residue.
+
+$n89833
+text: It is a strange thing to be relieved by a broken air conditioner.
+intent: The narrator names the relief's strangeness without naming the disappointment; the residue is acknowledged but not explained.
+style: The impersonal construction (it is a strange thing) keeps it private and observational.
+continuity: Follows $n78369 and precedes $n38434. The relief plus residue.
+
+$n38434
+text: The margin between working and gone is measured in degrees, and I had spent the afternoon watching it close.
+intent: The fragility theme crystallized; the margin is degrees, and he watched it close; the dread is in the mundane cause's thoroughness.
+style: The concrete abstract (margin measured in degrees) and the closing image (watching it close) make the fragility felt.
+continuity: Follows $n89833 and precedes $n57225. Hands the fragility residue to the Coda.
+
+$n57225
+text: **Field Note #7.
+intent: The field note's marker; opens the case's aphoristic residue.
+style: Bold field-note header matching Cases I, IV, V, and VI.
+continuity: Follows $n38434 and precedes $n48840. Opens the field note.
+
+$n48840
+text: Horror, in our trade, is the margin—the few degrees and the few hours between working and gone.**
+intent: The field note distills the case's theme; the margin, measured in degrees and hours, is the horror; consistent with the collection's field-note aphorisms.
+style: Aphoristic, em-dash introducing the definition; the parallel (degrees and hours) compresses the theme.
+continuity: Follows $n57225 and precedes $n10969. Closes Case VII; the fragility residue carries to the Coda.
 
 $n10969
 text: The coda should make the reader recognize a changed way of perceiving ordinary systems, not simply restate a moral about uncertainty or limits of science.
 intent: Author-approved editorial direction for coda; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n23038 and precedes $n50030. This is revision guidance for coda, not a statement the narrator knows or says.
+continuity: Follows $n48840 and precedes $n50030. This is revision guidance for coda, not a statement the narrator knows or says.
 
 $n50030
 text: Leave readers with an embodied residue of fear and vulnerability as well as the narrator's continuing commitment to careful evidence.
@@ -4546,6 +4972,30 @@ text: Its origin was never established. ([BBC News][15]) ([ORF Wien][16])
 intent: State the unresolved origin; the absence of an origin mirrors the case's theme of absent causes; the citations anchor the fact.
 style: Short declarative with citations; the never-established origin as the factual parallel to the case's absent effects.
 continuity: Follows $n32543 and precedes $n54805. The never-established origin parallels the case's absent effects. The citations anchor the fact.
+
+$n19283
+text: 6. **Cooling-failure substrate for Case VII.**
+intent: Document the factual source boundary for Case VII's mundane substrate.
+style: Bold endnote header matching endnotes 1-5.
+continuity: Follows $n83447 and precedes $n68289. Anchors the real cooling-failure substrate.
+
+$n68289
+text: Case VII is a made-up story.
+intent: Distinguish the fictional reconstruction from the documented fact; the fiction label is explicit.
+style: Short declarative; matches endnote 5's Case II is a fictional composite.
+continuity: Follows $n19283 and precedes $n35109. The fiction/fact boundary.
+
+$n35109
+text: On 19 July 2022, during the United Kingdom’s record heat wave, a cooling failure at a Google Cloud data center in London took services offline; Google’s incident report attributed it to two chiller failures coupled with high ambient temperatures.
+intent: Anchor the made-up story in a documented real cooling failure; the 2022 London heat-wave outage; grounding the fictional case in real engineering practice.
+style: Documentary prose with a semicolon joining the event and its attributed cause; the date and location are specific.
+continuity: Follows $n68289 and precedes $n46025. The documented incident.
+
+$n46025
+text: ASHRAE’s thermal guidelines for data processing environments recommend a server inlet range of 18 to 27 °C. ([Google Cloud status][8]) ([ASHRAE Thermal Guidelines][9])
+intent: Anchor the thermal threshold in the real ASHRAE standard; the 27-degree recommended maximum matches the BMC curve's starting reading.
+style: Documentary prose; the links ground the endnote in primary sources.
+continuity: Follows $n35109 and precedes $n54805. The documented standard; the 27-degree reading matches the BMC curve.
 
 $n54805
 text: *(Selected entries above anchor the real incidents used in this dossier.
