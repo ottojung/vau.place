@@ -158,11 +158,17 @@ intent: Authorial must-have: require this wording, idea, or moral to be preserve
 style: Required wording or authorial constraint; preserve its distinctive phrasing when quoted and do not smooth away its intended force.
 continuity: Follows $n65527 and precedes $n36795. This is a live MUST HAVES constraint for preamble and must remain consistent with AGENTS.md and the Intent Records.
 
+$n43955
+text: *From the notebook of an investigator who kept what he could not explain*
+intent: Attribute the dossier to its keeper; the byline's relative clause states the collection's premise — the narrator kept what he could not explain — without naming the unexplained.
+style: Italic byline fragment; the relative clause is the thesis in miniature; the past tense 'kept' matches the notebook frame.
+continuity: Follows $n77735 and precedes $n36795. Fills the former <PLACEHOLDER/>; the byline's 'kept what he could not explain' is the dossier's motive in miniature and pays off the coda's closing image.
+
 $n36795
 text: Make the prologue establish why this particular investigator needs a dossier and why preserving uncertainty matters to him personally.
 intent: Author-approved editorial direction for prologue; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n77735 and precedes $n10022. This is revision guidance for prologue, not a statement the narrator knows or says.
+continuity: Follows $n43955 and precedes $n10022. This is revision guidance for prologue, not a statement the narrator knows or says.
 
 $n10022
 text: Introduce a faint but concrete anticipation of danger without prematurely telling readers that every unexplained failure is supernatural.
@@ -230,11 +236,17 @@ intent: Establish the dossier's four evidentiary categories—firsthand, secondh
 style: Semicolon list with a rising, accumulating cadence; grave and procedural rather than poetic.
 continuity: Follows $n89766 and precedes $n06836. Sets up the evidentiary weight distinctions the later cases rely on; plants the retold-stories motif the coda pays off.
 
+$n03597
+text: I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct.
+intent: Integrate the first MUST HAVE into the prologue: the future-tense specification as a promise the world may or may not keep; the narrator's younger self pretended the obedience was grammar, not something stranger.
+style: The MUST HAVE's exact phrasing in the narrator's voice; the sun-obeyed image is the collection's central metaphor in seed form; the past tense 'had written' marks the younger narrator.
+continuity: Follows $n47266 and precedes $n06836. The integrated form of MUST HAVES node $n65643; the future-tense habit it describes is paid off by $n06836 and by the coda's filter promise.
+
 $n06836
 text: I still write specifications in the future tense—the valve shall open only on command—as if the grammar were itself a promise.
 intent: Plant the future-tense habit that the preamble's must-have about promising the very sun depends on, and link it to the valve incident.
 style: Dry, faintly ironic procedural register; the example clause carries the superstition inside the engineering idiom.
-continuity: Follows $n47266 and precedes $n95933. Sets up the preamble must-have node $n65643 and recalls the valve of $n23064.
+continuity: Follows $n03597 and precedes $n95933. Sets up the preamble must-have node $n65643 and recalls the valve of $n23064.
 
 $n95933
 text: People ask if I believe in such things.
@@ -2982,11 +2994,17 @@ text: What is left is the gap, and the gap is where the case lives.
 intent: State the case's residue: what is left is the gap, and the gap is where the case lives.
 style: The sentence's final clause is the case's thesis; the gap is not a failure but the case's home.
 continuity: Follows $n35448 and precedes $n36014. The domestication gap is the case's horror; the reader cannot complete either story.
+$n65025
+text: And there are systems whose failure modes include poetry.
+intent: Integrate the fourth MUST HAVE into the case's close: the off-by-one's failure mode is named as poetry — the gap between the ordinary and supernatural stories is where the case lives, and the case's residue is a poetic failure mode.
+style: The MUST HAVE's exact phrasing as the case's final sentence; the aphoristic turn from the gap to poetry is the case's thesis; the sentence is the dossier's most explicit statement of its own subject.
+continuity: Follows $n14292 and precedes $n36014. The integrated form of MUST HAVES node $n77735; the poetry phrase is the case's residue and the collection's thesis in miniature.
+
 $n36014
 text: **Field Note #3.
 intent: Open the field note with its label.
 style: Field-note label in the dossier's established form, matching Field Note #1's structure.
-continuity: Follows $n14292 and precedes $n63596. The field note is the case's residue in the dossier's own apparatus.
+continuity: Follows $n65025 and precedes $n63596. The field note is the case's residue in the dossier's own apparatus.
 $n63596
 text: Some changes have no author.
 intent: State the field note's first sentence: some changes have no author.
@@ -3055,11 +3073,29 @@ intent: Author-approved editorial direction for Mercury; record the specific fut
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n54501 and precedes $n34176. This is revision guidance for Mercury, not a statement the narrator knows or says.
 
+$n69494
+text: Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.
+intent: Author-approved editorial direction for Mercury; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n85239 and precedes $n81847. This is revision guidance for Mercury, not a statement the narrator knows or says.
+
+$n81847
+text: **A cooperative clearing house, a settlement cycle, and a mirror.**
+intent: Open the case with a dateline in the dossier's established form; the three nouns name the institution, the mechanism, and the case's central image — the mirror of the reversed cycle.
+style: Bold fragment; the dateline matches the other cases' openings; the mirror is the case's central metaphor, named at the threshold.
+continuity: Follows $n69494 and precedes $n63653. The mirror image is paid off by the reversal mechanism and by the journal's forward-and-reverse interleaving.
+
+$n63653
+text: The Clearing House was not a bank.
+intent: Open the case with a negation that distances the institution from ordinary finance; the cooperative structure is the first fact.
+style: Short declarative; the negation is the case's first move — the institution is not what its name suggests.
+continuity: Follows $n81847 and precedes $n25761. The negation sets up the cooperative's modest scale and the settlement engine's fragility.
+
 $n25761
 text: It was a payments cooperative — eleven member firms, a server room above a shuttered print shop, and one engineer on call.
 intent: Ground the fiction in concrete physical detail: the number of members, the location above a closed business, the single on-call engineer.
 style: Em-dash expansion with specific, unglamorous detail; the shuttered print shop and single engineer establish modest scale.
-continuity: Follows the opening negation. The single on-call engineer sets up the operator character and the narrator's distance from the incident.
+continuity: Follows $n63653. The single on-call engineer sets up the operator character and the narrator's distance from the incident.
 
 $n67516
 text: The server room hummed at a pitch I could feel in my teeth when I visited years later, though by then the shop below had become a vape store and the cooperative had moved to a serviced office with better cooling.
@@ -3116,8 +3152,8 @@ style: Long sentence with em-dash parentheticals; the physical details (reams, p
 continuity: The three sources are now physically present: journal (machine record), ephemeris (astronomical record), operator's log (human record). The left-to-right arrangement is the investigation's method.
 
 $n59226
-text: The anchor incident occurred on the night of 19 July 2025.
-intent: Date the anchor incident precisely; 19 July 2025 falls inside the second Mercury retrograde window of 2025 (24 June – 7 August).
+text: The anchor incident occurred on the night of 19 March 2025.
+intent: Date the anchor incident precisely; 19 March 2025 falls inside the first Mercury retrograde window of 2025 (15 March – 7 April).
 style: Flat declarative with a specific date; the precision is the narrator's disciplined register at its most exact.
 continuity: The anchor incident is the case's central event. The date is inside a real Mercury retrograde window — the correlation begins here, stated as fact, not interpretation.
 
@@ -3446,10 +3482,10 @@ style: Em-dash expansion naming the specific source; 'the standard reference' es
 continuity: The source is named: JPL DE405 planetary ephemerides, the standard reference. This is the narrator's verification, stated as a procedural step.
 
 $n85876
-text: Mercury was in apparent retrograde from 29 January to 22 February 2025, from 24 June to 7 August 2025, from 24 October to 14 November 2025, from 31 January to 24 February 2026, from 30 March to 24 April 2026, and from 29 June to 6 August 2026.
+text: Mercury was in apparent retrograde from 15 March to 7 April 2025, from 18 July to 11 August 2025, from 9 November to 29 November 2025, from 26 February to 20 March 2026, from 29 June to 23 July 2026, and from 24 October to 13 November 2026.
 intent: List the specific retrograde windows with exact dates from the ephemeris.
 style: Long declarative listing six date ranges; the precision is the narrator's exact register. The dates are from the published ephemeris.
-continuity: The six retrograde windows are listed with exact dates. These are real, verifiable dates from the JPL DE405 ephemerides. The anchor incident (19 July 2025) falls inside the second window.
+continuity: The six retrograde windows are listed with exact dates. These are real, verifiable dates from the JPL DE405 ephemerides. The anchor incident (19 March 2025) falls inside the first window.
 
 $n60186
 text: Every reversal fell inside one of these windows.
@@ -3632,7 +3668,7 @@ style: Short declarative; 'kept reading' is the behavioral evidence of the narra
 continuity: The narrator's private leaning is behavioral: he keeps reading the log. This is the narrator's drift, shown not announced.
 
 $n23493
-text: There was an entry from July 2025 — the anchor incident — in which he had written: *I checked the ephemeris again.
+text: There was an entry from March 2025 — the anchor incident — in which he had written: *I checked the ephemeris again.
 intent: Quote the operator's log entry from the anchor incident: he checked the ephemeris and noted Mercury was retrograde.
 style: Em-dash parenthetical identifying the entry; the quotation is the operator's voice, not the narrator's. The italics mark it as a quotation.
 continuity: The operator's log entry is quoted. The operator checked the ephemeris and noted Mercury was retrograde — the operator's own correlation, stated in his own voice.
@@ -3710,10 +3746,10 @@ style: Compound with 'and that noticing did not stop me'; the self-awareness wit
 continuity: The narrator's self-awareness without correction is the drift's deepest point. He notices he is treating a planetary position as a scheduling input, and noticing does not stop him.
 
 $n26032
-text: The next retrograde window opens on 3 November 2026.
-intent: The next window is known and coming: 3 November 2026.
+text: The next retrograde window opens on 24 October 2026.
+intent: The next window is known and coming: 24 October 2026.
 style: Declarative with a specific future date; the window's imminence is the dread. The date is from the ephemeris.
-continuity: The next window is known and coming. The specific date (3 November 2026) makes the dread concrete — it will happen again, and everyone knows when.
+continuity: The next window is known and coming. The specific date (24 October 2026) makes the dread concrete — it will happen again, and everyone knows when.
 
 $n78087
 text: The settlement engine is still running.
@@ -3761,7 +3797,7 @@ $n98658
 text: I know the date.
 intent: The narrator knows the date: the next retrograde window's date is known.
 style: Short declarative; 'know the date' is the point. The date is known.
-continuity: The narrator knows the date. The next retrograde window's date is known — 3 November 2026.
+continuity: The narrator knows the date. The next retrograde window's date is known — 24 October 2026.
 
 $n96279
 text: I have always known the date.
@@ -3972,10 +4008,10 @@ style: Compressed procedural record; the zoo as institution.
 continuity: Follows the private-collection claim. The zoo denial is a factual checkpoint.
 
 $n76698
-text: The zoo had held a crocodilian once before, briefly, in 2001, when firefighters brought in a small caiman from the same canal [8].
+text: The zoo had held a crocodilian once before, briefly, in 2001, when firefighters brought in a small caiman from the same canal [15].
 intent: Anchor the fiction in documented precedent; the 2001 caiman is real and verifiable; the narrator's research demonstrates his competence.
 style: Procedural historical record with a citation; the specific year and detail (small caiman, same canal) make it concrete.
-continuity: Follows the zoo denial. The 2001 precedent is documented in endnote [8]. The narrator's research habit is on display.
+continuity: Follows the zoo denial. The 2001 precedent is documented in endnote [15]. The narrator's research habit is on display.
 
 $n30940
 text: A reptile specialist from the Haus des Meeres was called in to assist.
@@ -4313,17 +4349,11 @@ intent: The field note's aphorism; the clean failure is the absence made signifi
 style: Aphoristic field-note register; the em-dash introduces the definition; the legibility-as-evidence is the misalignment crystallized.
 continuity: Follows the field-note label. The aphorism follows the pattern of Field Note #1 ($n91668). The clean failure is the absence made significant. The legibility-as-evidence is the misalignment's crystallized form.
 
-$n74045
-text: Change the title to something more evocative.
-intent: Authorial task: record a concrete unresolved change that must be completed before the draft is finished.
-style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n99502 and precedes $n28696. This is a live FIXME constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
-
 $n28696
 text: Tell a made up story of how a server crashed due to environmental reasons, such as overheating or power failure.
 intent: Authorial directive for VII. A Natural, Boring Crash: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n93700 and precedes $n54730. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n19902 and precedes $n54730. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
 
 $n54730
 text: The story should emphasize that this is not a supernatural event, but rather a mundane one.
@@ -5093,11 +5123,17 @@ intent: The moral's fourth component: the blank line he just left; the unnamed n
 style: Imperative; concrete; the margin as deliberate practice.
 continuity: Follows $n15031 and precedes $n64745. Pays off $n96851; the blank line.
 
+$n67317
+text: I have become one of those people — like myself—skeptics who have seen just enough to be superstitious.
+intent: Integrate the third MUST HAVE into the coda's close: the narrator names his own transformation — he has become the skeptic who is superstitious; the em-dash construction 'like himself' is the MUST HAVE's exact phrasing.
+style: The MUST HAVE's exact phrasing as the coda's final self-description; the dash construction holds the contradiction (skeptic + superstitious) in one sentence; the present perfect 'I have become' is the transformation's completion.
+continuity: Follows $n73122 and precedes $n64745. The integrated form of MUST HAVES node $n65527; the transformation the whole dossier traces is named here, in the narrator's own voice, without announcement.
+
 $n64745
 text: I leave the dossier on the desk, the tape holding, the margin blank, the moth in the photograph still unconvinced.
 intent: The held final image: check + tape + blank + moth in one frame; the vulnerability embodied in the objects.
 style: The accumulation of concrete details; the final clause preserves the moth's refusal.
-continuity: Follows $n73122 and precedes $n75582. The held image; the motifs in one frame.
+continuity: Follows $n67317 and precedes $n75582. The held image; the motifs in one frame.
 
 $n75582
 text: The room runs on.
@@ -5271,9 +5307,9 @@ $n45429
 text: Debian's 2008 OpenSSL flaw reduced key generation to about 32,768 possible states, and weak keys persisted until the fix was deployed. ([DSA-1571][13]) ([CVE-2008-0166][14])
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n10539 and precedes $n57621. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+continuity: Follows $n10539 and precedes $n68901. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
-$n57621
+$n68901
 text: 8. **Documented precedent: a crocodilian in the Donaukanal.**
 intent: Anchor the fictional event in documented fact; the 2001 caiman is real and verifiable; the endnote is the factual substrate.
 style: Bold endnote heading fragment; documentary register.
@@ -5283,7 +5319,7 @@ $n32543
 text: In July 2001, Vienna firefighters caught a small spectacled caiman in the Donaukanal near the Erdbergbrücke and took it to Schönbrunn Zoo; the animal was later transferred to a zoo in Luxembourg, where it died of infection.
 intent: Document the real 2001 incident with specific detail; the firefighters, the caiman, the zoo, and the death are verifiable; the semicolon joins the capture and the fate.
 style: Documentary prose with precise measurements and institutions; the semicolon joins two clauses; the details are verifiable.
-continuity: Follows $n57621 and precedes $n99502. The 2001 incident is documented in sources [15] and [16]. The Erdbergbrücke and Schönbrunn Zoo connect to the case's geography.
+continuity: Follows $n68901 and precedes $n99502. The 2001 incident is documented in sources [15] and [16]. The Erdbergbrücke and Schönbrunn Zoo connect to the case's geography.
 
 $n99502
 text: Its origin was never established. ([BBC News][15]) ([ORF Wien][16])
@@ -5292,7 +5328,7 @@ style: Short declarative with citations; the never-established origin as the fac
 continuity: Follows $n32543 and precedes $n54805. The never-established origin parallels the case's absent effects. The citations anchor the fact.
 
 $n19283
-text: 6. **Cooling-failure substrate for Case VII.**
+text: 9. **Cooling-failure substrate for Case VII.**
 intent: Document the factual source boundary for Case VII's mundane substrate.
 style: Bold endnote header matching endnotes 1-5.
 continuity: Follows $n83447 and precedes $n68289. Anchors the real cooling-failure substrate.
@@ -5304,13 +5340,13 @@ style: Short declarative; matches endnote 5's Case II is a fictional composite.
 continuity: Follows $n19283 and precedes $n35109. The fiction/fact boundary.
 
 $n35109
-text: On 19 July 2022, during the United Kingdom’s record heat wave, a cooling failure at a Google Cloud data center in London took services offline; Google’s incident report attributed it to two chiller failures coupled with high ambient temperatures.
+text: On 19 July 2022, during the United Kingdom's record heat wave, a cooling failure at a Google Cloud data center in London took services offline; Google's incident report attributed it to two chiller failures coupled with high ambient temperatures.
 intent: Anchor the made-up story in a documented real cooling failure; the 2022 London heat-wave outage; grounding the fictional case in real engineering practice.
 style: Documentary prose with a semicolon joining the event and its attributed cause; the date and location are specific.
 continuity: Follows $n68289 and precedes $n46025. The documented incident.
 
 $n46025
-text: ASHRAE’s thermal guidelines for data processing environments recommend a server inlet range of 18 to 27 °C. ([Google Cloud status][8]) ([ASHRAE Thermal Guidelines][9])
+text: ASHRAE's thermal guidelines for data processing environments recommend a server inlet range of 18 to 27 °C. ([Google Cloud status][17]) ([ASHRAE Thermal Guidelines][18])
 intent: Anchor the thermal threshold in the real ASHRAE standard; the 27-degree recommended maximum matches the BMC curve's starting reading.
 style: Documentary prose; the links ground the endnote in primary sources.
 continuity: Follows $n35109 and precedes $n54805. The documented standard; the 27-degree reading matches the BMC curve.
