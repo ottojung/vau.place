@@ -434,7 +434,7 @@ Something with the same moral as "We live by the text; we survive by the small, 
 
 5. **Observation-sensitive Heisenbug substrate for Case II.** Case II is a fictional composite. Carson Ip documented a 2019 ProxySQL hang after large result sets where `strace`, `socat`, and added print statements suppressed the failure, while a slower client changed reproducibility. The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
 
-6. **Documented precedent: a crocodilian in the Donaukanal.** In July 2001, Vienna firefighters caught a 60–70 cm spectacled caiman in the Donaukanal near the Erdbergbrücke and took it to Schönbrunn Zoo; the animal was later transferred to a zoo in Luxembourg, where it died of infection. Its origin was never established. ([BBC News][8]) ([ORF Wien][9])
+6. **Documented precedent: a crocodilian in the Donaukanal.** In July 2001, Vienna firefighters caught a small spectacled caiman in the Donaukanal near the Erdbergbrücke and took it to Schönbrunn Zoo; the animal was later transferred to a zoo in Luxembourg, where it died of infection. Its origin was never established. ([BBC News][8]) ([ORF Wien][9])
 
 *(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
 
