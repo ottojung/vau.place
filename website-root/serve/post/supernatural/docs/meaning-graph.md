@@ -2983,7 +2983,7 @@ intent: State the case's residue: what is left is the gap, and the gap is where 
 style: The sentence's final clause is the case's thesis; the gap is not a failure but the case's home.
 continuity: Follows $n35448 and precedes $n36014. The domestication gap is the case's horror; the reader cannot complete either story.
 $n36014
-text: **Field Note #2.
+text: **Field Note #3.
 intent: Open the field note with its label.
 style: Field-note label in the dossier's established form, matching Field Note #1's structure.
 continuity: Follows $n14292 and precedes $n63596. The field note is the case's residue in the dossier's own apparatus.
@@ -3104,10 +3104,10 @@ style: Short declarative; the negation is the point. Creates source distance tha
 continuity: Follows the journal description. The narrator's absence is a design choice that preserves source reliability and sets up the operator's account.
 
 $n40833
-text: I was given the journal three years later, along with the operator's private log, by a manager who said the cooperative had never fully recovered from what the journal showed.
-intent: Establish the investigation frame: the narrator receives the journal and the operator's log three years after the incident.
+text: I was given the journal one year later, along with the operator's private log, by a manager who said the cooperative had never fully recovered from what the journal showed.
+intent: Establish the investigation frame: the narrator receives the journal and the operator's log one year after the incident.
 style: Long sentence with a relative clause that carries the manager's assessment; 'never fully recovered' is the manager's words, not the narrator's conclusion.
-continuity: The three-year gap establishes the investigation clock. The operator's private log is introduced here as a separate, less reliable source.
+continuity: The one-year gap establishes the investigation clock. The operator's private log is introduced here as a separate, less reliable source.
 
 $n50728
 text: The manager printed the journal for me — reams of timestamped lines, forward and reverse interleaved — and I spread it across my desk beside the ephemeris table I had printed that morning and the operator's paper log, which smelled faintly of the coffee shop where he had written it.
@@ -3116,8 +3116,8 @@ style: Long sentence with em-dash parentheticals; the physical details (reams, p
 continuity: The three sources are now physically present: journal (machine record), ephemeris (astronomical record), operator's log (human record). The left-to-right arrangement is the investigation's method.
 
 $n59226
-text: The anchor incident occurred on the night of 19 March 2025.
-intent: Date the anchor incident precisely; 19 March 2025 falls inside the first Mercury retrograde window of 2025 (15 March – 7 April).
+text: The anchor incident occurred on the night of 19 July 2025.
+intent: Date the anchor incident precisely; 19 July 2025 falls inside the second Mercury retrograde window of 2025 (24 June – 7 August).
 style: Flat declarative with a specific date; the precision is the narrator's disciplined register at its most exact.
 continuity: The anchor incident is the case's central event. The date is inside a real Mercury retrograde window — the correlation begins here, stated as fact, not interpretation.
 
@@ -3446,10 +3446,10 @@ style: Em-dash expansion naming the specific source; 'the standard reference' es
 continuity: The source is named: JPL DE405 planetary ephemerides, the standard reference. This is the narrator's verification, stated as a procedural step.
 
 $n85876
-text: Mercury was in apparent retrograde from 15 March to 7 April 2025, from 18 July to 11 August 2025, from 10 November to 30 November 2025, from 26 February to 21 March 2026, from 30 June to 24 July 2026, and from 24 October to 14 November 2026.
+text: Mercury was in apparent retrograde from 29 January to 22 February 2025, from 24 June to 7 August 2025, from 24 October to 14 November 2025, from 31 January to 24 February 2026, from 30 March to 24 April 2026, and from 29 June to 6 August 2026.
 intent: List the specific retrograde windows with exact dates from the ephemeris.
 style: Long declarative listing six date ranges; the precision is the narrator's exact register. The dates are from the published ephemeris.
-continuity: The six retrograde windows are listed with exact dates. These are real, verifiable dates from the JPL DE405 ephemerides. The anchor incident (19 March 2025) falls inside the first window.
+continuity: The six retrograde windows are listed with exact dates. These are real, verifiable dates from the JPL DE405 ephemerides. The anchor incident (19 July 2025) falls inside the second window.
 
 $n60186
 text: Every reversal fell inside one of these windows.
@@ -3632,7 +3632,7 @@ style: Short declarative; 'kept reading' is the behavioral evidence of the narra
 continuity: The narrator's private leaning is behavioral: he keeps reading the log. This is the narrator's drift, shown not announced.
 
 $n23493
-text: There was an entry from March 2025 — the anchor incident — in which he had written: *I checked the ephemeris again.
+text: There was an entry from July 2025 — the anchor incident — in which he had written: *I checked the ephemeris again.
 intent: Quote the operator's log entry from the anchor incident: he checked the ephemeris and noted Mercury was retrograde.
 style: Em-dash parenthetical identifying the entry; the quotation is the operator's voice, not the narrator's. The italics mark it as a quotation.
 continuity: The operator's log entry is quoted. The operator checked the ephemeris and noted Mercury was retrograde — the operator's own correlation, stated in his own voice.
@@ -3710,10 +3710,10 @@ style: Compound with 'and that noticing did not stop me'; the self-awareness wit
 continuity: The narrator's self-awareness without correction is the drift's deepest point. He notices he is treating a planetary position as a scheduling input, and noticing does not stop him.
 
 $n26032
-text: The next retrograde window opens on 24 October 2026.
-intent: The next window is known and coming: 24 October 2026.
+text: The next retrograde window opens on 3 November 2026.
+intent: The next window is known and coming: 3 November 2026.
 style: Declarative with a specific future date; the window's imminence is the dread. The date is from the ephemeris.
-continuity: The next window is known and coming. The specific date (24 October 2026) makes the dread concrete — it will happen again, and everyone knows when.
+continuity: The next window is known and coming. The specific date (3 November 2026) makes the dread concrete — it will happen again, and everyone knows when.
 
 $n78087
 text: The settlement engine is still running.
@@ -3761,7 +3761,7 @@ $n98658
 text: I know the date.
 intent: The narrator knows the date: the next retrograde window's date is known.
 style: Short declarative; 'know the date' is the point. The date is known.
-continuity: The narrator knows the date. The next retrograde window's date is known — 24 October 2026.
+continuity: The narrator knows the date. The next retrograde window's date is known — 3 November 2026.
 
 $n96279
 text: I have always known the date.
@@ -3770,10 +3770,10 @@ style: Short declarative with 'always'; the duration is the point. The knowledge
 continuity: The narrator has always known the date. The knowledge is not new, but its use has changed — it has become a scheduling input, which is the drift.
 
 $n19021
-text: **Field Note #2.
-intent: Label the second field note; the numbering continues from Field Note #1 in Case I.
+text: **Field Note #4.
+intent: Label the fourth field note; the numbering continues from Field Note #1 in Case I.
 style: Bold label; the numbering continues the dossier's field note pattern.
-continuity: Field Note #2 continues the dossier's field note pattern from Case I. The numbering is sequential.
+continuity: Field Note #4 continues the dossier's field note pattern from Case I. The numbering is sequential.
 
 $n75429
 text: The closer your model fits the world, the more the world will take issue.**
@@ -4302,10 +4302,10 @@ style: First-person declarative with a cannot-stop verb; the clean-that-was is t
 continuity: Follows the never-disturbed. The cannot-stop-thinking is the misalignment's final state. The clean is the absence as finding.
 
 $n44769
-text: **Field Note #6.
-intent: Introduce the field note; the number matches the case; the field note is the residue.
+text: **Field Note #5.
+intent: Introduce the field note; the number continues the dossier's sequence; the field note is the residue.
 style: Bold fragment; the field-note label.
-continuity: Follows the narrator's conclusion. The field note is the residue. The number matches Case VI.
+continuity: Follows the narrator's conclusion. The field note is the residue. The numbering is sequential.
 
 $n19902
 text: Horror, in our trade, is the clean failure—the one where the boundary of the damage is perfectly legible, and the legibility itself becomes the evidence.**
@@ -4764,10 +4764,10 @@ style: The concrete abstract (margin measured in degrees) and the closing image 
 continuity: Follows $n89833 and precedes $n57225. Hands the fragility residue to the Coda.
 
 $n57225
-text: **Field Note #7.
+text: **Field Note #6.
 intent: The field note's marker; opens the case's aphoristic residue.
-style: Bold field-note header matching Cases I, IV, V, and VI.
-continuity: Follows $n38434 and precedes $n48840. Opens the field note.
+style: Bold field-note header matching Cases I, III, IV, V, and VI.
+continuity: Follows $n38434 and precedes $n48840. Opens the field note. The numbering is sequential.
 
 $n48840
 text: Horror, in our trade, is the margin—the few degrees and the few hours between working and gone.**
