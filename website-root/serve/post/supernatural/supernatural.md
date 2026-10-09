@@ -42,7 +42,9 @@ Keep documented facts, fictional reconstruction, hypotheses, and impossible sugg
 <NOTE>
 Make the prologue establish why this particular investigator needs a dossier and why preserving uncertainty matters to him personally.
 Introduce a faint but concrete anticipation of danger without prematurely telling readers that every unexplained failure is supernatural.
-</NOTE>I was not trained for hauntings. I was trained for reproducibility, for test plans and postmortems, for the clean relief of a failing unit test that fails again in the same way. But the longer I have tended systems—their valves and logs, their hissing racks and their fragile promises—the more I have come to understand that what we write on paper is not what the air will carry.
+</NOTE>
+
+I was not trained for hauntings. I was trained for reproducibility, for test plans and postmortems, for the clean relief of a failing unit test that fails again in the same way. But the longer I have tended systems—their valves and logs, their hissing racks and their fragile promises—the more I have come to understand that what we write on paper is not what the air will carry.
 
 <PLACEHOLDER/>
 
@@ -82,7 +84,9 @@ Intensify the emotional stakes of an untraceable alteration to an election resul
 Let physical and bureaucratic details make the contradictory totals threatening instead of leaning on poetic descriptions of a bit flip or personifying the numerical anomaly.
 Preserve the younger narrator's skepticism and the later narrator's retrospectively unsettled memory while avoiding an explicit claim that a particle or a supernatural force caused the anomaly.
 Do not restore the removed conversation-quality billing digression; its separate joke interrupts the accumulated unease after the election account.
-</NOTE>I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late. In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
+</NOTE>
+
+I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late. In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
 
 The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling. The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs. The queue bends once before the till in an L-shape that keeps the doorway clear.
 
@@ -208,7 +212,6 @@ When he finished, the cafeteria had thinned and our coffee had gone cold. He mea
 
 At the time I heard an engineer's argument about preparation, nothing more. We do not fight the weather, he said; we prepare for it. The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
 
-
 I did not write a field note that afternoon. Years later, when I began the dossier, I put this under his story:
 
 **Field Note #1. Horror, in our trade, is the clean error—the one that leaves no prints.**
@@ -234,7 +237,9 @@ Make the practical consequences of a failed transaction and an unknowable failur
 Protect the line about disliking successful tests and the hesitation at 04:56; the moment when the narrator stops before attaching the tracer is his clearest conversion of suspicion into superstition.
 Do not claim that timing-sensitive concurrency has no ordinary explanation, and remember that the real ProxySQL source incident eventually had a technical cause.
 Let the terror consist in the narrator briefly acting as though the bug can notice him, despite knowing better, and avoid explicitly interpreting that gesture for the reader.
-</NOTE>At the time, I was doing reliability work for a small company whose application spent most of its life asking a database ordinary questions. Most nights, the failures were ordinary too: a full disk, a dead connection, a process that had simply run out of something.
+</NOTE>
+
+At the time, I was doing reliability work for a small company whose application spent most of its life asking a database ordinary questions. Most nights, the failures were ordinary too: a full disk, a dead connection, a process that had simply run out of something.
 
 That night, I was called because a `COMMIT` would sometimes not come back.
 
@@ -315,7 +320,8 @@ Then, add a legend that one of the developers saw a large, terrifying demon that
 
 Ideally, find a real world example of something extremely unlikely happening, and use that as the basis for the story.
 Anchor the highly improbable event in a credible technical substrate and give its consequences tangible human weight before the dream seems prophetic.
-Make the dream terrifying as an experience while preserving the possibility that its apparent prediction is retrospective pattern making rather than proof of a literal demon. </NOTE>
+Make the dream terrifying as an experience while preserving the possibility that its apparent prediction is retrospective pattern making rather than proof of a literal demon.
+</NOTE>
 
 ---
 
@@ -326,7 +332,8 @@ Tell a made up story of how actual Leprechaun from Irish folklore broke into the
 
 This should be a story told to us by as a legend. In that legend, somebody allegedly, saw an actual small man in green clothes with a red beard in the server room.
 Keep the folkloric sighting at the distance of reported operational legend rather than presenting it as something the investigator directly verifies.
-The case can be more extravagant than the early cases, but serious documentation, witnesses' reactions, and real consequences should give readers a reason to feel unsettled rather than merely amused.</NOTE>
+The case can be more extravagant than the early cases, but serious documentation, witnesses' reactions, and real consequences should give readers a reason to feel unsettled rather than merely amused.
+</NOTE>
 
 ---
 
@@ -339,7 +346,8 @@ Do not talk about solutions.
 The implication should be that the bug was a real thing, actually caused by Mercury being in retrograde.
 We'll retain skeptics by documenting the operational timeline with enough specificity that the causal inference feels like a temptation, not a writer’s decree.
 Let the operational timeline and escalating consequences make the astrological correlation emotionally tempting without describing Mercury as a confirmed cause.
-Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.</NOTE>
+Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.
+</NOTE>
 
 ---
 
@@ -366,7 +374,8 @@ Tell a made up story of how a server crashed due to environmental reasons, such 
 The story should emphasize that this is not a supernatural event, but rather a mundane one.
 This is a necessary palate cleanser, it shores up our credibility by reminding readers that not all anomalies are numinous.
 Give the mundane crash clear physical causes and, if useful, real human consequences so it remains a compelling story rather than a perfunctory reassurance.
-Preserve this case as an honest control sample that shows the narrator can still accept a sufficient ordinary explanation.</NOTE>
+Preserve this case as an honest control sample that shows the narrator can still accept a sufficient ordinary explanation.
+</NOTE>
 
 ---
 
@@ -375,7 +384,9 @@ Preserve this case as an honest control sample that shows the narrator can still
 <NOTE>
 The coda should make the reader recognize a changed way of perceiving ordinary systems, not simply restate a moral about uncertainty or limits of science.
 Leave readers with an embodied residue of fear and vulnerability as well as the narrator's continuing commitment to careful evidence.
-</NOTE><PLACEHOLDER/>
+</NOTE>
+
+<PLACEHOLDER/>
 
 <MUST HAVES>
 Something with the same moral as "We live by the text; we survive by the small, retold stories that help us decide which part of the text applies when the world grows strange. If you keep a dossier of your own, write in a hand you will recognize when you are older. Tape in what must be taped. Leave space in the margins for the things we still do not know how to name."
