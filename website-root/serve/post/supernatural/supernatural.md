@@ -323,6 +323,62 @@ Anchor the highly improbable event in a credible technical substrate and give it
 Make the dream terrifying as an experience while preserving the possibility that its apparent prediction is retrospective pattern making rather than proof of a literal demon.
 </NOTE>
 
+**A small hosting company, two rented halls.**
+
+The last line in my notebook before this case was the note I brought back from the night I could not catch the hang: *The thing hates to be watched*. It was still there, in ink, when I first heard the story I am about to set down, a story about a man who dreamed of a demon and a fleet of machines that turned out to be fewer than they seemed. I record the adjacency because it is true. I do not claim it means anything.
+
+I will not name the company. It was small, it leased racks in two rented halls, and it ran a few hundred servers for customers who never saw them. I came to it the way I come to most of these cases: after the fact, with the records already cold, to decide what could be established.
+
+The room had a name on the door and nothing else about it was distinctive. Two rows of racks faced each other across a cold aisle; the hot aisle behind them was loud with the fans. The door did not latch unless you lifted it. The fans ran at a pitch that changed with the load, so the room had a kind of weather, and it smelled of hot dust and, faintly, of ozone. The only lights anyone noticed were the machines' own — green and amber constellations that no one looked at twice.
+
+One of the developers stayed late that night, finishing a migration that should have been done by six. I have his account, and I have the line he wrote the next morning, and they are not the same document.
+
+Alone after the others had gone, he worked from a crash cart by the middle rack. The room at night had a different sound. With the building's people gone, the fans became the loudest thing in the world, and the cold aisle was colder than it was by day, when bodies and open doors kept it mild. He checked the time once and was surprised it was nearly three.
+
+He slept at the cart, or believed he did. What he reported is not a sequence but a set of certainties that arrived together.
+
+The room was the same room. The fans were the same fans. But the aisle had lengthened, and the racks on either side had grown taller without gaining height, the way a corridor grows in a house you have not visited since childhood. The cold was no longer cold; it was the pressure of something large standing very close. He could not turn his head. He knew, the way one knows a face in a dark doorway, that the room had an owner, and that he was the intruder in it. The lights went out in a wave from the far end, constellation by constellation, and did not come back.
+
+Something in the dark where the last lights had been said, without emphasis, that the server room was cursed. It did not explain. It did not threaten. The flatness was what stayed with him: the sentence was a fact being stated, the way you would state that the floor was load-bearing.
+
+He woke with his cheek on the crash cart and the fans still running. He lifted the door into its latch, then read the last twenty minutes of the system log, which showed nothing, which was the only thing it could show. He went home. He did not tell anyone for two days.
+
+On the second morning he wrote it down, because he did not want to carry it alone. What he wrote was not the version I have just given. What he wrote, in the team's chat, was: *bad dream about the racks last night. the room felt wrong. not sure i slept.* The chat service logs the timestamp. That line is the only part of this case fixed in writing before anything was found.
+
+The duplicate was found weeks later by an operations engineer doing an ordinary thing. She was adding a new machine to the fleet's internal configuration and pasting its host key into the file the team kept of machines it trusted. The line was already there. The key she was about to add was identical to one already present, under a different hostname, on a machine in the other hall.
+
+She checked the fingerprint against the machine in front of her, then against the machine in the other hall. They matched. She read both again, the way the clerk in Schaerbeek had read both totals. Nobody in the room said the word yet. There was no word for it that did not begin an incident.
+
+They compared the key bytes, not only the fingerprints, in case the fingerprints had collided — they cannot, but they compared the bytes. They checked the timestamps on both key files. They tried a third machine, then a fourth. The fourth was unique. The duplicate was real and it was specific.
+
+Here is what a shared host key means, before any of the rest of it. A host key is how a client knows which machine it is talking to. If two machines share the private half, then anyone holding that key can be either machine, and the client will not warn, because the client is seeing the key it has always seen. The fleet's trust is not a property of the machines; it is a property of the keys, and the keys had stopped being plural. If one machine was ever compromised, the compromise was already on both. If the shared key had been a TLS key or a signing key, the danger would not have stopped at impersonation. And no one could prove the key had never been used by someone else, because the only place that proof would live was the entropy state at first boot, and that state was gone.
+
+I did the arithmetic on the back of the same notebook. An Ed25519 public key is thirty-two bytes, two hundred and fifty-six bits. If a key is drawn uniformly from that space, the chance that a second, specified machine reproduces the first is one in two to the two hundred and fifty-sixth, about eight point six times ten to the minus seventy-eighth. I did not need the exact figure. I needed its shape. The observable universe holds on the order of ten to the eightieth atoms and has existed for about four times ten to the seventeenth seconds. An event at ten to the minus seventy-eighth is not rare. It is outside the reach of chance by dozens of orders of magnitude. I wrote that down and underlined it, and then I wrote the sentence I did not want to write: chance is not the explanation.
+
+One of the engineers proposed the explanation the case is usually filed under. Maybe it was a hash collision, he said — an MD5 collision, the classic impossible thing. I understood the impulse; it is the example everyone reaches for. It is also the wrong shape. Practical MD5 collisions are not accidents; they are constructed, by people who want them, and by 2014 one could be produced for the price of a long lunch on a single rented GPU. An MD5 collision that merely happened would be evidence of a hidden cause, not of chance. And no accidental cryptographic collision has ever been observed at all. The duplicate was not a hash collision. It was worse, because it was real.
+
+The explanation, when it came, was mundane and sufficient. The key had almost certainly never been drawn from that space at all. Either it had been baked into the machine image, so that every machine built from that image inherited it, or the first boot had drawn it from an entropy pool that was not yet seeded — the boot-time hole in the Linux random number generator, documented for years, and worst on headless and virtualised machines that have no hardware random source and no disk activity to stir the pool. In either case there had been no coincidence. Two machines had not independently chosen the same secret. A hidden process had removed the choice.
+
+The engineers had a name for that class of bug, which I will use once and then leave alone. They called it Maxwell's demon, after the thought experiment in which a small intelligence sorts fast molecules from slow ones and creates order where there should be none. It is a fair name for a process that makes the unlikely certain. The physicists' answer to the demon is that the sorting is never free: the order is paid for somewhere the ledger cannot see. So it was here. The price of the duplicate key was the individuality of every machine that carried it, paid at provisioning and recorded nowhere.
+
+The mechanism was sufficient, and it did not fit cleanly. Three things would not sit down.
+
+The first was that only the Ed25519 key was duplicated. The RSA, ECDSA, and DSA host keys on the same two machines were unique. A wholesale image clone — the obvious story — would have duplicated all of them. The duplicate was specific to one algorithm, which is not how a copied image behaves, and not how a fresh key generation behaves either.
+
+The second was the timestamps. The file time on the duplicated key said it had been generated at install. The package history and the image manifest said the algorithm that generated it had been present in the image before either machine was ordered. The two records disagreed about when the key had come into being.
+
+The third was that the machines had never been clones. They stood in different halls, were ordered in different quarters, and were built for different roles. The team's whole mental model was that each machine was its own. The duplicate did not falsify that model so much as reveal that the model had never been checked.
+
+When I looked, the condition was everywhere. Between April and December 2015, Hetzner's preinstallation images shipped with a shared Ed25519 host key; the same fingerprint appeared on unrelated customers' servers, and the provider warned them of a man-in-the-middle risk. Identically configured network routers and appliances have generated the same SSH private key when their entropy was starved, especially on units with no real disk to stir the pool. A 2025 survey of one hosting provider found four hundred and seventy-eight distinct `ssh-rsa` host keys across nearly thirty thousand listeners, with a single key served by more than ten thousand addresses. In 2012, Lenstra and others collected RSA moduli from the web and found that roughly two in a thousand shared a prime factor with another modulus — an event whose probability under true randomness is small enough that it should never have been observed once. Heninger and others, the same year, found the same class of failure across the network and traced much of it to that boot-time entropy hole. In 2008, a one-line change to Debian's OpenSSL had reduced the generator to about thirty-two thousand possible states, and keys collided across the world for two years. One cursed room was a worldwide condition, and had been for as long as machines had been trying to be random.
+
+The dream came back to me near the end, the way an unclosed bracket comes back. Someone on the team mentioned it, and by then it had grown. The chat line — *bad dream about the racks* — had become, in the retelling, a large demon that stood at the end of the cold aisle and told the night developer the room was cursed. I put the two versions side by side. The written record is four lines and names nothing. The retelling is specific: a figure, the dark, the sentence. The specificity is exactly what the written record lacks, and exactly what hindsight would supply.
+
+I have not decided. I can rule out chance, and I have; I can name the mechanism, and I have; I can show that the mechanism is sufficient, and it is. None of that touches the dream, because the dream does not have to be true to have been written first, and being written first does not make it true.
+
+I computed the probability a second time, on a different day, as if I expected a different answer. It was the same. I noticed that I had begun to say the word *demon* aloud, in the same tone I use for *race condition*, and that I did not stop.
+
+**Field Note #2. The machines were never as many as they looked. I keep the terse version and the rich one in the same folder.**
+
 ---
 
 ### IV. The Leprechaun of Off-by-One
@@ -406,6 +462,8 @@ Something with the same moral as "We live by the text; we survive by the small, 
 
 5. **Observation-sensitive Heisenbug substrate for Case II.** Case II is a fictional composite. Carson Ip documented a 2019 ProxySQL hang after large result sets where `strace`, `socat`, and added print statements suppressed the failure, while a slower client changed reproducibility. The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
 
+6. **Duplicate SSH host keys and weak key generation (Case III).** The fictional fleet is a composite; the phenomena are documented. Hetzner's preinstallation images contained a shared Ed25519 host key between April and December 2015. ([hannob/ed25519hetzner][8]) ([intevation][9]) A 2025 survey of one hosting provider found 478 distinct `ssh-rsa` host keys across 29,776 listeners, with a single key served by more than 10,000 addresses. ([APNIC][10]) Lenstra et al. (2012) found that roughly two in a thousand RSA moduli collected from the web shared a prime factor with another modulus. ([IACR ePrint 2012/064][11]) Heninger et al. (2012) found the same class of failure at Internet scale and traced much of it to a boot-time entropy hole in the Linux random number generator. ([USENIX Security 2012][12]) Debian's 2008 OpenSSL flaw reduced key generation to about 32,768 possible states, and weak keys persisted until the fix was deployed. ([DSA-1571][13]) ([CVE-2008-0166][14])
+
 *(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
 
 [1]: https://americanhistory.si.edu/collections/object/nmah_334663 "Log Book With Computer Bug"
@@ -415,5 +473,12 @@ Something with the same moral as "We live by the text; we survive by the small, 
 [5]: https://github.com/sysown/proxysql/issues/1939 "ProxySQL issue #1939"
 [6]: https://carsonip.me/posts/fixing-proxysql-idle-threads-epoll-hang-heisenbug/ "Fixing ProxySQL Idle Threads Epoll Hang Heisenbug"
 [7]: https://github.com/sysown/proxysql/pull/1952 "ProxySQL PR #1952"
+[8]: https://github.com/hannob/ed25519hetzner "Script to scan for shared Ed25519 host keys from Hetzner"
+[9]: http://blogs.intevation.de/thomas/hetzner-duplicate-ed25519-ssh-host-keys/ "Hetzner duplicate Ed25519 SSH host keys"
+[10]: https://blog.apnic.net/2025/12/18/journeys-in-hosting-1-x-precomputed-ssh-host-keys "Journeys in hosting 1/x — Precomputed SSH host keys"
+[11]: https://eprint.iacr.org/2012/064 "Ron was wrong, Whit is right (Lenstra et al., 2012)"
+[12]: https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/heninger "Mining Your Ps and Qs (Heninger et al., USENIX Security 2012)"
+[13]: https://www.debian.org/security/2008/dsa-1571 "DSA-1571-1: openssl — predictable random number generator"
+[14]: https://www.cve.org/CVERecord?id=CVE-2008-0166 "CVE-2008-0166"
 
 ---
