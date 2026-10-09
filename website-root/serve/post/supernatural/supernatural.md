@@ -238,11 +238,15 @@ Do not claim that timing-sensitive concurrency has no ordinary explanation, and 
 Let the terror consist in the narrator briefly acting as though the bug can notice him, despite knowing better, and avoid explicitly interpreting that gesture for the reader.
 </NOTE>
 
-At the time, I was doing reliability work for a small company whose application spent most of its life asking a database ordinary questions. Most nights, the failures were ordinary too: a full disk, a dead connection, a process that had simply run out of something.
+At the time, I was doing reliability work for a small company whose application spent most of its life asking a database ordinary questions. The heating had clicked off for the night, and the room had settled around the temperature of the racks, warm behind the servers and cold at my desk. Through the window the quay light lay on the floor in a colour the day never used. A draught from the door kept finding my ankles. Most nights, the failures were ordinary too: a full disk, a dead connection, a process that had simply run out of something.
 
 That night, I was called because a `COMMIT` would sometimes not come back.
 
+An earlier entry in my notes had ended with the failure taped into a logbook: a moth, pulled from a relay. This one refused the tape.
+
 This was not a complicated transaction. The application had read a little over a thousand rows through a database proxy over a Unix-domain socket and then asked to commit an otherwise empty transaction. Under production load, one greenlet would occasionally stop there and remain stopped, waiting on the file descriptor as if the other side had forgotten it.
+
+What the application was writing that night was small: an order, a fulfilment, a line in the ledger recording that a customer's goods were promised and paid for. When the commit came back, the application knew the write had landed. When it did not, the application could not tell whether the line was in the database or had never been written. Retry the request and the same order might be written twice, the customer charged twice. Do not retry, and the order might be missing, and a missing order in a small company is a customer telephone call with no good answer. It was the kind of company that could not afford a second night like this one.
 
 The first occurrence looked like networking. The second looked like the client library. By the third, we had replaced enough pieces that the shape of the failure had become more interesting than any one suspect.
 
@@ -268,9 +272,11 @@ We removed it.
 
 The hang returned.
 
-There were plenty of ordinary mechanisms left to blame: scheduling, syscall boundaries, queue occupancy, buffering, the proxy's own state machine. We began changing one thing at a time, carefully, because every change had acquired a second meaning. It was either an experiment or another way of warning the failure that we were there.
+There were plenty of ordinary mechanisms left to blame: scheduling, syscall boundaries, queue occupancy, buffering, flow control, the proxy's own state machine. We began changing one thing at a time, carefully, because every change had acquired a second meaning. It was either an experiment or another way of warning the failure that we were there.
 
 We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me.
+
+The vending machine in the corridor had been humming its one note all night.
 
 At 03:20 I copied the useful part of the night into a table:
 
@@ -285,7 +291,7 @@ At 03:20 I copied the useful part of the night into a table:
 
 I had intended the table to calm me. Instead, it made the pattern look cleaner than it had felt while we were producing it.
 
-I left a seventh row blank for the run that would finally fail while we were collecting enough evidence to explain it. At 03:47 the row was still blank. At 04:12 it was still blank. I stopped checking the time as often.
+I left a seventh row blank for the run that would finally fail while we were collecting enough evidence to explain it. At 03:47 the row was still blank. At 04:12 it was still blank. I stopped checking the time as often. My coffee had gone cold where it stood.
 
 What I wanted was one ordinary artifact: the final syscall, a queue transition, a timeout, a bad state we could point to after the fact. Each attempt to obtain one changed the conditions just enough that the failure moved elsewhere, and the evidence left behind was evidence of its absence.
 
@@ -301,11 +307,11 @@ One of the others asked what I was waiting for.
 
 It showed a process already asleep in the expected wait. It told us where the body lay, not how it had fallen.
 
-By 05:18 the production traffic had thinned and reproduction slowed with it. We stopped because a night shift can end without an investigation ending.
+By 05:18 the production traffic had thinned and reproduction slowed with it. With the traffic gone, the room came back to us: the fans settling into a lower gear, a chair leg ticking as the building cooled, one of the others asleep under his coat. We stopped because a night shift can end without an investigation ending.
 
-Nothing was fixed. We had only learned which forms of attention the failure appeared to tolerate.
+Nothing was fixed. The day shift would come in to machines we could not vouch for. We had only learned which forms of attention the failure appeared to tolerate.
 
-In the morning, I wrote my note: *The thing hates to be watched*.
+In the morning, when the first ferry's horn sounded, I wrote my note: *The thing hates to be watched*.
 
 ---
 
