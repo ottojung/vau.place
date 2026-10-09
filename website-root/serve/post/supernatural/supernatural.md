@@ -386,7 +386,27 @@ The coda should make the reader recognize a changed way of perceiving ordinary s
 Leave readers with an embodied residue of fear and vulnerability as well as the narrator's continuing commitment to careful evidence.
 </NOTE>
 
-<PLACEHOLDER/>
+At night, when the building has emptied, I work in a room of ordinary systems, and I no longer take them for granted. I used to find the green lights reassuring. The fans hold their curves. The switch stack blinks in patterns I once set my watch by. An hour of green lights is a good hour, and I have learned to distrust the good ones.
+
+The dossier is on the desk where I keep it. The tape has yellowed, the margins have narrowed, and the hand it is written in is older now; I still recognize it. The pages are soft at the corners from handling. It is a letter to the man I am becoming, and to anyone who reads it after me. I open it from the front, the way I open a log. Beside it lies the folder *Proofs I Do Not Argue With*—a moth, taped to an engineering log in 1947, beside the first actual bug. It has always looked unconvinced.
+
+The tokens are where I left them, and I check that they are there. A notebook page with *timing* underlined twice. A fingerprint card: two machines, one secret. A legend taken down secondhand—a small man in green, a bound moved by one. A clipping, folded twice, about a crocodile in Vienna. A heat log: a server dead of a warm week. I do not read them. It is a check like any other, and it is not one at all.
+
+Tonight's entry is ordinary. The power supply in rack C runs 1.8 degrees warmer than its twin; both are within specification. The difference is measured; the cause—dust, or position in the aisle, or the fan curve—is inferred; the remedy is scheduled. I write the candidates apart from the reading, because the word *likely* is load-bearing and I spend it once. The filter is due on the nineteenth, and I write it in the future tense, as if a promise: on the nineteenth, the filter will be changed. I am careful not to break it.
+
+Last month a server died of heat. A warm week, a clogged filter, a fan that failed slow and legible, the way paper fails. I wrote *ambient* in the log and closed the case. There was no second look, no margin, no note. Some failures are boring, and I can still accept one.
+
+Beside the dossier, an almanac my method does not require. One date next month is ringed, without cause. I do not consult it. I know that it is there.
+
+At 03:12 I make the last entry, in the hand I will recognize. **Field Note (last). Care, in our trade, is the kept margin—the one that leaves room.** From the folder, I take the moth photograph and tape it in beside the note, the moth and the margin together on the page. The entry has a last line—the bottom margin of the page, where the next note would begin, or a name would go. I put the pen to it and stop.
+
+The fan in rack C changes pitch, and holds it. I do not look up. I do not write it down. I set the pen down and close the dossier.
+
+The stories do not keep us safe; they keep us attentive. We live by the text. We survive by the small, retold stories that help us decide which part of the text applies when the world grows strange. If you keep a dossier of your own, write in a hand you will recognize when you are older. Tape in what must be taped. Leave space in the margins for the things we still do not know how to name.
+
+I leave the dossier on the desk, the tape holding, the margin blank, the moth in the photograph still unconvinced.
+
+The room runs on.
 
 <MUST HAVES>
 Something with the same moral as "We live by the text; we survive by the small, retold stories that help us decide which part of the text applies when the world grows strange. If you keep a dossier of your own, write in a hand you will recognize when you are older. Tape in what must be taped. Leave space in the margins for the things we still do not know how to name."
