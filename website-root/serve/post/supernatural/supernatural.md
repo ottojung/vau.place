@@ -361,6 +361,34 @@ Keep the serious procedural account of Vienna's disruption and the narrator's mi
 Some reference: https://chatgpt.com/share/68f3eeb1-c1c0-800e-b09b-e2ee25ddbf47
 </NOTE>
 
+**Vienna, in the third week of June.**
+
+I first heard about it on a Wednesday morning, the way I hear about most things now: a message from a colleague, forwarded without comment, containing a link to a local news site and the single word *crocodile*. The link led to a photograph taken from the Donaukanal promenade — a dark shape, perhaps two meters long, lying on the stone embankment where the canal bends past the Urania. The caption said a crocodile had been spotted in the water during the night. The police had closed the canal path. I read the article twice, the way I read incident reports, looking for the part that mattered.
+
+Then I began to do what I always do. I opened a new page in my notebook and wrote the date, the location, and the timeline as far as it had been reported. 06:40, a dog walker saw something dark moving against the current near the Stadtpark bridge. 07:15, she called the police. 07:50, the first patrol cordoned the path between the Urania and the park. By 08:30 the canal was closed to pedestrians and cyclists from Schwedenplatz to the Heumarkt. The police issued a warning: keep children away from the water, keep dogs on a lead, do not approach the animal. Animal control was en route. I noted each timestamp in order, the way I would note the stages of a deploy.
+
+The Donaukanal is not a wilderness. It is a canalized branch of the Danube, seventeen kilometers long, running through the center of the city, and on a June morning its promenade is one of the busiest corridors in Vienna: joggers, cyclists, commuters on the paths between the U1 and the U4, dog walkers, students, the early shift of the café terraces that line both banks. Closing it was not a small thing. I found the transport advisory: tram lines 1 and 2 diverted, the U1 station at Schwedenplatz exit-only, a shuttle bus laid on between Stubentor and Urania. A primary school cancelled a planned canal walk. A café near the Stadtpark bridge closed its terrace for the day. A woman told a reporter that she had turned back with her dog and walked an extra twenty minutes to the next bridge. None of this is dramatic. It is what happens when a two-meter crocodile is lying in the water that runs through the middle of a European capital.
+
+By noon the animal had been identified: a Nile crocodile, *Crocodylus niloticus*, an adult male, approximately two and a half meters, of a kind that does not belong in the Danube or any of its canals. The police said it had almost certainly escaped from a private collection. Schönbrunn Zoo denied any escape. The zoo had held a crocodilian once before, briefly, in 2001, when firefighters brought in a small caiman from the same canal [8]. A reptile specialist from the Haus des Meeres was called in to assist. I documented all of this with the same care I gave to the Schaerbeek election: the who, the what, the when, the authority involved. I was doing good work. I knew I was doing good work.
+
+That afternoon, while the crocodile was still in the canal and the path was still closed, I asked the question I always ask: what systems were affected? I started with my own company's status page. Green. I checked the error rate on the European endpoints: normal. I checked the incident log: nothing. I moved to the public status pages of the three major cloud providers. AWS: no ongoing incidents in any region that served our traffic. GCP: all systems operational. Azure: no active service issues. I checked the monitoring dashboard I keep open on my second screen — the one with the latency graphs and the error budget and the slow green pulse of a system behaving exactly as it should. All green. I checked the uptime monitors for the CDN, the DNS provider, and the two SaaS tools my team depended on. Nothing. I wrote each result down in my notebook, in a column, with the time I checked it: 14:02, 14:05, 14:11, 14:18.
+
+This was the correct procedure. When a system fails, you establish the blast radius. You identify which services were affected, which regions, which dependencies. You document what is broken and what is not. You build the map of the failure before you look for its cause. I have done this a hundred times. I was doing it now.
+
+The map I built showed a large failure with a very clean boundary. The crocodile had disrupted a city. It had closed a canal, diverted trams, sent a school group home, emptied a café terrace, and drawn a crowd of onlookers behind police tape with their phones out. It had disrupted none of the American software systems I depended on, or monitored, or had ever investigated. Not one. I checked again at 16:40. I checked the next morning, Thursday, at 09:15, while the animal control team was still searching the canal bank near the Stadtpark for a place the crocodile might have hauled out overnight. Green. Green. Green.
+
+I wrote the following in my notebook that morning, because I believed it to be important:
+
+The event was contained. Not the crocodile — he was still at large, still a threat to the dog walkers and the canal path — but the disruption. The disruption had stopped at the water's edge. It had not crossed the Atlantic. It had not touched the systems I was watching, the systems I would have watched if they had failed, the systems whose logs I read every morning like a physician reading a chart. The absence of a transatlantic effect was not a null result. It was a clean result. And a clean result, in my experience, is the kind that means something.
+
+I have thought about this for two days. I have checked the systems four more times. The crocodile was captured on Thursday evening, alive, by the reptile specialist and two police divers, and taken to Schönbrunn Zoo, where it remains. The canal path reopened on Friday. The trams resumed their normal route. The woman with her dog walks a different way now, but she walks. The city absorbed the event and moved on.
+
+The systems did not. The systems were never disturbed. And I cannot stop thinking about how clean that was.
+
+---
+
+**Field Note #6. Horror, in our trade, is the clean failure—the one where the boundary of the damage is perfectly legible, and the legibility itself becomes the evidence.**
+
 ---
 
 ### VII. A Natural, Boring Crash
@@ -406,6 +434,8 @@ Something with the same moral as "We live by the text; we survive by the small, 
 
 5. **Observation-sensitive Heisenbug substrate for Case II.** Case II is a fictional composite. Carson Ip documented a 2019 ProxySQL hang after large result sets where `strace`, `socat`, and added print statements suppressed the failure, while a slower client changed reproducibility. The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
 
+6. **Documented precedent: a crocodilian in the Donaukanal.** In July 2001, Vienna firefighters caught a 60–70 cm spectacled caiman in the Donaukanal near the Erdbergbrücke and took it to Schönbrunn Zoo; the animal was later transferred to a zoo in Luxembourg, where it died of infection. Its origin was never established. ([BBC News][8]) ([ORF Wien][9])
+
 *(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
 
 [1]: https://americanhistory.si.edu/collections/object/nmah_334663 "Log Book With Computer Bug"
@@ -415,5 +445,7 @@ Something with the same moral as "We live by the text; we survive by the small, 
 [5]: https://github.com/sysown/proxysql/issues/1939 "ProxySQL issue #1939"
 [6]: https://carsonip.me/posts/fixing-proxysql-idle-threads-epoll-hang-heisenbug/ "Fixing ProxySQL Idle Threads Epoll Hang Heisenbug"
 [7]: https://github.com/sysown/proxysql/pull/1952 "ProxySQL PR #1952"
+[8]: https://news.bbc.co.uk/2/hi/europe/1447272.stm "Crocodile scooped from Danube"
+[9]: https://wien.orf.at/v2/news/stories/2547161/ "Auch Wien hatte schon sein Krokodil"
 
 ---
