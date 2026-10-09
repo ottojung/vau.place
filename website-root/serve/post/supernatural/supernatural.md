@@ -46,16 +46,15 @@ Introduce a faint but concrete anticipation of danger without prematurely tellin
 
 I was not trained for hauntings. I was trained for reproducibility, for test plans and postmortems, for the clean relief of a failing unit test that fails again in the same way. But the longer I have tended systems—their valves and logs, their hissing racks and their fragile promises—the more I have come to understand that what we write on paper is not what the air will carry.
 
-<PLACEHOLDER/>
+Once I specified a valve on a line that was closed for maintenance. It opened at a quarter to five, with no command in the log, into the stretch of pipe a fitter had his hands in; the report called it a near miss, because he happened to be reaching for a spanner and not for the valve. I was at my desk, reading back the procedure for that valve—the exact page—when it opened; I looked up because the air had gone flat. The telephone rang a moment later, and I have not entirely stopped hearing it.
 
-I began to keep a dossier. Not a taxonomy—God preserve me from one more axis—but a sheaf of field notes: cases gathered from labs and basements, control rooms and attics <PLACEHOLDER/>. A few I saw myself; others I learned from steadier hands who were there before me 
+I began to keep a dossier. Not a taxonomy—God preserve me from one more axis—but a sheaf of field notes: cases gathered from labs and basements, control rooms and attics, from the sub-basement under a turbine hall to a locked cabinet in a newspaper morgue. A few I saw myself; others I learned from steadier hands; some arrived as stories retold until their authors had worn off; and a few I have had to reconstruct from records that disagreed with each other. I still write specifications in the future tense—the valve shall open only on command—as if the grammar were itself a promise.
 
-<PLACEHOLDER/>
+People ask if I believe in such things. I tell them what I keep and how I keep it: the hand I write in, so that I will recognize it when I am older; the pages I tape in beside the record, giving each failure a name; the margins I leave empty for what I do not yet know how to name. I have caught myself reading a log twice when once would do, as if the second look were the one that counted. And when the moment comes to attach the instrument, my hand sometimes stops above the key, and I have learned not to ask it why.
 
-<MUST HAVES>
-"People ask if I believe in such things."
-"Read them so that when the world leans on your specification, you recognize the weight."
-</MUST HAVES>
+On the first page I set down a line for whoever I would be when I read it back. *Read them so that when the world leans on your specification, you recognize the weight.* You can feel it in a good postmortem—the paper going load-bearing, the procedure holding up a thing that wanted to fall. I keep the dossier because I no longer trust that writing the procedure correctly is enough to keep the world from leaning anyway.
+
+The first thing I put in the dossier was not the first incident; it was the first one I could tell straight, and I could tell it straight because I did not yet know what I was looking at.
 
 ---
 
@@ -405,6 +404,8 @@ Something with the same moral as "We live by the text; we survive by the small, 
 4. **Additional context from advocacy and oversight materials.** *eVoting in Belgium: State of the Union* (PourEVA), summarizing known incidents including the 4096-vote anomaly. ([vooreva.be][4])
 
 5. **Observation-sensitive Heisenbug substrate for Case II.** Case II is a fictional composite. Carson Ip documented a 2019 ProxySQL hang after large result sets where `strace`, `socat`, and added print statements suppressed the failure, while a slower client changed reproducibility. The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
+
+6. **Prologue valve incident.** The prologue's uncommanded valve is a fictional composite. It draws on the real class of spurious actuation faults in industrial control systems, in which a valve or relay changes state with no matching command in the event log. No specific incident is claimed.
 
 *(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
 

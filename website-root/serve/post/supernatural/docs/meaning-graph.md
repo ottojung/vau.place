@@ -186,43 +186,115 @@ $n88883
 text: But the longer I have tended systems—their valves and logs, their hissing racks and their fragile promises—the more I have come to understand that what we write on paper is not what the air will carry.
 intent: Advance the prologue's framing of the narrator as a procedural investigator whose experience has made ordinary engineering language insufficient.
 style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n77772 and precedes $n36938. Maintain the prologue's dossier frame and the mature narrator's skeptical surface/private supernatural leaning.
+continuity: Follows $n77772 and precedes $n23064. Maintain the prologue's dossier frame and the mature narrator's skeptical surface/private supernatural leaning; introduces the paper-versus-air motif that the wound incident will echo.
+
+$n23064
+text: Once I specified a valve on a line that was closed for maintenance.
+intent: Begin the prologue's single firsthand incident, the wound that motivates the dossier; establish the narrator's ownership of the specification so the failure is personal.
+style: Plain declarative opener; deliberately flat and procedural, letting the danger arrive without announcement.
+continuity: Follows $n88883 and precedes $n26528. First of the prologue's firsthand wound beats; establishes the valve and the maintenance isolation that make the near miss possible.
+
+$n26528
+text: It opened at a quarter to five, with no command in the log, into the stretch of pipe a fitter had his hands in; the report called it a near miss, because he happened to be reaching for a spanner and not for the valve.
+intent: Supply the concrete physical danger and its ordinary documentation: an uncommanded actuation that nearly harmed a person, hedged as a report's near miss so no supernatural cause is asserted.
+style: Long procedural sentence with a bureaucratic aside; the danger is carried by the fitter's hands and the spanner, not by declaration.
+continuity: Follows $n23064 and precedes $n21318. Plants possible harmful consequences; the missing command is the ordinary-explanation hook that the next beat makes insufficient.
+
+$n21318
+text: I was at my desk, reading back the procedure for that valve—the exact page—when it opened; I looked up because the air had gone flat.
+intent: Supply the single uncanny detail that resists the ordinary explanation: the valve opened at the moment the narrator was reading its specification, seeding the observation-sensitivity motif.
+style: Precise and understated, with the em-dashed apposition slowing the sentence at the moment of coincidence; the air motif recurs.
+continuity: Follows $n26528 and precedes $n02905. Observation-sensitivity seed for Case II; echoes the paper-versus-air motif of $n88883.
+
+$n02905
+text: The telephone rang a moment later, and I have not entirely stopped hearing it.
+intent: Carry the narrator's behavioral residue and withheld fear: the aftermath is reported as a lingering sensory fact rather than an interpretation.
+style: Short, plain, faintly uncanny; the present-perfect turn makes the past incident still present to the narrator.
+continuity: Follows $n21318 and precedes $n36938. Closes the wound incident and motivates the dossier that follows in $n36938.
 
 $n36938
 text: I began to keep a dossier.
-intent: Advance the prologue's framing of the narrator as a procedural investigator whose experience has made ordinary engineering language insufficient.
+intent: Advance the prologue's framing of the narrator as a procedural investigator whose experience has made ordinary engineering language insufficient; the dossier is the behavioral response to the wound just narrated.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n88883 and precedes $n89766. Maintain the prologue's dossier frame and the mature narrator's skeptical surface/private supernatural leaning.
+continuity: Follows $n02905 and precedes $n89766. Maintain the prologue's dossier frame and the mature narrator's skeptical surface/private supernatural leaning.
 
 $n89766
-text: Not a taxonomy—God preserve me from one more axis—but a sheaf of field notes: cases gathered from labs and basements, control rooms and attics <PLACEHOLDER/>.
-intent: Advance the prologue's framing of the narrator as a procedural investigator whose experience has made ordinary engineering language insufficient.
+text: Not a taxonomy—God preserve me from one more axis—but a sheaf of field notes: cases gathered from labs and basements, control rooms and attics, from the sub-basement under a turbine hall to a locked cabinet in a newspaper morgue.
+intent: Advance the prologue's framing of the narrator as a procedural investigator whose experience has made ordinary engineering language insufficient, now with the concrete physical provenance that the former placeholder required.
 style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
 continuity: Follows $n36938 and precedes $n47266. Maintain the prologue's dossier frame and the mature narrator's skeptical surface/private supernatural leaning.
 
 $n47266
-text: A few I saw myself; others I learned from steadier hands who were there before me
-intent: Advance the prologue's framing of the narrator as a procedural investigator whose experience has made ordinary engineering language insufficient.
-style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n89766 and precedes $n95933. Maintain the prologue's dossier frame and the mature narrator's skeptical surface/private supernatural leaning.
+text: A few I saw myself; others I learned from steadier hands; some arrived as stories retold until their authors had worn off; and a few I have had to reconstruct from records that disagreed with each other.
+intent: Establish the dossier's four evidentiary categories—firsthand, secondhand, folklore, and historical reconstruction—while keeping the collection's provenance honest.
+style: Semicolon list with a rising, accumulating cadence; grave and procedural rather than poetic.
+continuity: Follows $n89766 and precedes $n06836. Sets up the evidentiary weight distinctions the later cases rely on; plants the retold-stories motif the coda pays off.
+
+$n06836
+text: I still write specifications in the future tense—the valve shall open only on command—as if the grammar were itself a promise.
+intent: Plant the future-tense habit that the preamble's must-have about promising the very sun depends on, and link it to the valve incident.
+style: Dry, faintly ironic procedural register; the example clause carries the superstition inside the engineering idiom.
+continuity: Follows $n47266 and precedes $n95933. Sets up the preamble must-have node $n65643 and recalls the valve of $n23064.
 
 $n95933
-text: "People ask if I believe in such things."
-intent: Authorial must-have: require this wording, idea, or moral to be preserved or integrated into the finished manuscript.
-style: Required wording or authorial constraint; preserve its distinctive phrasing when quoted and do not smooth away its intended force.
-continuity: Follows $n47266 and precedes $n92807. This is a live MUST HAVES constraint for Prologue and must remain consistent with AGENTS.md and the Intent Records.
+text: People ask if I believe in such things.
+intent: Integrated must-have, now reported speech: present the skeptical question without answering it, so the narrator's belief is a withholding rather than a denial.
+style: Flat reported clause; the absence of an answer is the point.
+continuity: Follows $n06836 and precedes $n15385. The must-have is now diegetic rather than a standalone directive; satisfies intents $id-9264982270043622 and $id-0861352612251497.
+
+$n15385
+text: I tell them what I keep and how I keep it: the hand I write in, so that I will recognize it when I am older; the pages I tape in beside the record, giving each failure a name; the margins I leave empty for what I do not yet know how to name.
+intent: Answer the belief question evasively by describing practice, and plant the coda's handwriting, tape, and margins motifs as behavioral evidence of a private leaning.
+style: Long list with parallel semicolon clauses; each clause is a physical act, keeping superstition disguised as procedure.
+continuity: Follows $n95933 and precedes $n00657. Plants coda motifs (handwriting, tape, margins) and the Mark II moth's naming-and-taping logic.
+
+$n00657
+text: I have caught myself reading a log twice when once would do, as if the second look were the one that counted.
+intent: Seed the observation-sensitivity motif as a small, dismissed behavioral tic rather than a claim.
+style: Understated and self-observing; the conditional admits the superstition without endorsing it.
+continuity: Follows $n15385 and precedes $n12352. Behavioral seed for Case II's watched-versus-unwatched argument.
+
+$n12352
+text: And when the moment comes to attach the instrument, my hand sometimes stops above the key, and I have learned not to ask it why.
+intent: Compress Case II's 04:56 hesitation into the prologue as the narrator's clearest conversion of suspicion into superstition.
+style: Quiet final beat; the withheld explanation is the dread.
+continuity: Follows $n00657 and precedes $n17564. Foreshadows the tracer hesitation at 04:56 in Case II.
+
+$n17564
+text: On the first page I set down a line for whoever I would be when I read it back.
+intent: Frame the dossier as a message to the narrator's older self, planting the recognition motif and introducing the must-have that follows as reported written speech.
+style: Plain and intimate; the future self is addressed without sentimentality.
+continuity: Follows $n12352 and precedes $n92807. Sets up the coda's "write in a hand you will recognize when you are older."
 
 $n92807
-text: "Read them so that when the world leans on your specification, you recognize the weight."
-intent: Authorial must-have: require this wording, idea, or moral to be preserved or integrated into the finished manuscript.
-style: Required wording or authorial constraint; preserve its distinctive phrasing when quoted and do not smooth away its intended force.
-continuity: Follows $n95933 and precedes $n23032. This is a live MUST HAVES constraint for Prologue and must remain consistent with AGENTS.md and the Intent Records.
+text: *Read them so that when the world leans on your specification, you recognize the weight.*
+intent: Integrated must-have, now a line the narrator writes to his future self: link reading the dossier to recognizing the physical weight of a specification.
+style: Imperative, italicized as a written line; the future-addressed voice is retained verbatim apart from markup.
+continuity: Follows $n17564 and precedes $n30266. Must remain consistent with the coda's weight and recognition motifs; pairs with $n65643.
+
+$n30266
+text: You can feel it in a good postmortem—the paper going load-bearing, the procedure holding up a thing that wanted to fall.
+intent: Render the world leaning on a specification as a physical sensation rather than a metaphor, so the must-have is felt.
+style: Concrete technical diction; the engineering image carries the dread.
+continuity: Follows $n92807 and precedes $n01657. Pays off the weight motif of $n92807 and the paper-versus-air motif of $n88883.
+
+$n01657
+text: I keep the dossier because I no longer trust that writing the procedure correctly is enough to keep the world from leaning anyway.
+intent: State the personal, non-intellectual stake: the dossier is a hedge against a specification that failed to hold.
+style: Direct and grave; the admission of damaged faith is the sentence's work.
+continuity: Follows $n30266 and precedes $n07124. Answers the prologue NOTE's demand for personal motive ($n36795); motivates the transition.
+
+$n07124
+text: The first thing I put in the dossier was not the first incident; it was the first one I could tell straight, and I could tell it straight because I did not yet know what I was looking at.
+intent: Frame-break transition: the mature narrator hands off to the younger, skeptical narrator's firsthand account while planting dramatic irony about what he did not yet understand.
+style: One framing sentence, deliberately plain; the withheld "what I was looking at" carries the irony.
+continuity: Follows $n01657 and precedes $n23032. Hands off to Case I, the historical reconstruction; makes the reader read Field Note #1 as the dossier's first entry.
 
 $n23032
 text: **Schaerbeek, Belgium.**
 intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n92807 and precedes $n89257. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n07124 and precedes $n89257. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n89257
 text: > This meeting belongs to an earlier period in the narrator's life.
@@ -1950,13 +2022,37 @@ $n83447
 text: The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n82797 and precedes $n54805. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+continuity: Follows $n82797 and precedes $n22049. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+
+$n22049
+text: 6. **Prologue valve incident.**
+intent: Introduce an endnote that marks the prologue's incident as a fictional composite, preserving the evidence boundary.
+style: Documentary endnote label; concise and factually bounded.
+continuity: Follows $n83447 and precedes $n25632. Keeps the prologue's wound distinguishable from documented fact.
+
+$n25632
+text: The prologue's uncommanded valve is a fictional composite.
+intent: State plainly that the prologue incident is invented rather than reported.
+style: Short factual sentence; no narrator voice.
+continuity: Follows $n22049 and precedes $n15804. Satisfies the evidence-boundary requirement for the prologue.
+
+$n15804
+text: It draws on the real class of spurious actuation faults in industrial control systems, in which a valve or relay changes state with no matching command in the event log.
+intent: Anchor the composite in a real technical substrate so the fictional incident stays technically credible.
+style: Precise technical prose; distinguishes the real class from the invented instance.
+continuity: Follows $n25632 and precedes $n17075. Keeps documented fact, reconstruction, and invention distinguishable.
+
+$n17075
+text: No specific incident is claimed.
+intent: Withhold any documentary claim for the prologue incident, preventing invention from reading as fact.
+style: Terse disclaimer.
+continuity: Follows $n15804 and precedes $n54805. Preserves the evidence boundary before the general composites note.
 
 $n54805
 text: *(Selected entries above anchor the real incidents used in this dossier.
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Documentary endnote prose; concise and factually bounded.
-continuity: Follows $n83447 and precedes $n60629. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+continuity: Follows $n17075 and precedes $n60629. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n60629
 text: Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
