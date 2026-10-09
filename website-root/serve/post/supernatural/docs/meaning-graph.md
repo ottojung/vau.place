@@ -2676,7 +2676,348 @@ $n52828
 text: The case can be more extravagant than the early cases, but serious documentation, witnesses' reactions, and real consequences should give readers a reason to feel unsettled rather than merely amused.
 intent: Author-approved editorial direction for Leprechaun; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n20750 and precedes $n24252. This is revision guidance for Leprechaun, not a statement the narrator knows or says.
+continuity: Follows $n20750 and precedes $n96127. This is revision guidance for Leprechaun, not a statement the narrator knows or says.
+$n96127
+text: This case is a legend, and I file it as one.
+intent: Open Case IV at compile distance: the narrator files a legend, not a reconstruction, and the reader watches the bar move.
+style: Declarative first-person filing register; the verb 'file' does epistemic work and signals the dossier's taxonomy without naming it.
+continuity: Follows $n52828 and precedes $n95653. First sentence of Case IV prose; transitions from Case III's private dream to a public legend told independently.
+$n95653
+text: The Schaerbeek bit reached me as testimony from a man who had stood in the room; the hang I chased with my own hands; the demon belonged to one man's dream.
+intent: Establish the dossier's evidentiary taxonomy by example: testimony, firsthand, dream — placing this case outside all three.
+style: Semicolon-joined triad compressing the collection's earlier cases into a single breath; the rhythm of a man sorting his own files.
+continuity: Follows $n96127 and precedes $n05685. References Case I (Schaerbeek testimony), Case II (firsthand hang), Case III (private dream) as the narrator's filing categories.
+$n05685
+text: This story I have heard from four people who were not there and one who was, and their versions agree on the figure and disagree on everything else.
+intent: State the legend's provenance: four independent tellers who agree on the figure and disagree on everything else.
+style: Exact, qualifying register; the agreement/disagreement structure is the case's evidentiary spine.
+continuity: Follows $n95653 and precedes $n94098. Sets up the witness roster and the detail-drift motif that pays off in the ecology paragraph.
+$n94098
+text: I include it because a story told independently, by people who will not compare notes, is a pattern, and a pattern is the closest thing to evidence this case will ever have.
+intent: Justify including a legend in a dossier of field notes: independent retelling is the closest thing to evidence this case will have.
+style: The narrator's exact, procedural voice; 'closest thing to evidence' is the case's thesis stated without announcement.
+continuity: Follows $n05685 and precedes $n74085. The inclusion rationale; the reader watches the narrator's threshold move in full view.
+$n74085
+text: The harm came first, and it was ordinary.
+intent: Order the case: harm before marvel. The consequences are stated before the phenomenon, per the dossier's procedure of evidence before marvel.
+style: Short declarative sentence functioning as a structural signpost; the narrator's procedural rationality on display.
+continuity: Follows $n94098 and precedes $n68972. Establishes the case's ordering principle; the harm is documented before the figure is mentioned.
+$n68972
+text: A reaper job runs every night over a bounded collection — a `for`-loop, `for (i = 0; i < count; i++)`, walking `count` partitions and deleting what is old.
+intent: Introduce the technical substrate: a nightly reaper job over a bounded collection, a for-loop walking count partitions.
+style: Concrete procedural diction; the loop is stated in correct technical language so the ordinary story stays buildable by the reader.
+continuity: Follows $n74085 and precedes $n29616. The mechanism's technical foundation; the off-by-one is defined precisely as one extra iteration.
+$n29616
+text: The job had run for years without incident, which is the only reason anyone let it delete things.
+intent: Establish the reaper's trust: years without incident, which is why it was allowed to delete things.
+style: Plain causal prose; the trust is stated as operational fact, not backstory.
+continuity: Follows $n68972 and precedes $n22955. Sets up the harm's shock: a trusted job did one thing too many.
+$n22955
+text: It is the most boring job in the building, and the boring is the job: a reaper that works is a reaper no one audits, because there is nothing to audit.
+intent: Characterize the reaper as boring by design: a reaper that works is a reaper no one audits.
+style: Aphoristic procedural register; the sentence's mirror structure ('a reaper that works is a reaper no one audits') is the narrator's exact voice.
+continuity: Follows $n29616 and precedes $n44524. The boring-is-the-job motif makes the harm more shocking: the unaudited job failed.
+$n44524
+text: On the night in question the job behaved as though the upper bound were `count + 1`.
+intent: State the anomaly precisely: the job behaved as though the upper bound were count + 1.
+style: Technical diction; 'behaved as though' reports the behavior without asserting non-human agency, preserving the domestication gap.
+continuity: Follows $n22955 and precedes $n77929. The off-by-one mechanism; the bound appeared moved, attributed to the legend, not asserted by the narrator.
+$n77929
+text: One extra iteration.
+intent: Isolate the harm's unit: exactly one extra iteration.
+style: Two-word sentence for maximum compression; the brevity is the horror — one iteration is nothing and everything.
+continuity: Follows $n44524 and precedes $n06870. The case's central quantity; the harm maps one-to-one to this single iteration.
+$n06870
+text: The morning on-call engineer found it in the logs — lights on, coffee going cold, the harm on a screen: the loop had run one time too many, and the extra iteration had deleted one live record, one customer's archive, years of a small firm's project files, gone.
+intent: Document the morning discovery in the on-call engineer's firsthand layer: the logs show one extra iteration and one live record gone.
+style: Long sentence with em-dash setup and colon delivery; the physical detail (lights on, coffee going cold) grounds the documented layer.
+continuity: Follows $n77929 and precedes $n14009. The harm is specific, documented, human-faced; discovered before the figure is mentioned.
+$n14009
+text: Not corrupted.
+intent: Rule out corruption as the failure mode.
+style: Two-word sentence; the compression is procedural — a checklist item eliminated.
+continuity: Follows $n06870 and precedes $n86524. Part of the elimination sequence that isolates the harm as a clean deletion.
+$n86524
+text: Not quarantined.
+intent: Rule out quarantine as the failure mode.
+style: Two-word sentence; parallel to the previous elimination, maintaining the checklist rhythm.
+continuity: Follows $n14009 and precedes $n45021. The elimination sequence continues; the harm is neither corruption nor quarantine.
+$n45021
+text: Gone, irreversibly, by the job's own logic, which is what an off-by-one does: it does one thing too many, and the extra thing is not undoable.
+intent: State the harm's finality: gone, irreversibly, by the job's own logic — an off-by-one does one thing too many and the extra thing is not undoable.
+style: The sentence's final clause is the case's technical thesis; 'not undoable' is the harm's defining property.
+continuity: Follows $n86524 and precedes $n02595. The harm is irreversible by the system's own logic; this is what makes the legend's phrasing feel earned.
+$n02595
+text: The investigation found the strangest part in the artifact itself.
+intent: Shift to the investigation's finding: the strangest part is in the artifact itself.
+style: Transitional sentence; 'the strangest part' signals the escalation from harm to anomaly.
+continuity: Follows $n45021 and precedes $n14765. The investigation begins; the artifact's bound line is the case's central evidence.
+$n14765
+text: The bound line in the deployed build differed from the source and from every commit in the history.
+intent: State the investigation's core finding: the deployed bound line differs from source and from every commit.
+style: Exact, qualifying register; the finding is stated as fact, not inference.
+continuity: Follows $n02595 and precedes $n52283. The attribution-less bound line is the spine of the ordinary story's failure.
+$n52283
+text: The engineer whose diff surrounds that line denies writing it, and the denial is credible — the surrounding change is his, the bound line is not.
+intent: Present the first ordinary candidate and its failure: the surrounding engineer denies writing the bound line, and the denial is credible.
+style: The denial's credibility is established by the diff's structure — the surrounding change is his, the bound line is not.
+continuity: Follows $n14765 and precedes $n39825. O1 (committed erroneous change) is considered and fails on evidence, not physics.
+$n39825
+text: The commit search came back empty.
+intent: Report the commit search result: empty.
+style: Three-word sentence; the emptiness is the finding, stated without elaboration.
+continuity: Follows $n52283 and precedes $n54845. The commit search coming back empty is the case's evidentiary floor.
+$n54845
+text: No merge, no hotfix, no deploy in the window.
+intent: Rule out the operational window: no merge, no hotfix, no deploy.
+style: Three-item elimination in compressed parallel; the window is clean.
+continuity: Follows $n39825 and precedes $n05777. O3 (merge/hotfix artifact) is considered and fails.
+$n05777
+text: The build artifacts from that night had been rotated out, and the template had since changed, so the possibility that a stale generated build had reintroduced an old bound could be neither confirmed nor closed.
+intent: Present the second ordinary candidate as an open door: a stale generated build could have reintroduced an old bound, but the artifacts are gone and the template changed.
+style: The candidate is stated as possible-but-unverifiable; 'neither confirmed nor closed' preserves the domestication gap.
+continuity: Follows $n54845 and precedes $n13249. O2 (stale generated build) remains live but uncompletable.
+$n13249
+text: The logs, meanwhile, were unambiguous: the loop itself ran `count + 1` iterations, and the extra iteration mapped one-to-one to the missing record.
+intent: Contrast the artifact ambiguity with the logs' clarity: the loop itself ran count + 1 iterations, mapping one-to-one to the missing record.
+style: The logs are unambiguous where the artifact is ambiguous; the extra iteration maps 1:1 to the harm.
+continuity: Follows $n05777 and precedes $n91783. O4 (witness misread) is considered and fails: the loop itself ran the extra iteration.
+$n91783
+text: Whatever happened, it happened to the loop, not to the reading of it.
+intent: State the investigation's conclusion: whatever happened, it happened to the loop, not to the reading of it.
+style: The sentence's final clause is the case's technical verdict; the loop is the locus, not the interpretation.
+continuity: Follows $n13249 and precedes $n33551. The ordinary story is available and uncompletable; the domestication gap is now fully open.
+$n33551
+text: And then there is the figure.
+intent: Introduce the figure at two removes: 'and then there is the figure' marks the shift from documented evidence to legend.
+style: The transitional phrase 'and then there is' is the narrator's exact register; the shift is marked, not hidden.
+continuity: Follows $n91783 and precedes $n53529. The sighting enters at reported-legend distance, after the harm and the investigation.
+$n53529
+text: The story goes that the night operator, alone in the cold aisle between the racks, the hum of the machines the only sound, saw a small man in green clothes with a red beard standing near the machine that ran the reaper.
+intent: State the legend's core: the night operator allegedly saw a small man in green clothes with a red beard near the reaper's machine.
+style: Reported-speech marker 'the story goes' maintains legend distance; the figure's attributes are exact per the NOTE constraint.
+continuity: Follows $n33551 and precedes $n89467. The sighting is single-witness, uncorroborated, at two removes from the narrator.
+$n89467
+text: The legend's room is cold and loud with the hum of the racks — the ordinary night-shift furniture — and he had been alone in it for hours.
+intent: Give the legend's room physicality: cold aisle, hum of racks, the operator alone for hours.
+style: The room is explicitly the legend's, not the narrator's; the sensory detail does duty for the sighting's credibility.
+continuity: Follows $n53529 and precedes $n59751. The legend's room palette; the physicality makes the sighting feel real without verifying it.
+$n59751
+text: I was told this at two removes, by people who had heard it from him or from someone who had; no one I asked had seen it themselves.
+intent: Mark the retelling distance: the narrator was told this at two removes.
+style: The distance marker is explicit; the narrator never claims to have been in the room.
+continuity: Follows $n89467 and precedes $n60061. The sighting is at least two removes from the narrator; every supernatural-adjacent claim is filtered through retelling.
+$n60061
+text: The word *leprechaun* is his, or the story's; I do not adopt it.
+intent: Attribute the word 'leprechaun' to the witness or the story, not to the narrator.
+style: The narrator declines to adopt the word; the attribution is itself evidence of how a tired man files an unfileable perception.
+continuity: Follows $n59751 and precedes $n41174. The word 'leprechaun' is the witness's or the story's; the narrator's register carries no folklore vocabulary.
+$n41174
+text: The legend has a phrasing for it, and the phrasing is the point: the bounds were moved, by one, in the night, by the small man in green clothes with the red beard.
+intent: State the legend's own phrasing: the bounds were moved, by one, in the night, by the small man.
+style: The 'moved' framing is attributed to the legend, not asserted by the narrator; the phrasing is the point.
+continuity: Follows $n60061 and precedes $n11777. The supernatural implication exists only in the legend and the reader's assembly; the narrator records, never asserts.
+$n11777
+text: What I can say is that the attributes survive every telling — small man, green clothes, red beard — while everything else about the sighting drifts: the rack, the hour, the shade of green.
+intent: Distinguish the stable attributes from the drifting details: the figure survives every telling; the rack, hour, and shade of green drift.
+style: The stable/drifting structure is the legend's ecology in miniature; the attributes are fixed by the NOTE.
+continuity: Follows $n41174 and precedes $n98366. Sets up the detail-drift motif that pays off in the ecology paragraph.
+$n98366
+text: No second witness.
+intent: State the first evidence limit: no second witness.
+style: Three-word sentence; the limit is stated as fact, not lament.
+continuity: Follows $n11777 and precedes $n34314. The sighting is uncorroborated; exactly one witness.
+$n34314
+text: No image.
+intent: State the second evidence limit: no image.
+style: Two-word sentence; parallel to the previous limit.
+continuity: Follows $n98366 and precedes $n28744. No image exists; the legend cannot be checked against footage.
+$n28744
+text: The room has no camera; it is a room of machines, not people, and the company chose that years ago, for ordinary reasons.
+intent: State the third evidence limit with its ordinary reason: no camera, because the room is a room of machines and the company chose that for privacy.
+style: The camera gap is diegetically justified by an ordinary privacy choice, not by plotting convenience.
+continuity: Follows $n34314 and precedes $n31111. The camera question is settled with an ordinary reason; the legend cannot be checked in either direction.
+$n31111
+text: The operator is still with the company.
+intent: Introduce the witness roster with the operator: still with the company.
+style: Plain factual statement; the witness's disposition is stated without drama.
+continuity: Follows $n28744 and precedes $n64705. W1 enters; the witness is reachable but tired.
+$n64705
+text: He was a good operator, which is why the story found so many willing ears and so few willing believers.
+intent: Establish the witness's credibility and the story's social cost: a good operator, so the story found willing ears and few willing believers.
+style: The sentence's turn ('willing ears and so few willing believers') is the case's social horror in miniature.
+continuity: Follows $n31111 and precedes $n99978. The witness's credibility makes the story spread and makes it unbelievable.
+$n99978
+text: I reached him once, and he was tired of the story in the way a man is tired of a scar he did not choose.
+intent: Show the witness's state: tired of the story in the way a man is tired of a scar he did not choose.
+style: The simile is exact and unpoetic; the tiredness is behavioral, not declared belief.
+continuity: Follows $n64705 and precedes $n94577. The witness's cost is social and permanent; he told what he saw and the story took him.
+$n94577
+text: He did not confirm anything interesting.
+intent: Record that the witness confirmed nothing interesting.
+style: The double negative is the narrator's exact register; the witness did not confirm anything that would close the case.
+continuity: Follows $n99978 and precedes $n65342. The witness's testimony is a dead end for the investigation.
+$n65342
+text: He did not deny anything interesting.
+intent: Record that the witness denied nothing interesting.
+style: Parallel to the previous sentence; the witness's denial is also a dead end.
+continuity: Follows $n94577 and precedes $n99573. The witness neither confirms nor denies anything that would move the case.
+$n99573
+text: He asked me not to make him tell it again, and I did not.
+intent: Show the witness's boundary: he asked not to be made to tell it again, and the narrator did not.
+style: The narrator respects the boundary; the witness's agency is honored, which makes the silence more eerie.
+continuity: Follows $n65342 and precedes $n89845. The witness closes the conversation; the narrator's restraint is behavioral.
+$n89845
+text: The on-call engineer who found the harm never saw the figure and does not care about it; she cares about the record, and she can tell you the exact minute the job ran.
+intent: Introduce W2, the on-call engineer: firsthand for the harm, indifferent to the figure, exact about the minute.
+style: The engineer's exactness about the minute contrasts with the legend's drift; she is the case's most reliable layer.
+continuity: Follows $n99573 and precedes $n16781. W2 never saw the figure; her layer is the documented harm.
+$n16781
+text: The investigation lead can tell you what is not in the history, which is more than most people can say about anything.
+intent: Introduce W3, the investigation lead: can tell you what is not in the history.
+style: The sentence's final clause is the lead's expertise stated as a negative capability; what is not in the history is more than most can say.
+continuity: Follows $n89845 and precedes $n93868. W3 is firsthand for the limits: no commit, no camera, no author.
+$n93868
+text: And the rumour-bearers — the ones who tell it at onboarding, in the incident channel, at the Christmas party — are useful for exactly one thing: watching how the story changes.
+intent: Introduce W4, the rumour-bearers: useful for exactly one thing, watching how the story changes.
+style: The rumour-bearers are useless for the phenomenon and useful for the legend's ecology; the narrator says so by showing.
+continuity: Follows $n16781 and precedes $n57379. W4 is the legend's ecology; the story's drift is data.
+$n57379
+text: The story keeps the figure and sheds a detail each time.
+intent: State the legend's drift rule: the story keeps the figure and sheds a detail each time.
+style: The drift rule is stated as a law of the legend's ecology; the figure is stable, the details are not.
+continuity: Follows $n93868 and precedes $n16295. The ecology paragraph's thesis; each telling keeps the figure and sheds a peripheral detail.
+$n16295
+text: In one telling the man is polishing the rack.
+intent: Give the first drift variant: the man is polishing the rack.
+style: A peripheral detail that appears in one telling and not others; the drift is concrete.
+continuity: Follows $n57379 and precedes $n69032. The detail drift is shown, not declared.
+$n69032
+text: In another he is counting something under his breath.
+intent: Give the second drift variant: the man is counting something under his breath.
+style: Another peripheral detail; the counting is a dark echo of the team's ritual.
+continuity: Follows $n16295 and precedes $n82181. The drift continues; the counting foreshadows the team's ritual.
+$n82181
+text: In a third he is simply standing there, which is the version that frightens me, though I could not say why.
+intent: Give the third variant and the narrator's private reaction: the man is simply standing there, which is the version that frightens me, though I could not say why.
+style: The narrator's fear is behavioral and withheld; 'I could not say why' preserves the ambiguity.
+continuity: Follows $n69032 and precedes $n87372. The narrator's private leaning is shown, never announced.
+$n87372
+text: The tellers smile when they tell it.
+intent: Record the tellers' humor as data: they smile when they tell it.
+style: The smile is recorded as a fact about the tellers, not as a joke; the humor is confined to the legend's ecology.
+continuity: Follows $n82181 and precedes $n45465. Humor is permitted only inside the legend's ecology; the narrator's register carries none.
+$n45465
+text: I record the smile as data.
+intent: State the narrator's method: he records the smile as data.
+style: The narrator's exact register; the smile is evidence about the tellers, not a comic beat.
+continuity: Follows $n87372 and precedes $n57672. The narrator's discipline: even the humor is data.
+$n57672
+text: A story that is told with a smile is still a story that is told, and this one is told more than any other in the dossier, including the ones with evidence.
+intent: State the legend's social fact: a story told with a smile is still told, and this one is told more than any other in the dossier.
+style: The sentence's accumulation is the case's social horror; the story outlives the evidence.
+continuity: Follows $n45465 and precedes $n37244. The story is more alive than the truth; everyone knows it.
+$n37244
+text: The drift is always away from the evidence and toward the figure.
+intent: State the drift's direction: always away from the evidence and toward the figure.
+style: The drift's direction is the legend's ecology in a single clause; the figure grows as the evidence shrinks.
+continuity: Follows $n57672 and precedes $n66312. The legend's ecology is now fully described; the costs begin.
+$n66312
+text: The costs spread outward from the record.
+intent: Shift to the costs: they spread outward from the record.
+style: The costs' spread is stated as a physical law; the harm radiates from data to person to team to narrator.
+continuity: Follows $n37244 and precedes $n18156. The cost escalation begins with the record and moves outward.
+$n18156
+text: The customer whose archive was gone was a small firm; the loss was not existential, but it was theirs, and no procedure gave it back.
+intent: State the direct harm's human face: a small firm's archive, gone, not existential but theirs, and no procedure gave it back.
+style: The victim is specific but lightly sketched; the harm is irreversible by the system's own logic.
+continuity: Follows $n66312 and precedes $n17887. The customer's loss is the case's body count of one, and it is specific.
+$n17887
+text: The firm was told, and there was nothing to restore and nothing to apologize with, which is its own kind of harm.
+intent: State the firm's position: told, with nothing to restore and nothing to apologize with.
+style: The sentence's final clause is the harm's social dimension; the apology is impossible because the cause is unknown.
+continuity: Follows $n18156 and precedes $n46819. The harm is not just data but a relationship; the firm cannot be made whole.
+$n46819
+text: The operator told what he saw and became, in the telling, the guy who saw the leprechaun — believed by no one who matters, or believed by everyone and taken seriously by none, and he cannot tell the difference anymore, and neither can I.
+intent: State the witness's cost: he told what he saw and became the guy who saw the leprechaun, believed by no one who matters or by everyone and taken seriously by none.
+style: The witness's social death is stated in the story's own vocabulary; the ambiguity of his belief is the case's cruelest note.
+continuity: Follows $n17887 and precedes $n58635. The witness's cost is permanent; his credibility is a casualty of the story's strength.
+$n58635
+text: And the team acquired a ritual: iterations counted aloud, bounds checked in pairs, written down as procedure, because procedure is the only way a superstition is allowed to survive in a place like that.
+intent: State the team's cost: a ritual of counting iterations aloud and checking bounds in pairs, written down as procedure.
+style: The ritual is superstition disguised as procedure; the narrator recognizes it because he has his own version.
+continuity: Follows $n46819 and precedes $n58261. The team's residue is procedural; the superstition survives as documentation.
+$n58261
+text: I recognize the ritual.
+intent: Show the narrator's recognition: he recognizes the ritual.
+style: Two-word sentence; the recognition is behavioral, not declared.
+continuity: Follows $n58635 and precedes $n61596. The narrator sees himself in the team's ritual.
+$n61596
+text: I have my own version.
+intent: Show the narrator's private admission: he has his own version.
+style: Three-word sentence; the admission is the narrator's leaning shown behaviorally.
+continuity: Follows $n58261 and precedes $n23317. The narrator's private habit is the case's residue and the handoff to Case V.
+$n23317
+text: I do not file this under human error.
+intent: State the narrator's verdict: he does not file this under human error.
+style: The omission is the tell; the narrator's filing taxonomy breaks, and the reader watches it break.
+continuity: Follows $n61596 and precedes $n55606. The verdict is shown as omission, not declaration.
+$n55606
+text: I do not file it under anything.
+intent: Extend the verdict: he does not file it under anything.
+style: Three-word sentence; the absence of a category is the case's closest approach to endorsement.
+continuity: Follows $n23317 and precedes $n13176. The narrator declines to file; the bar has moved in full view.
+$n13176
+text: The ordinary story is available and uncompletable: a tired engineer's edit with no commit, a stale build with no artifacts, a misread diff that the logs refuse.
+intent: State the ordinary story's status: available and uncompletable — no commit, no artifacts, a misread diff the logs refuse.
+style: The three candidates are listed in compressed parallel; none closes.
+continuity: Follows $n55606 and precedes $n35448. The domestication gap is now fully stated; the ordinary story cannot be completed.
+$n35448
+text: The supernatural story is not available at all.
+intent: State the supernatural story's status: not available at all.
+style: Four-word sentence; the supernatural story cannot be believed, and the ordinary story cannot be completed.
+continuity: Follows $n13176 and precedes $n14292. The gap between the two stories is where the case lives.
+$n14292
+text: What is left is the gap, and the gap is where the case lives.
+intent: State the case's residue: what is left is the gap, and the gap is where the case lives.
+style: The sentence's final clause is the case's thesis; the gap is not a failure but the case's home.
+continuity: Follows $n35448 and precedes $n36014. The domestication gap is the case's horror; the reader cannot complete either story.
+$n36014
+text: **Field Note #2.
+intent: Open the field note with its label.
+style: Field-note label in the dossier's established form, matching Field Note #1's structure.
+continuity: Follows $n14292 and precedes $n63596. The field note is the case's residue in the dossier's own apparatus.
+$n63596
+text: Some changes have no author.
+intent: State the field note's first sentence: some changes have no author.
+style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
+continuity: Follows $n36014 and precedes $n11507. The note's theme is the change no one authored.
+$n11507
+text: The story outlives the evidence, and the story is more alive than the truth.**
+intent: State the field note's second sentence: the story outlives the evidence, and the story is more alive than the truth.
+style: The note's final clause is the case's social horror in aphoristic form.
+continuity: Follows $n63596 and precedes $n79294. The field note is the case's residue; the story outlives the evidence.
+$n79294
+text: Since I compiled this file — the folder open, the field-note page in front of me — I read loop bounds twice.
+intent: Show the narrator's residue behaviorally: since compiling this file, he reads loop bounds twice.
+style: The habit is shown as a concrete action, not declared; the compiling room's physicality grounds the frame.
+continuity: Follows $n11507 and precedes $n38089. The residue is procedural; the legend has changed the investigator permanently.
+$n38089
+text: I check the diff of anything that touches a limit.
+intent: Extend the residue: he checks the diff of anything that touches a limit.
+style: The habit generalizes from loop bounds to any limit; the residue is a permanent change in his method.
+continuity: Follows $n79294 and precedes $n73328. The residue is the discipline Case V will demand; the bridge is behavioral.
+$n73328
+text: I do not tell anyone this is why.
+intent: Withhold the reason: he does not tell anyone this is why.
+style: The withholding is the narrator's exact register; the reason is known to the reader but never announced.
+continuity: Follows $n38089 and precedes $n15584. The narrator's private leaning is carried entirely by behavior.
+$n15584
+text: The habit is small and permanent and it is mine, and it is the residue of a legend I cannot verify and cannot file.
+intent: State the residue's nature: small, permanent, his, the residue of a legend he cannot verify and cannot file.
+style: The sentence's accumulation is the case's final note; the habit is the residue of the gap.
+continuity: Follows $n38089 and precedes $n24252. The residue is the handoff to Case V; the habit is the discipline the next case demands.
+
 
 $n24252
 text: Tell a made up story of how a bug coincided with Mercury being in retrograde.
