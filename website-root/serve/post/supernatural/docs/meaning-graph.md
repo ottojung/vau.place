@@ -3680,10 +3680,16 @@ style: Minimal declarative in the operator's voice; the astronomical observation
 continuity: The operator's astronomical observation. This is the operator's own correlation, stated in his own voice — not the narrator's.
 
 $n53478
-text: I am not scheduling anything.* He had scheduled something.
-intent: The operator's resolution: he is not scheduling anything. Then the narrator's correction: he had scheduled something.
-style: The operator's resolution in italics, then the narrator's correction. The correction is the narrator's, not the operator's.
-continuity: The operator's resolution is stated, then corrected by the narrator. The correction — he had scheduled something — is the narrator's, showing the operator's resolution failed.
+text: I am not scheduling anything.*
+intent: The operator's resolution, in his own voice: he is not scheduling anything. The italics close the quoted log entry.
+style: The operator's resolution in italics; the flat declarative states the operator's superstition as a scheduling rule.
+continuity: Closes the operator's quoted log entry begun at $n23493 and continued at $n83755. Sets up the narrator's immediate correction at $n85513.
+
+$n85513
+text: He had scheduled something.
+intent: The narrator's correction: the operator had scheduled something after all, so his resolution failed and the reversal followed.
+style: Short declarative; the correction's brevity is the point. The narrator supplies the fact the operator's log omitted.
+continuity: Follows $n53478. The correction is the narrator's, showing the operator's resolution failed; sets up $n82494 (the reversal happened that night).
 
 $n82494
 text: The reversal happened that night.
@@ -3813,13 +3819,9 @@ continuity: Field Note #4 continues the dossier's field note pattern from Case I
 
 $n75429
 text: The closer your model fits the world, the more the world will take issue.**
-
----
-intent: Advance the case's chronology, evidence, or narrator drift as stated in this sentence.
-style: Procedural-exact register; preserve the sentence's specific diction and rhythm.
-continuity: Follows from and precedes adjacent Case V prose nodes. Maintain chronology and source reliability distinctions.
-
-$n76985. This is revision guidance for Mercury, not a statement the narrator knows or says.
+intent: Deliver the fourth field note's aphorism, the integrated MUST HAVE about model fit: the better a model fits the world, the more the world resists it, stated as a law of the dossier rather than a Mercury-specific observation.
+style: Aphoristic field-note register; the balanced 'the closer... the more...' construction is the MUST HAVE's exact phrasing, and the sentence closes the field note without an em-dash.
+continuity: Follows $n19021 (the field-note label) and precedes $n76985. The integrated form of MUST HAVES node $n61044; it pays off the Mercury correlation and generalizes it into the collection's recurring theme that fit invites resistance.
 
 $n76985
 text: Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
