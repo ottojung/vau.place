@@ -363,22 +363,16 @@ style: Restrained first-person/observational prose with dry procedural humor and
 continuity: Follows $n63211 and precedes $n60495. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n60495
-text: I take my place in it, moving forward each time the drawer opens with its tired ring.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n87792 and precedes $n14149. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n14149
-text: Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n60495 and precedes $n56936. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+text: I take my place in it, moving forward each time the drawer opens with its tired ring, and when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at.
+intent: Advance the Schaerbeek café frame: show the younger narrator's procedural mapping habit and the legibility of ordinary systems, without supplying biography.
+style: Restrained first-person/observational prose; one layered sentence with an internal turn; dry procedural humor.
+continuity: Follows $n87792 and precedes $n56936. Merged the queue and menu beats (design §9 Alternative C) to tighten the preliminaries; the younger narrator remains skeptical and reads the café as a system he can file.
 
 $n56936
 text: Tray in hand, I take a table by the wall.
 intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
 style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n14149 and precedes $n61361. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n60495 and precedes $n61361. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n61361
 text: A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for.
@@ -519,22 +513,16 @@ style: Short beat used for emphasis, timing, or tonal pressure; preserve its com
 continuity: Follows $n39292 and precedes $n86622. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n86622
-text: One contractor is excellent with cabling but, according to him, “loses confidence around printers.”
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n10441 and precedes $n59702. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
-
-$n59702
-text: Another is the person everyone calls after hours even though nobody's paperwork admits this.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n86622 and precedes $n55258. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+text: One contractor is excellent with cabling but, according to him, “loses confidence around printers”; another is the person everyone calls after hours even though nobody's paperwork admits this.
+intent: Advance the Schaerbeek café frame: characterize the technician's habit of layering useful names with commentary; the narrator's currency is usable facts.
+style: Restrained first-person/observational prose with dry procedural humor; one sentence joining two contrasting figures.
+continuity: Follows $n10441 and precedes $n55258. Merged the two contractor sentences (design §9 Alternative C) to tighten the names list; sets up $n55258, where the narrator separates the useful parts from the commentary.
 
 $n55258
 text: I write down the useful parts and leave some of the commentary out.
 intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
 style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n59702 and precedes $n39196. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n86622 and precedes $n39196. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n39196
 text: The commentary gets harder to separate from the useful parts when he picks up one of the biscuits beside his coffee.
@@ -612,13 +600,19 @@ $n19500
 text: “See?”
 intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
 style: Direct dialogue; preserve character-specific cadence, implication, and the manuscript's preference for humor or unease to remain implicit.
-continuity: Follows $n42056 and precedes $n46925. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n42056 and precedes $n40013. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+
+$n40013
+text: “A biscuit that breaks where you expect tells you nothing,” he says. “The interesting part is the crack that was not supposed to be there.”
+intent: Show the technician's worldview as evidence-reading: he treats a rule-breaking fracture as the informative part. It prefigures the election's rule-breaking count without stating any link; the narrator files it as commentary.
+style: Direct dialogue; character-specific cadence; implicit humor that does not announce the motif.
+continuity: Follows $n19500 and precedes $n46925. Enacts design §9 Alternative A (biscuit-to-election transition through the impossible fracture); the reader may connect the "crack that was not supposed to be there" to a count above its own ceiling, but neither character states it, and $n46925 immediately sets it aside.
 
 $n46925
 text: I say nothing about the biscuit and ask how he came to work on elections.
 intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
 style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n19500 and precedes $n19802. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n40013 and precedes $n19802. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n19802
 text: He gives me the short version: municipal contracts, equipment support, one assignment becoming another.
@@ -657,10 +651,10 @@ style: Direct dialogue; preserve character-specific cadence, implication, and th
 continuity: Follows $n56344 and precedes $n83449. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n83449
-text: He mentions Schaerbeek, the 2003 federal election, and a candidate with an impossible number of votes.
-intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
+text: He mentions Schaerbeek, the Belgian federal election of May 2003, and a candidate with an impossible number of votes.
+intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease; anchor the real event's date for the reader.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n53474 and precedes $n81241. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n53474 and precedes $n81241. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical. The documented date (18 May 2003) stays consistent with the endnotes; stating "May 2003" keeps historical precision without over-specifying in dialogue.
 
 $n81241
 text: I recognize the outline.
@@ -822,13 +816,19 @@ $n16059
 text: Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
 intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
 style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n57610 and precedes $n76305. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n57610 and precedes $n35156. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+
+$n35156
+text: At the table where the totals were entered, a clerk reached for the certification form and then stopped with the pen above the line, as if the signature were a thing that could still be withheld.
+intent: Show the clerks' fear of responsibility behaviorally: signing certifies the count, and an untraceable alteration makes the signature dangerous. Human stakes without a narrator declaration.
+style: Restrained procedural detail; a small physical hesitation carrying the threat.
+continuity: Follows $n16059 and precedes $n76305. Design §10 behavioral beat for fear of responsibility; prepares $n76305 (nobody called it an error) by showing why naming and certifying the result is costly.
 
 $n76305
 text: For a while nobody called it an *error*.
 intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n16059 and precedes $n24195. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n35156 and precedes $n24195. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n24195
 text: That word would have started another procedure: forms, witnesses, preserved media, work frozen where it stood.
@@ -861,10 +861,10 @@ style: Short beat used for emphasis, timing, or tonal pressure; preserve its com
 continuity: Follows $n52493 and precedes $n56378. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n56378
-text: The same numbers survived every obvious check.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n20962 and precedes $n14125. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+text: The same numbers survived every obvious check; the discrepancy had escaped the checks the clerks knew how to make.
+intent: Advance the reconstructed anomaly: every available check returns clean, so the absence of a trace becomes the threat; the clerks' own competence is what fails to find a cause.
+style: Layered sentence with an internal turn; concrete procedural diction; restrained, with no personification of the number.
+continuity: Follows $n20962 and precedes $n14125. Adds one diegetic recurrence of "escaped" (design §8.3) after the CERN item; must never be connected in prose to the neutron item at $n10179.
 
 $n14125
 text: The contradiction could now be written plainly:
@@ -1140,19 +1140,25 @@ $n42626
 text: If human error returned to the list of possibilities, he himself was one of the humans available.
 intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
 style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n43165 and precedes $n62144. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n43165 and precedes $n80784. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+
+$n80784
+text: The count had been caught only because it contradicted itself; a smaller disturbance, thirty-two votes, would have entered the total and stayed there.
+intent: Intensify loss of trust in the count: the invariant that exposed this flip is the only thing that would have exposed any flip, so smaller flips pass silently. Human stakes stated as fact, not as narrator theme-declaration.
+style: Concrete procedural diction; one sentence with an internal turn; no personification of the number.
+continuity: Follows $n42626 and precedes $n62144. Design §10 "tip of the iceberg" stakes amplifier; makes the clerks' vulnerability and the untraceable cause consequential without any supernatural claim.
 
 $n62144
 text: When he finished, the cafeteria had thinned and our coffee had gone cold.
 intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
 style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n42626 and precedes $n24689. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n80784 and precedes $n24689. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n24689
-text: He meant, I think, that we must act as if the world intends this sort of interruption, because the world does not intend otherwise.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n62144 and precedes $n34715. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+text: He meant, I think, that we must act as if the world intends this sort of interruption, because the world does not intend otherwise; an interruption is only what escaped the plan.
+intent: Present the technician's gloss as the narrator's marked inference; add one controlled recurrence of the escape motif without any neutron reference.
+style: Restrained first-person/observational prose; the appended clause carries the motif lightly and stays in the narrator's voice.
+continuity: Follows $n62144 and precedes $n34715. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical. Adds the design §8.3 Alternative C echo of "escaped" in Move 3; must not be connected to the neutron item at $n10179.
 
 $n34715
 text: At the time I heard an engineer's argument about preparation, nothing more.

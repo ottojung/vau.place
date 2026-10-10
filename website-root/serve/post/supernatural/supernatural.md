@@ -90,7 +90,7 @@ I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who
 
 The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling. The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs. The queue bends once before the till in an L-shape that keeps the doorway clear.
 
-I take my place in it, moving forward each time the drawer opens with its tired ring. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall.
+I take my place in it, moving forward each time the drawer opens with its tired ring, and when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall.
 
 A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for. He knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things.
 
@@ -102,7 +102,7 @@ He arrives late and apologizes before sitting down. His tram, he says, underwent
 
 We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He tells me he has worked elections—“not politics,” he says quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he taps the table as though confirming liveness.
 
-I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I write down the useful parts and leave some of the commentary out.
+I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers”; another is the person everyone calls after hours even though nobody's paperwork admits this. I write down the useful parts and leave some of the commentary out.
 
 The commentary gets harder to separate from the useful parts when he picks up one of the biscuits beside his coffee.
 
@@ -118,6 +118,8 @@ He breaks it. The biscuit splits diagonally across the stamped pattern, scatteri
 
 “See?”
 
+“A biscuit that breaks where you expect tells you nothing,” he says. “The interesting part is the crack that was not supposed to be there.”
+
 I say nothing about the biscuit and ask how he came to work on elections.
 
 He gives me the short version: municipal contracts, equipment support, one assignment becoming another. Then he says, “When people talk about elections, they always mean the result. They don't talk about the day itself.”
@@ -126,7 +128,7 @@ I had asked how he got the job. He had answered a different question.
 
 “I worked one day,” he continues, “that stayed with me more than the result it produced.”
 
-He mentions Schaerbeek, the 2003 federal election, and a candidate with an impossible number of votes. I recognize the outline. I have heard it before as one of those programmer stories compressed into a few lines. It takes me a moment to adjust to the idea that the man across from me had been inside the room I knew only from retellings.
+He mentions Schaerbeek, the Belgian federal election of May 2003, and a candidate with an impossible number of votes. I recognize the outline. I have heard it before as one of those programmer stories compressed into a few lines. It takes me a moment to adjust to the idea that the man across from me had been inside the room I knew only from retellings.
 
 What follows is his account of that day. He did not tell it in order, but I will.
 
@@ -150,9 +152,11 @@ There is the certainty, never admitted aloud, that somewhere a check is missing 
 
 The air in the school had become very dry. Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
 
+At the table where the totals were entered, a clerk reached for the certification form and then stopped with the pen above the line, as if the signature were a thing that could still be withheld.
+
 For a while nobody called it an *error*. That word would have started another procedure: forms, witnesses, preserved media, work frozen where it stood. So they talked around it. *This one*. *These two figures*. *Check it again.*
 
-The same numbers survived every obvious check. The contradiction could now be written plainly:
+The same numbers survived every obvious check; the discrepancy had escaped the checks the clerks knew how to make. The contradiction could now be written plainly:
 
 **Invariant 1. (violated)**
 
@@ -208,7 +212,9 @@ Later retellings usually supplied ionizing radiation, and newspapers condensed t
 
 One clerk later admitted that he would have preferred a boring human mistake. A human mistake belonged somewhere: to a hand, a tired eye, a copied line. It could be found and corrected. He did not say this during the investigation. If human error returned to the list of possibilities, he himself was one of the humans available.
 
-When he finished, the cafeteria had thinned and our coffee had gone cold. He meant, I think, that we must act as if the world intends this sort of interruption, because the world does not intend otherwise.
+The count had been caught only because it contradicted itself; a smaller disturbance, thirty-two votes, would have entered the total and stayed there.
+
+When he finished, the cafeteria had thinned and our coffee had gone cold. He meant, I think, that we must act as if the world intends this sort of interruption, because the world does not intend otherwise; an interruption is only what escaped the plan.
 
 At the time I heard an engineer's argument about preparation, nothing more. We do not fight the weather, he said; we prepare for it. The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
 
