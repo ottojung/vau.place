@@ -2506,6 +2506,9 @@ continuity: Field Note #2 continues the dossier's field note pattern from Case I
 
 $n75429
 text: The closer your model fits the world, the more the world will take issue.**
+intent: The field note's aphorism: a model that fits the world exactly is the one the world resists; the principle generalizes the Heisenbug's observation-sensitivity into a law of investigation.
+style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up; follows the pattern of Field Note #1.
+continuity: Follows $n19021 and precedes $n76985. Field Note #2 closes Case II; the aphorism is the case's residue and the pattern Case VI's Field Note #6 will follow.
 
 $n76985
 text: Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
