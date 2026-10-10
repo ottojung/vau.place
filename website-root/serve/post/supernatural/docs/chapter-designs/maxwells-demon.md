@@ -35,7 +35,7 @@ Out of scope / non-goals:
 - asserting that the coincidence had a supernatural cause;
 - deleting or contradicting the documented technical substrate.
 
-The manuscript's local directive block (§III `<NOTE>`, `supernatural.md` lines 315–324) and the live Intent Records are the governing constraints. Where this design proposes something that would require an intent change, it is flagged in §18 as a **human decision**, not assumed.
+The manuscript's local directive block (§III `<NOTE>`, `supernatural.md` lines 315–324) and the live Intent Records are the governing constraints. Where this design proposes something that would require an intent change, it is flagged in §17 as a **human decision**, not assumed.
 
 ---
 
@@ -140,9 +140,9 @@ An Ed25519 public key is 32 bytes = 256 bits. If each host key is drawn independ
 
 - Probability that a **specific second** server reproduces the first's key: `2^-256 ≈ 8.6 × 10^-78`.
 - Probability that **any pair** in a fleet of `N` servers collides (birthday bound): `≈ N(N−1)/2 · 2^-256`.
-  - `N = 10`: `≈ 1.2 × 10^-76`.
-  - `N = 100`: `≈ 4.9 × 10^-74`.
-  - `N = 10,000`: `≈ 4.9 × 10^-70`.
+  - `N = 10` (45 pairs): `≈ 3.9 × 10^-76`.
+  - `N = 100` (4,950 pairs): `≈ 4.3 × 10^-74`.
+  - `N = 10,000` (≈ 5.0 × 10^7 pairs): `≈ 4.3 × 10^-70`.
 
 For scale: the observable universe has roughly `10^80` atoms; the age of the universe is about `4 × 10^17` seconds. A `10^-74` event is not "unlikely"; it is **outside the reach of chance** by dozens of orders of magnitude. The narrator's conclusion is not "wow, a coincidence" but "chance is not the explanation."
 
@@ -557,10 +557,26 @@ A future prose pass is acceptable for review when all of the following hold. "Ve
 | A18 | Design-only pass | git diff | this branch changes no `supernatural.md` sentence |
 | A19 | Graph consistency | meaning graph | if prose changes, affected nodes updated with exact `text` and total coverage |
 
-Optional quantitative guardrails (author to confirm): keep §III within roughly **1,400–2,200 words** (Case II is ≈ 950 words; Case III carries more evidentiary and probability material, so growth is justified, but the probability passage should stay focused).
+Optional quantitative guardrails (author to confirm): keep §III within roughly **1,400–2,200 words** (Case II's prose is ≈ 870 words; Case III carries more evidentiary and probability material, so growth is justified, but the probability passage should stay focused).
 
 ---
 
 ## 20. Summary for the reviewer
 
 Case III's engine is a **documented impossibility plus an unprovable legend**. A fleet of machines that should each hold a unique secret is found to hold the same secret, and the narrator can show with exact arithmetic that the match cannot be chance (`2^-256`-class, birthday-bounded). The mundane cause — an entropy collapse that made the "random" keys identical — is real, verified (Hetzner 2015, LightNode 2025, Juniper, the RSA shared-prime surveys, Debian OpenSSL), and sufficient. Before the discovery, one developer dreams of a large demon that says the server room is cursed; the dream is terrifying as an experience but vague, partly recorded, and only interpretable in hindsight. The case's distinctive fear is hidden sameness and hidden intention; its narrator rules out chance, names the mechanism, keeps the demon unproven, and writes one private note. The `MD5` example in the `<NOTE>` is honored as a foil and explicitly declined, because constructed collisions are not accidents. All alternatives are proposals for human decision, not changes to authorial goals.
+
+---
+
+## 21. Independent review pass (this branch)
+
+A second pass verified the blueprint against the current repository state and primary sources rather than trusting the first draft's citations and arithmetic.
+
+- **Meaning-graph references.** Every `$nNNNNN` cited in this document resolves to an existing node in `docs/meaning-graph.md` with matching content: `$n70953` (Case II's closing note), `$n23590`, `$n33904`, `$n91416`, `$n27948`, `$n32131`, `$n50435` (the §III `<NOTE>` directives), `$n35689` (Case IV's opening sentence).
+- **Intent-record references.** Every `$id-...` cited resolves to a live record in `docs/intent-records/`.
+- **Cross-reference defect fixed.** §1 pointed to §18 for the human-decision alternatives; the alternatives are §17 (§18 is the open-questions list). Corrected.
+- **Probability arithmetic fixed.** §5.1's birthday-bound values are now internally consistent with the document's own `2^-256 ≈ 8.6 × 10^-78`: `N = 10` → 45 pairs → `≈ 3.9 × 10^-76`; `N = 100` → 4,950 pairs → `≈ 4.3 × 10^-74`; `N = 10,000` → `≈ 5.0 × 10^7` pairs → `≈ 4.3 × 10^-70`. The first draft's `1.2 × 10^-76`, `4.9 × 10^-74`, and `4.9 × 10^-70` did not follow from its own base value.
+- **Real-world citations re-checked against primary sources.** Hetzner duplicate Ed25519 host keys (installation routine, 10 April – 29 December 2015; fingerprint `7f:0e:75:35:5b:fe:bd:a6:df:97:7b:fd:0f:b7:65:7b`; customer notification; MITM risk; RSA/DSA/ECDSA unaffected) — accurate. LightNode precomputed host keys (John Kristoff, 2025: 478 distinct `ssh-rsa` keys across 29,776 listeners; one key on 10,000+ addresses; ~1 in 3 systems) — accurate. Juniper JUNOS duplicate SSH private keys from missing entropy (mostly systems without ATA disks or CompactFlash) — accurate. Lenstra et al., "Ron was wrong, Whit is right" (2012; ~0.2% of collected RSA moduli offer no security) and Heninger et al., "Mining Your Ps and Qs" (2012; private keys obtained for 0.50% of TLS hosts and 0.03% of SSH hosts; Linux boot-time entropy hole) — accurate. Debian OpenSSL (CVE-2008-0166; RNG reduced to ~32,768 states) — accurate. The MD5 foil (Wang et al. 2004; chosen-prefix collision for ≈ $0.65 and 10 hours on one AWS GPU instance, McHugh 2014; Flame 2012 forged a Microsoft code-signing certificate) — accurate.
+- **Word-count guardrail tightened.** Case II's prose measures ≈ 870 words, not ≈ 950.
+- **Scope.** No `supernatural.md` sentence, no meaning-graph node, and no Intent Record is changed by this branch. This remains design only.
+
+Remaining for the human author: the six open decisions in §18 (anchor confirmation, fictional company, manifest-danger beat, dream-record medium, field-note wording, and the `MD5`-as-foil reconciliation).
