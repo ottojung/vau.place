@@ -2454,7 +2454,7 @@ $n83447
 text: The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n82797 and precedes $n57621. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+continuity: Follows $n82797 and precedes $n81867. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n81867
 text: 6. **Documented precedent: a crocodilian in the Donaukanal.**
@@ -2478,7 +2478,7 @@ $n54805
 text: *(Selected entries above anchor the real incidents used in this dossier.
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Documentary endnote prose; concise and factually bounded.
-continuity: Follows $n39034 and precedes $n60629. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+continuity: Follows $n99502 and precedes $n60629. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n60629
 text: Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
