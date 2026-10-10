@@ -277,7 +277,7 @@ The application writes a customer-visible fact (recommended: an **order/fulfilme
 - First-person past, precise, restrained; short declaratives for beats; longer layered sentences for mechanism and the table.
 - Technical diction exact and load-bearing: `COMMIT`, greenlet, file descriptor, Unix-domain socket, `strace`, `socat`, print statements, compiled client.
 - Italics for private thought and field-note register (`*timing*`, *The thing hates to be watched*).
-- No Lovecraftian vocabulary; the uncanny comes from the narrator's altered perception of ordinary procedure (`$id-0964292624358295`, `$id-83347`).
+- No Lovecraftian vocabulary; the uncanny comes from the narrator's altered perception of ordinary procedure (`$id-0964292624358295`, `$n83347`).
 
 ### 12.2 Humor (implicit only)
 
@@ -426,3 +426,16 @@ These are **proposals**, not intent changes. Each states what it would gain and 
 ## 19. Summary for the reviewer
 
 Case II's engine is a clean, escalating ladder of watched/unwatched reversals in which watching always suppresses the failure and removal always restores it, while the information gained stays near zero and the cost rises. The horror is the exhausted operator beginning, briefly and against his own judgment, to act as though the failure can notice him — at 04:56, before he attaches the tracer. The table, the "dislike successful tests" line, and the morning note are preserved as peaks. The documented ProxySQL cause (throttled session moved to the epoll idle thread; PR #1952) is kept intact in the endnote and never contradicted in the chapter. All alternatives are proposals for human decision, not changes to authorial goals.
+
+---
+
+## 20. Independent review pass (this branch)
+
+A second pass verified the blueprint against the current repository state rather than trusting the first draft's citations.
+
+- **Meaning-graph references.** Every `$nNNNNN` cited in this document resolves to an existing node in `docs/meaning-graph.md`, and the quoted/summarized content matches. Verified ranges: dateline `$n34300`; §II NOTE block `$n54431`–`$n80786` (six directive nodes: `$n54431`, `$n30100`, `$n56205`, `$n40626`, `$n53676`, `$n80786`); `COMMIT` opening `$n62385`; "dislike successful tests" `$n88294`; the 04:56 sequence `$n50153`, `$n65005`, `$n98822`, `$n41808`, `$n25055`; morning note `$n70953`; endnote 5 `$n53247`–`$n83447`; Case I moth bridge `$n10406`.
+- **Intent-record references.** Every `$id-...` cited resolves to a live record in `docs/intent-records/`. One citation was malformed in the first draft (`$id-83347`, which is not a valid 16-digit intent ID); it has been corrected to the meaning-graph node `$n83347` ("increasingly uncanny diction should arise from the narrator's altered perception"), which is the source the sentence actually means.
+- **Source incident.** The endnote-5 technical account in §3 was re-checked against the primary sources (Carson Ip write-up, ProxySQL issue #1939, PR #1952, companion PR #1953): ProxySQL 1.4.13, `--idle-threads`, UNIX-domain socket, ~1000-row result set then empty `COMMIT`, `strace`/`socat`/prints suppressing the fault, slow PyMySQL non-reproduction vs. fast `libmysqlclient`, throttling via `throttle_max_bytes_per_second_to_client` → `pause_until` → session misclassified idle → epoll thread polling only `EPOLLIN`. All stated facts are accurate.
+- **Scope.** No `supernatural.md` sentence, no meaning-graph node, and no Intent Record is changed by this branch. This remains design only.
+
+Remaining for the human author: the six open decisions in §18 (resolution distribution, setting, stakes domain, night-crew identity, retrospective line, and confirmation that the `<NOTE>`/intent split in §4 is intended).
