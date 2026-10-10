@@ -1772,6 +1772,18 @@ intent: Author-approved editorial direction for Mercury; record the specific fut
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n54501 and precedes $n34176. This is revision guidance for Mercury, not a statement the narrator knows or says.
 
+$n34176
+text: Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.
+intent: Author-approved editorial direction for Mercury; record the specific future narrative work stated in this sentence without making it diegetic exposition.
+style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: Follows $n85239 and precedes $n63550. This is revision guidance for Mercury, not a statement the narrator knows or says.
+
+$n63550
+text: The Clearing House was not a bank.
+intent: Open the case with a negation that defines the institution by what it is not, setting up the concrete description that follows.
+style: Short declarative; the negation is the point. The plainness establishes the narrator's exact register.
+continuity: Follows $n34176 and precedes $n25761. The negation sets up the em-dash expansion that follows.
+
 $n25761
 text: It was a payments cooperative — eleven member firms, a server room above a shuttered print shop, and one engineer on call.
 intent: Ground the fiction in concrete physical detail: the number of members, the location above a closed business, the single on-call engineer.
@@ -2495,18 +2507,11 @@ continuity: Field Note #2 continues the dossier's field note pattern from Case I
 $n75429
 text: The closer your model fits the world, the more the world will take issue.**
 
----
-intent: Advance the case's chronology, evidence, or narrator drift as stated in this sentence.
-style: Procedural-exact register; preserve the sentence's specific diction and rhythm.
-continuity: Follows from and precedes adjacent Case V prose nodes. Maintain chronology and source reliability distinctions.
-
-$n76985. This is revision guidance for Mercury, not a statement the narrator knows or says.
-
 $n76985
 text: Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
 intent: Authorial directive for VI. The Crocodile in Vienna: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n34176 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n75429 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
 
 $n89991
 text: However, the crocodile had no impact on American software systems, which continued to operate as normal (different continent, get it?).
