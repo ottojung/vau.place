@@ -405,6 +405,36 @@ Let the operational timeline and escalating consequences make the astrological c
 Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.
 </NOTE>
 
+**A cooperative clearing house, a settlement cycle, and a mirror.**
+
+The Clearing House was not a bank. It was a payments cooperative — eleven member firms, a server room above a shuttered print shop, and one engineer on call. The server room hummed at a pitch I could feel in my teeth when I visited years later, though by then the shop below had become a vape store and the cooperative had moved to a serviced office with better cooling. Each night at 20:00 it ran a settlement cycle: a bounded list of instructions to move money between member accounts. The instructions were chained — a debit from one account funded a credit to another, which funded a debit from that account, and so on down the list. The engine applied them in order, guarded by an overdraft check that parked any instruction that would drive a balance negative. Every application, park, and reversal was written to an append-only journal. The journal was a machine record: it showed order, timestamps, and amounts, and it did not know why.
+
+I was not the on-call engineer that night. I was given the journal three years later, along with the operator's private log, by a manager who said the cooperative had never fully recovered from what the journal showed. The manager printed the journal for me — reams of timestamped lines, forward and reverse interleaved — and I spread it across my desk beside the ephemeris table I had printed that morning and the operator's paper log, which smelled faintly of the coffee shop where he had written it.
+
+The anchor incident occurred on the night of 19 March 2025. The cycle had been built at 18:00, instructions ingested, chains identified. Settlement began at 20:01. At 20:04 the engine applied the last instruction in the chain first. The journal recorded it: instruction 47, debit from account M-114, applied at 20:04:11. Then instruction 46. Then 45. The chain was being walked backward. Because the instructions were chained, reversing them drove intermediate balances negative. The overdraft guard parked the affected instructions at 20:04:33. They were re-queued. The re-queued batch was applied again — in reverse. The cycle oscillated: apply, unwind, re-apply, each pass mirrored. The journal recorded both orders, forward and reverse, exact and total. At 23:47 the settlement window closed. The engine stopped. The day's obligations were left part-settled and part-double-settled. The building was empty by then. The window was dark. The engine hummed on, applying the past backward, until the window closed and the hum stopped and the morning came.
+
+The next morning, the lights came on and the phones started ringing. A member firm's payroll had partially bounced. One worker's rent payment had been debited twice and credited once. The worker's name was Dana. She did not know yet. Her landlord did. The cooperative's exposure was stated in a memo: one member firm had left, a regulator had asked a question, and the on-call engineer had been blamed for a failure he could not explain. The memo used the word *exposure* four times. I counted.
+
+I did not learn any of this on the night it happened. I learned it from the journal, which was complete and unambiguous, and from the operator's account, which was neither. The investigation took four months. I requested the multi-year reversal log, the restart log, and the deployment calendar. I requested the ephemeris from the same source I had used for other astronomical references in the dossier. I spread the records across my desk and began the ordinary work of elimination. The desk was large enough for all of it: the journal printout on the left, the ephemeris table in the middle, the operator's log on the right. I worked from left to right, from the machine record to the human record to the astronomical record, and I did not let them touch.
+
+The ordinary candidate came first. The engine could recover mid-cycle from a checkpoint by replaying the cycle's in-flight operations. The in-flight list was built by pushing operations onto a structure that was then iterated without being reversed on the recovery path. If recovery replayed a chained cycle in LIFO order, the cycle would be applied in reverse — exactly the observed mirror. This was a real, subtle, order-dependence class of bug. It was also wrong.
+
+The restart log showed that mid-cycle restarts with chained cycles in flight had occurred on many nights outside retrograde. On every one of those nights, the replay had applied forward. The trigger was present without the effect, again and again. I counted those nights too: forty-three. Forty-three nights with the trigger and no effect. Candidate C1 could explain how a cycle might reverse. It could not explain why these cycles reversed.
+
+I gathered every reversal across the years. There were seventeen. Each one fell inside a window in which Mercury was in apparent retrograde. The windows were real and verifiable. I checked them against a published ephemeris — the geocentric positions computed from the JPL DE405 planetary ephemerides, the standard reference. Mercury was in apparent retrograde from 15 March to 7 April 2025, from 18 July to 11 August 2025, from 10 November to 30 November 2025, from 26 February to 21 March 2026, from 30 June to 24 July 2026, and from 24 October to 14 November 2026. Every reversal fell inside one of these windows. No reversal fell outside them. I made a table: seventeen rows, each with a date, a window, and a check mark. The check marks formed a perfect column.
+
+I stated the base rate. Mercury is in apparent retrograde roughly nineteen percent of the days in a year. The windows are not rare. But the reversals were rare — seventeen in three years — and every one of them was inside a window. The probability of that, if the two were independent, was not large. I wrote the number down. I did not write a conclusion. I also wrote down the selection risk: I had gone looking for a pattern, and a pattern is easier to find when you know where to look. The risk did not go away because I named it. It sat there, next to the number, and I looked at both.
+
+The other candidates failed. The highest-volume night of the year, outside retrograde, had been clean; a low-volume retrograde night had reversed. Deploys happened weekly and did not align with the windows. The retrograde dates drifted against the calendar; no fixed annual pattern could produce them. Different operators, different years, same pattern. No provider incident overlapped the reversal nights. The engine's clock log was monotonic across every reversal; no time step had occurred.
+
+The operator's private log was a different document. He had kept it himself, in a notebook, during the years he was on call. The handwriting got worse in the later entries. In it, the settlement reversals and his own misfortunes — a contract that failed, a trip that went wrong, a relationship that ended — clustered in the same windows. He had begun to refuse deployments during retrograde. He had left the company. The log passed to me with the journal. I marked it as his, motivated and uncorroborated. I kept reading it. There was an entry from March 2025 — the anchor incident — in which he had written: *I checked the ephemeris again. Mercury is retrograde. I am not scheduling anything.* He had scheduled something. The reversal happened that night. I read that entry more times than I have read any other passage in this dossier. Each time, I told myself I was reading it as evidence. Each time, I was reading it as a mirror.
+
+I caught myself checking the next retrograde date before scheduling a change. The change was ordinary — a database migration, nothing to do with settlement cycles. I delayed it. I did not say why. I kept a private calendar I would not show anyone. I noticed that I had begun to treat a planetary position as a scheduling input, and that noticing did not stop me.
+
+The next retrograde window opens on 24 October 2026. The settlement engine is still running. I have not named a cause. I have documented the correlation and falsified the ordinary explanations. The journal is complete. The ephemeris is public. The operator's log is on my desk. I do not know what to do with any of it. I know the date. I have always known the date.
+
+**Field Note #2. The closer your model fits the world, the more the world will take issue.**
+
 ---
 
 ### VI. The Crocodile in Vienna
@@ -416,6 +446,34 @@ The conspicuous absence of an American software failure should function as a del
 Keep the serious procedural account of Vienna's disruption and the narrator's misplaced investigative attention, allowing the reader to notice the absurdity without commentary.
 Some reference: https://chatgpt.com/share/68f3eeb1-c1c0-800e-b09b-e2ee25ddbf47
 </NOTE>
+
+**Vienna, in the third week of June.**
+
+I first heard about it on a Wednesday morning, the way I hear about most things now: a message from a colleague, forwarded without comment, containing a link to a local news site and the single word *crocodile*. The link led to a photograph taken from the Donaukanal promenade — a dark shape, perhaps two meters long, lying on the stone embankment where the canal bends past the Urania. The caption said a crocodile had been spotted in the water during the night. The police had closed the canal path. I read the article twice, the way I read incident reports, looking for the part that mattered.
+
+Then I began to do what I always do. I opened a new page in my notebook and wrote the date, the location, and the timeline as far as it had been reported. 06:40, a dog walker saw something dark moving against the current near the Stadtpark bridge. 07:15, she called the police. 07:50, the first patrol cordoned the path between the Urania and the park. By 08:30 the canal was closed to pedestrians and cyclists from Schwedenplatz to the Heumarkt. The police issued a warning: keep children away from the water, keep dogs on a lead, do not approach the animal. Animal control was en route. I noted each timestamp in order, the way I would note the stages of a deploy.
+
+The Donaukanal is not a wilderness. It is a canalized branch of the Danube, seventeen kilometers long, running through the center of the city, and on a June morning its promenade is one of the busiest corridors in Vienna: joggers, cyclists, commuters on the paths between the U1 and the U4, dog walkers, students, the early shift of the café terraces that line both banks. Closing it was not a small thing. I found the transport advisory: tram lines 1 and 2 diverted, the U1 station at Schwedenplatz exit-only, a shuttle bus laid on between Stubentor and Urania. A primary school cancelled a planned canal walk. A café near the Stadtpark bridge closed its terrace for the day. A woman told a reporter that she had turned back with her dog and walked an extra twenty minutes to the next bridge. None of this is dramatic. It is what happens when a two-meter crocodile is lying in the water that runs through the middle of a European capital.
+
+By noon the animal had been identified: a Nile crocodile, *Crocodylus niloticus*, an adult male, approximately two and a half meters, of a kind that does not belong in the Danube or any of its canals. The police said it had almost certainly escaped from a private collection. Schönbrunn Zoo denied any escape. The zoo had held a crocodilian once before, briefly, in 2001, when firefighters brought in a small caiman from the same canal [8]. A reptile specialist from the Haus des Meeres was called in to assist. I documented all of this with the same care I gave to the Schaerbeek election: the who, the what, the when, the authority involved. I was doing good work. I knew I was doing good work.
+
+That afternoon, while the crocodile was still in the canal and the path was still closed, I asked the question I always ask: what systems were affected? I started with my own company's status page. Green. I checked the error rate on the European endpoints: normal. I checked the incident log: nothing. I moved to the public status pages of the three major cloud providers. AWS: no ongoing incidents in any region that served our traffic. GCP: all systems operational. Azure: no active service issues. I checked the monitoring dashboard I keep open on my second screen — the one with the latency graphs and the error budget and the slow green pulse of a system behaving exactly as it should. All green. I checked the uptime monitors for the CDN, the DNS provider, and the two SaaS tools my team depended on. Nothing. I wrote each result down in my notebook, in a column, with the time I checked it: 14:02, 14:05, 14:11, 14:18.
+
+This was the correct procedure. When a system fails, you establish the blast radius. You identify which services were affected, which regions, which dependencies. You document what is broken and what is not. You build the map of the failure before you look for its cause. I have done this a hundred times. I was doing it now.
+
+The map I built showed a large failure with a very clean boundary. The crocodile had disrupted a city. It had closed a canal, diverted trams, sent a school group home, emptied a café terrace, and drawn a crowd of onlookers behind police tape with their phones out. It had disrupted none of the American software systems I depended on, or monitored, or had ever investigated. Not one. I checked again at 16:40. I checked the next morning, Thursday, at 09:15, while the animal control team was still searching the canal bank near the Stadtpark for a place the crocodile might have hauled out overnight. Green. Green. Green.
+
+I wrote the following in my notebook that morning, because I believed it to be important:
+
+The event was contained. Not the crocodile — he was still at large, still a threat to the dog walkers and the canal path — but the disruption. The disruption had stopped at the water's edge. It had not crossed the Atlantic. It had not touched the systems I was watching, the systems I would have watched if they had failed, the systems whose logs I read every morning like a physician reading a chart. The absence of a transatlantic effect was not a null result. It was a clean result. And a clean result, in my experience, is the kind that means something.
+
+I have thought about this for two days. I have checked the systems four more times. The crocodile was captured on Thursday evening, alive, by the reptile specialist and two police divers, and taken to Schönbrunn Zoo, where it remains. The canal path reopened on Friday. The trams resumed their normal route. The woman with her dog walks a different way now, but she walks. The city absorbed the event and moved on.
+
+The systems did not. The systems were never disturbed. And I cannot stop thinking about how clean that was.
+
+---
+
+**Field Note #6. Horror, in our trade, is the clean failure—the one where the boundary of the damage is perfectly legible, and the legibility itself becomes the evidence.**
 
 ---
 
@@ -462,7 +520,9 @@ Something with the same moral as "We live by the text; we survive by the small, 
 
 5. **Observation-sensitive Heisenbug substrate for Case II.** Case II is a fictional composite. Carson Ip documented a 2019 ProxySQL hang after large result sets where `strace`, `socat`, and added print statements suppressed the failure, while a slower client changed reproducibility. The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
 
-6. **Duplicate SSH host keys and weak key generation (Case III).** The fictional fleet is a composite; the phenomena are documented. Hetzner's preinstallation images contained a shared Ed25519 host key between April and December 2015. ([hannob/ed25519hetzner][8]) ([intevation][9]) A 2025 survey of one hosting provider found 478 distinct `ssh-rsa` host keys across 29,776 listeners, with a single key served by more than 10,000 addresses. ([APNIC][10]) Lenstra et al. (2012) found that roughly two in a thousand RSA moduli collected from the web shared a prime factor with another modulus. ([IACR ePrint 2012/064][11]) Heninger et al. (2012) found the same class of failure at Internet scale and traced much of it to a boot-time entropy hole in the Linux random number generator. ([USENIX Security 2012][12]) Debian's 2008 OpenSSL flaw reduced key generation to about 32,768 possible states, and weak keys persisted until the fix was deployed. ([DSA-1571][13]) ([CVE-2008-0166][14])
+6. **Documented precedent: a crocodilian in the Donaukanal.** In July 2001, Vienna firefighters caught a small spectacled caiman in the Donaukanal near the Erdbergbrücke and took it to Schönbrunn Zoo; the animal was later transferred to a zoo in Luxembourg, where it died of infection. Its origin was never established. ([BBC News][8]) ([ORF Wien][9])
+
+7. **Duplicate SSH host keys and weak key generation (Case III).** The fictional fleet is a composite; the phenomena are documented. Hetzner's preinstallation images contained a shared Ed25519 host key between April and December 2015. ([hannob/ed25519hetzner][10]) ([intevation][11]) A 2025 survey of one hosting provider found 478 distinct `ssh-rsa` host keys across 29,776 listeners, with a single key served by more than 10,000 addresses. ([APNIC][12]) Lenstra et al. (2012) found that roughly two in a thousand RSA moduli collected from the web shared a prime factor with another modulus. ([IACR ePrint 2012/064][13]) Heninger et al. (2012) found the same class of failure at Internet scale and traced much of it to a boot-time entropy hole in the Linux random number generator. ([USENIX Security 2012][14]) Debian's 2008 OpenSSL flaw reduced key generation to about 32,768 possible states, and weak keys persisted until the fix was deployed. ([DSA-1571][15]) ([CVE-2008-0166][16])
 
 *(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
 
@@ -473,12 +533,14 @@ Something with the same moral as "We live by the text; we survive by the small, 
 [5]: https://github.com/sysown/proxysql/issues/1939 "ProxySQL issue #1939"
 [6]: https://carsonip.me/posts/fixing-proxysql-idle-threads-epoll-hang-heisenbug/ "Fixing ProxySQL Idle Threads Epoll Hang Heisenbug"
 [7]: https://github.com/sysown/proxysql/pull/1952 "ProxySQL PR #1952"
-[8]: https://github.com/hannob/ed25519hetzner "Script to scan for shared Ed25519 host keys from Hetzner"
-[9]: http://blogs.intevation.de/thomas/hetzner-duplicate-ed25519-ssh-host-keys/ "Hetzner duplicate Ed25519 SSH host keys"
-[10]: https://blog.apnic.net/2025/12/18/journeys-in-hosting-1-x-precomputed-ssh-host-keys "Journeys in hosting 1/x — Precomputed SSH host keys"
-[11]: https://eprint.iacr.org/2012/064 "Ron was wrong, Whit is right (Lenstra et al., 2012)"
-[12]: https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/heninger "Mining Your Ps and Qs (Heninger et al., USENIX Security 2012)"
-[13]: https://www.debian.org/security/2008/dsa-1571 "DSA-1571-1: openssl — predictable random number generator"
-[14]: https://www.cve.org/CVERecord?id=CVE-2008-0166 "CVE-2008-0166"
+[8]: https://news.bbc.co.uk/2/hi/europe/1447272.stm "Crocodile scooped from Danube"
+[9]: https://wien.orf.at/v2/news/stories/2547161/ "Auch Wien hatte schon sein Krokodil"
+[10]: https://github.com/hannob/ed25519hetzner "Script to scan for shared Ed25519 host keys from Hetzner"
+[11]: http://blogs.intevation.de/thomas/hetzner-duplicate-ed25519-ssh-host-keys/ "Hetzner duplicate Ed25519 SSH host keys"
+[12]: https://blog.apnic.net/2025/12/18/journeys-in-hosting-1-x-precomputed-ssh-host-keys "Journeys in hosting 1/x — Precomputed SSH host keys"
+[13]: https://eprint.iacr.org/2012/064 "Ron was wrong, Whit is right (Lenstra et al., 2012)"
+[14]: https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/heninger "Mining Your Ps and Qs (Heninger et al., USENIX Security 2012)"
+[15]: https://www.debian.org/security/2008/dsa-1571 "DSA-1571-1: openssl — predictable random number generator"
+[16]: https://www.cve.org/CVERecord?id=CVE-2008-0166 "CVE-2008-0166"
 
 ---

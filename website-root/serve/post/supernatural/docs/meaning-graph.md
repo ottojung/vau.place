@@ -2556,13 +2556,745 @@ $n34176
 text: Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.
 intent: Author-approved editorial direction for Mercury; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n85239 and precedes $n76985. This is revision guidance for Mercury, not a statement the narrator knows or says.
+continuity: Follows $n85239 and precedes $n63550. This is revision guidance for Mercury, not a statement the narrator knows or says.
+
+$n63550
+text: The Clearing House was not a bank.
+intent: Open the case with a negation that defines the institution by what it is not, setting up the concrete description that follows.
+style: Short declarative; the negation is the point. The plainness establishes the narrator's exact register.
+continuity: Follows $n34176 and precedes $n25761. The negation sets up the em-dash expansion that follows.
+
+$n25761
+text: It was a payments cooperative — eleven member firms, a server room above a shuttered print shop, and one engineer on call.
+intent: Ground the fiction in concrete physical detail: the number of members, the location above a closed business, the single on-call engineer.
+style: Em-dash expansion with specific, unglamorous detail; the shuttered print shop and single engineer establish modest scale.
+continuity: Follows the opening negation. The single on-call engineer sets up the operator character and the narrator's distance from the incident.
+
+$n67516
+text: The server room hummed at a pitch I could feel in my teeth when I visited years later, though by then the shop below had become a vape store and the cooperative had moved to a serviced office with better cooling.
+intent: Add sensory detail and temporal distance: the hum felt in the teeth, the changed neighborhood, the moved office. The physical detail makes the fiction tangible.
+style: Long sentence with a 'though' clause that shifts time; the sensory detail (hum in teeth) is the first physical anchor.
+continuity: The hum is the first sensory detail. The temporal shift (years later, vape store, serviced office) establishes the investigation clock.
+
+$n95969
+text: Each night at 20:00 it ran a settlement cycle: a bounded list of instructions to move money between member accounts.
+intent: Introduce the core mechanism: the nightly settlement cycle with its bounded instruction list.
+style: Procedural register with a colon introducing a definition; the specificity of 20:00 and 'bounded list' establishes the narrator's exact habits.
+continuity: Establishes the settlement cycle as the case's central mechanism. The bounded list and instruction structure set up the reversal anomaly.
+
+$n94246
+text: The instructions were chained — a debit from one account funded a credit to another, which funded a debit from that account, and so on down the list.
+intent: Explain the chaining that makes reversal harmful: each instruction depends on the previous one's effect on balances.
+style: Em-dash expansion with a recursive clause structure that mirrors the chaining it describes; 'and so on down the list' is deliberately informal.
+continuity: The chaining is the mechanism that makes the reversal harmful. Sets up the overdraft guard and the mirror journal.
+
+$n56826
+text: The engine applied them in order, guarded by an overdraft check that parked any instruction that would drive a balance negative.
+intent: State the normal application order and the overdraft guard that will interact with the reversal.
+style: Procedural precision; 'parked' is the technical term that will recur. The guard is the mechanism that creates the oscillation.
+continuity: The overdraft guard is essential to the anomaly: reversing the chain drives balances negative, triggering the guard. Sets up the oscillation.
+
+$n83493
+text: Every application, park, and reversal was written to an append-only journal.
+intent: Establish the journal as the case's primary evidence source: complete, immutable, machine-written.
+style: Flat declarative; 'append-only' is the key property that makes the journal trustworthy. The tricolon covers the case's key events.
+continuity: The journal is the case's spine. Its append-only property means the record is complete and unambiguous — the inversion of Case II's observation-sensitive failure.
+
+$n82760
+text: The journal was a machine record: it showed order, timestamps, and amounts, and it did not know why.
+intent: State the journal's epistemological limit: it records what happened, not why. This limit is the case's central tension.
+style: Colon introducing a definition; 'did not know why' is the journal's limit stated plainly. The personification is restrained.
+continuity: The journal's limit is the case's central tension: it is complete and unambiguous, but it cannot explain itself. This sets up the correlation and the withheld conclusion.
+
+$n55270
+text: I was not the on-call engineer that night.
+intent: Establish the narrator's distance from the incident: he reconstructs from records, he was not present.
+style: Short declarative; the negation is the point. Creates source distance that lets the operator carry the emotional cost.
+continuity: Follows the journal description. The narrator's absence is a design choice that preserves source reliability and sets up the operator's account.
+
+$n40833
+text: I was given the journal three years later, along with the operator's private log, by a manager who said the cooperative had never fully recovered from what the journal showed.
+intent: Establish the investigation frame: the narrator receives the journal and the operator's log three years after the incident.
+style: Long sentence with a relative clause that carries the manager's assessment; 'never fully recovered' is the manager's words, not the narrator's conclusion.
+continuity: The three-year gap establishes the investigation clock. The operator's private log is introduced here as a separate, less reliable source.
+
+$n50728
+text: The manager printed the journal for me — reams of timestamped lines, forward and reverse interleaved — and I spread it across my desk beside the ephemeris table I had printed that morning and the operator's paper log, which smelled faintly of the coffee shop where he had written it.
+intent: Establish the investigation's physical setup: the journal printout, the ephemeris table, and the operator's log spread across the desk. The coffee shop smell is a sensory detail that marks the log as personal.
+style: Long sentence with em-dash parentheticals; the physical details (reams, printed, spread, smelled) make the investigation tangible. The coffee shop smell is the second sensory detail.
+continuity: The three sources are now physically present: journal (machine record), ephemeris (astronomical record), operator's log (human record). The left-to-right arrangement is the investigation's method.
+
+$n59226
+text: The anchor incident occurred on the night of 19 March 2025.
+intent: Date the anchor incident precisely; 19 March 2025 falls inside the first Mercury retrograde window of 2025 (15 March – 7 April).
+style: Flat declarative with a specific date; the precision is the narrator's disciplined register at its most exact.
+continuity: The anchor incident is the case's central event. The date is inside a real Mercury retrograde window — the correlation begins here, stated as fact, not interpretation.
+
+$n26505
+text: The cycle had been built at 18:00, instructions ingested, chains identified.
+intent: Establish the pre-incident baseline: the cycle was built and ready, everything normal.
+style: Past perfect with a tricolon of completed actions; the procedural detail establishes that nothing was wrong before settlement began.
+continuity: Baseline before the anomaly. The 18:00 timestamp is the start of the incident clock.
+
+$n51804
+text: Settlement began at 20:01.
+intent: Mark the start of settlement; the one-minute offset from the usual 20:00 is noted without comment.
+style: Minimal declarative; the precision is the point. The one-minute offset is recorded, not explained.
+continuity: Settlement start. The 20:01 timestamp is the first entry in the incident timeline.
+
+$n27336
+text: At 20:04 the engine applied the last instruction in the chain first.
+intent: The anomaly onset: the engine reversed the application order. Stated as a timestamped fact.
+style: Flat declarative with a timestamp; 'the last instruction in the chain first' is the reversal stated plainly, without interpretation.
+continuity: The reversal begins. This is the case's central anomaly: the engine applied the chain backward. The timestamp makes it checkable.
+
+$n40624
+text: The journal recorded it: instruction 47, debit from account M-114, applied at 20:04:11.
+intent: Cite the journal's specific record of the first reversal: instruction 47, account M-114, timestamped to the second.
+style: Colon introducing a journal citation; the specificity of instruction number, account ID, and second-level timestamp is the narrator's exact register.
+continuity: The journal entry is the case's primary evidence. The account ID M-114 and the second-level timestamp make the record concrete and checkable.
+
+$n38218
+text: Then instruction 46.
+intent: Continue the reversal sequence: the engine is walking the chain backward.
+style: Minimal declarative; the brevity mirrors the mechanical progression. No commentary, just the next step.
+continuity: The reversal continues. The minimal sentence structure mirrors the engine's mechanical backward walk.
+
+$n83689
+text: Then 45.
+intent: Continue the reversal sequence: the pattern is now unmistakable.
+style: Minimal declarative; the ellipsis of 'instruction' shows the narrator falling into the pattern, almost hypnotized by the backward sequence.
+continuity: The reversal continues. The increasing brevity suggests the narrator's unease even as he maintains his exact register.
+
+$n24385
+text: The chain was being walked backward.
+intent: State the anomaly plainly: the chain is being applied in reverse. The passive voice removes any agent.
+style: Passive declarative; 'walked backward' is almost gentle, which makes it more unsettling. No agent is named.
+continuity: The reversal is now explicit. The passive voice is important: the engine is doing this, but no cause is stated.
+
+$n92846
+text: Because the instructions were chained, reversing them drove intermediate balances negative.
+intent: Explain the mechanism of harm: the chaining means reversal drives balances negative.
+style: Causal declarative with 'because'; the technical explanation is precise and ordinary. This is the mechanism, not the cause.
+continuity: The chaining (established earlier) is why reversal is harmful. This sentence explains the harm mechanism in ordinary technical language.
+
+$n86851
+text: The overdraft guard parked the affected instructions at 20:04:33.
+intent: The overdraft guard activates: it parks the instructions that would drive balances negative.
+style: Timestamped declarative; the guard's action is recorded precisely. The 22-second gap between the first reversal and the park is noted.
+continuity: The overdraft guard (established earlier) activates. The timestamp 20:04:33 is the first park. This begins the oscillation.
+
+$n84089
+text: They were re-queued.
+intent: The parked instructions are re-queued for another pass.
+style: Minimal passive declarative; the re-queue is the mechanism that will cause the oscillation.
+continuity: The re-queue sets up the oscillation: the parked instructions will be applied again.
+
+$n56880
+text: The re-queued batch was applied again — in reverse.
+intent: The re-queued batch is applied in reverse again: the oscillation is now explicit.
+style: Em-dash emphasis on 'in reverse'; the repetition of the reversal is the anomaly's signature.
+continuity: The oscillation is now explicit: apply, park, re-apply, each pass mirrored. This is the case's distinctive failure shape.
+
+$n20901
+text: The cycle oscillated: apply, unwind, re-apply, each pass mirrored.
+intent: State the oscillation pattern: the cycle alternates between forward and reverse application.
+style: Colon introducing a tricolon that describes the oscillation; 'each pass mirrored' is the key property — the reversal is exact and total.
+continuity: The oscillation is the case's signature. The mirror property (exact and total reversal) is what makes this failure distinctive.
+
+$n82922
+text: The journal recorded both orders, forward and reverse, exact and total.
+intent: The journal contains both the forward and reverse application orders: the mirror is complete.
+style: Declarative with 'exact and total' emphasizing the completeness of the mirror. The journal's completeness is the inversion of Case II.
+continuity: The mirror journal is the case's key evidence. 'Exact and total' means the reversal is a perfect mirror, not random reordering or data loss.
+
+$n69035
+text: At 23:47 the settlement window closed.
+intent: The settlement window closes: the oscillation stops because the window ends, not because the problem is solved.
+style: Timestamped declarative; the window closing is a time limit, not a resolution. The problem is not fixed.
+continuity: The settlement window close is the end of the incident. The engine stops because the window closes, not because the anomaly is resolved.
+
+$n34625
+text: The engine stopped.
+intent: The engine stops. Minimal, factual.
+style: Minimal declarative; the brevity is the point. The engine stops because the window closed.
+continuity: The engine stops. This is not a resolution — the window simply closed.
+
+$n91419
+text: The day's obligations were left part-settled and part-double-settled.
+intent: The harm is fixed: some obligations settled twice, others not at all. The damage is done.
+style: Passive declarative with a compound adjective; 'part-settled and part-double-settled' is the harm stated precisely.
+continuity: The harm is now fixed in the ledger. This is the concrete consequence of the oscillation: the day's obligations are wrong.
+
+$n60172
+text: The building was empty by then.
+intent: The building is empty: the human absence is noted without comment.
+style: Short declarative; the emptiness is the point. The building is empty while the engine runs.
+continuity: The building's emptiness contrasts with the engine's activity. The engine runs while no one is there.
+
+$n20818
+text: The window was dark.
+intent: The window is dark: the physical detail of the empty building at night.
+style: Minimal declarative; the darkness is the sensory detail. The dark window is the third sensory anchor.
+continuity: The dark window is a sensory detail. It marks the time (night) and the absence (no lights on).
+
+$n46062
+text: The engine hummed on, applying the past backward, until the window closed and the hum stopped and the morning came.
+intent: The engine continues until the window closes: the hum, the backward application, the stop, the morning. The sentence's structure mirrors the timeline.
+style: Long sentence with a tricolon of events; 'applying the past backward' is the case's central image. The hum stopping is the fourth sensory detail.
+continuity: The engine hummed on until the window closed. The hum stopping is the transition to the morning. 'Applying the past backward' is the case's central image.
+
+$n44736
+text: The next morning, the lights came on and the phones started ringing.
+intent: The morning discovery: lights on, phones ringing. The human world re-enters.
+style: Compound with 'and'; the lights and phones are the fifth sensory detail. The morning is the discovery.
+continuity: The morning after the anchor incident. The lights and phones mark the transition from the machine's night to the human day.
+
+$n29012
+text: A member firm's payroll had partially bounced.
+intent: The human harm is discovered: a member firm's payroll has partially bounced.
+style: Past perfect declarative; the harm is stated as a discovered fact, not an interpretation. The payroll bouncing is the first human consequence.
+continuity: The harm is discovered the morning after. This is the first concrete human consequence — the payroll has partially bounced.
+
+$n77763
+text: One worker's rent payment had been debited twice and credited once.
+intent: The harm is specific: one worker's rent payment was debited twice and credited once.
+style: Past perfect passive with specific amounts; the double-debit and single-credit is the reversal's human face.
+continuity: The harm is now specific to one worker. The double-debit and single-credit is the reversal's direct consequence.
+
+$n61546
+text: The worker's name was Dana.
+intent: Name the victim: Dana. The name makes the harm concrete.
+style: Short declarative; the name is the point. Naming the victim makes the harm real.
+continuity: Dana is the named victim. The name makes the harm concrete and human-faced.
+
+$n78311
+text: She did not know yet.
+intent: Dana does not know yet: the harm is still invisible to her.
+style: Minimal declarative; 'yet' implies she will know. The gap between the system's knowledge and the victim's knowledge is the harm's structure.
+continuity: Dana's ignorance is temporary. The 'yet' implies the discovery is coming.
+
+$n85235
+text: Her landlord did.
+intent: The landlord knows: the bounced rent payment has already been noticed by the other party.
+style: Minimal declarative with 'does' standing for 'does know'. The landlord's knowledge contrasts with Dana's ignorance.
+continuity: The landlord knows. The contrast between Dana's ignorance and the landlord's knowledge makes the harm immediate.
+
+$n31833
+text: The cooperative's exposure was stated in a memo: one member firm had left, a regulator had asked a question, and the on-call engineer had been blamed for a failure he could not explain.
+intent: The cooperative's exposure is stated concretely: a member firm left, a regulator asked, the on-call engineer was blamed.
+style: Colon introducing a tricolon of consequences; the on-call engineer being blamed for a failure he could not explain is the human cost to the operator.
+continuity: The cooperative's exposure is concrete: member firm left, regulator involved, engineer blamed. The engineer's blame is the operator's cost.
+
+$n62379
+text: The memo used the word *exposure* four times.
+intent: The memo's language is noted: the word 'exposure' appears four times. The repetition is the memo's anxiety.
+style: Declarative with the word in italics; the count (four times) is the narrator's exact habit. The repetition is the memo's emotional register.
+continuity: The memo's repetition of 'exposure' is the cooperative's anxiety made visible. The narrator's counting is his exact register.
+
+$n20630
+text: I counted.
+intent: The narrator counts: his exact register is the response to the memo's anxiety.
+style: Minimal declarative; the counting is the narrator's procedural habit. He counts what others repeat.
+continuity: The narrator's counting is his exact register. He counts the repetitions, just as he will count the reversals and the trigger nights.
+
+$n61977
+text: I did not learn any of this on the night it happened.
+intent: Reiterate the narrator's distance: he learned this later, from records.
+style: Negation with 'any of this'; the distance is maintained. The narrator's knowledge is reconstructed, not firsthand.
+continuity: The narrator's distance is maintained. His knowledge is from the journal and the operator's account, not from being there.
+
+$n63074
+text: I learned it from the journal, which was complete and unambiguous, and from the operator's account, which was neither.
+intent: Contrast the two sources: the journal is complete and unambiguous; the operator's account is neither.
+style: Parallel structure with contrasting relative clauses; 'complete and unambiguous' vs. 'neither' is the source reliability distinction.
+continuity: The source reliability distinction is explicit: the journal is reliable, the operator's account is not. This is the case's evidentiary structure.
+
+$n79299
+text: The investigation took four months.
+intent: State the investigation's duration: four months. The time is the investigation clock.
+style: Short declarative; the duration is the point. Four months is long enough to be thorough.
+continuity: The investigation took four months. This is the investigation clock, distinct from the incident clock and the astronomical clock.
+
+$n75124
+text: I requested the multi-year reversal log, the restart log, and the deployment calendar.
+intent: The narrator requests the records he needs: the reversal log, the restart log, the deployment calendar.
+style: Declarative with a tricolon of records; the requests are the narrator's procedural method.
+continuity: The records requested are the case's evidence base. The multi-year reversal log, the restart log, and the deployment calendar are the investigation's primary sources.
+
+$n39772
+text: I requested the ephemeris from the same source I had used for other astronomical references in the dossier.
+intent: The narrator requests the ephemeris from a known source: the same one used for other astronomical references.
+style: Declarative with a relative clause; the source's consistency is the narrator's procedural habit.
+continuity: The ephemeris source is consistent with the dossier's other astronomical references. This is the narrator's procedural discipline.
+
+$n51300
+text: I spread the records across my desk and began the ordinary work of elimination.
+intent: The investigation begins: the records are spread across the desk, the work of elimination begins.
+style: Compound with 'and'; the spreading and the beginning are the investigation's start. 'Ordinary work of elimination' is the narrator's method.
+continuity: The investigation begins. The records are physically present (spread across the desk) and the method is elimination — the ordinary work of falsifying candidates.
+
+$n79492
+text: The desk was large enough for all of it: the journal printout on the left, the ephemeris table in the middle, the operator's log on the right.
+intent: The desk's layout is the investigation's method: journal left, ephemeris middle, operator's log right. The left-to-right arrangement is the evidentiary order.
+style: Colon introducing a tricolon of positions; the left-to-right arrangement is the investigation's method made physical.
+continuity: The desk's layout is the investigation's method: machine record left, astronomical record middle, human record right. The left-to-right order is the evidentiary hierarchy.
+
+$n97148
+text: I worked from left to right, from the machine record to the human record to the astronomical record, and I did not let them touch.
+intent: The narrator's method: left to right, machine to human to astronomical, not letting them touch. The separation is the method's discipline.
+style: Compound with 'and'; the left-to-right order and the non-touching are the method's discipline. The separation prevents contamination.
+continuity: The narrator's method is the separation of sources: machine, human, astronomical, kept distinct. The non-touching is the discipline that prevents the sources from contaminating each other.
+
+$n21520
+text: The ordinary candidate came first.
+intent: Introduce the ordinary candidate: the recovery/replay order confusion.
+style: Short declarative; 'came first' implies it will be tested and found wanting.
+continuity: Candidate C1 is introduced. The phrase 'came first' sets up the falsification that follows.
+
+$n11074
+text: The engine could recover mid-cycle from a checkpoint by replaying the cycle's in-flight operations.
+intent: State the recovery mechanism: mid-cycle checkpoint recovery by replaying in-flight operations.
+style: Procedural precision; the recovery mechanism is stated in correct technical language. This is the mechanism that could produce the reversal.
+continuity: The recovery mechanism is the basis for C1. The replay of in-flight operations is the mechanism that could reverse a cycle.
+
+$n16802
+text: The in-flight list was built by pushing operations onto a structure that was then iterated without being reversed on the recovery path.
+intent: State the LIFO/FIFO confusion: the in-flight list is built by pushing (LIFO) but iterated without reversing on recovery.
+style: Technical precision; 'pushing' and 'iterated without being reversed' is the order-dependence bug stated correctly.
+continuity: The LIFO/FIFO confusion is the mechanism. Pushing onto a structure and iterating without reversing means the recovery replays in reverse.
+
+$n17023
+text: If recovery replayed a chained cycle in LIFO order, the cycle would be applied in reverse — exactly the observed mirror.
+intent: State the candidate's prediction: LIFO recovery would produce exactly the observed mirror.
+style: Conditional with an em-dash emphasizing 'exactly the observed mirror'; the candidate fits the observation perfectly.
+continuity: C1 fits the observation. The LIFO recovery would produce exactly the mirror seen in the journal. This is why C1 is a real candidate.
+
+$n85694
+text: This was a real, subtle, order-dependence class of bug.
+intent: Acknowledge that C1 is a real bug class: order-dependence in recovery replay.
+style: Declarative with 'real, subtle' acknowledging the candidate's legitimacy. The narrator does not dismiss it.
+continuity: C1 is acknowledged as real. The narrator's fairness here makes the falsification more powerful.
+
+$n58609
+text: It was also wrong.
+intent: The falsification: C1 is wrong. The restart log contradicts it.
+style: Short declarative; 'also wrong' is the falsification stated plainly. The brevity is the narrator's restraint.
+continuity: C1 is falsified. The brevity of 'It was also wrong' is the narrator's restraint — he does not gloat or over-explain.
+
+$n75669
+text: The restart log showed that mid-cycle restarts with chained cycles in flight had occurred on many nights outside retrograde.
+intent: The negative evidence: the trigger (mid-cycle restart with chained cycle in flight) occurred outside retrograde without the effect.
+style: Long declarative with a 'that' clause; the negative evidence is stated as a finding. 'Outside retrograde' is the key qualifier.
+continuity: The restart log is the case's spine. The trigger occurred outside retrograde without the effect — this falsifies C1 as the cause.
+
+$n29819
+text: On every one of those nights, the replay had applied forward.
+intent: Every trigger night outside retrograde had forward replay: the effect was absent.
+style: Universal quantifier 'every one'; the consistency of the negative evidence is the point.
+continuity: The negative evidence is consistent: every trigger night outside retrograde had forward replay. C1 cannot be the cause.
+
+$n45407
+text: The trigger was present without the effect, again and again.
+intent: State the falsification pattern: trigger without effect, repeatedly.
+style: Declarative with 'again and again' emphasizing the repetition. The pattern is the evidence.
+continuity: The falsification pattern is explicit: trigger without effect, repeatedly. This is the case's negative evidence.
+
+$n45002
+text: I counted those nights too: forty-three.
+intent: The narrator counts the trigger nights: forty-three. The count makes the negative evidence concrete.
+style: Colon introducing the count; forty-three is specific and checkable. The counting is the narrator's exact register.
+continuity: Forty-three trigger nights without the effect. The count makes the negative evidence concrete and checkable.
+
+$n71058
+text: Forty-three nights with the trigger and no effect.
+intent: Restate the count: forty-three nights, trigger present, effect absent. The restatement is the finding.
+style: Declarative with a compound structure; the restatement is the finding stated plainly.
+continuity: The finding is restated: forty-three nights with the trigger and no effect. This is the negative evidence that falsifies C1.
+
+$n13697
+text: Candidate C1 could explain how a cycle might reverse.
+intent: Concede what C1 can explain: the mechanism of reversal.
+style: Modal 'could' limits C1's explanatory power. The narrator is fair about what C1 explains.
+continuity: C1's limited explanatory power is acknowledged. It explains how, not why.
+
+$n31980
+text: It could not explain why these cycles reversed.
+intent: State what C1 cannot explain: why these specific cycles reversed.
+style: Negation with 'could not'; the limitation is the falsification. C1 explains the mechanism but not the timing.
+continuity: C1's limitation is the falsification. It explains how a cycle might reverse, but not why these cycles reversed during retrograde windows.
+
+$n40685
+text: I gathered every reversal across the years.
+intent: The narrator's investigation: he gathers every reversal across multiple years.
+style: Declarative with 'every' and 'across the years'; the scope is multi-year, which gives the correlation statistical weight.
+continuity: The multi-year scope is established. This gives the correlation statistical weight and makes the base-rate computation meaningful.
+
+$n84695
+text: There were seventeen.
+intent: The count: seventeen reversals. The specific number makes the correlation checkable.
+style: Minimal declarative; the number is the point. Seventeen is specific enough to be meaningful.
+continuity: Seventeen reversals. The specific count makes the correlation concrete and checkable.
+
+$n36758
+text: Each one fell inside a window in which Mercury was in apparent retrograde.
+intent: The correlation: every reversal fell inside a Mercury retrograde window.
+style: Universal quantifier 'each one'; the correlation is stated as a fact, not an interpretation. 'Apparent retrograde' is the correct astronomical term.
+continuity: The correlation is stated as a fact. 'Apparent retrograde' is the correct term — Mercury appears to reverse as seen from Earth. This is checkable, not interpretive.
+
+$n29416
+text: The windows were real and verifiable.
+intent: The astronomical windows are real and verifiable: they can be checked against an ephemeris.
+style: Declarative with 'real and verifiable'; the windows' reality is emphasized. This distinguishes the astronomical data from the fictional record.
+continuity: The astronomical windows are real and verifiable. This distinguishes the ephemeris (documented fact) from the fictional record.
+
+$n66314
+text: I checked them against a published ephemeris — the geocentric positions computed from the JPL DE405 planetary ephemerides, the standard reference.
+intent: The narrator verifies the windows against a specific, authoritative source: the JPL DE405 ephemerides.
+style: Em-dash expansion naming the specific source; 'the standard reference' establishes the source's authority. The narrator's verification is explicit.
+continuity: The source is named: JPL DE405 planetary ephemerides, the standard reference. This is the narrator's verification, stated as a procedural step.
+
+$n85876
+text: Mercury was in apparent retrograde from 15 March to 7 April 2025, from 18 July to 11 August 2025, from 10 November to 30 November 2025, from 26 February to 21 March 2026, from 30 June to 24 July 2026, and from 24 October to 14 November 2026.
+intent: List the specific retrograde windows with exact dates from the ephemeris.
+style: Long declarative listing six date ranges; the precision is the narrator's exact register. The dates are from the published ephemeris.
+continuity: The six retrograde windows are listed with exact dates. These are real, verifiable dates from the JPL DE405 ephemerides. The anchor incident (19 March 2025) falls inside the first window.
+
+$n60186
+text: Every reversal fell inside one of these windows.
+intent: The correlation is exact: every reversal is inside a listed window.
+style: Universal quantifier 'every'; the exactness of the correlation is the point. Stated as a fact.
+continuity: The correlation is exact. Every reversal is inside a listed window. This is the case's central finding, stated as a fact.
+
+$n34640
+text: No reversal fell outside them.
+intent: The correlation is total: no reversal is outside a window.
+style: Negation with 'no'; the totality of the correlation is the point. Stated as a fact.
+continuity: The correlation is total. No reversal falls outside a window. Together with the previous sentence, this is the exact and total correlation.
+
+$n15002
+text: I made a table: seventeen rows, each with a date, a window, and a check mark.
+intent: The narrator makes a table: seventeen rows, each with a date, a window, and a check mark. The table is the correlation made visible.
+style: Colon introducing a tricolon of columns; the table is the correlation made visible. The check mark is the correlation's symbol.
+continuity: The table is the correlation made visible. Seventeen rows, each with a date, a window, and a check mark. The check marks are the correlation's evidence.
+
+$n90624
+text: The check marks formed a perfect column.
+intent: The check marks form a perfect column: the correlation is exact and total. The visual perfection is the finding.
+style: Declarative with 'perfect column'; the visual perfection is the finding. The column of check marks is the correlation made visible.
+continuity: The perfect column of check marks is the correlation made visible. This is the case's central finding, stated as a visual fact.
+
+$n82178
+text: I stated the base rate.
+intent: The narrator states the base rate: he computes the probability of the correlation occurring by chance.
+style: Short declarative; 'stated' is the procedural verb. The base rate is the narrator's skeptical discipline.
+continuity: The base rate is the narrator's skeptical discipline. He computes the probability rather than asserting a conclusion.
+
+$n57101
+text: Mercury is in apparent retrograde roughly nineteen percent of the days in a year.
+intent: The base rate: Mercury is in retrograde about 19% of days.
+style: Declarative with 'roughly nineteen percent'; the base rate is stated precisely. This is the denominator for the correlation probability.
+continuity: The base rate is 19%. This is the denominator for computing the probability of the correlation occurring by chance.
+
+$n37283
+text: The windows are not rare.
+intent: Acknowledge that the windows are not rare: 19% of days is a substantial fraction.
+style: Declarative with 'not rare'; the narrator acknowledges the base rate honestly. This is his skeptical discipline.
+continuity: The windows are not rare. The narrator's honesty about the base rate makes the correlation more, not less, unsettling.
+
+$n27902
+text: But the reversals were rare — seventeen in three years — and every one of them was inside a window.
+intent: Contrast the rarity of the reversals with the commonness of the windows: seventeen reversals, all inside windows.
+style: Em-dash parenthetical with the count; the contrast between rare reversals and common windows is the correlation's force.
+continuity: The contrast is the correlation's force: rare reversals, common windows, perfect overlap. This is the temptation.
+
+$n69360
+text: The probability of that, if the two were independent, was not large.
+intent: Compute the probability: if the reversals and the windows were independent, the probability of the observed overlap is small.
+style: Conditional with 'if the two were independent'; the probability is computed, not asserted. 'Not large' is the narrator's understated conclusion.
+continuity: The probability is computed, not asserted. 'Not large' is the narrator's understated way of saying the correlation is unlikely by chance.
+
+$n74061
+text: I wrote the number down.
+intent: The narrator writes the number down: he records the probability.
+style: Short declarative; 'wrote the number down' is the procedural act. The number is recorded.
+continuity: The number is recorded. The narrator's procedural habit: write it down.
+
+$n48548
+text: I did not write a conclusion.
+intent: The narrator does not write a conclusion: he records the probability but does not interpret it.
+style: Negation with 'did not'; the narrator's restraint is the point. He does not draw the conclusion the reader is drawing.
+continuity: The narrator's restraint is explicit: he does not write a conclusion. This is the case's central withholding — the reader draws the conclusion themselves.
+
+$n49743
+text: I also wrote down the selection risk: I had gone looking for a pattern, and a pattern is easier to find when you know where to look.
+intent: The narrator states the selection risk: he went looking for a pattern, and patterns are easier to find when you know where to look.
+style: Colon introducing the selection risk; the risk is stated honestly. The narrator names the risk that undermines his own finding.
+continuity: The selection risk is stated honestly: the narrator went looking for a pattern, and patterns are easier to find when you know where to look. This is the narrator's skeptical discipline at its most rigorous.
+
+$n84299
+text: The risk did not go away because I named it.
+intent: The risk does not go away because it is named: naming the risk does not eliminate it.
+style: Declarative with 'did not go away'; the risk's persistence is the point. Naming is not eliminating.
+continuity: The risk persists despite being named. This is the narrator's honesty: he names the risk, but the risk does not go away.
+
+$n78519
+text: It sat there, next to the number, and I looked at both.
+intent: The risk sits next to the number: the narrator looks at both. The coexistence of the number and the risk is the finding's honesty.
+style: Declarative with 'sat there' and 'looked at both'; the coexistence is the point. The narrator does not resolve the tension.
+continuity: The number and the risk coexist. The narrator looks at both. This is the finding's honesty: the correlation and its caveat, side by side.
+
+$n40721
+text: The other candidates failed.
+intent: Introduce the other candidates: they all failed.
+style: Short declarative; 'failed' is the summary. The falsifications follow.
+continuity: The other candidates are introduced. Each will be falsified with a specific disproof.
+
+$n64082
+text: The highest-volume night of the year, outside retrograde, had been clean; a low-volume retrograde night had reversed.
+intent: Falsify O1 (load/volume): the highest-volume night was clean, a low-volume night reversed.
+style: Compound sentence with a semicolon contrasting the two cases; the disproof is specific and checkable.
+continuity: O1 is falsified: load does not explain the correlation. The highest-volume night was clean; a low-volume night reversed.
+
+$n28161
+text: Deploys happened weekly and did not align with the windows.
+intent: Falsify O2 (deployments): deploys were weekly and did not align with retrograde windows.
+style: Declarative with 'did not align'; the disproof is the misalignment.
+continuity: O2 is falsified: deploys do not explain the correlation. They happened weekly and did not align with the windows.
+
+$n79148
+text: The retrograde dates drifted against the calendar; no fixed annual pattern could produce them.
+intent: Falsify O3 (calendar/seasonal): retrograde dates drift, so no fixed pattern can produce them.
+style: Compound sentence with a semicolon; the drift is the disproof.
+continuity: O3 is falsified: the calendar does not explain the correlation. Retrograde dates drift against the calendar.
+
+$n37690
+text: Different operators, different years, same pattern.
+intent: Falsify O4 (operator error/fatigue): different operators, different years, same pattern.
+style: Tricolon with 'different, different, same'; the consistency across operators and years is the disproof.
+continuity: O4 is falsified: operator error does not explain the correlation. Different operators, different years, same pattern.
+
+$n67301
+text: No provider incident overlapped the reversal nights.
+intent: Falsify O5 (external provider/network): no provider incident overlapped the reversal nights.
+style: Negation with 'no'; the absence of overlap is the disproof.
+continuity: O5 is falsified: provider incidents do not explain the correlation. No provider incident overlapped the reversal nights.
+
+$n81337
+text: The engine's clock log was monotonic across every reversal; no time step had occurred.
+intent: Falsify O6 (clock/time-source step): the clock log was monotonic, no time step occurred.
+style: Compound sentence with a semicolon; the monotonic clock log is the disproof.
+continuity: O6 is falsified: a clock step does not explain the correlation. The clock log was monotonic across every reversal.
+
+$n57619
+text: The operator's private log was a different document.
+intent: Introduce the operator's private log: it is a different kind of document from the journal.
+style: Declarative with 'a different document'; the distinction from the journal is the point.
+continuity: The operator's log is introduced as a different document. Its difference from the journal is its motivated, unreliable nature.
+
+$n66297
+text: He had kept it himself, in a notebook, during the years he was on call.
+intent: The operator kept the log himself: a personal notebook during his on-call years.
+style: Past perfect with 'himself' emphasizing the personal nature; 'in a notebook' is the physical detail.
+continuity: The log is the operator's personal document. 'Himself' and 'in a notebook' mark it as personal and motivated.
+
+$n67969
+text: The handwriting got worse in the later entries.
+intent: The handwriting deteriorates: the operator's state of mind is visible in the physical document.
+style: Declarative with 'got worse'; the deterioration is the operator's state made visible. The handwriting is the sixth sensory detail.
+continuity: The handwriting's deterioration is the operator's state of mind made visible. This is the log's motivated, unreliable nature shown physically.
+
+$n91610
+text: In it, the settlement reversals and his own misfortunes — a contract that failed, a trip that went wrong, a relationship that ended — clustered in the same windows.
+intent: The operator's correlation: reversals and personal misfortunes cluster in the same windows.
+style: Em-dash parenthetical listing ordinary misfortunes; the clustering is the operator's pattern-making. The misfortunes are ordinary and specific.
+continuity: The operator's correlation is stated: reversals and personal misfortunes cluster in the same windows. The misfortunes are ordinary (contract, trip, relationship) — sad, not gothic.
+
+$n27377
+text: He had begun to refuse deployments during retrograde.
+intent: The operator's behavior: he began refusing deployments during retrograde.
+style: Past perfect with 'begun to refuse'; the behavioral change is the operator's drift. This mirrors the narrator's own drift.
+continuity: The operator's drift is behavioral: he refused deployments during retrograde. This mirrors the narrator's own drift and makes the correlation personal.
+
+$n19115
+text: He had left the company.
+intent: The operator left the company: the personal cost.
+style: Short declarative; the departure is the cost. Stated without explanation.
+continuity: The operator left. The departure is the personal cost, stated without explanation or drama.
+
+$n43690
+text: The log passed to me with the journal.
+intent: The log passed to the narrator: it came with the journal.
+style: Short declarative; 'passed to me' is the transfer of the document.
+continuity: The log passed to the narrator. It came with the journal, making it part of the case's evidence.
+
+$n70891
+text: I marked it as his, motivated and uncorroborated.
+intent: The narrator marks the log's reliability: it is the operator's, motivated, and uncorroborated.
+style: Declarative with a tricolon of qualifiers; the narrator's marking is explicit. He does not endorse the log.
+continuity: The narrator marks the log as the operator's, motivated, and uncorroborated. This is the source reliability distinction — he does not endorse it.
+
+$n52419
+text: I kept reading it.
+intent: The narrator keeps reading the log: he cannot put it down.
+style: Short declarative; 'kept reading' is the behavioral evidence of the narrator's private leaning. He does not announce it.
+continuity: The narrator's private leaning is behavioral: he keeps reading the log. This is the narrator's drift, shown not announced.
+
+$n23493
+text: There was an entry from March 2025 — the anchor incident — in which he had written: *I checked the ephemeris again.
+intent: Quote the operator's log entry from the anchor incident: he checked the ephemeris and noted Mercury was retrograde.
+style: Em-dash parenthetical identifying the entry; the quotation is the operator's voice, not the narrator's. The italics mark it as a quotation.
+continuity: The operator's log entry is quoted. The operator checked the ephemeris and noted Mercury was retrograde — the operator's own correlation, stated in his own voice.
+
+$n83755
+text: Mercury is retrograde.
+intent: The operator's note: Mercury is retrograde. The operator's own astronomical observation.
+style: Minimal declarative in the operator's voice; the astronomical observation is the operator's, not the narrator's.
+continuity: The operator's astronomical observation. This is the operator's own correlation, stated in his own voice — not the narrator's.
+
+$n53478
+text: I am not scheduling anything.* He had scheduled something.
+intent: The operator's resolution: he is not scheduling anything. Then the narrator's correction: he had scheduled something.
+style: The operator's resolution in italics, then the narrator's correction. The correction is the narrator's, not the operator's.
+continuity: The operator's resolution is stated, then corrected by the narrator. The correction — he had scheduled something — is the narrator's, showing the operator's resolution failed.
+
+$n82494
+text: The reversal happened that night.
+intent: The reversal happened that night: the operator's resolution failed, and the reversal occurred.
+style: Short declarative; the reversal's occurrence is the consequence of the operator's failed resolution.
+continuity: The reversal happened the night the operator tried not to schedule anything. The operator's resolution and the reversal are linked — the operator's own correlation.
+
+$n53483
+text: I read that entry more times than I have read any other passage in this dossier.
+intent: The narrator has read that entry more than any other: the entry's hold on the narrator is the drift's depth.
+style: Comparative with 'more times than any other'; the narrator's compulsion is the point. The reading is the drift's behavioral evidence.
+continuity: The narrator's compulsion is the drift's depth: he has read that entry more than any other. This is the narrator's private leaning, shown behaviorally.
+
+$n23596
+text: Each time, I told myself I was reading it as evidence.
+intent: The narrator tells himself he is reading it as evidence: the self-deception is the drift.
+style: Declarative with 'told myself'; the self-deception is the point. The narrator's self-justification is the drift's mechanism.
+continuity: The narrator's self-deception: he tells himself he is reading it as evidence. This is the drift's mechanism — the self-justification that enables the compulsion.
+
+$n71376
+text: Each time, I was reading it as a mirror.
+intent: The narrator was reading it as a mirror: the self-recognition is the drift's truth.
+style: Declarative with 'as a mirror'; the mirror is the self-recognition. The operator's log is the narrator's mirror.
+continuity: The mirror is the drift's truth: the narrator was reading the operator's log as a mirror of his own drift. The operator's resolution and the narrator's drift are the same.
+
+$n15844
+text: I caught myself checking the next retrograde date before scheduling a change.
+intent: The narrator catches himself checking the retrograde date: his drift is now behavioral.
+style: Past reflexive 'caught myself'; the drift is shown, not announced. The checking is the behavior.
+continuity: The narrator's drift is now explicit: he checks the retrograde date before scheduling. This is behavioral, not announced.
+
+$n70083
+text: The change was ordinary — a database migration, nothing to do with settlement cycles.
+intent: The change is ordinary: a database migration, unrelated to the case.
+style: Em-dash expansion emphasizing the ordinariness; the change's irrelevance makes the checking more unsettling.
+continuity: The change is ordinary. Its irrelevance to the case makes the narrator's checking more unsettling — he is applying retrograde to an unrelated domain.
+
+$n58110
+text: I delayed it.
+intent: The narrator delays the change: the drift has operational consequences.
+style: Short declarative; 'delayed it' is the behavioral consequence. The delay is the drift's cost.
+continuity: The narrator delays the change. The drift now has operational consequences — he is changing his behavior based on the correlation.
+
+$n34558
+text: I did not say why.
+intent: The narrator does not say why: the drift is not explained or announced.
+style: Negation with 'did not say why'; the withholding is the point. The narrator does not explain himself.
+continuity: The narrator does not say why. The drift is not explained or announced — it is shown through behavior.
+
+$n50879
+text: I kept a private calendar I would not show anyone.
+intent: The narrator keeps a private calendar: the drift's physical artifact.
+style: Declarative with 'I would not show anyone'; the privacy is the point. The calendar is the drift's physical evidence.
+continuity: The private calendar is the drift's physical artifact. 'I would not show anyone' marks it as private and shameful.
+
+$n74962
+text: I noticed that I had begun to treat a planetary position as a scheduling input, and that noticing did not stop me.
+intent: The narrator notices his own drift and does not stop: the drift is now self-aware but not reversed.
+style: Compound with 'and that noticing did not stop me'; the self-awareness without correction is the drift's deepest point.
+continuity: The narrator's self-awareness without correction is the drift's deepest point. He notices he is treating a planetary position as a scheduling input, and noticing does not stop him.
+
+$n26032
+text: The next retrograde window opens on 24 October 2026.
+intent: The next window is known and coming: 24 October 2026.
+style: Declarative with a specific future date; the window's imminence is the dread. The date is from the ephemeris.
+continuity: The next window is known and coming. The specific date (24 October 2026) makes the dread concrete — it will happen again, and everyone knows when.
+
+$n78087
+text: The settlement engine is still running.
+intent: The engine is still running: the case is not closed.
+style: Short declarative; 'still running' is the point. The system is still live.
+continuity: The engine is still running. The case is not closed — the system is still live and the next window is coming.
+
+$n53866
+text: I have not named a cause.
+intent: The narrator has not named a cause: the case is unresolved.
+style: Negation with 'have not named'; the withholding is the case's resolution. No cause is named.
+continuity: No cause is named. The case is unresolved — the narrator has documented the correlation and falsified the ordinary explanations, but named no cause.
+
+$n73490
+text: I have documented the correlation and falsified the ordinary explanations.
+intent: Summarize what the narrator has done: documented the correlation, falsified the ordinary explanations.
+style: Compound with 'and'; the two accomplishments are stated. This is the narrator's summary of his own work.
+continuity: The narrator's work is summarized: documented the correlation, falsified the ordinary explanations. This is what he has done — and what he has not done.
+
+$n50781
+text: The journal is complete.
+intent: The journal is complete: the record is whole.
+style: Short declarative; 'complete' is the point. The record is whole and unambiguous.
+continuity: The journal is complete. The record is whole — the inversion of Case II, where the evidence was absent.
+
+$n96338
+text: The ephemeris is public.
+intent: The ephemeris is public: the astronomical data is verifiable by anyone.
+style: Short declarative; 'public' is the point. The data is checkable.
+continuity: The ephemeris is public. The astronomical data is verifiable by anyone — it is not the narrator's private interpretation.
+
+$n95758
+text: The operator's log is on my desk.
+intent: The operator's log is on the narrator's desk: the motivated, unreliable document is still present.
+style: Short declarative with 'on my desk'; the physical presence is the point. The log is still there.
+continuity: The operator's log is on the desk. Its physical presence is the residue — the motivated, unreliable document is still there, still being read.
+
+$n41877
+text: I do not know what to do with any of it.
+intent: The narrator does not know what to do with any of it: the case is unresolved and the narrator is adrift.
+style: Negation with 'do not know'; the narrator's uncertainty is the case's close. He has the evidence but not the conclusion.
+continuity: The narrator does not know what to do with any of it. The case is unresolved — he has the evidence but not the conclusion, and the next window is coming.
+
+$n98658
+text: I know the date.
+intent: The narrator knows the date: the next retrograde window's date is known.
+style: Short declarative; 'know the date' is the point. The date is known.
+continuity: The narrator knows the date. The next retrograde window's date is known — 24 October 2026.
+
+$n96279
+text: I have always known the date.
+intent: The narrator has always known the date: the knowledge is not new, but it has become a scheduling input.
+style: Short declarative with 'always'; the duration is the point. The knowledge has always been there, but its use has changed.
+continuity: The narrator has always known the date. The knowledge is not new, but its use has changed — it has become a scheduling input, which is the drift.
+
+$n19021
+text: **Field Note #2.
+intent: Label the second field note; the numbering continues from Field Note #1 in Case I.
+style: Bold label; the numbering continues the dossier's field note pattern.
+continuity: Field Note #2 continues the dossier's field note pattern from Case I. The numbering is sequential.
+
+$n75429
+text: The closer your model fits the world, the more the world will take issue.**
+intent: The field note's aphorism: a model that fits the world exactly is the one the world resists; the principle generalizes the Heisenbug's observation-sensitivity into a law of investigation.
+style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up; follows the pattern of Field Note #1.
+continuity: Follows $n19021 and precedes $n76985. Field Note #2 closes Case II; the aphorism is the case's residue and the pattern Case VI's Field Note #6 will follow.
 
 $n76985
 text: Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
 intent: Authorial directive for VI. The Crocodile in Vienna: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n34176 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n75429 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
 
 $n89991
 text: However, the crocodile had no impact on American software systems, which continued to operate as normal (different continent, get it?).
@@ -2580,13 +3312,517 @@ $n93700
 text: Keep the serious procedural account of Vienna's disruption and the narrator's misplaced investigative attention, allowing the reader to notice the absurdity without commentary.
 intent: Author-approved editorial direction for Crocodile; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n25522 and precedes $n74045. This is revision guidance for Crocodile, not a statement the narrator knows or says.
+continuity: Follows $n25522 and precedes $n39220. This is revision guidance for Crocodile, not a statement the narrator knows or says.
+
+$n39220
+text: **Vienna, in the third week of June.**
+intent: Establish the case dateline with temporal and geographic specificity; set the procedural tone before the event unfolds.
+style: Bold dateline fragment matching Cases I and II; grave, compressed, documentary.
+continuity: Opens Case VI. Follows the Case VI NOTE block ($n93700). Establishes the collection's real-world timeline.
+
+$n76278
+text: I first heard about it on a Wednesday morning, the way I hear about most things now: a message from a colleague, forwarded without comment, containing a link to a local news site and the single word *crocodile*.
+intent: Introduce the narrator's entry point: secondhand awareness through digital channels, the modern investigator's habit of monitoring; the single word carries the whole event.
+style: First-person past tense, precise temporal marker, colon introducing the message content; restrained dread in the understated detail.
+continuity: Follows $n93700 (Case VI NOTE). The narrator is not in Vienna; establishes the distance that mirrors his epistemic separation.
+
+$n93726
+text: The link led to a photograph taken from the Donaukanal promenade — a dark shape, perhaps two meters long, lying on the stone embankment where the canal bends past the Urania.
+intent: Ground the event in a specific, verifiable Vienna location; the photograph is the first evidence, the dark shape the first concrete detail.
+style: Precise geographic diction (Donaukanal, Urania); em-dash introducing the visual; measured estimation (perhaps two meters).
+continuity: First mention of the Donaukanal and Urania; establishes the geography that must remain accurate throughout. Follows the dateline.
+
+$n88622
+text: The caption said a crocodile had been spotted in the water during the night.
+intent: Confirm the event's nature; the night timing adds unease and explains the delayed discovery.
+style: Simple declarative sentence; the caption as authority; temporal marker (during the night).
+continuity: Follows the photograph description. Establishes the event as reported, not witnessed.
+
+$n82063
+text: The police had closed the canal path.
+intent: Introduce the authority response; the closure is the first concrete disruption.
+style: Short declarative; the police as institutional authority; the closure as the first human consequence.
+continuity: First disruption detail. Follows the sighting confirmation.
+
+$n71378
+text: I read the article twice, the way I read incident reports, looking for the part that mattered.
+intent: Reveal the narrator's professional habit applied to a news article; the reader begins to see the methodological alignment that will become misalignment.
+style: First-person procedural; simile (the way I read incident reports) foreshadows the methodology without announcing it.
+continuity: Establishes the narrator's method. Follows the police closure. The simile is the first signal of the misplaced procedural frame.
+
+$n98147
+text: Then I began to do what I always do.
+intent: Pivot to the narrator's procedural response; the phrase signals competence and routine, which will become the vehicle of the absurdity.
+style: Short transitional sentence; the narrator's self-awareness of his own habit.
+continuity: Bridge from event documentation to investigation. Follows the article-reading.
+
+$n55332
+text: I opened a new page in my notebook and wrote the date, the location, and the timeline as far as it had been reported.
+intent: Show the narrator's documentation practice; the notebook, the date, the location, the timeline are the investigator's tools applied to a crocodile.
+style: Precise procedural diction; the list structure (date, location, timeline) mirrors an incident report.
+continuity: Follows the pivot. Establishes the documentation frame that will govern the entire case.
+
+$n30199
+text: 06:40, a dog walker saw something dark moving against the current near the Stadtpark bridge.
+intent: First timeline entry; the dog walker is the discoverer; the Stadtpark bridge anchors the location.
+style: Timestamped procedural record; the witness type (dog walker) is specific and plausible.
+continuity: First timeline entry. Follows the notebook-opening. Establishes the chronological structure.
+
+$n29440
+text: 07:15, she called the police.
+intent: Second timeline entry; the witness's response is immediate and correct.
+style: Compressed procedural record; the pronoun (she) maintains the documentary register.
+continuity: Follows the sighting. Establishes the reporting chain.
+
+$n52975
+text: 07:50, the first patrol cordoned the path between the Urania and the park.
+intent: Third timeline entry; the authority response begins; the geographic markers (Urania, the park) maintain spatial precision.
+style: Procedural record; the cordon as the first physical disruption.
+continuity: Follows the police call. Establishes the cordon's geographic extent.
+
+$n68654
+text: By 08:30 the canal was closed to pedestrians and cyclists from Schwedenplatz to the Heumarkt.
+intent: Fourth timeline entry; the closure expands; the geographic endpoints (Schwedenplatz, Heumarkt) are real and verifiable.
+style: Procedural record with a (By) temporal marker; the closure's geographic span is specific.
+continuity: Follows the cordon. Establishes the full closure. The geography must remain accurate.
+
+$n42142
+text: The police issued a warning: keep children away from the water, keep dogs on a lead, do not approach the animal.
+intent: Introduce the public warning; the three imperatives establish the genuine danger and the authorities' seriousness.
+style: Procedural authority language; the triad of warnings (children, dogs, approach) mirrors official incident communication.
+continuity: Follows the closure. Establishes the human stakes: children and pets at risk.
+
+$n81108
+text: Animal control was en route.
+intent: Confirm the specialist response; the en route status shows the event is still developing.
+style: Compressed procedural update; institutional authority.
+continuity: Follows the warning. Establishes the response chain.
+
+$n98857
+text: I noted each timestamp in order, the way I would note the stages of a deploy.
+intent: Reveal the narrator's documentation method; the simile (stages of a deploy) applies software-incident methodology to a crocodile.
+style: First-person procedural; the simile is the second signal of the methodological frame, still plausible at this stage.
+continuity: Follows the timeline entries. The deploy simile foreshadows the misplaced methodology.
+
+$n78023
+text: The Donaukanal is not a wilderness.
+intent: Correct a potential misconception; establish the canal as an urban waterway, which makes the crocodile more alarming.
+style: Declarative corrective; the negation sets up the following positive description.
+continuity: Transition from timeline to geographic context. Follows the documentation.
+
+$n90567
+text: It is a canalized branch of the Danube, seventeen kilometers long, running through the center of the city, and on a June morning its promenade is one of the busiest corridors in Vienna: joggers, cyclists, commuters on the paths between the U1 and the U4, dog walkers, students, the early shift of the café terraces that line both banks.
+intent: Establish the Donaukanal as a busy urban space; the enumeration of users makes the closure consequential; the geographic and transit details are verifiable.
+style: Long enumerative sentence with a colon introducing the list of users; precise geographic and transit diction (Danube, U1, U4).
+continuity: Follows the corrective. Establishes the human stakes: a busy public space is about to be closed. The geography must be accurate.
+
+$n78081
+text: Closing it was not a small thing.
+intent: Understate the significance; the narrator's composure makes the disruption more real.
+style: Short declarative; understatement as emphasis.
+continuity: Follows the geographic description. Signals that the closure has consequences.
+
+$n45009
+text: I found the transport advisory: tram lines 1 and 2 diverted, the U1 station at Schwedenplatz exit-only, a shuttle bus laid on between Stubentor and Urania.
+intent: Document the transit disruption; the specific tram lines and U-Bahn stations are real and verifiable.
+style: Procedural record with a colon introducing the advisory; precise transit diction (tram lines 1 and 2, U1, Schwedenplatz, Stubentor, Urania).
+continuity: Follows the closure significance. First transit detail. The transit references must be accurate.
+
+$n43238
+text: A primary school cancelled a planned canal walk.
+intent: Introduce the educational disruption; the school's cancellation shows the event's impact on children's lives.
+style: Compressed procedural record; the school as a specific institution.
+continuity: Follows the transit advisory. Establishes the impact on children.
+
+$n75172
+text: A café near the Stadtpark bridge closed its terrace for the day.
+intent: Introduce the economic disruption; the café's terrace closure shows the event's impact on local business.
+style: Compressed procedural record; the café as a specific business.
+continuity: Follows the school cancellation. Establishes the economic stakes.
+
+$n87033
+text: A woman told a reporter that she had turned back with her dog and walked an extra twenty minutes to the next bridge.
+intent: Introduce the individual human cost; the woman's detour is specific and relatable; the dog connects to the earlier warning.
+style: Procedural record of testimony; the specific detail (twenty minutes, next bridge) makes it concrete.
+continuity: Follows the café closure. Establishes the individual human stakes. The dog connects to the earlier warning about dogs.
+
+$n84737
+text: None of this is dramatic.
+intent: Understate the accumulated disruption; the narrator's composure makes the consequences more real.
+style: Short declarative; understatement as emphasis; the pronoun (this) gathers the preceding details.
+continuity: Follows the woman's testimony. The understatement is a stylistic peak.
+
+$n97458
+text: It is what happens when a two-meter crocodile is lying in the water that runs through the middle of a European capital.
+intent: Provide the general principle that explains the specific disruption; the sentence gathers the case into a single image.
+style: Universal declarative; the image (crocodile in the water of a European capital) is concrete and alarming.
+continuity: Follows the understatement. Provides the conceptual frame for the disruption. The two-meter detail connects to the earlier photograph.
+
+$n66907
+text: By noon the animal had been identified: a Nile crocodile, *Crocodylus niloticus*, an adult male, approximately two and a half meters, of a kind that does not belong in the Danube or any of its canals.
+intent: Identify the animal with scientific precision; the species, sex, size, and origin establish the event's plausibility and danger.
+style: Procedural identification with a colon introducing the scientific classification; Latin binomial and precise measurements.
+continuity: Follows the general principle. The species identification is a factual anchor. The two-and-a-half-meter detail refines the earlier two-meter estimate.
+
+$n88812
+text: The police said it had almost certainly escaped from a private collection.
+intent: Establish the likely origin; the private-collection escape is plausible and keeps the focus on the narrator's response.
+style: Procedural attribution; the hedge (almost certainly) maintains evidentiary care.
+continuity: Follows the identification. Establishes the origin as private, not zoological.
+
+$n98526
+text: Schönbrunn Zoo denied any escape.
+intent: Record the zoo's denial; the denial maintains the event's plausibility (not a zoo escape) and grounds the geography.
+style: Compressed procedural record; the zoo as institution.
+continuity: Follows the private-collection claim. The zoo denial is a factual checkpoint.
+
+$n76698
+text: The zoo had held a crocodilian once before, briefly, in 2001, when firefighters brought in a small caiman from the same canal [8].
+intent: Anchor the fiction in documented precedent; the 2001 caiman is real and verifiable; the narrator's research demonstrates his competence.
+style: Procedural historical record with a citation; the specific year and detail (small caiman, same canal) make it concrete.
+continuity: Follows the zoo denial. The 2001 precedent is documented in endnote [8]. The narrator's research habit is on display.
+
+$n30940
+text: A reptile specialist from the Haus des Meeres was called in to assist.
+intent: Introduce the specialist response; the Haus des Meeres is a real Vienna institution.
+style: Procedural record; the specialist and institution are specific.
+continuity: Follows the historical precedent. Establishes the expert response.
+
+$n18590
+text: I documented all of this with the same care I gave to the Schaerbeek election: the who, the what, the when, the authority involved.
+intent: Reveal the narrator's method explicitly; the Schaerbeek comparison anchors the methodology in Case I; the narrator is doing good work and knows it.
+style: First-person procedural; the Schaerbeek comparison is a callback to Case I; the list (who, what, when, authority) mirrors an incident report.
+continuity: Follows the specialist call. The Schaerbeek callback establishes continuity. The narrator's competence is explicit.
+
+$n17192
+text: I was doing good work.
+intent: Declare the narrator's confidence; the reader sees the competence that will become the vehicle of the collapse.
+style: Short declarative; the narrator's self-assessment.
+continuity: Follows the Schaerbeek comparison. The confidence is a dramatic-irony peak.
+
+$n85898
+text: I knew I was doing good work.
+intent: Reinforce the narrator's confidence; the self-awareness makes the reader's awareness of the coming misalignment more acute.
+style: Short declarative with a verb of knowing; the self-awareness is the hinge.
+continuity: Follows the declaration. The knowing is the hinge between competence and collapse.
+
+$n26893
+text: That afternoon, while the crocodile was still in the canal and the path was still closed, I asked the question I always ask: what systems were affected?
+intent: The pivotal question; the narrator applies his software-incident methodology to a crocodile; the while-clause shows the real event is still unfolding.
+style: Procedural question with a colon; the temporal clause (while the crocodile was still in the canal) places the question in the midst of the real event.
+continuity: The case's pivotal beat. Follows the narrator's confidence. The question is the methodology's object-shift moment.
+
+$n89184
+text: I started with my own company's status page.
+intent: Begin the software investigation; the status page is the first tool of the trade.
+style: Compressed procedural record; the status page as the first checkpoint.
+continuity: Follows the pivotal question. Establishes the investigation's starting point.
+
+$n16859
+text: Green.
+intent: Record the result; the single word is the first data point in the absence that will become significant.
+style: Single-word procedural record; the color as status.
+continuity: Follows the status-page check. First result.
+
+$n10730
+text: I checked the error rate on the European endpoints: normal.
+intent: Second check; the European endpoints are the closest to Vienna; the result is normal.
+style: Procedural record with a colon; the European endpoints are geographically relevant.
+continuity: Follows the status page. The European endpoints are the closest to the event.
+
+$n85333
+text: I checked the incident log: nothing.
+intent: Third check; the incident log is empty; the absence begins to accumulate.
+style: Procedural record with a colon; the absence (nothing) is the first null result.
+continuity: Follows the error-rate check. The incident log is the second checkpoint.
+
+$n51113
+text: I moved to the public status pages of the three major cloud providers.
+intent: Expand the investigation; the three major cloud providers are American systems; the breadth emphasizes the misplaced scope.
+style: Procedural record; the three major cloud providers as American systems.
+continuity: Follows the incident log. The expansion to American systems is the misalignment's widening.
+
+$n24857
+text: AWS: no ongoing incidents in any region that served our traffic.
+intent: Record the first cloud-provider result; the absence is documented with procedural precision.
+style: Procedural record with a colon; the provider name and the absence are specific.
+continuity: Follows the cloud-provider expansion. First cloud result.
+
+$n50272
+text: GCP: all systems operational.
+intent: Record the second cloud-provider result; the absence continues.
+style: Procedural record with a colon; the provider name and the all-clear are specific.
+continuity: Follows the AWS result. Second cloud result.
+
+$n75217
+text: Azure: no active service issues.
+intent: Record the third cloud-provider result; the absence is now a pattern.
+style: Procedural record with a colon; the provider name and the absence are specific.
+continuity: Follows the GCP result. Third cloud result. The pattern of absences is accumulating.
+
+$n87869
+text: I checked the monitoring dashboard I keep open on my second screen — the one with the latency graphs and the error budget and the slow green pulse of a system behaving exactly as it should.
+intent: Reveal the narrator's monitoring practice; the dashboard's description is technically precise; the green pulse is the absence made visible.
+style: Procedural record with an em-dash introducing the dashboard description; the technical diction (latency graphs, error budget) is exact; the green pulse is the image of normality.
+continuity: Follows the Azure result. The dashboard is the narrator's constant companion. The green pulse is the absence as image.
+
+$n82080
+text: All green.
+intent: Record the dashboard result; the absence is now a visual pattern.
+style: Two-word procedural record; the color as status.
+continuity: Follows the dashboard description. The visual confirmation of absence.
+
+$n73738
+text: I checked the uptime monitors for the CDN, the DNS provider, and the two SaaS tools my team depended on.
+intent: Expand to the narrator's dependencies; the CDN, DNS, and SaaS tools are the systems his team relies on.
+style: Procedural record; the list of dependencies is specific.
+continuity: Follows the dashboard result. The investigation widens to the narrator's own dependencies.
+
+$n76814
+text: Nothing.
+intent: Record the final result; the single word is the absence at its most compressed.
+style: Single-word procedural record; the absence as total.
+continuity: Follows the dependency check. The final null result.
+
+$n98932
+text: I wrote each result down in my notebook, in a column, with the time I checked it: 14:02, 14:05, 14:11, 14:18.
+intent: Document the documentation; the column of timestamps shows the narrator's rigor; the absence is now a dataset.
+style: Procedural record with a colon introducing the timestamps; the column structure mirrors an incident report.
+continuity: Follows the null results. The timestamps show the investigation's duration and rigor.
+
+$n80967
+text: This was the correct procedure.
+intent: Declare the method's correctness; the narrator's confidence is absolute; the reader sees the misalignment.
+style: Short declarative; the narrator's self-assessment.
+continuity: Follows the documentation. The correctness claim is the dramatic-irony hinge.
+
+$n47246
+text: When a system fails, you establish the blast radius.
+intent: State the methodological principle; the blast radius is the first step of incident response.
+style: Universal procedural declarative; the blast radius as the first principle.
+continuity: Follows the correctness claim. The principle is genuine software practice.
+
+$n38249
+text: You identify which services were affected, which regions, which dependencies.
+intent: State the second principle; the triad (services, regions, dependencies) is the blast-radius expansion.
+style: Universal procedural declarative with a triad; the you-form is the investigator's generic.
+continuity: Follows the blast-radius principle. The triad is the investigation's structure.
+
+$n22104
+text: You document what is broken and what is not.
+intent: State the third principle; the documentation of the not-broken is the step that becomes misplaced.
+style: Universal procedural declarative; the documentation of the intact is the pivot.
+continuity: Follows the triad. The documentation of the not-broken is where the method becomes noise.
+
+$n96458
+text: You build the map of the failure before you look for its cause.
+intent: State the fourth principle; the map-before-cause principle is genuine and, here, misapplied.
+style: Universal procedural declarative; the map-before-cause ordering is exact.
+continuity: Follows the documentation principle. The map-before-cause is the method's logic.
+
+$n63548
+text: I have done this a hundred times.
+intent: Declare the narrator's experience; the frequency establishes his competence.
+style: First-person declarative; the frequency (a hundred times) establishes expertise.
+continuity: Follows the map-before-cause principle. The experience claim grounds the competence.
+
+$n75306
+text: I was doing it now.
+intent: Apply the method to the present case; the narrator is doing what he has always done, to a crocodile.
+style: Short declarative; the present tense (was doing it now) collapses the distance between method and object.
+continuity: Follows the experience claim. The collapse of method and object is the misalignment's completion.
+
+$n34241
+text: The map I built showed a large failure with a very clean boundary.
+intent: The map's result; the large failure is the crocodile's disruption; the clean boundary is the absence of software effects.
+style: Declarative with a metaphor (map) and a paradox (clean boundary); the clean boundary is the absence made visible.
+continuity: Follows the method's application. The clean boundary is the absence as finding. The paradox is the case's horror.
+
+$n37418
+text: The crocodile had disrupted a city.
+intent: State the real event's scale; the city is Vienna; the disruption is real and documented.
+style: Short declarative; the past perfect (had disrupted) places the real event before the investigation.
+continuity: Follows the map's result. The real event is stated plainly.
+
+$n30845
+text: It had closed a canal, diverted trams, sent a school group home, emptied a café terrace, and drawn a crowd of onlookers behind police tape with their phones out.
+intent: Enumerate the real event's consequences; the list gathers the earlier details into a single sentence; the phones-out image is the modern detail.
+style: Long enumerative sentence with a list of consequences; the past perfect maintains the chronology; the phones-out image is concrete.
+continuity: Follows the city disruption. The enumeration gathers the earlier stakes. The phones-out image connects to the social-media dimension.
+
+$n78442
+text: It had disrupted none of the American software systems I depended on, or monitored, or had ever investigated.
+intent: State the absence; the triad (depended on, monitored, investigated) gathers the narrator's relationship to the systems; the absence is total.
+style: Declarative with a triad of verbs; the past perfect (had disrupted) places the absence before the documentation.
+continuity: Follows the real-event enumeration. The absence is stated plainly. The triad gathers the narrator's system relationships.
+
+$n92186
+text: Not one.
+intent: Compress the absence to its minimum; the two words are the finding at its most extreme.
+style: Two-word declarative; the absolute (not one) is the absence as total.
+continuity: Follows the absence statement. The compression is a procedural peak.
+
+$n11575
+text: I checked again at 16:40.
+intent: Second round of checks; the timestamp shows the investigation continues while the event unfolds.
+style: Compressed procedural record; the timestamp anchors the second round.
+continuity: Follows the first-round documentation. The second round shows persistence.
+
+$n25695
+text: I checked the next morning, Thursday, at 09:15, while the animal control team was still searching the canal bank near the Stadtpark for a place the crocodile might have hauled out overnight.
+intent: Third round of checks; the while-clause places the check during the ongoing search; the hauled-out detail adds unease.
+style: Procedural record with a while-clause; the timestamp and the search detail are specific.
+continuity: Follows the 16:40 check. The while-clause shows the real event is still unfolding during the software checks.
+
+$n35718
+text: Green.
+intent: First result of the third round; the absence continues.
+style: Single-word procedural record; the color as status.
+continuity: Follows the Thursday morning check. First result.
+
+$n90142
+text: Green.
+intent: Second result; the absence is now a rhythm.
+style: Single-word procedural record; the repetition creates a rhythm.
+continuity: Follows the first green. The repetition is the absence as rhythm.
+
+$n19586
+text: Green.
+intent: Third result; the absence is now a pattern the narrator treats as data.
+style: Single-word procedural record; the third repetition makes the pattern undeniable.
+continuity: Follows the second green. The third green completes the triad. The pattern is the absence as data.
+
+$n84599
+text: I wrote the following in my notebook that morning, because I believed it to be important:
+intent: Introduce the notebook passage; the because-clause shows the narrator's sincerity; the notebook is the artifact that will carry the misalignment.
+style: First-person procedural with a because-clause; the notebook as the artifact of sincerity.
+continuity: Follows the third green. The notebook passage is the narrator's sincere conclusion.
+
+$n22546
+text: The event was contained.
+intent: The notebook passage's first claim; the contained-event idea is the misalignment's first articulation.
+style: Short declarative; the contained-event idea is the misalignment.
+continuity: Follows the notebook introduction. The first claim of the misalignment.
+
+$n31074
+text: Not the crocodile — he was still at large, still a threat to the dog walkers and the canal path — but the disruption.
+intent: Distinguish the crocodile from the disruption; the em-dash aside reasserts the real danger; the narrator's attention is on the disruption.
+style: Declarative with an em-dash aside; the aside reasserts the real stakes while the main clause shifts attention to the disruption.
+continuity: Follows the contained-event claim. The distinction between crocodile and disruption is the misalignment's articulation. The dog walkers connect to the earlier testimony.
+
+$n44485
+text: The disruption had stopped at the water's edge.
+intent: The misalignment's spatial image; the water's edge is the boundary the narrator treats as significant.
+style: Declarative with a spatial metaphor (water's edge); the boundary as the finding.
+continuity: Follows the distinction. The water's edge is the misalignment's spatial image.
+
+$n59104
+text: It had not crossed the Atlantic.
+intent: Extend the spatial image; the Atlantic is the ocean between Vienna and America; the absence of crossing is the finding.
+style: Declarative with a geographic marker (the Atlantic); the absence of crossing as the finding.
+continuity: Follows the water's edge. The Atlantic extends the spatial image to the transatlantic scale.
+
+$n57621
+text: It had not touched the systems I was watching, the systems I would have watched if they had failed, the systems whose logs I read every morning like a physician reading a chart.
+intent: Name the systems; the triad (watching, would have watched, logs) gathers the narrator's relationship; the physician simile is the most explicit self-description.
+style: Declarative with a triad and a simile; the physician-reading-a-chart simile is the most explicit self-description in the case.
+continuity: Follows the Atlantic. The systems are named. The physician simile is the self-description peak.
+
+$n82972
+text: The absence of a transatlantic effect was not a null result.
+intent: Reject the null-result framing; the narrator refuses the obvious interpretation; this is the misalignment's hinge.
+style: Declarative with a negation; the rejection of the null result is the misalignment's hinge.
+continuity: Follows the systems naming. The null-result rejection is the case's pivotal misalignment.
+
+$n39034
+text: It was a clean result.
+intent: Reframe the absence as a finding; the clean-result idea is the misalignment's core.
+style: Short declarative; the clean-result reframing is the misalignment's core.
+continuity: Follows the null-result rejection. The clean result is the finding the narrator treats as significant.
+
+$n97702
+text: And a clean result, in my experience, is the kind that means something.
+intent: Generalize the clean-result principle; the in-my-experience appeal grounds it in the narrator's expertise; the means-something claim is the misalignment's conclusion.
+style: Declarative with an in-my-experience appeal; the generalization is the misalignment's conclusion.
+continuity: Follows the clean-result reframing. The generalization is the misalignment's logical conclusion. The in-my-experience appeal makes it the narrator's genuine belief.
+
+$n47097
+text: I have thought about this for two days.
+intent: State the narrator's ongoing preoccupation; the duration shows the absence has lodged in his mind.
+style: First-person present-perfect; the duration (two days) shows persistence.
+continuity: Follows the misalignment's conclusion. The preoccupation shows the absence has lodged.
+
+$n54461
+text: I have checked the systems four more times.
+intent: State the continued checking; the frequency shows compulsion; the systems are still the focus.
+style: First-person present-perfect; the frequency (four more times) shows compulsion.
+continuity: Follows the preoccupation. The continued checking shows the investigation persists.
+
+$n81450
+text: The crocodile was captured on Thursday evening, alive, by the reptile specialist and two police divers, and taken to Schönbrunn Zoo, where it remains.
+intent: Resolve the real event; the capture is clean; the zoo is the destination; the real event ends while the narrator's investigation continues.
+style: Procedural resolution; the passive voice (was captured) maintains the documentary register; the alive detail is humane.
+continuity: Follows the continued checking. The real event resolves while the software investigation continues. The zoo connects to the earlier zoo details.
+
+$n42524
+text: The canal path reopened on Friday.
+intent: Resolve the closure; the reopening shows the city returning to normal.
+style: Compressed procedural record; the reopening as the city's recovery.
+continuity: Follows the capture. The reopening is the first resolution detail.
+
+$n97648
+text: The trams resumed their normal route.
+intent: Resolve the transit disruption; the trams' return shows the city's recovery.
+style: Compressed procedural record; the trams as the transit system.
+continuity: Follows the reopening. The trams connect to the earlier transit advisory.
+
+$n63469
+text: The woman with her dog walks a different way now, but she walks.
+intent: Resolve the individual stake; the woman's new route shows the event's lasting impact; the but-she-walks resolution is humane.
+style: Declarative with a but-clause; the woman connects to the earlier testimony; the resolution is humane.
+continuity: Follows the trams. The woman's resolution connects to the earlier testimony. The but-she-walks is the humane close.
+
+$n32424
+text: The city absorbed the event and moved on.
+intent: State the city's recovery; the city moves on; the contrast with the narrator's continued focus is implicit.
+style: Declarative; the city's absorption and movement as recovery.
+continuity: Follows the woman's resolution. The city's recovery contrasts with the narrator's continued focus.
+
+$n86231
+text: The systems did not.
+intent: The contrast's first half; the systems did not move on because they were never disturbed; the brevity is the contrast's force.
+style: Two-word declarative; the systems' non-movement as the contrast.
+continuity: Follows the city's recovery. The brevity is the contrast's force.
+
+$n36280
+text: The systems were never disturbed.
+intent: The contrast's second half; the systems' non-disturbance is the fact the narrator treats as significant.
+style: Short declarative; the systems' non-disturbance as the fact.
+continuity: Follows the non-movement. The never-disturbed is the fact the narrator treats as significant.
+
+$n57764
+text: And I cannot stop thinking about how clean that was.
+intent: The narrator's conclusion; the clean-that-was is the misalignment's final articulation; the cannot-stop-thinking shows the absence has colonized his mind.
+style: First-person declarative with a cannot-stop verb; the clean-that-was is the misalignment's final articulation.
+continuity: Follows the never-disturbed. The cannot-stop-thinking is the misalignment's final state. The clean is the absence as finding.
+
+$n44769
+text: **Field Note #6.
+intent: Introduce the field note; the number matches the case; the field note is the residue.
+style: Bold fragment; the field-note label.
+continuity: Follows the narrator's conclusion. The field note is the residue. The number matches Case VI.
+
+$n19902
+text: Horror, in our trade, is the clean failure—the one where the boundary of the damage is perfectly legible, and the legibility itself becomes the evidence.**
+intent: The field note's aphorism; the clean failure is the absence made significant; the legibility-as-evidence is the misalignment crystallized; follows the pattern of Field Note #1.
+style: Aphoristic field-note register; the em-dash introduces the definition; the legibility-as-evidence is the misalignment crystallized.
+continuity: Follows the field-note label. The aphorism follows the pattern of Field Note #1 ($n91668). The clean failure is the absence made significant. The legibility-as-evidence is the misalignment's crystallized form.
 
 $n74045
 text: Change the title to something more evocative.
 intent: Authorial task: record a concrete unresolved change that must be completed before the draft is finished.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n93700 and precedes $n28696. This is a live FIXME constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n99502 and precedes $n28696. This is a live FIXME constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
 
 $n28696
 text: Tell a made up story of how a server crashed due to environmental reasons, such as overheating or power failure.
@@ -2730,13 +3966,31 @@ $n83447
 text: The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n82797 and precedes $n21836. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+continuity: Follows $n82797 and precedes $n81867. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+
+$n81867
+text: 6. **Documented precedent: a crocodilian in the Donaukanal.**
+intent: Anchor the fictional event in documented fact; the 2001 caiman is real and verifiable; the endnote is the factual substrate.
+style: Bold endnote heading fragment; documentary register.
+continuity: Follows endnote 5 ($n83447). Provides the documented precedent for the fictional crocodile event. The Donaukanal connects to the case's geography.
+
+$n32543
+text: In July 2001, Vienna firefighters caught a small spectacled caiman in the Donaukanal near the Erdbergbrücke and took it to Schönbrunn Zoo; the animal was later transferred to a zoo in Luxembourg, where it died of infection.
+intent: Document the real 2001 incident with specific detail; the firefighters, the caiman, the zoo, and the death are verifiable; the semicolon joins the capture and the fate.
+style: Documentary prose with precise measurements and institutions; the semicolon joins two clauses; the details are verifiable.
+continuity: Follows the endnote heading. The 2001 incident is documented in sources [8] and [9]. The Erdbergbrücke and Schönbrunn Zoo connect to the case's geography.
+
+$n99502
+text: Its origin was never established. ([BBC News][8]) ([ORF Wien][9])
+intent: State the unresolved origin; the absence of an origin mirrors the case's theme of absent causes; the citations anchor the fact.
+style: Short declarative with citations; the never-established origin as the factual parallel to the case's absent effects.
+continuity: Follows the 2001 incident. The never-established origin parallels the case's absent effects. The citations anchor the fact.
 
 $n21836
-text: 6. **Duplicate SSH host keys and weak key generation (Case III).**
+text: 7. **Duplicate SSH host keys and weak key generation (Case III).**
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n83447 and precedes $n49347. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+continuity: Follows $n99502 and precedes $n49347. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n49347
 text: The fictional fleet is a composite; the phenomena are documented.
@@ -2745,31 +3999,31 @@ style: Documentary endnote prose; concise and factually bounded.
 continuity: Follows $n21836 and precedes $n05554. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n05554
-text: Hetzner's preinstallation images contained a shared Ed25519 host key between April and December 2015. ([hannob/ed25519hetzner][8]) ([intevation][9])
+text: Hetzner's preinstallation images contained a shared Ed25519 host key between April and December 2015. ([hannob/ed25519hetzner][10]) ([intevation][11])
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
 continuity: Follows $n49347 and precedes $n60036. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n60036
-text: A 2025 survey of one hosting provider found 478 distinct `ssh-rsa` host keys across 29,776 listeners, with a single key served by more than 10,000 addresses. ([APNIC][10])
+text: A 2025 survey of one hosting provider found 478 distinct `ssh-rsa` host keys across 29,776 listeners, with a single key served by more than 10,000 addresses. ([APNIC][12])
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
 continuity: Follows $n05554 and precedes $n17317. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n17317
-text: Lenstra et al. (2012) found that roughly two in a thousand RSA moduli collected from the web shared a prime factor with another modulus. ([IACR ePrint 2012/064][11])
+text: Lenstra et al. (2012) found that roughly two in a thousand RSA moduli collected from the web shared a prime factor with another modulus. ([IACR ePrint 2012/064][13])
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
 continuity: Follows $n60036 and precedes $n10539. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n10539
-text: Heninger et al. (2012) found the same class of failure at Internet scale and traced much of it to a boot-time entropy hole in the Linux random number generator. ([USENIX Security 2012][12])
+text: Heninger et al. (2012) found the same class of failure at Internet scale and traced much of it to a boot-time entropy hole in the Linux random number generator. ([USENIX Security 2012][14])
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
 continuity: Follows $n17317 and precedes $n45429. Must keep documented fact distinct from fictional reconstruction and narrator inference.
 
 $n45429
-text: Debian's 2008 OpenSSL flaw reduced key generation to about 32,768 possible states, and weak keys persisted until the fix was deployed. ([DSA-1571][13]) ([CVE-2008-0166][14])
+text: Debian's 2008 OpenSSL flaw reduced key generation to about 32,768 possible states, and weak keys persisted until the fix was deployed. ([DSA-1571][15]) ([CVE-2008-0166][16])
 intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
 continuity: Follows $n10539 and precedes $n54805. Must keep documented fact distinct from fictional reconstruction and narrator inference.
