@@ -1,10 +1,37 @@
 # Coda — Design Blueprint
 
 **Status:** design only, human review required. This document is a blueprint; it does not change the manuscript prose, the meaning graph, or any Intent Record.
-**Branch:** `design/240-coda` (non-main).
+**Origin branch:** `design/240-coda` (commit `d888a61`, non-main).
+**This review pass:** branch `agent/698956745a85/issue240-coda-review` (non-main), review and completion of the blueprint per board issue #240.
 **Board issue:** #240 — "[Supernatural] Coda — design and goals".
 **Target manuscript:** `website-root/serve/post/supernatural/supernatural.md`, §Coda (currently lines 382–393: a `<NOTE>`, a `<PLACEHOLDER/>`, and one `<MUST HAVES>` block).
 **Target deliverable of the eventual prose pass:** a finished coda that satisfies the live Intent Records, the local coda `<NOTE>`, the closing `<MUST HAVES>` moral, and the acceptance tests below, without changing authorial goals.
+
+---
+
+## 0. Review record (this pass)
+
+This section records what the review pass verified against the repository sources and what it repaired. It is part of the reviewed document.
+
+**Verified against sources (all on `origin/design/240-coda`, cross-checked against `origin/master` and the live manuscript):**
+
+- Line references in §1, §2.1–§2.3 match `supernatural.md` exactly (coda `<NOTE>` at 384–387; `<PLACEHOLDER/>` at 389; coda `<MUST HAVES>` at 391–393; top-level `<NOTE>` at 1–25; preamble `<MUST HAVES>` at 27–32; prologue `<MUST HAVES>` at 55–58).
+- Every Intent Record ID cited in §2.4 exists in `docs/intent-records/story.md` or `docs/intent-records/editing.md` and is characterized correctly.
+- Every meaning-graph node ID cited in §2.5 and elsewhere exists in `docs/meaning-graph.md`, in manuscript order, with the quoted `text` field matching the manuscript sentence (spot-verified: `$n33563`, `$n50947`, `$n70307`, `$n91363`, `$n67775`, `$n10935`, `$n10406`, `$n96467`, `$n52518`, `$n70953`, `$n86401`, `$n91668`, `$n63199`, `$n94242`, `$n37749`, `$n36938`, `$n89766`, `$n54255`, `$n95615`, `$n88506`, `$n22932`, `$n78293`, `$n88883`, `$n65643`, `$n61044`, `$n65527`, `$n77735`, `$n95933`, `$n92807`, `$n70250`, `$n23038`).
+- Acceptance test A17 holds for the design branch: `git diff` against the merge base with `origin/master` shows exactly one file changed (`docs/chapter-designs/coda.md`, +511 lines) and no change to `supernatural.md`, `docs/meaning-graph.md`, or any Intent Record.
+- Cases III–VII are confirmed `<NOTE>`-only stubs on this branch (Case VII additionally carries a `<FIXME>`), so §19 Q5's token dependency is real.
+- The Case III callback token "the duplicate key" is grounded in the sibling blueprint `design/229-maxwells-demon` (§4.1: the shared SSH host key / duplicate fingerprint anchor), not invented here.
+- The interpretation of the closing `<MUST HAVES>` as thematic (moral required, wording exemplary) follows the top-level `<NOTE>` (line 5): quoted must-haves are exact phrases unless introduced as thematic; this block says "Something with the same moral as."
+
+**Defects found and repaired in this pass:**
+
+1. §2.4 cited only 12 of the 23 live Intent Records. The table now covers all of them, with the bearing of each on the coda.
+2. §8 item 5 mis-cited the prologue design: the wound is §2.1 of `design/223-supernatural-prologue` ("The wound: a specification that did not hold"), not §2.2 (which is "The dossier as hedge, not taxonomy"). Corrected.
+3. §15 item 8 anchored "Case VII's mundane acceptance" to `$n10969`, which is the coda `<NOTE>` sentence, not Case VII. Corrected to `$n23038` (the control-sample directive) with the sibling design cited.
+4. §5's callback tokens had no stated source for cases not yet written. A sibling-design dependency table (§5.1) now maps every token to its implementing manuscript passage or its sibling blueprint.
+5. A6 did not state that the all-seven-cases token check is blocked on Cases III–VII prose. Noted.
+
+**Cross-reference (informative, not a deliverable of this issue):** an unmerged implementation of the coda exists at `origin/impl/241-supernatural-coda` (commit `781f5bd`, issue #241): 22 lines of coda prose plus its meaning-graph update, branched from this design. It follows this blueprint's F1 image, M1 unnumbered last field note, and Y1 second-person turn. This design neither depends on nor validates that implementation; human review of #240 is against this document.
 
 ---
 
@@ -71,6 +98,8 @@ These belong to the preamble/prologue (`supernatural.md` 27–32, 55–58), not 
 
 ### 2.4 Relevant Intent Records
 
+This table covers **all 23 live Intent Records** (`docs/intent-records/story.md`, 14 records; `docs/intent-records/editing.md`, 8 records; the counts as of this branch). Records with the strongest coda bearing are listed first.
+
 | ID | Title | Bearing on the coda |
 | --- | --- | --- |
 | `$id-7494998113772687` | Seven-case dossier structure | The coda is the third structural component (prologue + exactly seven cases + coda); it must not become an eighth case or a new revelation. |
@@ -84,6 +113,18 @@ These belong to the preamble/prologue (`supernatural.md` 27–32, 55–58), not 
 | `$id-9688210860921309` | Human intent outranks autonomous taste | §18 alternatives are proposals; they do not silently change intent. |
 | `$id-9763436880715349` | Do not optimize toward generic prose | Preserve the dossier's oddness, restraint, and productive discomfort; do not sand the coda into a smooth essay. |
 | `$id-2642614869480108` | Revisions preserve semantic and inferential work | A prose pass must check callbacks and inferences against the meaning graph, not just polish. |
+| `$id-9421142343424984` | Natural crash is the explicit mundane baseline | The coda must let the reader see him accept a boring cause; Case VII is the recalled control sample. |
+| `$id-3795396000378572` | Schaerbeek is the sane opening case | Case I's callback tokens (moth photograph, "very probably", the cathedral of checks) must stay domesticated, not numinous. |
+| `$id-0105305593640677` | Heisenbug behaves as if observation matters | Case II's residue (the watched/unwatched reversal) is echoed — never restated — by the final image's deniable response. |
+| `$id-8506027753346938` | Maxwell's Demon couples a dream warning to an improbable event | Case III's demon stays unconfirmed; the coda may carry the key/fingerprint record, never a verdict. |
+| `$id-9342987960007338` | Leprechaun case treats folklore as operational legend | Case IV's legend stays secondhand; any folk-remedy token in the coda is kept without being believed. |
+| `$id-7062117495708504` | Mercury case makes causality a temptation | Case V's almanac/calendar returns as an object the narrator notices without asserting cause. |
+| `$id-2221791653068770` | Crocodile case escalates through misplaced causal seriousness | Case VI's conspicuous non-effect stays implicit; the coda's widened causal field is shown, not explained. |
+| `$id-8533398047057411` | Maintain a sentence-level meaning graph | The prose pass must keep exhaustive one-node-per-sentence coverage, including coda directive sentences. |
+| `$id-9187217062069867` | Meaning graph records communicative purpose | Coda nodes must record what each sentence withholds and implies, not paraphrase it. |
+| `$id-4034180152671277` | Meaning graph is precise but deliberately ad hoc | The prose pass updates coda nodes in the same change, keeping the fixed `$n`/`text`/`intent`/`style`/`continuity` schema. |
+| `$id-6039315211561510` | Refinement loop seeks high-leverage defects | The coda prose pass targets the defects this blueprint names; it does not manufacture unrelated changes. |
+| `$id-0577078138009141` | Holistic audits accompany local editing | After the coda is written, re-check escalation, motifs, and graph consistency at collection scale. |
 
 ### 2.5 Meaning-graph nodes that encode current intent
 
@@ -175,6 +216,21 @@ The coda should return to **all seven cases** and the prologue, but as **concret
 - Do **not** re-explain the case; the reader was there.
 - Do **not** force a callback for a case that has no object yet; instead, mark it as a **prose-pass dependency**: the case designs must leave the coda at least one taped/referenced token. (See §19 Q5.)
 - Case VII's mundane acceptance must be visible in the coda, not only recalled, or the ending tips into pure dread and loses the "disciplined inquiry intact" requirement.
+
+### 5.1 Where each callback token comes from
+
+Cases I and II are implemented in the manuscript; their tokens exist in the prose today. Cases III–VII are `<NOTE>`-only stubs on this branch, so their tokens are anchored in the sibling chapter designs (non-main branches under `design/`). The prose pass must take each token from the named source, not invent a replacement.
+
+| Case | Token in the coda table above | Source the prose pass must use |
+| --- | --- | --- |
+| Prologue | dossier, hand, tape, margin | Implemented prologue (`supernatural.md` 47–58) and `design/223-supernatural-prologue` §2.2–§2.3 (dossier as hedge; dossier as letter to the older self). |
+| I | moth photograph; "very probably"; 4,096 / 2¹²; cathedral of checks | Implemented Case I (`supernatural.md` 64–227; e.g. line 188 `4096 = 2^{12}`, line 213 the cathedral of checks). |
+| II | *timing* margin; blank seventh row; "The thing hates to be watched." | Implemented Case II (`supernatural.md` 229–311; lines 256, 289, 309). |
+| III | dream; duplicate key; "the server room is cursed" | `design/229-maxwells-demon` §4.1 (shared SSH host key / duplicate fingerprint anchor) and the Case III `<NOTE>` (`supernatural.md` 315–324). |
+| IV | moved loop bound; small green figure; "off by one" | `design/232-leprechaun-off-by-one` and the Case IV `<NOTE>` (`supernatural.md` 330–336). |
+| V | operational timeline; almanac/calendar | `design/234-mercury-retrograde` and the Case V `<NOTE>` (`supernatural.md` 342–350). |
+| VI | crocodile; conspicuous non-effect across the Atlantic | `design/236-crocodile-vienna` and the Case VI `<NOTE>` (`supernatural.md` 356–362). |
+| VII | heat/power failure; mundane explanation | `design/238-natural-crash` (thermal fault; "The Heat Death of Rack C"; §3 item 3, coda setup) and the Case VII `<NOTE>` (`supernatural.md` 372–378). |
 
 ---
 
@@ -271,7 +327,7 @@ The coda must **not** resolve any of the following. This list is a guardrail for
 2. **Whether the room responded in the final image.** The small event stays deniable; the narrator does not interpret it.
 3. **Whether the narrator's superstition is warranted or is pattern-making / trauma.** Never adjudicated.
 4. **The narrator's actual belief.** He never states it; "People ask if I believe in such things" (`$n95933`) is answered only by behavior.
-5. **The wound that started the dossier** (prologue §2.2 of that design) — its full nature is never narrated.
+5. **The wound that started the dossier** — the uncommanded valve opening, "a specification that did not hold" (prologue design `design/223-supernatural-prologue`, §2.1; implemented on the unmerged reference branches `origin/supernatural-prologue-impl-224` / `origin/integration/242-dossier-audit`). Its full nature is never narrated in the coda.
 6. **The reality of Case III's demon, Case IV's leprechaun, and Case V's astrological cause.** All remain legends/coincidences.
 7. **The in-story cause of Case II's night.** The endnote may carry the technical resolution; the coda must not collapse the ambiguity by invoking it.
 8. **What happened to the people in the unresolved cases afterward.** No epilogue roll-call.
@@ -405,7 +461,7 @@ The coda must leave **vulnerability and unease**, not closure. Mechanisms to pre
 5. **"The thing hates to be watched."** (`$n70953`) — Case II's residue; the final image's deniable response echoes it without restating it.
 6. **The blank seventh row** (`$n52518`) — the coda's blank margin/line is its descendant.
 7. **The closing `<MUST HAVE>` moral** (`$n99708`–`$n96851`) — integrated, not pasted; the moral preserved.
-8. **Case VII's mundane acceptance** (`$n10969` area) — the coda must keep it visible.
+8. **Case VII's mundane acceptance** — the control-sample directive (`$n23038`: "Preserve this case as an honest control sample that shows the narrator can still accept a sufficient ordinary explanation"; sibling design `design/238-natural-crash`, §3) — the coda must keep it visible.
 
 ---
 
@@ -420,7 +476,7 @@ A future prose pass is acceptable for review when all of the following hold. "Ve
 | A3 | Case VII sanity visible | read coda | one mundane explanation is accepted plainly, at the end |
 | A4 | Private superstition shown, not stated | tag behaviors | ≥ 2 ritual behaviors present and unexplained; narrator never labels himself superstitious |
 | A5 | No supernatural assertion | read all diegetic sentences | no sentence confirms the supernatural; no new evidence resolves a case |
-| A6 | Case callbacks complete | map tokens | all seven cases plus the prologue have ≥ 1 concrete token; no case is re-summarized |
+| A6 | Case callbacks complete | map tokens | all seven cases plus the prologue have ≥ 1 concrete token; no case is re-summarized. **Blocked until Cases III–VII exist in prose** (§5.1): until then, verify the token *plan* against the sibling designs, not the manuscript |
 | A7 | Dossier motif | locate object | the dossier is physically present and used (hand, pages, tape, margin) |
 | A8 | Moth motif | locate return | the moth photograph (or its logic) returns; "unconvinced" is preserved or echoed, not decoded |
 | A9 | Check motif | locate return | a check is made; a check/line/margin is left blank on purpose |
@@ -503,6 +559,7 @@ These are **proposals**, not intent changes. Each states what it would gain and 
 7. **Length and the `<PLACEHOLDER/>`.** The coda `<PLACEHOLDER/>` (line 389) must be filled by the prose pass; confirm the 600–1,100-word guardrail.
 8. **No conflict found** between the coda `<NOTE>` and the live Intent Records: the NOTE's "not simply restate a moral" and the `<MUST HAVE>`'s "same moral" are reconciled by **enacting** the moral through the final image and the closing instruction rather than stating it as a thesis. If a later prose pass finds these in genuine tension, surface the conflict rather than choosing silently.
 9. **No conflict found** between "preserve procedural rationality" and "privately superstitious": they coexist by design (§4.3). The coda must show both in the same scene.
+10. **Existing implementation branch.** `origin/impl/241-supernatural-coda` (commit `781f5bd`, issue #241) contains an unmerged coda prose pass branched from this design. If a human reviews both, confirm the prose pass against §16 and confirm this blueprint needed no correction from it; if the prose pass and this design diverge, the divergence is a human decision, not an automatic either-way.
 
 ---
 
