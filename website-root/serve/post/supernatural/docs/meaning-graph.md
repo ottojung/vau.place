@@ -3813,13 +3813,9 @@ continuity: Field Note #4 continues the dossier's field note pattern from Case I
 
 $n75429
 text: The closer your model fits the world, the more the world will take issue.**
-
----
-intent: Advance the case's chronology, evidence, or narrator drift as stated in this sentence.
-style: Procedural-exact register; preserve the sentence's specific diction and rhythm.
-continuity: Follows from and precedes adjacent Case V prose nodes. Maintain chronology and source reliability distinctions.
-
-$n76985. This is revision guidance for Mercury, not a statement the narrator knows or says.
+intent: Deliver the fourth field note's aphorism, the integrated MUST HAVE about model fit: the better a model fits the world, the more the world resists it, stated as a law of the dossier rather than a Mercury-specific observation.
+style: Aphoristic field-note register; the balanced 'the closer... the more...' construction is the MUST HAVE's exact phrasing, and the sentence closes the field note without an em-dash.
+continuity: Follows $n19021 (the field-note label) and precedes $n76985. The integrated form of MUST HAVES node $n61044; it pays off the Mercury correlation and generalizes it into the collection's recurring theme that fit invites resistance.
 
 $n76985
 text: Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
