@@ -3680,10 +3680,16 @@ style: Minimal declarative in the operator's voice; the astronomical observation
 continuity: The operator's astronomical observation. This is the operator's own correlation, stated in his own voice — not the narrator's.
 
 $n53478
-text: I am not scheduling anything.* He had scheduled something.
-intent: The operator's resolution: he is not scheduling anything. Then the narrator's correction: he had scheduled something.
-style: The operator's resolution in italics, then the narrator's correction. The correction is the narrator's, not the operator's.
-continuity: The operator's resolution is stated, then corrected by the narrator. The correction — he had scheduled something — is the narrator's, showing the operator's resolution failed.
+text: I am not scheduling anything.*
+intent: The operator's resolution, in his own voice: he is not scheduling anything. The italics close the quoted log entry begun at $n23493 and continued at $n83755.
+style: The operator's resolution in italics; the flat declarative states the operator's superstition as a scheduling rule, not a casual remark.
+continuity: Closes the operator's quoted log entry begun at $n23493 and continued at $n83755. Sets up the narrator's immediate correction at $n67015.
+
+$n67015
+text: He had scheduled something.
+intent: The narrator's correction: the operator had scheduled something after all, so his resolution failed and the reversal followed.
+style: Short declarative; the correction's brevity is the point. The narrator supplies the fact the operator's log omitted.
+continuity: Follows $n53478. The correction is the narrator's, showing the operator's resolution failed; sets up $n82494 (the reversal happened that night).
 
 $n82494
 text: The reversal happened that night.
