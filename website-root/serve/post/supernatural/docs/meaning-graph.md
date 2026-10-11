@@ -3530,7 +3530,7 @@ style: Declarative with 'not rare'; the narrator acknowledges the base rate hone
 continuity: The windows are not rare. The narrator's honesty about the base rate makes the correlation more, not less, unsettling.
 
 $n27902
-text: But the reversals were rare — seventeen in three years — and every one of them was inside a window.
+text: But the reversals were rare — seventeen in under two years — and every one of them was inside a window.
 intent: Contrast the rarity of the reversals with the commonness of the windows: seventeen reversals, all inside windows.
 style: Em-dash parenthetical with the count; the contrast between rare reversals and common windows is the correlation's force.
 continuity: The contrast is the correlation's force: rare reversals, common windows, perfect overlap. This is the temptation.
