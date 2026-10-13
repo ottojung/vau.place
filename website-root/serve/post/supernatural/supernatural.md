@@ -506,10 +506,13 @@ The systems did not. The systems were never disturbed. And I cannot stop thinkin
 
 <NOTE>
 Tell a made up story of how a server crashed due to environmental reasons, such as overheating or power failure.
-The story should emphasize that this is not a supernatural event, but rather a mundane one.
-This is a necessary palate cleanser, it shores up our credibility by reminding readers that not all anomalies are numinous.
-Give the mundane crash clear physical causes and, if useful, real human consequences so it remains a compelling story rather than a perfunctory reassurance.
-Preserve this case as an honest control sample that shows the narrator can still accept a sufficient ordinary explanation.
+The crash must be objectively mundane: a complete, demonstrable causal chain — a warm week, a dead compressor, a clogged filter, a tired fan, a temperature rise, a throttle, an emergency shutdown — with no hint anywhere that it was secretly supernatural.
+The narrator understands and accepts this explanation intellectually; after the demon, the leprechaun, the astrology and the paranoid crocodile, he cannot feel safe or satisfied with even a fully ordinary one.
+Show the dissonance in behavior — emotional responses, rituals, lingering fear, the attention he cannot switch off — and do not lecture that science fails.
+Make the database recovery technically plausible: the data gap is bounded by the transaction-log archive and the backups (a full archive share, an alert nobody read), not by a checkpoint, which is not inherently a rollback.
+Preserve the real human losses: the postdoc's three days of compute, the week in the cluster queue, the work that existed only in the database.
+Coordinate Rack C's details with the coda: the coda's compressed retelling — a warm week, a clogged filter, a fan that failed slow and legible — must be a faithful summary of this case, and the heat log must end up among the dossier's tokens.
+End the case so that it deepens the transition into the coda: the changed-perception rituals begin here.
 </NOTE>
 
 **A small research institute, the second week of August.**
@@ -524,13 +527,21 @@ The air-conditioning unit in the corner was off. It was a small split system, th
 
 I pulled the logs. The BMC temperature curve showed a steady rise over four hours: 27°C at the inlet at 06:10, 31°C at 07:00, 38°C at 08:00, 45°C at the moment the sensors went dark. The kernel log showed the rest. Thermal warnings from 07:20. Throttling from 07:50, the CPU governor cutting frequency as the cores crossed 95°C. And then, at 08:47, a single line: `thermal_zone0: critical temperature reached, shutting down`. I overlaid the two timelines on the page I had opened on the desk. Every warning had its temperature, and every throttling event had its cause. The shutdown was not graceful. The filesystem was not unmounted. The database was not checkpointed. The machine simply stopped, without ceremony, in the middle of a transaction.
 
-I checked the error code against the manufacturer’s documentation. The code was three digits long, and the manual’s table gave it a single meaning: the compressor had failed, and the unit had shut itself down rather than keep pumping. The unit had died sometime before dawn, and the room had done the rest. The causal chain was complete and ordinary: cooling failure, temperature rise, throttling, emergency shutdown. Every link was in the logs. Every link was physical. There was nothing in the chain that required an explanation more exotic than a broken machine in a hot room.
+I checked the error code against the manufacturer’s documentation. The code was three digits long, and the manual’s table gave it a single meaning: the compressor had failed, and the unit had shut itself down rather than keep pumping. The unit had died sometime before dawn, and the room had done the rest.
 
-I powered the server on. `fsck` found inconsistencies in the journal and fixed them. The database recovered to its last checkpoint, six hours before the crash. The recovery took most of an hour. When it finished, the database was consistent, and the gap remained. Most of it was routine — observation logs, scheduling entries, the daily instrument telemetry. One piece of it was not.
+The machine had been running on a margin the logs could measure. The intake filter was loaded with the room’s dust — the smell from the doorway, which is what a clogged filter is before it becomes a measurement. One chassis fan had sat below its rated curve for weeks; the BMC kept a graph of its decline, slow and legible, the kind of failure you can read like weather. A warm week, a filter, a fan with nothing left in it: the room did not need to become hot; it needed to stop forgiving the machine.
+
+The causal chain was complete and ordinary: a warm week, a dead compressor, a filter full of dust, a fan with nothing left in it, a temperature rise, a throttle, an emergency shutdown.
+
+Every link was in the logs, or in the machine when I opened the bezel.
+Every link was physical.
+There was nothing in the chain that required an explanation more exotic than a broken machine in a hot room.
+
+I powered the server on. `fsck` found inconsistencies in the journal and fixed them. The database recovered from the last verified backup and the archive of transactions kept since — the archive whose whole purpose is to make a backup’s age a detail instead of a boundary. The archive had stopped at 02:47. The reason was complete and ordinary: the share it wrote to had filled that morning, and every failed write since had been logged and sent to an inbox nobody read. So the restore rolled the backup forward to the end of the intact archive and stopped there, consistent, six hours short of the shutdown. The local disks were not asked to say anything more; six hours at forty-five degrees in a sealed room is not a source you trust. The recovery took most of an hour. When it finished, the database was consistent, and the gap remained. The share had filled at 02:47, in the same small hours the compressor gave up, and I found myself checking that the two failures were unconnected — more than once, the way you check a lock. Most of it was routine — observation logs, scheduling entries, the daily instrument telemetry. One piece of it was not.
 
 The work in the gap belonged to a postdoc named Ruth. She had been running a simulation for three days — a parameter sweep for a paper the group hoped to submit in the autumn — and the final run, the one that completed the sweep, had finished at 06:15 that morning. The results existed only in the database. When I told her, she did not say anything for a while. She was standing in the doorway of the server room, still holding her coffee. Then she asked whether the backup was current. It was not. The last backup was four days old. She said she would rerun it. Three days of compute, she said, and a week in the cluster queue. She said it the way you say the weather.
 
-I wrote the case up that evening. Cooling failure, thermal shutdown, data loss. The explanation was complete. I checked the logs twice. I lingered in the room after I had finished, after the server was running again, in the heat that had not yet been repaired. It is a strange thing to be relieved by a broken air conditioner. The margin between working and gone is measured in degrees, and I had spent the afternoon watching it close.
+I wrote the case up that evening. Cooling failure, thermal shutdown, data loss, a full disk on a share nobody read. The explanation was complete, and the fault I entered in the log was the ordinary one: *ambient*. I checked the logs twice. That night I opened the file again before sleep and read the shutdown line the way I had once read the settlement operator’s log — more times than the evidence required, each time telling myself I was reading it as evidence. I lingered in the room after I had finished, after the server was running again, in the heat that had not yet been repaired. It is a strange thing to be relieved by a broken air conditioner. The margin between working and gone is measured in degrees, and I had spent the afternoon watching it close. I put the overlaid page into the folder, beside the moth — a heat log, a server dead of a warm week — and checked once, before I left the building, that it was there.
 
 ---
 

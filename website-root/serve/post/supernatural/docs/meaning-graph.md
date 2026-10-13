@@ -2689,311 +2689,373 @@ text: The case can be more extravagant than the early cases, but serious documen
 intent: Author-approved editorial direction for Leprechaun; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n20750 and precedes $n96127. This is revision guidance for Leprechaun, not a statement the narrator knows or says.
+
 $n96127
 text: This case is a legend, and I file it as one.
 intent: Open Case IV at compile distance: the narrator files a legend, not a reconstruction, and the reader watches the bar move.
 style: Declarative first-person filing register; the verb 'file' does epistemic work and signals the dossier's taxonomy without naming it.
 continuity: Follows $n52828 and precedes $n95653. First sentence of Case IV prose; transitions from Case III's private dream to a public legend told independently.
+
 $n95653
 text: The Schaerbeek bit reached me as testimony from a man who had stood in the room; the hang I chased with my own hands; the demon belonged to one man's dream.
 intent: Establish the dossier's evidentiary taxonomy by example: testimony, firsthand, dream — placing this case outside all three.
 style: Semicolon-joined triad compressing the collection's earlier cases into a single breath; the rhythm of a man sorting his own files.
 continuity: Follows $n96127 and precedes $n05685. References Case I (Schaerbeek testimony), Case II (firsthand hang), Case III (private dream) as the narrator's filing categories.
+
 $n05685
 text: This story I have heard from four people who were not there and one who was, and their versions agree on the figure and disagree on everything else.
 intent: State the legend's provenance: four independent tellers who agree on the figure and disagree on everything else.
 style: Exact, qualifying register; the agreement/disagreement structure is the case's evidentiary spine.
 continuity: Follows $n95653 and precedes $n94098. Sets up the witness roster and the detail-drift motif that pays off in the ecology paragraph.
+
 $n94098
 text: I include it because a story told independently, by people who will not compare notes, is a pattern, and a pattern is the closest thing to evidence this case will ever have.
 intent: Justify including a legend in a dossier of field notes: independent retelling is the closest thing to evidence this case will have.
 style: The narrator's exact, procedural voice; 'closest thing to evidence' is the case's thesis stated without announcement.
 continuity: Follows $n05685 and precedes $n74085. The inclusion rationale; the reader watches the narrator's threshold move in full view.
+
 $n74085
 text: The harm came first, and it was ordinary.
 intent: Order the case: harm before marvel. The consequences are stated before the phenomenon, per the dossier's procedure of evidence before marvel.
 style: Short declarative sentence functioning as a structural signpost; the narrator's procedural rationality on display.
 continuity: Follows $n94098 and precedes $n68972. Establishes the case's ordering principle; the harm is documented before the figure is mentioned.
+
 $n68972
 text: A reaper job runs every night over a bounded collection — a `for`-loop, `for (i = 0; i < count; i++)`, walking `count` partitions and deleting what is old.
 intent: Introduce the technical substrate: a nightly reaper job over a bounded collection, a for-loop walking count partitions.
 style: Concrete procedural diction; the loop is stated in correct technical language so the ordinary story stays buildable by the reader.
 continuity: Follows $n74085 and precedes $n29616. The mechanism's technical foundation; the off-by-one is defined precisely as one extra iteration.
+
 $n29616
 text: The job had run for years without incident, which is the only reason anyone let it delete things.
 intent: Establish the reaper's trust: years without incident, which is why it was allowed to delete things.
 style: Plain causal prose; the trust is stated as operational fact, not backstory.
 continuity: Follows $n68972 and precedes $n22955. Sets up the harm's shock: a trusted job did one thing too many.
+
 $n22955
 text: It is the most boring job in the building, and the boring is the job: a reaper that works is a reaper no one audits, because there is nothing to audit.
 intent: Characterize the reaper as boring by design: a reaper that works is a reaper no one audits.
 style: Aphoristic procedural register; the sentence's mirror structure ('a reaper that works is a reaper no one audits') is the narrator's exact voice.
 continuity: Follows $n29616 and precedes $n44524. The boring-is-the-job motif makes the harm more shocking: the unaudited job failed.
+
 $n44524
 text: On the night in question the job behaved as though the upper bound were `count + 1`.
 intent: State the anomaly precisely: the job behaved as though the upper bound were count + 1.
 style: Technical diction; 'behaved as though' reports the behavior without asserting non-human agency, preserving the domestication gap.
 continuity: Follows $n22955 and precedes $n77929. The off-by-one mechanism; the bound appeared moved, attributed to the legend, not asserted by the narrator.
+
 $n77929
 text: One extra iteration.
 intent: Isolate the harm's unit: exactly one extra iteration.
 style: Two-word sentence for maximum compression; the brevity is the horror — one iteration is nothing and everything.
 continuity: Follows $n44524 and precedes $n06870. The case's central quantity; the harm maps one-to-one to this single iteration.
+
 $n06870
 text: The morning on-call engineer found it in the logs — lights on, coffee going cold, the harm on a screen: the loop had run one time too many, and the extra iteration had deleted one live record, one customer's archive, years of a small firm's project files, gone.
 intent: Document the morning discovery in the on-call engineer's firsthand layer: the logs show one extra iteration and one live record gone.
 style: Long sentence with em-dash setup and colon delivery; the physical detail (lights on, coffee going cold) grounds the documented layer.
 continuity: Follows $n77929 and precedes $n14009. The harm is specific, documented, human-faced; discovered before the figure is mentioned.
+
 $n14009
 text: Not corrupted.
 intent: Rule out corruption as the failure mode.
 style: Two-word sentence; the compression is procedural — a checklist item eliminated.
 continuity: Follows $n06870 and precedes $n86524. Part of the elimination sequence that isolates the harm as a clean deletion.
+
 $n86524
 text: Not quarantined.
 intent: Rule out quarantine as the failure mode.
 style: Two-word sentence; parallel to the previous elimination, maintaining the checklist rhythm.
 continuity: Follows $n14009 and precedes $n45021. The elimination sequence continues; the harm is neither corruption nor quarantine.
+
 $n45021
 text: Gone, irreversibly, by the job's own logic, which is what an off-by-one does: it does one thing too many, and the extra thing is not undoable.
 intent: State the harm's finality: gone, irreversibly, by the job's own logic — an off-by-one does one thing too many and the extra thing is not undoable.
 style: The sentence's final clause is the case's technical thesis; 'not undoable' is the harm's defining property.
 continuity: Follows $n86524 and precedes $n02595. The harm is irreversible by the system's own logic; this is what makes the legend's phrasing feel earned.
+
 $n02595
 text: The investigation found the strangest part in the artifact itself.
 intent: Shift to the investigation's finding: the strangest part is in the artifact itself.
 style: Transitional sentence; 'the strangest part' signals the escalation from harm to anomaly.
 continuity: Follows $n45021 and precedes $n14765. The investigation begins; the artifact's bound line is the case's central evidence.
+
 $n14765
 text: The bound line in the deployed build differed from the source and from every commit in the history.
 intent: State the investigation's core finding: the deployed bound line differs from source and from every commit.
 style: Exact, qualifying register; the finding is stated as fact, not inference.
 continuity: Follows $n02595 and precedes $n52283. The attribution-less bound line is the spine of the ordinary story's failure.
+
 $n52283
 text: The engineer whose diff surrounds that line denies writing it, and the denial is credible — the surrounding change is his, the bound line is not.
 intent: Present the first ordinary candidate and its failure: the surrounding engineer denies writing the bound line, and the denial is credible.
 style: The denial's credibility is established by the diff's structure — the surrounding change is his, the bound line is not.
 continuity: Follows $n14765 and precedes $n39825. O1 (committed erroneous change) is considered and fails on evidence, not physics.
+
 $n39825
 text: The commit search came back empty.
 intent: Report the commit search result: empty.
 style: Three-word sentence; the emptiness is the finding, stated without elaboration.
 continuity: Follows $n52283 and precedes $n54845. The commit search coming back empty is the case's evidentiary floor.
+
 $n54845
 text: No merge, no hotfix, no deploy in the window.
 intent: Rule out the operational window: no merge, no hotfix, no deploy.
 style: Three-item elimination in compressed parallel; the window is clean.
 continuity: Follows $n39825 and precedes $n05777. O3 (merge/hotfix artifact) is considered and fails.
+
 $n05777
 text: The build artifacts from that night had been rotated out, and the template had since changed, so the possibility that a stale generated build had reintroduced an old bound could be neither confirmed nor closed.
 intent: Present the second ordinary candidate as an open door: a stale generated build could have reintroduced an old bound, but the artifacts are gone and the template changed.
 style: The candidate is stated as possible-but-unverifiable; 'neither confirmed nor closed' preserves the domestication gap.
 continuity: Follows $n54845 and precedes $n13249. O2 (stale generated build) remains live but uncompletable.
+
 $n13249
 text: The logs, meanwhile, were unambiguous: the loop itself ran `count + 1` iterations, and the extra iteration mapped one-to-one to the missing record.
 intent: Contrast the artifact ambiguity with the logs' clarity: the loop itself ran count + 1 iterations, mapping one-to-one to the missing record.
 style: The logs are unambiguous where the artifact is ambiguous; the extra iteration maps 1:1 to the harm.
 continuity: Follows $n05777 and precedes $n91783. O4 (witness misread) is considered and fails: the loop itself ran the extra iteration.
+
 $n91783
 text: Whatever happened, it happened to the loop, not to the reading of it.
 intent: State the investigation's conclusion: whatever happened, it happened to the loop, not to the reading of it.
 style: The sentence's final clause is the case's technical verdict; the loop is the locus, not the interpretation.
 continuity: Follows $n13249 and precedes $n33551. The ordinary story is available and uncompletable; the domestication gap is now fully open.
+
 $n33551
 text: And then there is the figure.
 intent: Introduce the figure at two removes: 'and then there is the figure' marks the shift from documented evidence to legend.
 style: The transitional phrase 'and then there is' is the narrator's exact register; the shift is marked, not hidden.
 continuity: Follows $n91783 and precedes $n53529. The sighting enters at reported-legend distance, after the harm and the investigation.
+
 $n53529
 text: The story goes that the night operator, alone in the cold aisle between the racks, the hum of the machines the only sound, saw a small man in green clothes with a red beard standing near the machine that ran the reaper.
 intent: State the legend's core: the night operator allegedly saw a small man in green clothes with a red beard near the reaper's machine.
 style: Reported-speech marker 'the story goes' maintains legend distance; the figure's attributes are exact per the NOTE constraint.
 continuity: Follows $n33551 and precedes $n89467. The sighting is single-witness, uncorroborated, at two removes from the narrator.
+
 $n89467
 text: The legend's room is cold and loud with the hum of the racks — the ordinary night-shift furniture — and he had been alone in it for hours.
 intent: Give the legend's room physicality: cold aisle, hum of racks, the operator alone for hours.
 style: The room is explicitly the legend's, not the narrator's; the sensory detail does duty for the sighting's credibility.
 continuity: Follows $n53529 and precedes $n59751. The legend's room palette; the physicality makes the sighting feel real without verifying it.
+
 $n59751
 text: I was told this at two removes, by people who had heard it from him or from someone who had; no one I asked had seen it themselves.
 intent: Mark the retelling distance: the narrator was told this at two removes.
 style: The distance marker is explicit; the narrator never claims to have been in the room.
 continuity: Follows $n89467 and precedes $n60061. The sighting is at least two removes from the narrator; every supernatural-adjacent claim is filtered through retelling.
+
 $n60061
 text: The word *leprechaun* is his, or the story's; I do not adopt it.
 intent: Attribute the word 'leprechaun' to the witness or the story, not to the narrator.
 style: The narrator declines to adopt the word; the attribution is itself evidence of how a tired man files an unfileable perception.
 continuity: Follows $n59751 and precedes $n41174. The word 'leprechaun' is the witness's or the story's; the narrator's register carries no folklore vocabulary.
+
 $n41174
 text: The legend has a phrasing for it, and the phrasing is the point: the bounds were moved, by one, in the night, by the small man in green clothes with the red beard.
 intent: State the legend's own phrasing: the bounds were moved, by one, in the night, by the small man.
 style: The 'moved' framing is attributed to the legend, not asserted by the narrator; the phrasing is the point.
 continuity: Follows $n60061 and precedes $n11777. The supernatural implication exists only in the legend and the reader's assembly; the narrator records, never asserts.
+
 $n11777
 text: What I can say is that the attributes survive every telling — small man, green clothes, red beard — while everything else about the sighting drifts: the rack, the hour, the shade of green.
 intent: Distinguish the stable attributes from the drifting details: the figure survives every telling; the rack, hour, and shade of green drift.
 style: The stable/drifting structure is the legend's ecology in miniature; the attributes are fixed by the NOTE.
 continuity: Follows $n41174 and precedes $n98366. Sets up the detail-drift motif that pays off in the ecology paragraph.
+
 $n98366
 text: No second witness.
 intent: State the first evidence limit: no second witness.
 style: Three-word sentence; the limit is stated as fact, not lament.
 continuity: Follows $n11777 and precedes $n34314. The sighting is uncorroborated; exactly one witness.
+
 $n34314
 text: No image.
 intent: State the second evidence limit: no image.
 style: Two-word sentence; parallel to the previous limit.
 continuity: Follows $n98366 and precedes $n28744. No image exists; the legend cannot be checked against footage.
+
 $n28744
 text: The room has no camera; it is a room of machines, not people, and the company chose that years ago, for ordinary reasons.
 intent: State the third evidence limit with its ordinary reason: no camera, because the room is a room of machines and the company chose that for privacy.
 style: The camera gap is diegetically justified by an ordinary privacy choice, not by plotting convenience.
 continuity: Follows $n34314 and precedes $n31111. The camera question is settled with an ordinary reason; the legend cannot be checked in either direction.
+
 $n31111
 text: The operator is still with the company.
 intent: Introduce the witness roster with the operator: still with the company.
 style: Plain factual statement; the witness's disposition is stated without drama.
 continuity: Follows $n28744 and precedes $n64705. W1 enters; the witness is reachable but tired.
+
 $n64705
 text: He was a good operator, which is why the story found so many willing ears and so few willing believers.
 intent: Establish the witness's credibility and the story's social cost: a good operator, so the story found willing ears and few willing believers.
 style: The sentence's turn ('willing ears and so few willing believers') is the case's social horror in miniature.
 continuity: Follows $n31111 and precedes $n99978. The witness's credibility makes the story spread and makes it unbelievable.
+
 $n99978
 text: I reached him once, and he was tired of the story in the way a man is tired of a scar he did not choose.
 intent: Show the witness's state: tired of the story in the way a man is tired of a scar he did not choose.
 style: The simile is exact and unpoetic; the tiredness is behavioral, not declared belief.
 continuity: Follows $n64705 and precedes $n94577. The witness's cost is social and permanent; he told what he saw and the story took him.
+
 $n94577
 text: He did not confirm anything interesting.
 intent: Record that the witness confirmed nothing interesting.
 style: The double negative is the narrator's exact register; the witness did not confirm anything that would close the case.
 continuity: Follows $n99978 and precedes $n65342. The witness's testimony is a dead end for the investigation.
+
 $n65342
 text: He did not deny anything interesting.
 intent: Record that the witness denied nothing interesting.
 style: Parallel to the previous sentence; the witness's denial is also a dead end.
 continuity: Follows $n94577 and precedes $n99573. The witness neither confirms nor denies anything that would move the case.
+
 $n99573
 text: He asked me not to make him tell it again, and I did not.
 intent: Show the witness's boundary: he asked not to be made to tell it again, and the narrator did not.
 style: The narrator respects the boundary; the witness's agency is honored, which makes the silence more eerie.
 continuity: Follows $n65342 and precedes $n89845. The witness closes the conversation; the narrator's restraint is behavioral.
+
 $n89845
 text: The on-call engineer who found the harm never saw the figure and does not care about it; she cares about the record, and she can tell you the exact minute the job ran.
 intent: Introduce W2, the on-call engineer: firsthand for the harm, indifferent to the figure, exact about the minute.
 style: The engineer's exactness about the minute contrasts with the legend's drift; she is the case's most reliable layer.
 continuity: Follows $n99573 and precedes $n16781. W2 never saw the figure; her layer is the documented harm.
+
 $n16781
 text: The investigation lead can tell you what is not in the history, which is more than most people can say about anything.
 intent: Introduce W3, the investigation lead: can tell you what is not in the history.
 style: The sentence's final clause is the lead's expertise stated as a negative capability; what is not in the history is more than most can say.
 continuity: Follows $n89845 and precedes $n93868. W3 is firsthand for the limits: no commit, no camera, no author.
+
 $n93868
 text: And the rumour-bearers — the ones who tell it at onboarding, in the incident channel, at the Christmas party — are useful for exactly one thing: watching how the story changes.
 intent: Introduce W4, the rumour-bearers: useful for exactly one thing, watching how the story changes.
 style: The rumour-bearers are useless for the phenomenon and useful for the legend's ecology; the narrator says so by showing.
 continuity: Follows $n16781 and precedes $n57379. W4 is the legend's ecology; the story's drift is data.
+
 $n57379
 text: The story keeps the figure and sheds a detail each time.
 intent: State the legend's drift rule: the story keeps the figure and sheds a detail each time.
 style: The drift rule is stated as a law of the legend's ecology; the figure is stable, the details are not.
 continuity: Follows $n93868 and precedes $n16295. The ecology paragraph's thesis; each telling keeps the figure and sheds a peripheral detail.
+
 $n16295
 text: In one telling the man is polishing the rack.
 intent: Give the first drift variant: the man is polishing the rack.
 style: A peripheral detail that appears in one telling and not others; the drift is concrete.
 continuity: Follows $n57379 and precedes $n69032. The detail drift is shown, not declared.
+
 $n69032
 text: In another he is counting something under his breath.
 intent: Give the second drift variant: the man is counting something under his breath.
 style: Another peripheral detail; the counting is a dark echo of the team's ritual.
 continuity: Follows $n16295 and precedes $n82181. The drift continues; the counting foreshadows the team's ritual.
+
 $n82181
 text: In a third he is simply standing there, which is the version that frightens me, though I could not say why.
 intent: Give the third variant and the narrator's private reaction: the man is simply standing there, which is the version that frightens me, though I could not say why.
 style: The narrator's fear is behavioral and withheld; 'I could not say why' preserves the ambiguity.
 continuity: Follows $n69032 and precedes $n87372. The narrator's private leaning is shown, never announced.
+
 $n87372
 text: The tellers smile when they tell it.
 intent: Record the tellers' humor as data: they smile when they tell it.
 style: The smile is recorded as a fact about the tellers, not as a joke; the humor is confined to the legend's ecology.
 continuity: Follows $n82181 and precedes $n45465. Humor is permitted only inside the legend's ecology; the narrator's register carries none.
+
 $n45465
 text: I record the smile as data.
 intent: State the narrator's method: he records the smile as data.
 style: The narrator's exact register; the smile is evidence about the tellers, not a comic beat.
 continuity: Follows $n87372 and precedes $n57672. The narrator's discipline: even the humor is data.
+
 $n57672
 text: A story that is told with a smile is still a story that is told, and this one is told more than any other in the dossier, including the ones with evidence.
 intent: State the legend's social fact: a story told with a smile is still told, and this one is told more than any other in the dossier.
 style: The sentence's accumulation is the case's social horror; the story outlives the evidence.
 continuity: Follows $n45465 and precedes $n37244. The story is more alive than the truth; everyone knows it.
+
 $n37244
 text: The drift is always away from the evidence and toward the figure.
 intent: State the drift's direction: always away from the evidence and toward the figure.
 style: The drift's direction is the legend's ecology in a single clause; the figure grows as the evidence shrinks.
 continuity: Follows $n57672 and precedes $n66312. The legend's ecology is now fully described; the costs begin.
+
 $n66312
 text: The costs spread outward from the record.
 intent: Shift to the costs: they spread outward from the record.
 style: The costs' spread is stated as a physical law; the harm radiates from data to person to team to narrator.
 continuity: Follows $n37244 and precedes $n18156. The cost escalation begins with the record and moves outward.
+
 $n18156
 text: The customer whose archive was gone was a small firm; the loss was not existential, but it was theirs, and no procedure gave it back.
 intent: State the direct harm's human face: a small firm's archive, gone, not existential but theirs, and no procedure gave it back.
 style: The victim is specific but lightly sketched; the harm is irreversible by the system's own logic.
 continuity: Follows $n66312 and precedes $n17887. The customer's loss is the case's body count of one, and it is specific.
+
 $n17887
 text: The firm was told, and there was nothing to restore and nothing to apologize with, which is its own kind of harm.
 intent: State the firm's position: told, with nothing to restore and nothing to apologize with.
 style: The sentence's final clause is the harm's social dimension; the apology is impossible because the cause is unknown.
 continuity: Follows $n18156 and precedes $n46819. The harm is not just data but a relationship; the firm cannot be made whole.
+
 $n46819
 text: The operator told what he saw and became, in the telling, the guy who saw the leprechaun — believed by no one who matters, or believed by everyone and taken seriously by none, and he cannot tell the difference anymore, and neither can I.
 intent: State the witness's cost: he told what he saw and became the guy who saw the leprechaun, believed by no one who matters or by everyone and taken seriously by none.
 style: The witness's social death is stated in the story's own vocabulary; the ambiguity of his belief is the case's cruelest note.
 continuity: Follows $n17887 and precedes $n58635. The witness's cost is permanent; his credibility is a casualty of the story's strength.
+
 $n58635
 text: And the team acquired a ritual: iterations counted aloud, bounds checked in pairs, written down as procedure, because procedure is the only way a superstition is allowed to survive in a place like that.
 intent: State the team's cost: a ritual of counting iterations aloud and checking bounds in pairs, written down as procedure.
 style: The ritual is superstition disguised as procedure; the narrator recognizes it because he has his own version.
 continuity: Follows $n46819 and precedes $n58261. The team's residue is procedural; the superstition survives as documentation.
+
 $n58261
 text: I recognize the ritual.
 intent: Show the narrator's recognition: he recognizes the ritual.
 style: Two-word sentence; the recognition is behavioral, not declared.
 continuity: Follows $n58635 and precedes $n61596. The narrator sees himself in the team's ritual.
+
 $n61596
 text: I have my own version.
 intent: Show the narrator's private admission: he has his own version.
 style: Three-word sentence; the admission is the narrator's leaning shown behaviorally.
 continuity: Follows $n58261 and precedes $n23317. The narrator's private habit is the case's residue and the handoff to Case V.
+
 $n23317
 text: I do not file this under human error.
 intent: State the narrator's verdict: he does not file this under human error.
 style: The omission is the tell; the narrator's filing taxonomy breaks, and the reader watches it break.
 continuity: Follows $n61596 and precedes $n55606. The verdict is shown as omission, not declaration.
+
 $n55606
 text: I do not file it under anything.
 intent: Extend the verdict: he does not file it under anything.
 style: Three-word sentence; the absence of a category is the case's closest approach to endorsement.
 continuity: Follows $n23317 and precedes $n13176. The narrator declines to file; the bar has moved in full view.
+
 $n13176
 text: The ordinary story is available and uncompletable: a tired engineer's edit with no commit, a stale build with no artifacts, a misread diff that the logs refuse.
 intent: State the ordinary story's status: available and uncompletable — no commit, no artifacts, a misread diff the logs refuse.
 style: The three candidates are listed in compressed parallel; none closes.
 continuity: Follows $n55606 and precedes $n35448. The domestication gap is now fully stated; the ordinary story cannot be completed.
+
 $n35448
 text: The supernatural story is not available at all.
 intent: State the supernatural story's status: not available at all.
 style: Four-word sentence; the supernatural story cannot be believed, and the ordinary story cannot be completed.
 continuity: Follows $n13176 and precedes $n14292. The gap between the two stories is where the case lives.
+
 $n14292
 text: What is left is the gap, and the gap is where the case lives.
 intent: State the case's residue: what is left is the gap, and the gap is where the case lives.
 style: The sentence's final clause is the case's thesis; the gap is not a failure but the case's home.
 continuity: Follows $n35448 and precedes $n36014. The domestication gap is the case's horror; the reader cannot complete either story.
+
 $n65025
 text: And there are systems whose failure modes include poetry.
 intent: Integrate the fourth MUST HAVE into the case's close: the off-by-one's failure mode is named as poetry — the gap between the ordinary and supernatural stories is where the case lives, and the case's residue is a poetic failure mode.
@@ -3005,31 +3067,37 @@ text: **Field Note #3.
 intent: Open the field note with its label.
 style: Field-note label in the dossier's established form, matching Field Note #1's structure.
 continuity: Follows $n65025 and precedes $n63596. The field note is the case's residue in the dossier's own apparatus.
+
 $n63596
 text: Some changes have no author.
 intent: State the field note's first sentence: some changes have no author.
 style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
 continuity: Follows $n36014 and precedes $n11507. The note's theme is the change no one authored.
+
 $n11507
 text: The story outlives the evidence, and the story is more alive than the truth.**
 intent: State the field note's second sentence: the story outlives the evidence, and the story is more alive than the truth.
 style: The note's final clause is the case's social horror in aphoristic form.
 continuity: Follows $n63596 and precedes $n79294. The field note is the case's residue; the story outlives the evidence.
+
 $n79294
 text: Since I compiled this file — the folder open, the field-note page in front of me — I read loop bounds twice.
 intent: Show the narrator's residue behaviorally: since compiling this file, he reads loop bounds twice.
 style: The habit is shown as a concrete action, not declared; the compiling room's physicality grounds the frame.
 continuity: Follows $n11507 and precedes $n38089. The residue is procedural; the legend has changed the investigator permanently.
+
 $n38089
 text: I check the diff of anything that touches a limit.
 intent: Extend the residue: he checks the diff of anything that touches a limit.
 style: The habit generalizes from loop bounds to any limit; the residue is a permanent change in his method.
 continuity: Follows $n79294 and precedes $n73328. The residue is the discipline Case V will demand; the bridge is behavioral.
+
 $n73328
 text: I do not tell anyone this is why.
 intent: Withhold the reason: he does not tell anyone this is why.
 style: The withholding is the narrator's exact register; the reason is known to the reader but never announced.
 continuity: Follows $n38089 and precedes $n15584. The narrator's private leaning is carried entirely by behavior.
+
 $n15584
 text: The habit is small and permanent and it is mine, and it is the residue of a legend I cannot verify and cannot file.
 intent: State the residue's nature: small, permanent, his, the residue of a legend he cannot verify and cannot file.
@@ -4353,39 +4421,57 @@ continuity: Follows the field-note label. The aphorism follows the pattern of Fi
 
 $n28696
 text: Tell a made up story of how a server crashed due to environmental reasons, such as overheating or power failure.
-intent: Authorial directive for VII. A Natural, Boring Crash: constrain the case or manuscript according to the requirement stated in this sentence.
-style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n19902 and precedes $n54730. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
+intent: Authorial directive for VII: the crash is environmental (overheating or power failure); unchanged anchor sentence of the NOTE block.
+style: Non-diegetic NOTE; plain directive; the sentence survived the NOTE rewrite.
+continuity: Follows $n19902 and precedes $n05252. Opens the Case VII NOTE block.
 
-$n54730
-text: The story should emphasize that this is not a supernatural event, but rather a mundane one.
-intent: Authorial directive for VII. A Natural, Boring Crash: constrain the case or manuscript according to the requirement stated in this sentence.
-style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n28696 and precedes $n95153. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
+$n05252
+text: The crash must be objectively mundane: a complete, demonstrable causal chain — a warm week, a dead compressor, a clogged filter, a tired fan, a temperature rise, a throttle, an emergency shutdown — with no hint anywhere that it was secretly supernatural.
+intent: Authorial directive for VII: the crash is objectively mundane with a complete demonstrable causal chain; no hint of the secretly supernatural anywhere.
+style: Non-diegetic NOTE; the em-dash chain enumerates the required links precisely; directive register, not narrator voice.
+continuity: Follows $n28696 and precedes $n12881. Supersedes the old palate-cleanser NOTE sentences; per the 2026-10-13 authorial direction ($id-9421142343424984).
 
-$n95153
-text: This is a necessary palate cleanser, it shores up our credibility by reminding readers that not all anomalies are numinous.
-intent: Authorial directive for VII. A Natural, Boring Crash: constrain the case or manuscript according to the requirement stated in this sentence.
-style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n54730 and precedes $n28035. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
+$n12881
+text: The narrator understands and accepts this explanation intellectually; after the demon, the leprechaun, the astrology and the paranoid crocodile, he cannot feel safe or satisfied with even a fully ordinary one.
+intent: Authorial directive for VII: the narrator's intellectual acceptance is required, but after the demon, leprechaun, astrology and paranoid crocodile he cannot feel safe or satisfied with a fully ordinary explanation.
+style: Non-diegetic NOTE; the case list of prior ordeals justifies the emotional stakes; directive register.
+continuity: Follows $n05252 and precedes $n13178. Defines the acceptance-vs-dissonance split the case body must show.
 
-$n28035
-text: Give the mundane crash clear physical causes and, if useful, real human consequences so it remains a compelling story rather than a perfunctory reassurance.
-intent: Author-approved editorial direction for natural crash; record the specific future narrative work stated in this sentence without making it diegetic exposition.
-style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n95153 and precedes $n23038. This is revision guidance for natural crash, not a statement the narrator knows or says.
+$n13178
+text: Show the dissonance in behavior — emotional responses, rituals, lingering fear, the attention he cannot switch off — and do not lecture that science fails.
+intent: Authorial directive for VII: convey the tension through emotional responses, actions, lingering fear, rituals and unswitchable attention, not through a lecture that science fails.
+style: Non-diegetic NOTE; the em-dash list names the permitted channels; explicitly forbids the lecturing register.
+continuity: Follows $n12881 and precedes $n14743. Governs the case's closing beats.
 
-$n23038
-text: Preserve this case as an honest control sample that shows the narrator can still accept a sufficient ordinary explanation.
-intent: Author-approved editorial direction for natural crash; record the specific future narrative work stated in this sentence without making it diegetic exposition.
-style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n28035 and precedes $n22316. This is revision guidance for natural crash, not a statement the narrator knows or says.
+$n14743
+text: Make the database recovery technically plausible: the data gap is bounded by the transaction-log archive and the backups (a full archive share, an alert nobody read), not by a checkpoint, which is not inherently a rollback.
+intent: Authorial directive for VII: the data gap must be bounded by logs, backups or durability (here a full archive share and an unread alert), not by a checkpoint, which is not inherently a rollback.
+style: Non-diegetic NOTE; names the exact plausibility repair; directive register.
+continuity: Follows $n13178 and precedes $n14969. Governs the recovery paragraph rewrite.
+
+$n14969
+text: Preserve the real human losses: the postdoc's three days of compute, the week in the cluster queue, the work that existed only in the database.
+intent: Authorial directive for VII: keep the postdoc's compute, queue time and the database-only work as real, unflattened losses.
+style: Non-diegetic NOTE; the colon list fixes what must survive editing; directive register.
+continuity: Follows $n14743 and precedes $n26875. Governs the Ruth beat.
+
+$n26875
+text: Coordinate Rack C's details with the coda: the coda's compressed retelling — a warm week, a clogged filter, a fan that failed slow and legible — must be a faithful summary of this case, and the heat log must end up among the dossier's tokens.
+intent: Authorial directive for VII: the coda's compressed retelling (warm week, clogged filter, fan that failed slow and legible) must be a faithful summary of this case, and the heat log must end up among the dossier's tokens.
+style: Non-diegetic NOTE; the em-dash clause quotes the coda's existing words to bind the two sections; directive register.
+continuity: Follows $n14969 and precedes $n28889. Resolves the compressor-versus-filter inconsistency in #293's favor of the coda's list.
+
+$n28889
+text: End the case so that it deepens the transition into the coda: the changed-perception rituals begin here.
+intent: Authorial directive for VII: the case's ending must seed the changed-perception rituals the coda then shows nightly.
+style: Non-diegetic NOTE; single imperative; directive register.
+continuity: Follows $n26875 and precedes $n22316. Governs the closing token beat.
 
 $n22316
 text: **A small research institute, the second week of August.**
 intent: Establish the case dateline with temporal specificity; the vague place reinforces that the mundane cause could be anywhere.
 style: Bold dateline fragment matching Cases I and VI; plain and documentary, letting the title carry the evocativeness.
-continuity: Follows $n23038 and precedes $n76832. Opens Case VII.
+continuity: Follows $n28889 and precedes $n76832. Opens Case VII.
 
 $n76832
 text: I was called on a Tuesday morning because the institute’s database had stopped answering.
@@ -4621,17 +4707,41 @@ intent: The compressor died before dawn; the room's warming is the AC's absence 
 style: Personification (the unit had died) paired with a compressed causal clause; the mundane made vivid.
 continuity: Follows $n61074 and precedes $n54523. Fixes the failure time (before dawn).
 
+$n30285
+text: The machine had been running on a margin the logs could measure.
+intent: Pivot from the room's failure to the machine's spent headroom; the margin is quantifiable, which makes its loss legible.
+style: Short declarative; the measurable margin foreshadows the degree-counting of the ending.
+continuity: Follows $n94546 and precedes $n42692. Opens the margin passage.
+
+$n42692
+text: The intake filter was loaded with the room’s dust — the smell from the doorway, which is what a clogged filter is before it becomes a measurement.
+intent: The clogged filter named as a causal link; the dust smell from the doorway is re-read as a symptom; sets up the coda's 'clogged filter'.
+style: Em-dash appositive; the re-reading of the smell is the narrator's diagnostic attention.
+continuity: Follows $n30285 and precedes $n53867. Coordinates with coda $n90223 ('a clogged filter').
+
+$n53867
+text: One chassis fan had sat below its rated curve for weeks; the BMC kept a graph of its decline, slow and legible, the kind of failure you can read like weather.
+intent: The failing fan named as a second link; its decline was logged for weeks, slow and legible; sets up the coda's 'a fan that failed slow and legible'.
+style: Semicolon joining two clauses; the BMC graph is the legibility made archival; weather simile ties to Ruth's weather line.
+continuity: Follows $n42692 and precedes $n57859. The weeks of decline parallel the unread archive alert.
+
+$n57859
+text: A warm week, a filter, a fan with nothing left in it: the room did not need to become hot; it needed to stop forgiving the machine.
+intent: Compressed catalogue of the spent margin; the punchline reframes the crash: the room did not need to get hot, only to stop forgiving.
+style: Staccate fragments building to a semicolon turn; the personification (stop forgiving) is the tender register.
+continuity: Follows $n53867 and precedes $n54523. Hands the links to the causal-chain summary.
+
 $n54523
-text: The causal chain was complete and ordinary: cooling failure, temperature rise, throttling, emergency shutdown.
-intent: The narrator states the full causal chain and labels it ordinary; the demonstration is complete and the mundane cause is proven.
-style: Colon introducing the four-link chain; complete and ordinary is the control's conclusion.
-continuity: Follows $n94546 and precedes $n87311. Summarizes the demonstrated chain.
+text: The causal chain was complete and ordinary: a warm week, a dead compressor, a filter full of dust, a fan with nothing left in it, a temperature rise, a throttle, an emergency shutdown.
+intent: The narrator states the full demonstrated chain with the new links (warm week, dead compressor, filter full of dust, fan with nothing left in it) appended to the thermal sequence; ordinary is the control's verdict.
+style: Colon introducing the eight-link catalogue; the accumulation makes the mundane cause feel airtight.
+continuity: Follows $n57859 and precedes $n87311. Supersedes the shorter four-link version; every link is evidenced below the chain.
 
 $n87311
-text: Every link was in the logs.
-intent: Each link of the chain is evidenced in the logs; the mundane cause is a conclusion, not a default.
-style: Short declarative; the compression makes the evidentiary claim absolute.
-continuity: Follows $n54523 and precedes $n78030. The evidentiary claim.
+text: Every link was in the logs, or in the machine when I opened the bezel.
+intent: The evidentiary claim now covers the two new links: the fan curve is in the BMC log and the clogged filter is visible in the machine; nothing in the chain is merely inferred.
+style: Short declarative; the or-clause extends the claim to physical inspection without breaking the compression.
+continuity: Follows $n54523 and precedes $n78030. The filter's presence in the machine is what the bezel clause admits.
 
 $n78030
 text: Every link was physical.
@@ -4655,31 +4765,61 @@ $n12909
 text: `fsck` found inconsistencies in the journal and fixed them.
 intent: The filesystem check confirms the ungraceful shutdown's damage; the journal inconsistencies are the corruption made visible.
 style: Backticked command; the procedural register.
-continuity: Follows $n17932 and precedes $n76418. First recovery step; confirms the corruption.
+continuity: Follows $n17932 and precedes $n61557. First recovery step; confirms the corruption.
 
-$n76418
-text: The database recovered to its last checkpoint, six hours before the crash.
-intent: The database recovery creates the six-hour gap; the gap is the measure of the lost work.
-style: Short declarative; the six-hour gap is the stakes quantified.
-continuity: Follows $n12909 and precedes $n69685. Establishes the data gap.
+$n61557
+text: The database recovered from the last verified backup and the archive of transactions kept since — the archive whose whole purpose is to make a backup’s age a detail instead of a boundary.
+intent: The restore path is backup plus transaction-log archive; the archive's purpose (making backup age a detail, not a boundary) is stated before it is shown to have failed; this replaces the implausible checkpoint-rollback.
+style: Em-dash appositive; the archive's purpose stated plainly; procedural register.
+continuity: Follows $n12909 and precedes $n62597. The plausibility repair required by #293 and NOTE $n14743.
+
+$n62597
+text: The archive had stopped at 02:47.
+intent: The gap's start fixed by the archive boundary, not by a checkpoint; 02:47 is six hours before the 08:47 crash; the checkpoint plays no causal role.
+style: Short declarative; the bare timestamp lands like the earlier log fragments.
+continuity: Follows $n61557 and precedes $n64319. Establishes the six-hour gap's actual cause.
+
+$n64319
+text: The reason was complete and ordinary: the share it wrote to had filled that morning, and every failed write since had been logged and sent to an inbox nobody read.
+intent: The archive failed for a mundane, demonstrated reason: a full share, every failure logged, every alert sent to an inbox nobody read; the cause of the gap is as boring as the cause of the crash.
+style: Colon introducing the two-part reason; the unread inbox is the institutional residue.
+continuity: Follows $n62597 and precedes $n65597. The unread alert parallels the unacted fan-curve decline.
+
+$n65597
+text: So the restore rolled the backup forward to the end of the intact archive and stopped there, consistent, six hours short of the shutdown.
+intent: The restore mechanics: roll the backup forward to the archive's end and stop; the database is consistent at 02:47, six hours short of the shutdown; consistent and six hours short holds both facts in one breath.
+style: The semicolon pair (consistent, six hours short) compresses the result; procedural register.
+continuity: Follows $n64319 and precedes $n68379. Delivers the gap without any checkpoint rollback.
+
+$n68379
+text: The local disks were not asked to say anything more; six hours at forty-five degrees in a sealed room is not a source you trust.
+intent: The human decision not to trust heat-stressed local disks closes the recovery's plausibility; the mundane explanation is now complete to the last choice.
+style: Em-dash construction; the personification (asked to say anything more) is gentle; the heat-distrust is institutional, not mystical.
+continuity: Follows $n65597 and precedes $n69685. Explains why local WAL replay was not attempted.
 
 $n69685
 text: The recovery took most of an hour.
 intent: The recovery's duration adds realism and a pause before the gap is assessed.
 style: Short declarative; the temporal marker (most of an hour).
-continuity: Follows $n76418 and precedes $n56746. A pause before the gap.
+continuity: Follows $n68379 and precedes $n56746. A pause before the gap.
 
 $n56746
 text: When it finished, the database was consistent, and the gap remained.
 intent: The database is repaired but the gap is permanent; the consistency is technical, the gap is human.
 style: The coordination (consistent, and the gap remained) holds the two facts in tension.
-continuity: Follows $n69685 and precedes $n56557. Confirms the gap is permanent.
+continuity: Follows $n69685 and precedes $n79810. Confirms the gap is permanent.
+
+$n79810
+text: The share had filled at 02:47, in the same small hours the compressor gave up, and I found myself checking that the two failures were unconnected — more than once, the way you check a lock.
+intent: The narrator notices the two mundane failures are close in time and checks, more than once, that they are unconnected; the certainty is intellectual, the checking is compulsive; the dissonance is shown behaviorally, not argued.
+style: Em-dash aside; the lock-checking simile names the ritual without labeling it superstition; echoes Case V's over-read operator log.
+continuity: Follows $n56746 and precedes $n56557. The emotional-dissatisfaction beat; distinct from uncertainty because he is certain.
 
 $n56557
 text: Most of it was routine — observation logs, scheduling entries, the daily instrument telemetry.
 intent: The lost work is mostly routine, which makes the one non-routine loss stand out; the routine items are concrete and mundane.
 style: Em-dash introducing the routine categories; the specificity grounds the loss.
-continuity: Follows $n56746 and precedes $n12193. Distinguishes routine from irreplaceable.
+continuity: Follows $n79810 and precedes $n12193. Distinguishes routine from irreplaceable.
 
 $n12193
 text: One piece of it was not.
@@ -4753,29 +4893,29 @@ intent: Ruth's calm is the emotional register; she reports the loss the way one 
 style: Simile (the way you say the weather) that is behavioral, not interpretive.
 continuity: Follows $n29472 and precedes $n67924. Closes the human-cost beat.
 
-$n67924
-text: I wrote the case up that evening.
-intent: The narrator files the case; the filing is the control's completion.
-style: Short declarative; the evening marker closes the day.
-continuity: Follows $n61885 and precedes $n38372. Opens the control/residue beat.
-
 $n38372
-text: Cooling failure, thermal shutdown, data loss.
-intent: The case's filing summary; three plain terms; the mundane cause is recorded without commentary.
-style: Three-noun catalogue; the compression is the filing.
-continuity: Follows $n67924 and precedes $n36559. The case is filed correctly.
+text: Cooling failure, thermal shutdown, data loss, a full disk on a share nobody read.
+intent: The case filing now names both mundane causes; the compression keeps the three-term rhythm and appends the archive cause; matches the coda's later 'I wrote *ambient*' by making the filing fully ordinary.
+style: Four-term catalogue; the appended clause keeps the staccato rhythm.
+continuity: Follows $n67924 and precedes $n36559. The filed summary is the mundane verdict made record.
 
 $n36559
-text: The explanation was complete.
-intent: The narrator accepts the mundane explanation; this is the control's payoff; his method works and he files the case correctly.
-style: Short declarative; complete is the acceptance.
-continuity: Follows $n38372 and precedes $n56504. The acceptance.
+text: The explanation was complete, and the fault I entered in the log was the ordinary one: *ambient*.
+intent: Intellectual acceptance stated plainly; the *ambient* fault code is the word the coda later recalls him writing; certainty and dissatisfaction coexist in one sentence.
+style: Italicised *ambient* keeps the fault code visible; the coordination lands the coda callback $n21714 exactly.
+continuity: Follows $n38372 and precedes $n56554. The acceptance is real; what follows shows it is not enough.
 
 $n56504
 text: I checked the logs twice.
 intent: The residue shown behaviorally; the narrator re-checks the logs, unable to fully accept the boring answer; shows his private leaning without naming it.
 style: Short declarative; the second check is the tell.
-continuity: Follows $n36559 and precedes $n78369. Behavioral residue.
+continuity: Follows $n36559 and precedes $n83650. Behavioral residue.
+
+$n83650
+text: That night I opened the file again before sleep and read the shutdown line the way I had once read the settlement operator’s log — more times than the evidence required, each time telling myself I was reading it as evidence.
+intent: The compulsion shown behaviorally: he re-reads his own log past the need for evidence, the way he once over-read the settlement operator's log in Case V; the residue is now nocturnal.
+style: Em-dash comparison to Case V; 'each time telling myself I was reading it as evidence' is the self-deception made visible.
+continuity: Follows $n83650 and precedes $n89833. The ritual deepens from a second look to a bedtime repetition.
 
 $n78369
 text: I lingered in the room after I had finished, after the server was running again, in the heat that had not yet been repaired.
@@ -4787,13 +4927,19 @@ $n89833
 text: It is a strange thing to be relieved by a broken air conditioner.
 intent: The narrator names the relief's strangeness without naming the disappointment; the residue is acknowledged but not explained.
 style: The impersonal construction (it is a strange thing) keeps it private and observational.
-continuity: Follows $n78369 and precedes $n38434. The relief plus residue.
+continuity: Follows $n83650 and precedes $n38434. The relief plus residue.
 
 $n38434
 text: The margin between working and gone is measured in degrees, and I had spent the afternoon watching it close.
 intent: The fragility theme crystallized; the margin is degrees, and he watched it close; the dread is in the mundane cause's thoroughness.
 style: The concrete abstract (margin measured in degrees) and the closing image (watching it close) make the fragility felt.
-continuity: Follows $n89833 and precedes $n57225. Hands the fragility residue to the Coda.
+continuity: Follows $n89833 and precedes $n97587. Hands the fragility residue to the Coda.
+
+$n97587
+text: I put the overlaid page into the folder, beside the moth — a heat log, a server dead of a warm week — and checked once, before I left the building, that it was there.
+intent: The heat log becomes a dossier token; the placement seeds the coda's nightly token-check ritual ('The tokens are where I left them, and I check that they are there'); the transition into the coda is enacted here, not announced.
+style: Em-dash appositive naming the token; 'checked once... that it is there' is the empty-check ritual in its first occurrence.
+continuity: Follows $n97587 and precedes $n57225. Sets up coda $n18253 ('A heat log: a server dead of a warm week') and $n30688.
 
 $n57225
 text: **Field Note #6.
