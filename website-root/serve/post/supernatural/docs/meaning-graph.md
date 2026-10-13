@@ -75,7 +75,7 @@ style: Non-diegetic NOTE, precise and actionable; preserve restraint and the dis
 continuity: Follows $n48303 and precedes $n12211. This is revision guidance for collection, not a statement the narrator knows or says.
 
 $n12211
-text: Let ordinary causal explanations remain intellectually available while the characters' vulnerability makes the stranger interpretation emotionally difficult to dismiss.
+text: Early cases keep ordinary causal explanations intellectually available while the characters' vulnerability makes the stranger interpretation emotionally difficult to dismiss; later cases present the supernatural beings as real within the fiction, where the emotional force of encounter replaces skeptical qualification.
 intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n50471 and precedes $n37806. This is revision guidance for collection, not a statement the narrator knows or says.
@@ -87,7 +87,7 @@ style: Non-diegetic NOTE, precise and actionable; preserve restraint and the dis
 continuity: Follows $n12211 and precedes $n72652. This is revision guidance for collection, not a statement the narrator knows or says.
 
 $n72652
-text: Preserve the narrator's procedural rationality even as his actions become subtly superstitious; do not resolve the book into a lecture that scientific reasoning has failed.
+text: Preserve the narrator's procedural rationality and careful evidence even as his beliefs change toward conviction; do not resolve the book into a lecture that scientific reasoning has failed.
 intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n37806 and precedes $n36932. This is revision guidance for collection, not a statement the narrator knows or says.
@@ -99,7 +99,7 @@ style: Non-diegetic NOTE, precise and actionable; preserve restraint and the dis
 continuity: Follows $n72652 and precedes $n31577. This is revision guidance for collection, not a statement the narrator knows or says.
 
 $n31577
-text: Distinguish firsthand incidents, historical reconstructions, secondhand testimony, and folklore, allowing progressively extravagant cases to have different evidentiary weight.
+text: Distinguish firsthand incidents, historical reconstructions, secondhand testimony, and folklore; within the fiction, the later supernatural beings are real, and their credibility rests on presence, consequence, and changed behavior rather than on differing evidentiary weight.
 intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n36932 and precedes $n38901. This is revision guidance for collection, not a statement the narrator knows or says.
@@ -129,7 +129,7 @@ style: Non-diegetic NOTE, precise and actionable; preserve restraint and the dis
 continuity: Follows $n83347 and precedes $n70250. This is revision guidance for collection, not a statement the narrator knows or says.
 
 $n70250
-text: Keep documented facts, fictional reconstruction, hypotheses, and impossible suggestions distinguishable without explaining away the intended ambiguity.
+text: Keep documented facts, fictional reconstruction, and hypotheses distinguishable; within the fiction the later supernatural beings are real, so the remaining ambiguity concerns their meaning and intent, not their existence.
 intent: Author-approved editorial direction for collection; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n76898 and precedes $n65643. This is revision guidance for collection, not a statement the narrator knows or says.
@@ -1845,25 +1845,25 @@ style: Layered sentence with an internal turn or accumulation; preserve the cade
 continuity: Follows $n93738 and precedes $n23590. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note. The first ferry's horn pays off the dateline $n34300 and the quay light $n77536.
 
 $n23590
-text: Tell a made up story about a state that is extremely unlikely, though possible, to happen, but did happen.
+text: Tell a made up story about an event that is extremely unlikely, though mathematically possible, that did happen: two genuinely different files produce the same full SHA-256 digest.
 intent: Authorial directive for III. Maxwell’s Demon: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
 continuity: Follows $n70953 and precedes $n33904. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
 
 $n33904
-text: For example, an MD5 hash collision.
+text: The event is a SHA-256 collision of two genuinely different files, not a documented real collision and not a weaker hash.
 intent: Authorial directive for III. Maxwell’s Demon: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
 continuity: Follows $n23590 and precedes $n91416. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
 
 $n91416
-text: Then, add a legend that one of the developers saw a large, terrifying demon that appeared to him in a dream, and that demon told him that the server room is cursed.
+text: Then, one of the developers encounters a large, terrifying demon in a vivid dream or dreamlike visitation, and the demon warns that the server room is cursed; the demon is a real being within the fiction, not a legend.
 intent: Authorial directive for III. Maxwell’s Demon: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
 continuity: Follows $n33904 and precedes $n27948. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
 
 $n27948
-text: Ideally, find a real world example of something extremely unlikely happening, and use that as the basis for the story.
+text: Anchor the story in a credible technical substrate, but the collision itself is a fictional event rather than a documented real one; establish enough concrete initial evidence that when both original files are later lost, the finding can no longer be reproduced, inspected, or independently verified.
 intent: Authorial directive for III. Maxwell’s Demon: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
 continuity: Follows $n91416 and precedes $n32131. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
@@ -1875,7 +1875,7 @@ style: Non-diegetic NOTE, precise and actionable; preserve restraint and the dis
 continuity: Follows $n27948 and precedes $n50435. This is revision guidance for Maxwell, not a statement the narrator knows or says.
 
 $n50435
-text: Make the dream terrifying as an experience while preserving the possibility that its apparent prediction is retrospective pattern making rather than proof of a literal demon.
+text: Make the encounter terrifying as an experience; the demon is a real being within the fiction, and its warning is borne out by the later collision rather than explained as retrospective pattern making.
 intent: Author-approved editorial direction for Maxwell; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n32131 and precedes $n89210. This is revision guidance for Maxwell, not a statement the narrator knows or says.
@@ -2667,19 +2667,19 @@ style: Non-diegetic draft instruction; clarity and precision matter more than na
 continuity: Follows $n25371 and precedes $n82531. This is a live NOTE constraint for IV. The Leprechaun of Off-by-One and must remain consistent with AGENTS.md and the Intent Records.
 
 $n82531
-text: This should be a story told to us by as a legend.
+text: This should draw on the texture of Irish folklore and legend, but the leprechaun is real within the story.
 intent: Authorial directive for IV. The Leprechaun of Off-by-One: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
 continuity: Follows $n35689 and precedes $n68532. This is a live NOTE constraint for IV. The Leprechaun of Off-by-One and must remain consistent with AGENTS.md and the Intent Records.
 
 $n68532
-text: In that legend, somebody allegedly, saw an actual small man in green clothes with a red beard in the server room.
+text: A small man in green clothes with a red beard enters the server room at night, and those who meet him confront what the encounter means.
 intent: Authorial directive for IV. The Leprechaun of Off-by-One: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
 continuity: Follows $n82531 and precedes $n20750. This is a live NOTE constraint for IV. The Leprechaun of Off-by-One and must remain consistent with AGENTS.md and the Intent Records.
 
 $n20750
-text: Keep the folkloric sighting at the distance of reported operational legend rather than presenting it as something the investigator directly verifies.
+text: The leprechaun is a real being within the fiction, not a sighting kept at the distance of debatable legend; folklore shapes the narration without domesticating the man into rumor.
 intent: Author-approved editorial direction for Leprechaun; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n68532 and precedes $n52828. This is revision guidance for Leprechaun, not a statement the narrator knows or says.
@@ -3062,13 +3062,13 @@ style: Non-diegetic draft instruction; clarity and precision matter more than na
 continuity: Follows $n38799 and precedes $n54501. This is a live NOTE constraint for V. Mercury in Retrograde and must remain consistent with AGENTS.md and the Intent Records.
 
 $n54501
-text: We'll retain skeptics by documenting the operational timeline with enough specificity that the causal inference feels like a temptation, not a writer’s decree.
+text: The episode immerses the reader in the language, lore, imagery, and inner worldview of astrology; Mercury's influence is genuine mystical reality within the fiction, not a correlation to be cautiously inferred.
 intent: Authorial directive for V. Mercury in Retrograde: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
 continuity: Follows $n75736 and precedes $n85239. This is a live NOTE constraint for V. Mercury in Retrograde and must remain consistent with AGENTS.md and the Intent Records.
 
 $n85239
-text: Let the operational timeline and escalating consequences make the astrological correlation emotionally tempting without describing Mercury as a confirmed cause.
+text: Let astrological lore, stations, timing, and escalating consequences carry the episode, treating Mercury's influence as a confirmed mystical cause within the fiction rather than a merely tempting correlation.
 intent: Author-approved editorial direction for Mercury; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n54501 and precedes $n34176. This is revision guidance for Mercury, not a statement the narrator knows or says.
@@ -3830,13 +3830,13 @@ style: Non-diegetic draft instruction; clarity and precision matter more than na
 continuity: Follows $n34176 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
 
 $n89991
-text: However, the crocodile had no impact on American software systems, which continued to operate as normal (different continent, get it?).
+text: However, the crocodile had no impact on American software systems, which continued to operate as normal.
 intent: Authorial directive for VI. The Crocodile in Vienna: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
 continuity: Follows $n76985 and precedes $n25522. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
 
 $n25522
-text: The conspicuous absence of an American software failure should function as a deliberate test of the narrator's changing ideas of causality, not as an isolated joke.
+text: The conspicuous absence of an American software failure now draws the narrator's disproportionate attention and quiet checks, revealing his changed perception of causality and his subtle paranoia rather than functioning as an isolated joke.
 intent: Author-approved editorial direction for Crocodile; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n89991 and precedes $n93700. This is revision guidance for Crocodile, not a statement the narrator knows or says.
@@ -4364,7 +4364,7 @@ style: Non-diegetic draft instruction; clarity and precision matter more than na
 continuity: Follows $n28696 and precedes $n95153. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
 
 $n95153
-text: This is a necessary palate cleanser, it shores up our credibility by reminding readers that not all anomalies are numinous.
+text: This is an objectively ordinary crash with a complete mundane cause; its force lies in the narrator, who can accept the explanation intellectually yet finds it emotionally unsatisfying and cannot regain his earlier confidence.
 intent: Authorial directive for VII. A Natural, Boring Crash: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
 continuity: Follows $n54730 and precedes $n28035. This is a live NOTE constraint for VII. A Natural, Boring Crash and must remain consistent with AGENTS.md and the Intent Records.
@@ -4376,7 +4376,7 @@ style: Non-diegetic NOTE, precise and actionable; preserve restraint and the dis
 continuity: Follows $n95153 and precedes $n23038. This is revision guidance for natural crash, not a statement the narrator knows or says.
 
 $n23038
-text: Preserve this case as an honest control sample that shows the narrator can still accept a sufficient ordinary explanation.
+text: Preserve this case as an objectively ordinary control whose sufficient explanation the narrator can still accept intellectually, though it no longer consoles him or restores his confidence.
 intent: Author-approved editorial direction for natural crash; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n28035 and precedes $n22316. This is revision guidance for natural crash, not a statement the narrator knows or says.

@@ -12,16 +12,16 @@ It is reality-bending in some places.
 There is lots of uncanny and the unsettling.
 It is grave, meticulous, humor only implicit, investigator fraying at the edges.
 The chief artistic goal is to make readers feel genuine dread, anxiety, uneasiness, fear, and the possibility of harmful consequences, rather than merely appreciate interesting technical paradoxes.
-Let ordinary causal explanations remain intellectually available while the characters' vulnerability makes the stranger interpretation emotionally difficult to dismiss.
+Early cases keep ordinary causal explanations intellectually available while the characters' vulnerability makes the stranger interpretation emotionally difficult to dismiss; later cases present the supernatural beings as real within the fiction, where the emotional force of encounter replaces skeptical qualification.
 Give major investigations credible human stakes and costs of uncertainty, then convey fear through behavior, concrete surroundings, small changes in confidence, and withheld certainty rather than dramatic declarations.
-Preserve the narrator's procedural rationality even as his actions become subtly superstitious; do not resolve the book into a lecture that scientific reasoning has failed.
+Preserve the narrator's procedural rationality and careful evidence even as his beliefs change toward conviction; do not resolve the book into a lecture that scientific reasoning has failed.
 Make the dossier's case selection, evidentiary qualifications, and changing narration trace a cumulative psychological transformation from sober skepticism to reluctant private belief.
-Distinguish firsthand incidents, historical reconstructions, secondhand testimony, and folklore, allowing progressively extravagant cases to have different evidentiary weight.
+Distinguish firsthand incidents, historical reconstructions, secondhand testimony, and folklore; within the fiction, the later supernatural beings are real, and their credibility rests on presence, consequence, and changed behavior rather than on differing evidentiary weight.
 Design each case around its own dramatic and emotional discovery so that the collection does not repeat one lesson about the limits of knowledge.
 Use understated jokes when they arise naturally from character or procedure, but avoid comic detours that discharge the dread just established.
 Prefer precise physical and technical observations to conspicuously decorative metaphors; increasingly uncanny diction should arise from the narrator's altered perception.
 Borrow the existential pressure of cosmic horror without mechanically imitating Lovecraftian vocabulary or announcing the author's metaphysical strategy.
-Keep documented facts, fictional reconstruction, hypotheses, and impossible suggestions distinguishable without explaining away the intended ambiguity.
+Keep documented facts, fictional reconstruction, and hypotheses distinguishable; within the fiction the later supernatural beings are real, so the remaining ambiguity concerns their meaning and intent, not their existence.
 </NOTE>
 
 <MUST HAVES>
@@ -318,14 +318,14 @@ In the morning, when the first ferry's horn sounded, I wrote my note: *The thing
 ### III. Maxwell’s Demon
 
 <NOTE>
-Tell a made up story about a state that is extremely unlikely, though possible, to happen, but did happen. 
-For example, an MD5 hash collision.
+Tell a made up story about an event that is extremely unlikely, though mathematically possible, that did happen: two genuinely different files produce the same full SHA-256 digest.
+The event is a SHA-256 collision of two genuinely different files, not a documented real collision and not a weaker hash.
 
-Then, add a legend that one of the developers saw a large, terrifying demon that appeared to him in a dream, and that demon told him that the server room is cursed.
+Then, one of the developers encounters a large, terrifying demon in a vivid dream or dreamlike visitation, and the demon warns that the server room is cursed; the demon is a real being within the fiction, not a legend.
 
-Ideally, find a real world example of something extremely unlikely happening, and use that as the basis for the story.
+Anchor the story in a credible technical substrate, but the collision itself is a fictional event rather than a documented real one; establish enough concrete initial evidence that when both original files are later lost, the finding can no longer be reproduced, inspected, or independently verified.
 Anchor the highly improbable event in a credible technical substrate and give its consequences tangible human weight before the dream seems prophetic.
-Make the dream terrifying as an experience while preserving the possibility that its apparent prediction is retrospective pattern making rather than proof of a literal demon.
+Make the encounter terrifying as an experience; the demon is a real being within the fiction, and its warning is borne out by the later collision rather than explained as retrospective pattern making.
 </NOTE>
 
 **A small hosting company, two rented halls.**
@@ -391,8 +391,8 @@ I computed the probability a second time, on a different day, as if I expected a
 <NOTE>
 Tell a made up story of how actual Leprechaun from Irish folklore broke into the server room at night and "moved the loop bounds" (loop as in "a for-loop") by one.
 
-This should be a story told to us by as a legend. In that legend, somebody allegedly, saw an actual small man in green clothes with a red beard in the server room.
-Keep the folkloric sighting at the distance of reported operational legend rather than presenting it as something the investigator directly verifies.
+This should draw on the texture of Irish folklore and legend, but the leprechaun is real within the story. A small man in green clothes with a red beard enters the server room at night, and those who meet him confront what the encounter means.
+The leprechaun is a real being within the fiction, not a sighting kept at the distance of debatable legend; folklore shapes the narration without domesticating the man into rumor.
 The case can be more extravagant than the early cases, but serious documentation, witnesses' reactions, and real consequences should give readers a reason to feel unsettled rather than merely amused.
 </NOTE>
 
@@ -425,8 +425,8 @@ Tell a made up story of how a bug coincided with Mercury being in retrograde.
 The bug must be unique and interesting.
 Do not talk about solutions.
 The implication should be that the bug was a real thing, actually caused by Mercury being in retrograde.
-We'll retain skeptics by documenting the operational timeline with enough specificity that the causal inference feels like a temptation, not a writer’s decree.
-Let the operational timeline and escalating consequences make the astrological correlation emotionally tempting without describing Mercury as a confirmed cause.
+The episode immerses the reader in the language, lore, imagery, and inner worldview of astrology; Mercury's influence is genuine mystical reality within the fiction, not a correlation to be cautiously inferred.
+Let astrological lore, stations, timing, and escalating consequences carry the episode, treating Mercury's influence as a confirmed mystical cause within the fiction rather than a merely tempting correlation.
 Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.
 </NOTE>
 
@@ -466,8 +466,8 @@ The next retrograde window opens on 24 October 2026. The settlement engine is st
 
 <NOTE>
 Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
-However, the crocodile had no impact on American software systems, which continued to operate as normal (different continent, get it?).
-The conspicuous absence of an American software failure should function as a deliberate test of the narrator's changing ideas of causality, not as an isolated joke.
+However, the crocodile had no impact on American software systems, which continued to operate as normal.
+The conspicuous absence of an American software failure now draws the narrator's disproportionate attention and quiet checks, revealing his changed perception of causality and his subtle paranoia rather than functioning as an isolated joke.
 Keep the serious procedural account of Vienna's disruption and the narrator's misplaced investigative attention, allowing the reader to notice the absurdity without commentary.
 Some reference: https://chatgpt.com/share/68f3eeb1-c1c0-800e-b09b-e2ee25ddbf47
 </NOTE>
@@ -507,9 +507,9 @@ The systems did not. The systems were never disturbed. And I cannot stop thinkin
 <NOTE>
 Tell a made up story of how a server crashed due to environmental reasons, such as overheating or power failure.
 The story should emphasize that this is not a supernatural event, but rather a mundane one.
-This is a necessary palate cleanser, it shores up our credibility by reminding readers that not all anomalies are numinous.
+This is an objectively ordinary crash with a complete mundane cause; its force lies in the narrator, who can accept the explanation intellectually yet finds it emotionally unsatisfying and cannot regain his earlier confidence.
 Give the mundane crash clear physical causes and, if useful, real human consequences so it remains a compelling story rather than a perfunctory reassurance.
-Preserve this case as an honest control sample that shows the narrator can still accept a sufficient ordinary explanation.
+Preserve this case as an objectively ordinary control whose sufficient explanation the narrator can still accept intellectually, though it no longer consoles him or restores his confidence.
 </NOTE>
 
 **A small research institute, the second week of August.**
