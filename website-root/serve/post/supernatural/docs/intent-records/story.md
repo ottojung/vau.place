@@ -47,12 +47,16 @@ kind: requirement
 The Heisenbug case treats a difficult, preferably real or plausibly reconstructed debugging incident as if observation itself changes the phenomenon. Instrumentation, tracing, logging, or attempts to catch the bug should make it recede or alter its behavior. The story should leave open the technically ordinary explanations while making the narrator increasingly willing to describe the bug as something that does not want to be watched. The case must create genuine doubt, anxiety, and eventually fear rather than reading primarily as an ordinary debugging log decorated with jokes; its horror should emerge from the repeated observation-sensitive reversals and from the narrator's increasingly uneasy behavior while the procedural detail remains serious.
 
 $id-8506027753346938
-title: Maxwell's Demon is an actual terrifying being
+title: Maxwell's Demon, a real being, and a lost SHA-256 collision
 date: 2026/10/13
 source: @ottojung
 kind: requirement
 
-The Maxwell's Demon case is centrally about a real, frightening supernatural being within the fictional world. A programmer encounters the demon in a vivid dream or dreamlike visitation; it warns that the codebase or server room is cursed. The ensuing extraordinary computational event gives the encounter consequences and narrative force, but the account must not retreat into declaring the demon an embellishment of a vague chat message or spend its dramatic energy disproving its reality. Technical particulars can matter to the human stakes, never substitute for the demon's presence, intentions, terror or aftermath.
+Maxwell's Demon is a genuinely real and terrifying supernatural being within the fictional world. A programmer encounters it in a vivid dream or dreamlike visitation, where it warns that the codebase or server room is cursed. A central subsequent event is a SHA-256 hash collision: TWO GENUINELY DIFFERENT FILES produce the same full SHA-256 digest. This is a fantastically improbable but mathematically possible fictional event, not a documented real SHA-256 collision and not an ordinary case of copying one file twice, hashing the wrong inputs, or confusing SHA-256 with weaker hashes.
+
+Intensify the absurd irony: after the collision has been noticed, both original files are lost, so no one can reproduce, inspect, or independently verify the extraordinary finding. Establish enough concrete initial evidence (for example, recorded file identity/differences, hashes and witnesses while the files still exist) that their later loss feels consequential rather than a cheap escape hatch. The missing artifacts should compound the fear, loss of confidence, and vulnerability of the investigators; the surviving evidence is suggestive but necessarily incomplete.
+
+The demon's reality is not up for skeptical courtroom debate: do NOT demote the dream to a retroactively embellished chat anecdote, offer routine hash/provisioning errors as a compulsory alternative to the event, or reduce the case to probability calculations. Give priority to the entity's presence, warning, agency, emotional force, consequences, and the irony of irrevocably lost proof.
 
 $id-9342987960007338
 title: Leprechaun case is the story of the real green man
