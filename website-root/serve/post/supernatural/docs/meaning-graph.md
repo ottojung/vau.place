@@ -3830,13 +3830,13 @@ style: Non-diegetic draft instruction; clarity and precision matter more than na
 continuity: Follows $n34176 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
 
 $n89991
-text: However, the crocodile had no impact on American software systems, which continued to operate as normal (different continent, get it?).
+text: However, the crocodile had no impact on American software systems, which continued to operate as normal.
 intent: Authorial directive for VI. The Crocodile in Vienna: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
 continuity: Follows $n76985 and precedes $n25522. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
 
 $n25522
-text: The conspicuous absence of an American software failure should function as a deliberate test of the narrator's changing ideas of causality, not as an isolated joke.
+text: The conspicuous absence of an American software failure now draws the narrator's disproportionate attention and quiet checks, revealing his changed perception of causality and his subtle paranoia rather than functioning as an isolated joke.
 intent: Author-approved editorial direction for Crocodile; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
 continuity: Follows $n89991 and precedes $n93700. This is revision guidance for Crocodile, not a statement the narrator knows or says.
@@ -3882,6 +3882,12 @@ text: I read the article twice, the way I read incident reports, looking for the
 intent: Reveal the narrator's professional habit applied to a news article; the reader begins to see the methodological alignment that will become misalignment.
 style: First-person procedural; simile (the way I read incident reports) foreshadows the methodology without announcing it.
 continuity: Establishes the narrator's method. Follows the police closure. The simile is the first signal of the misplaced procedural frame.
+
+$n00666
+text: I read it a third time, which was not the way I read incident reports.
+intent: Show private repetition as an involuntary excess of the professional habit; the narrator notes the discrepancy without naming its cause, seeding the case's subtle paranoia.
+style: Short declarative that extends the previous sentence's simile and quietly contradicts it; the understatement carries the unease.
+continuity: Follows $n71378 and precedes $n98147. The third reading is the case's first behavioral tell; it pairs with the repeated checks of $n98932 and the Friday re-reading of $n21552.
 
 $n98147
 text: Then I began to do what I always do.
@@ -4028,16 +4034,16 @@ style: First-person procedural; the Schaerbeek comparison is a callback to Case 
 continuity: Follows the specialist call. The Schaerbeek callback establishes continuity. The narrator's competence is explicit.
 
 $n17192
-text: I was doing good work.
-intent: Declare the narrator's confidence; the reader sees the competence that will become the vehicle of the collapse.
-style: Short declarative; the narrator's self-assessment.
-continuity: Follows the Schaerbeek comparison. The confidence is a dramatic-irony peak.
+text: When the location came up again — the canal bends past the Urania — I copied it into the margin of the new page and underlined it.
+intent: Show an altered relevance judgment: the narrator singles out the observatory landmark and records it as if it might matter, linking an astronomy-adjacent place to the prior astrological case without explaining why.
+style: Declarative with an em-dash aside; the copying and underlining are small physical acts carrying disproportionate significance.
+continuity: Follows $n18590 and precedes $n85898. The Urania is first mentioned in $n93726 and recurs in $n22006; the margin-underlining echoes the prologue's margins motif and the ritual behavior of the later cases.
 
 $n85898
-text: I knew I was doing good work.
-intent: Reinforce the narrator's confidence; the self-awareness makes the reader's awareness of the coming misalignment more acute.
-style: Short declarative with a verb of knowing; the self-awareness is the hinge.
-continuity: Follows the declaration. The knowing is the hinge between competence and collapse.
+text: I could not have said what I meant to connect it to.
+intent: Withhold the narrator's own reasoning about the link he senses, so the reader sees a relevance judgment he cannot articulate and the text never explains the absurd association.
+style: Short declarative; the modal (could not have said) admits the impulse while keeping it unexamined.
+continuity: Follows $n17192 and precedes $n26893. Keeps the Urania link implicit; the unexamined connection is the case's paranoid perception made visible rather than announced.
 
 $n26893
 text: That afternoon, while the crocodile was still in the canal and the path was still closed, I asked the question I always ask: what systems were affected?
@@ -4123,179 +4129,101 @@ intent: Document the documentation; the column of timestamps shows the narrator'
 style: Procedural record with a colon introducing the timestamps; the column structure mirrors an incident report.
 continuity: Follows the null results. The timestamps show the investigation's duration and rigor.
 
-$n80967
-text: This was the correct procedure.
-intent: Declare the method's correctness; the narrator's confidence is absolute; the reader sees the misalignment.
-style: Short declarative; the narrator's self-assessment.
-continuity: Follows the documentation. The correctness claim is the dramatic-irony hinge.
+$n01700
+text: After the column was complete I kept checking.
+intent: Mark the transition from procedural documentation to compulsion; the column is finished but the checking is not, and the narrator reports the excess without judging it.
+style: Short declarative paragraph opener; the temporal clause (after the column was complete) sets the method aside and lets the compulsion continue.
+continuity: Follows $n98932 and precedes $n01714. The first behavioral sign that the checks have outrun their object; the old "four more times" idea is now shown rather than stated.
 
-$n47246
-text: When a system fails, you establish the blast radius.
-intent: State the methodological principle; the blast radius is the first step of incident response.
-style: Universal procedural declarative; the blast radius as the first principle.
-continuity: Follows the correctness claim. The principle is genuine software practice.
+$n01714
+text: I opened the Wiener Linien status page, which was not a system I was responsible for.
+intent: Show a disproportionate check: the narrator consults the Vienna transit operator's status as if it belonged to his remit, and the relative clause quietly admits the overreach.
+style: Procedural record with a self-qualifying relative clause; the mismatch between his responsibilities and his attention is stated flatly.
+continuity: Follows $n01700 and precedes $n03393. Extends the systems column of $n98932 into territory that is not his; the transit reference connects to the advisory of $n45009.
 
-$n38249
-text: You identify which services were affected, which regions, which dependencies.
-intent: State the second principle; the triad (services, regions, dependencies) is the blast-radius expansion.
-style: Universal procedural declarative with a triad; the you-form is the investigator's generic.
-continuity: Follows the blast-radius principle. The triad is the investigation's structure.
+$n03393
+text: I opened the zoo's visitor page to see whether it had said anything about the crocodile, and it had not.
+intent: Another disproportionate check, now aimed at the animal rather than any system; the empty result is recorded as if it mattered.
+style: Procedural record with an and-clause delivering the null result; the anticlimax is left unremarked.
+continuity: Follows $n01714 and precedes $n05668. The zoo is the animal's destination in $n81450; the visitor page is a system that could never fail in the sense he is checking.
 
-$n22104
-text: You document what is broken and what is not.
-intent: State the third principle; the documentation of the not-broken is the step that becomes misplaced.
-style: Universal procedural declarative; the documentation of the intact is the pivot.
-continuity: Follows the triad. The documentation of the not-broken is where the method becomes noise.
+$n05668
+text: I opened the weather for Vienna, and closed it again.
+intent: Show hyper-attention spilling into something with no bearing on software at all; the opening and closing are a ritual with no content.
+style: Short declarative with a balanced and-clause; the trivial action is treated with the same gravity as the status checks.
+continuity: Follows $n03393 and precedes $n08239. The weather is irrelevant to every system in the column; the reflex marks the altered relevance judgment.
 
-$n96458
-text: You build the map of the failure before you look for its cause.
-intent: State the fourth principle; the map-before-cause principle is genuine and, here, misapplied.
-style: Universal procedural declarative; the map-before-cause ordering is exact.
-continuity: Follows the documentation principle. The map-before-cause is the method's logic.
+$n08239
+text: I opened the status page of a small company whose office stood on the canal, because a colleague had worked there once.
+intent: Show the narrator's paranoia reaching for any proximity to the event; the because-clause gives a human, associative reason where a causal one is absent.
+style: Procedural record with a because-clause; the personal association is offered without apology or explanation.
+continuity: Follows $n05668 and precedes $n11555. The canal-side office ties the check to the physical event; the colleague is an unexplained human link, echoing the dossier's habit of following names.
 
-$n63548
-text: I have done this a hundred times.
-intent: Declare the narrator's experience; the frequency establishes his competence.
-style: First-person declarative; the frequency (a hundred times) establishes expertise.
-continuity: Follows the map-before-cause principle. The experience claim grounds the competence.
+$n11555
+text: None of these had failed either.
+intent: Compress the second round into a null result and mark the narrator's growing attention to absence; the word either quietly includes the irrelevant checks in the same frame as the relevant ones.
+style: Short declarative; the compression and the either carry the case's hyper-attention to nothing happening.
+continuity: Follows $n08239 and precedes $n11992. The old "Not one" idea is now shown through an accumulation of irrelevant checks rather than an announced boundary.
 
-$n75306
-text: I was doing it now.
-intent: Apply the method to the present case; the narrator is doing what he has always done, to a crocodile.
-style: Short declarative; the present tense (was doing it now) collapses the distance between method and object.
-continuity: Follows the experience claim. The collapse of method and object is the misalignment's completion.
+$n11992
+text: That night I did not sleep well.
+intent: Supply the physical unease the direction requires, as a plain bodily fact rather than a metaphor.
+style: Short first-person declarative; the understatement keeps the symptom private.
+continuity: Follows $n11555 and precedes $n13340. The first physical consequence of the watching; it links the case to the insomnia and bodily tells of the later narrator.
 
-$n34241
-text: The map I built showed a large failure with a very clean boundary.
-intent: The map's result; the large failure is the crocodile's disruption; the clean boundary is the absence of software effects.
-style: Declarative with a metaphor (map) and a paradox (clean boundary); the clean boundary is the absence made visible.
-continuity: Follows the method's application. The clean boundary is the absence as finding. The paradox is the case's horror.
+$n13340
+text: I got up once and looked at the column of times, and at the dashboard, which had not changed.
+intent: Show the compulsion continuing at night and the hyper-attention to an absence that persists; the unchanged dashboard is the thing he cannot leave alone.
+style: Declarative with a chain of and-clauses; the ordinary act of looking is made to carry the unease.
+continuity: Follows $n11992 and precedes $n14630. The dashboard recurs from $n87869; the night visit seeds the coda's token checks that are "not one at all."
 
-$n37418
-text: The crocodile had disrupted a city.
-intent: State the real event's scale; the city is Vienna; the disruption is real and documented.
-style: Short declarative; the past perfect (had disrupted) places the real event before the investigation.
-continuity: Follows the map's result. The real event is stated plainly.
-
-$n30845
-text: It had closed a canal, diverted trams, sent a school group home, emptied a café terrace, and drawn a crowd of onlookers behind police tape with their phones out.
-intent: Enumerate the real event's consequences; the list gathers the earlier details into a single sentence; the phones-out image is the modern detail.
-style: Long enumerative sentence with a list of consequences; the past perfect maintains the chronology; the phones-out image is concrete.
-continuity: Follows the city disruption. The enumeration gathers the earlier stakes. The phones-out image connects to the social-media dimension.
-
-$n78442
-text: It had disrupted none of the American software systems I depended on, or monitored, or had ever investigated.
-intent: State the absence; the triad (depended on, monitored, investigated) gathers the narrator's relationship to the systems; the absence is total.
-style: Declarative with a triad of verbs; the past perfect (had disrupted) places the absence before the documentation.
-continuity: Follows the real-event enumeration. The absence is stated plainly. The triad gathers the narrator's system relationships.
-
-$n92186
-text: Not one.
-intent: Compress the absence to its minimum; the two words are the finding at its most extreme.
-style: Two-word declarative; the absolute (not one) is the absence as total.
-continuity: Follows the absence statement. The compression is a procedural peak.
-
-$n11575
-text: I checked again at 16:40.
-intent: Second round of checks; the timestamp shows the investigation continues while the event unfolds.
-style: Compressed procedural record; the timestamp anchors the second round.
-continuity: Follows the first-round documentation. The second round shows persistence.
+$n14630
+text: The times were in ink, and the page was beginning to look like a record of something, though I could not have said what had been recorded.
+intent: Let the narrator sense significance without naming it; the page looks like evidence though there is no incident, which is the case's paranoid perception crystallized.
+style: Declarative with a concessive though-clause; the withheld object (what had been recorded) is the dread.
+continuity: Follows $n13340 and precedes $n25695. The ink and margins echo the prologue's record-keeping motif; the unnameable record is answered by the field note $n19902.
 
 $n25695
-text: I checked the next morning, Thursday, at 09:15, while the animal control team was still searching the canal bank near the Stadtpark for a place the crocodile might have hauled out overnight.
-intent: Third round of checks; the while-clause places the check during the ongoing search; the hauled-out detail adds unease.
-style: Procedural record with a while-clause; the timestamp and the search detail are specific.
-continuity: Follows the 16:40 check. The while-clause shows the real event is still unfolding during the software checks.
+text: The next morning, Thursday, while the animal control team was still searching the canal bank near the Stadtpark for a place the crocodile might have hauled out overnight, I checked the systems again.
+intent: Continue the checking into a new day while the real event is still unresolved; the while-clause keeps the crocodile present so the reader feels the disproportion.
+style: Procedural record with a while-clause; the search detail is specific and the former timestamp is folded into the opening.
+continuity: Follows $n14630 and precedes $n35718. The real event is still unfolding during the checks; the Stadtpark and haul-out details connect to $n30199 and $n42142.
 
 $n35718
 text: Green.
-intent: First result of the third round; the absence continues.
+intent: First result of the second morning; the absence continues.
 style: Single-word procedural record; the color as status.
-continuity: Follows the Thursday morning check. First result.
+continuity: Follows $n25695 and precedes $n90142. First of the repeated greens that the narrator now counts.
 
 $n90142
 text: Green.
-intent: Second result; the absence is now a rhythm.
+intent: Second result; the repetition is now a rhythm the narrator is producing, not a fact he is finding.
 style: Single-word procedural record; the repetition creates a rhythm.
-continuity: Follows the first green. The repetition is the absence as rhythm.
+continuity: Follows $n35718 and precedes $n19586.
 
 $n19586
 text: Green.
-intent: Third result; the absence is now a pattern the narrator treats as data.
-style: Single-word procedural record; the third repetition makes the pattern undeniable.
-continuity: Follows the second green. The third green completes the triad. The pattern is the absence as data.
+intent: Third result; the triad of greens becomes the raw material of the second column.
+style: Single-word procedural record; the third repetition makes the pattern the narrator's own.
+continuity: Follows $n90142 and precedes $n18313. The triad feeds the lengthening column of $n18313.
 
-$n84599
-text: I wrote the following in my notebook that morning, because I believed it to be important:
-intent: Introduce the notebook passage; the because-clause shows the narrator's sincerity; the notebook is the artifact that will carry the misalignment.
-style: First-person procedural with a because-clause; the notebook as the artifact of sincerity.
-continuity: Follows the third green. The notebook passage is the narrator's sincere conclusion.
+$n18313
+text: I wrote the new times under the old ones and noticed that the second column was longer than the first, and that I had not decided to make it longer.
+intent: Show private repetition and its involuntary growth; the narrator observes his own compulsion and does not stop it, which is the subtle paranoia made visible.
+style: Declarative with a noticing-clause; the second and-clause is the confession, offered without interpretation.
+continuity: Follows $n19586 and precedes $n20217. The column grows against his intention; it is the concrete form of the field note $n19902.
 
-$n22546
-text: The event was contained.
-intent: The notebook passage's first claim; the contained-event idea is the misalignment's first articulation.
-style: Short declarative; the contained-event idea is the misalignment.
-continuity: Follows the notebook introduction. The first claim of the misalignment.
-
-$n31074
-text: Not the crocodile — he was still at large, still a threat to the dog walkers and the canal path — but the disruption.
-intent: Distinguish the crocodile from the disruption; the em-dash aside reasserts the real danger; the narrator's attention is on the disruption.
-style: Declarative with an em-dash aside; the aside reasserts the real stakes while the main clause shifts attention to the disruption.
-continuity: Follows the contained-event claim. The distinction between crocodile and disruption is the misalignment's articulation. The dog walkers connect to the earlier testimony.
-
-$n44485
-text: The disruption had stopped at the water's edge.
-intent: The misalignment's spatial image; the water's edge is the boundary the narrator treats as significant.
-style: Declarative with a spatial metaphor (water's edge); the boundary as the finding.
-continuity: Follows the distinction. The water's edge is the misalignment's spatial image.
-
-$n59104
-text: It had not crossed the Atlantic.
-intent: Extend the spatial image; the Atlantic is the ocean between Vienna and America; the absence of crossing is the finding.
-style: Declarative with a geographic marker (the Atlantic); the absence of crossing as the finding.
-continuity: Follows the water's edge. The Atlantic extends the spatial image to the transatlantic scale.
-
-$n57621
-text: It had not touched the systems I was watching, the systems I would have watched if they had failed, the systems whose logs I read every morning like a physician reading a chart.
-intent: Name the systems; the triad (watching, would have watched, logs) gathers the narrator's relationship; the physician simile is the most explicit self-description.
-style: Declarative with a triad and a simile; the physician-reading-a-chart simile is the most explicit self-description in the case.
-continuity: Follows the Atlantic. The systems are named. The physician simile is the self-description peak.
-
-$n82972
-text: The absence of a transatlantic effect was not a null result.
-intent: Reject the null-result framing; the narrator refuses the obvious interpretation; this is the misalignment's hinge.
-style: Declarative with a negation; the rejection of the null result is the misalignment's hinge.
-continuity: Follows the systems naming. The null-result rejection is the case's pivotal misalignment.
-
-$n39034
-text: It was a clean result.
-intent: Reframe the absence as a finding; the clean-result idea is the misalignment's core.
-style: Short declarative; the clean-result reframing is the misalignment's core.
-continuity: Follows the null-result rejection. The clean result is the finding the narrator treats as significant.
-
-$n97702
-text: And a clean result, in my experience, is the kind that means something.
-intent: Generalize the clean-result principle; the in-my-experience appeal grounds it in the narrator's expertise; the means-something claim is the misalignment's conclusion.
-style: Declarative with an in-my-experience appeal; the generalization is the misalignment's conclusion.
-continuity: Follows the clean-result reframing. The generalization is the misalignment's logical conclusion. The in-my-experience appeal makes it the narrator's genuine belief.
-
-$n47097
-text: I have thought about this for two days.
-intent: State the narrator's ongoing preoccupation; the duration shows the absence has lodged in his mind.
-style: First-person present-perfect; the duration (two days) shows persistence.
-continuity: Follows the misalignment's conclusion. The preoccupation shows the absence has lodged.
-
-$n54461
-text: I have checked the systems four more times.
-intent: State the continued checking; the frequency shows compulsion; the systems are still the focus.
-style: First-person present-perfect; the frequency (four more times) shows compulsion.
-continuity: Follows the preoccupation. The continued checking shows the investigation persists.
+$n20217
+text: I found that I was checking the pages in order, the way I check them during an incident, and that there was no incident.
+intent: Show the procedure running without its object; the narrator recognizes the incident-response order but not an incident, so the method has become pure habit.
+style: Declarative with a repeated that-clause; the flat pairing of method and absence is the sentence's quiet horror.
+continuity: Follows $n18313 and precedes $n81450. The phrase "no incident" answers the whole column; it is the case's hyper-attention to nothing happening in a single line.
 
 $n81450
-text: The crocodile was captured on Thursday evening, alive, by the reptile specialist and two police divers, and taken to Schönbrunn Zoo, where it remains.
-intent: Resolve the real event; the capture is clean; the zoo is the destination; the real event ends while the narrator's investigation continues.
+text: The crocodile was captured that evening, alive, by the reptile specialist and two police divers, and taken to Schönbrunn Zoo, where it remains.
+intent: Resolve the real event; the capture is clean and the animal survives, while the narrator's private record continues.
 style: Procedural resolution; the passive voice (was captured) maintains the documentary register; the alive detail is humane.
-continuity: Follows the continued checking. The real event resolves while the software investigation continues. The zoo connects to the earlier zoo details.
+continuity: Follows $n20217 and precedes $n42524. The zoo connects to $n98526 and $n76698; the animal's removal ends the event but not the checking.
 
 $n42524
 text: The canal path reopened on Friday.
@@ -4321,23 +4249,47 @@ intent: State the city's recovery; the city moves on; the contrast with the narr
 style: Declarative; the city's absorption and movement as recovery.
 continuity: Follows the woman's resolution. The city's recovery contrasts with the narrator's continued focus.
 
-$n86231
-text: The systems did not.
-intent: The contrast's first half; the systems did not move on because they were never disturbed; the brevity is the contrast's force.
-style: Two-word declarative; the systems' non-movement as the contrast.
-continuity: Follows the city's recovery. The brevity is the contrast's force.
+$n20391
+text: The news stopped, which is what a crocodile is worth, and I went back through the reports to see what they had left out.
+intent: Show altered relevance and the search for an omission; the narrator treats the ordinary end of a news cycle as a gap to be investigated.
+style: Declarative with a relative clause and a purpose clause; the dry "what a crocodile is worth" keeps the tone restrained.
+continuity: Follows $n32424 and precedes $n20786. The stopped news is the omission the paranoid narrator hunts; it follows the city's move forward in $n32424.
 
-$n36280
-text: The systems were never disturbed.
-intent: The contrast's second half; the systems' non-disturbance is the fact the narrator treats as significant.
-style: Short declarative; the systems' non-disturbance as the fact.
-continuity: Follows the non-movement. The never-disturbed is the fact the narrator treats as significant.
+$n20786
+text: They had left out nothing.
+intent: Close the search with a null result; the absence of an omission is the third null the narrator records and cannot rest in.
+style: Short declarative; the flat negative mirrors the column's emptiness.
+continuity: Follows $n20391 and precedes $n21126. Pairs with $n11555 and $n20217 as the case's accumulating nothings.
 
-$n57764
-text: And I cannot stop thinking about how clean that was.
-intent: The narrator's conclusion; the clean-that-was is the misalignment's final articulation; the cannot-stop-thinking shows the absence has colonized his mind.
-style: First-person declarative with a cannot-stop verb; the clean-that-was is the misalignment's final articulation.
-continuity: Follows the never-disturbed. The cannot-stop-thinking is the misalignment's final state. The clean is the absence as finding.
+$n21126
+text: I looked anyway.
+intent: State the compulsion in three words after the null result has been established; he checks because he checks, which is the whole paranoia.
+style: Very short declarative; the anyway is the sentence's whole weight.
+continuity: Follows $n20786 and precedes $n21552. The clearest statement of the compulsion without announcement; it sets up the final re-reading.
+
+$n21552
+text: On Friday night I printed the first article and read it again.
+intent: Return to the beginning as private repetition; the narrator re-reads the article that started it, and printing it makes it a physical token.
+style: First-person declarative with a time marker; the act is ordinary and the return is the tell.
+continuity: Follows $n21126 and precedes $n22006. The article is $n76278; the printed page becomes the clipping the coda lists among the dossier's tokens.
+
+$n22006
+text: The photograph was still there, the dark shape on the embankment where the canal bends past the Urania.
+intent: Repeat the image and the observatory location, so the altered relevance judgment of $n17192 returns without explanation.
+style: Declarative with an appositive; the recurrence of the Urania is the sentence's quiet insistence.
+continuity: Follows $n21552 and precedes $n24888. Recalls $n93726 and pays off $n17192; the observatory keeps the astronomy adjacency unresolved.
+
+$n24888
+text: I read the caption, and the word *crocodile*, the way I had first read them.
+intent: Show the compulsion to repeat the original reading exactly; the word is treated as something to be re-read rather than a fact already known.
+style: First-person declarative with a manner clause; the italicized word is the object of the ritual.
+continuity: Follows $n22006 and precedes $n26202. The "single word *crocodile*" of $n76278 returns as a private repetition.
+
+$n26202
+text: Then I folded the page twice and put it in the folder, and opened the dashboard, and the dashboard was green, and I sat with it for a while, and it stayed green.
+intent: End on the ritual and the watched absence; the folded clipping joins the dossier while the green dashboard, unchanged, holds his attention.
+style: Long declarative chain of and-clauses; the folding and the watching are given equal weight, and the final "stayed green" closes without resolution.
+continuity: Follows $n24888 and precedes $n44769. The folded-twice clipping is the token the coda lists; the watched green dashboard is the residue that leads into Case VII's unsatisfying ordinary failure.
 
 $n44769
 text: **Field Note #5.
@@ -4346,10 +4298,10 @@ style: Bold fragment; the field-note label.
 continuity: Follows the narrator's conclusion. The field note is the residue. The numbering is sequential.
 
 $n19902
-text: Horror, in our trade, is the clean failure—the one where the boundary of the damage is perfectly legible, and the legibility itself becomes the evidence.**
-intent: The field note's aphorism; the clean failure is the absence made significant; the legibility-as-evidence is the misalignment crystallized; follows the pattern of Field Note #1.
-style: Aphoristic field-note register; the em-dash introduces the definition; the legibility-as-evidence is the misalignment crystallized.
-continuity: Follows the field-note label. The aphorism follows the pattern of Field Note #1 ($n91668). The clean failure is the absence made significant. The legibility-as-evidence is the misalignment's crystallized form.
+text: I keep the times in a column, and the column has no incident to explain it.**
+intent: Deliver the fifth field note as the residue of the case; it records the compulsion and its objectlessness without naming paranoia, and breaks the "Horror, in our trade" template.
+style: First-person aphorism in two clauses; the flat statement of the column and its missing incident replaces the earlier formulaic cadence.
+continuity: Follows $n44769 and precedes $n28696. It answers the growing column of $n18313 and $n20217 and the unnameable record of $n14630; it seeds the coda's check that "is not one at all."
 
 $n28696
 text: Tell a made up story of how a server crashed due to environmental reasons, such as overheating or power failure.
