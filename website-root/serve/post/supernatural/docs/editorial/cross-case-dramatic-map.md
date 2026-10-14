@@ -1,10 +1,14 @@
 # Cross-case dramatic map
 
 Editorial companion to `supernatural.md`, produced for Antonina board issue #277.
-Date: 2026-10-13 (revised 2026-10-14 on branch `agent-6b92725178a5/issue277-map-transitions`,
-incorporating two citation fixes: the verification-tic entry for Case I is the clerk's line
-retold, not the narrator's own gesture, and Field Note #6 is not the collection's last note —
-the coda appends a "Field Note (last)").
+Date: 2026-10-13 (revised 2026-10-14 on branch
+`agent-b6fb41f5ac39/issue277-cross-case-dramatic-map`, recovering the map from
+`agent-6b92725178a5/issue277-map-transitions` (a4786e8), which continues the
+`agent-1c6cb3aee7ac/cross-case-dramatic-map` lineage (1deb188, 0726dc1)). This revision keeps
+the two citation fixes from that lineage — the verification-tic entry for Case I is the clerk's
+line retold, not the narrator's own gesture, and Field Note #6 is not the collection's last
+note (the coda appends a "Field Note (last)") — and corrects a third: Case I's "write[s] down
+the useful parts and leave[s] some of the commentary out" is present tense in the manuscript.
 Status: **diagnostic and directional**. It maps the current master manuscript, marks the
 repetitive machinery the issue diagnoses, and records the 2026-10-13 human authorial
 direction. Case bodies are concurrently owned by chapter issues (#278, #286, #287, #289,
@@ -42,6 +46,11 @@ openings were revised in `supernatural.md` and their meaning-graph nodes updated
 These remove the repeated "the way I…" bridge cadence flagged in §6 item 6 without erasing
 evidence qualifiers or humour. All other §8 items remain proposals for the owning chapter
 issues.
+
+Coverage check on this branch: 905 graph nodes, 0 duplicate IDs, 0 missing required fields,
+and the ordered concatenation of node `text` fields equals the manuscript's prose exactly
+(`EXACT MATCH`) — unchanged from `master` except the two sentences above, whose node IDs are
+kept. No case body, premise, or Intent Record is touched.
 
 ## Superseded directives (reconciled or pending)
 
@@ -101,8 +110,8 @@ Status against live documents:
   every mundane candidate crossed off until "very probably" a single-event upset remains,
   which is a cause that cannot be shown to anyone. Distinct from II: the observation is
   neutral here; the world simply declines to leave a trace.
-- **(e)** Behaviour change: the young narrator "wrote down the useful parts and left some
-  of the commentary out" — discriminating, unhurried. He does not write a field note that
+- **(e)** Behaviour change: the young narrator "write[s] down the useful parts and leave[s]
+  some of the commentary out" — discriminating, unhurried. He does not write a field note that
   afternoon; years later he files it under the technician's story. First dossier entry:
   the moth photograph, filed in *Proofs I Do Not Argue With*.
 - **(f)** Lingering image: "The moth looks unconvinced." (Also strong: the school carpet
