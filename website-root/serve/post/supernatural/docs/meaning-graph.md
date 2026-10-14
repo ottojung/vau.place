@@ -3139,7 +3139,7 @@ $n85239
 text: Let the operational timeline and escalating consequences make the astrological correlation emotionally tempting without describing Mercury as a confirmed cause.
 intent: Author-approved editorial direction for Mercury; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n54501 and precedes $n34176. This is revision guidance for Mercury, not a statement the narrator knows or says.
+continuity: Follows $n54501 and precedes $n69494. This is revision guidance for Mercury, not a statement the narrator knows or says.
 
 $n69494
 text: Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.
@@ -3895,7 +3895,7 @@ $n76985
 text: Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
 intent: Authorial directive for VI. The Crocodile in Vienna: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n34176 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n75429 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
 
 $n89991
 text: However, the crocodile had no impact on American software systems, which continued to operate as normal (different continent, get it?).
@@ -4426,10 +4426,10 @@ style: Non-diegetic NOTE; plain directive; the sentence survived the NOTE rewrit
 continuity: Follows $n19902 and precedes $n05252. Opens the Case VII NOTE block.
 
 $n05252
-text: The crash must be objectively mundane: a complete, demonstrable causal chain — a warm week, a dead compressor, a clogged filter, a tired fan, a temperature rise, a throttle, an emergency shutdown — with no hint anywhere that it was secretly supernatural.
+text: The crash must be objectively mundane: a complete, demonstrable causal chain — a warm week, a clogged filter, a tired fan, a temperature rise, a throttle, an emergency shutdown — with no hint anywhere that it was secretly supernatural.
 intent: Authorial directive for VII: the crash is objectively mundane with a complete demonstrable causal chain; no hint of the secretly supernatural anywhere.
 style: Non-diegetic NOTE; the em-dash chain enumerates the required links precisely; directive register, not narrator voice.
-continuity: Follows $n28696 and precedes $n12881. Supersedes the old palate-cleanser NOTE sentences; per the 2026-10-13 authorial direction ($id-9421142343424984).
+continuity: Follows $n28696 and precedes $n12881. Supersedes the old palate-cleanser NOTE sentences; per the 2026-10-13 authorial direction ($id-9421142343424984). The chain now matches coda $n90223 (a warm week, a clogged filter, a fan that failed slow and legible), resolving the compressor-versus-filter inconsistency.
 
 $n12881
 text: The narrator understands and accepts this explanation intellectually; after the demon, the leprechaun, the astrology and the paranoid crocodile, he cannot feel safe or satisfied with even a fully ordinary one.
@@ -4693,25 +4693,37 @@ $n16727
 text: I checked the error code against the manufacturer’s documentation.
 intent: The narrator verifies the AC error code against the manual; the cause is confirmed by reference, not assumption.
 style: Procedural declarative; the manufacturer's documentation is the authority.
-continuity: Follows $n26749 and precedes $n61074. Verifies the compressor failure.
+continuity: Follows $n26749 and precedes $n61074. Verifies the AC fault against the manual.
 
 $n61074
-text: The code was three digits long, and the manual’s table gave it a single meaning: the compressor had failed, and the unit had shut itself down rather than keep pumping.
-intent: The error code's single meaning (compressor failure) removes ambiguity; the unit shut down rather than keep pumping, explaining why the room kept warming.
+text: The code was three digits long, and the manual’s table gave it a single meaning: the unit had locked out on airflow, the filter loaded past the point where the coil could be fed enough air to work.
+intent: The error code's single meaning (an airflow lockout caused by the clogged filter) removes ambiguity and resolves the compressor-versus-filter inconsistency in the coda's favour; the filter is the cause, not the compressor.
 style: Colon introducing the code's meaning; the single meaning is the verification.
-continuity: Follows $n16727 and precedes $n94546. Confirms the compressor failure unambiguously.
+continuity: Follows $n16727 and precedes $n94546. Names the filter as the causal link, matching coda $n90223; supersedes the master's compressor-failure reading.
 
 $n94546
 text: The unit had died sometime before dawn, and the room had done the rest.
-intent: The compressor died before dawn; the room's warming is the AC's absence made causal; the room had done the rest compresses the four-hour chain.
+intent: The cooling unit stopped before dawn; the room's warming is the AC's absence made causal; the room had done the rest compresses the four-hour chain.
 style: Personification (the unit had died) paired with a compressed causal clause; the mundane made vivid.
-continuity: Follows $n61074 and precedes $n54523. Fixes the failure time (before dawn).
+continuity: Follows $n61074 and precedes $n24169. Fixes the failure time (before dawn).
+
+$n24169
+text: The compressor had never been the fault.
+intent: Explicitly exonerate the compressor so the mundane chain is the filter, the airflow and the fan; the forensic red herring (a cold compressor housing) is closed by the manual.
+style: Short declarative; the past-perfect (had never been) is the finding, stated flatly.
+continuity: Follows $n94546 and precedes $n29245. Resolves the compressor-versus-filter inconsistency required by NOTE $n26875.
+
+$n29245
+text: The air had.
+intent: The terse completion — the air, not the machine, was the fault; the mundane cause is air and dust, nothing more exotic.
+style: Two-word sentence; the ellipsis (the air had [been the fault]) is the case's driest beat.
+continuity: Follows $n24169 and precedes $n30285. Closes the compressor question; hands off to the margin passage.
 
 $n30285
 text: The machine had been running on a margin the logs could measure.
 intent: Pivot from the room's failure to the machine's spent headroom; the margin is quantifiable, which makes its loss legible.
 style: Short declarative; the measurable margin foreshadows the degree-counting of the ending.
-continuity: Follows $n94546 and precedes $n42692. Opens the margin passage.
+continuity: Follows $n29245 and precedes $n42692. Opens the margin passage.
 
 $n42692
 text: The intake filter was loaded with the room’s dust — the smell from the doorway, which is what a clogged filter is before it becomes a measurement.
@@ -4732,10 +4744,10 @@ style: Staccate fragments building to a semicolon turn; the personification (sto
 continuity: Follows $n53867 and precedes $n54523. Hands the links to the causal-chain summary.
 
 $n54523
-text: The causal chain was complete and ordinary: a warm week, a dead compressor, a filter full of dust, a fan with nothing left in it, a temperature rise, a throttle, an emergency shutdown.
-intent: The narrator states the full demonstrated chain with the new links (warm week, dead compressor, filter full of dust, fan with nothing left in it) appended to the thermal sequence; ordinary is the control's verdict.
-style: Colon introducing the eight-link catalogue; the accumulation makes the mundane cause feel airtight.
-continuity: Follows $n57859 and precedes $n87311. Supersedes the shorter four-link version; every link is evidenced below the chain.
+text: The causal chain was complete and ordinary: a warm week, a clogged filter, a fan with nothing left in it, a temperature rise, a throttle, an emergency shutdown.
+intent: The narrator states the full demonstrated chain (warm week, clogged filter, spent fan, then the thermal sequence); ordinary is the control's verdict; the compressor is gone from the chain, matching the coda.
+style: Colon introducing the seven-link catalogue; the accumulation makes the mundane cause feel airtight.
+continuity: Follows $n57859 and precedes $n87311. Supersedes the shorter four-link version; the filter and fan links are evidenced above and below the chain.
 
 $n87311
 text: Every link was in the logs, or in the machine when I opened the bezel.
@@ -4792,10 +4804,10 @@ style: The semicolon pair (consistent, six hours short) compresses the result; p
 continuity: Follows $n64319 and precedes $n68379. Delivers the gap without any checkpoint rollback.
 
 $n68379
-text: The local disks were not asked to say anything more; six hours at forty-five degrees in a sealed room is not a source you trust.
-intent: The human decision not to trust heat-stressed local disks closes the recovery's plausibility; the mundane explanation is now complete to the last choice.
-style: Em-dash construction; the personification (asked to say anything more) is gentle; the heat-distrust is institutional, not mystical.
-continuity: Follows $n65597 and precedes $n69685. Explains why local WAL replay was not attempted.
+text: The local disks were not asked to say anything more — a machine that had cut its own power mid-write is not a source you trust.
+intent: The human decision not to trust the ungracefully powered-down local disks (unflushed writes, torn tail) closes the recovery's plausibility; the mundane explanation is complete to the last choice, and the backup-plus-archive path is the institute's durable system of record.
+style: Em-dash construction; the personification (asked to say anything more) is gentle; the distrust is institutional and physical, not mystical.
+continuity: Follows $n65597 and precedes $n69685. Explains why local WAL replay was not used and why the archive boundary at 02:47 is the gap.
 
 $n69685
 text: The recovery took most of an hour.
@@ -4810,7 +4822,7 @@ style: The coordination (consistent, and the gap remained) holds the two facts i
 continuity: Follows $n69685 and precedes $n79810. Confirms the gap is permanent.
 
 $n79810
-text: The share had filled at 02:47, in the same small hours the compressor gave up, and I found myself checking that the two failures were unconnected — more than once, the way you check a lock.
+text: The share had filled at 02:47, in the same small hours the cooling gave up, and I found myself checking that the two failures were unconnected — more than once, the way you check a lock.
 intent: The narrator notices the two mundane failures are close in time and checks, more than once, that they are unconnected; the certainty is intellectual, the checking is compulsive; the dissonance is shown behaviorally, not argued.
 style: Em-dash aside; the lock-checking simile names the ritual without labeling it superstition; echoes Case V's over-read operator log.
 continuity: Follows $n56746 and precedes $n56557. The emotional-dissatisfaction beat; distinct from uncertainty because he is certain.
@@ -4893,6 +4905,12 @@ intent: Ruth's calm is the emotional register; she reports the loss the way one 
 style: Simile (the way you say the weather) that is behavioral, not interpretive.
 continuity: Follows $n29472 and precedes $n67924. Closes the human-cost beat.
 
+$n67924
+text: I wrote the case up that evening.
+intent: The narrator files the case; the filing is the control's completion.
+style: Short declarative; the evening marker closes the day.
+continuity: Follows $n61885 and precedes $n38372. Opens the control/residue beat; restored after the rewrite dropped the node while keeping its references.
+
 $n38372
 text: Cooling failure, thermal shutdown, data loss, a full disk on a share nobody read.
 intent: The case filing now names both mundane causes; the compression keeps the three-term rhythm and appends the archive cause; matches the coda's later 'I wrote *ambient*' by making the filing fully ordinary.
@@ -4903,7 +4921,7 @@ $n36559
 text: The explanation was complete, and the fault I entered in the log was the ordinary one: *ambient*.
 intent: Intellectual acceptance stated plainly; the *ambient* fault code is the word the coda later recalls him writing; certainty and dissatisfaction coexist in one sentence.
 style: Italicised *ambient* keeps the fault code visible; the coordination lands the coda callback $n21714 exactly.
-continuity: Follows $n38372 and precedes $n56554. The acceptance is real; what follows shows it is not enough.
+continuity: Follows $n38372 and precedes $n56504. The acceptance is real; what follows shows it is not enough.
 
 $n56504
 text: I checked the logs twice.
@@ -4915,31 +4933,37 @@ $n83650
 text: That night I opened the file again before sleep and read the shutdown line the way I had once read the settlement operator’s log — more times than the evidence required, each time telling myself I was reading it as evidence.
 intent: The compulsion shown behaviorally: he re-reads his own log past the need for evidence, the way he once over-read the settlement operator's log in Case V; the residue is now nocturnal.
 style: Em-dash comparison to Case V; 'each time telling myself I was reading it as evidence' is the self-deception made visible.
-continuity: Follows $n83650 and precedes $n89833. The ritual deepens from a second look to a bedtime repetition.
+continuity: Follows $n56504 and precedes $n78369. The ritual deepens from a second look to a bedtime repetition.
 
 $n78369
 text: I lingered in the room after I had finished, after the server was running again, in the heat that had not yet been repaired.
 intent: The narrator lingers in the unrepaired heat; the cause is still present and the fragility is unresolved; the residue is spatial and temporal.
 style: The layered after-clauses extend the lingering; the unrepaired heat is the fragility.
-continuity: Follows $n56504 and precedes $n89833. The lingering is the residue.
+continuity: Follows $n83650 and precedes $n73471. The lingering is the residue.
 
-$n89833
-text: It is a strange thing to be relieved by a broken air conditioner.
-intent: The narrator names the relief's strangeness without naming the disappointment; the residue is acknowledged but not explained.
-style: The impersonal construction (it is a strange thing) keeps it private and observational.
-continuity: Follows $n83650 and precedes $n38434. The relief plus residue.
+$n73471
+text: There was nothing left to find.
+intent: The investigation is complete — the mundane cause is fully established — yet the narrator is still standing in the room; the completion is intellectual, the lingering is emotional.
+style: Short declarative; the absence (nothing left) is stated flatly, and it does not release him.
+continuity: Follows $n78369 and precedes $n98052. The dissatisfaction beat: acceptance without consolation, per $id-9421142343424984.
+
+$n98052
+text: I had found all of it, and I did not want to leave.
+intent: The emotional dissatisfaction distinct from uncertainty: he is certain and finished, and still unwilling to go; the ordinary explanation has not restored his peace.
+style: Balanced first-person clause with a turn; 'did not want to leave' is the tell, shown not explained.
+continuity: Follows $n73471 and precedes $n38434. Replaces the master's consoling relief line about being relieved by a broken air conditioner; acceptance without consolation.
 
 $n38434
 text: The margin between working and gone is measured in degrees, and I had spent the afternoon watching it close.
 intent: The fragility theme crystallized; the margin is degrees, and he watched it close; the dread is in the mundane cause's thoroughness.
 style: The concrete abstract (margin measured in degrees) and the closing image (watching it close) make the fragility felt.
-continuity: Follows $n89833 and precedes $n97587. Hands the fragility residue to the Coda.
+continuity: Follows $n98052 and precedes $n97587. Hands the fragility residue to the Coda.
 
 $n97587
 text: I put the overlaid page into the folder, beside the moth — a heat log, a server dead of a warm week — and checked once, before I left the building, that it was there.
 intent: The heat log becomes a dossier token; the placement seeds the coda's nightly token-check ritual ('The tokens are where I left them, and I check that they are there'); the transition into the coda is enacted here, not announced.
 style: Em-dash appositive naming the token; 'checked once... that it is there' is the empty-check ritual in its first occurrence.
-continuity: Follows $n97587 and precedes $n57225. Sets up coda $n18253 ('A heat log: a server dead of a warm week') and $n30688.
+continuity: Follows $n38434 and precedes $n57225. Sets up coda $n18253 ('A heat log: a server dead of a warm week') and $n30688.
 
 $n57225
 text: **Field Note #6.
@@ -5135,27 +5159,33 @@ continuity: Follows $n24145 and precedes $n21714. Pays off the paper-fails image
 
 $n21714
 text: I wrote *ambient* in the log and closed the case.
-intent: Show the narrator accepting a boring explanation plainly; the method closes the case without ritual.
+intent: Show the narrator accepting a boring explanation plainly; the method closes the case, but the following sentences show the closure does not hold.
 style: Procedural; the single word *ambient* does the work.
-continuity: Follows $n90223 and precedes $n64130. Case VII sanity visible; the mundane acceptance.
+continuity: Follows $n90223 and precedes $n15756. Case VII sanity visible, then immediately complicated by the unswitchable attention.
 
-$n64130
-text: There was no second look, no margin, no note.
-intent: Mark the deliberate absence of ritual for the mundane case; the contrast with his current behavior shows the change.
-style: Triple negation; asyndeton; the absence is the statement.
-continuity: Follows $n21714 and precedes $n27025. The contrast that makes the superstition visible by difference.
+$n15756
+text: I check the log the way I check the tokens, and the word *ambient* is correct, and correctness is not what I am checking for.
+intent: The emotional dissatisfaction distinct from uncertainty: the explanation is correct and he knows it, yet he keeps checking; the check is the coda's token-ritual applied to the mundane case; he is not doubting, he is unconsoled.
+style: Triple coordination building to the turn; the repeated 'check' links the mundane log to the dossier tokens ('a check like any other, and it is not one at all').
+continuity: Follows $n21714 and precedes $n72122. Replaces the master's 'no second look, no margin, no note'; enacts $id-9421142343424984 (acceptance without consolation) and $id-5364595046057851.
 
-$n27025
-text: Some failures are boring, and I can still accept one.
-intent: Assert the intact rational surface: he can still accept a sufficient ordinary explanation; the ending does not tip into pure dread.
-style: Plain declarative; understated.
-continuity: Follows $n64130 and precedes $n39426. The disciplined-inquiry invariant; Case VII sanity.
+$n72122
+text: Some failures are boring.
+intent: Concede the ordinary verdict plainly — the case was boring — so the following sentence can invert the master's consolation without arguing.
+style: Short declarative; the concession is flat and unqualified.
+continuity: Follows $n15756 and precedes $n60645. Keeps the word 'boring' from the master's ending while reversing its effect.
+
+$n60645
+text: I cannot leave them alone.
+intent: The final tell: even the boring failures now hold him; the ordinary explanation no longer restores his peace, and the compulsion is shown, not lectured.
+style: Short first-person declarative; the inversion of the master's 'I can still accept one'.
+continuity: Follows $n72122 and precedes $n39426. Delivers the deepened transition into the coda's rituals; no suggestion of a supernatural cause.
 
 $n39426
 text: Beside the dossier, an almanac my method does not require.
 intent: The calendar ritual; the Case V residue that escaped the dossier and entered his practice; kept without cause, unexplained.
 style: Fragment; 'my method does not require' marks the surplus without labeling it.
-continuity: Follows $n27025 and precedes $n84935. Case V callback; the calendar behavior.
+continuity: Follows $n60645 and precedes $n84935. Case V callback; the calendar behavior.
 
 $n84935
 text: One date next month is ringed, without cause.
