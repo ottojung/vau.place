@@ -1923,7 +1923,7 @@ style: Restrained first-person/observational prose; concrete procedural detail.
 continuity: Follows $n40548 and precedes $n14126. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
 
 $n14126
-text: I came to it the way I come to most of these cases: after the fact, with the records already cold, to decide what could be established.
+text: I came to it after the fact, with the records already cold, to decide what could be established.
 intent: Establish the anonymous composite company and the narrator's retrospective, documentary stance.
 style: Restrained first-person/observational prose; concrete procedural detail.
 continuity: Follows $n31860 and precedes $n46117. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
@@ -3854,7 +3854,7 @@ style: Bold dateline fragment matching Cases I and II; grave, compressed, docume
 continuity: Opens Case VI. Follows the Case VI NOTE block ($n93700). Establishes the collection's real-world timeline.
 
 $n76278
-text: I first heard about it on a Wednesday morning, the way I hear about most things now: a message from a colleague, forwarded without comment, containing a link to a local news site and the single word *crocodile*.
+text: I first heard about it on a Wednesday morning: a message from a colleague, forwarded without comment, containing a link to a local news site and the single word *crocodile*.
 intent: Introduce the narrator's entry point: secondhand awareness through digital channels, the modern investigator's habit of monitoring; the single word carries the whole event.
 style: First-person past tense, precise temporal marker, colon introducing the message content; restrained dread in the understated detail.
 continuity: Follows $n93700 (Case VI NOTE). The narrator is not in Vienna; establishes the distance that mirrors his epistemic separation.

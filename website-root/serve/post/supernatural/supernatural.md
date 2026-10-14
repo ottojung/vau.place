@@ -332,7 +332,7 @@ Make the dream terrifying as an experience while preserving the possibility that
 
 The last line in my notebook before this case was the note I brought back from the night I could not catch the hang: *The thing hates to be watched*. It was still there, in ink, when I first heard the story I am about to set down, a story about a man who dreamed of a demon and a fleet of machines that turned out to be fewer than they seemed. I record the adjacency because it is true. I do not claim it means anything.
 
-I will not name the company. It was small, it leased racks in two rented halls, and it ran a few hundred servers for customers who never saw them. I came to it the way I come to most of these cases: after the fact, with the records already cold, to decide what could be established.
+I will not name the company. It was small, it leased racks in two rented halls, and it ran a few hundred servers for customers who never saw them. I came to it after the fact, with the records already cold, to decide what could be established.
 
 The room had a name on the door and nothing else about it was distinctive. Two rows of racks faced each other across a cold aisle; the hot aisle behind them was loud with the fans. The door did not latch unless you lifted it. The fans ran at a pitch that changed with the load, so the room had a kind of weather, and it smelled of hot dust and, faintly, of ozone. The only lights anyone noticed were the machines' own — green and amber constellations that no one looked at twice.
 
@@ -474,7 +474,7 @@ Some reference: https://chatgpt.com/share/68f3eeb1-c1c0-800e-b09b-e2ee25ddbf47
 
 **Vienna, in the third week of June.**
 
-I first heard about it on a Wednesday morning, the way I hear about most things now: a message from a colleague, forwarded without comment, containing a link to a local news site and the single word *crocodile*. The link led to a photograph taken from the Donaukanal promenade — a dark shape, perhaps two meters long, lying on the stone embankment where the canal bends past the Urania. The caption said a crocodile had been spotted in the water during the night. The police had closed the canal path. I read the article twice, the way I read incident reports, looking for the part that mattered.
+I first heard about it on a Wednesday morning: a message from a colleague, forwarded without comment, containing a link to a local news site and the single word *crocodile*. The link led to a photograph taken from the Donaukanal promenade — a dark shape, perhaps two meters long, lying on the stone embankment where the canal bends past the Urania. The caption said a crocodile had been spotted in the water during the night. The police had closed the canal path. I read the article twice, the way I read incident reports, looking for the part that mattered.
 
 Then I began to do what I always do. I opened a new page in my notebook and wrote the date, the location, and the timeline as far as it had been reported. 06:40, a dog walker saw something dark moving against the current near the Stadtpark bridge. 07:15, she called the police. 07:50, the first patrol cordoned the path between the Urania and the park. By 08:30 the canal was closed to pedestrians and cyclists from Schwedenplatz to the Heumarkt. The police issued a warning: keep children away from the water, keep dogs on a lead, do not approach the animal. Animal control was en route. I noted each timestamp in order, the way I would note the stages of a deploy.
 
