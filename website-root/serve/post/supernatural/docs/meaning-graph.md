@@ -3080,10 +3080,10 @@ style: Non-diegetic NOTE, precise and actionable; preserve restraint and the dis
 continuity: Follows $n85239 and precedes $n81847. This is revision guidance for Mercury, not a statement the narrator knows or says.
 
 $n81847
-text: **A cooperative clearing house, a settlement cycle, and a mirror.**
-intent: Open the case with a dateline in the dossier's established form; the three nouns name the institution, the mechanism, and the case's central image — the mirror of the reversed cycle.
-style: Bold fragment; the dateline matches the other cases' openings; the mirror is the case's central metaphor, named at the threshold.
-continuity: Follows $n69494 and precedes $n63653. The mirror image is paid off by the reversal mechanism and by the journal's forward-and-reverse interleaving.
+text: **A clearing house, a settlement cycle, and a planet that walks backward.**
+intent: Open the case with a dateline in the dossier's established form; the three nouns name the institution, the mechanism, and the case's central image, now explicitly the planet's apparent backward walk rather than an abstract mirror.
+style: Bold fragment; the dateline matches the other cases' openings; 'a planet that walks backward' names the mystical engine at the threshold and recasts the mirror as Mercury's motion.
+continuity: Follows $n69494 and precedes $n63653. The backward-walking planet is paid off by the reversal mechanism, the station lore ($n29697-$n32226), and the caduceus image ($n07832).
 
 $n63653
 text: The Clearing House was not a bank.
@@ -3096,6 +3096,18 @@ text: It was a payments cooperative — eleven member firms, a server room above
 intent: Ground the fiction in concrete physical detail: the number of members, the location above a closed business, the single on-call engineer.
 style: Em-dash expansion with specific, unglamorous detail; the shuttered print shop and single engineer establish modest scale.
 continuity: Follows $n63653. The single on-call engineer sets up the operator character and the narrator's distance from the incident.
+
+$n02516
+text: Everything it did was Mercury's work, though I would not have said so then: the movement of money between merchants, the contracts that authorized it, the messages that carried it, the ledger that remembered it.
+intent: Introduce the astrological frame at once: a clearing house is Mercury's domain — merchants, contracts, messages, the ledger — but the narrator marks that he did not yet see it that way.
+style: Colon introducing a tricolon of Mercury's offices; the retrospective 'though I would not have said so then' keeps the conversion ahead of the reader.
+continuity: Follows $n25761 and precedes $n03022. Establishes Mercury's symbolic domains as the case's deep subject, not decoration; the ledger and contracts are the substrate the reversal will occupy.
+
+$n03022
+text: A clearing house is a house of Mercury, and I walked into it without knowing.
+intent: State the mystical premise plainly and mark the narrator's initial blindness; the institution is a temple he entered unknowing.
+style: Short declarative with a religious register ('house of Mercury'); the flatness makes the claim feel like a fact rather than a flourish.
+continuity: Follows $n02516 and precedes $n67516. Sets up the case's conversion arc: the same building is later seen as a house of the god.
 
 $n67516
 text: The server room hummed at a pitch I could feel in my teeth when I visited years later, though by then the shop below had become a vape store and the cooperative had moved to a serviced office with better cooling.
@@ -3149,13 +3161,19 @@ $n50728
 text: The manager printed the journal for me — reams of timestamped lines, forward and reverse interleaved — and I spread it across my desk beside the ephemeris table I had printed that morning and the operator's paper log, which smelled faintly of the coffee shop where he had written it.
 intent: Establish the investigation's physical setup: the journal printout, the ephemeris table, and the operator's log spread across the desk. The coffee shop smell is a sensory detail that marks the log as personal.
 style: Long sentence with em-dash parentheticals; the physical details (reams, printed, spread, smelled) make the investigation tangible. The coffee shop smell is the second sensory detail.
-continuity: The three sources are now physically present: journal (machine record), ephemeris (astronomical record), operator's log (human record). The left-to-right arrangement is the investigation's method.
+continuity: The three sources are now physically present: journal (machine record), ephemeris (astronomical record), operator's log (human record). The left-to-right arrangement is the investigation's method, paid off at $n69946.
 
 $n59226
 text: The anchor incident occurred on the night of 19 March 2025.
 intent: Date the anchor incident precisely; 19 March 2025 falls inside the first Mercury retrograde window of 2025 (15 March – 7 April).
 style: Flat declarative with a specific date; the precision is the narrator's disciplined register at its most exact.
-continuity: The anchor incident is the case's central event. The date is inside a real Mercury retrograde window — the correlation begins here, stated as fact, not interpretation.
+continuity: The anchor incident is the case's central event. The date is inside a real Mercury retrograde window and on Mercury's own day, established at $n03377.
+
+$n03377
+text: It was a Wednesday, which is Mercury's day, though I did not know that either.
+intent: Plant the correspondence that the anchor fell on Mercury's day (dies Mercurii); the narrator's retrospective recognition deepens the omen.
+style: Short declarative with an appositive and a retrospective aside; the flat 'which is Mercury's day' states the correspondence as fact.
+continuity: Follows $n59226. The Wednesday detail is a genuine astrological correspondence and a second omen after the retrograde window; it is one of the case's convergences.
 
 $n26505
 text: The cycle had been built at 18:00, instructions ingested, chains identified.
@@ -3227,7 +3245,7 @@ $n20901
 text: The cycle oscillated: apply, unwind, re-apply, each pass mirrored.
 intent: State the oscillation pattern: the cycle alternates between forward and reverse application.
 style: Colon introducing a tricolon that describes the oscillation; 'each pass mirrored' is the key property — the reversal is exact and total.
-continuity: The oscillation is the case's signature. The mirror property (exact and total reversal) is what makes this failure distinctive.
+continuity: The oscillation is the case's signature. The mirror property (exact and total reversal) is what makes this failure distinctive and what the caduceus image at $n07832 will name.
 
 $n82922
 text: The journal recorded both orders, forward and reverse, exact and total.
@@ -3269,7 +3287,7 @@ $n46062
 text: The engine hummed on, applying the past backward, until the window closed and the hum stopped and the morning came.
 intent: The engine continues until the window closes: the hum, the backward application, the stop, the morning. The sentence's structure mirrors the timeline.
 style: Long sentence with a tricolon of events; 'applying the past backward' is the case's central image. The hum stopping is the fourth sensory detail.
-continuity: The engine hummed on until the window closed. The hum stopping is the transition to the morning. 'Applying the past backward' is the case's central image.
+continuity: The engine hummed on until the window closed. The hum stopping is the transition to the morning. 'Applying the past backward' is the case's central image and the plain-language form of the backward-walking planet at $n81847.
 
 $n44736
 text: The next morning, the lights came on and the phones started ringing.
@@ -3323,7 +3341,7 @@ $n20630
 text: I counted.
 intent: The narrator counts: his exact register is the response to the memo's anxiety.
 style: Minimal declarative; the counting is the narrator's procedural habit. He counts what others repeat.
-continuity: The narrator's counting is his exact register. He counts the repetitions, just as he will count the reversals and the trigger nights.
+continuity: The narrator's counting is his exact register. He counts the repetitions, just as he will count the reversals at $n84695.
 
 $n61977
 text: I did not learn any of this on the night it happened.
@@ -3359,25 +3377,37 @@ $n51300
 text: I spread the records across my desk and began the ordinary work of elimination.
 intent: The investigation begins: the records are spread across the desk, the work of elimination begins.
 style: Compound with 'and'; the spreading and the beginning are the investigation's start. 'Ordinary work of elimination' is the narrator's method.
-continuity: The investigation begins. The records are physically present (spread across the desk) and the method is elimination — the ordinary work of falsifying candidates.
+continuity: The investigation begins. The records are physically present (spread across the desk) and the method is elimination — the ordinary work the case will outgrow.
 
-$n79492
-text: The desk was large enough for all of it: the journal printout on the left, the ephemeris table in the middle, the operator's log on the right.
-intent: The desk's layout is the investigation's method: journal left, ephemeris middle, operator's log right. The left-to-right arrangement is the evidentiary order.
-style: Colon introducing a tricolon of positions; the left-to-right arrangement is the investigation's method made physical.
-continuity: The desk's layout is the investigation's method: machine record left, astronomical record middle, human record right. The left-to-right order is the evidentiary hierarchy.
+$n04110
+text: The journal, read straight through, is a thing I have not seen elsewhere.
+intent: Signal the journal's uncanny shape: read straight through, it is unlike any record he knows.
+style: Declarative with a retrospective present tense ('is'); the narrator steps out of the incident timeline to name the journal's strangeness.
+continuity: Follows $n51300. This begins the case's central discovery: the journal's shape is not procedural but figural, paid off at $n07832.
 
-$n97148
-text: I worked from left to right, from the machine record to the human record to the astronomical record, and I did not let them touch.
-intent: The narrator's method: left to right, machine to human to astronomical, not letting them touch. The separation is the method's discipline.
-style: Compound with 'and'; the left-to-right order and the non-touching are the method's discipline. The separation prevents contamination.
-continuity: The narrator's method is the separation of sources: machine, human, astronomical, kept distinct. The non-touching is the discipline that prevents the sources from contaminating each other.
+$n07779
+text: It runs forward and then back, the same instructions in two orders, the amounts paired and opposed.
+intent: Describe the journal's mirror form concretely: forward and reverse, the same instructions, the amounts opposed.
+style: Balanced clause structure ('forward and then back', 'paired and opposed') that enacts the mirror it describes.
+continuity: Follows $n04110 and precedes $n07832. The paired-and-opposed amounts are the two serpents of the caduceus in numerical form.
+
+$n07832
+text: Set beside the ephemeris it began to look like a figure I had seen in an old book and could not place: a staff with two serpents wound around it, one climbing as the other descended.
+intent: The mystical discovery: the machine record, set beside the sky record, resolves into Mercury's own sign, the caduceus.
+style: Long sentence with a colon that withholds then names the figure; the delayed recognition mirrors the narrator's slow seeing.
+continuity: The case's pivotal image. The caduceus is Mercury's authentic astrological symbol (the herald's staff entwined by two serpents, later the sign of commerce); the forward-and-reverse journal at $n07779 is its two serpents, and the clearing house at $n03022 is the market it signifies.
+
+$n09222
+text: The caduceus is Mercury's sign, the sign of the herald and of the market, and I had been reading a ledger that was drawing it.
+intent: Name the correspondence and turn it into action: the ledger was drawing Mercury's sign all along.
+style: Two-part declarative joined by 'and'; the final clause shifts from lore to the narrator's own act of reading.
+continuity: Follows $n07832. The herald-and-market gloss ties the symbol back to the clearing house; 'drawing it' makes the machine an instrument of inscription, seeding the operator's hand-drawn charts at $n47689.
 
 $n21520
 text: The ordinary candidate came first.
 intent: Introduce the ordinary candidate: the recovery/replay order confusion.
-style: Short declarative; 'came first' implies it will be tested and found wanting.
-continuity: Candidate C1 is introduced. The phrase 'came first' sets up the falsification that follows.
+style: Short declarative; 'came first' implies it will be tested and found insufficient.
+continuity: Candidate C1 is introduced as the technical doorway; 'came first' sets up its demotion to doorway rather than cause at $n13678.
 
 $n11074
 text: The engine could recover mid-cycle from a checkpoint by replaying the cycle's in-flight operations.
@@ -3401,73 +3431,37 @@ $n85694
 text: This was a real, subtle, order-dependence class of bug.
 intent: Acknowledge that C1 is a real bug class: order-dependence in recovery replay.
 style: Declarative with 'real, subtle' acknowledging the candidate's legitimacy. The narrator does not dismiss it.
-continuity: C1 is acknowledged as real. The narrator's fairness here makes the falsification more powerful.
+continuity: C1 is acknowledged as real. The narrator's fairness here makes its demotion to doorway more pointed.
 
-$n58609
-text: It was also wrong.
-intent: The falsification: C1 is wrong. The restart log contradicts it.
-style: Short declarative; 'also wrong' is the falsification stated plainly. The brevity is the narrator's restraint.
-continuity: C1 is falsified. The brevity of 'It was also wrong' is the narrator's restraint — he does not gloat or over-explain.
+$n13678
+text: It was also the doorway, not the room.
+intent: Demote the technical fault to a threshold: the mechanism admits you to the case but does not explain it.
+style: Compact declarative with a spatial metaphor; the aphoristic brevity retires the forensic engine in one line.
+continuity: Follows $n85694 and precedes $n14834. This is the sentence that retires the statistical/elimination machinery demanded by the issue: the bug is the doorway, the astrology is the room.
 
-$n75669
-text: The restart log showed that mid-cycle restarts with chained cycles in flight had occurred on many nights outside retrograde.
-intent: The negative evidence: the trigger (mid-cycle restart with chained cycle in flight) occurred outside retrograde without the effect.
-style: Long declarative with a 'that' clause; the negative evidence is stated as a finding. 'Outside retrograde' is the key qualifier.
-continuity: The restart log is the case's spine. The trigger occurred outside retrograde without the effect — this falsifies C1 as the cause.
-
-$n29819
-text: On every one of those nights, the replay had applied forward.
-intent: Every trigger night outside retrograde had forward replay: the effect was absent.
-style: Universal quantifier 'every one'; the consistency of the negative evidence is the point.
-continuity: The negative evidence is consistent: every trigger night outside retrograde had forward replay. C1 cannot be the cause.
-
-$n45407
-text: The trigger was present without the effect, again and again.
-intent: State the falsification pattern: trigger without effect, repeatedly.
-style: Declarative with 'again and again' emphasizing the repetition. The pattern is the evidence.
-continuity: The falsification pattern is explicit: trigger without effect, repeatedly. This is the case's negative evidence.
-
-$n45002
-text: I counted those nights too: forty-three.
-intent: The narrator counts the trigger nights: forty-three. The count makes the negative evidence concrete.
-style: Colon introducing the count; forty-three is specific and checkable. The counting is the narrator's exact register.
-continuity: Forty-three trigger nights without the effect. The count makes the negative evidence concrete and checkable.
-
-$n71058
-text: Forty-three nights with the trigger and no effect.
-intent: Restate the count: forty-three nights, trigger present, effect absent. The restatement is the finding.
-style: Declarative with a compound structure; the restatement is the finding stated plainly.
-continuity: The finding is restated: forty-three nights with the trigger and no effect. This is the negative evidence that falsifies C1.
-
-$n13697
-text: Candidate C1 could explain how a cycle might reverse.
-intent: Concede what C1 can explain: the mechanism of reversal.
-style: Modal 'could' limits C1's explanatory power. The narrator is fair about what C1 explains.
-continuity: C1's limited explanatory power is acknowledged. It explains how, not why.
-
-$n31980
-text: It could not explain why these cycles reversed.
-intent: State what C1 cannot explain: why these specific cycles reversed.
-style: Negation with 'could not'; the limitation is the falsification. C1 explains the mechanism but not the timing.
-continuity: C1's limitation is the falsification. It explains how a cycle might reverse, but not why these cycles reversed during retrograde windows.
+$n14834
+text: The mechanism could explain how a cycle reversed; it could not explain why these cycles reversed, and no others.
+intent: Separate mechanism from cause: the bug explains how a reversal is possible, not why these cycles reversed and others did not.
+style: Antithesis with a semicolon; the paired 'how'/'why' is the case's epistemic hinge.
+continuity: Follows $n13678. The how/why split is the doorway to the mystical reading; the unexplained selection is answered only by the sky at $n36758.
 
 $n40685
 text: I gathered every reversal across the years.
 intent: The narrator's investigation: he gathers every reversal across multiple years.
-style: Declarative with 'every' and 'across the years'; the scope is multi-year, which gives the correlation statistical weight.
-continuity: The multi-year scope is established. This gives the correlation statistical weight and makes the base-rate computation meaningful.
+style: Declarative with 'every' and 'across the years'; the scope is multi-year, which gives the alignment its weight.
+continuity: The multi-year scope is established. The alignment across years is what makes the pattern feel fated rather than local.
 
 $n84695
 text: There were seventeen.
-intent: The count: seventeen reversals. The specific number makes the correlation checkable.
-style: Minimal declarative; the number is the point. Seventeen is specific enough to be meaningful.
-continuity: Seventeen reversals. The specific count makes the correlation concrete and checkable.
+intent: The count: seventeen reversals. The number is retained as a discovered fact, not as a statistical engine.
+style: Minimal declarative; the number is the point. Seventeen is specific enough to be checkable.
+continuity: Seventeen reversals. The count is kept as evidence of the alignment; the narrator's counting habit recurs from $n20630.
 
 $n36758
 text: Each one fell inside a window in which Mercury was in apparent retrograde.
-intent: The correlation: every reversal fell inside a Mercury retrograde window.
-style: Universal quantifier 'each one'; the correlation is stated as a fact, not an interpretation. 'Apparent retrograde' is the correct astronomical term.
-continuity: The correlation is stated as a fact. 'Apparent retrograde' is the correct term — Mercury appears to reverse as seen from Earth. This is checkable, not interpretive.
+intent: The alignment: every reversal fell inside a Mercury retrograde window.
+style: Universal quantifier 'each one'; the alignment is stated as a fact, not an interpretation. 'Apparent retrograde' is the correct astronomical term.
+continuity: The alignment is stated as a fact. 'Apparent retrograde' is the correct term — Mercury appears to reverse as seen from Earth. This is checkable, not interpretive.
 
 $n29416
 text: The windows were real and verifiable.
@@ -3489,135 +3483,123 @@ continuity: The six retrograde windows are listed with exact dates. These are re
 
 $n60186
 text: Every reversal fell inside one of these windows.
-intent: The correlation is exact: every reversal is inside a listed window.
-style: Universal quantifier 'every'; the exactness of the correlation is the point. Stated as a fact.
-continuity: The correlation is exact. Every reversal is inside a listed window. This is the case's central finding, stated as a fact.
+intent: The alignment is exact: every reversal is inside a listed window.
+style: Universal quantifier 'every'; the exactness of the alignment is the point. Stated as a fact.
+continuity: The alignment is exact. Every reversal is inside a listed window. This is the case's central finding, stated as a fact.
 
 $n34640
 text: No reversal fell outside them.
-intent: The correlation is total: no reversal is outside a window.
-style: Negation with 'no'; the totality of the correlation is the point. Stated as a fact.
-continuity: The correlation is total. No reversal falls outside a window. Together with the previous sentence, this is the exact and total correlation.
+intent: The alignment is total: no reversal is outside a window.
+style: Negation with 'no'; the totality of the alignment is the point. Stated as a fact.
+continuity: The alignment is total. No reversal falls outside a window. Together with the previous sentence, this is the exact and total alignment.
 
 $n15002
 text: I made a table: seventeen rows, each with a date, a window, and a check mark.
-intent: The narrator makes a table: seventeen rows, each with a date, a window, and a check mark. The table is the correlation made visible.
-style: Colon introducing a tricolon of columns; the table is the correlation made visible. The check mark is the correlation's symbol.
-continuity: The table is the correlation made visible. Seventeen rows, each with a date, a window, and a check mark. The check marks are the correlation's evidence.
+intent: The narrator makes a table: seventeen rows, each with a date, a window, and a check mark. The table is the alignment made visible.
+style: Colon introducing a tricolon of columns; the table is the alignment made visible. The check mark is the alignment's symbol.
+continuity: The table is the alignment made visible. Seventeen rows, each with a date, a window, and a check mark. The check marks are the alignment's evidence.
 
 $n90624
 text: The check marks formed a perfect column.
-intent: The check marks form a perfect column: the correlation is exact and total. The visual perfection is the finding.
-style: Declarative with 'perfect column'; the visual perfection is the finding. The column of check marks is the correlation made visible.
-continuity: The perfect column of check marks is the correlation made visible. This is the case's central finding, stated as a visual fact.
+intent: The check marks form a perfect column: the alignment is exact and total. The visual perfection is the omen.
+style: Declarative with 'perfect column'; the visual perfection is the finding. The column of check marks is the alignment made visible.
+continuity: The perfect column is the case's central image and the seed of the narrator's later obedience; it is the visual form of the omen, recast at $n23734.
 
-$n82178
-text: I stated the base rate.
-intent: The narrator states the base rate: he computes the probability of the correlation occurring by chance.
-style: Short declarative; 'stated' is the procedural verb. The base rate is the narrator's skeptical discipline.
-continuity: The base rate is the narrator's skeptical discipline. He computes the probability rather than asserting a conclusion.
+$n19826
+text: I did not compute a probability.
+intent: Retire the statistical engine: the narrator explicitly declines the base-rate computation.
+style: Short negation; the refusal is the point. It answers the earlier dossier habit of arithmetic.
+continuity: Follows $n90624. This sentence enacts the 2026-10-13 direction to remove the base-rate machinery as the chapter's engine; it supersedes the deleted base-rate and selection-risk passages.
 
-$n57101
-text: Mercury is in apparent retrograde roughly nineteen percent of the days in a year.
-intent: The base rate: Mercury is in retrograde about 19% of days.
-style: Declarative with 'roughly nineteen percent'; the base rate is stated precisely. This is the denominator for the correlation probability.
-continuity: The base rate is 19%. This is the denominator for computing the probability of the correlation occurring by chance.
+$n20104
+text: I had done that in other cases, and the arithmetic had been a way of keeping my hands busy while I decided not to look.
+intent: Name the old method as avoidance: arithmetic was a way of not looking at what he had found.
+style: Retrospective compound sentence; 'keeping my hands busy while I decided not to look' is the self-diagnosis.
+continuity: Follows $n19826. Ties this case's conversion to the earlier cases' procedural habit (e.g. Case III's probability arithmetic) and marks it as outgrown.
 
-$n37283
-text: The windows are not rare.
-intent: Acknowledge that the windows are not rare: 19% of days is a substantial fraction.
-style: Declarative with 'not rare'; the narrator acknowledges the base rate honestly. This is his skeptical discipline.
-continuity: The windows are not rare. The narrator's honesty about the base rate makes the correlation more, not less, unsettling.
+$n20174
+text: This time I looked.
+intent: The turn: this time the narrator looks at the meaning instead of computing around it.
+style: Four-word declarative; the brevity is the conversion.
+continuity: Follows $n20104. The pivot from computation to attention is the case's conversion moment; it licenses the omen reading at $n23734.
 
-$n27902
-text: But the reversals were rare — seventeen in under two years — and every one of them was inside a window.
-intent: Contrast the rarity of the reversals with the commonness of the windows: seventeen reversals, all inside windows.
-style: Em-dash parenthetical with the count; the contrast between rare reversals and common windows is the correlation's force.
-continuity: The contrast is the correlation's force: rare reversals, common windows, perfect overlap. This is the temptation.
+$n22816
+text: A perfect column is not a statistic.
+intent: Reframe the finding: a perfect column is not a number but a sign.
+style: Short declarative; the negation rejects the statistical frame outright.
+continuity: Follows $n20174 and precedes $n23734. It retires the probabilistic reading of the alignment.
 
-$n69360
-text: The probability of that, if the two were independent, was not large.
-intent: Compute the probability: if the reversals and the windows were independent, the probability of the observed overlap is small.
-style: Conditional with 'if the two were independent'; the probability is computed, not asserted. 'Not large' is the narrator's understated conclusion.
-continuity: The probability is computed, not asserted. 'Not large' is the narrator's understated way of saying the correlation is unlikely by chance.
+$n23734
+text: It is the shape a thing makes when it has been arranged, and the arrangement is the message.
+intent: Deliver the omen reading: arrangement implies an arranger, and the arrangement is itself the message.
+style: Two-part declarative; 'the arrangement is the message' is the aphoristic core of the omen.
+continuity: The omen is stated. This is the mystical engine replacing the base rate; it prepares the station lore and the narrator's conviction.
 
-$n74061
-text: I wrote the number down.
-intent: The narrator writes the number down: he records the probability.
-style: Short declarative; 'wrote the number down' is the procedural act. The number is recorded.
-continuity: The number is recorded. The narrator's procedural habit: write it down.
+$n25965
+text: I learned the vocabulary the way I learn any system's vocabulary: by reading until the words stopped being words.
+intent: Frame the astrological lore as learned craft, not lecture: he absorbs the vocabulary the way he absorbs any system's.
+style: Colon introducing a self-description; 'until the words stopped being words' is the narrator's characteristic absorption.
+continuity: Follows $n23734. The learning frame keeps the lore diegetic; it sets up the station passage at $n29697.
 
-$n48548
-text: I did not write a conclusion.
-intent: The narrator does not write a conclusion: he records the probability but does not interpret it.
-style: Negation with 'did not'; the narrator's restraint is the point. He does not draw the conclusion the reader is drawing.
-continuity: The narrator's restraint is explicit: he does not write a conclusion. This is the case's central withholding — the reader draws the conclusion themselves.
+$n26081
+text: A planet does not turn all at once.
+intent: Open the station lore with a plain astronomical fact.
+style: Short declarative; the simplicity is the doorway into the lore.
+continuity: First of the station sentences. Accurate to apparent retrograde motion; prepares $n29697 and the anchor correspondence at $n32226.
 
-$n49743
-text: I also wrote down the selection risk: I had gone looking for a pattern, and a pattern is easier to find when you know where to look.
-intent: The narrator states the selection risk: he went looking for a pattern, and patterns are easier to find when you know where to look.
-style: Colon introducing the selection risk; the risk is stated honestly. The narrator names the risk that undermines his own finding.
-continuity: The selection risk is stated honestly: the narrator went looking for a pattern, and patterns are easier to find when you know where to look. This is the narrator's skeptical discipline at its most rigorous.
+$n29697
+text: It slows, and slows, and for a day or more it stands still — the *station* — and only then begins to walk backward.
+intent: Explain the station: the planet slows, stands still, then retrogrades. The technical term is set in italics as learned vocabulary.
+style: Repetition ('slows, and slows') enacts the slowing; the em-dash isolates the word *station*.
+continuity: The station is the authentic astrological term for the apparent standstill before and after retrograde; it is the case's central temporal image and links to the engine that 'stood still' at $n20901.
 
-$n84299
-text: The risk did not go away because I named it.
-intent: The risk does not go away because it is named: naming the risk does not eliminate it.
-style: Declarative with 'did not go away'; the risk's persistence is the point. Naming is not eliminating.
-continuity: The risk persists despite being named. This is the narrator's honesty: he names the risk, but the risk does not go away.
+$n30488
+text: It stands still again before it turns forward.
+intent: Complete the cycle: the second station before direct motion.
+style: Short declarative; the symmetry is the point.
+continuity: Completes the two-station cycle (station retrograde and station direct), which frames the anchor at $n32226.
 
-$n78519
-text: It sat there, next to the number, and I looked at both.
-intent: The risk sits next to the number: the narrator looks at both. The coexistence of the number and the risk is the finding's honesty.
-style: Declarative with 'sat there' and 'looked at both'; the coexistence is the point. The narrator does not resolve the tension.
-continuity: The number and the risk coexist. The narrator looks at both. This is the finding's honesty: the correlation and its caveat, side by side.
+$n30512
+text: The station is the dangerous place, where the planet is neither going nor coming and its power is gathered and undivided.
+intent: Name the station's occult significance: a liminal, potent place of gathered power.
+style: Declarative with a liminal definition; 'gathered and undivided' is the traditional sense of concentrated planetary force.
+continuity: The station's danger is the case's mystical core; it explains why the reversals matter and prepares the narrator's own standstill at $n34558.
 
-$n40721
-text: The other candidates failed.
-intent: Introduce the other candidates: they all failed.
-style: Short declarative; 'failed' is the summary. The falsifications follow.
-continuity: The other candidates are introduced. Each will be falsified with a specific disproof.
+$n31076
+text: Astrologers mark the stations the way engineers mark the days a system is most fragile.
+intent: Bridge the astrological and the operational: astrologers mark stations as engineers mark change-freeze windows.
+style: Simile that fuses the two crafts; the narrator reads astrology through his own discipline.
+continuity: Follows $n30512. The simile is the case's method in miniature: the living astrological order is legible to an engineer without being reduced to engineering.
 
-$n64082
-text: The highest-volume night of the year, outside retrograde, had been clean; a low-volume retrograde night had reversed.
-intent: Falsify O1 (load/volume): the highest-volume night was clean, a low-volume night reversed.
-style: Compound sentence with a semicolon contrasting the two cases; the disproof is specific and checkable.
-continuity: O1 is falsified: load does not explain the correlation. The highest-volume night was clean; a low-volume night reversed.
+$n32226
+text: Mercury had stood still on the fifteenth of March 2025 and turned; four days into its backward walk, on the nineteenth, the ledger turned too.
+intent: Apply the station lore to the anchor: the ledger turned four days after Mercury did.
+style: Two-clause declarative with a semicolon; the parallel 'turned' couples planet and ledger.
+continuity: The anchor correspondence. The retrograde window opens 15 March 2025 and the anchor is 19 March 2025 (see $n59226, $n85876); the shared verb 'turned' is the case's mystical hinge.
 
-$n28161
-text: Deploys happened weekly and did not align with the windows.
-intent: Falsify O2 (deployments): deploys were weekly and did not align with retrograde windows.
-style: Declarative with 'did not align'; the disproof is the misalignment.
-continuity: O2 is falsified: deploys do not explain the correlation. They happened weekly and did not align with the windows.
+$n32479
+text: Mercury's metal is quicksilver, the only metal that runs.
+intent: Introduce the correspondence of metal: Mercury's metal is liquid quicksilver.
+style: Short declarative; 'the only metal that runs' is the vivid, accurate property.
+continuity: The quicksilver correspondence is authentic (Mercury/hydrargyrum); it figures the engine's instability and the unreconciled amounts at $n37629.
 
-$n79148
-text: The retrograde dates drifted against the calendar; no fixed annual pattern could produce them.
-intent: Falsify O3 (calendar/seasonal): retrograde dates drift, so no fixed pattern can produce them.
-style: Compound sentence with a semicolon; the drift is the disproof.
-continuity: O3 is falsified: the calendar does not explain the correlation. Retrograde dates drift against the calendar.
+$n37607
+text: It will not hold a shape and it will not be counted.
+intent: Extend the correspondence: quicksilver refuses form and refuses accounting.
+style: Parallel negations; the two refusals name the case's two failures — shape and count.
+continuity: Follows $n32479. 'Will not be counted' ties to the settlement amounts and to the retired arithmetic at $n19826.
 
-$n37690
-text: Different operators, different years, same pattern.
-intent: Falsify O4 (operator error/fatigue): different operators, different years, same pattern.
-style: Tricolon with 'different, different, same'; the consistency across operators and years is the disproof.
-continuity: O4 is falsified: operator error does not explain the correlation. Different operators, different years, same pattern.
-
-$n67301
-text: No provider incident overlapped the reversal nights.
-intent: Falsify O5 (external provider/network): no provider incident overlapped the reversal nights.
-style: Negation with 'no'; the absence of overlap is the disproof.
-continuity: O5 is falsified: provider incidents do not explain the correlation. No provider incident overlapped the reversal nights.
-
-$n81337
-text: The engine's clock log was monotonic across every reversal; no time step had occurred.
-intent: Falsify O6 (clock/time-source step): the clock log was monotonic, no time step occurred.
-style: Compound sentence with a semicolon; the monotonic clock log is the disproof.
-continuity: O6 is falsified: a clock step does not explain the correlation. The clock log was monotonic across every reversal.
+$n37629
+text: I thought of it when I read the journal's amounts, each one written twice, once forward and once back, and the two readings never reconciling.
+intent: Bring the correspondence into the act of reading: the amounts mirror the metal's refusal to reconcile.
+style: Long sentence with a tricolon of clauses; 'never reconciling' is the case's ledger condition.
+continuity: Follows $n37607. The unreconciled double amounts echo the part-settled/part-double-settled obligations at $n91419 and the caduceus pairing at $n07779.
 
 $n57619
 text: The operator's private log was a different document.
 intent: Introduce the operator's private log: it is a different kind of document from the journal.
 style: Declarative with 'a different document'; the distinction from the journal is the point.
-continuity: The operator's log is introduced as a different document. Its difference from the journal is its motivated, unreliable nature.
+continuity: The operator's log is introduced as a different document. Its difference from the journal is its motivated, personal nature.
 
 $n66297
 text: He had kept it himself, in a notebook, during the years he was on call.
@@ -3629,7 +3611,7 @@ $n67969
 text: The handwriting got worse in the later entries.
 intent: The handwriting deteriorates: the operator's state of mind is visible in the physical document.
 style: Declarative with 'got worse'; the deterioration is the operator's state made visible. The handwriting is the sixth sensory detail.
-continuity: The handwriting's deterioration is the operator's state of mind made visible. This is the log's motivated, unreliable nature shown physically.
+continuity: The handwriting's deterioration is the operator's state of mind made visible and the seed of the narrator's own drift (progression decision #2).
 
 $n91610
 text: In it, the settlement reversals and his own misfortunes — a contract that failed, a trip that went wrong, a relationship that ended — clustered in the same windows.
@@ -3655,23 +3637,11 @@ intent: The log passed to the narrator: it came with the journal.
 style: Short declarative; 'passed to me' is the transfer of the document.
 continuity: The log passed to the narrator. It came with the journal, making it part of the case's evidence.
 
-$n70891
-text: I marked it as his, motivated and uncorroborated.
-intent: The narrator marks the log's reliability: it is the operator's, motivated, and uncorroborated.
-style: Declarative with a tricolon of qualifiers; the narrator's marking is explicit. He does not endorse the log.
-continuity: The narrator marks the log as the operator's, motivated, and uncorroborated. This is the source reliability distinction — he does not endorse it.
-
-$n52419
-text: I kept reading it.
-intent: The narrator keeps reading the log: he cannot put it down.
-style: Short declarative; 'kept reading' is the behavioral evidence of the narrator's private leaning. He does not announce it.
-continuity: The narrator's private leaning is behavioral: he keeps reading the log. This is the narrator's drift, shown not announced.
-
 $n23493
 text: There was an entry from March 2025 — the anchor incident — in which he had written: *I checked the ephemeris again.
-intent: Quote the operator's log entry from the anchor incident: he checked the ephemeris and noted Mercury was retrograde.
+intent: Quote the operator's log entry from the anchor incident: he checked the ephemeris again.
 style: Em-dash parenthetical identifying the entry; the quotation is the operator's voice, not the narrator's. The italics mark it as a quotation.
-continuity: The operator's log entry is quoted. The operator checked the ephemeris and noted Mercury was retrograde — the operator's own correlation, stated in his own voice.
+continuity: The operator's log entry is quoted. The operator checked the ephemeris — the operator's own correlation, stated in his own voice. Begins the quotation closed at $n53478.
 
 $n83755
 text: Mercury is retrograde.
@@ -3681,7 +3651,7 @@ continuity: The operator's astronomical observation. This is the operator's own 
 
 $n53478
 text: I am not scheduling anything.*
-intent: The operator's resolution, in his own voice: he is not scheduling anything. The italics close the quoted log entry begun at $n23493 and continued at $n83755.
+intent: The operator's resolution, in his own voice: he is not scheduling anything. Closes the quoted entry.
 style: The operator's resolution in italics; the flat declarative states the operator's superstition as a scheduling rule, not a casual remark.
 continuity: Closes the operator's quoted log entry begun at $n23493 and continued at $n83755. Sets up the narrator's immediate correction at $n67015.
 
@@ -3689,7 +3659,7 @@ $n67015
 text: He had scheduled something.
 intent: The narrator's correction: the operator had scheduled something after all, so his resolution failed and the reversal followed.
 style: Short declarative; the correction's brevity is the point. The narrator supplies the fact the operator's log omitted.
-continuity: Follows $n53478. The correction is the narrator's, showing the operator's resolution failed; sets up $n82494 (the reversal happened that night).
+continuity: Follows $n53478. The correction is the narrator's, showing the operator's resolution failed; sets up $n82494.
 
 $n82494
 text: The reversal happened that night.
@@ -3713,13 +3683,115 @@ $n71376
 text: Each time, I was reading it as a mirror.
 intent: The narrator was reading it as a mirror: the self-recognition is the drift's truth.
 style: Declarative with 'as a mirror'; the mirror is the self-recognition. The operator's log is the narrator's mirror.
-continuity: The mirror is the drift's truth: the narrator was reading the operator's log as a mirror of his own drift. The operator's resolution and the narrator's drift are the same.
+continuity: The mirror is the drift's truth: the narrator was reading the operator's log as a mirror of his own drift. Echoes the journal's mirror at $n20901 and the case's mirror image.
+
+$n40826
+text: It was not, in the end, a diary.
+intent: Reveal that the log is not what it seemed: it is not a diary.
+style: Short negation with a delayed qualifier ('in the end'); the reveal is withheld until the last two words.
+continuity: Follows $n71376. The negation opens the chart discovery; it reframes the operator's log as an instrument rather than a memoir.
+
+$n44431
+text: I had marked it as his — motivated, uncorroborated — and I had read it as the record of a man coming apart.
+intent: State the narrator's prior, now-superseded reading: he had filed the log as motivated and uncorroborated and read it as a man's decline.
+style: Two-part past-perfect sentence; the dashes carry the old source-reliability tags, and 'I had read it' marks the reading as past.
+continuity: The old skeptical filing is named only to be overtaken; it preserves the source-reliability fact while showing the narrator has moved past it.
+
+$n47503
+text: Then I found the charts.
+intent: The discovery's hinge: he found the charts.
+style: Three-word declarative; the brevity withholds the content of the charts.
+continuity: Follows $n44431. Opens the case's distinctive dramatic discovery; the charts are the operator's act of interpretation.
+
+$n47689
+text: In the margins and on the blank versos, between the entries, he had drawn squares divided into twelve, and inside the squares he had set the signs and the degrees, the little glyphs of the planets, and the aspects drawn as lines across the figure.
+intent: Describe the charts concretely: hand-drawn astrological figures, twelve divisions, signs, degrees, glyphs, aspects.
+style: Long sentence with a tricolon of drawn elements; the technical astrological vocabulary is rendered as observed marks, not explained.
+continuity: The charts are authentic astrological instruments (a twelvefold figure with signs, degrees, planetary glyphs, and aspect lines). They make the operator an interpreter, answering $n09222's drawing ledger and $n65120's sky-readers.
+
+$n56454
+text: I had seen such squares once, in the appendix of an old book on the history of astronomy, and had taken them for decoration.
+intent: The narrator's initial misreading: he had seen such squares once and taken them for decoration.
+style: Past perfect with 'once' and 'decoration'; the misreading sets up the correction.
+continuity: Follows $n47689. The old book is the narrator's only prior contact with astrology; his misreading is the case's last piece of skepticism, corrected at $n56586.
+
+$n56586
+text: They were not decoration.
+intent: Correct the misreading: they were not decoration.
+style: Short negation; the flat correction is the discovery's turn.
+continuity: Follows $n56454. Retires the decoration reading and prepares the naming at $n57671.
+
+$n57671
+text: They were instruments.
+intent: Name what the charts are: instruments.
+style: Three-word declarative; the single noun is the reveal.
+continuity: Follows $n56586. 'Instruments' is the case's own vocabulary for tools (cf. Case II's instruments); the operator's charts are instruments of a different craft.
+
+$n58994
+text: There was one chart for each reversal.
+intent: Establish the set: one chart per reversal.
+style: Short declarative; the one-to-one correspondence is the point.
+continuity: Follows $n57671. The one-to-one charting matches the perfect column at $n90624 and makes the operator's practice systematic, not casual.
+
+$n60609
+text: The earliest was for the anchor night.
+intent: Date the earliest chart to the anchor night.
+style: Short declarative; the anchor returns as the pivot.
+continuity: Follows $n58994 and points to $n59226. The anchor night is where the operator's practice and the machine's reversal meet.
+
+$n60764
+text: He had cast it, by its date, before the cycle ran — before the reversal, before the failed payroll, before any of it.
+intent: The shocking discovery: the operator cast the chart before the cycle ran, before the reversal and the harm.
+style: Cumulative negative parallel ('before... before... before any of it'); the accumulation makes the precedence uncanny.
+continuity: The chart's precedence is the case's distinctive dramatic discovery. It is uncorroborated (the log is the operator's own) but it converts the log from record to prediction; it also mirrors the narrator's own retrospective/predictive confusion at $n66755.
+
+$n62572
+text: He had drawn Mercury in the figure and marked it, and written nothing else.
+intent: Isolate the single mark: Mercury drawn and marked, nothing else.
+style: Spare declarative with a final 'nothing else'; the silence is the point.
+continuity: Follows $n60764. The unannotated Mercury is the operator's one word, left for the narrator to read; it pairs with the quoted entry at $n83755.
+
+$n65120
+text: There are people whose work is to read the sky, and the cooperative had employed one without knowing.
+intent: Name the interpreter theme: the operator was a sky-reader the cooperative employed unknowingly.
+style: Declarative with a mild irony; 'without knowing' quietly indicts the cooperative and the narrator's former blindness.
+continuity: Follows $n62572. This is the 'interpreters' element of the astrological world; it reframes the operator from casualty to practitioner and seeds the narrator's own interpretive turn.
+
+$n66755
+text: I laid the chart beside the journal and the ephemeris, and for a long time I could not tell which of the three was the record and which was the prediction.
+intent: The sources converge: chart, journal, and ephemeris become indistinguishable as record and prediction.
+style: Long declarative with a 'for a long time' delay; the confusion is the narrator's, not the reader's.
+continuity: The case's epistemic crisis. This is the moment the narrator's method fails; it reverses the left-to-right separation he insisted on at $n69946.
+
+$n69946
+text: I had worked from left to right, from the machine record to the human record to the astronomical record, and I had not let them touch.
+intent: Recall the narrator's old method: left to right, machine to human to astronomical, kept apart.
+style: Past perfect with a remembered discipline; the tricolon of records is the method restated.
+continuity: The old method is invoked only to fail. It is the earlier version of the same sentence from master, now demoted; the non-touching is undone at $n73111.
+
+$n73111
+text: Now they touched.
+intent: The method fails: now the records touch.
+style: Three-word declarative; the inversion of the old discipline is stated flatly.
+continuity: Follows $n69946. The collapse of separation is the case's conversion; it hands off to the narrator's new practice at $n15844.
+
+$n74112
+text: They had always been touching.
+intent: Deepen the failure: the records had always been touching.
+style: Short declarative with 'always'; the retrospective discovery is the uncanny turn.
+continuity: Follows $n73111. The narrator's method was always an illusion of separation; this is the case's quiet revelation.
+
+$n74333
+text: I had been the one holding them apart.
+intent: Locate the separation in the narrator: he had been the one holding them apart.
+style: Short declarative with 'I had been'; the agency is the narrator's own.
+continuity: Follows $n74112. The self-attribution completes the epistemic crisis and prepares the narrator's changed behavior.
 
 $n15844
 text: I caught myself checking the next retrograde date before scheduling a change.
 intent: The narrator catches himself checking the retrograde date: his drift is now behavioral.
 style: Past reflexive 'caught myself'; the drift is shown, not announced. The checking is the behavior.
-continuity: The narrator's drift is now explicit: he checks the retrograde date before scheduling. This is behavioral, not announced.
+continuity: The narrator's drift is now explicit: he checks the retrograde date before scheduling. This is progression decision #2 (post-V), seeded by the perfect column at $n90624 and the operator's log at $n67969.
 
 $n70083
 text: The change was ordinary — a database migration, nothing to do with settlement cycles.
@@ -3743,13 +3815,61 @@ $n50879
 text: I kept a private calendar I would not show anyone.
 intent: The narrator keeps a private calendar: the drift's physical artifact.
 style: Declarative with 'I would not show anyone'; the privacy is the point. The calendar is the drift's physical evidence.
-continuity: The private calendar is the drift's physical artifact. 'I would not show anyone' marks it as private and shameful.
+continuity: The private calendar is the drift's physical artifact. 'I would not show anyone' marks it as private and shameful; it seeds the coda's almanac.
 
 $n74962
 text: I noticed that I had begun to treat a planetary position as a scheduling input, and that noticing did not stop me.
 intent: The narrator notices his own drift and does not stop: the drift is now self-aware but not reversed.
 style: Compound with 'and that noticing did not stop me'; the self-awareness without correction is the drift's deepest point.
 continuity: The narrator's self-awareness without correction is the drift's deepest point. He notices he is treating a planetary position as a scheduling input, and noticing does not stop him.
+
+$n74771
+text: I bought an almanac — the kind that lists the moon, the tides, and the stations of the planets — and set it on the desk beside the journal.
+intent: The drift acquires a tool: the narrator buys an almanac and places it beside the journal.
+style: Em-dash definition of the almanac's contents; the list (moon, tides, stations) is authentic almanac material and keeps the object concrete.
+continuity: The almanac is the physical residue of the conversion and the direct seed of the coda's almanac ('an almanac my method does not require'). It is placed beside the journal, as the coda says.
+
+$n80069
+text: I ringed the next date in it and did not look at it again.
+intent: The ritual: he rings the next date and does not look again.
+style: Short declarative with a refusal to look; the gesture is the ritual.
+continuity: Follows $n74771. The ringed date is the coda's ringed date 'without cause'; it shows the conversion as practice rather than belief.
+
+$n80735
+text: One evening that spring I saw Mercury in the west after sunset, low and bright.
+intent: The narrator's first deliberate sighting of the planet: Mercury as the evening star.
+style: Plain declarative with visual detail; the planet is finally an object in his own sky.
+continuity: Follows $n80069. The sighting is the case's embodied awe; Mercury is visible near the Sun and appears as morning or evening star.
+
+$n83176
+text: The Greeks had called the evening star Hermes and the morning star Apollo, not yet knowing they were the same wandering light.
+intent: Supply the authentic astronomical history: the Greeks named the evening and morning apparitions separately before recognizing one planet.
+style: Declarative with a 'not yet knowing' clause; the historical fact is offered as the narrator's own reflection.
+continuity: Accurate to ancient Greek practice (morning and evening apparitions of Mercury named separately). It ties the planet to Hermes, the case's mythic figure, without a lecture.
+
+$n93550
+text: I stood in a parking lot and watched until it set.
+intent: The narrator watches the planet set: a small, unglamorous act of attention.
+style: Short declarative with mundane setting ('a parking lot'); the ordinariness keeps the awe untheatrical.
+continuity: Follows $n83176. The watching is the conversion's quiet ritual; it is the opposite of the forensic elimination at $n51300.
+
+$n94148
+text: I did not have a reason.
+intent: He had no reason: the act is not justified by procedure.
+style: Short negation; the absence of reason is the point.
+continuity: Follows $n93550. The lack of a reason marks the move beyond the narrator's evidentiary habits.
+
+$n94621
+text: It was the first time in my life I had looked for a planet on purpose, and it had not occurred to me that a planet could be looked for.
+intent: Name the change: he had never before looked for a planet on purpose, nor conceived of doing so.
+style: Two-part sentence with a repeated 'looked for'; the second clause is the naive wonder.
+continuity: Follows $n94148. The change is stated through a small act; it is the case's clearest measure of the narrator's altered perception and leads into VI's paranoia.
+
+$n95627
+text: I went inside and wrote the time down.
+intent: The dossier habit persists: he records the time of the sighting.
+style: Short declarative; the recording habit survives the conversion, keeping the narrator recognizable.
+continuity: Follows $n94621. The written time is the old discipline applied to a new object; it bridges the narrator's evidence-keeping and his superstition.
 
 $n26032
 text: The next retrograde window opens on 24 October 2026.
@@ -3765,15 +3885,15 @@ continuity: The engine is still running. The case is not closed — the system i
 
 $n53866
 text: I have not named a cause.
-intent: The narrator has not named a cause: the case is unresolved.
-style: Negation with 'have not named'; the withholding is the case's resolution. No cause is named.
-continuity: No cause is named. The case is unresolved — the narrator has documented the correlation and falsified the ordinary explanations, but named no cause.
+intent: The narrator has not named a cause: the case is unresolved in its own terms.
+style: Negation with 'have not named'; the withholding is deliberate. No cause is named.
+continuity: No mechanical cause is named. The unresolved element is the mystical one, sharpened at $n96910 and $n98321.
 
-$n73490
-text: I have documented the correlation and falsified the ordinary explanations.
-intent: Summarize what the narrator has done: documented the correlation, falsified the ordinary explanations.
-style: Compound with 'and'; the two accomplishments are stated. This is the narrator's summary of his own work.
-continuity: The narrator's work is summarized: documented the correlation, falsified the ordinary explanations. This is what he has done — and what he has not done.
+$n96910
+text: I have stopped needing to.
+intent: The conversion's residue: he has stopped needing to name a cause.
+style: Short declarative; the cessation is the change.
+continuity: Follows $n53866. This replaces the master's 'I have documented the correlation and falsified the ordinary explanations'; the narrator no longer requires a named mechanism, only the sky.
 
 $n50781
 text: The journal is complete.
@@ -3787,17 +3907,23 @@ intent: The ephemeris is public: the astronomical data is verifiable by anyone.
 style: Short declarative; 'public' is the point. The data is checkable.
 continuity: The ephemeris is public. The astronomical data is verifiable by anyone — it is not the narrator's private interpretation.
 
-$n95758
-text: The operator's log is on my desk.
-intent: The operator's log is on the narrator's desk: the motivated, unreliable document is still present.
-style: Short declarative with 'on my desk'; the physical presence is the point. The log is still there.
-continuity: The operator's log is on the desk. Its physical presence is the residue — the motivated, unreliable document is still there, still being read.
+$n98321
+text: The operator's log is on my desk, and I do not know what Mercury wants with a settlement cycle.
+intent: Replace the old residue with the mystical question: the log remains, and the unanswered question is what Mercury wants.
+style: Compound sentence; the mundane physical fact yields to the unanswerable question, in the narrator's plainest voice.
+continuity: Follows $n96338. This is the required 'unexplained' for the rewrite (what Mercury wants with the ledger), replacing the master's 'I have not named a cause' alone; the log at $n43690 remains on the desk.
 
 $n41877
 text: I do not know what to do with any of it.
 intent: The narrator does not know what to do with any of it: the case is unresolved and the narrator is adrift.
 style: Negation with 'do not know'; the narrator's uncertainty is the case's close. He has the evidence but not the conclusion.
 continuity: The narrator does not know what to do with any of it. The case is unresolved — he has the evidence but not the conclusion, and the next window is coming.
+
+$n99828
+text: A date you know in advance is not a prediction; it is an appointment.
+intent: Deliver the sense of fate: a known date is an appointment, not a forecast.
+style: Aphoristic two-part declarative with a semicolon; the redefinition is the case's fate line.
+continuity: Follows $n41877. The appointment image converts dread into obligation; it seeds the coda's ringed date and the narrator's ritual obedience.
 
 $n98658
 text: I know the date.
@@ -3807,9 +3933,9 @@ continuity: The narrator knows the date. The next retrograde window's date is kn
 
 $n96279
 text: I have always known the date.
-intent: The narrator has always known the date: the knowledge is not new, but it has become a scheduling input.
+intent: The narrator has always known the date: the knowledge is not new, but its use has changed.
 style: Short declarative with 'always'; the duration is the point. The knowledge has always been there, but its use has changed.
-continuity: The narrator has always known the date. The knowledge is not new, but its use has changed — it has become a scheduling input, which is the drift.
+continuity: The narrator has always known the date. The mystic core of the case, preserved from master; it hands off to VI's quiet paranoia.
 
 $n19021
 text: **Field Note #4.
@@ -3819,10 +3945,9 @@ continuity: Field Note #4 continues the dossier's field note pattern from Case I
 
 $n75429
 text: The closer your model fits the world, the more the world will take issue.**
-intent: Deliver the fourth field note's aphorism, the integrated MUST HAVE about model fit: the better a model fits the world, the more the world resists it, stated as a law of the dossier rather than a Mercury-specific observation.
+intent: Deliver the fourth field note's aphorism, the integrated MUST HAVE about model fit: the better a model fits the world, the more the world resists it.
 style: Aphoristic field-note register; the balanced 'the closer... the more...' construction is the MUST HAVE's exact phrasing, and the sentence closes the field note without an em-dash.
-continuity: Follows $n19021 (the field-note label) and precedes $n76985. The integrated form of MUST HAVES node $n61044; it pays off the Mercury correlation and generalizes it into the collection's recurring theme that fit invites resistance.
-
+continuity: Follows $n19021 and precedes $n76985. It pays off the Mercury alignment and generalizes it into the collection's recurring theme that fit invites resistance.
 $n76985
 text: Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
 intent: Authorial directive for VI. The Crocodile in Vienna: constrain the case or manuscript according to the requirement stated in this sentence.
