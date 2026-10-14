@@ -2819,7 +2819,7 @@ $n85239
 text: Let the operational timeline and escalating consequences make the astrological correlation emotionally tempting without describing Mercury as a confirmed cause.
 intent: Author-approved editorial direction for Mercury; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n54501 and precedes $n34176. This is revision guidance for Mercury, not a statement the narrator knows or says.
+continuity: Follows $n54501 and precedes $n69494. This is revision guidance for Mercury, not a statement the narrator knows or says.
 
 $n69494
 text: Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.
@@ -3575,7 +3575,7 @@ $n76985
 text: Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
 intent: Authorial directive for VI. The Crocodile in Vienna: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n34176 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n75429 and precedes $n89991. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
 
 $n89991
 text: However, the crocodile had no impact on American software systems, which continued to operate as normal (different continent, get it?).
@@ -3593,7 +3593,13 @@ $n93700
 text: Keep the serious procedural account of Vienna's disruption and the narrator's misplaced investigative attention, allowing the reader to notice the absurdity without commentary.
 intent: Author-approved editorial direction for Crocodile; record the specific future narrative work stated in this sentence without making it diegetic exposition.
 style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n25522 and precedes $n39220. This is revision guidance for Crocodile, not a statement the narrator knows or says.
+continuity: Follows $n25522 and precedes $n16419. This is revision guidance for Crocodile, not a statement the narrator knows or says.
+
+$n16419
+text: Some reference: https://chatgpt.com/share/68f3eeb1-c1c0-800e-b09b-e2ee25ddbf47
+intent: Authorial directive for VI. The Crocodile in Vienna: attach the external source pointer for the crocodile legend; editorial provenance for the NOTE, not diegetic content.
+style: Non-diegetic NOTE directive; plain-text pointer with no narrator voice.
+continuity: Follows $n93700 and precedes $n39220. This is a live NOTE constraint for VI. The Crocodile in Vienna and must remain consistent with AGENTS.md and the Intent Records.
 
 $n39220
 text: **Vienna, in the third week of June.**
