@@ -4,16 +4,20 @@ Editorial companion to `supernatural.md`, produced for Antonina board issue #277
 Date: 2026-10-13 (revised 2026-10-14 on branch
 `agent-b6fb41f5ac39/issue277-cross-case-dramatic-map`, recovering the map from
 `agent-6b92725178a5/issue277-map-transitions` (a4786e8), which continues the
-`agent-1c6cb3aee7ac/cross-case-dramatic-map` lineage (1deb188, 0726dc1)). This revision keeps
+`agent-1c6cb3aee7ac/cross-case-dramatic-map` lineage (1deb188, 0726dc1); integrated
+2026-10-14 on branch `agent-74338cc3344c/issue277-map-integration`). This revision keeps
 the two citation fixes from that lineage — the verification-tic entry for Case I is the clerk's
 line retold, not the narrator's own gesture, and Field Note #6 is not the collection's last
 note (the coda appends a "Field Note (last)") — and corrects a third: Case I's "write[s] down
 the useful parts and leave[s] some of the commentary out" is present tense in the manuscript.
-Status: **diagnostic and directional**. It maps the current master manuscript, marks the
-repetitive machinery the issue diagnoses, and records the 2026-10-13 human authorial
-direction. Case bodies are concurrently owned by chapter issues (#278, #286, #287, #289,
-#293, #294, #295); local NOTE-block reconciliation is owned by #296. This map proposes
-case-local changes in §8 instead of applying them.
+Status: **diagnostic, directional, and delivery-aware**. It maps the current master
+manuscript, marks the repetitive machinery the issue diagnoses, records the 2026-10-13 human
+authorial direction, and (in "Delivery status and superseded directives" below) tracks which
+chapter issues have since delivered rewrites on their own review branches. Case bodies remain
+owned by chapter issues (#278, #286, #287, #289, #293, #294, #295); local NOTE-block
+reconciliation is owned by #296. This map proposes case-local changes in §8 instead of
+applying them, and records cross-branch integration conflicts rather than resolving them
+unilaterally.
 
 ## How to read
 
@@ -47,31 +51,75 @@ These remove the repeated "the way I…" bridge cadence flagged in §6 item 6 wi
 evidence qualifiers or humour. All other §8 items remain proposals for the owning chapter
 issues.
 
-Coverage check on this branch: 905 graph nodes, 0 duplicate IDs, 0 missing required fields,
-and the ordered concatenation of node `text` fields equals the manuscript's prose exactly
-(`EXACT MATCH`) — unchanged from `master` except the two sentences above, whose node IDs are
-kept. No case body, premise, or Intent Record is touched.
+**Supersession risk (2026-10-14):** the delivered #287 and #295 rewrites are children of
+master and rewrite these same two sentences, re-introducing the bridge formula in both
+openings (#287 keeps "I came to it the way I come to most of these cases: after the fact…,
+to decide what could be established and what could only be kept"; #295 keeps "…the way I hear
+about most things now: a message from a colleague…"). The two edits therefore conflict on
+merge, and the merge must consciously choose between this map's removals and the rewrites'
+versions rather than let the rewrite silently restore the tic.
 
-## Superseded directives (reconciled or pending)
+Coverage check on this branch (re-run 2026-10-14 on the integration branch): 905 graph nodes,
+0 duplicate IDs, 0 missing required fields, and the ordered concatenation of node `text`
+fields equals the manuscript's prose exactly (`EXACT MATCH`) — unchanged from `master` except
+the two sentences above, whose node IDs are kept. No case body, premise, or Intent Record is
+touched.
+
+## Delivery status and superseded directives (2026-10-14 integration)
 
 Per the 2026-10-13 human direction, late-case supernatural ambiguity is no longer wanted:
 by III–IV the beings are **real within the story**, V is deep astrological mysticism,
 VI reveals subtle paranoia, VII stays objectively mundane but no longer consoles.
-Status against live documents:
+Status against live documents and delivered branches:
 
 - Intent Records (`docs/intent-records/story.md`, `docs/intent-records/editing.md`):
-  **already reconciled on master** (commits 505fd5e, 5cd4e52, 77e288e). No live Intent
-  Record demands late supernatural ambiguity; nothing here rewrites them.
-- Manuscript `<NOTE>`/`<MUST HAVES>` blocks: **not yet reconciled**. The preamble NOTE
-  ("Let ordinary causal explanations remain intellectually available…"), the Case III
-  NOTE ("For example, an MD5 hash collision… preserving the possibility that its apparent
-  prediction is retrospective pattern making"), the Case IV NOTE ("Keep the folkloric
-  sighting at the distance of reported operational legend"), the Case V NOTE ("We'll retain
-  skeptics… without describing Mercury as a confirmed cause") and the Case VII NOTE
-  ("a necessary palate cleanser… shows the narrator can still accept a sufficient ordinary
-  explanation") all demand the superseded ambiguity. Owner: **#296**. Flagged, not edited.
-- Case bodies III, IV, V, VII and the coda still encode the superseded treatment in prose.
-  Owners: **#287, #289, #286, #293, #294** respectively. See §8.
+  **reconciled on master** (commits 505fd5e, 5cd4e52, 77e288e). No live Intent Record
+  demands late supernatural ambiguity; nothing here rewrites them. The 2026-10-13 intents
+  ($id-9264982270043622, $id-0861352612251497, $id-1563163086970281, $id-8506027753346938,
+  $id-9342987960007338, $id-7062117495708504, $id-2221791653068770, $id-9421142343424984,
+  $id-7350745426882596) are the live authority the delivered rewrites satisfy.
+- Manuscript `<NOTE>`/`<MUST HAVES>` blocks: **reconciled at
+  `origin/reconcile/296-note-directives` @ 91f14b1** (18 NOTE sentences rewritten across the
+  preamble and Cases III–VII; meaning graph 905 nodes). The preamble NOTE and the Case III,
+  IV, V, VI and VII NOTEs no longer demand late supernatural ambiguity. #296 is the canonical
+  reconciliation; the chapter branches below re-apply subsets of it.
+- Case bodies: **delivered on independent review branches off master** (see the per-case
+  "Delivered" lines and the integration conflicts at the end of this section). Case V remains
+  owned and not yet delivered; Cases I–II remain owned by #278.
+
+### Delivered chapter rewrites (all off master 77e288e; none merged yet)
+
+| Case | Issue | Branch (tip) | Map direction |
+|---|---|---|---|
+| III Maxwell's Demon | #287 | `review/287-case-iii-integration` (296aa30; impl `impl/287-maxwells-demon-real-collision` 618e3de) | satisfied — real demon, full SHA-256 collision, both originals lost; endnote 7 re-cut to the SHAttered/MD5 precedent; bridge re-pointed off the Ed25519 story |
+| IV Leprechaun | #289 | `agent-88c99460793c/issue289-case-iv-leprechaun` (cc926f9) | satisfied — real green man, direct encounter; opening now "This one is not a legend"; closing loop-bound habit preserved verbatim |
+| V Mercury | #286 | none on origin (research note only) | pending — #286 owns the prose |
+| VI Crocodile | #295 | `agent-cc66e713f89e/issue295-crocodile-paranoia` (e302ad3) | satisfied — paranoia shown by disproportionate checks; "I read it a third time"; Field Note #5 breaks the template |
+| VII Rack C | #293 | `review/293-case-vii-mundane-crash` (5cc886d) | satisfied — consolation removed; checkpoint replaced by archive/backup recovery; Rack C coordinated with the coda |
+| Coda | #294 | `review/294-supernatural-coda` (b5b8fcb) | satisfied — lecture embodied; stale "two machines, one secret" token replaced by "Two things that were not the same, answering to one name"; demon register added |
+| NOTE directives | #296 | `reconcile/296-note-directives` (91f14b1) | satisfied — canonical NOTE reconciliation |
+
+### Integration conflicts to reconcile (surfaced, not resolved here)
+
+The chapter branches are parallel children of master and were not built on one another, so
+merging them is not mechanical:
+
+- **Case III NOTE**: rewritten differently by #287 and by #296/#289 (which includes #296).
+  Both state the same required premise in different words; one version must be chosen.
+- **Case VII NOTE**: rewritten differently by #293 and by #296/#289. #293's version is longer
+  and case-specific and adds the Rack C / checkpoint-coordination directives.
+- **Preamble NOTE**: edited identically by #289 and #296, untouched by #287, #293, #294 and
+  #295, so it merges cleanly; #296 is the single source of truth for it.
+- **Case VI NOTE**: edited identically by #295 and #296, so it merges cleanly.
+- **Coda tokens** (#294): the rewritten list represents Cases II, III, IV, VI and VII; Case V
+  is carried by the almanac paragraph ("I know the next retrograde window… I have moved a
+  migration around it") rather than a token. This preserves master's five-token design; flag
+  it if #286 wants a Mercury token.
+- Only #289 contains #296's reconciliation; #287, #293, #294 and #295 each carry their own
+  NOTE edit and must be reconciled against #296 on merge.
+- **Bridge sentences**: this branch removed the "the way I…" bridge openings in III and VI,
+  but the #287 and #295 rewrites (children of master) re-introduce them on the same lines.
+  Choose deliberately at merge (see "Applied transitional revisions").
 
 ---
 
@@ -144,7 +192,7 @@ Status against live documents:
   mechanisms still available (Intent $id-0105305593640677; endnote 5 records the real
   incident's eventual cause).
 
-## III. Maxwell's Demon — **conflict: master predates the human direction**
+## III. Maxwell's Demon — **master predates the human direction; delivered (#287)**
 
 Master state (what is on master now) vs. required direction (Intent
 $id-8506027753346938; board #287):
@@ -177,13 +225,14 @@ $id-8506027753346938; board #287):
   files vanished* — "The disappearance need not be procedurally explained away" (Intent
   $id-8506027753346938); the loss compounds fear, lost confidence and vulnerability.
 
-**Coordination:** owner #287 is rewriting this case on its own branch. This map does not
-touch the section. Two forward notes for #287: the bridge sentence "a fleet of machines
-that turned out to be fewer than they seemed" previews the old Ed25519 story and must be
-re-pointed at the collision-and-loss premise; endnote 7 (duplicate SSH host keys) becomes
-stale and should be re-cut to the collision substrate.
+**Coordination:** owner #287 rewrote this case (delivered at
+`review/287-case-iii-integration` @ 296aa30). This map does not touch the section. Both
+forward notes were actioned: the bridge was re-pointed at the collision-and-loss premise
+("two files that agreed with each other far more than they had any right to"), and endnote 7
+was re-cut from the Ed25519 story to the SHAttered/MD5 collision precedent. Note the residual
+bridge-formula conflict with this branch (see "Applied transitional revisions").
 
-## IV. The Leprechaun of Off-by-One — **conflict: master centres the code mystery**
+## IV. The Leprechaun of Off-by-One — **master centres the code mystery; delivered (#289)**
 
 - **(a)** Master: *was it the green man, or a tired engineer's uncommitted edit?* —
   forbidden. Required: *the small man in green is real; what does meeting him do to the
@@ -213,11 +262,13 @@ stale and should be re-cut to the collision substrate.
   Required unexplained: not whether he is real, but *what he wants* and why the bounds move
   by one — the folklore's own openness.
 
-**Coordination:** owner #289 rewrites this case. The closing habit paragraph (the loop-bound
-ritual) is the narrator's first durable superstition and must survive the rewrite intact;
-it is the load-bearing seed for the coda's token check.
+**Coordination:** owner #289 rewrote this case (delivered at
+`agent-88c99460793c/issue289-case-iv-leprechaun` @ cc926f9). The closing habit paragraph
+survived intact ("Since I compiled this file … I read loop bounds twice…") and remains the
+load-bearing seed for the coda's token check; the opening now reads "This one is not a
+legend, and I have stopped filing it as one."
 
-## V. Mercury in Retrograde — **conflict: master runs the statistical engine**
+## V. Mercury in Retrograde — **master runs the statistical engine; pending (#286)**
 
 - **(a)** Master: *is the correlation causation — or a pattern I was looking for?*
   Required: *the reversals are Mercury's; what does it mean that the sky and the ledger
@@ -248,7 +299,7 @@ it is the load-bearing seed for the coda's token check.
   paragraph ("I had gone looking for a pattern…") is the kind of skeptical apology the
   human direction retires for this case; #286 should cut it.
 
-## VI. The Crocodile in Vienna
+## VI. The Crocodile in Vienna — **delivered (#295)**
 
 - **(a)** Why did *nothing* fail — and why can't he leave that alone?
 - **(b)** Aim: do the procedure — establish the blast radius, as always. Cost: none
@@ -267,11 +318,14 @@ it is the load-bearing seed for the coda's token check.
   (Also: the woman with her dog, "walks a different way now, but she walks.")
 - **(g)** Unexplained: why the boundary was so clean — and the text must *not* explain
   the joke or prove crocodiles ought to reach software. The reader notices the absurdity;
-  the unease stays humanly intelligible. Per #295: avoid repeatedly describing the clean
-  boundary as a "blast radius"; vary the inspections into physical unease and private
-  repetition.
+  the unease stays humanly intelligible. Per #295 (delivered at
+  `agent-cc66e713f89e/issue295-crocodile-paranoia` @ e302ad3): the "blast radius" framing
+  and the clean-boundary repetition are gone; the paranoia is carried by physical unease and
+  private repetition ("I read it a third time, which was not the way I read incident
+  reports"; "the second column was longer than the first, and I had not decided to make it
+  longer").
 
-## VII. The Heat Death of Rack C — **conflict: closing lines console him**
+## VII. The Heat Death of Rack C — **master's closing lines console him; delivered (#293)**
 
 - **(a)** Is a complete, ordinary explanation *enough* — after everything?
 - **(b)** Aim: restore the database; close the case. Cost: Ruth's three days of compute
@@ -294,11 +348,13 @@ it is the load-bearing seed for the coda's token check.
 - **(f)** Lingering image: "The absence of the fans was louder than their sound had been."
   (Also: Ruth standing in the doorway, still holding her coffee.)
 - **(g)** Unexplained: nothing in the chain — that's the design. The residual discomfort
-  is the narrator's, not the machine's. Per #293, also repair the checkpoint-recovery
-  plausibility (a checkpoint is not inherently a six-hour rollback) and coordinate the
-  Rack C details (compressor vs the coda's clogged filter) with #294.
+  is the narrator's, not the machine's. Per #293 (delivered at
+  `review/293-case-vii-mundane-crash` @ 5cc886d), the checkpoint-recovery implausibility is
+  repaired (recovery now rolls forward from the last verified backup through the intact
+  transaction-log archive, which stopped at 02:47), and the Rack C details are coordinated
+  with the coda (a warm week, a clogged filter, a fan that failed slow and legible).
 
-## Coda
+## Coda — **delivered (#294)**
 
 - **(a)** Has he changed — and can he change back?
 - **(b)** Aim: keep the dossier, the rituals, the margin. Cost: permanent altered
@@ -316,11 +372,13 @@ it is the load-bearing seed for the coda's token check.
   together on the page", the moth "still unconvinced" — echoing Case I's *Proofs I Do Not
   Argue With*.
 - **(g)** Unexplained: what the beings want, what happens next — deliberately. The lecture
-  problem: the current coda explains its thesis — "The stories do not keep us safe; they
+  problem: master's coda explained its thesis — "The stories do not keep us safe; they
   keep us attentive. We live by the text. We survive by the small, retold stories…" —
-  which board #294 assigns: embody, don't lecture. The MUST HAVES phrase "…like
-  myself—skeptics who have seen just enough to be superstitious" must survive, integrated
-  organically.
+  which board #294 assigns: embody, don't lecture. Delivered at
+  `review/294-supernatural-coda` @ b5b8fcb: the thesis is replaced by behaviour ("I keep the
+  dossier the way I keep the room lit…"; "I have begun to say *demon* in the register I keep
+  for the weather, and I no longer hear myself do it"), and the MUST HAVES phrase "…like
+  myself—skeptics who have seen just enough to be superstitious" survives organically.
 
 ---
 
@@ -332,7 +390,9 @@ it is the load-bearing seed for the coda's token check.
    can predict many endings."
 2. **The Field Note template**: Field Notes #1, #5 and #6 all open with the identical
    formula "Horror, in our trade, is the X—…" (clean error / clean failure / margin). Three
-   iterations of one cadence. At least one should break the template.
+   iterations of one cadence. Partly resolved by the delivered rewrites: #295 replaced #5
+   with "I keep the times in a column, and the column has no incident to explain it", and
+   #287/#289 reworded #2 and #3; #1 and #6 still share the formula, so two iterations remain.
 3. **The verification tic**: "I read both again" (I — but this is the clerk's line inside the
    retold testimony, a different evidentiary distance than the narrator's own gestures),
    the experiment table (II), "I read the article twice, the way I read incident reports"
@@ -346,10 +406,12 @@ it is the load-bearing seed for the coda's token check.
    "I do not adopt it" (IV), "I marked it as his, motivated and uncorroborated" and "I did
    not write a conclusion" (V). Under the 2026-10-13 direction these compulsory
    qualifications retire from III–VII; uncertainty may remain about meaning and intent,
-   not existence.
+   not existence. Delivered: #287 dropped "I have not decided" and #289 dropped "I do not
+   adopt it"; the V qualifications remain pending #286.
 6. **Bridge formula**: each later case opens by re-listing how it reached him ("the way I
    hear about most things now…", "the way I come to most of these cases…"). Twice is a
-   dossier habit; more becomes tic.
+   dossier habit; more becomes tic. This branch removed both; the #287/#295 rewrites restore
+   them, so the tic survives unless the merge keeps the removals (see integration conflicts).
 
 ## §7 Narrator progression — three specific decisions, causally seeded
 
@@ -393,7 +455,8 @@ exemplar).
 These are concrete before/after examples demonstrating improvement over the current
 master. They are proposals; #277 does not edit independently owned sections.
 
-**Example 1 — Case VII closing (owner #293).** Remove consolation without lecturing:
+**Example 1 — Case VII closing (owner #293). Delivered at `review/293-case-vii-mundane-crash`
+(5cc886d).** Remove consolation without lecturing:
 
 - Before: "It is a strange thing to be relieved by a broken air conditioner. … Some failures
   are boring, and I can still accept one."
@@ -403,22 +466,27 @@ master. They are proposals; #277 does not edit independently owned sections.
   away (a second log re-check he does not record). Satisfies Intent $id-9421142343424984:
   acceptance without restoration.
 
-**Example 2 — Field Note template (owners of I–VII).** Break the triple "Horror, in our
-trade, is the X" cadence at least once — e.g. Field Note #6 keeps the formula (it is the
-last of the seven case notes, though the coda appends a "Field Note (last)" in a different
-register) while #1 and #5 take different shapes, so the collection's aphorisms do not
-rhyme mechanically.
+**Example 2 — Field Note template (owners of I–VII). Partly delivered: #295 broke #5.**
+Break the triple "Horror, in our trade, is the X" cadence at least once — e.g. Field Note #6
+keeps the formula (it is the last of the seven case notes, though the coda appends a "Field
+Note (last)" in a different register) while #1 and #5 take different shapes, so the
+collection's aphorisms do not rhyme mechanically. #5 is now "I keep the times in a column,
+and the column has no incident to explain it"; #1 and #6 still rhyme.
 
-**Example 3 — Coda lecture (owner #294).** Replace the stated thesis with embodied
-closure: cut or compress "The stories do not keep us safe; they keep us attentive. We live
-by the text. We survive by the small, retold stories…" into the existing rituals (token
-check, ringed date, pen stopped), keeping the MUST HAVES sentence "…like myself—skeptics
-who have seen just enough to be superstitious" organic to the final pages.
+**Example 3 — Coda lecture (owner #294). Delivered at `review/294-supernatural-coda`
+(b5b8fcb).** Replace the stated thesis with embodied closure: cut or compress "The stories
+do not keep us safe; they keep us attentive. We live by the text. We survive by the small,
+retold stories…" into the existing rituals (token check, ringed date, pen stopped), keeping
+the MUST HAVES sentence "…like myself—skeptics who have seen just enough to be superstitious"
+organic to the final pages. The delivered coda replaces the lecture with "I keep the dossier
+the way I keep the room lit…" and keeps the MUST HAVES sentence.
 
-**Example 4 — Case III bridge (owner #287).** When the case is rebuilt around the real
-demon and the lost collision: delete "I do not claim it means anything" and the "I have
-not decided" verdict (node $n84720); the adjacency note may stay as record-keeping, not as
-doubt.
+**Example 4 — Case III bridge (owner #287). Delivered at `review/287-case-iii-integration`
+(296aa30).** When the case is rebuilt around the real demon and the lost collision: delete
+"I do not claim it means anything" and the "I have not decided" verdict (node $n84720); the
+adjacency note may stay as record-keeping, not as doubt. The delivered rewrite does exactly
+this, replacing the verdict with "I do not know what the being wanted. I know what it said.
+I know what was taken."
 
 ## §9 Distinct-engine verification
 
@@ -444,3 +512,8 @@ acts silently and is answered with ritual). V and VI both tempt pattern-thinking
 succeeds as mysticism (the correlation holds and converts him) while VI fails as causality
 (there is no correlation and he checks anyway). VII is the control: the explanation
 completes and the discomfort remains.
+
+Delivery note (2026-10-14): the delivered #287, #289, #293, #294 and #295 branches realize
+this table in prose (III, IV, VII, coda, VI respectively); V is still pending #286 and
+Cases I–II remain owned by #278. No two delivered cases share a main mechanism, and each
+closes on the effect in the right-hand column.
