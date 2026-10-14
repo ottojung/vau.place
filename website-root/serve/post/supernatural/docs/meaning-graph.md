@@ -5024,8 +5024,8 @@ style: Documentary endnote label; concise and factually bounded.
 continuity: Follows $n17075 and precedes $n46695. Keeps the fictional collision distinct from the documented SHA-1 and MD5 precedents.
 
 $n46695
-text: Case III's central event is invented: two genuinely distinct files producing the same full SHA-256 digest, and no such collision has been announced or observed; the documented precedent is the 2017 SHAttered demonstration, in which two distinct PDF files produced the same full SHA-1 digest, and the older precedent is MD5, against which chosen-prefix collisions have been constructed since 2004, including the 2009 rogue certificate authority. ([SHAttered][19])
-intent: Keep documented fact and fictional invention distinguishable: no full SHA-256 collision is documented, while SHAttered (2017, two distinct PDFs, same full SHA-1 digest) and MD5 chosen-prefix collisions (since 2004, including the 2009 rogue CA) are real.
+text: Case III's central event is invented: two genuinely distinct files producing the same full SHA-256 digest, and no such collision has been announced or observed; the documented precedent is the 2017 SHAttered demonstration, in which two distinct PDF files produced the same full SHA-1 digest, and the older precedent is MD5, against which collisions have been constructed since 2004 and chosen-prefix collisions since 2007, including the 2008 rogue certificate authority. ([SHAttered][19])
+intent: Keep documented fact and fictional invention distinguishable: no full SHA-256 collision is documented, while SHAttered (2017, two distinct PDFs, same full SHA-1 digest) and MD5 collisions (identical-prefix since 2004, chosen-prefix since 2007, including the 2008 rogue CA) are real.
 style: Documentary endnote prose with citations; the semicolon joins the invented event and the documented precedents.
 continuity: Follows $n86402 and precedes $n68901. Replaces the stale duplicate-host-key endnote; sources [8]-[14] were removed with it and [19] (SHAttered) added.
 
