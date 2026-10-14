@@ -4892,52 +4892,52 @@ style: Short flat statement; the ambiguity held.
 continuity: Follows $n72551 and precedes $n85472. Echoes $n10406; the unconvinced moth returns at the close.
 
 $n85472
-text: The tokens are where I left them, and I check that they are there.
-intent: Establish the case-callback tokens as physical contents of the dossier; the checking is the ritual behavior, shown not explained.
-style: Procedural; the ritual is in the verb 'check,' unlabeled.
-continuity: Follows $n18563 and precedes $n11918. Introduces the token sequence; the first private-superstition behavior.
+text: The tokens are where I left them.
+intent: Place the case-callback tokens as physical contents of the dossier; the checking ritual now follows the list, so the paragraph opens on the objects rather than on the act.
+style: Short declarative; procedural; the plainness lets the following fragments carry the weight.
+continuity: Follows $n18563 and precedes $n11918. Introduces the token sequence; the first private-superstition object.
 
 $n11918
-text: A notebook page with *timing* underlined twice.
+text: A page with *timing* underlined twice.
 intent: Case II callback as a physical token; the observation-sensitive residue, not a recap.
 style: Fragment as object description; italics preserve the field-note register.
 continuity: Follows $n85472 and precedes $n15061. Callback to $n96467.
 
 $n15061
-text: A fingerprint card: two machines, one secret.
-intent: Case III callback as a physical token; the duplicate-key residue, unconfirmed.
-style: Fragment; the colon condenses the token's content.
-continuity: Follows $n11918 and precedes $n09645. Case III callback; the demon left unconfirmed.
+text: Two things that were not the same, answering to one name.
+intent: Case III callback as a physical token; abstract enough to name the impossible agreement of the duplicate key or the lost collision without recapping either.
+style: Fragment; the paired phrase holds the paradox in one line.
+continuity: Follows $n11918 and precedes $n09645. Case III callback; the event is kept real though the being is left unconfirmed.
 
 $n09645
-text: A legend taken down secondhand—a small man in green, a bound moved by one.
-intent: Case IV callback as a physical token; the operational legend kept at the distance of secondhand testimony.
-style: Fragment; em-dash appositive; the legend's content as the object.
-continuity: Follows $n15061 and precedes $n82509. Case IV callback; folklore kept as operational legend.
+text: A small man in green, and a bound moved by one.
+intent: Case IV callback as a physical token; the legend's figure and its single consequence, kept as folklore rather than explained.
+style: Fragment; the folkloric pair is stated flatly, without quotation.
+continuity: Follows $n15061 and precedes $n82509. Case IV callback; the green man stays real and unexplained.
 
 $n82509
-text: A clipping, folded twice, about a crocodile in Vienna.
-intent: Case VI callback as a physical token; the crocodile residue, the absurdity left implicit.
-style: Fragment; 'folded twice' marks handling.
+text: A crocodile that crossed a city and not an ocean.
+intent: Case VI callback as a physical token; the absurd clean boundary is implied by what the crocodile did not cross, without explaining the joke.
+style: Fragment; the withheld clause ('and not an ocean') carries the paranoia's absurd logic.
 continuity: Follows $n09645 and precedes $n18253. Case VI callback; the widened causal field stays implicit.
 
 $n18253
-text: A heat log: a server dead of a warm week.
-intent: Case VII callback as a physical token; the mundane baseline that keeps the ending honest.
-style: Fragment; the colon condenses the mundane cause.
-continuity: Follows $n82509 and precedes $n83795. Case VII callback; the control sample.
+text: A warm week that killed a server.
+intent: Case VII callback as a physical token; the mundane cause that the narrator accepts but is not consoled by.
+style: Fragment; the causal clause compresses the whole case.
+continuity: Follows $n82509 and precedes $n83795. Case VII callback; the heat log ends the case and begins the coda.
 
 $n83795
-text: I do not read them.
-intent: Withhold the case contents; the tokens are checked as present, not re-narrated; prevents recap.
-style: Short declarative; the omission is the point.
-continuity: Follows $n18253 and precedes $n30688.
+text: I do not read them; I know them by the weight of their pages.
+intent: Withhold the case contents while showing the narrator's bodily familiarity with them; the tokens are checked as present, not re-narrated; prevents recap.
+style: Balanced clause pair; the semicolon turns from refusal to intimacy; 'weight of their pages' is tactile and unstated as superstition.
+continuity: Follows $n18253 and precedes $n30688. Extends the old withholding beat into embodied familiarity.
 
 $n30688
-text: It is a check like any other, and it is not one at all.
-intent: Name the ritual without labeling it superstition; the reader recognizes the empty check; the changed perception crystallizes.
-style: Balanced sentence with a turn; aphoristic but earned by the concrete checking in the same beat.
-continuity: Follows $n83795 and precedes $n89369. The private-superstition behavior shown, not stated; connects to $n65527.
+text: I check that they are there, and I close the folder, and it is a check like any other, and it is not one at all.
+intent: Name the ritual without labeling it superstition; the checking and the closing are performed before the reader is told they mean nothing, which is how the reader recognizes they mean everything.
+style: Accumulating clauses then a balanced turn; aphoristic but earned by the concrete checking in the same beat.
+continuity: Follows $n83795 and precedes $n89369. The private-superstition behavior shown, not stated; connects to $n65527 and to the prologue's log-twice habit ($n00657).
 
 $n89369
 text: Tonight's entry is ordinary.
@@ -4977,57 +4977,75 @@ continuity: Follows $n69444 and precedes $n24145. The ritual completed; connects
 
 $n24145
 text: Last month a server died of heat.
-intent: Case VII's sanity: a plainly mundane failure, accepted without ceremony.
+intent: Case VII's sanity: a plainly mundane failure, accepted without ceremony; the coda's compressed retelling of the crash.
 style: Short declarative; clinical.
-continuity: Follows $n13154 and precedes $n90223. The mundane baseline; the control sample.
+continuity: Follows $n13154 and precedes $n90223. The mundane baseline; the control sample; coordinates with Case VII's Rack C (owner #293).
 
 $n90223
 text: A warm week, a clogged filter, a fan that failed slow and legible, the way paper fails.
 intent: Give the mundane crash a sufficient ordinary explanation; the 'paper fails' echo ties to Case I's cathedral of checks.
 style: Fragment accumulation; 'slow and legible' recalls Case I's paper.
-continuity: Follows $n24145 and precedes $n21714. Pays off the paper-fails image; the mundane cause is sufficient.
+continuity: Follows $n24145 and precedes $n00183. Pays off the paper-fails image; must remain a faithful summary of Case VII's cause.
+
+$n00183
+text: A postdoc lost three days of compute and a week in the cluster queue to the crash, and the explanation, which was complete, did not give her the days back.
+intent: Preserve Case VII's real human loss (Ruth's compute and queue time) and state the coda's core dissonance — a complete explanation restores the machine but not the loss.
+style: Long periodic sentence; the balanced antithesis ('complete' vs 'did not give her the days back') does the work without asserting that explanation is insufficient.
+continuity: Follows $n90223 and precedes $n21714. Carries Ruth's loss from Case VII (Intent $id-9421142343424984); the cost the method cannot repay.
 
 $n21714
 text: I wrote *ambient* in the log and closed the case.
-intent: Show the narrator accepting a boring explanation plainly; the method closes the case without ritual.
+intent: Show the narrator accepting the ordinary explanation plainly; the method still closes the case.
 style: Procedural; the single word *ambient* does the work.
-continuity: Follows $n90223 and precedes $n64130. Case VII sanity visible; the mundane acceptance.
-
-$n64130
-text: There was no second look, no margin, no note.
-intent: Mark the deliberate absence of ritual for the mundane case; the contrast with his current behavior shows the change.
-style: Triple negation; asyndeton; the absence is the statement.
-continuity: Follows $n21714 and precedes $n27025. The contrast that makes the superstition visible by difference.
+continuity: Follows $n00183 and precedes $n27025. Case VII sanity visible; the mundane acceptance.
 
 $n27025
-text: Some failures are boring, and I can still accept one.
-intent: Assert the intact rational surface: he can still accept a sufficient ordinary explanation; the ending does not tip into pure dread.
-style: Plain declarative; understated.
-continuity: Follows $n64130 and precedes $n39426. The disciplined-inquiry invariant; Case VII sanity.
+text: Some failures are boring.
+intent: Assert the intact rational surface in a clipped form; the consolation clause is cut so acceptance is no longer the same as comfort.
+style: Short declarative; the truncation leaves the old sentence's second half conspicuously absent.
+continuity: Follows $n21714 and precedes $n17208. Case VII sanity retained without the retired consolation ('I can still accept one').
+
+$n17208
+text: I accept the explanation.
+intent: State the intellectual acceptance plainly; it is true and it is not enough, and the next sentence shows why in behavior.
+style: Short declarative; flat, unadorned.
+continuity: Follows $n27025 and precedes $n13783. Separates acceptance from consolation; sets up the re-reading tell.
+
+$n13783
+text: That night I opened the file again and read the shutdown line more times than the evidence required, each time telling myself I was reading it as evidence.
+intent: Embody the changed perception as a compulsion: he accepts the ordinary cause and still cannot stop re-reading it; the superstition is shown, not named.
+style: Long clause with a self-aware tail ('each time telling myself'); echoes Case V's re-read of the operator's log without stating the comparison.
+continuity: Follows $n17208 and precedes $n39426. Progression decision #3 (the check that is no check); coordinates with Case VII's re-reading (owner #293) and Case V's mirror.
 
 $n39426
 text: Beside the dossier, an almanac my method does not require.
 intent: The calendar ritual; the Case V residue that escaped the dossier and entered his practice; kept without cause, unexplained.
 style: Fragment; 'my method does not require' marks the surplus without labeling it.
-continuity: Follows $n27025 and precedes $n84935. Case V callback; the calendar behavior.
+continuity: Follows $n13783 and precedes $n26919. Case V callback; the calendar behavior.
+
+$n26919
+text: I know the next retrograde window the way I know a deadline.
+intent: Show the astrological worldview has taken root: the window is now ordinary scheduling knowledge, held with the same ease as work deadlines.
+style: Simile of the mundane; the flat comparison does the mystic work without asserting belief.
+continuity: Follows $n39426 and precedes $n84935. Pays off Case V's 'I know the date. I have always known the date.'; progression decision #2.
 
 $n84935
-text: One date next month is ringed, without cause.
-intent: Show the almanac's marked date; the causation is neither asserted nor explained; the temptation held open.
-style: Fragment; 'without cause' is the point.
-continuity: Follows $n39426 and precedes $n99181. The astrological temptation remains deniable.
+text: One date next month is ringed, without cause, and I have moved a migration around it.
+intent: Show the mysticism enacted: a marked date without stated cause and a real schedule changed because of it; the causation is neither asserted nor explained.
+style: Compound fragment; 'without cause' and the quiet 'moved a migration' sit side by side without apology.
+continuity: Follows $n26919 and precedes $n14769. Case V callback (the delayed migration) made permanent.
 
-$n99181
-text: I do not consult it.
-intent: Withhold the ritual's use; he keeps the calendar but does not act on it openly; the reader infers the weight.
-style: Short declarative.
+$n14769
+text: I did not write down why.
+intent: Withhold the ritual's reason; he keeps the calendar and acts on it but does not record the motive; the reader infers the weight.
+style: Short declarative; the omission is the point.
 continuity: Follows $n84935 and precedes $n45203.
 
 $n45203
 text: I know that it is there.
 intent: The ritual's persistence; the knowledge is enough; the superstition is never named.
 style: Short declarative; the understatement carries the unease.
-continuity: Follows $n99181 and precedes $n57555.
+continuity: Follows $n14769 and precedes $n57555.
 
 $n57555
 text: At 03:12 I make the last entry, in the hand I will recognize.
@@ -5087,49 +5105,43 @@ $n12581
 text: I set the pen down and close the dossier.
 intent: The ritual completes without resolution; the dossier is closed but the question is not.
 style: Short declarative; procedural.
-continuity: Follows $n77244 and precedes $n58152. The withholding complete.
+continuity: Follows $n77244 and precedes $n17404. The withholding complete.
 
-$n58152
-text: The stories do not keep us safe; they keep us attentive.
-intent: Land the required theme: stories make operators attentive; they do not protect against the harm unexplained events can still do.
-style: Balanced sentence with a turn; concrete, not a thesis about uncertainty or science.
-continuity: Follows $n12581 and precedes $n01501. The required theme; the reader's uncertainty about safety.
-
-$n01501
-text: We live by the text.
-intent: The moral's first component: faith in specification and procedure, enacted by the checks he still makes.
-style: Aphoristic but grounded in the preceding action.
-continuity: Follows $n58152 and precedes $n89984. The moral integrated; the specification he still trusts.
-
-$n89984
-text: We survive by the small, retold stories that help us decide which part of the text applies when the world grows strange.
-intent: The moral's second component: the dossier's field notes and legends as the stories that guide which specification applies.
-style: The moral in the narrator's grave register; concrete, not a thesis.
-continuity: Follows $n01501 and precedes $n40247. The moral integrated; the check as choosing which text applies.
+$n17404
+text: I keep the dossier the way I keep the room lit: not because it keeps anything out, but because I would rather see what is there.
+intent: Land the required moral as embodied practice rather than thesis: the record does not protect, it keeps him attentive, the same work the coda's rituals have just performed.
+style: First-person simile with a turn; concrete (room lit) and unaccusing; replaces the second-person lecture with the narrator's own habit.
+continuity: Follows $n12581 and precedes $n40247. Compresses the coda-level MUST HAVES moral into behavior; keeps its sense without restating 'stories keep us attentive' as a thesis.
 
 $n40247
-text: If you keep a dossier of your own, write in a hand you will recognize when you are older.
-intent: The single second-person turn: the instruction to the older self and the reader; the hand motif paid off directly.
-style: Direct address; the only 'you' in the coda; concrete.
-continuity: Follows $n89984 and precedes $n15031. Pays off $n98283; the one 'you' turn.
+text: I write in a hand I will recognize when I am older.
+intent: The moral's handwriting component as first-person practice; the hand motif paid off directly.
+style: First person instead of the retired imperative; concrete.
+continuity: Follows $n17404 and precedes $n15031. Pays off $n98283 and $n96899; keeps the MUST HAVES hand motif organically.
 
 $n15031
-text: Tape in what must be taped.
-intent: The moral's third component: the moth photograph he just taped in; the dossier's method as instruction.
-style: Imperative; concrete.
+text: I tape in what must be taped.
+intent: The moral's tape component as first-person practice; the moth photograph he just taped in.
+style: First person instead of the retired imperative; concrete.
 continuity: Follows $n40247 and precedes $n73122. Pays off $n70264; the taped specimen.
 
 $n73122
-text: Leave space in the margins for the things we still do not know how to name.
-intent: The moral's fourth component: the blank line he just left; the unnamed name and the unknown held open.
-style: Imperative; concrete; the margin as deliberate practice.
-continuity: Follows $n15031 and precedes $n64745. Pays off $n96851; the blank line.
+text: I leave the margins for the things I still do not know how to name.
+intent: The moral's margin component as first-person practice; the blank line he just left; the unnamed name and the unknown held open.
+style: First person instead of the retired imperative; concrete; the margin as deliberate practice.
+continuity: Follows $n15031 and precedes $n23684. Pays off $n96851; the blank line.
+
+$n23684
+text: I have begun to say *demon* in the register I keep for the weather, and I no longer hear myself do it.
+intent: Embody belief: the being has entered his ordinary speech, unremarked and unhedged; the register shift shows conviction without announcing it.
+style: Plain first-person confession; the weather comparison domesticates the demon into daily reality; 'no longer hear myself' marks how deep the change has gone.
+continuity: Follows $n73122 and precedes $n67317. Pays off Case III's 'I have begun to say the word *demon*' (rewritten under #287) and shows the change is permanent.
 
 $n67317
 text: I have become one of those people — like myself—skeptics who have seen just enough to be superstitious.
 intent: Integrate the third MUST HAVE into the coda's close: the narrator names his own transformation — he has become the skeptic who is superstitious; the em-dash construction 'like himself' is the MUST HAVE's exact phrasing.
 style: The MUST HAVE's exact phrasing as the coda's final self-description; the dash construction holds the contradiction (skeptic + superstitious) in one sentence; the present perfect 'I have become' is the transformation's completion.
-continuity: Follows $n73122 and precedes $n64745. The integrated form of MUST HAVES node $n65527; the transformation the whole dossier traces is named here, in the narrator's own voice, without announcement.
+continuity: Follows $n23684 and precedes $n64745. The integrated form of MUST HAVES node $n65527; the transformation the whole dossier traces is named here, in the narrator's own voice, without announcement.
 
 $n64745
 text: I leave the dossier on the desk, the tape holding, the margin blank, the moth in the photograph still unconvinced.
