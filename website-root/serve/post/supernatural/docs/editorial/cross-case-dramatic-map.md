@@ -5,11 +5,17 @@ Date: 2026-10-13 (revised 2026-10-14 on branch
 `agent-b6fb41f5ac39/issue277-cross-case-dramatic-map`, recovering the map from
 `agent-6b92725178a5/issue277-map-transitions` (a4786e8), which continues the
 `agent-1c6cb3aee7ac/cross-case-dramatic-map` lineage (1deb188, 0726dc1); integrated
-2026-10-14 on branch `agent-74338cc3344c/issue277-map-integration`). This revision keeps
-the two citation fixes from that lineage — the verification-tic entry for Case I is the clerk's
-line retold, not the narrator's own gesture, and Field Note #6 is not the collection's last
-note (the coda appends a "Field Note (last)") — and corrects a third: Case I's "write[s] down
-the useful parts and leave[s] some of the commentary out" is present tense in the manuscript.
+2026-10-14 on branch `agent-74338cc3344c/issue277-map-integration`; re-organized
+2026-10-14 on branch `agent-302fc3be0b46/issue277-cross-case-map-v2`). The 2026-10-14
+re-organization adds three things the board's updated direction calls for: an explicit
+**dramatic spine** (explanation → presence/emotion/myth/changed-relevance, new section), a
+per-case **deterioration ledger** making the narrator's decline observable across every arc
+(new table in §7), and an explicit **superseded acceptance-criterion** record (the retired
+"skeptic-readable surface" requirement). This revision keeps the two citation fixes from the
+earlier lineage — the verification-tic entry for Case I is the clerk's line retold, not the
+narrator's own gesture, and Field Note #6 is not the collection's last note (the coda appends a
+"Field Note (last)") — and keeps the third correction: Case I's "write[s] down the useful
+parts and leave[s] some of the commentary out" is present tense in the manuscript.
 Status: **diagnostic, directional, and delivery-aware**. It maps the current master
 manuscript, marks the repetitive machinery the issue diagnoses, records the 2026-10-13 human
 authorial direction, and (in "Delivery status and superseded directives" below) tracks which
@@ -18,6 +24,16 @@ owned by chapter issues (#278, #286, #287, #289, #293, #294, #295); local NOTE-b
 reconciliation is owned by #296. This map proposes case-local changes in §8 instead of
 applying them, and records cross-branch integration conflicts rather than resolving them
 unilaterally.
+
+**Superseded acceptance criterion (recorded, not silently rewritten).** Issue #277's
+original acceptance required a "skeptic-readable surface" across all cases. The 2026-10-13
+human authorial direction (commits 505fd5ea, 5cd4e52a) **supersedes that criterion**: from
+Case III onward the supernatural beings are real within the story, and the map no longer
+treats mundane alternatives as required. Cases I–II keep their sceptical surface because
+that surface is what earns the narrator's rational trust before the shift. The current
+authority is the live Intent Records in `docs/intent-records/story.md` and
+`docs/intent-records/editing.md`; this map encodes that direction rather than the retired
+criterion.
 
 ## How to read
 
@@ -33,6 +49,36 @@ Each section (prologue, I–VII, coda) records the seven required fields:
 - **(g)** what remains unexplained, and why it must remain so.
 
 "Master" citations quote the current manuscript. Node IDs cite `docs/meaning-graph.md`.
+
+## The dramatic spine: from explanation to presence
+
+The 2026-10-13 human direction does not add supernatural events; it moves the
+collection's centre of gravity. The cases are not seven iterations of "anomaly →
+reconstruction → qualification"; they are seven stations on a single migration:
+
+- **I–II earn rational trust.** Explanation is still the engine: the world is
+  indifferent or responsive, but ordinary causes remain intellectually available and
+  the narrator's scepticism is a strength, not a symptom. The reader learns to trust
+  his measurements before those measurements stop being neutral.
+- **III–IV shift to presence.** The demon and the green man are real beings within the
+  fiction. The question is no longer *whether* they exist but *what their existence
+  does* — to the developer who dreamed, to the operator who saw, to the fleet whose
+  proofs are gone. Emotional force and consequence replace sceptical qualification.
+- **V shifts to myth.** Mercury is a living mystical order, not a correlation to be
+  tested. The technical fault is only the doorway; the chapter inhabits astrology's
+  lore, timing and fate, and the narrator is converted by it.
+- **VI shifts to changed relevance judgments.** Nothing supernatural is claimed. The
+  horror is entirely internal: a man whose causal attention has been warped by the
+  previous cases now reads a clean null result as signal and cannot stop checking.
+- **VII is the mundane exception.** The crash is objectively ordinary and fully
+  explained — but the narrator no longer finds that sufficient. The comfort is gone
+  from ordinary answers.
+- **Coda embodies the change.** The transformed man is staged through ritual and
+  perception, not announced as a thesis.
+
+This spine is the map's organising principle. Each case below is filed under the stage
+it belongs to, and the per-case **(e)** fields double as a deterioration ledger (see
+§7).
 
 ## Applied transitional revisions (this branch)
 
@@ -449,6 +495,28 @@ ask it why" and the coda's pen stopped above the blank margin are the same gestu
 different temperatures — the prologue gesture is incuriosity; the coda gesture is ritual.
 No fourth gesture should imitate the 04:56 hesitation (Issue instruction: preserve it as
 exemplar).
+
+### Deterioration ledger — observable across the arcs
+
+The three decisions above are the load-bearing turns; the ledger below makes the whole
+descent observable case by case, so no two stages read as the same note. Each row is a
+behaviour the narrator did *not* have at the stage before.
+
+| Arc | Observable behaviour (this arc) | New since | Seeded by |
+|---|---|---|---|
+| Prologue | reads a log twice "as if the second look were the one that counted"; the hand stops above the key, unasked | — (baseline) | the uncommanded valve |
+| I Schaerbeek | discriminating and unhurried — "write[s] down the useful parts"; no field note that afternoon | baseline competence | (earns the trust the shift spends) |
+| II Heisenbug | "begun to dislike successful tests"; the 04:56 hesitation — a stop *before* measuring | suspicion → superstition | observation-sensitive reversals |
+| III Demon | says *demon* aloud in the tone of *race condition*, and does not stop | word-ownership | the being's presence |
+| IV Leprechaun | reads loop bounds twice; checks any diff touching a limit; "I do not tell anyone this is why" | first owned, unconfessed ritual | the team's paired-bound ritual |
+| V Mercury | treats a planetary position as a scheduling input; keeps a private retrograde calendar | records dates to *obey*, not to falsify | the perfect column; the operator's log |
+| VI Crocodile | disproportionate checks "in a column, with the time"; "cannot stop thinking about how clean that was" | warps a *null* result into signal | the clean boundary |
+| VII Rack C | packs a memory-testing drive a dead database has no use for; hopes it would be strange | dreads the ordinary | VI's clean result |
+| Coda | token check that "is not one at all"; a date ringed "without cause"; the pen stopped above the margin | permanent ritual; the frame closes | all of the above |
+
+The ledger is cumulative: each row presupposes the rows above it. The prologue gesture
+(incuriosity) and the coda gesture (ritual) are the same hand at different temperatures —
+that symmetry is the deterioration made visible.
 
 ## §8 Proposed case-local revisions (for owners — not applied by #277)
 
