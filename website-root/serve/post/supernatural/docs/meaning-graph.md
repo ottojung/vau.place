@@ -1842,823 +1842,571 @@ $n70953
 text: In the morning, when the first ferry's horn sounded, I wrote my note: *The thing hates to be watched*.
 intent: Advance the observation-sensitive evidence pattern: attempts to inspect the failure alter or erase the conditions under which it appears.
 style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n93738 and precedes $n23590. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note. The first ferry's horn pays off the dateline $n34300 and the quay light $n77536.
+continuity: Follows $n93738 and precedes $n19666. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note. The first ferry's horn pays off the dateline $n34300 and the quay light $n77536.
 
-$n23590
-text: Tell a made up story about a state that is extremely unlikely, though possible, to happen, but did happen.
-intent: Authorial directive for III. Maxwell’s Demon: constrain the case or manuscript according to the requirement stated in this sentence.
-style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n70953 and precedes $n33904. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
+$n19666
+text: The case's improbable event is a full SHA-256 collision between two genuinely distinct files, confirmed by witnesses, logs, and metadata while the files still exist; both files are then irrecoverably lost, and the loss is the case's irony rather than a problem to solve.
+intent: Authorial directive for III. Maxwell's Demon: fix the case's extraordinary event as a full SHA-256 collision between two genuinely distinct files, witnessed while they exist, then irrecoverably lost; the loss is the case's irony, not a problem to solve.
+style: Non-diegetic NOTE directive; precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: This is a live NOTE constraint for III. Maxwell's Demon and must remain consistent with AGENTS.md and the Intent Records.
 
-$n33904
-text: For example, an MD5 hash collision.
-intent: Authorial directive for III. Maxwell’s Demon: constrain the case or manuscript according to the requirement stated in this sentence.
-style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n23590 and precedes $n91416. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
+$n56847
+text: The demon is a real being within this fiction.
+intent: Authorial directive for III. Maxwell's Demon: the demon is genuinely real in the story; do not demote it to dream embellishment or audition its reality.
+style: Non-diegetic NOTE directive; precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: This is a live NOTE constraint for III. Maxwell's Demon and must remain consistent with AGENTS.md and the Intent Records.
 
-$n91416
-text: Then, add a legend that one of the developers saw a large, terrifying demon that appeared to him in a dream, and that demon told him that the server room is cursed.
-intent: Authorial directive for III. Maxwell’s Demon: constrain the case or manuscript according to the requirement stated in this sentence.
-style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n33904 and precedes $n27948. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
+$n25407
+text: A developer meets it in a dreamlike visitation, and it warns him that the server room is cursed.
+intent: Authorial directive for III. Maxwell's Demon: the visitation and its warning are the case's centre; the open question is what the being wants, not whether it is real.
+style: Non-diegetic NOTE directive; precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: This is a live NOTE constraint for III. Maxwell's Demon and must remain consistent with AGENTS.md and the Intent Records.
 
-$n27948
-text: Ideally, find a real world example of something extremely unlikely happening, and use that as the basis for the story.
-intent: Authorial directive for III. Maxwell’s Demon: constrain the case or manuscript according to the requirement stated in this sentence.
-style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n91416 and precedes $n32131. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
+$n27436
+text: Do not rationalize the visitation as an embellishment or audition its reality; the open question is what the being wants, not whether it is real.
+intent: Authorial directive for III. Maxwell's Demon: forbid the skeptical move the earlier draft made; ambiguity may concern the being's wants, never its existence.
+style: Non-diegetic NOTE directive; precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: This is a live NOTE constraint for III. Maxwell's Demon and must remain consistent with AGENTS.md and the Intent Records.
 
-$n32131
-text: Anchor the highly improbable event in a credible technical substrate and give its consequences tangible human weight before the dream seems prophetic.
-intent: Author-approved editorial direction for Maxwell; record the specific future narrative work stated in this sentence without making it diegetic exposition.
-style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n27948 and precedes $n50435. This is revision guidance for Maxwell, not a statement the narrator knows or says.
+$n61112
+text: Anchor the event in documented real-world precedent and a credible technical substrate, keeping factual sourcing and fictional invention distinguishable.
+intent: Authorial directive for III. Maxwell's Demon: ground the impossible event in real precedent (SHAttered, MD5) while keeping the invented SHA-256 collision clearly fictional.
+style: Non-diegetic NOTE directive; precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: This is a live NOTE constraint for III. Maxwell's Demon and must remain consistent with AGENTS.md and the Intent Records.
 
-$n50435
-text: Make the dream terrifying as an experience while preserving the possibility that its apparent prediction is retrospective pattern making rather than proof of a literal demon.
-intent: Author-approved editorial direction for Maxwell; record the specific future narrative work stated in this sentence without making it diegetic exposition.
-style: Non-diegetic NOTE, precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
-continuity: Follows $n32131 and precedes $n89210. This is revision guidance for Maxwell, not a statement the narrator knows or says.
+$n92691
+text: Technical details ground the stakes; they must not displace the demon's presence, the developer's terror, or the consequences.
+intent: Authorial directive for III. Maxwell's Demon: use SHA-256 specifics sparingly; they give the coincidence its shape but must not turn the chapter into actuarial calculation or mundane-error inquiry.
+style: Non-diegetic NOTE directive; precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: This is a live NOTE constraint for III. Maxwell's Demon and must remain consistent with AGENTS.md and the Intent Records.
+
+$n46643
+text: Supersedes the 2026-09-23 NOTE directives for this case per the human authorial direction of 2026-10-13 (Antonina board issue #287; story.md $id-8506027753346938).
+intent: Record the supersession of the earlier MD5/dream-ambiguity NOTE directives so the local constraint matches the current human authorial direction.
+style: Non-diegetic NOTE directive; precise and actionable; preserve restraint and the distinction between the author's intent and the narrator's voice.
+continuity: This is a live NOTE constraint for III. Maxwell's Demon and must remain consistent with AGENTS.md and the Intent Records.
 
 $n89210
 text: **A small hosting company, two rented halls.**
 intent: Open Case III with a dateline that resets place and time after Case II's private note.
 style: Non-diegetic dateline; terse place/time reset.
-continuity: Follows $n50435 and precedes $n14278. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n46643 and precedes $n14278. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n14278
 text: The last line in my notebook before this case was the note I brought back from the night I could not catch the hang: *The thing hates to be watched*.
 intent: Bridge from Case II by a state of mind (the earlier note still in the notebook) without claiming causation.
 style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n89210 and precedes $n24907. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n89210 and precedes $n24907. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n24907
-text: It was still there, in ink, when I first heard the story I am about to set down, a story about a man who dreamed of a demon and a fleet of machines that turned out to be fewer than they seemed.
+text: It was still there, in ink, when I first heard the story I am about to set down, a story about a man who slept in a server room where something did not sleep, and about two files that agreed with each other far more than they had any right to.
 intent: Bridge from Case II by a state of mind (the earlier note still in the notebook) without claiming causation.
 style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n14278 and precedes $n64779. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n14278 and precedes $n64779. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n64779
 text: I record the adjacency because it is true.
 intent: Bridge from Case II by a state of mind (the earlier note still in the notebook) without claiming causation.
 style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n24907 and precedes $n49531. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n49531
-text: I do not claim it means anything.
-intent: Bridge from Case II by a state of mind (the earlier note still in the notebook) without claiming causation.
-style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n64779 and precedes $n40548. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n24907 and precedes $n40548. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n40548
 text: I will not name the company.
 intent: Establish the anonymous composite company and the narrator's retrospective, documentary stance.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n49531 and precedes $n31860. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n64779 and precedes $n31860. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n31860
 text: It was small, it leased racks in two rented halls, and it ran a few hundred servers for customers who never saw them.
 intent: Establish the anonymous composite company and the narrator's retrospective, documentary stance.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n40548 and precedes $n14126. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n40548 and precedes $n14126. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n14126
-text: I came to it the way I come to most of these cases: after the fact, with the records already cold, to decide what could be established.
+text: I came to it the way I come to most of these cases: after the fact, with the records already cold, to decide what could be established and what could only be kept.
 intent: Establish the anonymous composite company and the narrator's retrospective, documentary stance.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n31860 and precedes $n46117. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n31860 and precedes $n46117. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n46117
 text: The room had a name on the door and nothing else about it was distinctive.
 intent: Establish the server room as a legible, ordinary place and plant the sensory palette the dream will deform.
 style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n14126 and precedes $n14974. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n14126 and precedes $n14974. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n14974
 text: Two rows of racks faced each other across a cold aisle; the hot aisle behind them was loud with the fans.
 intent: Establish the server room as a legible, ordinary place and plant the sensory palette the dream will deform.
 style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n46117 and precedes $n75794. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n46117 and precedes $n75794. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n75794
 text: The door did not latch unless you lifted it.
 intent: Establish the server room as a legible, ordinary place and plant the sensory palette the dream will deform.
 style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n14974 and precedes $n33852. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n14974 and precedes $n33852. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n33852
 text: The fans ran at a pitch that changed with the load, so the room had a kind of weather, and it smelled of hot dust and, faintly, of ozone.
 intent: Establish the server room as a legible, ordinary place and plant the sensory palette the dream will deform.
 style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n75794 and precedes $n00943. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n75794 and precedes $n00943. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n00943
 text: The only lights anyone noticed were the machines' own — green and amber constellations that no one looked at twice.
 intent: Establish the server room as a legible, ordinary place and plant the sensory palette the dream will deform.
 style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n33852 and precedes $n22824. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n33852 and precedes $n22824. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n22824
 text: One of the developers stayed late that night, finishing a migration that should have been done by six.
 intent: Introduce the night developer and the two divergent records of the night.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n00943 and precedes $n96960. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n00943 and precedes $n96960. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n96960
 text: I have his account, and I have the line he wrote the next morning, and they are not the same document.
 intent: Introduce the night developer and the two divergent records of the night.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n22824 and precedes $n03105. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n22824 and precedes $n03105. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n03105
 text: Alone after the others had gone, he worked from a crash cart by the middle rack.
 intent: Render the night shift's altered sound and cold so the dream has a real sensory source.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n96960 and precedes $n47791. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n96960 and precedes $n47791. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n47791
 text: The room at night had a different sound.
 intent: Render the night shift's altered sound and cold so the dream has a real sensory source.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n03105 and precedes $n37682. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n03105 and precedes $n37682. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n37682
 text: With the building's people gone, the fans became the loudest thing in the world, and the cold aisle was colder than it was by day, when bodies and open doors kept it mild.
 intent: Render the night shift's altered sound and cold so the dream has a real sensory source.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n47791 and precedes $n64171. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n47791 and precedes $n64171. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n64171
 text: He checked the time once and was surprised it was nearly three.
 intent: Render the night shift's altered sound and cold so the dream has a real sensory source.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n37682 and precedes $n66917. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n37682 and precedes $n66917. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n66917
 text: He slept at the cart, or believed he did.
 intent: Mark the transition into the dream and withhold a conventional narrative sequence.
 style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n64171 and precedes $n77563. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n64171 and precedes $n77563. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n77563
 text: What he reported is not a sequence but a set of certainties that arrived together.
 intent: Mark the transition into the dream and withhold a conventional narrative sequence.
 style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n66917 and precedes $n54410. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n66917 and precedes $n54410. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n54410
 text: The room was the same room.
 intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n77563 and precedes $n10506. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n77563 and precedes $n10506. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n10506
 text: The fans were the same fans.
 intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n54410 and precedes $n78083. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n54410 and precedes $n78083. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n78083
 text: But the aisle had lengthened, and the racks on either side had grown taller without gaining height, the way a corridor grows in a house you have not visited since childhood.
 intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
 style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
-continuity: Follows $n10506 and precedes $n54789. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n10506 and precedes $n54789. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n54789
 text: The cold was no longer cold; it was the pressure of something large standing very close.
 intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
 style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
-continuity: Follows $n78083 and precedes $n78243. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n78083 and precedes $n78243. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n78243
 text: He could not turn his head.
 intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n54789 and precedes $n45256. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n54789 and precedes $n45256. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n45256
 text: He knew, the way one knows a face in a dark doorway, that the room had an owner, and that he was the intruder in it.
 intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
 style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
-continuity: Follows $n78243 and precedes $n39284. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n78243 and precedes $n39284. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n39284
 text: The lights went out in a wave from the far end, constellation by constellation, and did not come back.
 intent: Make the dream terrifying as an experience through altered perception of ordinary infrastructure, not a monster catalogue.
 style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
-continuity: Follows $n45256 and precedes $n38833. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n45256 and precedes $n26400. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
+
+$n26400
+text: What stood at the end of the aisle where the last lights had been, he would not describe; he said only that it was large, and that it had been there before him and would be there after, and that it was patient.
+intent: Give the demon presence without description: the witness withholds its form and reports only size, priority, and patience, which is more frightening than any anatomy.
+style: Restrained first-person/observational prose; the triple 'that it was...' accumulation and the withheld description preserve the manuscript's preference for dread over depiction.
+continuity: Follows $n39284 and precedes $n38833. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n38833
 text: Something in the dark where the last lights had been said, without emphasis, that the server room was cursed.
 intent: Deliver the demon's flat curse sentence and preserve its vagueness and non-probativeness.
 style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
-continuity: Follows $n39284 and precedes $n49172. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n26400 and precedes $n49172. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n49172
 text: It did not explain.
 intent: Deliver the demon's flat curse sentence and preserve its vagueness and non-probativeness.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n38833 and precedes $n02710. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n38833 and precedes $n02710. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n02710
 text: It did not threaten.
 intent: Deliver the demon's flat curse sentence and preserve its vagueness and non-probativeness.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n49172 and precedes $n57432. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n49172 and precedes $n57432. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n57432
 text: The flatness was what stayed with him: the sentence was a fact being stated, the way you would state that the floor was load-bearing.
 intent: Deliver the demon's flat curse sentence and preserve its vagueness and non-probativeness.
 style: Uncanny diction arising from the narrator's perception of the real room, not generic horror vocabulary.
-continuity: Follows $n02710 and precedes $n71307. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n02710 and precedes $n71307. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n71307
 text: He woke with his cheek on the crash cart and the fans still running.
 intent: Show the fear persisting into waking through a small procedural act, without declaring emotion.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n57432 and precedes $n42544. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n57432 and precedes $n42544. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n42544
-text: He lifted the door into its latch, then read the last twenty minutes of the system log, which showed nothing, which was the only thing it could show.
+text: He lifted the door into its latch, then read the last twenty minutes of the system log.
 intent: Show the fear persisting into waking through a small procedural act, without declaring emotion.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n71307 and precedes $n65713. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n71307 and precedes $n00289. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
+
+$n00289
+text: At 02:47 the far-end circuits had shed their load for ninety seconds, one rack at a time, the way the lights had gone out in his dream; and the door he had lifted into its latch before he slept had been opened and closed once, at 02:51, and he had not moved.
+intent: Let the room's own log corroborate the dream: the load shed in the same wave pattern, and the door opened once while he slept, so the visitation has physical evidence he did not supply.
+style: Layered sentence with an internal turn or accumulation; the semicolon joins the two log facts; timestamps (02:47, 02:51) give the uncanny precision.
+continuity: Follows $n42544 and precedes $n65713. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n65713
 text: He went home.
 intent: Show the fear persisting into waking through a small procedural act, without declaring emotion.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n42544 and precedes $n60401. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n00289 and precedes $n60401. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n60401
 text: He did not tell anyone for two days.
 intent: Show the fear persisting into waking through a small procedural act, without declaring emotion.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n65713 and precedes $n42651. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n65713 and precedes $n42651. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n42651
 text: On the second morning he wrote it down, because he did not want to carry it alone.
 intent: Fix the terse, timestamped dream record as the documentary seed that hindsight will later expand.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n60401 and precedes $n25439. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n25439
-text: What he wrote was not the version I have just given.
-intent: Fix the terse, timestamped dream record as the documentary seed that hindsight will later expand.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n42651 and precedes $n48291. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n60401 and precedes $n48291. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n48291
 text: What he wrote, in the team's chat, was: *bad dream about the racks last night. the room felt wrong. not sure i slept.*
 intent: Fix the terse, timestamped dream record as the documentary seed that hindsight will later expand.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n25439 and precedes $n63840. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n42651 and precedes $n63840. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n63840
 text: The chat service logs the timestamp.
 intent: Fix the terse, timestamped dream record as the documentary seed that hindsight will later expand.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n48291 and precedes $n02981. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n48291 and precedes $n02981. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n02981
 text: That line is the only part of this case fixed in writing before anything was found.
 intent: Fix the terse, timestamped dream record as the documentary seed that hindsight will later expand.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n63840 and precedes $n45916. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n63840 and precedes $n74099. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n45916
-text: The duplicate was found weeks later by an operations engineer doing an ordinary thing.
-intent: Stage the discovery as incidental and unsought, per the design's trigger rule.
+$n74099
+text: I do not read the difference between that line and his account as something time supplied.
+intent: Refuse the hindsight-embellishment reading: the narrator declines to explain the gap between the chat line and the full account as memory enriching itself.
+style: Restrained first-person/observational prose; the negation is a choice, not a finding.
+continuity: Follows $n02981 and precedes $n73092. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
+
+$n73092
+text: Men write less in public than they carry.
+intent: Explain the gap between the terse chat line and the full account without demoting either: the man wrote less in public than he carried, not more in private than he wrote.
+style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
+continuity: Follows $n74099 and precedes $n10941. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
+
+$n10941
+text: What the room wrote that night, it wrote in its own log, and I have set it down above.
+intent: Attribute the night's second record to the room itself, keeping the narrator's evidentiary honesty while letting the room have an agency of its own.
+style: Restrained first-person/observational prose; the personification is quiet and factual, not announced.
+continuity: Follows $n73092 and precedes $n35462. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
+
+$n35462
+text: The collision was found three weeks later by a release engineer doing an ordinary thing.
+intent: Open the collision narrative with an ordinary actor doing an ordinary task, so the impossible event enters through procedure, not portent.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n02981 and precedes $n68284. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n10941 and precedes $n95018. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n68284
-text: She was adding a new machine to the fleet's internal configuration and pasting its host key into the file the team kept of machines it trusted.
-intent: Stage the discovery as incidental and unsought, per the design's trigger rule.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n45916 and precedes $n85802. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n95018
+text: She was verifying the second of two pilot builds — two different customers, built two months apart, on machines in different halls — and the checksum sheet gave her the same answer for both: the same full digest, sixty-four characters, character for character.
+intent: Establish the collision's first observation: two genuinely distinct builds produce the same full digest, and the em-dash aside fixes their distinctness before the sameness lands.
+style: Layered sentence with an internal turn or accumulation; the em-dash aside does the distinctness work; 'sixty-four characters, character for character' gives the coincidence its specific shape.
+continuity: Follows $n35462 and precedes $n76027. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n85802
-text: The line was already there.
-intent: Stage the discovery as incidental and unsought, per the design's trigger rule.
+$n76027
+text: She checked the sheet.
+intent: Record the first verification beat: the engineer re-checks the checksum sheet before trusting the result.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n68284 and precedes $n73482. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n95018 and precedes $n30140. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n73482
-text: The key she was about to add was identical to one already present, under a different hostname, on a machine in the other hall.
-intent: Stage the discovery as incidental and unsought, per the design's trigger rule.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n85802 and precedes $n19809. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n19809
-text: She checked the fingerprint against the machine in front of her, then against the machine in the other hall.
-intent: Let the duplicate survive the obvious re-reads and echo Case I's dry procedural dread.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n73482 and precedes $n27221. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n27221
-text: They matched.
-intent: Let the duplicate survive the obvious re-reads and echo Case I's dry procedural dread.
+$n30140
+text: She checked the build.
+intent: Record the second verification beat: the build itself is re-checked, not only the sheet.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n19809 and precedes $n45941. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n76027 and precedes $n60671. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n45941
-text: She read both again, the way the clerk in Schaerbeek had read both totals.
-intent: Let the duplicate survive the obvious re-reads and echo Case I's dry procedural dread.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n27221 and precedes $n01851. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n60671
+text: She ran `diff` first, because a hash that matches is usually a file that matches, and the two builds matched nothing: different sizes, different contents, a different customer's configuration compiled into the second.
+intent: Prove the files were different before they vanished: the `diff` shows different sizes, contents, and a different customer's configuration, so the collision is between distinct files, not one file on two paths.
+style: Layered sentence with an internal turn or accumulation; the colon introduces the distinctness evidence; backticked `diff` keeps the tool concrete.
+continuity: Follows $n30140 and precedes $n21857. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n01851
-text: Nobody in the room said the word yet.
-intent: Let the duplicate survive the obvious re-reads and echo Case I's dry procedural dread.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n45941 and precedes $n26714. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n21857
+text: She hashed the second build again, on a different machine, with a different tool, and got the same sixty-four characters.
+intent: Eliminate tool and machine error: a different machine and a different tool reproduce the same full digest, so the collision survives the obvious procedural objections.
+style: Restrained first-person/observational prose; the triple 'different' accumulation is the evidence.
+continuity: Follows $n60671 and precedes $n32666. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n26714
-text: There was no word for it that did not begin an incident.
-intent: Let the duplicate survive the obvious re-reads and echo Case I's dry procedural dread.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n01851 and precedes $n36233. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n32666
+text: She wrote the digest, both sizes, both timestamps, and the `diff` excerpt into the release ticket, and two colleagues stood beside her and watched her produce the same number twice.
+intent: Fix the firsthand confirmation while the files exist: the ticket records digest, sizes, timestamps, and the `diff` excerpt, and two colleagues witness the same number produced twice, so the evidence is concrete and witnessed before it is lost.
+style: Layered sentence with an internal turn or accumulation; the witnessed reproduction is the case's evidentiary high-water mark.
+continuity: Follows $n21857 and precedes $n32666HERE. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n36233
-text: They compared the key bytes, not only the fingerprints, in case the fingerprints had collided — they cannot, but they compared the bytes.
-intent: Show the duplicate surviving every check and remaining specific.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n26714 and precedes $n86258. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n86258
-text: They checked the timestamps on both key files.
-intent: Show the duplicate surviving every check and remaining specific.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n36233 and precedes $n12583. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n12583
-text: They tried a third machine, then a fourth.
-intent: Show the duplicate surviving every check and remaining specific.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n86258 and precedes $n93046. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n93046
-text: The fourth was unique.
-intent: Show the duplicate surviving every check and remaining specific.
+$n19984
+text: The ticket is still in the system.
+intent: State what survives: the release ticket with its record remains in the system.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n12583 and precedes $n81924. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n32666 and precedes $n31048. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n81924
-text: The duplicate was real and it was specific.
-intent: Show the duplicate surviving every check and remaining specific.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n93046 and precedes $n80724. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n31048
+text: The files are not.
+intent: State what does not survive in four words: both original files are gone, and the case's irony is that the only two proofs are the two things lost.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression; the juxtaposition with the previous sentence is the case's cruelest turn.
+continuity: Follows $n32666HERE and precedes $n87624. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n80724
-text: Here is what a shared host key means, before any of the rest of it.
-intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n81924 and precedes $n63895. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n87624
+text: A SHA-256 digest is two hundred and fifty-six bits, and the honest search for two files that share one runs to about two to the hundred and twenty-eighth trials, which is a number the observable universe does not have room for.
+intent: Give the coincidence its specific, astonishing shape: the birthday bound for a 256-bit digest is about 2^128 trials, a number the observable universe cannot host, so the event is fantastically improbable yet mathematically possible.
+style: Concrete procedural/technical diction; the scale contrast (digest size versus universe) is the sentence's work; keep it spare per the NOTE directive.
+continuity: Follows $n31048 and precedes $n67225. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n63895
-text: A host key is how a client knows which machine it is talking to.
-intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n80724 and precedes $n29397. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n67225
+text: No full SHA-256 collision has ever been announced; the digest is not MD5, not SHA-1, not truncated, and the two builds were never one file on two paths.
+intent: Keep the fiction honest about cryptographic history: no full SHA-256 collision is documented, and the event is not an MD5 collision, a truncated digest, or one file on two paths.
+style: Restrained first-person/observational prose; the semicolon-joined negations guard against misstating real cryptographic history.
+continuity: Follows $n87624 and precedes $n63552. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n29397
-text: If two machines share the private half, then anyone holding that key can be either machine, and the client will not warn, because the client is seeing the key it has always seen.
-intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n63895 and precedes $n71008. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n63552
+text: They were different files, and they were one file by the only measure the company had.
+intent: State the collision's exact shape: distinct by every measure the company could apply, identical by the only measure it trusted.
+style: Layered sentence with an internal turn or accumulation; the turn on 'the only measure the company had' is the case's technical irony.
+continuity: Follows $n67225 and precedes $n54748. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n71008
-text: The fleet's trust is not a property of the machines; it is a property of the keys, and the keys had stopped being plural.
-intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n29397 and precedes $n81126. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n81126
-text: If one machine was ever compromised, the compromise was already on both.
-intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n71008 and precedes $n97835. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n97835
-text: If the shared key had been a TLS key or a signing key, the danger would not have stopped at impersonation.
-intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n81126 and precedes $n38013. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n38013
-text: And no one could prove the key had never been used by someone else, because the only place that proof would live was the entropy state at first boot, and that state was gone.
-intent: Give the coincidence tangible human weight—impersonation, cascade, exposure—before any demon reading.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n97835 and precedes $n38732. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n38732
-text: I did the arithmetic on the back of the same notebook.
-intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n38013 and precedes $n31432. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n31432
-text: An Ed25519 public key is thirty-two bytes, two hundred and fifty-six bits.
-intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n38732 and precedes $n15964. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n15964
-text: If a key is drawn uniformly from that space, the chance that a second, specified machine reproduces the first is one in two to the two hundred and fifty-sixth, about eight point six times ten to the minus seventy-eighth.
-intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n31432 and precedes $n00749. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n00749
-text: I did not need the exact figure.
-intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n15964 and precedes $n25191. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n25191
-text: I needed its shape.
-intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
+$n54748
+text: Here is what that cost, before the rest of it.
+intent: Turn from the event to its consequences with a cost accounting that begins before the loss.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n00749 and precedes $n02741. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n63552 and precedes $n29195. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n02741
-text: The observable universe holds on the order of ten to the eightieth atoms and has existed for about four times ten to the seventeenth seconds.
-intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n25191 and precedes $n52015. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n29195
+text: The company's releases were trusted by their checksums; a customer could take a digest away and know, at the far end, what they were holding.
+intent: Establish what checksums were for: a customer could verify a release at the far end by its digest, so the digest was the company's whole assurance.
+style: Restrained first-person/observational prose; the semicolon joins the trust and its mechanism.
+continuity: Follows $n54748 and precedes $n71033. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n52015
-text: An event at ten to the minus seventy-eighth is not rare.
-intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n02741 and precedes $n75570. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n71033
+text: That assurance is now void in the worst possible way: not because a digest can be forged, but because two different things answer to the same one.
+intent: State the consequence precisely: the assurance fails not by forgery but by collision, so two different things answer to the same digest and the measure itself has stopped discriminating.
+style: Layered sentence with an internal turn or accumulation; the 'not because... but because...' turn is the sentence's work.
+continuity: Follows $n29195 and precedes $n84149. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n75570
-text: It is outside the reach of chance by dozens of orders of magnitude.
-intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n52015 and precedes $n62493. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n62493
-text: I wrote that down and underlined it, and then I wrote the sentence I did not want to write: chance is not the explanation.
-intent: Present the narrator's exact back-of-the-envelope probability that rules out chance.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n75570 and precedes $n48268. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n48268
-text: One of the engineers proposed the explanation the case is usually filed under.
-intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n62493 and precedes $n32630. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n32630
-text: Maybe it was a hash collision, he said — an MD5 collision, the classic impossible thing.
-intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n48268 and precedes $n75320. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n75320
-text: I understood the impulse; it is the example everyone reaches for.
-intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n32630 and precedes $n85310. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n85310
-text: It is also the wrong shape.
-intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
+$n84149
+text: The two pilots cannot be told apart by hash.
+intent: Give the collision its first concrete casualty: the two pilot builds are indistinguishable by hash.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n75320 and precedes $n66790. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n71033 and precedes $n96088. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n66790
-text: Practical MD5 collisions are not accidents; they are constructed, by people who want them, and by 2014 one could be produced for the price of a long lunch on a single rented GPU.
-intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n85310 and precedes $n94377. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n96088
+text: The signed bundles cannot be distinguished.
+intent: Extend the casualty to the signed bundles, so the collision reaches the company's signing practice, not only its checksums.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n84149 and precedes $n27814. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n94377
-text: An MD5 collision that merely happened would be evidence of a hidden cause, not of chance.
-intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n66790 and precedes $n50572. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n27814
+text: Any archive kept on the strength of a digest has stopped being evidence.
+intent: State the general loss: any archive kept because its digest matched is no longer evidence of anything, because the digest no longer discriminates.
+style: Restrained first-person/observational prose; the present perfect 'has stopped being' makes the loss ongoing.
+continuity: Follows $n96088 and precedes $n50057. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n50572
-text: And no accidental cryptographic collision has ever been observed at all.
-intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n94377 and precedes $n15742. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n50057
+text: The staging volume sat on a shelf in the room itself.
+intent: Place the lost volume inside the cursed room, so the loss has a location and the room keeps what it took.
+style: Restrained first-person/observational prose; the final phrase localizes the loss with quiet menace.
+continuity: Follows $n27814 and precedes $n17042. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n15742
-text: The duplicate was not a hash collision.
-intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n50572 and precedes $n97661. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n17042
+text: The files lasted eleven days.
+intent: Give the window between discovery and loss: eleven days is long enough to believe the evidence is kept and short enough that the loss feels timed.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n50057 and precedes $n28236. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n97661
-text: It was worse, because it was real.
-intent: Honor the NOTE's MD5 example as a foil and decline it as the wrong shape of improbability.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n15742 and precedes $n71888. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n28236
+text: The controller failed on a Thursday, and the replica, which the team had believed was on a second array, had been writing to the same controller for months; the nightly backup had always excluded the staging area as scratch.
+intent: Make the loss ordinary in every particular except its timing: a controller failure, a replica that was never on a second array, and a backup policy that excluded staging as scratch, so the disappearance needs no supernatural explanation and gets none.
+style: Layered sentence with an internal turn or accumulation; the semicolon joins the three ordinary failures; the relative clause carries the replica's irony.
+continuity: Follows $n17042 and precedes $n10134. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n71888
-text: The explanation, when it came, was mundane and sufficient.
-intent: Name the mundane, sufficient entropy-collapse cause.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n97661 and precedes $n92271. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n10134
+text: The recovery attempt returned nothing.
+intent: Close the recovery with nothing: the attempt returned nothing, so the loss is irrecoverable and the case's irony is complete.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
+continuity: Follows $n28236 and precedes $n28218. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n92271
-text: The key had almost certainly never been drawn from that space at all.
-intent: Name the mundane, sufficient entropy-collapse cause.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n71888 and precedes $n64757. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n28218
+text: What the engineers still have is the ticket: the digest, the sizes, the timestamps, the `diff` excerpt, the witnesses, and the log lines showing the same number produced twice on two machines.
+intent: Inventory the surviving evidence: the ticket holds the digest, sizes, timestamps, `diff` excerpt, witnesses, and log lines, which prove the finding was made and recorded but cannot re-prove it.
+style: Layered sentence with an internal turn or accumulation; the colon introduces the inventory; the list is the case's remnant.
+continuity: Follows $n10134 and precedes $n55025. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n64757
-text: Either it had been baked into the machine image, so that every machine built from that image inherited it, or the first boot had drawn it from an entropy pool that was not yet seeded — the boot-time hole in the Linux random number generator, documented for years, and worst on headless and virtualised machines that have no hardware random source and no disk activity to stir the pool.
-intent: Name the mundane, sufficient entropy-collapse cause.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n92271 and precedes $n45747. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n55025
+text: What they do not have is a file.
+intent: State the absence in parallel with the inventory: everything that proves they found it, and not the thing itself.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression; the parallel with the previous sentence is the case's structure.
+continuity: Follows $n28218 and precedes $n26025. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n45747
-text: In either case there had been no coincidence.
-intent: Name the mundane, sufficient entropy-collapse cause.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n64757 and precedes $n96831. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n26025
+text: I have read the ticket more than once, and each time it has said less.
+intent: Give the narrator's relationship to the remnant: each re-reading yields less, because the ticket proves the finding was recorded but cannot reproduce it.
+style: Restrained first-person/observational prose; the comparative 'less' is the sentence's work.
+continuity: Follows $n55025 and precedes $n08750. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n96831
-text: Two machines had not independently chosen the same secret.
-intent: Name the mundane, sufficient entropy-collapse cause.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n45747 and precedes $n15008. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n08750
+text: It proves that they found it, and that they recorded it, and that they believed it; it cannot prove it again, because the only instrument that could — the hash of the thing itself — has nothing left to hash.
+intent: State the remnant's exact evidentiary limit: the ticket proves discovery, recording, and belief, but cannot re-prove the collision, because the only instrument that could hash the thing itself has nothing left to hash.
+style: Layered sentence with an internal turn or accumulation; the triple 'that they...' accumulation and the em-dash aside give the limit its shape.
+continuity: Follows $n26025 and precedes $n76655. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n15008
-text: A hidden process had removed the choice.
-intent: Name the mundane, sufficient entropy-collapse cause.
-style: Exact technical diction; the arithmetic and sourcing must stay precise, not florid.
-continuity: Follows $n96831 and precedes $n01777. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n01777
-text: The engineers had a name for that class of bug, which I will use once and then leave alone.
-intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
-style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n15008 and precedes $n52707. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n52707
-text: They called it Maxwell's demon, after the thought experiment in which a small intelligence sorts fast molecules from slow ones and creates order where there should be none.
-intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
-style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n01777 and precedes $n08715. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n08715
-text: It is a fair name for a process that makes the unlikely certain.
-intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
-style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n52707 and precedes $n57184. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n57184
+$n76655
 text: The physicists' answer to the demon is that the sorting is never free: the order is paid for somewhere the ledger cannot see.
-intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
-style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n08715 and precedes $n61191. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+intent: Invoke the thought experiment's actual physics: Maxwell's demon's sorting is never free, and the order is paid for somewhere the ledger cannot see, which gives the engineers' nickname its real weight.
+style: Restrained first-person/observational prose; the colon introduces the physicists' answer; keep the physics allusive, not lecture-like.
+continuity: Follows $n08750 and precedes $n72509. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n61191
-text: So it was here.
-intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n57184 and precedes $n16395. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n72509
+text: The order here was two files made one, and the price was the files, paid at the end and recorded nowhere.
+intent: Apply the physics to the case: the order was two files made one, and the price was the files themselves, paid at the end and recorded nowhere, so the demon's ledger and the company's loss are the same entry.
+style: Layered sentence with an internal turn or accumulation; the parallel 'order... price... paid' structure joins the physics to the case.
+continuity: Follows $n76655 and precedes $n06278. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n16395
-text: The price of the duplicate key was the individuality of every machine that carried it, paid at provisioning and recorded nowhere.
-intent: Use Maxwell's demon once as the engineers' nickname and note the cost of order without a physics lecture.
-style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n61191 and precedes $n62155. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n06278
+text: The engineers had used the name for that class of event for years.
+intent: Give the nickname its history: the engineers had called events like this Maxwell's demon for years, without knowing what the name denoted.
+style: Restrained first-person/observational prose; the past perfect 'had used' gives the nickname its history.
+continuity: Follows $n72509 and precedes $n76146. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n62155
-text: The mechanism was sufficient, and it did not fit cleanly.
-intent: Pivot to contradictory evidence: the mechanism is sufficient but does not fit cleanly.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n16395 and precedes $n13949. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n13949
-text: Three things would not sit down.
-intent: Pivot to contradictory evidence: the mechanism is sufficient but does not fit cleanly.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n62155 and precedes $n65028. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n65028
-text: The first was that only the Ed25519 key was duplicated.
-intent: First contradiction: only the Ed25519 key is duplicated, so a simple image clone fails.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n13949 and precedes $n87804. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n87804
-text: The RSA, ECDSA, and DSA host keys on the same two machines were unique.
-intent: First contradiction: only the Ed25519 key is duplicated, so a simple image clone fails.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n65028 and precedes $n47039. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n47039
-text: A wholesale image clone — the obvious story — would have duplicated all of them.
-intent: First contradiction: only the Ed25519 key is duplicated, so a simple image clone fails.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n87804 and precedes $n82124. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n82124
-text: The duplicate was specific to one algorithm, which is not how a copied image behaves, and not how a fresh key generation behaves either.
-intent: First contradiction: only the Ed25519 key is duplicated, so a simple image clone fails.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n47039 and precedes $n57385. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n57385
-text: The second was the timestamps.
-intent: Second contradiction: the timestamps and image history disagree about when the key was made.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n82124 and precedes $n16112. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n16112
-text: The file time on the duplicated key said it had been generated at install.
-intent: Second contradiction: the timestamps and image history disagree about when the key was made.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n57385 and precedes $n19392. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n19392
-text: The package history and the image manifest said the algorithm that generated it had been present in the image before either machine was ordered.
-intent: Second contradiction: the timestamps and image history disagree about when the key was made.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n16112 and precedes $n21916. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n21916
-text: The two records disagreed about when the key had come into being.
-intent: Second contradiction: the timestamps and image history disagree about when the key was made.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n19392 and precedes $n94804. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n94804
-text: The third was that the machines had never been clones.
-intent: Third contradiction: the machines were never clones, falsifying the team's mental model.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n21916 and precedes $n13352. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n13352
-text: They stood in different halls, were ordered in different quarters, and were built for different roles.
-intent: Third contradiction: the machines were never clones, falsifying the team's mental model.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n94804 and precedes $n05098. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n05098
-text: The team's whole mental model was that each machine was its own.
-intent: Third contradiction: the machines were never clones, falsifying the team's mental model.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n13352 and precedes $n96334. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n96334
-text: The duplicate did not falsify that model so much as reveal that the model had never been checked.
-intent: Third contradiction: the machines were never clones, falsifying the team's mental model.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n05098 and precedes $n21915. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n21915
-text: When I looked, the condition was everywhere.
-intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n96334 and precedes $n71314. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n71314
-text: Between April and December 2015, Hetzner's preinstallation images shipped with a shared Ed25519 host key; the same fingerprint appeared on unrelated customers' servers, and the provider warned them of a man-in-the-middle risk.
-intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n21915 and precedes $n36617. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n36617
-text: Identically configured network routers and appliances have generated the same SSH private key when their entropy was starved, especially on units with no real disk to stir the pool.
-intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n71314 and precedes $n86710. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n86710
-text: A 2025 survey of one hosting provider found four hundred and seventy-eight distinct `ssh-rsa` host keys across nearly thirty thousand listeners, with a single key served by more than ten thousand addresses.
-intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n36617 and precedes $n01500. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n01500
-text: In 2012, Lenstra and others collected RSA moduli from the web and found that roughly two in a thousand shared a prime factor with another modulus — an event whose probability under true randomness is small enough that it should never have been observed once.
-intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n86710 and precedes $n87309. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n87309
-text: Heninger and others, the same year, found the same class of failure across the network and traced much of it to that boot-time entropy hole.
-intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n01500 and precedes $n35362. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n35362
-text: In 2008, a one-line change to Debian's OpenSSL had reduced the generator to about thirty-two thousand possible states, and keys collided across the world for two years.
-intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n87309 and precedes $n04534. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n04534
-text: One cursed room was a worldwide condition, and had been for as long as machines had been trying to be random.
-intent: Escalate from one cursed room to a documented worldwide condition, citing real incidents.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n35362 and precedes $n62969. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n76146
+text: They had not known the name was a room.
+intent: Close the nickname's arc: the engineers had not known the name was a room, so the thought experiment's demon and the server room's owner are the same being, and the name was literal all along.
+style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression; the final phrase is the case's quietest and most frightening turn.
+continuity: Follows $n06278 and precedes $n62969. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n62969
 text: The dream came back to me near the end, the way an unclosed bracket comes back.
 intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n04534 and precedes $n50361. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n76146 and precedes $n52214. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n50361
-text: Someone on the team mentioned it, and by then it had grown.
-intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n62969 and precedes $n30442. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n52214
+text: He had been warned that the room was cursed, and the room had taken the only proof that could have established what happened, and the taking was ordinary in every particular except its timing.
+intent: Join the warning to the loss: the room was warned against, the room took the only proof, and the taking was ordinary except in its timing, so the curse and the loss are the same event seen from two sides.
+style: Layered sentence with an internal turn or accumulation; the triple 'and' joining makes the sequence feel fated; 'ordinary in every particular except its timing' is the case's irony.
+continuity: Follows $n62969 and precedes $n91000. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n30442
-text: The chat line — *bad dream about the racks* — had become, in the retelling, a large demon that stood at the end of the cold aisle and told the night developer the room was cursed.
-intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n50361 and precedes $n96369. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+$n91000
+text: I do not know what the being wanted.
+intent: State the case's remaining uncertainty precisely: not whether the demon is real, but what it wanted, which is the only question the evidence cannot answer.
+style: Restrained first-person/observational prose; the uncertainty is real but bounded, per the NOTE directive.
+continuity: Follows $n52214 and precedes $n74182. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n96369
-text: I put the two versions side by side.
-intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n30442 and precedes $n05616. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n05616
-text: The written record is four lines and names nothing.
-intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n96369 and precedes $n22707. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n22707
-text: The retelling is specific: a figure, the dark, the sentence.
-intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n05616 and precedes $n91992. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n91992
-text: The specificity is exactly what the written record lacks, and exactly what hindsight would supply.
-intent: Resurface the dream as a later, richer legend and juxtapose it with the terse original record.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n22707 and precedes $n84720. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n84720
-text: I have not decided.
-intent: Have the narrator refuse a verdict: chance is ruled out, the mechanism is sufficient, the dream is untouched.
+$n74182
+text: I know what it said.
+intent: Answer the uncertainty with the one thing the record fixes: the warning itself, that the server room is cursed.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n91992 and precedes $n72113. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n91000 and precedes $n51192. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
-$n72113
-text: I can rule out chance, and I have; I can name the mechanism, and I have; I can show that the mechanism is sufficient, and it is.
-intent: Have the narrator refuse a verdict: chance is ruled out, the mechanism is sufficient, the dream is untouched.
-style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n84720 and precedes $n48493. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n48493
-text: None of that touches the dream, because the dream does not have to be true to have been written first, and being written first does not make it true.
-intent: Have the narrator refuse a verdict: chance is ruled out, the mechanism is sufficient, the dream is untouched.
-style: Layered sentence with an internal turn or accumulation; preserve cadence and contrast.
-continuity: Follows $n72113 and precedes $n41987. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n41987
-text: I computed the probability a second time, on a different day, as if I expected a different answer.
-intent: Show the private residue: the narrator recomputes and begins to speak of the demon without stopping.
-style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n48493 and precedes $n95956. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
-
-$n95956
-text: It was the same.
-intent: Show the private residue: the narrator recomputes and begins to speak of the demon without stopping.
+$n51192
+text: I know what was taken.
+intent: Answer the uncertainty with the second thing the record fixes: the files, the only two proofs, are gone.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n41987 and precedes $n16507. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n74182 and precedes $n74099ERENCE. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
+
+$n31039
+text: The difference between those two is the whole case.
+intent: Close the case's analytical frame: the difference between what the being wanted and what was taken is the whole case, so the reader holds the warning and the loss together and cannot resolve them.
+style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
+continuity: Follows $n51192 and precedes $n38418. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
+
+$n38418
+text: The developer does not work late in that room anymore.
+intent: Show the consequence in behaviour: the developer who slept in the room no longer works late in it, so the visitation changed him permanently.
+style: Restrained first-person/observational prose; the present simple 'does not work' makes the change ongoing.
+continuity: Follows $n74099ERENCE and precedes $n75936. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
+
+$n75936
+text: He asked for days, and the company, which had only just understood what it had lost, did not argue.
+intent: Give the change its cost and its witness: he asked for days, and the company, having just understood what it lost, did not argue, so the loss is acknowledged on both sides.
+style: Layered sentence with an internal turn or accumulation; the relative clause carries the company's belated understanding.
+continuity: Follows $n38418 and precedes $n38869. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
+
+$n38869
+text: He verifies a digest twice now, and writes the number down before he archives anything, and keeps the printout, though he and I both know that a written digest is not a file and cannot prove what the file was.
+intent: Give the developer his own ritual: he verifies twice, writes the number down, and keeps the printout, knowing a written digest is not a file and cannot prove what the file was, so the ritual is both necessary and known to be insufficient.
+style: Layered sentence with an internal turn or accumulation; the 'though' clause is the ritual's private irony; this is the case's behavioural residue in another man.
+continuity: Follows $n75936 and precedes $n16507. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n16507
-text: I noticed that I had begun to say the word *demon* aloud, in the same tone I use for *race condition*, and that I did not stop.
+text: I have begun to say the word *demon* in a register I do not use for *race condition*, and I do not stop.
 intent: Show the private residue: the narrator recomputes and begins to speak of the demon without stopping.
 style: Restrained first-person/observational prose; concrete procedural detail.
-continuity: Follows $n95956 and precedes $n71110. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n38869 and precedes $n71110. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n71110
 text: **Field Note #2.
 intent: Close with a private, short field note that leans toward the numinous without asserting it.
 style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
-continuity: Follows $n16507 and precedes $n26660. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n16507 and precedes $n26660. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n26660
-text: The machines were never as many as they looked.
+text: The proof was the file; the file is gone.
 intent: Close with a private, short field note that leans toward the numinous without asserting it.
 style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
-continuity: Follows $n71110 and precedes $n25371. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n71110 and precedes $n25371. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n25371
-text: I keep the terse version and the rich one in the same folder.**
+text: I keep the digest and the absence in the same folder.**
 intent: Close with a private, short field note that leans toward the numinous without asserting it.
 style: Aphoristic field-note register; compressed, grave, and memorable without explanatory follow-up.
-continuity: Follows $n26660 and precedes $n35689. Maintain Case III escalation: ordinary night → dream/legend → impossible duplicate → ruled-out chance → sufficient entropy cause → unresolved contradictions → documented scale → refusal and private residue.
+continuity: Follows $n26660 and precedes None. Maintain Case III escalation: ordinary night → lengthened aisle and the real demon → witnessed full SHA-256 collision between distinct files → both originals lost → evidence that cannot re-prove itself → lasting behavioral residue.
 
 $n35689
 text: Tell a made up story of how actual Leprechaun from Irish folklore broke into the server room at night and "moved the loop bounds" (loop as in "a for-loop") by one.
@@ -5267,55 +5015,25 @@ $n17075
 text: No specific incident is claimed.
 intent: Withhold any documentary claim for the prologue incident, preventing invention from reading as fact.
 style: Terse disclaimer.
-continuity: Follows $n15804 and precedes $n21836. Preserves the evidence boundary before the next endnote.
+continuity: Follows $n15804 and precedes $n86402. Preserves the evidence boundary before the next endnote.
 
-$n21836
-text: 7. **Duplicate SSH host keys and weak key generation (Case III).**
-intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
-style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n17075 and precedes $n49347. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+$n86402
+text: 7. **Collision precedent for Case III.**
+intent: Introduce an endnote that marks Case III's central event as invented and points to the documented precedent, preserving the evidence boundary.
+style: Documentary endnote label; concise and factually bounded.
+continuity: Follows $n17075 and precedes $n46695. Keeps the fictional collision distinct from the documented SHA-1 and MD5 precedents.
 
-$n49347
-text: The fictional fleet is a composite; the phenomena are documented.
-intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
-style: Documentary endnote prose; concise and factually bounded.
-continuity: Follows $n21836 and precedes $n05554. Must keep documented fact distinct from fictional reconstruction and narrator inference.
-
-$n05554
-text: Hetzner's preinstallation images contained a shared Ed25519 host key between April and December 2015. ([hannob/ed25519hetzner][8]) ([intevation][9])
-intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
-style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n49347 and precedes $n60036. Must keep documented fact distinct from fictional reconstruction and narrator inference.
-
-$n60036
-text: A 2025 survey of one hosting provider found 478 distinct `ssh-rsa` host keys across 29,776 listeners, with a single key served by more than 10,000 addresses. ([APNIC][10])
-intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
-style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n05554 and precedes $n17317. Must keep documented fact distinct from fictional reconstruction and narrator inference.
-
-$n17317
-text: Lenstra et al. (2012) found that roughly two in a thousand RSA moduli collected from the web shared a prime factor with another modulus. ([IACR ePrint 2012/064][11])
-intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
-style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n60036 and precedes $n10539. Must keep documented fact distinct from fictional reconstruction and narrator inference.
-
-$n10539
-text: Heninger et al. (2012) found the same class of failure at Internet scale and traced much of it to a boot-time entropy hole in the Linux random number generator. ([USENIX Security 2012][12])
-intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
-style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n17317 and precedes $n45429. Must keep documented fact distinct from fictional reconstruction and narrator inference.
-
-$n45429
-text: Debian's 2008 OpenSSL flaw reduced key generation to about 32,768 possible states, and weak keys persisted until the fix was deployed. ([DSA-1571][13]) ([CVE-2008-0166][14])
-intent: Document the factual source boundary, provenance, or status of a real incident used by the fictional dossier.
-style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n10539 and precedes $n68901. Must keep documented fact distinct from fictional reconstruction and narrator inference.
+$n46695
+text: Case III's central event is invented: two genuinely distinct files producing the same full SHA-256 digest, and no such collision has been announced or observed; the documented precedent is the 2017 SHAttered demonstration, in which two distinct PDF files produced the same full SHA-1 digest, and the older precedent is MD5, against which chosen-prefix collisions have been constructed since 2004, including the 2009 rogue certificate authority. ([SHAttered][19])
+intent: Keep documented fact and fictional invention distinguishable: no full SHA-256 collision is documented, while SHAttered (2017, two distinct PDFs, same full SHA-1 digest) and MD5 chosen-prefix collisions (since 2004, including the 2009 rogue CA) are real.
+style: Documentary endnote prose with citations; the semicolon joins the invented event and the documented precedents.
+continuity: Follows $n86402 and precedes $n68901. Replaces the stale duplicate-host-key endnote; sources [8]-[14] were removed with it and [19] (SHAttered) added.
 
 $n68901
 text: 8. **Documented precedent: a crocodilian in the Donaukanal.**
 intent: Anchor the fictional event in documented fact; the 2001 caiman is real and verifiable; the endnote is the factual substrate.
 style: Bold endnote heading fragment; documentary register.
-continuity: Follows $n45429 and precedes $n32543. Provides the documented precedent for the fictional crocodile event. The Donaukanal connects to the case's geography.
+continuity: Follows $n46695 and precedes $n32543. Provides the documented precedent for the fictional crocodile event. The Donaukanal connects to the case's geography.
 
 $n32543
 text: In July 2001, Vienna firefighters caught a small spectacled caiman in the Donaukanal near the Erdbergbrücke and took it to Schönbrunn Zoo; the animal was later transferred to a zoo in Luxembourg, where it died of infection.
