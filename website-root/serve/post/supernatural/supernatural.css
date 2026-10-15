@@ -130,11 +130,11 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
 .story th, .story td { padding: 10px 13px; border-bottom: 1px solid var(--line); text-align: left; }
 .story th { font-weight: 700; color: var(--accent-deep); }
 .story a { overflow-wrap: anywhere; text-decoration-thickness: .7px; }
-.story h2#endnotes-and-sources {
+.story h2#authors-notes-and-sources {
   margin-top: 90px; border-top: 1px solid var(--line);
   padding-top: 43px; font-size: 1.65rem;
 }
-.story h2#endnotes-and-sources ~ ol { font-size: .92rem; line-height: 1.75; }
+.story h2#authors-notes-and-sources ~ ol { font-size: .92rem; line-height: 1.75; }
 .article-foot {
   margin-top: 115px; border-top: 1px solid var(--line);
   padding-top: 38px; text-align: center; font-family: var(--font-ui);

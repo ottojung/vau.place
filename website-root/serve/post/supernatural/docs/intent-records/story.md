@@ -4,7 +4,7 @@ date: 2026/09/23
 source: @ottojung
 kind: requirement
 
-The work is a dossier-like collection with a prologue, exactly seven principal case files, and a coda. The seven current cases are the Schaerbeek bit, the Heisenbug, Maxwell's Demon, the Leprechaun of Off-by-One, Mercury in Retrograde, the Crocodile in Vienna, and the deliberately natural boring crash. Small supporting anecdotes such as the Mark II moth may appear inside a case without becoming additional principal case files.
+The work is a dossier-like collection with a prologue, exactly seven principal case files, and a coda. The seven current cases are the Schaerbeek bit, the Heisenbug, Maxwell's Demon, the Visitor in the Cold Aisle (the leprechaun episode), Mercury in Retrograde, the Crocodile in Vienna, and the deliberately natural boring crash. Small supporting anecdotes such as the Mark II moth may appear inside a case without becoming additional principal case files.
 
 $id-9264982270043622
 title: Narrator moves from technical confidence to uncanny experience
@@ -60,7 +60,7 @@ date: 2026/10/15
 source: @ottojung
 kind: requirement
 
-A genuinely strange visitor appears in the server room, but the operator is uncertain about its height, clothing, colour and face. Another person's teasing guess of 'leprechaun' provokes ridicule, shame and the witness's silence. Avoid a definitive costume inventory or a narrator who declares this is not a legend. The altered loop bound is one disturbing consequence, not a code-provenance mystery. The being remains real within the fictional world despite uncertain perceptions.
+A genuinely strange visitor appears in the server room, but the operator is uncertain about its height, clothing, colour and face. Another person's teasing guess of 'leprechaun' provokes ridicule, shame and the witness's silence. Avoid a definitive costume inventory or a narrator who declares this is not a legend. The altered loop bound is one disturbing consequence, not a code-provenance mystery. The being remains real within the fictional world despite uncertain perceptions. The public case heading must not name the leprechaun before the coworkers say it; otherwise the reader joins their ridicule before hearing the witness.
 
 $id-7062117495708504
 title: Mercury as an extravagant lived occult experience
@@ -68,7 +68,7 @@ date: 2026/10/15
 source: @ottojung
 kind: requirement
 
-Mercury in Retrograde must be a wild, immersive mystical story, with an astrologer, planetary correspondences, strange rituals, impossible messages, prophecy and felt changes in causality. The technical bug merely opens the door. No charts proving statistical correlation, retrograde-date calculations or rational alternative explanations should dominate. Dread and wonder transform the narrator through a lived encounter.
+Mercury in Retrograde must be a wild, immersive mystical story, with an astrologer, planetary correspondences, strange rituals, impossible messages, prophecy and felt changes in causality. The technical bug merely opens the door. No charts proving statistical correlation, retrograde-date calculations or rational alternative explanations should dominate. Dread and wonder transform the narrator through a lived encounter. Visible impossible happenings, including the moving coin and telephone, are deliberate rather than mistakes requiring rationalization: do not weaken the magic. Make occult detail specific to Mercury as messenger rather than generic stage dressing.
 
 $id-2221791653068770
 title: Crocodile reveals the narrator's subtle paranoia

@@ -46,7 +46,7 @@ for(const [ix,line] of novel.split('\n').entries()){
  if(fenced)continue;
  if(trimmed.startsWith('## Prologue')){section='prologue';continue;}
  if(trimmed.startsWith('## Coda')){section='coda';continue;}
- if(trimmed.startsWith('## Endnotes')){section='sources';continue;}
+ if(trimmed.startsWith("## Author's Notes")){section='sources';continue;}
  const roman=trimmed.match(/^### ([IVX]+)\.\s/);
  if(roman){section=romanToSection[roman[1].toLowerCase()];continue;}
  if(!trimmed||/^#{1,6} /.test(trimmed)||/^---+$/.test(trimmed)||/^\|/.test(trimmed)

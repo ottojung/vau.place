@@ -44,3 +44,26 @@ test('page has meaningful semantics and mobile navigation', () => {
   assert.ok(html.includes('<meta name="viewport"'));
   assert.ok(html.includes('rel="canonical"'));
 });
+
+test('the witness is not labelled by the case title before the joke', () => {
+  assert.ok(html.includes('<h3 id="case-iv">IV. The Visitor in the Cold Aisle</h3>'));
+  assert.ok(html.includes("IV · The Visitor"));
+  assert.doesNotMatch(visible, /<h3 id="case-iv">[^<]*Leprechaun/);
+});
+
+test('Mercury retains overt magic while using messenger-specific imagery', () => {
+  assert.ok(visible.includes('The coin travelled toward the operator'));
+  assert.ok(visible.includes('I heard myself asking for the operator by name'));
+  assert.ok(visible.includes('Wooden pigeonholes climbed to the ceiling'));
+  assert.ok(visible.includes('A timetable'));
+});
+
+test('source apparatus identifies itself as authorial and cites fictional cases', () => {
+  assert.ok(html.includes('<h2 id="authors-notes-and-sources">'));
+  assert.ok(visible.includes("These notes are outside the narrator"));
+  assert.ok(visible.includes('The visitor in the cold aisle.'));
+  assert.ok(visible.includes('Mercury in Retrograde.'));
+  assert.ok(html.includes('www.gutenberg.org/ebooks/33887'));
+  assert.ok(html.includes('openlibrary.org/books/OL18675930M'));
+  assert.doesNotMatch(visible, /Use as a pointer|mock citations/);
+});
