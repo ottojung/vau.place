@@ -131,7 +131,7 @@ What follows is his account of that day. He did not tell it in order, but I will
 
 The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and a carpet whose pattern is an argument against democracy.
 
-He had been sent there as technician, a word expansive enough to cover whatever had not yet been assigned to the others. On his table lay the checklist: confirm serial numbers, confirm counters at zero, confirm seals intact; note every confirmation in ink, sign where indicated. Two party representatives sat near the door. A schoolteacher seconded as a watcher stood where she could see both the machines and the clerks and seemed unsure which of them constituted the real work.
+He had been sent there as technician, a word expansive enough to cover whatever had not yet been assigned to the others. On his table lay the checklist: confirm serial numbers, confirm counters at zero, confirm seals intact; note every confirmation in ink, sign where indicated. Two party representatives sat near the door. The bureau had a president, seconded for the day from the commune, whose signature would certify the count. She had signed returns in Schaerbeek for eleven years; in that district a signed return was the count. A schoolteacher seconded as a watcher stood where she could see both the machines and the clerks and seemed unsure which of them constituted the real work.
 
 Voting itself went normally. He answered questions, checked displays, and waited for something to require him.
 
@@ -160,6 +160,8 @@ $$
 $$
 
 The candidate's preference count should never rise above the list total. In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
+
+The president asked the technician, quietly, whether she could sign. He understood the question: not whether the number was right, but whether the machine could be vouched for. He said he could not vouch for it. She held her pen over the box where the count would go. The figure the machine had printed would certify a contradiction; any other figure would alter the record; an empty box would fail to certify the district. She wrote the machine's figure, drew one line through it, wrote the corrected figure beside it, and initialled the correction. Then she asked the two representatives to witness it. One did. The other looked at the struck figure for a long time, and put down his pen without signing.
 
 Eventually somebody used the word *error*, and the formal investigation began.
 
@@ -207,7 +209,9 @@ Later retellings usually supplied ionizing radiation, and newspapers condensed t
 
 One clerk later admitted that he would have preferred a boring human mistake. A human mistake belonged somewhere: to a hand, a tired eye, a copied line. It could be found and corrected. He did not say this during the investigation. If human error returned to the list of possibilities, he himself was one of the humans available.
 
-When he finished, the cafeteria had thinned and our coffee had gone cold. He meant, I think, that we must act as if the world intends this sort of interruption, because the world does not intend otherwise.
+The president was summoned to explain the correction. A figure struck through in ink is what a forged count looks like; she answered questions for two days about the one she had struck, and in the end the correction was accepted, the district certified, and no one accused of anything. She did not speak to the technician again.
+
+When he finished, the cafeteria had thinned and our coffee had gone cold. He straightened the sugar packet, which did not need straightening, and did not look up.
 
 At the time I heard an engineer's argument about preparation, nothing more. We do not fight the weather, he said; we prepare for it. The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
 
@@ -222,6 +226,8 @@ There is an older photograph I keep in a folder called *Proofs I Do Not Argue Wi
 The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” I like the page because it makes an engineering superstition almost literal: give the failure a name, and perhaps you can banish it. Here they could do both—call it a bug, pull it from the relay, and tape it beside the record. ([National Museum of American History][1])
 
 The moth looks unconvinced.
+
+When he left, at the door, he asked me not to write down what became of her. I said I would not, and I have not, and the page I would have written it on is the one page in the dossier I have never been able to fill.
 
 ---
 
@@ -307,11 +313,15 @@ One of the others asked what I was waiting for.
 
 It showed a process already asleep in the expected wait. It told us where the body lay, not how it had fallen.
 
+One measurement remained that might have worked: a quieter instrument, one that watched from the kernel without stopping the process, set up on the live system with a real order on the line. It might still have moved the schedule; the order might have been the one that hung. Either way the artifact would have been paid for by a customer. I did not set it up.
+
 By 05:18 the production traffic had thinned and reproduction slowed with it. With the traffic gone, the room came back to us: the fans settling into a lower gear, a chair leg ticking as the building cooled, one of the others asleep under his coat. We stopped because a night shift can end without an investigation ending.
 
 Nothing was fixed. The day shift would come in to machines we could not vouch for. We had only learned which forms of attention the failure appeared to tolerate.
 
 In the morning, when the first ferry's horn sounded, I wrote my note: *The thing hates to be watched*.
+
+The test is still there to run, and it still costs a customer's order. I have not spent it. The seventh row of the table is still blank, and I still check it.
 
 ---
 

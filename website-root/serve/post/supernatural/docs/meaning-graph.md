@@ -810,13 +810,25 @@ $n99437
 text: Two party representatives sat near the door.
 intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n68009 and precedes $n91521. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n68009 and precedes $n35554. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+
+$n35554
+text: The bureau had a president, seconded for the day from the commune, whose signature would certify the count.
+intent: Introduce a specific institution/person whose authority depends on the count being trustworthy, so the anomaly's cost is human and procedural before the technical reconstruction peaks.
+style: Plain declarative; "whose signature would certify the count" makes the stake concrete without editorializing.
+continuity: Follows $n99437 and precedes $n48358. Sets up the president's choice at $n29099 and the rupture at $n77612; "seconded for the day from the commune" places responsibility in an institution rather than on the narrator.
+
+$n48358
+text: She had signed returns in Schaerbeek for eleven years; in that district a signed return was the count.
+intent: Establish the president's long personal credibility and make the signed return equivalent to the count, so publication, silence, or correction each risks that credibility.
+style: Two-part declarative with a semicolon; the second clause is deliberately flat and grave.
+continuity: Follows $n35554 and precedes $n91521. The eleven years of signatures are the trust that the later correction ($n65201) and investigation ($n03536) will spend.
 
 $n91521
 text: A schoolteacher seconded as a watcher stood where she could see both the machines and the clerks and seemed unsure which of them constituted the real work.
 intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
 style: Concrete procedural/technical diction; preserve specificity while allowing uncanny implications to arise from the facts.
-continuity: Follows $n99437 and precedes $n33677. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n48358 and precedes $n33677. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n33677
 text: Voting itself went normally.
@@ -966,13 +978,67 @@ $n91363
 text: In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
 intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
 style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n92381 and precedes $n53971. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n92381 and precedes $n29099. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+
+$n29099
+text: The president asked the technician, quietly, whether she could sign.
+intent: Stage the case's one concrete decision — whether the count can be certified — as a private question between the person who must sign and the person who can vouch for the machine.
+style: Short, quiet sentence; "quietly" keeps the stakes from becoming theatrical.
+continuity: Follows $n91363 and precedes $n56128. Opens the publication/silence/correction dilemma; the president's authority set up at $n35554 is now directly at risk.
+
+$n56128
+text: He understood the question: not whether the number was right, but whether the machine could be vouched for.
+intent: Clarify the actual choice: not arithmetic but the trustworthiness of the signal's source.
+style: Colon structure defining the question; procedural and precise.
+continuity: Follows $n29099 and precedes $n05563. Distinguishes the president's immediate credibility problem from the narrator's later epistemic worry.
+
+$n05563
+text: He said he could not vouch for it.
+intent: Have the technician refuse to lend his authority to the machine, forcing the president to decide alone.
+style: Short flat declarative; the refusal is the emotional pivot.
+continuity: Follows $n56128 and precedes $n89722. The technician's refusal seeds the rupture revealed at $n77612.
+
+$n89722
+text: She held her pen over the box where the count would go.
+intent: Make the choice physical and visible: the pen above the official box is the moment before the record is committed.
+style: Single concrete image; no interiority, so the reader watches the hand.
+continuity: Follows $n05563 and precedes $n96001. The pen/box image is the case's concrete decision point and the origin of the struck figure.
+
+$n96001
+text: The figure the machine had printed would certify a contradiction; any other figure would alter the record; an empty box would fail to certify the district.
+intent: Lay out publication, correction, and silence as three distinct risks to credibility, so the reader understands the stakes before the technical reconstruction resumes.
+style: Three-part parallel clause with semicolons; analytic but grounded in the physical box.
+continuity: Follows $n89722 and precedes $n65201. Names the three options; the president chooses one in the next sentence.
+
+$n65201
+text: She wrote the machine's figure, drew one line through it, wrote the corrected figure beside it, and initialled the correction.
+intent: Show the choice as an observable action with a visible trace, rather than an authorial moral.
+style: Serial verbs, one motion; the struck figure is the case's lasting specific image.
+continuity: Follows $n96001 and precedes $n45484. The struck correction is what later reads as forgery at $n92831 and echoes the unfilled page at the case's close ($n01924).
+
+$n45484
+text: Then she asked the two representatives to witness it.
+intent: Involve the party representatives so the correction's credibility depends on others' assent, not only the president's hand.
+style: Short declarative; the request for witnesses raises the procedural stakes.
+continuity: Follows $n65201 and precedes $n31890. Sets up the refused countersignature in the next sentence.
+
+$n31890
+text: One did.
+intent: Mark partial assent, so the record is neither clean nor wholly rejected.
+style: Two-word beat; compression increases the tension.
+continuity: Follows $n45484 and precedes $n59983. First of the two witness responses.
+
+$n59983
+text: The other looked at the struck figure for a long time, and put down his pen without signing.
+intent: Make the damage observable: a witness refuses to countersign the struck return, converting the correction into a contested record.
+style: Concrete gesture; the withheld signature is the visible consequence.
+continuity: Follows $n31890 and precedes $n53971. The refused signature is the first consequence of the president's choice; it forces the word "error" and the investigation at $n53971.
 
 $n53971
 text: Eventually somebody used the word *error*, and the formal investigation began.
 intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
 style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n91363 and precedes $n91901. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n59983 and precedes $n91901. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n91901
 text: The technician checked the machine and the media again.
@@ -1224,19 +1290,37 @@ $n42626
 text: If human error returned to the list of possibilities, he himself was one of the humans available.
 intent: Advance the reconstructed voting anomaly and its technically plausible explanation while preserving the missing-cause unease.
 style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n43165 and precedes $n62144. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n43165 and precedes $n03536. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+
+$n03536
+text: The president was summoned to explain the correction.
+intent: Show the institutional consequence of the president's choice: her credibility, not the machine, is now under examination.
+style: Short, flat declarative; the passive "was summoned" withholds who judges her.
+continuity: Follows $n42626 and precedes $n92831. Payoff of the choice at $n65201; sets up the rupture in the next sentences.
+
+$n92831
+text: A figure struck through in ink is what a forged count looks like; she answered questions for two days about the one she had struck, and in the end the correction was accepted, the district certified, and no one accused of anything.
+intent: Make the visible cost of the correction explicit — the very mark that saved the count is the mark of fraud — while denying the reader a vindication or a villain.
+style: Long cumulative sentence; the anticlimactic "no one accused of anything" leaves the damage human rather than legal.
+continuity: Follows $n03536 and precedes $n77612. Refers back to the struck figure at $n65201; contrasts the president's exoneration with the relationship cost in the next sentence.
+
+$n77612
+text: She did not speak to the technician again.
+intent: Deliver the case's emotional destination as a broken working relationship, caused by the technician's refusal to vouch.
+style: Short, plain sentence; no explanation of motive, so the reader infers it.
+continuity: Follows $n92831 and precedes $n62144. Payoff of $n05563 (he could not vouch); the compromised trust is the case's end texture, reinforced by the narrator's own unfilled page at $n01924.
 
 $n62144
 text: When he finished, the cafeteria had thinned and our coffee had gone cold.
 intent: Advance the Schaerbeek café frame and characterize the narrator/technician mismatch through concrete observation and procedural humor.
 style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n42626 and precedes $n24689. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n77612 and precedes $n24689. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
 
 $n24689
-text: He meant, I think, that we must act as if the world intends this sort of interruption, because the world does not intend otherwise.
-intent: Advance the Schaerbeek case while preserving its role as the sane opening case and the younger narrator's skeptical baseline.
-style: Restrained first-person/observational prose with dry procedural humor and documentary detail.
-continuity: Follows $n62144 and precedes $n34715. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+text: He straightened the sugar packet, which did not need straightening, and did not look up.
+intent: Replace the narrator's authorial interpretation of the technician's meaning with an observable tell of unease, keeping the damage behavioral rather than moralized.
+style: Restrained physical detail; the redundant straightening and the averted gaze carry the emotion without naming it.
+continuity: Follows $n62144 and precedes $n34715. Callback to the technician's habit at $n31451; it silently registers the rupture at $n77612 while the narrator still hears only an engineer's argument in the next sentence.
 
 $n34715
 text: At the time I heard an engineer's argument about preparation, nothing more.
@@ -1320,13 +1404,25 @@ $n10406
 text: The moth looks unconvinced.
 intent: Use the Mark II moth as a material counterexample to Schaerbeek's vanished cause and as an understated bridge from engineering history toward superstition.
 style: Short beat used for emphasis, timing, or tonal pressure; preserve its compression.
-continuity: Follows $n10935 and precedes $n34300. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+continuity: Follows $n10935 and precedes $n97133. Maintain Case I chronology: café meeting → reconstructed 2003 investigation → return to café → years-later dossier note; the younger narrator remains skeptical.
+
+$n97133
+text: When he left, at the door, he asked me not to write down what became of her.
+intent: Convert the damaged relationship into a compromised trust between the narrator and the technician: the record is asked to lie by omission.
+style: Quiet, concrete scene-setting ("at the door"); the request itself is the compromise.
+continuity: Follows $n10406 and precedes $n01924. A brief return to the café departure; the technician's request protects the president he failed, and it is the human cost that outlasts the technical case.
+
+$n01924
+text: I said I would not, and I have not, and the page I would have written it on is the one page in the dossier I have never been able to fill.
+intent: End Case I on the narrator's own compromised record — a lasting image of an unfilled page — rather than a Field Note aphorism.
+style: Three-clause cadence; the concrete "page ... never been able to fill" carries the unease without moralizing.
+continuity: Follows $n97133 and precedes $n34300. Echoes the struck figure at $n65201 and the prologue's empty margins; seeds the dossier's unreliability and contrasts with Case II's blank seventh row ($n41028).
 
 $n34300
 text: **Somewhere between midnight and the first ferry.**
 intent: Set the quiet temporal atmosphere for Case II before the technical problem arrives.
 style: Short location/time dateline; restrained and gently anticipatory rather than immediately alarming.
-continuity: Follows $n10406 and precedes $n54431. Opens Case II before the narrator establishes his ordinary work context.
+continuity: Follows $n01924 and precedes $n54431. Opens Case II before the narrator establishes his ordinary work context.
 
 $n54431
 text: Keep the repeated watched-versus-unwatched reversals and the unsuccessful experiment table as the narrative engine rather than adding an arbitrary supernatural event.
@@ -1800,13 +1896,37 @@ $n87918
 text: It told us where the body lay, not how it had fallen.
 intent: Escalate the narrator's doubt and fear through behavior rather than explanation, showing that the evidence pattern is changing how he acts.
 style: Restrained procedural-horror narration; exact engineering detail should carry the growing anxiety.
-continuity: Follows $n23892 and precedes $n33776. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n23892 and precedes $n26718. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+
+$n26718
+text: One measurement remained that might have worked: a quieter instrument, one that watched from the kernel without stopping the process, set up on the live system with a real order on the line.
+intent: Organize the sequence around the one attempted measurement that would actually change what can be known, and locate it on live production.
+style: Colon definition; technical and exact, withholding the moral until the cost is stated.
+continuity: Follows $n87918 and precedes $n60042. Continues the observation-sensitive engine; the "quieter instrument" is the counterfactual to the perturbing tracer at $n50153.
+
+$n60042
+text: It might still have moved the schedule; the order might have been the one that hung.
+intent: State the residual uncertainty (the observer may still alter the phenomenon) and the human exposure (a customer's order) without explaining the observer-effect metaphor.
+style: Two balanced clauses with semicolons; factual, unglossed.
+continuity: Follows $n26718 and precedes $n54019. Keeps ordinary mechanisms available per the NOTE; connects the measurement to the stakes established at $n18947–$n39997.
+
+$n54019
+text: Either way the artifact would have been paid for by a customer.
+intent: Make the cost of the repeat test explicit and concrete: the evidence would be bought with a customer's order.
+style: Short, flat sentence; the accounting metaphor is the horror.
+continuity: Follows $n60042 and precedes $n69295. Ties the epistemic search to the transaction's human cost; motivates the refusal.
+
+$n69295
+text: I did not set it up.
+intent: Have the narrator refuse to act on the one measurement that would work, converting the case's engine into a decision rather than a diagnosis.
+style: Short declarative; the refusal is quiet and final.
+continuity: Follows $n54019 and precedes $n33776. Payoff deferred to the closing beat ($n31173–$n41028); the refusal echoes the 04:56 hesitation at $n65005 without imitating it.
 
 $n33776
 text: By 05:18 the production traffic had thinned and reproduction slowed with it.
 intent: Advance the Heisenbug investigation, preserving the watched/unwatched reversals and the gradual shift from technical frustration toward unease.
 style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n87918 and precedes $n66237. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
+continuity: Follows $n69295 and precedes $n66237. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note.
 
 $n66237
 text: With the traffic gone, the room came back to us: the fans settling into a lower gear, a chair leg ticking as the building cooled, one of the others asleep under his coat.
@@ -1842,13 +1962,31 @@ $n70953
 text: In the morning, when the first ferry's horn sounded, I wrote my note: *The thing hates to be watched*.
 intent: Advance the observation-sensitive evidence pattern: attempts to inspect the failure alter or erase the conditions under which it appears.
 style: Layered sentence with an internal turn or accumulation; preserve the cadence and the contrast carried by its punctuation.
-continuity: Follows $n93738 and precedes $n23590. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note. The first ferry's horn pays off the dateline $n34300 and the quay light $n77536.
+continuity: Follows $n93738 and precedes $n31173. Maintain Case II escalation: reproducible hang → repeated watched/unwatched reversals → mounting unease → unresolved ending and private animistic note. The first ferry's horn pays off the dateline $n34300 and the quay light $n77536.
+
+$n31173
+text: The test is still there to run, and it still costs a customer's order.
+intent: Keep the unchosen test actionable in the present, so the case ends on an available but refused decision rather than a resolved note.
+style: Present-tense declarative; "still ... still" insists on the open cost.
+continuity: Follows $n70953 and precedes $n79191. Payoff of $n26718–$n69295; distinct from Case I's relationship ending ($n01924).
+
+$n79191
+text: I have not spent it.
+intent: State the refusal as an ongoing, repeatable decision.
+style: Short declarative; flat and grave.
+continuity: Follows $n31173 and precedes $n41028. Reinforces the narrator's refusal without explaining it.
+
+$n41028
+text: The seventh row of the table is still blank, and I still check it.
+intent: End on a precise epistemic consequence and a behavioral tell: the missing artifact remains, and the narrator keeps looking at its absence.
+style: Concrete callback; the checked blank row is the case's lasting image.
+continuity: Follows $n79191 and precedes $n23590. Payoff of the blank seventh row at $n52518; the private check is a residue comparable to but distinct from Case I's unfilled page ($n01924).
 
 $n23590
 text: Tell a made up story about an event that is extremely unlikely, though mathematically possible, that did happen: two genuinely different files produce the same full SHA-256 digest.
 intent: Authorial directive for III. Maxwell’s Demon: constrain the case or manuscript according to the requirement stated in this sentence.
 style: Non-diegetic draft instruction; clarity and precision matter more than narrator voice.
-continuity: Follows $n70953 and precedes $n33904. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
+continuity: Follows $n41028 and precedes $n33904. This is a live NOTE constraint for III. Maxwell’s Demon and must remain consistent with AGENTS.md and the Intent Records.
 
 $n33904
 text: The event is a SHA-256 collision of two genuinely different files, not a documented real collision and not a weaker hash.
