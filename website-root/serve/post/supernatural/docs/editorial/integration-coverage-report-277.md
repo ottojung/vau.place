@@ -6,12 +6,13 @@ dramatic map onto a single human-review branch. No narrative prose was
 rewritten; only integration conflicts, graph-node ordering, and one graph
 `text` field were reconciled.
 
-## Branch and tip
+## Branch and base
 
-- Branch: `review/277-supernatural-integration`
+- Branch: `review/277-supernatural-integration` (pushed to `origin`)
 - Base: `91f14b1` (current `master`, "Reconcile local NOTE directives with updated authorial vision")
-- Consolidated contents: `supernatural.md`, `docs/meaning-graph.md`, and the new
-  `docs/editorial/cross-case-dramatic-map.md`
+- Pull request: <https://github.com/ottojung/vau.place/pull/12> (open, to `master`)
+- Consolidated contents: `supernatural.md`, `docs/meaning-graph.md`, the new
+  `docs/editorial/cross-case-dramatic-map.md`, and this report
 
 ## Integrated sources (merge order)
 
