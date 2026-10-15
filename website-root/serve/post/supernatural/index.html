@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Seven unsettling case files where engineering, folklore and the inexplicable collide. From the notebook of an investigator.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Vau’s place">
+  <meta property="og:title" content="A Strange Collection of System Failures">
+  <meta property="og:description" content="From the notebook of an investigator who kept what he could not explain.">
+  <link rel="canonical" href="https://vau.place/post/supernatural/">
+  <link rel="stylesheet" href="./supernatural.css">
+  <title>A Strange Collection of System Failures — Vau’s place</title>
+</head>
+<body>
+  <a class="skip-link" href="#article">Skip to the story</a>
+  <div class="top-rule" aria-hidden="true"></div>
+  <header class="masthead">
+    <a class="site-home" href="../../index.html">Vau’s place</a>
+    <span class="masthead-label">Collected incidents · Vol. I</span>
+  </header>
+  <div class="page">
+    <aside class="sidebar" aria-label="Table of contents">
+      <div class="sidebar-inner">
+        <p class="sidebar-heading">The dossier</p>
+<nav aria-label="Case files"><a href="#prologue">Prologue</a>
+<a href="#case-i">I · The Schaerbeek Bit</a>
+<a href="#case-ii">II · The Heisenbug</a>
+<a href="#case-iii">III · Maxwell’s Demon</a>
+<a href="#case-iv">IV · The Leprechaun</a>
+<a href="#case-v">V · Mercury in Retrograde</a>
+<a href="#case-vi">VI · The Crocodile</a>
+<a href="#case-vii">VII · The Heat Death of Rack C</a>
+<a href="#coda">Coda</a>
+<a href="#endnotes-and-sources">Endnotes &amp; sources</a></nav>
+        <p class="sidebar-footer">Seven cases<br>and a final note</p>
+      </div>
+    </aside>
+    <main id="article" class="manuscript">
+      <header class="article-head">
+        <p class="eyebrow"><span aria-hidden="true">✳</span> An investigator’s notebook</p>
+      </header>
+      <details class="mobile-contents">
+        <summary>Contents <span aria-hidden="true">↘</span></summary>
+<nav aria-label="Case files"><a href="#prologue">Prologue</a>
+<a href="#case-i">I · The Schaerbeek Bit</a>
+<a href="#case-ii">II · The Heisenbug</a>
+<a href="#case-iii">III · Maxwell’s Demon</a>
+<a href="#case-iv">IV · The Leprechaun</a>
+<a href="#case-v">V · Mercury in Retrograde</a>
+<a href="#case-vi">VI · The Crocodile</a>
+<a href="#case-vii">VII · The Heat Death of Rack C</a>
+<a href="#coda">Coda</a>
+<a href="#endnotes-and-sources">Endnotes &amp; sources</a></nav>
+      </details>
+      <article class="story">
+<!-- editorial 0: NOTE
+This document is a draft.
+It contains placeholders, fixmes, and must-haves that need to be addressed.
+When completing the document, ensure that all placeholders are filled, fixmes are resolved, and must-haves are included.
+Some must-haves, those surrounded by quotes, are exact phrases that need to be integrated neatly into the text. But others are thematic elements that should be woven into the narrative.
+
+
+The type of this story is generally horror.
+However, it should be written in the style of Lovecraft.
+It conveys dread, helplessness.
+It is reality-bending in some places.
+There is lots of uncanny and the unsettling.
+It is grave, meticulous, humor only implicit, investigator fraying at the edges.
+The chief artistic goal is to make readers feel genuine dread, anxiety, uneasiness, fear, and the possibility of harmful consequences, rather than merely appreciate interesting technical paradoxes.
+Early cases keep ordinary causal explanations intellectually available while the characters' vulnerability makes the stranger interpretation emotionally difficult to dismiss; later cases present the supernatural beings as real within the fiction, where the emotional force of encounter replaces skeptical qualification.
+Give major investigations credible human stakes and costs of uncertainty, then convey fear through behavior, concrete surroundings, small changes in confidence, and withheld certainty rather than dramatic declarations.
+Preserve the narrator's procedural rationality and careful evidence even as his beliefs change toward conviction; do not resolve the book into a lecture that scientific reasoning has failed.
+Make the dossier's case selection, evidentiary qualifications, and changing narration trace a cumulative psychological transformation from sober skepticism to reluctant private belief.
+Distinguish firsthand incidents, historical reconstructions, secondhand testimony, and folklore; within the fiction, the later supernatural beings are real, and their credibility rests on presence, consequence, and changed behavior rather than on differing evidentiary weight.
+Design each case around its own dramatic and emotional discovery so that the collection does not repeat one lesson about the limits of knowledge.
+Use understated jokes when they arise naturally from character or procedure, but avoid comic detours that discharge the dread just established.
+Prefer precise physical and technical observations to conspicuously decorative metaphors; increasingly uncanny diction should arise from the narrator's altered perception.
+Borrow the existential pressure of cosmic horror without mechanically imitating Lovecraftian vocabulary or announcing the author's metaphysical strategy.
+Keep documented facts, fictional reconstruction, and hypotheses distinguishable; within the fiction the later supernatural beings are real, so the remaining ambiguity concerns their meaning and intent, not their existence.
+-->
+<!-- editorial 1: MUST HAVES
+"I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct."
+"FIELD NOTE #X The closer your model fits the world, the more the world will take issue."
+"... like myself—skeptics who have seen just enough to be superstitious."
+"... there are systems whose failure modes include poetry."
+-->
+<h1 id="a-strange-collection-of-system-failures">A Strange Collection of System Failures</h1>
+<p><em>From the notebook of an investigator who kept what he could not explain</em></p>
+<hr>
+<h2 id="prologue">Prologue</h2>
+<!-- editorial 2: NOTE
+Make the prologue establish why this particular investigator needs a dossier and why preserving uncertainty matters to him personally.
+Introduce a faint but concrete anticipation of danger without prematurely telling readers that every unexplained failure is supernatural.
+-->
+<p>I was not trained for hauntings. I was trained for reproducibility, for test plans and postmortems, for the clean relief of a failing unit test that fails again in the same way. But the longer I have tended systems—their valves and logs, their hissing racks and their fragile promises—the more I have come to understand that what we write on paper is not what the air will carry.</p>
+<p>Once I specified a valve on a line that was closed for maintenance. It opened at a quarter to five, with no command in the log, into the stretch of pipe a fitter had his hands in; the report called it a near miss, because he happened to be reaching for a spanner and not for the valve. I was at my desk, reading back the procedure for that valve—the exact page—when it opened; I looked up because the air had gone flat. The telephone rang a moment later, and I have not entirely stopped hearing it.</p>
+<p>I began to keep a dossier. Not a taxonomy—God preserve me from one more axis—but a sheaf of field notes: cases gathered from labs and basements, control rooms and attics, from the sub-basement under a turbine hall to a locked cabinet in a newspaper morgue. A few I saw myself; others I learned from steadier hands; some arrived as stories retold until their authors had worn off; and a few I have had to reconstruct from records that disagreed with each other. I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct. I still write specifications in the future tense—the valve shall open only on command—as if the grammar were itself a promise.</p>
+<p>People ask if I believe in such things. I tell them what I keep and how I keep it: the hand I write in, so that I will recognize it when I am older; the pages I tape in beside the record, giving each failure a name; the margins I leave empty for what I do not yet know how to name. I have caught myself reading a log twice when once would do, as if the second look were the one that counted. And when the moment comes to attach the instrument, my hand sometimes stops above the key, and I have learned not to ask it why.</p>
+<p>On the first page I set down a line for whoever I would be when I read it back. <em>Read them so that when the world leans on your specification, you recognize the weight.</em> You can feel it in a good postmortem—the paper going load-bearing, the procedure holding up a thing that wanted to fall. I keep the dossier because I no longer trust that writing the procedure correctly is enough to keep the world from leaning anyway.</p>
+<p>The first thing I put in the dossier was not the first incident; it was the first one I could tell straight, and I could tell it straight because I did not yet know what I was looking at.</p>
+<hr>
+<h2 id="case-files">Case Files</h2>
+<h3 id="case-i">I. The Schaerbeek Bit</h3>
+<p><strong>Schaerbeek, Belgium.</strong></p>
+<!-- editorial 3: QUOTED NOTE
+> **NOTE**
+>
+> This meeting belongs to an earlier period in the narrator's life. He has not yet become the investigator who keeps this dossier, and he does not believe in supernatural explanations. He is here for ordinary work and expects ordinary technical information.
+>
+> The newspaper items are fictional. The escaped neutron must never be connected in the prose to the 2003 bit flip. The implication that it somehow travelled backward in time is strictly for the reader.
+>
+> The worldview mismatch between the narrator and the technician should remain implicit. Show it through what each treats as evidence, useful information, or a reasonable explanation; do not explain the contrast as a theme.
+-->
+<!-- editorial 4: NOTE
+Keep the opening café's spatial and procedural observations because they reveal the younger narrator's habits of thought without supplying biography.
+Tighten the long chain of preliminaries so that the biscuit exchange leads organically into the election story and the technician's peculiar perspective accumulates rather than resets.
+Preserve the subtle contrast between the narrator's useful facts and the technician's stories; neither character should become a mouthpiece for the collection's philosophy.
+Keep the escaped-neutron newspaper item an unspoken clue for the reader alone, but establish enough credible chronology and recurrence of imagery for the impossible temporal suggestion to be discoverable.
+Check that the fictional CERN report sounds plausible as journalism, especially the unusual claim that a single neutron escaped an enclosure.
+Treat the real election's multiday investigation carefully when compressing events into a firsthand reconstruction; the May 2003 chronology and the extent of the technician's knowledge must remain believable.
+Intensify the emotional stakes of an untraceable alteration to an election result through the clerks' fear of responsibility, loss of trust in the count, and uncertainty over what corrective action is possible.
+Let physical and bureaucratic details make the contradictory totals threatening instead of leaning on poetic descriptions of a bit flip or personifying the numerical anomaly.
+Preserve the younger narrator's skepticism and the later narrator's retrospectively unsettled memory while avoiding an explicit claim that a particle or a supernatural force caused the anomaly.
+Do not restore the removed conversation-quality billing digression; its separate joke interrupts the accumulated unease after the election account.
+-->
+<p>I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late. In unfamiliar rooms I begin, out of habit, by checking how they are arranged.</p>
+<p>The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling. The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs. The queue bends once before the till in an L-shape that keeps the doorway clear.</p>
+<p>I take my place in it, moving forward each time the drawer opens with its tired ring. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall.</p>
+<p>A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for. He knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things.</p>
+<p>There is a newspaper on the next chair. I pick it up. Liège has held a waffle competition; the winner is photographed behind an enormous plate of waffles, with three judges smiling beside her. I turn a few pages, looking for science. A short item from Geneva says that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word <em>escaped</em> three times. I fold it and put it back.</p>
+<p>He arrives late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He pauses, then corrects himself.</p>
+<p>“Not spontaneous. Sorry. A signal failed, or somebody changed the route. We just don't know which yet.”</p>
+<p>We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He tells me he has worked elections—“not politics,” he says quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he taps the table as though confirming liveness.</p>
+<p>I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I write down the useful parts and leave some of the commentary out.</p>
+<p>The commentary gets harder to separate from the useful parts when he picks up one of the biscuits beside his coffee.</p>
+<p>“You can tell a lot about a nation from how its biscuits break.”</p>
+<p>I look at him. “How they break?”</p>
+<p>“The English ones wait for tea and then break where you expect. The French fracture elegantly, usually along the line that leaves the prettier half. Belgian biscuits begin along one crack, reconsider, and finish by inventing a third.”</p>
+<p>That seems ridiculous. I don't see what national character has to do with a biscuit, but he is already unwrapping it.</p>
+<p>He breaks it. The biscuit splits diagonally across the stamped pattern, scattering crumbs onto the napkin. He seems pleased.</p>
+<p>“See?”</p>
+<p>I say nothing about the biscuit and ask how he came to work on elections.</p>
+<p>He gives me the short version: municipal contracts, equipment support, one assignment becoming another. Then he says, “When people talk about elections, they always mean the result. They don't talk about the day itself.”</p>
+<p>I had asked how he got the job. He had answered a different question.</p>
+<p>“I worked one day,” he continues, “that stayed with me more than the result it produced.”</p>
+<p>He mentions Schaerbeek, the 2003 federal election, and a candidate with an impossible number of votes. I recognize the outline. I have heard it before as one of those programmer stories compressed into a few lines. It takes me a moment to adjust to the idea that the man across from me had been inside the room I knew only from retellings.</p>
+<p>What follows is his account of that day. He did not tell it in order, but I will.</p>
+<p>The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and a carpet whose pattern is an argument against democracy.</p>
+<p>He had been sent there as technician, a word expansive enough to cover whatever had not yet been assigned to the others. On his table lay the checklist: confirm serial numbers, confirm counters at zero, confirm seals intact; note every confirmation in ink, sign where indicated. Two party representatives sat near the door. The bureau had a president, seconded for the day from the commune, whose signature would certify the count. She had signed returns in Schaerbeek for eleven years; in that district a signed return was the count. A schoolteacher seconded as a watcher stood where she could see both the machines and the clerks and seemed unsure which of them constituted the real work.</p>
+<p>Voting itself went normally. He answered questions, checked displays, and waited for something to require him.</p>
+<p>After the polls closed, the clerks began checking the totals. The work moved line by line until one of them stopped halfway through a candidate's result. She looked back at the list total, then at the candidate total, and read both again.</p>
+<p>The candidate had more preferential votes than the entire list containing him.</p>
+<p>She asked the clerk beside her to read the two figures. He did. They exchanged places at the display and read them again.</p>
+<p>“Check this one,” somebody said.</p>
+<p>They checked the machine identifier, the register, the media from which the totals had been read, and then the totals again.</p>
+<p>There is the certainty, never admitted aloud, that somewhere a check is missing and that this is sane; that checks go missing the way buttons go missing from coats. So they looked for the missing check.</p>
+<p>The air in the school had become very dry. Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.</p>
+<p>For a while nobody called it an <em>error</em>. That word would have started another procedure: forms, witnesses, preserved media, work frozen where it stood. So they talked around it. <em>This one</em>. <em>These two figures</em>. <em>Check it again.</em></p>
+<p>The same numbers survived every obvious check. The contradiction could now be written plainly:</p>
+<p><strong>Invariant 1. (violated)</strong></p>
+<p>$$
+\boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
+$$</p>
+<p>The candidate's preference count should never rise above the list total. In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.</p>
+<p>The president asked the technician, quietly, whether she could sign. He understood the question: not whether the number was right, but whether the machine could be vouched for. He said he could not vouch for it. She held her pen over the box where the count would go. The figure the machine had printed would certify a contradiction; any other figure would alter the record; an empty box would fail to certify the district. She wrote the machine's figure, drew one line through it, wrote the corrected figure beside it, and initialled the correction. Then she asked the two representatives to witness it. One did. The other looked at the struck figure for a long time, and put down his pen without signing.</p>
+<p>Eventually somebody used the word <em>error</em>, and the formal investigation began.</p>
+<h4 id="the-investigation">The Investigation</h4>
+<p>The technician checked the machine and the media again. The schoolteacher tried to be helpful by pointing out each time the computer made a small sound, as if identifying birds.</p>
+<p>The woman with the adding tape asked if lightning could do it. “Not tonight,” the technician said. “Tonight is dry.”</p>
+<p>They made a ledger of what would be convenient to blame and crossed each item off.</p>
+<ul>
+<li><s>a transposed digit</s></li>
+<li><s>a repeated line</s></li>
+<li><s>a wrong candidate mapping</s></li>
+<li><s>a duplicate import</s></li>
+<li><s>a machine identifier copied from the next station</s></li>
+<li><s>a power interruption</s></li>
+<li><s>lightning</s></li>
+</ul>
+<p>Each explanation had some trace it ought to have left. None of the expected traces was there.</p>
+<p>When the figures survived another pass, someone subtracted one total from the other and wrote the difference in the margin: 4 096. The technician recognized the shape at once:</p>
+<p>[
+4096 = 2^{12}.
+]</p>
+<p>A difference of exactly one power of two made a bit flip an obvious suspect.</p>
+<p>A physicist was eventually pressed into service because she happened to live nearby. She arrived by bicycle, helmet still in hand. By then nobody needed her to notice (2^{12}); what they wanted was a reason for one bit to change.</p>
+<p>She made them go through the ordinary possibilities again. Bad input, bad arithmetic, bad code: each had somewhere to leave a trace. When those routes led back to the same number, the question shifted to the memory itself. A memory cell can be disturbed physically, without the program asking it to change. An energetic particle passing through the semiconductor can deposit enough charge to alter the bit it crosses. If that bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.</p>
+<p>That gave them a hypothesis: a single-event upset. Under that hypothesis there would be no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.</p>
+<p>The technician objected that bits did not change for no reason. The physicist agreed. A particle crossing a memory cell was a reason; the difficulty was that the reason would already be gone.</p>
+<p>They could inspect software, recount totals, and ask clerks what they had done. If the cause had been a particle, there was no particle left to inspect.</p>
+<p>Later, the machine was tested, the software examined, and the result reconstructed. No software defect was found that explained the discrepancy. The experts' report concluded that it could <em>very probably</em> be attributed to a spontaneous and random inversion of a binary position in the computer's working memory.</p>
+<p>The report left the physical cause open. The committee’s report is less romantic, but it permits the word that haunts this dossier: likely.</p>
+<p>Later retellings usually supplied ionizing radiation, and newspapers condensed that into a <em>cosmic flea bite</em>. By the time the incident reached programmers, the whole thing was often filed under <em>computer error</em>. The phrase is correct in the way that shipwrecks are wet. What stayed with me was the qualification in the report: <em>very probably</em>.</p>
+<p>One clerk later admitted that he would have preferred a boring human mistake. A human mistake belonged somewhere: to a hand, a tired eye, a copied line. It could be found and corrected. He did not say this during the investigation. If human error returned to the list of possibilities, he himself was one of the humans available.</p>
+<p>The president was summoned to explain the correction. A figure struck through in ink is what a forged count looks like; she answered questions for two days about the one she had struck, and in the end the correction was accepted, the district certified, and no one accused of anything. She did not speak to the technician again.</p>
+<p>When he finished, the cafeteria had thinned and our coffee had gone cold. He straightened the sugar packet, which did not need straightening, and did not look up.</p>
+<p>At the time I heard an engineer's argument about preparation, nothing more. We do not fight the weather, he said; we prepare for it. The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.</p>
+<p>I did not write a field note that afternoon. Years later, when I began the dossier, I put this under his story:</p>
+<p><strong>Field Note #1. Horror, in our trade, is the clean error—the one that leaves no prints.</strong></p>
+<p>There is an older photograph I keep in a folder called <em>Proofs I Do Not Argue With</em>. In it, a moth lies taped to a page of an engineering log.</p>
+<p><img src="https://ids.si.edu/ids/deliveryService?id=NMAH-NMAH2000-03035" alt="Moth"></p>
+<p>The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” I like the page because it makes an engineering superstition almost literal: give the failure a name, and perhaps you can banish it. Here they could do both—call it a bug, pull it from the relay, and tape it beside the record. (<a href="https://americanhistory.si.edu/collections/object/nmah_334663" title="Log Book With Computer Bug">National Museum of American History</a>)</p>
+<p>The moth looks unconvinced.</p>
+<p>When he left, at the door, he asked me not to write down what became of her. I said I would not, and I have not, and the page I would have written it on is the one page in the dossier I have never been able to fill.</p>
+<hr>
+<h3 id="case-ii">II. The Heisenbug I Failed To Catch</h3>
+<p><strong>Somewhere between midnight and the first ferry.</strong></p>
+<!-- editorial 5: NOTE
+Keep the repeated watched-versus-unwatched reversals and the unsuccessful experiment table as the narrative engine rather than adding an arbitrary supernatural event.
+Add a few selective physical details of the room and the sleepless people so that the investigation is felt as an experience rather than read only as a debugging report.
+Make the practical consequences of a failed transaction and an unknowable failure plausible and specific, so readers understand what the operators fear losing if the incident continues.
+Protect the line about disliking successful tests and the hesitation at 04:56; the moment when the narrator stops before attaching the tracer is his clearest conversion of suspicion into superstition.
+Do not claim that timing-sensitive concurrency has no ordinary explanation, and remember that the real ProxySQL source incident eventually had a technical cause.
+Let the terror consist in the narrator briefly acting as though the bug can notice him, despite knowing better, and avoid explicitly interpreting that gesture for the reader.
+-->
+<p>At the time, I was doing reliability work for a small company whose application spent most of its life asking a database ordinary questions. The heating had clicked off for the night, and the room had settled around the temperature of the racks, warm behind the servers and cold at my desk. Through the window the quay light lay on the floor in a colour the day never used. A draught from the door kept finding my ankles. Most nights, the failures were ordinary too: a full disk, a dead connection, a process that had simply run out of something.</p>
+<p>That night, I was called because a <code>COMMIT</code> would sometimes not come back.</p>
+<p>An earlier entry in my notes had ended with the failure taped into a logbook: a moth, pulled from a relay. This one refused the tape.</p>
+<p>This was not a complicated transaction. The application had read a little over a thousand rows through a database proxy over a Unix-domain socket and then asked to commit an otherwise empty transaction. Under production load, one greenlet would occasionally stop there and remain stopped, waiting on the file descriptor as if the other side had forgotten it.</p>
+<p>What the application was writing that night was small: an order, a fulfilment, a line in the ledger recording that a customer's goods were promised and paid for. When the commit came back, the application knew the write had landed. When it did not, the application could not tell whether the line was in the database or had never been written. Retry the request and the same order might be written twice, the customer charged twice. Do not retry, and the order might be missing, and a missing order in a small company is a customer telephone call with no good answer. It was the kind of company that could not afford a second night like this one.</p>
+<p>The first occurrence looked like networking. The second looked like the client library. By the third, we had replaced enough pieces that the shape of the failure had become more interesting than any one suspect.</p>
+<p>At 00:41 we had a loop that would usually reproduce the hang inside an hour, although “usually” included eleven minutes once and fifty-three the next time. I attached <code>strace</code> because I wanted the last useful system call before the process stopped. With strace running, it behaved as if repentant.</p>
+<p>We left the trace running for ninety minutes. Nothing hung. I detached it; seventeen minutes later the same request stopped in the same place.</p>
+<p>We did it again. The second time, nobody made a joke when the untraced run failed.</p>
+<p><code>strace</code> is not a window cut into a process. It stops and resumes the process around system calls, changing the schedule as it watches. If two events were arriving in the wrong order, that alone could move them apart. I wrote <em>timing</em> in the margin of my notebook and underlined it twice.</p>
+<p>I introduced print statements as if soothing a friend — <em>tell me what you are thinking when you do this</em>.</p>
+<p>They did almost nothing: one line before the commit, one after. With them in place, the hang disappeared. Remove them, and after enough traffic it returned.</p>
+<p>A slower pure-Python client did not reproduce it. A small compiled client using the same C library did. That moved suspicion away from the application code and toward speed, buffering, or the path through the proxy. It also gave us another way to make the failure vanish without understanding it.</p>
+<p>By then I had begun to dislike successful tests.</p>
+<p>The traffic between the application and proxy used a Unix-domain socket, so our usual packet capture was no help. We put <code>socat</code> in the middle to watch the bytes. The hang disappeared.</p>
+<p>We removed it.</p>
+<p>The hang returned.</p>
+<p>There were plenty of ordinary mechanisms left to blame: scheduling, syscall boundaries, queue occupancy, buffering, flow control, the proxy's own state machine. We began changing one thing at a time, carefully, because every change had acquired a second meaning. It was either an experiment or another way of warning the failure that we were there.</p>
+<p>We laid snares: printf incantations, timeouts shaved to angel-hair, a tracer that has broken better men than me.</p>
+<p>The vending machine in the corridor had been humming its one note all night.</p>
+<p>At 03:20 I copied the useful part of the night into a table:</p>
+<table>
+<thead>
+<tr>
+<th>condition</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ordinary run, fast local socket</td>
+<td>hangs eventually</td>
+</tr>
+<tr>
+<td><code>strace</code></td>
+<td>no hang observed</td>
+</tr>
+<tr>
+<td>prints around <code>COMMIT</code></td>
+<td>no hang observed</td>
+</tr>
+<tr>
+<td><code>socat</code> in the socket path</td>
+<td>no hang observed</td>
+</tr>
+<tr>
+<td>slower client</td>
+<td>no hang observed</td>
+</tr>
+<tr>
+<td>small compiled client</td>
+<td>hangs</td>
+</tr>
+</tbody>
+</table>
+<p>I had intended the table to calm me. Instead, it made the pattern look cleaner than it had felt while we were producing it.</p>
+<p>I left a seventh row blank for the run that would finally fail while we were collecting enough evidence to explain it. At 03:47 the row was still blank. At 04:12 it was still blank. I stopped checking the time as often. My coffee had gone cold where it stood.</p>
+<p>What I wanted was one ordinary artifact: the final syscall, a queue transition, a timeout, a bad state we could point to after the fact. Each attempt to obtain one changed the conditions just enough that the failure moved elsewhere, and the evidence left behind was evidence of its absence.</p>
+<p>At 04:30 somebody called it a race condition. I agreed. The name was plausible, but it named a family of failures, not the two events we needed. We could not point to the race. We could only point to the conditions under which it declined to happen.</p>
+<p>At 04:56, after twenty-three minutes without instrumentation, the compiled client hung again. I put my hands on the keyboard to attach the tracer and stopped.</p>
+<p>For several seconds I did nothing.</p>
+<p>One of the others asked what I was waiting for.</p>
+<p>“Nothing,” I said, and attached <code>strace</code>.</p>
+<p>It showed a process already asleep in the expected wait. It told us where the body lay, not how it had fallen.</p>
+<p>One measurement remained that might have worked: a quieter instrument, one that watched from the kernel without stopping the process, set up on the live system with a real order on the line. It might still have moved the schedule; the order might have been the one that hung. Either way the artifact would have been paid for by a customer. I did not set it up.</p>
+<p>By 05:18 the production traffic had thinned and reproduction slowed with it. With the traffic gone, the room came back to us: the fans settling into a lower gear, a chair leg ticking as the building cooled, one of the others asleep under his coat. We stopped because a night shift can end without an investigation ending.</p>
+<p>Nothing was fixed. The day shift would come in to machines we could not vouch for. We had only learned which forms of attention the failure appeared to tolerate.</p>
+<p>In the morning, when the first ferry's horn sounded, I wrote my note: <em>The thing hates to be watched</em>.</p>
+<p>The test is still there to run, and it still costs a customer's order. I have not spent it. The seventh row of the table is still blank, and I still check it.</p>
+<hr>
+<h3 id="case-iii">III. Maxwell’s Demon</h3>
+<!-- editorial 6: NOTE
+The case's improbable event is a full SHA-256 collision between two genuinely distinct files, confirmed by witnesses, logs, and metadata while the files still exist; both files are then irrecoverably lost, and the loss is the case's irony rather than a problem to solve.
+The demon is a real being within this fiction.
+A developer meets it in a dreamlike visitation, and it warns him that the server room is cursed.
+Do not rationalize the visitation as an embellishment or audition its reality; the open question is what the being wants, not whether it is real.
+Anchor the event in documented real-world precedent and a credible technical substrate, keeping factual sourcing and fictional invention distinguishable.
+Technical details ground the stakes; they must not displace the demon's presence, the developer's terror, or the consequences.
+Supersedes the 2026-09-23 NOTE directives for this case per the human authorial direction of 2026-10-13 (Antonina board issue #287; story.md $id-8506027753346938).
+-->
+<p><strong>A small hosting company, two rented halls.</strong></p>
+<p>The last line in my notebook before this case was the note I brought back from the night I could not catch the hang: <em>The thing hates to be watched</em>.</p>
+<p>It was still there, in ink, when I first heard the story I am about to set down, a story about a man who slept in a server room where something did not sleep, and about two files that agreed with each other far more than they had any right to.</p>
+<p>I record the adjacency because it is true.</p>
+<p>I will not name the company. It was small, it leased racks in two rented halls, and it ran a few hundred servers for customers who never saw them. I came to it the way I come to most of these cases: after the fact, with the records already cold, to decide what could be established and what could only be kept.</p>
+<p>The room had a name on the door and nothing else about it was distinctive. Two rows of racks faced each other across a cold aisle; the hot aisle behind them was loud with the fans. The door did not latch unless you lifted it. The fans ran at a pitch that changed with the load, so the room had a kind of weather, and it smelled of hot dust and, faintly, of ozone. The only lights anyone noticed were the machines' own — green and amber constellations that no one looked at twice.</p>
+<p>One of the developers stayed late that night, finishing a migration that should have been done by six. I have his account, and I have the line he wrote the next morning, and they are not the same document.</p>
+<p>Alone after the others had gone, he worked from a crash cart by the middle rack. The room at night had a different sound. With the building's people gone, the fans became the loudest thing in the world, and the cold aisle was colder than it was by day, when bodies and open doors kept it mild. He checked the time once and was surprised it was nearly three.</p>
+<p>He slept at the cart, or believed he did. What he reported is not a sequence but a set of certainties that arrived together.</p>
+<p>The room was the same room. The fans were the same fans. But the aisle had lengthened, and the racks on either side had grown taller without gaining height, the way a corridor grows in a house you have not visited since childhood. The cold was no longer cold; it was the pressure of something large standing very close. He could not turn his head. He knew, the way one knows a face in a dark doorway, that the room had an owner, and that he was the intruder in it. The lights went out in a wave from the far end, constellation by constellation, and did not come back.</p>
+<p>What stood at the end of the aisle where the last lights had been, he would not describe; he said only that it was large, and that it had been there before him and would be there after, and that it was patient.</p>
+<p>Something in the dark where the last lights had been said, without emphasis, that the server room was cursed. It did not explain. It did not threaten. The flatness was what stayed with him: the sentence was a fact being stated, the way you would state that the floor was load-bearing.</p>
+<p>He woke with his cheek on the crash cart and the fans still running. He lifted the door into its latch, then read the last twenty minutes of the system log. At 02:47 the far-end circuits had shed their load for ninety seconds, one rack at a time, the way the lights had gone out in his dream; and the door he had lifted into its latch before he slept had been opened and closed once, at 02:51, and he had not moved.</p>
+<p>He went home. He did not tell anyone for two days.</p>
+<p>On the second morning he wrote it down, because he did not want to carry it alone. What he wrote, in the team's chat, was: <em>bad dream about the racks last night. the room felt wrong. not sure i slept.</em> The chat service logs the timestamp. That line is the only part of this case fixed in writing before anything was found.</p>
+<p>I do not read the difference between that line and his account as something time supplied. Men write less in public than they carry. What the room wrote that night, it wrote in its own log, and I have set it down above.</p>
+<p>The collision was found three weeks later by a release engineer doing an ordinary thing. She was verifying the second of two pilot builds — two different customers, built two months apart, on machines in different halls — and the checksum sheet gave her the same answer for both: the same full digest, sixty-four characters, character for character. She checked the sheet. She checked the build. She ran <code>diff</code> first, because a hash that matches is usually a file that matches, and the two builds matched nothing: different sizes, different contents, a different customer's configuration compiled into the second. She hashed the second build again, on a different machine, with a different tool, and got the same sixty-four characters. She wrote the digest, both sizes, both timestamps, and the <code>diff</code> excerpt into the release ticket, and two colleagues stood beside her and watched her produce the same number twice. The ticket is still in the system. The files are not.</p>
+<p>A SHA-256 digest is two hundred and fifty-six bits, and the honest search for two files that share one runs to about two to the hundred and twenty-eighth trials, which is a number the observable universe does not have room for. No full SHA-256 collision has ever been announced; the digest is not MD5, not SHA-1, not truncated, and the two builds were never one file on two paths. They were different files, and they were one file by the only measure the company had.</p>
+<p>Here is what that cost, before the rest of it. The company's releases were trusted by their checksums; a customer could take a digest away and know, at the far end, what they were holding. That assurance is now void in the worst possible way: not because a digest can be forged, but because two different things answer to the same one. The two pilots cannot be told apart by hash. The signed bundles cannot be distinguished. Any archive kept on the strength of a digest has stopped being evidence. The staging volume sat on a shelf in the room itself.</p>
+<p>The files lasted eleven days. The controller failed on a Thursday, and the replica, which the team had believed was on a second array, had been writing to the same controller for months; the nightly backup had always excluded the staging area as scratch. The recovery attempt returned nothing. What the engineers still have is the ticket: the digest, the sizes, the timestamps, the <code>diff</code> excerpt, the witnesses, and the log lines showing the same number produced twice on two machines. What they do not have is a file.</p>
+<p>I have read the ticket more than once, and each time it has said less. It proves that they found it, and that they recorded it, and that they believed it; it cannot prove it again, because the only instrument that could — the hash of the thing itself — has nothing left to hash. The physicists' answer to the demon is that the sorting is never free: the order is paid for somewhere the ledger cannot see. The order here was two files made one, and the price was the files, paid at the end and recorded nowhere. The engineers had used the name for that class of event for years. They had not known the name was a room.</p>
+<p>The dream came back to me near the end, the way an unclosed bracket comes back. He had been warned that the room was cursed, and the room had taken the only proof that could have established what happened, and the taking was ordinary in every particular except its timing. I do not know what the being wanted. I know what it said. I know what was taken. The difference between those two is the whole case.</p>
+<p>The developer does not work late in that room anymore. He asked for days, and the company, which had only just understood what it had lost, did not argue. He verifies a digest twice now, and writes the number down before he archives anything, and keeps the printout, though he and I both know that a written digest is not a file and cannot prove what the file was. I have begun to say the word <em>demon</em> in a register I do not use for <em>race condition</em>, and I do not stop.</p>
+<p><strong>Field Note #2. The proof was the file; the file is gone. I keep the digest and the absence in the same folder.</strong></p>
+<hr>
+<h3 id="case-iv">IV. The Leprechaun of Off-by-One</h3>
+<!-- editorial 7: NOTE
+Tell a made up story of how actual Leprechaun from Irish folklore broke into the server room at night and "moved the loop bounds" (loop as in "a for-loop") by one.
+
+This should draw on the texture of Irish folklore and legend, but the leprechaun is real within the story. A small man in green clothes with a red beard enters the server room at night, and those who meet him confront what the encounter means.
+The leprechaun is a real being within the fiction, not a sighting kept at the distance of debatable legend; folklore shapes the narration without domesticating the man into rumor.
+The case can be more extravagant than the early cases, but serious documentation, witnesses' reactions, and real consequences should give readers a reason to feel unsettled rather than merely amused.
+-->
+<p>This one is not a legend, and I have stopped filing it as one. The Schaerbeek bit reached me as testimony from a man who had stood in the room; the hang I chased with my own hands; the demon belonged to one man's dream. This one a man told me himself, once, and would not tell me twice, and I have carried it since without a folder to put it in.</p>
+<p>The company leased a floor of a converted warehouse, and its machines stood in a room the staff called the cold aisle. At two in the morning it was the loudest place in the building — the fans of the racks filling the air with one long, flat note — and the coldest, because the people who warmed it by day had gone home. One operator stayed through the night, as the shift required, to watch a small job run.</p>
+<p>The job was a reaper. It woke at midnight, walked a bounded list of partitions, and deleted what was old. It was the most boring job in the building, and the boring was the qualification: a reaper that works is a reaper no one watches, and the operator watched it only because the room required an operator, not because the job required watching.</p>
+<p>He heard it before he saw it. It was not a sound the room made. A tapping — small and regular, wood on metal — the sound of someone working at something with a tool. It came from the far end of the aisle, where the light was thinnest, and it was coming toward him.</p>
+<p>Then the small man walked into the light. He was the height of a chair-back. He wore green — a coat and breeches of a green the amber light could not settle — and a red beard, and a leather apron such as a shoemaker wears, a small hammer at his belt, and shoes with brass buckles. He came along the aisle as though he had come along it every night of his life, unhurried, and he did not look at the operator, who had stopped breathing.</p>
+<p>He went from rack to rack as a man goes along a shelf of finished work. He laid a hand flat on the cold metal and left it there, as if listening through it. He tapped a panel once with one knuckle, waited, and tapped again. At one rack he frowned and rubbed his thumb along the seam of a panel, as if testing a stitch.</p>
+<p>He stopped at the machine that ran the reaper. On its screen, green on black, the loop stood where the operator had left it: <code>for (i = 0; i &lt; count; i++)</code>. The small man read it the way the operator read it, from the top, and then he read it again, and then he said something under his breath — not to the operator, not to anyone, the low mutter of a man correcting a piece of work — and he reached up toward the screen, or toward the machine beneath it; the operator was watching the man's face and not his hand. What he did was small. He did not rewrite the loop. He moved it by one, as you would move a stitch, and he was pleased with it, the way a craftsman is pleased with a repair no one else will ever notice. One extra, or one short — the operator could not say which the man had meant, only that the loop had been touched by someone who knew exactly what he was doing.</p>
+<p>Then he turned and looked at the operator. The operator could not move. He said the small man's eyes were not cruel; they were the eyes of someone who has found a stranger in his own house and is deciding, without hurry, what to do about it. The operator opened his mouth to say something — he never knew what — and the small man lifted one finger, not in warning but in the manner of a man asking for a moment's patience. In the moment the operator gave him, he was gone. There was no door. The door's log, pulled the next day, showed the room sealed from midnight to six. The tapping began again, farther off, and then it stopped, and there was only the fans.</p>
+<p>The reaper ran at midnight as it always did, and in the morning the on-call engineer found the harm, and the harm was exactly the thing the small man had been pleased with: one iteration more than the list had in it. The loop had walked <code>count + 1</code> partitions, and the last of them was not old. It deleted one live record — one customer's archive, years of a small firm's project files — gone. Not corrupted. Not quarantined. Gone, by the job's own logic, which is what an off-by-one does: it does one thing too many, and the extra thing is not undoable.</p>
+<p>The operator told what he had seen before the archive was even missed. He told the shift lead, and the shift lead told the manager, and by noon it was not a report anymore; it was a story. He was a good operator — careful, sober, the kind of man you leave alone with the machines — and that was the trouble. A good operator who says he saw a small man in green clothes in the cold aisle is not a liar. He is a problem, and the company handled the problem the way companies do, by smiling at it until it went away.</p>
+<p>I believe him. I have no proof and I have stopped needing any. I have read enough of these files to know the difference between a man who is telling a story and a man who is trying to set down something that will not lie flat, and he did not want to tell it. He told it because I asked, and because a thing carried alone for a year is a thing a man will finally hand to a stranger who asks the right way.</p>
+<p>He does not work nights anymore. He did not give a reason and no one asked him for one. He counts things now — the filters, the stairs, the cars in the lot — and he will not say the word for what he saw, and neither will the team, who call him, when they call him anything at all, the small man. There is an old reason for that, older than the warehouse: you do not name the good people, because a name is how you call them.</p>
+<p>The team built a ritual, and the ritual is still in force. Iterations are counted aloud now, twice; bounds are checked in pairs; the counts are written in the shift log in ink. A procedure is the only shape a superstition is allowed to take in a room like that, and a man who has been visited does not argue with a doubled check. I recognize the ritual. I have my own version.</p>
+<p>I do not know what he wanted. The reaper's bound was off by one, and he moved it by one, and I cannot tell from the account whether he was mending the job or spoiling it; a man who moves a stitch by one may be closing a seam or opening one. What I know is that he came in the night, into a sealed room, and did one small thing, and that one small thing cost a small firm its history. What I know is that he was pleased. What I do not know is whether he is finished. The word the old stories give him is <em>leprechaun</em>, and I use it here because the room had no other name for him. And there are systems whose failure modes include poetry.</p>
+<p><strong>Field Note #3. Some changes have an author, and he does not sign the log. We count in pairs now.</strong></p>
+<p>Since I compiled this file — the folder open, the field-note page in front of me — I read loop bounds twice. I check the diff of anything that touches a limit. I do not tell anyone this is why. The habit is small and permanent and it is mine, and it is the residue of a visitor I did not see and cannot file.</p>
+<hr>
+<h3 id="case-v">V. Mercury in Retrograde</h3>
+<!-- editorial 8: NOTE
+Tell a made up story of how a bug coincided with Mercury being in retrograde.
+The bug must be unique and interesting.
+Do not talk about solutions.
+The implication should be that the bug was a real thing, actually caused by Mercury being in retrograde.
+The episode immerses the reader in the language, lore, imagery, and inner worldview of astrology; Mercury's influence is genuine mystical reality within the fiction, not a correlation to be cautiously inferred.
+Let astrological lore, stations, timing, and escalating consequences carry the episode, treating Mercury's influence as a confirmed mystical cause within the fiction rather than a merely tempting correlation.
+Give this case a distinctive source of unease rather than merely repeating the Heisenbug's suspicion that the failure knows it is observed.
+-->
+<p><strong>A clearing house, a settlement cycle, and a planet that walks backward.</strong></p>
+<p>The Clearing House was not a bank. It was a payments cooperative — eleven member firms, a server room above a shuttered print shop, and one engineer on call. Everything it did was Mercury's work, though I would not have said so then: the movement of money between merchants, the contracts that authorized it, the messages that carried it, the ledger that remembered it. A clearing house is a house of Mercury, and I walked into it without knowing.</p>
+<p>The server room hummed at a pitch I could feel in my teeth when I visited years later, though by then the shop below had become a vape store and the cooperative had moved to a serviced office with better cooling. Each night at 20:00 it ran a settlement cycle: a bounded list of instructions to move money between member accounts. The instructions were chained — a debit from one account funded a credit to another, which funded a debit from that account, and so on down the list. The engine applied them in order, guarded by an overdraft check that parked any instruction that would drive a balance negative. Every application, park, and reversal was written to an append-only journal. The journal was a machine record: it showed order, timestamps, and amounts, and it did not know why.</p>
+<p>I was not the on-call engineer that night. I was given the journal one year later, along with the operator's private log, by a manager who said the cooperative had never fully recovered from what the journal showed. The manager printed the journal for me — reams of timestamped lines, forward and reverse interleaved — and I spread it across my desk beside the ephemeris table I had printed that morning and the operator's paper log, which smelled faintly of the coffee shop where he had written it.</p>
+<p>The anchor incident occurred on the night of 19 March 2025. It was a Wednesday, which is Mercury's day, though I did not know that either. The cycle had been built at 18:00, instructions ingested, chains identified. Settlement began at 20:01. At 20:04 the engine applied the last instruction in the chain first. The journal recorded it: instruction 47, debit from account M-114, applied at 20:04:11. Then instruction 46. Then 45. The chain was being walked backward. Because the instructions were chained, reversing them drove intermediate balances negative. The overdraft guard parked the affected instructions at 20:04:33. They were re-queued. The re-queued batch was applied again — in reverse. The cycle oscillated: apply, unwind, re-apply, each pass mirrored. The journal recorded both orders, forward and reverse, exact and total. At 23:47 the settlement window closed. The engine stopped. The day's obligations were left part-settled and part-double-settled. The building was empty by then. The window was dark. The engine hummed on, applying the past backward, until the window closed and the hum stopped and the morning came.</p>
+<p>The next morning, the lights came on and the phones started ringing. A member firm's payroll had partially bounced. One worker's rent payment had been debited twice and credited once. The worker's name was Dana. She did not know yet. Her landlord did. The cooperative's exposure was stated in a memo: one member firm had left, a regulator had asked a question, and the on-call engineer had been blamed for a failure he could not explain. The memo used the word <em>exposure</em> four times. I counted.</p>
+<p>I did not learn any of this on the night it happened. I learned it from the journal, which was complete and unambiguous, and from the operator's account, which was neither. The investigation took four months. I requested the multi-year reversal log, the restart log, and the deployment calendar. I requested the ephemeris from the same source I had used for other astronomical references in the dossier. I spread the records across my desk and began the ordinary work of elimination.</p>
+<p>The journal, read straight through, is a thing I have not seen elsewhere. It runs forward and then back, the same instructions in two orders, the amounts paired and opposed. Set beside the ephemeris it began to look like a figure I had seen in an old book and could not place: a staff with two serpents wound around it, one climbing as the other descended. The caduceus is Mercury's sign, the sign of the herald and of the market, and I had been reading a ledger that was drawing it.</p>
+<p>The ordinary candidate came first. The engine could recover mid-cycle from a checkpoint by replaying the cycle's in-flight operations. The in-flight list was built by pushing operations onto a structure that was then iterated without being reversed on the recovery path. If recovery replayed a chained cycle in LIFO order, the cycle would be applied in reverse — exactly the observed mirror. This was a real, subtle, order-dependence class of bug. It was also the doorway, not the room. The mechanism could explain how a cycle reversed; it could not explain why these cycles reversed, and no others.</p>
+<p>I gathered every reversal across the years. There were seventeen. Each one fell inside a window in which Mercury was in apparent retrograde. The windows were real and verifiable. I checked them against a published ephemeris — the geocentric positions computed from the JPL DE405 planetary ephemerides, the standard reference. Mercury was in apparent retrograde from 15 March to 7 April 2025, from 18 July to 11 August 2025, from 9 November to 29 November 2025, from 26 February to 20 March 2026, from 29 June to 23 July 2026, and from 24 October to 13 November 2026. Every reversal fell inside one of these windows. No reversal fell outside them. I made a table: seventeen rows, each with a date, a window, and a check mark. The check marks formed a perfect column.</p>
+<p>I did not compute a probability. I had done that in other cases, and the arithmetic had been a way of keeping my hands busy while I decided not to look. This time I looked. A perfect column is not a statistic. It is the shape a thing makes when it has been arranged, and the arrangement is the message.</p>
+<p>I learned the vocabulary the way I learn any system's vocabulary: by reading until the words stopped being words. A planet does not turn all at once. It slows, and slows, and for a day or more it stands still — the <em>station</em> — and only then begins to walk backward. It stands still again before it turns forward. The station is the dangerous place, where the planet is neither going nor coming and its power is gathered and undivided. Astrologers mark the stations the way engineers mark the days a system is most fragile. Mercury had stood still on the fifteenth of March 2025 and turned; four days into its backward walk, on the nineteenth, the ledger turned too.</p>
+<p>Mercury's metal is quicksilver, the only metal that runs. It will not hold a shape and it will not be counted. I thought of it when I read the journal's amounts, each one written twice, once forward and once back, and the two readings never reconciling.</p>
+<p>The operator's private log was a different document. He had kept it himself, in a notebook, during the years he was on call. The handwriting got worse in the later entries. In it, the settlement reversals and his own misfortunes — a contract that failed, a trip that went wrong, a relationship that ended — clustered in the same windows. He had begun to refuse deployments during retrograde. He had left the company. The log passed to me with the journal.</p>
+<p>There was an entry from March 2025 — the anchor incident — in which he had written: <em>I checked the ephemeris again. Mercury is retrograde. I am not scheduling anything.</em> He had scheduled something. The reversal happened that night. I read that entry more times than I have read any other passage in this dossier. Each time, I told myself I was reading it as evidence. Each time, I was reading it as a mirror.</p>
+<p>It was not, in the end, a diary. I had marked it as his — motivated, uncorroborated — and I had read it as the record of a man coming apart. Then I found the charts. In the margins and on the blank versos, between the entries, he had drawn squares divided into twelve, and inside the squares he had set the signs and the degrees, the little glyphs of the planets, and the aspects drawn as lines across the figure. I had seen such squares once, in the appendix of an old book on the history of astronomy, and had taken them for decoration. They were not decoration. They were instruments. There was one chart for each reversal. The earliest was for the anchor night. He had cast it, by its date, before the cycle ran — before the reversal, before the failed payroll, before any of it. He had drawn Mercury in the figure and marked it, and written nothing else. There are people whose work is to read the sky, and the cooperative had employed one without knowing. I laid the chart beside the journal and the ephemeris, and for a long time I could not tell which of the three was the record and which was the prediction. I had worked from left to right, from the machine record to the human record to the astronomical record, and I had not let them touch. Now they touched. They had always been touching. I had been the one holding them apart.</p>
+<p>I caught myself checking the next retrograde date before scheduling a change. The change was ordinary — a database migration, nothing to do with settlement cycles. I delayed it. I did not say why. I kept a private calendar I would not show anyone. I noticed that I had begun to treat a planetary position as a scheduling input, and that noticing did not stop me. I bought an almanac — the kind that lists the moon, the tides, and the stations of the planets — and set it on the desk beside the journal. I ringed the next date in it and did not look at it again.</p>
+<p>One evening that spring I saw Mercury in the west after sunset, low and bright. The Greeks had called the evening star Hermes and the morning star Apollo, not yet knowing they were the same wandering light. I stood in a parking lot and watched until it set. I did not have a reason. It was the first time in my life I had looked for a planet on purpose, and it had not occurred to me that a planet could be looked for. I went inside and wrote the time down.</p>
+<p>The next retrograde window opens on 24 October 2026. The settlement engine is still running. I have not named a cause. I have stopped needing to. The journal is complete. The ephemeris is public. The operator's log is on my desk, and I do not know what Mercury wants with a settlement cycle. I do not know what to do with any of it. A date you know in advance is not a prediction; it is an appointment. I know the date. I have always known the date.</p>
+<p><strong>Field Note #4. The closer your model fits the world, the more the world will take issue.</strong></p>
+<hr>
+<h3 id="case-vi">VI. The Crocodile in Vienna</h3>
+<!-- editorial 9: NOTE
+Tell a made up story of how a crocodile was spotted in Vienna, causing a stir among the locals and drawing attention from the authorities and impacting lifes of people in the city.
+However, the crocodile had no impact on American software systems, which continued to operate as normal.
+The conspicuous absence of an American software failure now draws the narrator's disproportionate attention and quiet checks, revealing his changed perception of causality and his subtle paranoia rather than functioning as an isolated joke.
+Keep the serious procedural account of Vienna's disruption and the narrator's misplaced investigative attention, allowing the reader to notice the absurdity without commentary.
+Some reference: https://chatgpt.com/share/68f3eeb1-c1c0-800e-b09b-e2ee25ddbf47
+-->
+<p><strong>Vienna, in the third week of June.</strong></p>
+<p>I first heard about it on a Wednesday morning, the way I hear about most things now: a message from a colleague, forwarded without comment, containing a link to a local news site and the single word <em>crocodile</em>. The link led to a photograph taken from the Donaukanal promenade — a dark shape, perhaps two meters long, lying on the stone embankment where the canal bends past the Urania. The caption said a crocodile had been spotted in the water during the night. The police had closed the canal path. I read the article twice, the way I read incident reports, looking for the part that mattered. I read it a third time, which was not the way I read incident reports.</p>
+<p>Then I began to do what I always do. I opened a new page in my notebook and wrote the date, the location, and the timeline as far as it had been reported. 06:40, a dog walker saw something dark moving against the current near the Stadtpark bridge. 07:15, she called the police. 07:50, the first patrol cordoned the path between the Urania and the park. By 08:30 the canal was closed to pedestrians and cyclists from Schwedenplatz to the Heumarkt. The police issued a warning: keep children away from the water, keep dogs on a lead, do not approach the animal. Animal control was en route. I noted each timestamp in order, the way I would note the stages of a deploy.</p>
+<p>The Donaukanal is not a wilderness. It is a canalized branch of the Danube, seventeen kilometers long, running through the center of the city, and on a June morning its promenade is one of the busiest corridors in Vienna: joggers, cyclists, commuters on the paths between the U1 and the U4, dog walkers, students, the early shift of the café terraces that line both banks. Closing it was not a small thing. I found the transport advisory: tram lines 1 and 2 diverted, the U1 station at Schwedenplatz exit-only, a shuttle bus laid on between Stubentor and Urania. A primary school cancelled a planned canal walk. A café near the Stadtpark bridge closed its terrace for the day. A woman told a reporter that she had turned back with her dog and walked an extra twenty minutes to the next bridge. None of this is dramatic. It is what happens when a two-meter crocodile is lying in the water that runs through the middle of a European capital.</p>
+<p>By noon the animal had been identified: a Nile crocodile, <em>Crocodylus niloticus</em>, an adult male, approximately two and a half meters, of a kind that does not belong in the Danube or any of its canals. The police said it had almost certainly escaped from a private collection. Schönbrunn Zoo denied any escape. The zoo had held a crocodilian once before, briefly, in 2001, when firefighters brought in a small caiman from the same canal <a href="https://news.bbc.co.uk/2/hi/europe/1447272.stm" title="Crocodile scooped from Danube">15</a>. A reptile specialist from the Haus des Meeres was called in to assist. I documented all of this with the same care I gave to the Schaerbeek election: the who, the what, the when, the authority involved. When the location came up again — the canal bends past the Urania — I copied it into the margin of the new page and underlined it. I could not have said what I meant to connect it to.</p>
+<p>That afternoon, while the crocodile was still in the canal and the path was still closed, I asked the question I always ask: what systems were affected? I started with my own company's status page. Green. I checked the error rate on the European endpoints: normal. I checked the incident log: nothing. I moved to the public status pages of the three major cloud providers. AWS: no ongoing incidents in any region that served our traffic. GCP: all systems operational. Azure: no active service issues. I checked the monitoring dashboard I keep open on my second screen — the one with the latency graphs and the error budget and the slow green pulse of a system behaving exactly as it should. All green. I checked the uptime monitors for the CDN, the DNS provider, and the two SaaS tools my team depended on. Nothing. I wrote each result down in my notebook, in a column, with the time I checked it: 14:02, 14:05, 14:11, 14:18.</p>
+<p>After the column was complete I kept checking. I opened the Wiener Linien status page, which was not a system I was responsible for. I opened the zoo's visitor page to see whether it had said anything about the crocodile, and it had not. I opened the weather for Vienna, and closed it again. I opened the status page of a small company whose office stood on the canal, because a colleague had worked there once. None of these had failed either. That night I did not sleep well. I got up once and looked at the column of times, and at the dashboard, which had not changed. The times were in ink, and the page was beginning to look like a record of something, though I could not have said what had been recorded.</p>
+<p>The next morning, Thursday, while the animal control team was still searching the canal bank near the Stadtpark for a place the crocodile might have hauled out overnight, I checked the systems again. Green. Green. Green. I wrote the new times under the old ones and noticed that the second column was longer than the first, and that I had not decided to make it longer. I found that I was checking the pages in order, the way I check them during an incident, and that there was no incident.</p>
+<p>The crocodile was captured that evening, alive, by the reptile specialist and two police divers, and taken to Schönbrunn Zoo, where it remains. The canal path reopened on Friday. The trams resumed their normal route. The woman with her dog walks a different way now, but she walks. The city absorbed the event and moved on.</p>
+<p>The news stopped, which is what a crocodile is worth, and I went back through the reports to see what they had left out. They had left out nothing. I looked anyway.</p>
+<p>On Friday night I printed the first article and read it again. The photograph was still there, the dark shape on the embankment where the canal bends past the Urania. I read the caption, and the word <em>crocodile</em>, the way I had first read them. Then I folded the page twice and put it in the folder, and opened the dashboard, and the dashboard was green, and I sat with it for a while, and it stayed green.</p>
+<hr>
+<p><strong>Field Note #5. I keep the times in a column, and the column has no incident to explain it.</strong></p>
+<hr>
+<h3 id="case-vii">VII. The Heat Death of Rack C</h3>
+<!-- editorial 10: NOTE
+Tell a made up story of how a server crashed due to environmental reasons, such as overheating or power failure.
+The crash must be objectively mundane: a complete, demonstrable causal chain — a warm week, a clogged filter, a tired fan, a temperature rise, a throttle, an emergency shutdown — with no hint anywhere that it was secretly supernatural.
+The narrator understands and accepts this explanation intellectually; after the demon, the leprechaun, the astrology and the paranoid crocodile, he cannot feel safe or satisfied with even a fully ordinary one.
+Show the dissonance in behavior — emotional responses, rituals, lingering fear, the attention he cannot switch off — and do not lecture that science fails.
+Make the database recovery technically plausible: the data gap is bounded by the transaction-log archive and the backups (a full archive share, an alert nobody read), not by a checkpoint, which is not inherently a rollback.
+Preserve the real human losses: the postdoc's three days of compute, the week in the cluster queue, the work that existed only in the database.
+Coordinate Rack C's details with the coda: the coda's compressed retelling — a warm week, a clogged filter, a fan that failed slow and legible — must be a faithful summary of this case, and the heat log must end up among the dossier's tokens.
+End the case so that it deepens the transition into the coda: the changed-perception rituals begin here.
+-->
+<p><strong>A small research institute, the second week of August.</strong></p>
+<p>I was called on a Tuesday morning because the institute’s database had stopped answering. The monitoring alert had fired at 08:52, five minutes after the server went dark, and the administrator had seen it when he came in at nine. The administrator’s message gave no cause, only the symptom: connections timed out, the application’s health check failed, and the monitoring page I checked from my desk showed the latency graph gone flat. I had done reliability work for the group for two years. Their database was old, their budget was small, and their server room was a converted storage closet at the end of a corridor that smelled of floor wax and hot dust. I knew the room before I arrived. I had spent the summer in other people’s failures, and I had come to expect them to have textures.</p>
+<p>I drove with the kit I always carry, and on the way I caught myself planning the order of the logs I would pull — application, database, kernel — the order I would use if the failure had a story worth telling. It was only after I parked that I noticed I had packed the memory-testing drive, which a dead database has no use for. I left it in the car and brought everything else. The drive took forty minutes, and I spent them composing the case in advance, the way I always do — what failed, when, whether the failure had an audience — and I noticed I was hoping it would be strange.</p>
+<p>The room was hot. The thermostat on the wall read 32°C, and the air had the thick, still quality of a room that had been warming for hours. The fans were silent. A server room is never quiet; the absence of the fans was louder than their sound had been. The server — Rack C, at the end of a row of three — was dark, its status LEDs off, its drives still. The smell was the first thing: hot dust, and beneath it the faint sweet sharpness of hot plastic. I had smelled it before, in other rooms, at other failures. It is the smell of a machine that has been running hot in a room that has stopped being kind to it.</p>
+<p>The air-conditioning unit in the corner was off. It was a small split system, the kind mounted on the wall of a room that was never meant to be a server room. Its display showed an error code I did not recognize. The compressor housing was cold — not cool, cold — and the refrigerant lines had equalized to the temperature of the room. Whatever had failed, it had failed hours ago, and the room had been warming ever since.</p>
+<p>I pulled the logs. The BMC temperature curve showed a steady rise over four hours: 27°C at the inlet at 06:10, 31°C at 07:00, 38°C at 08:00, 45°C at the moment the sensors went dark. The kernel log showed the rest. Thermal warnings from 07:20. Throttling from 07:50, the CPU governor cutting frequency as the cores crossed 95°C. And then, at 08:47, a single line: <code>thermal_zone0: critical temperature reached, shutting down</code>. I overlaid the two timelines on the page I had opened on the desk. Every warning had its temperature, and every throttling event had its cause. The shutdown was not graceful. The filesystem was not unmounted. The database was not checkpointed. The machine simply stopped, without ceremony, in the middle of a transaction.</p>
+<p>I checked the error code against the manufacturer’s documentation. The code was three digits long, and the manual’s table gave it a single meaning: the unit had locked out on airflow, the filter loaded past the point where the coil could be fed enough air to work. The unit had died sometime before dawn, and the room had done the rest. The compressor had never been the fault. The air had.</p>
+<p>The machine had been running on a margin the logs could measure. The intake filter was loaded with the room’s dust — the smell from the doorway, which is what a clogged filter is before it becomes a measurement. One chassis fan had sat below its rated curve for weeks; the BMC kept a graph of its decline, slow and legible, the kind of failure you can read like weather. A warm week, a filter, a fan with nothing left in it: the room did not need to become hot; it needed to stop forgiving the machine.</p>
+<p>The causal chain was complete and ordinary: a warm week, a clogged filter, a fan with nothing left in it, a temperature rise, a throttle, an emergency shutdown.</p>
+<p>Every link was in the logs, or in the machine when I opened the bezel.
+Every link was physical.
+There was nothing in the chain that required an explanation more exotic than a broken machine in a hot room.</p>
+<p>I powered the server on. <code>fsck</code> found inconsistencies in the journal and fixed them. The database recovered from the last verified backup and the archive of transactions kept since — the archive whose whole purpose is to make a backup’s age a detail instead of a boundary. The archive had stopped at 02:47. The reason was complete and ordinary: the share it wrote to had filled that morning, and every failed write since had been logged and sent to an inbox nobody read. So the restore rolled the backup forward to the end of the intact archive and stopped there, consistent, six hours short of the shutdown. The local disks were not asked to say anything more — a machine that had cut its own power mid-write is not a source you trust. The recovery took most of an hour. When it finished, the database was consistent, and the gap remained. The share had filled at 02:47, in the same small hours the cooling gave up, and I found myself checking that the two failures were unconnected — more than once, the way you check a lock. Most of it was routine — observation logs, scheduling entries, the daily instrument telemetry. One piece of it was not.</p>
+<p>The work in the gap belonged to a postdoc named Ruth. She had been running a simulation for three days — a parameter sweep for a paper the group hoped to submit in the autumn — and the final run, the one that completed the sweep, had finished at 06:15 that morning. The results existed only in the database. When I told her, she did not say anything for a while. She was standing in the doorway of the server room, still holding her coffee. Then she asked whether the backup was current. It was not. The last backup was four days old. She said she would rerun it. Three days of compute, she said, and a week in the cluster queue. She said it the way you say the weather.</p>
+<p>I wrote the case up that evening. Cooling failure, thermal shutdown, data loss, a full disk on a share nobody read. The explanation was complete, and the fault I entered in the log was the ordinary one: <em>ambient</em>. I checked the logs twice. That night I opened the file again before sleep and read the shutdown line the way I had once read the settlement operator’s log — more times than the evidence required, each time telling myself I was reading it as evidence. I lingered in the room after I had finished, after the server was running again, in the heat that had not yet been repaired. There was nothing left to find. I had found all of it, and I did not want to leave. The margin between working and gone is measured in degrees, and I had spent the afternoon watching it close. I put the overlaid page into the folder, beside the moth — a heat log, a server dead of a warm week — and checked once, before I left the building, that it was there.</p>
+<hr>
+<p><strong>Field Note #6. Horror, in our trade, is the margin—the few degrees and the few hours between working and gone.</strong></p>
+<hr>
+<h2 id="coda">Coda</h2>
+<!-- editorial 11: NOTE
+The coda should make the reader recognize a changed way of perceiving ordinary systems, not simply restate a moral about uncertainty or limits of science.
+Leave readers with an embodied residue of fear and vulnerability as well as the narrator's continuing commitment to careful evidence.
+-->
+<p>At night, when the building has emptied, I work in a room of ordinary systems, and I no longer take them for granted. I used to find the green lights reassuring. The fans hold their curves. The switch stack blinks in patterns I once set my watch by. An hour of green lights is a good hour, and I have learned to distrust the good ones.</p>
+<p>The dossier is on the desk where I keep it. The tape has yellowed, the margins have narrowed, and the hand it is written in is older now; I still recognize it. The pages are soft at the corners from handling. It is a letter to the man I am becoming, and to anyone who reads it after me. I open it from the front, the way I open a log. Beside it lies the folder <em>Proofs I Do Not Argue With</em>—a moth, taped to an engineering log in 1947, beside the first actual bug. It has always looked unconvinced.</p>
+<p>The tokens are where I left them. A page with <em>timing</em> underlined twice. Two things that were not the same, answering to one name. A small man in green, and a bound moved by one. A crocodile that crossed a city and not an ocean. A warm week that killed a server. I do not read them; I know them by the weight of their pages. I check that they are there, and I close the folder, and it is a check like any other, and it is not one at all.</p>
+<p>Tonight's entry is ordinary. The power supply in rack C runs 1.8 degrees warmer than its twin; both are within specification. The difference is measured; the cause—dust, or position in the aisle, or the fan curve—is inferred; the remedy is scheduled. I write the candidates apart from the reading, because the word <em>likely</em> is load-bearing and I spend it once. The filter is due on the nineteenth, and I write it in the future tense, as if a promise: on the nineteenth, the filter will be changed. I am careful not to break it.</p>
+<p>Last month a server died of heat. A warm week, a clogged filter, a fan that failed slow and legible, the way paper fails. A postdoc lost three days of compute and a week in the cluster queue to the crash, and the explanation, which was complete, did not give her the days back. I wrote <em>ambient</em> in the log and closed the case. Some failures are boring. I accept the explanation. That night I opened the file again and read the shutdown line more times than the evidence required, each time telling myself I was reading it as evidence.</p>
+<p>Beside the dossier, an almanac my method does not require. I know the next retrograde window the way I know a deadline. One date next month is ringed, without cause, and I have moved a migration around it. I did not write down why. I know that it is there.</p>
+<p>At 03:12 I make the last entry, in the hand I will recognize. <strong>Field Note (last). Care, in our trade, is the kept margin—the one that leaves room.</strong> From the folder, I take the moth photograph and tape it in beside the note, the moth and the margin together on the page. The entry has a last line—the bottom margin of the page, where the next note would begin, or a name would go. I put the pen to it and stop.</p>
+<p>The fan in rack C changes pitch, and holds it. I do not look up. I do not write it down. I set the pen down and close the dossier.</p>
+<p>I keep the dossier the way I keep the room lit: not because it keeps anything out, but because I would rather see what is there. I write in a hand I will recognize when I am older. I tape in what must be taped. I leave the margins for the things I still do not know how to name. I have begun to say <em>demon</em> in the register I keep for the weather, and I no longer hear myself do it. I have become one of those people — like myself—skeptics who have seen just enough to be superstitious.</p>
+<p>I leave the dossier on the desk, the tape holding, the margin blank, the moth in the photograph still unconvinced.</p>
+<p>The room runs on.</p>
+<!-- editorial 12: MUST HAVES
+Something with the same moral as "We live by the text; we survive by the small, retold stories that help us decide which part of the text applies when the world grows strange. If you keep a dossier of your own, write in a hand you will recognize when you are older. Tape in what must be taped. Leave space in the margins for the things we still do not know how to name."
+-->
+<hr>
+<h2 id="endnotes-and-sources">Endnotes &amp; Sources</h2>
+<ol>
+<li>
+<p><strong>Mark II moth, the “first actual case of bug being found.”</strong> Smithsonian National Museum of American History object page for the original logbook with the taped insect. (<a href="https://americanhistory.si.edu/collections/object/nmah_334663" title="Log Book With Computer Bug">National Museum of American History</a>)</p>
+</li>
+<li>
+<p><strong>Schaerbeek e-voting anomaly (4096 extra votes).</strong> Civic archive that digitized the official experts’ report: <em>Rapport concernant les élections du 18 mai 2003</em> (Collège d’experts, Belgium). (<a href="https://www.poureva.be/spip.php?article32=" title="Rapport concernant les élections du 18 mai 2003">poureva.be</a>)</p>
+</li>
+<li>
+<p><strong>Background summary of the 2003 incident and Belgian e-voting context.</strong> “Electronic voting in Belgium,” overview with references to the Schaerbeek case. (Use as a pointer; prefer primary reports where available.) (<a href="https://en.wikipedia.org/wiki/Electronic_voting_in_Belgium" title="Electronic voting in Belgium">Wikipedia</a>)</p>
+</li>
+<li>
+<p><strong>Additional context from advocacy and oversight materials.</strong> <em>eVoting in Belgium: State of the Union</em> (PourEVA), summarizing known incidents including the 4096-vote anomaly. (<a href="https://www.vooreva.be/IMG/pdf/eVoting_State_of_the_union.pdf" title="eVoting in Belgium “State of the Union”">vooreva.be</a>)</p>
+</li>
+<li>
+<p><strong>Observation-sensitive Heisenbug substrate for Case II.</strong> Case II is a fictional composite. Carson Ip documented a 2019 ProxySQL hang after large result sets where <code>strace</code>, <code>socat</code>, and added print statements suppressed the failure, while a slower client changed reproducibility. The real issue was later traced to a throttled session being moved into an <code>epoll</code> idle thread and fixed in ProxySQL PR #1952. (<a href="https://github.com/sysown/proxysql/issues/1939" title="ProxySQL issue #1939">ProxySQL issue #1939</a>) (<a href="https://carsonip.me/posts/fixing-proxysql-idle-threads-epoll-hang-heisenbug/" title="Fixing ProxySQL Idle Threads Epoll Hang Heisenbug">Carson Ip write-up</a>) (<a href="https://github.com/sysown/proxysql/pull/1952" title="ProxySQL PR #1952">ProxySQL PR #1952</a>)</p>
+</li>
+<li>
+<p><strong>Prologue valve incident.</strong> The prologue's uncommanded valve is a fictional composite. It draws on the real class of spurious actuation faults in industrial control systems, in which a valve or relay changes state with no matching command in the event log. No specific incident is claimed.</p>
+</li>
+<li>
+<p><strong>Collision precedent for Case III.</strong> Case III's central event is invented: two genuinely distinct files producing the same full SHA-256 digest, and no such collision has been announced or observed; the documented precedent is the 2017 SHAttered demonstration, in which two distinct PDF files produced the same full SHA-1 digest, and the older precedent is MD5, against which collisions have been constructed since 2004 and chosen-prefix collisions since 2007, including the 2008 rogue certificate authority. (<a href="https://shattered.io" title="SHAttered: the first collision for full SHA-1">SHAttered</a>)</p>
+</li>
+<li>
+<p><strong>Documented precedent: a crocodilian in the Donaukanal.</strong> In July 2001, Vienna firefighters caught a small spectacled caiman in the Donaukanal near the Erdbergbrücke and took it to Schönbrunn Zoo; the animal was later transferred to a zoo in Luxembourg, where it died of infection. Its origin was never established. (<a href="https://news.bbc.co.uk/2/hi/europe/1447272.stm" title="Crocodile scooped from Danube">BBC News</a>) (<a href="https://wien.orf.at/v2/news/stories/2547161/" title="Auch Wien hatte schon sein Krokodil">ORF Wien</a>)</p>
+</li>
+<li>
+<p><strong>Cooling-failure substrate for Case VII.</strong> Case VII is a made-up story. On 19 July 2022, during the United Kingdom's record heat wave, a cooling failure at a Google Cloud data center in London took services offline; Google's incident report attributed it to two chiller failures coupled with high ambient temperatures. ASHRAE's thermal guidelines for data processing environments recommend a server inlet range of 18 to 27 °C. (<a href="https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2" title="Google Cloud incident report, 19 July 2022">Google Cloud status</a>) (<a href="https://www.ashrae.org/technical-resources/bookstore/thermal-guidelines-for-data-processing-environments" title="ASHRAE Thermal Guidelines for Data Processing Environments">ASHRAE Thermal Guidelines</a>)</p>
+</li>
+</ol>
+<p><em>(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)</em></p>
+<hr>
+
+      </article>
+      <footer class="article-foot">
+        <span class="endmark" aria-hidden="true">⁂</span>
+        <p>End of dossier</p>
+        <a href="../../index.html">← Back to Vau’s place</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
