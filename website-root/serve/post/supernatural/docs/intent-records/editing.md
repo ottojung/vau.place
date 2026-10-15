@@ -64,8 +64,8 @@ Agents may autonomously diagnose and revise prose, but they must not silently ch
 
 $id-6418273059462718
 title: Do not announce or apologize for the story's metaphysical strategy
-date: 2026/10/13
+date: 2026/10/15
 source: @ottojung
 kind: requirement
 
-The narrator must not announce the author's literary strategy. In early cases, skepticism can emerge naturally from evidence, procedure, and genuine alternatives. In later cases, do NOT insert skeptical qualifications, claims that a real supernatural encounter is "only a story", or implausible mundane theories merely to reassure readers that the fiction is deniable. The demon and green man are real beings within this fictional world; Mercury immerses the reader in genuine mystical significance. Show emotional experience, presence, action, consequence, ritual and altered perception. The narrator's uncertainty can concern what these beings mean or intend, not compulsory doubt about their existence. The mundane final crash is objectively ordinary, while the narrator has ceased to feel reassured by ordinary explanations.
+The narrator must not announce what is real or legendary, even where the fictional world contains actual supernatural beings. A credible witness can be uncertain about what they saw. Technical rigor earns trust early, but later precision becomes actively harmful, displacing emotion and mysticism. Let the solitary Heisenbug create fear, the demon dream create visceral terror, the leprechaun testimony carry embarrassed uncertainty, Mercury introduce occult wonder, Vienna reveal changed relevance, and the mundane crash fail to console. Show experience and action, never certify the metaphysical strategy.
