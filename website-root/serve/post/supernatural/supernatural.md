@@ -9,7 +9,6 @@ Keep each case emotionally distinct, do not explain the moral, and close with ac
 <MUST HAVES>
 "I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct."
 "The closer your model fits the world, the more the world will take issue."
-"there are systems whose failure modes include poetry."
 These phrases belong naturally in later prose, not as prologue declarations.
 </MUST HAVES>
 
@@ -195,7 +194,9 @@ One clerk later admitted that he would have preferred a boring human mistake. A 
 
 The president was summoned to explain the correction. A figure struck through in ink is what a forged count looks like; she answered questions for two days about the one she had struck, and in the end the correction was accepted, the district certified, and no one accused of anything. She did not speak to the technician again.
 
-When he finished, the cafeteria had thinned and our coffee had gone cold. He straightened the sugar packet, which did not need straightening, and did not look up.
+By the time he finishes, the cafeteria has thinned and our coffee has gone cold. He straightens the sugar packet, which does not need straightening, and does not look up.
+
+At the door he asks me not to write down what became of the president. I promise him I will not.
 
 At the time I heard an engineer's argument about preparation, nothing more. We do not fight the weather, he said; we prepare for it. The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
 
@@ -211,7 +212,7 @@ The page belongs to the Harvard Mark II. On 9 September 1947, its operators foun
 
 The moth looks unconvinced.
 
-When he left, at the door, he asked me not to write down what became of her. I said I would not, and I have not, and the page I would have written it on is the one page in the dossier I have never been able to fill.
+The page I reserve for what became of the president is the one page in the dossier I have never been able to fill.
 
 ---
 
@@ -361,13 +362,14 @@ He looked at my two hands resting on the table. I had been holding a pen in each
 
 ---
 
-### IV. The Leprechaun of Off-by-One
+### IV. The Visitor in the Cold Aisle
 
 <NOTE>
 Avoid any declaration that this is or is not a legend, or any insistence that the supernatural entity is real.
 The night operator sees someone he cannot confidently describe, and the folklore emerges through embarrassment, ridicule, omissions, and suggestive fragments rather than a complete costume inventory.
 The mysterious visitor's small alteration to a loop bound is the eerie consequence, not an occasion for software forensics.
 Make the witness's isolation and damaged reputation emotionally credible; allow one moment of uneasy humor without letting the episode become a joke.
+The title must protect the witness and not use the name first introduced in his colleagues' ridicule.
 </NOTE>
 
 The night operator asked me to turn off the recorder before he began. I told him I would not be able to quote him accurately. He said accuracy was why he wanted it off.
@@ -420,8 +422,6 @@ He seemed to be trying to forgive himself for that.
 
 After he left I noticed that I had not asked whether he had seen the visitor's hands. I had asked only what they had done.
 
-There are systems whose failure modes include poetry.
-
 **Field Note #3. When he said the stranger was pleased, his own face changed.**
 
 ---
@@ -434,6 +434,7 @@ Do not make a statistical correlation, a table of retrograde windows, astronomic
 The narrator should actively enter an uncanny ritual and undergo wonder, temptation, dread, and an altered understanding of causality.
 Give Mercury his old domains of messages, trade, journeys, thresholds and trickery, but make the mysticism vivid and particular, not a list of astrological facts.
 Let the supernatural be experienced, not certified or explained; unlike the earlier cases, technical precision is actively the wrong language for much of this story.
+Overt magic is deliberate in this exceptional chapter: retain the moving coin and impossible telephone call, and replace conventional stage properties with Mercury-specific symbols of delivery, transit and return.
 </NOTE>
 
 **Wednesday, the day of Mercury.**
@@ -452,7 +453,7 @@ An old woman admitted us. She did not ask what we wanted. She examined the opera
 
 “Then the message has already arrived,” she said.
 
-The room was crowded with objects whose relations were more unsettling than the objects themselves. An hourglass stood beside a metronome; a sealed letter lay on a plate of salt; seven candles burned around a map that was not a map of any place I knew. Fine lines connected the city streets to zodiacal figures, and through the center of the map ran a river shaped like a serpent, crossing itself wherever the railway crossed water. The walls were hung with little mirrors, but the room reflected in them did not quite agree on the position of the door.
+The room resembled the back office of a postmaster who had taken charge of every undelivered letter in the city. Wooden pigeonholes climbed to the ceiling. Some held envelopes browned with age; others held receipts bearing tomorrow's date. A timetable was pinned above the sorting desk, but its tram lines were drawn in two directions at once, each arrow pointing toward the station it had come from. Names had been crossed out on the envelopes and written again on their backs, in the same hand. Near the window an old letter scale balanced a sealed envelope against a pair of worn shoes. I could not work out which side was supposed to be heavier.
 
 She called the room her observatory. There was no telescope.
 
@@ -488,6 +489,8 @@ There was a pen next to the book. I asked why.
 
 “To give the letter somewhere to go.”
 
+I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct.
+
 The operator put his hand over the pen before I could pick it up. The gesture embarrassed both of us. He had invited me as an investigator, and now he was trying to prevent me from participating in his investigation. Yet I did not push his hand away.
 
 In the pause a telephone rang in the adjoining room. It was an old mechanical bell, the kind that strikes actual metal. I could hear it through the wall as distinctly as a spoon tapping the rim of a glass.
@@ -516,7 +519,7 @@ We left without signing the book. She did not appear disappointed. At the door s
 
 The paper held no writing. We unfolded it twice. It was blank on both sides, except for an indentation that might have been made by a pen long before the ink ran dry.
 
-For weeks afterward I tried to reduce the visit to a sequence of events. I drew the room, measured the likely positions of the mirrors, wrote down everything the woman had said. That procedure, which had served me well all my life, became a peculiar form of homesickness. I could catalogue her objects, but I could not return to the hour in which I had believed each object belonged to another world.
+For weeks afterward I tried to reduce the visit to a sequence of events. I drew the room, counted the pigeonholes, copied the tram routes, wrote down everything the woman had said. That procedure, which had served me well all my life, became a peculiar form of homesickness. I could catalogue her objects, but I could not return to the hour in which I had believed each object belonged to another world.
 
 I began reading the old books she had named. I learned why Mercury wears wings, why his staff bears two serpents, why merchants and messengers once made offerings at crossroads. I learned the signs for conjunction and opposition, and the houses in which an astrologer looks for journeys, theft, marriage, debts, death. These did not feel to me like explanations. They were rooms opening from rooms, with no outer wall.
 
@@ -609,17 +612,15 @@ Reflect the revised cases accurately: a solitary Heisenbug vigil, an experienced
 
 The room is quiet at this hour, by which I mean only that the fans are running properly. I can hear a change in their pitch without looking up. I write the temperature of Rack C in the margin of my notebook; it is within specification.
 
-Beside the notebook lies the dossier. Its first pages are orderly. They have dates, witnesses, causes proposed and rejected, little diagrams in ink. As the pages turn, the handwriting grows less even. Certain sentences have been written over so many times that the paper has thinned.
+Beside the notebook lies the dossier. Its first pages are orderly. They have dates, witnesses, causes proposed and rejected, little diagrams in ink. Near the front is the report of the valve that opened while a fitter was working beside it. His name is there, and the time, and an empty space where the command should have been. As the pages turn, the handwriting grows less even. Certain sentences have been written over so many times that the paper has thinned.
 
-I keep a photograph of the moth taped into the logbook of an early computer, because I once found it amusing that a bug could be caught and made to stay. Next to it is the page on which I crossed out a sentence about a program that hated to be watched. I can still see the erased letters. Across the page a box is marked *04:56*. It is the only box I never filled.
+I keep a photograph of the moth taped into the logbook of an early computer, because I once found it amusing that a bug could be caught and made to stay. Next to it is the page on which I crossed out a sentence about a program that hated to be watched. I can still see the erased letters. Across the page a box is marked *04:56*. I have kept it empty, though I know exactly what I was doing at that hour.
 
 There is a copied hash written on a folded scrap of paper. The files it once named are gone. When I unfold it, I remember not the number but the developer's description of a demon studying two small objects in its hands. I fold the paper again before reaching the end of the line.
 
 Another page contains a witness's answers in my own handwriting. He remembered a visitor and did not want to describe him. He had been laughed at, and each time I read the notes I remember how carefully he chose his words. I have stopped trying to supply the words he withheld.
 
 A coin lies beside the almanac. I have not shown it to anyone. Next month's date is ringed, and I have moved a routine change to the following week. The change is safer for several ordinary reasons, which I wrote down afterward.
-
-I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct.
 
 The filter for Rack C will be changed on the nineteenth. I have checked that the work order exists. I have checked that somebody has accepted it. I have set an ordinary reminder, in the ordinary way, and I have set another that I will not mention.
 
@@ -631,26 +632,29 @@ In the morning I will be able to explain why.
 
 ---
 
-## Endnotes & Sources
+## Author's Notes & Sources
 
-1. **Mark II moth, the “first actual case of bug being found.”** Smithsonian National Museum of American History object page for the original logbook with the taped insect. ([National Museum of American History][1])
+*These notes are outside the narrator's dossier. The historical incidents and technical reports below are real; the characters, dialogue, occult events, and their connections in the stories are fictional unless explicitly identified otherwise. A reference to a historical precedent is not evidence that the fictional episode occurred.*
 
-2. **Schaerbeek e-voting anomaly (4096 extra votes).** Civic archive that digitized the official experts’ report: *Rapport concernant les élections du 18 mai 2003* (Collège d’experts, Belgium). ([poureva.be][2])
+1. **The Mark II moth.** The original 1947 logbook, with an insect taped into it, is held by the Smithsonian National Museum of American History. ([Museum collection][1])
 
-3. **Background summary of the 2003 incident and Belgian e-voting context.** “Electronic voting in Belgium,” overview with references to the Schaerbeek case. (Use as a pointer; prefer primary reports where available.) ([Wikipedia][3])
+2. **The Schaerbeek election.** The 4,096-vote discrepancy in the Belgian election of May 2003 was investigated by an official expert panel. The technical anomaly and report are documented; this story's café conversation, witnesses' private words, and newspaper story are invented. ([Expert report][2]) ([Historical overview][3])
 
-4. **Additional context from advocacy and oversight materials.** *eVoting in Belgium: State of the Union* (PourEVA), summarizing known incidents including the 4096-vote anomaly. ([vooreva.be][4])
+3. **Belgian e-voting context.** Oversight and advocacy material supplies additional background on the official response and controversy. ([PourEVA report][4])
 
-5. **Observation-sensitive Heisenbug substrate for Case II.** Case II is a fictional composite. Carson Ip documented a 2019 ProxySQL hang after large result sets where `strace`, `socat`, and added print statements suppressed the failure, while a slower client changed reproducibility. The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952. ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
+4. **The Heisenbug.** The lonely night and the narrator's experiences are fictional. The observation-sensitive software behavior is inspired by a real ProxySQL hang that disappeared under tracing and other interventions. That real issue was eventually investigated and fixed; the fictional episode does not claim otherwise. ([Original issue][5]) ([Engineering account][6]) ([Fix][7])
 
-6. **Prologue valve incident.** The prologue's uncommanded valve is a fictional composite. It draws on the real class of spurious actuation faults in industrial control systems, in which a valve or relay changes state with no matching command in the event log. No specific incident is claimed.
+5. **The valve.** The prologue's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
 
-7. **Collision precedent for Case III.** Case III's central event is invented: two genuinely distinct files producing the same full SHA-256 digest, and no such collision has been announced or observed; the documented precedent is the 2017 SHAttered demonstration, in which two distinct PDF files produced the same full SHA-1 digest, and the older precedent is MD5, against which collisions have been constructed since 2004 and chosen-prefix collisions since 2007, including the 2008 rogue certificate authority. ([SHAttered][19])
-8. **Documented precedent: a crocodilian in the Donaukanal.** In July 2001, Vienna firefighters caught a small spectacled caiman in the Donaukanal near the Erdbergbrücke and took it to Schönbrunn Zoo; the animal was later transferred to a zoo in Luxembourg, where it died of infection. Its origin was never established. ([BBC News][15]) ([ORF Wien][16])
+6. **Maxwell's Demon.** The visitation, hash collision, and vanished originals are fictional. No full SHA-256 collision is known to have been publicly demonstrated. The distinct-file collision actually demonstrated by the SHAttered project used SHA-1, a different hash algorithm. ([SHAttered demonstration][19])
 
-9. **Cooling-failure substrate for Case VII.** Case VII is a made-up story. On 19 July 2022, during the United Kingdom's record heat wave, a cooling failure at a Google Cloud data center in London took services offline; Google's incident report attributed it to two chiller failures coupled with high ambient temperatures. ASHRAE's thermal guidelines for data processing environments recommend a server inlet range of 18 to 27 °C. ([Google Cloud status][17]) ([ASHRAE Thermal Guidelines][18])
+7. **The visitor in the cold aisle.** This case is invented. Its folklore, including the caution about watching a fairy being, draws on the Irish traditions collected in W. B. Yeats's *Fairy and Folk Tales of the Irish Peasantry*; neither the narrator nor the operator is a historical witness. ([Yeats collection][20])
 
-*(Selected entries above anchor the real incidents used in this dossier. Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)*
+8. **Mercury in Retrograde.** The clearing house, astrologer, moving coin, phone call, and almanac are fictional. Mercury's associations with messages, journeys, commerce and interpretation belong to longstanding astrological traditions; William Lilly's *Christian Astrology* (1647) documents one early modern version of the larger symbolic practice. This source is evidence of a tradition, not of the invented events. ([Lilly, *Christian Astrology*][21])
+
+9. **Crocodiles in Vienna.** The incident in the story is invented. An actual small caiman was caught in Vienna's Donaukanal in 2001; the historical capture is a precedent, not the episode described by the narrator. ([BBC][15]) ([ORF Wien][16])
+
+10. **Heat and server failure.** Rack C, Ruth, and the research institute are invented. Cooling-system failures causing real cloud-service disruptions are documented, including an incident in London in July 2022. ([Google Cloud incident report][17]) ([ASHRAE thermal guidelines][18])
 
 [1]: https://americanhistory.si.edu/collections/object/nmah_334663 "Log Book With Computer Bug"
 [2]: https://www.poureva.be/spip.php?article32= "Rapport concernant les élections du 18 mai 2003"
@@ -665,5 +669,7 @@ In the morning I will be able to explain why.
 [17]: https://status.cloud.google.com/incidents/fmEL9i2fArADKawkZAa2 "Google Cloud incident report, 19 July 2022"
 [18]: https://www.ashrae.org/technical-resources/bookstore/thermal-guidelines-for-data-processing-environments "ASHRAE Thermal Guidelines for Data Processing Environments"
 [19]: https://shattered.io "SHAttered: the first collision for full SHA-1"
+[20]: https://www.gutenberg.org/ebooks/33887 "W. B. Yeats, Fairy and Folk Tales of the Irish Peasantry"
+[21]: https://openlibrary.org/books/OL18675930M/Christian_astrology "William Lilly, Christian Astrology (1647)"
 
 ---

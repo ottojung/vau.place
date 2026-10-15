@@ -43,19 +43,13 @@ $n72875
 text: "The closer your model fits the world, the more the world will take issue."
 intent: State live editorial requirements. Its local function is narrative advance.
 style: Clear non-diegetic instruction.
-continuity: Follows $n65643; precedes $n97352. Story contracts and authorial priorities.
-
-$n97352
-text: "there are systems whose failure modes include poetry."
-intent: State live editorial requirements. Its local function is narrative advance.
-style: Clear non-diegetic instruction.
-continuity: Follows $n72875; precedes $n57311. Story contracts and authorial priorities.
+continuity: Follows $n65643; precedes $n57311. Story contracts and authorial priorities.
 
 $n57311
 text: These phrases belong naturally in later prose, not as prologue declarations.
 intent: State live editorial requirements. Its local function is narrative advance.
 style: Clear non-diegetic instruction.
-continuity: Follows $n97352; precedes $n43955. Story contracts and authorial priorities.
+continuity: Follows $n72875; precedes $n43955. Story contracts and authorial priorities.
 
 $n43955
 text: *From the notebook of an investigator who kept what he could not explain*
@@ -1303,25 +1297,37 @@ $n77612
 text: She did not speak to the technician again.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n92831; precedes $n62144. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n92831; precedes $n78255. Election count, biscuits, newspaper, and the technician.
 
-$n62144
-text: When he finished, the cafeteria had thinned and our coffee had gone cold.
+$n78255
+text: By the time he finishes, the cafeteria has thinned and our coffee has gone cold.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is sensory evidence.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n77612; precedes $n24689. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n77612; precedes $n57984. Election count, biscuits, newspaper, and the technician.
 
-$n24689
-text: He straightened the sugar packet, which did not need straightening, and did not look up.
+$n57984
+text: He straightens the sugar packet, which does not need straightening, and does not look up.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n62144; precedes $n34715. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n78255; precedes $n51004. Election count, biscuits, newspaper, and the technician.
+
+$n51004
+text: At the door he asks me not to write down what became of the president.
+intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is sensory evidence.
+style: Concrete restrained conversation, everyday detail and subtle humor.
+continuity: Follows $n57984; precedes $n99862. Election count, biscuits, newspaper, and the technician.
+
+$n99862
+text: I promise him I will not.
+intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
+style: Concrete restrained conversation, everyday detail and subtle humor.
+continuity: Follows $n51004; precedes $n34715. Election count, biscuits, newspaper, and the technician.
 
 $n34715
 text: At the time I heard an engineer's argument about preparation, nothing more.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n24689; precedes $n18816. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n99862; precedes $n18816. Election count, biscuits, newspaper, and the technician.
 
 $n18816
 text: We do not fight the weather, he said; we prepare for it.
@@ -1405,25 +1411,19 @@ $n10406
 text: The moth looks unconvinced.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n65765; precedes $n97133. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n65765; precedes $n80750. Election count, biscuits, newspaper, and the technician.
 
-$n97133
-text: When he left, at the door, he asked me not to write down what became of her.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is sensory evidence.
+$n80750
+text: The page I reserve for what became of the president is the one page in the dossier I have never been able to fill.
+intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n10406; precedes $n01924. Election count, biscuits, newspaper, and the technician.
-
-$n01924
-text: I said I would not, and I have not, and the page I would have written it on is the one page in the dossier I have never been able to fill.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n97133; precedes $n52146. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n10406; precedes $n52146. Election count, biscuits, newspaper, and the technician.
 
 $n52146
 text: The narrator must investigate alone through the night; no colleagues enter to validate his perception or ease his fear.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is emotional or perceptual change.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n01924; precedes $n70860. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n80750; precedes $n70860. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n70860
 text: Minimize low-level technical detail, product names, proxy implementation, tables, and explanations of measurement overhead.
@@ -2605,13 +2605,19 @@ $n82083
 text: Make the witness's isolation and damaged reputation emotionally credible; allow one moment of uneasy humor without letting the episode become a joke.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n47509; precedes $n96745. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n47509; precedes $n88432. Tapping, greenish light, changed loop bound, joking colleagues.
+
+$n88432
+text: The title must protect the witness and not use the name first introduced in his colleagues' ridicule.
+intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
+style: Hesitant testimony, small humiliations, ambiguous perception.
+continuity: Follows $n82083; precedes $n96745. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n96745
 text: The night operator asked me to turn off the recorder before he began.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is testimony or reported dialogue.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n82083; precedes $n21001. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n88432; precedes $n21001. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n21001
 text: I told him I would not be able to quote him accurately.
@@ -2971,19 +2977,13 @@ $n43459
 text: I had asked only what they had done.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is testimony or reported dialogue.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n92069; precedes $n48007. Tapping, greenish light, changed loop bound, joking colleagues.
-
-$n48007
-text: There are systems whose failure modes include poetry.
-intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
-style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n43459; precedes $n36014. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n92069; precedes $n36014. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n36014
 text: **Field Note #3.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n48007; precedes $n68952. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n43459; precedes $n68952. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n68952
 text: When he said the stranger was pleased, his own face changed.
@@ -3019,13 +3019,19 @@ $n58143
 text: Let the supernatural be experienced, not certified or explained; unlike the earlier cases, technical precision is actively the wrong language for much of this story.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n72999; precedes $n70012. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n72999; precedes $n98801. Mercury, serpents, mirrors, moving coin and impossible telephone.
+
+$n98801
+text: Overt magic is deliberate in this exceptional chapter: retain the moving coin and impossible telephone call, and replace conventional stage properties with Mercury-specific symbols of delivery, transit and return.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
+style: Visceral visionary mysticism rather than technical documentation.
+continuity: Follows $n58143; precedes $n70012. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n70012
 text: **Wednesday, the day of Mercury.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n58143; precedes $n53049. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n98801; precedes $n53049. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n53049
 text: I first met the astrologer because of an envelope that had arrived at the clearing house three days before its contents happened.
@@ -3151,37 +3157,55 @@ $n76506
 text: “Then the message has already arrived,” she said.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n61825; precedes $n10313. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n61825; precedes $n72549. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n10313
-text: The room was crowded with objects whose relations were more unsettling than the objects themselves.
+$n72549
+text: The room resembled the back office of a postmaster who had taken charge of every undelivered letter in the city.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
+style: Visceral visionary mysticism rather than technical documentation.
+continuity: Follows $n76506; precedes $n23388. Mercury, serpents, mirrors, moving coin and impossible telephone.
+
+$n23388
+text: Wooden pigeonholes climbed to the ceiling.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n76506; precedes $n12921. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n72549; precedes $n27407. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n12921
-text: An hourglass stood beside a metronome; a sealed letter lay on a plate of salt; seven candles burned around a map that was not a map of any place I knew.
+$n27407
+text: Some held envelopes browned with age; others held receipts bearing tomorrow's date.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
+style: Visceral visionary mysticism rather than technical documentation.
+continuity: Follows $n23388; precedes $n60233. Mercury, serpents, mirrors, moving coin and impossible telephone.
+
+$n60233
+text: A timetable was pinned above the sorting desk, but its tram lines were drawn in two directions at once, each arrow pointing toward the station it had come from.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
+style: Visceral visionary mysticism rather than technical documentation.
+continuity: Follows $n27407; precedes $n99113. Mercury, serpents, mirrors, moving coin and impossible telephone.
+
+$n99113
+text: Names had been crossed out on the envelopes and written again on their backs, in the same hand.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
+style: Visceral visionary mysticism rather than technical documentation.
+continuity: Follows $n60233; precedes $n39345. Mercury, serpents, mirrors, moving coin and impossible telephone.
+
+$n39345
+text: Near the window an old letter scale balanced a sealed envelope against a pair of worn shoes.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n10313; precedes $n26559. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n99113; precedes $n20724. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n26559
-text: Fine lines connected the city streets to zodiacal figures, and through the center of the map ran a river shaped like a serpent, crossing itself wherever the railway crossed water.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
+$n20724
+text: I could not work out which side was supposed to be heavier.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n12921; precedes $n17266. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n17266
-text: The walls were hung with little mirrors, but the room reflected in them did not quite agree on the position of the door.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n26559; precedes $n30869. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n39345; precedes $n30869. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n30869
 text: She called the room her observatory.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n17266; precedes $n78794. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n20724; precedes $n78794. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n78794
 text: There was no telescope.
@@ -3457,13 +3481,19 @@ $n50446
 text: “To give the letter somewhere to go.”
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n87671; precedes $n42396. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n87671; precedes $n03597. Mercury, serpents, mirrors, moving coin and impossible telephone.
+
+$n03597
+text: I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
+style: Visceral visionary mysticism rather than technical documentation.
+continuity: Follows $n50446; precedes $n42396. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n42396
 text: The operator put his hand over the pen before I could pick it up.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n50446; precedes $n88168. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n03597; precedes $n88168. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n88168
 text: The gesture embarrassed both of us.
@@ -3667,10 +3697,10 @@ $n59888
 text: For weeks afterward I tried to reduce the visit to a sequence of events.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n61032; precedes $n66972. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n61032; precedes $n23441. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n66972
-text: I drew the room, measured the likely positions of the mirrors, wrote down everything the woman had said.
+$n23441
+text: I drew the room, counted the pigeonholes, copied the tram routes, wrote down everything the woman had said.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
 style: Visceral visionary mysticism rather than technical documentation.
 continuity: Follows $n59888; precedes $n83043. Mercury, serpents, mirrors, moving coin and impossible telephone.
@@ -3679,7 +3709,7 @@ $n83043
 text: That procedure, which had served me well all my life, became a peculiar form of homesickness.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n66972; precedes $n74310. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n23441; precedes $n74310. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n74310
 text: I could catalogue her objects, but I could not return to the hour in which I had believed each object belonged to another world.
@@ -4291,13 +4321,25 @@ $n28608
 text: They have dates, witnesses, causes proposed and rejected, little diagrams in ink.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n61449; precedes $n10407. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n61449; precedes $n57032. Dossier, moth, hash, coin, almanac and Rack C.
+
+$n57032
+text: Near the front is the report of the valve that opened while a fitter was working beside it.
+intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
+style: Restrained and concrete, unresolved with a residual unease.
+continuity: Follows $n28608; precedes $n31147. Dossier, moth, hash, coin, almanac and Rack C.
+
+$n31147
+text: His name is there, and the time, and an empty space where the command should have been.
+intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
+style: Restrained and concrete, unresolved with a residual unease.
+continuity: Follows $n57032; precedes $n10407. Dossier, moth, hash, coin, almanac and Rack C.
 
 $n10407
 text: As the pages turn, the handwriting grows less even.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n28608; precedes $n48753. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n31147; precedes $n48753. Dossier, moth, hash, coin, almanac and Rack C.
 
 $n48753
 text: Certain sentences have been written over so many times that the paper has thinned.
@@ -4327,10 +4369,10 @@ $n43241
 text: Across the page a box is marked *04:56*.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n65434; precedes $n74382. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n65434; precedes $n29979. Dossier, moth, hash, coin, almanac and Rack C.
 
-$n74382
-text: It is the only box I never filled.
+$n29979
+text: I have kept it empty, though I know exactly what I was doing at that hour.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
 continuity: Follows $n43241; precedes $n66486. Dossier, moth, hash, coin, almanac and Rack C.
@@ -4339,7 +4381,7 @@ $n66486
 text: There is a copied hash written on a folded scrap of paper.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is procedural evidence or its displacement.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n74382; precedes $n14759. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n29979; precedes $n14759. Dossier, moth, hash, coin, almanac and Rack C.
 
 $n14759
 text: The files it once named are gone.
@@ -4405,19 +4447,13 @@ $n63228
 text: The change is safer for several ordinary reasons, which I wrote down afterward.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is testimony or reported dialogue.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n64300; precedes $n03597. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n03597
-text: I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n63228; precedes $n41228. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n64300; precedes $n41228. Dossier, moth, hash, coin, almanac and Rack C.
 
 $n41228
 text: The filter for Rack C will be changed on the nineteenth.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n03597; precedes $n69306. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n63228; precedes $n69306. Dossier, moth, hash, coin, almanac and Rack C.
 
 $n69306
 text: I have checked that the work order exists.
@@ -4471,202 +4507,268 @@ $n41163
 text: In the morning I will be able to explain why.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n63464; precedes $n35102. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n63464; precedes $n44485. Dossier, moth, hash, coin, almanac and Rack C.
 
-$n35102
-text: **Mark II moth, the “first actual case of bug being found.”
+$n44485
+text: *These notes are outside the narrator's dossier.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n41163; precedes $n28331. Documentation, provenance, and fictional composites.
+continuity: Follows $n41163; precedes $n45423. Documentation, provenance, and fictional composites.
 
-$n28331
-text: ** Smithsonian National Museum of American History object page for the original logbook with the taped insect.
+$n45423
+text: The historical incidents and technical reports below are real; the characters, dialogue, occult events, and their connections in the stories are fictional unless explicitly identified otherwise.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n35102; precedes $n50287. Documentation, provenance, and fictional composites.
+continuity: Follows $n44485; precedes $n12521. Documentation, provenance, and fictional composites.
 
-$n50287
-text: ([National Museum of American History][1])
+$n12521
+text: A reference to a historical precedent is not evidence that the fictional episode occurred.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n28331; precedes $n32257. Documentation, provenance, and fictional composites.
+continuity: Follows $n45423; precedes $n94832. Documentation, provenance, and fictional composites.
 
-$n32257
-text: **Schaerbeek e-voting anomaly (4096 extra votes).
+$n94832
+text: **The Mark II moth.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n50287; precedes $n52214. Documentation, provenance, and fictional composites.
+continuity: Follows $n12521; precedes $n71772. Documentation, provenance, and fictional composites.
 
-$n52214
-text: ** Civic archive that digitized the official experts’ report: *Rapport concernant les élections du 18 mai 2003* (Collège d’experts, Belgium). ([poureva.be][2])
+$n71772
+text: ** The original 1947 logbook, with an insect taped into it, is held by the Smithsonian National Museum of American History.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n32257; precedes $n97912. Documentation, provenance, and fictional composites.
+continuity: Follows $n94832; precedes $n72319. Documentation, provenance, and fictional composites.
 
-$n97912
-text: **Background summary of the 2003 incident and Belgian e-voting context.
+$n72319
+text: ([Museum collection][1])
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n52214; precedes $n60652. Documentation, provenance, and fictional composites.
+continuity: Follows $n71772; precedes $n68982. Documentation, provenance, and fictional composites.
 
-$n60652
-text: ** “Electronic voting in Belgium,” overview with references to the Schaerbeek case.
+$n68982
+text: **The Schaerbeek election.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n97912; precedes $n16356. Documentation, provenance, and fictional composites.
+continuity: Follows $n72319; precedes $n24076. Documentation, provenance, and fictional composites.
 
-$n16356
-text: (Use as a pointer; prefer primary reports where available.)
+$n24076
+text: ** The 4,096-vote discrepancy in the Belgian election of May 2003 was investigated by an official expert panel.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n60652; precedes $n50042. Documentation, provenance, and fictional composites.
+continuity: Follows $n68982; precedes $n80888. Documentation, provenance, and fictional composites.
 
-$n50042
-text: ([Wikipedia][3])
+$n80888
+text: The technical anomaly and report are documented; this story's café conversation, witnesses' private words, and newspaper story are invented.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n16356; precedes $n82011. Documentation, provenance, and fictional composites.
+continuity: Follows $n24076; precedes $n60708. Documentation, provenance, and fictional composites.
 
-$n82011
-text: **Additional context from advocacy and oversight materials.** *eVoting in Belgium: State of the Union* (PourEVA), summarizing known incidents including the 4096-vote anomaly. ([vooreva.be][4])
+$n60708
+text: ([Expert report][2]) ([Historical overview][3])
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n50042; precedes $n38476. Documentation, provenance, and fictional composites.
+continuity: Follows $n80888; precedes $n79306. Documentation, provenance, and fictional composites.
 
-$n38476
-text: **Observation-sensitive Heisenbug substrate for Case II.
+$n79306
+text: **Belgian e-voting context.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n82011; precedes $n61973. Documentation, provenance, and fictional composites.
+continuity: Follows $n60708; precedes $n33022. Documentation, provenance, and fictional composites.
 
-$n61973
-text: ** Case II is a fictional composite.
+$n33022
+text: ** Oversight and advocacy material supplies additional background on the official response and controversy.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n38476; precedes $n82797. Documentation, provenance, and fictional composites.
+continuity: Follows $n79306; precedes $n94502. Documentation, provenance, and fictional composites.
 
-$n82797
-text: Carson Ip documented a 2019 ProxySQL hang after large result sets where `strace`, `socat`, and added print statements suppressed the failure, while a slower client changed reproducibility.
+$n94502
+text: ([PourEVA report][4])
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n61973; precedes $n40210. Documentation, provenance, and fictional composites.
+continuity: Follows $n33022; precedes $n42364. Documentation, provenance, and fictional composites.
 
-$n40210
-text: The real issue was later traced to a throttled session being moved into an `epoll` idle thread and fixed in ProxySQL PR #1952.
+$n42364
+text: **The Heisenbug.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n82797; precedes $n19754. Documentation, provenance, and fictional composites.
+continuity: Follows $n94502; precedes $n65048. Documentation, provenance, and fictional composites.
 
-$n19754
-text: ([ProxySQL issue #1939][5]) ([Carson Ip write-up][6]) ([ProxySQL PR #1952][7])
+$n65048
+text: ** The lonely night and the narrator's experiences are fictional.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n40210; precedes $n53904. Documentation, provenance, and fictional composites.
+continuity: Follows $n42364; precedes $n84302. Documentation, provenance, and fictional composites.
 
-$n53904
-text: **Prologue valve incident.
+$n84302
+text: The observation-sensitive software behavior is inspired by a real ProxySQL hang that disappeared under tracing and other interventions.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n19754; precedes $n84528. Documentation, provenance, and fictional composites.
+continuity: Follows $n65048; precedes $n52937. Documentation, provenance, and fictional composites.
 
-$n84528
-text: ** The prologue's uncommanded valve is a fictional composite.
+$n52937
+text: That real issue was eventually investigated and fixed; the fictional episode does not claim otherwise.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n53904; precedes $n15804. Documentation, provenance, and fictional composites.
+continuity: Follows $n84302; precedes $n14005. Documentation, provenance, and fictional composites.
 
-$n15804
-text: It draws on the real class of spurious actuation faults in industrial control systems, in which a valve or relay changes state with no matching command in the event log.
+$n14005
+text: ([Original issue][5]) ([Engineering account][6]) ([Fix][7])
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n52937; precedes $n44426. Documentation, provenance, and fictional composites.
+
+$n44426
+text: **The valve.
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n14005; precedes $n32546. Documentation, provenance, and fictional composites.
+
+$n32546
+text: ** The prologue's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
 intent: Keep external historical references distinct from invented story events. Its local function is procedural evidence or its displacement.
 style: Factual reference prose.
-continuity: Follows $n84528; precedes $n17075. Documentation, provenance, and fictional composites.
+continuity: Follows $n44426; precedes $n71606. Documentation, provenance, and fictional composites.
 
-$n17075
-text: No specific incident is claimed.
+$n71606
+text: **Maxwell's Demon.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n15804; precedes $n15906. Documentation, provenance, and fictional composites.
+continuity: Follows $n32546; precedes $n68121. Documentation, provenance, and fictional composites.
 
-$n15906
-text: **Collision precedent for Case III.
+$n68121
+text: ** The visitation, hash collision, and vanished originals are fictional.
+intent: Keep external historical references distinct from invented story events. Its local function is procedural evidence or its displacement.
+style: Factual reference prose.
+continuity: Follows $n71606; precedes $n82719. Documentation, provenance, and fictional composites.
+
+$n82719
+text: No full SHA-256 collision is known to have been publicly demonstrated.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n17075; precedes $n19390. Documentation, provenance, and fictional composites.
+continuity: Follows $n68121; precedes $n97623. Documentation, provenance, and fictional composites.
 
-$n19390
-text: ** Case III's central event is invented: two genuinely distinct files producing the same full SHA-256 digest, and no such collision has been announced or observed; the documented precedent is the 2017 SHAttered demonstration, in which two distinct PDF files produced the same full SHA-1 digest, and the older precedent is MD5, against which collisions have been constructed since 2004 and chosen-prefix collisions since 2007, including the 2008 rogue certificate authority.
+$n97623
+text: The distinct-file collision actually demonstrated by the SHAttered project used SHA-1, a different hash algorithm.
+intent: Keep external historical references distinct from invented story events. Its local function is procedural evidence or its displacement.
+style: Factual reference prose.
+continuity: Follows $n82719; precedes $n64173. Documentation, provenance, and fictional composites.
+
+$n64173
+text: ([SHAttered demonstration][19])
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n15906; precedes $n46140. Documentation, provenance, and fictional composites.
+continuity: Follows $n97623; precedes $n57525. Documentation, provenance, and fictional composites.
 
-$n46140
-text: ([SHAttered][19])
-intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
-style: Factual reference prose.
-continuity: Follows $n19390; precedes $n56044. Documentation, provenance, and fictional composites.
-
-$n56044
-text: **Documented precedent: a crocodilian in the Donaukanal.
-intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
-style: Factual reference prose.
-continuity: Follows $n46140; precedes $n89420. Documentation, provenance, and fictional composites.
-
-$n89420
-text: ** In July 2001, Vienna firefighters caught a small spectacled caiman in the Donaukanal near the Erdbergbrücke and took it to Schönbrunn Zoo; the animal was later transferred to a zoo in Luxembourg, where it died of infection.
-intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
-style: Factual reference prose.
-continuity: Follows $n56044; precedes $n19308. Documentation, provenance, and fictional composites.
-
-$n19308
-text: Its origin was never established.
-intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
-style: Factual reference prose.
-continuity: Follows $n89420; precedes $n78426. Documentation, provenance, and fictional composites.
-
-$n78426
-text: ([BBC News][15]) ([ORF Wien][16])
-intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
-style: Factual reference prose.
-continuity: Follows $n19308; precedes $n96232. Documentation, provenance, and fictional composites.
-
-$n96232
-text: **Cooling-failure substrate for Case VII.
-intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
-style: Factual reference prose.
-continuity: Follows $n78426; precedes $n42362. Documentation, provenance, and fictional composites.
-
-$n42362
-text: ** Case VII is a made-up story.
-intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
-style: Factual reference prose.
-continuity: Follows $n96232; precedes $n35109. Documentation, provenance, and fictional composites.
-
-$n35109
-text: On 19 July 2022, during the United Kingdom's record heat wave, a cooling failure at a Google Cloud data center in London took services offline; Google's incident report attributed it to two chiller failures coupled with high ambient temperatures.
+$n57525
+text: **The visitor in the cold aisle.
 intent: Keep external historical references distinct from invented story events. Its local function is sensory evidence.
 style: Factual reference prose.
-continuity: Follows $n42362; precedes $n52590. Documentation, provenance, and fictional composites.
+continuity: Follows $n64173; precedes $n38167. Documentation, provenance, and fictional composites.
 
-$n52590
-text: ASHRAE's thermal guidelines for data processing environments recommend a server inlet range of 18 to 27 °C.
-intent: Keep external historical references distinct from invented story events. Its local function is procedural evidence or its displacement.
-style: Factual reference prose.
-continuity: Follows $n35109; precedes $n39766. Documentation, provenance, and fictional composites.
-
-$n39766
-text: ([Google Cloud status][17]) ([ASHRAE Thermal Guidelines][18])
+$n38167
+text: ** This case is invented.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n52590; precedes $n54805. Documentation, provenance, and fictional composites.
+continuity: Follows $n57525; precedes $n33108. Documentation, provenance, and fictional composites.
 
-$n54805
-text: *(Selected entries above anchor the real incidents used in this dossier.
+$n33108
+text: Its folklore, including the caution about watching a fairy being, draws on the Irish traditions collected in W.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n39766; precedes $n34889. Documentation, provenance, and fictional composites.
+continuity: Follows $n38167; precedes $n62308. Documentation, provenance, and fictional composites.
 
-$n34889
-text: Other vignettes are composites or field recollections and are labeled with mock citations where appropriate.)
+$n62308
+text: B.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n54805; precedes closing boundary. Documentation, provenance, and fictional composites.
+continuity: Follows $n33108; precedes $n83975. Documentation, provenance, and fictional composites.
+
+$n83975
+text: Yeats's *Fairy and Folk Tales of the Irish Peasantry*; neither the narrator nor the operator is a historical witness.
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n62308; precedes $n13642. Documentation, provenance, and fictional composites.
+
+$n13642
+text: ([Yeats collection][20])
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n83975; precedes $n73661. Documentation, provenance, and fictional composites.
+
+$n73661
+text: **Mercury in Retrograde.
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n13642; precedes $n99112. Documentation, provenance, and fictional composites.
+
+$n99112
+text: ** The clearing house, astrologer, moving coin, phone call, and almanac are fictional.
+intent: Keep external historical references distinct from invented story events. Its local function is sensory evidence.
+style: Factual reference prose.
+continuity: Follows $n73661; precedes $n39142. Documentation, provenance, and fictional composites.
+
+$n39142
+text: Mercury's associations with messages, journeys, commerce and interpretation belong to longstanding astrological traditions; William Lilly's *Christian Astrology* (1647) documents one early modern version of the larger symbolic practice.
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n99112; precedes $n87727. Documentation, provenance, and fictional composites.
+
+$n87727
+text: This source is evidence of a tradition, not of the invented events.
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n39142; precedes $n26506. Documentation, provenance, and fictional composites.
+
+$n26506
+text: ([Lilly, *Christian Astrology*][21])
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n87727; precedes $n44061. Documentation, provenance, and fictional composites.
+
+$n44061
+text: **Crocodiles in Vienna.
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n26506; precedes $n16941. Documentation, provenance, and fictional composites.
+
+$n16941
+text: ** The incident in the story is invented.
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n44061; precedes $n36126. Documentation, provenance, and fictional composites.
+
+$n36126
+text: An actual small caiman was caught in Vienna's Donaukanal in 2001; the historical capture is a precedent, not the episode described by the narrator.
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n16941; precedes $n16507. Documentation, provenance, and fictional composites.
+
+$n16507
+text: ([BBC][15]) ([ORF Wien][16])
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n36126; precedes $n94074. Documentation, provenance, and fictional composites.
+
+$n94074
+text: **Heat and server failure.
+intent: Keep external historical references distinct from invented story events. Its local function is sensory evidence.
+style: Factual reference prose.
+continuity: Follows $n16507; precedes $n83778. Documentation, provenance, and fictional composites.
+
+$n83778
+text: ** Rack C, Ruth, and the research institute are invented.
+intent: Keep external historical references distinct from invented story events. Its local function is sensory evidence.
+style: Factual reference prose.
+continuity: Follows $n94074; precedes $n96244. Documentation, provenance, and fictional composites.
+
+$n96244
+text: Cooling-system failures causing real cloud-service disruptions are documented, including an incident in London in July 2022.
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n83778; precedes $n10812. Documentation, provenance, and fictional composites.
+
+$n10812
+text: ([Google Cloud incident report][17]) ([ASHRAE thermal guidelines][18])
+intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
+style: Factual reference prose.
+continuity: Follows $n96244; precedes closing boundary. Documentation, provenance, and fictional composites.

@@ -68,12 +68,12 @@ const labels = {
   'case-i': 'I · The Schaerbeek Bit',
   'case-ii': 'II · The Heisenbug',
   'case-iii': 'III · Maxwell’s Demon',
-  'case-iv': 'IV · The Leprechaun',
+  'case-iv': 'IV · The Visitor',
   'case-v': 'V · Mercury in Retrograde',
   'case-vi': 'VI · The Crocodile',
   'case-vii': 'VII · The Heat Death of Rack C',
   'coda': 'Coda',
-  'endnotes-and-sources': 'Endnotes & sources'
+  'authors-notes-and-sources': 'Author’s notes & sources'
 };
 
 export function renderPage(source) {
