@@ -1,0 +1,13 @@
+{
+  "name": "vau-supernatural-dossier",
+  "private": true,
+  "type": "module",
+  "description": "Reproducible HTML rendering for the Supernatural dossier",
+  "scripts": {
+    "build": "node render.mjs",
+    "check": "node render.mjs --check && node --test test/render.test.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "15.0.2"
+  }
+}
