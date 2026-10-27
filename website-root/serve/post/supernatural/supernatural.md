@@ -613,7 +613,7 @@ In the morning I will be able to explain why.
 
 4. **The Heisenbug.** The lonely night and the narrator's experiences are fictional. The observation-sensitive software behavior is inspired by a real ProxySQL hang that disappeared under tracing and other interventions. That real issue was eventually investigated and fixed; the fictional episode does not claim otherwise. ([Original issue][5]) ([Engineering account][6]) ([Fix][7])
 
-5. **The valve.** The prologue's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
+5. **The valve.** The opening's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
 
 6. **Maxwell's Demon.** The visitation, hash collision, and vanished originals are fictional. No full SHA-256 collision is known to have been publicly demonstrated. The distinct-file collision actually demonstrated by the SHAttered project used SHA-1, a different hash algorithm. ([SHAttered demonstration][19])
 
