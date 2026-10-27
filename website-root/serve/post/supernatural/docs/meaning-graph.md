@@ -187,19 +187,19 @@ $n33808
 text: The newspaper items are fictional.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n26455; precedes $n30423. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n26455; precedes $n31233. Election count, biscuits, newspaper, and the technician.
 
-$n30423
-text: The escaped neutron must never be connected in the prose to the 2003 bit flip.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n33808; precedes $n65616. Election count, biscuits, newspaper, and the technician.
+$n31233
+text: The CERN neutron report must not be connected in the prose to the 2003 bit flip.
+intent: Ground the case in technical and human details.
+style: Conversational, observant report.
+continuity: Follows $n33808; precedes $n65616. Schaerbeek witnesses, evidence, and newspaper.
 
 $n65616
 text: The implication that it somehow travelled backward in time is strictly for the reader.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n30423; precedes $n86036. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n31233; precedes $n86036. Election count, biscuits, newspaper, and the technician.
 
 $n86036
 text: The worldview mismatch between the narrator and the technician should remain implicit.
@@ -229,25 +229,25 @@ $n44011
 text: Preserve the subtle contrast between the narrator's useful facts and the technician's stories; neither character should become a mouthpiece for the collection's philosophy.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n81654; precedes $n71947. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n81654; precedes $n56996. Election count, biscuits, newspaper, and the technician.
 
-$n71947
-text: Keep the escaped-neutron newspaper item an unspoken clue for the reader alone, but establish enough credible chronology and recurrence of imagery for the impossible temporal suggestion to be discoverable.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is emotional or perceptual change.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n44011; precedes $n66580. Election count, biscuits, newspaper, and the technician.
+$n56996
+text: Keep the newspaper's neutron item an unspoken clue for the reader alone, but establish enough credible chronology and recurrence of imagery for the impossible temporal suggestion to be discoverable.
+intent: Ground the case in technical and human details.
+style: Conversational, observant report.
+continuity: Follows $n44011; precedes $n58325. Schaerbeek witnesses, evidence, and newspaper.
 
-$n66580
-text: Check that the fictional CERN report sounds plausible as journalism, especially the unusual claim that a single neutron escaped an enclosure.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n71947; precedes $n39332. Election count, biscuits, newspaper, and the technician.
+$n58325
+text: Keep the fictional CERN notice modest and plausible as journalism.
+intent: Ground the case in technical and human details.
+style: Conversational, observant report.
+continuity: Follows $n56996; precedes $n39332. Schaerbeek witnesses, evidence, and newspaper.
 
 $n39332
 text: Treat the real election's multiday investigation carefully when compressing events into a firsthand reconstruction; the May 2003 chronology and the extent of the technician's knowledge must remain believable.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n66580; precedes $n84205. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n58325; precedes $n84205. Election count, biscuits, newspaper, and the technician.
 
 $n84205
 text: Intensify the emotional stakes of an untraceable alteration to an election result through the clerks' fear of responsibility, loss of trust in the count, and uncertainty over what corrective action is possible.
@@ -433,43 +433,43 @@ $n35955
 text: “How they break?”
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n22187; precedes $n49808. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n22187; precedes $n13970. Election count, biscuits, newspaper, and the technician.
 
-$n49808
-text: “The English ones wait for tea and then break where you expect.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is emotional or perceptual change.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n35955; precedes $n86809. Election count, biscuits, newspaper, and the technician.
+$n13970
+text: English biscuits soften in tea before they break.
+intent: Ground the case in technical and human details.
+style: Conversational, observant report.
+continuity: Follows $n35955; precedes $n42641. Schaerbeek witnesses, evidence, and newspaper.
 
-$n86809
-text: The French fracture elegantly, usually along the line that leaves the prettier half.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n49808; precedes $n70756. Election count, biscuits, newspaper, and the technician.
+$n42641
+text: The French ones have layers; you end up with crumbs instead of two halves.
+intent: Ground the case in technical and human details.
+style: Conversational, observant report.
+continuity: Follows $n13970; precedes $n70756. Schaerbeek witnesses, evidence, and newspaper.
 
 $n70756
 text: Belgian biscuits begin along one crack, reconsider, and finish by inventing a third.”
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n86809; precedes $n84584. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n42641; precedes $n50108. Election count, biscuits, newspaper, and the technician.
 
-$n84584
-text: That seems ridiculous.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n70756; precedes $n36676. Election count, biscuits, newspaper, and the technician.
+$n50108
+text: He starts to unwrap it.
+intent: Ground the case in technical and human details.
+style: Conversational, observant report.
+continuity: Follows $n70756; precedes $n87969. Schaerbeek witnesses, evidence, and newspaper.
 
-$n36676
-text: I don't see what national character has to do with a biscuit, but he is already unwrapping it.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n84584; precedes $n70157. Election count, biscuits, newspaper, and the technician.
+$n87969
+text: I put down my pen.
+intent: Ground the case in technical and human details.
+style: Conversational, observant report.
+continuity: Follows $n50108; precedes $n70157. Schaerbeek witnesses, evidence, and newspaper.
 
 $n70157
 text: He breaks it.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n36676; precedes $n20281. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n87969; precedes $n20281. Election count, biscuits, newspaper, and the technician.
 
 $n20281
 text: The biscuit splits diagonally across the stamped pattern, scattering crumbs onto the napkin.
@@ -991,25 +991,19 @@ $n12882
 text: If that bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n48514; precedes $n45529. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n48514; precedes $n45811. Election count, biscuits, newspaper, and the technician.
 
-$n45529
-text: That gave them a hypothesis: a single-event upset.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n12882; precedes $n50752. Election count, biscuits, newspaper, and the technician.
-
-$n50752
-text: Under that hypothesis there would be no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n45529; precedes $n56427. Election count, biscuits, newspaper, and the technician.
+$n45811
+text: They wrote *single-event upset* on the list of possible causes.
+intent: Ground the case in technical and human details.
+style: Conversational, observant report.
+continuity: Follows $n12882; precedes $n56427. Schaerbeek witnesses, evidence, and newspaper.
 
 $n56427
 text: The technician objected that bits did not change for no reason.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n50752; precedes $n65158. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n45811; precedes $n65158. Election count, biscuits, newspaper, and the technician.
 
 $n65158
 text: The physicist agreed.
@@ -1153,31 +1147,25 @@ $n99862
 text: I promise him I will not.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n51004; precedes $n34715. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n51004; precedes $n29847. Election count, biscuits, newspaper, and the technician.
 
-$n34715
-text: At the time I heard an engineer's argument about preparation, nothing more.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n99862; precedes $n18816. Election count, biscuits, newspaper, and the technician.
+$n29847
+text: He believed the next count should be checked in more than one way, with records that the machine could not quietly change.
+intent: Ground the case in technical and human details.
+style: Conversational, observant report.
+continuity: Follows $n99862; precedes $n16963. Schaerbeek witnesses, evidence, and newspaper.
 
-$n18816
-text: We do not fight the weather, he said; we prepare for it.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n34715; precedes $n78293. Election count, biscuits, newspaper, and the technician.
-
-$n78293
-text: The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n18816; precedes $n63199. Election count, biscuits, newspaper, and the technician.
+$n16963
+text: I agreed with him.
+intent: Ground the case in technical and human details.
+style: Conversational, observant report.
+continuity: Follows $n29847; precedes $n63199. Schaerbeek witnesses, evidence, and newspaper.
 
 $n63199
 text: I did not write a field note that afternoon.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n78293; precedes $n54255. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n16963; precedes $n54255. Election count, biscuits, newspaper, and the technician.
 
 $n54255
 text: Years later, when I began the dossier, I put this under his story:
@@ -2731,19 +2719,13 @@ $n84676
 text: For weeks his colleagues placed little green objects on his desk: a paper hat, a plastic shamrock, an old toy shoe.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n43646; precedes $n74775. Tapping, greenish light, changed loop bound, joking colleagues.
-
-$n74775
-text: Nobody meant to be cruel.
-intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
-style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n84676; precedes $n83476. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n43646; precedes $n83476. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n83476
 text: He kept the objects in a drawer because throwing them away would have required him to speak about them.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n74775; precedes $n95482. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n84676; precedes $n95482. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n95482
 text: At the end of our conversation he asked whether I knew that, in the old stories, you should never take your eyes off the little people if you want them to remain.
@@ -3601,19 +3583,13 @@ $n43099
 text: I could almost read it.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n19487; precedes $n68328. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n68328
-text: I have never decided whether I hope to meet the woman again.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n43099; precedes $n19021. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n19487; precedes $n19021. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n19021
 text: **Field Note #4.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n68328; precedes $n67731. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n43099; precedes $n67731. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n67731
 text: I never asked the operator what he heard when I lifted the receiver.
