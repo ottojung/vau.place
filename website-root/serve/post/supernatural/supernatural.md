@@ -1,5 +1,5 @@
 <NOTE>
-Open with a narrator entirely confident in technical rigor, without already sounding altered.
+Keep the opening narrator practical and confident in investigation, with one dry retrospective joke.
 Technical precision earns trust early but becomes actively harmful when repeated deep into the mystical cases.
 The prose must create horror, dread, wonder and mystery, not just jokes or clever incident reports.
 The narrator must not assert that later creatures are real or fictional; let witnesses and experiences speak.
@@ -16,19 +16,13 @@ Do not introduce sentences solely because they sound quotable.
 <NOTE>
 Begin in the assured voice of a technically rigorous investigator, not the altered voice of the collection's ending.
 He should trust repeatable tests, evidence, and ordinary causal explanations without hesitation or metaphysical disclaimers.
-Foreshadow only through the modest fact that one stubborn discrepancy prompted him to preserve a record.
-Do not spend the opening announcing supernatural beliefs, or anticipating the narrator's later loss of confidence.
+Let the Schaerbeek case establish the narrator's investigative habits; do not invent a separate introductory incident.
+Do not explain hauntings or the narrator's eventual change of mind in the opening.
 </NOTE>
 
-I was hired to investigate failures. Most had ordinary causes, even when those causes were difficult to find. I checked logs, spoke to the people who had been there, and tried to make the same thing happen again.
+I was not trained for hauntings. My work was to investigate failures in software and machines. I kept notes on the difficult cases, and sometimes on accounts that came to me from other engineers.
 
-Once, during maintenance, a valve opened without a command in the log. A fitter was working beside the actuator. He pulled his hand clear as the valve opened. I checked the maintenance schedule and the wiring, and ran the sequence again with everyone standing back. The valve stayed shut. Three people had heard it open, but their accounts did not agree.
-
-The safety committee accepted our report. I kept my notes because I thought I might find what I had missed after the next shutdown.
-
-Other reports accumulated over the years: a disputed election count, a program that behaved differently when somebody watched it, a night operator who would not let me record his account. I investigated some myself. Others came from records or from people who trusted me enough to tell me what they had seen.
-
-The earliest account came from a conversation in Belgium, years before I began keeping the folder.
+The oldest came from a meeting in Schaerbeek.
 
 ---
 
@@ -209,7 +203,7 @@ The trouble was an order that would neither finish nor fail. A customer could pr
 
 The building backed onto the harbour. A strip of quay light crossed the carpet; beyond it the desks were dark. In the server room the fans kept their usual pitch. I had worked nights before. Without other people there, I could hear the fans clearly enough to notice a change in their pitch.
 
-At 00:41 I caught the failure. The application stopped at the same line it had stopped at earlier, waiting for the database to answer. I attached a tracer, expecting to see the operation just before the stall. The next run succeeded. Then the next. I removed the tracer, and within minutes the process hung again.
+At 00:41 I caught the failure. The application stopped at the same line it had stopped at earlier, waiting for the database to answer. I attached a tracer that had broken better men than me and waited for the next stall. The next run succeeded. Then the next. I removed the tracer, and within minutes the process hung again.
 
 A familiar kind of nuisance. Watching a program changes its timing; anyone who has debugged a race knows that. I wrote *timing* at the top of a fresh page. I was relieved to have a word for it.
 
@@ -346,8 +340,6 @@ The mysterious visitor's small alteration to a loop bound is the eerie consequen
 Make the witness's isolation and damaged reputation emotionally credible; allow one moment of uneasy humor without letting the episode become a joke.
 The title must protect the witness and not use the name first introduced in his colleagues' ridicule.
 </NOTE>
-
-I was not trained for hauntings.
 
 The night operator asked me to turn off the recorder before he began. I told him I would not be able to quote him accurately. He said accuracy was why he wanted it off.
 
@@ -585,8 +577,6 @@ Rack C has been running normally for a week. Ruth came by this afternoon to ask 
 
 I stayed late to check the next backup. It finished without error. A short rattle came from the new fan when it started. I found a loose paper label brushing the grille and moved it aside. The noise stopped.
 
-My notes are on the desk beside the maintenance log. I turn to the report about the valve that opened while a fitter was working beside it. There is still a space for the missing command. I had intended to fill it in after the next shutdown.
-
 At midnight I enter Rack C's temperature and close the log. Before leaving I open it again and read what I have just written. There is nothing to correct.
 
 The almanac is in the same drawer as my notes. I have marked next month's date but left the margin empty.
@@ -609,17 +599,15 @@ In the morning I will be able to explain why.
 
 4. **The Heisenbug.** The lonely night and the narrator's experiences are fictional. The observation-sensitive software behavior is inspired by a real ProxySQL hang that disappeared under tracing and other interventions. That real issue was eventually investigated and fixed; the fictional episode does not claim otherwise. ([Original issue][5]) ([Engineering account][6]) ([Fix][7])
 
-5. **The valve.** The opening's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
+5. **Maxwell's Demon.** The visitation, hash collision, and vanished originals are fictional. No full SHA-256 collision is known to have been publicly demonstrated. The distinct-file collision actually demonstrated by the SHAttered project used SHA-1, a different hash algorithm. ([SHAttered demonstration][19])
 
-6. **Maxwell's Demon.** The visitation, hash collision, and vanished originals are fictional. No full SHA-256 collision is known to have been publicly demonstrated. The distinct-file collision actually demonstrated by the SHAttered project used SHA-1, a different hash algorithm. ([SHAttered demonstration][19])
+6. **The visitor in the cold aisle.** This case is invented. Its folklore, including the caution about watching a fairy being, draws on the Irish traditions collected in W. B. Yeats's *Fairy and Folk Tales of the Irish Peasantry*; neither the narrator nor the operator is a historical witness. ([Yeats collection][20])
 
-7. **The visitor in the cold aisle.** This case is invented. Its folklore, including the caution about watching a fairy being, draws on the Irish traditions collected in W. B. Yeats's *Fairy and Folk Tales of the Irish Peasantry*; neither the narrator nor the operator is a historical witness. ([Yeats collection][20])
+7. **Mercury in Retrograde.** The clearing house, astrologer, moving coin, phone call, and almanac are fictional. Mercury's associations with messages, journeys, commerce and interpretation belong to longstanding astrological traditions; William Lilly's *Christian Astrology* (1647) documents one early modern version of the larger symbolic practice. This source is evidence of a tradition, not of the invented events. ([Lilly, *Christian Astrology*][21])
 
-8. **Mercury in Retrograde.** The clearing house, astrologer, moving coin, phone call, and almanac are fictional. Mercury's associations with messages, journeys, commerce and interpretation belong to longstanding astrological traditions; William Lilly's *Christian Astrology* (1647) documents one early modern version of the larger symbolic practice. This source is evidence of a tradition, not of the invented events. ([Lilly, *Christian Astrology*][21])
+8. **Crocodiles in Vienna.** The incident in the story is invented. An actual small caiman was caught in Vienna's Donaukanal in 2001; the historical capture is a precedent, not the episode described by the narrator. ([BBC][15]) ([ORF Wien][16])
 
-9. **Crocodiles in Vienna.** The incident in the story is invented. An actual small caiman was caught in Vienna's Donaukanal in 2001; the historical capture is a precedent, not the episode described by the narrator. ([BBC][15]) ([ORF Wien][16])
-
-10. **Heat and server failure.** Rack C, Ruth, and the research institute are invented. Cooling-system failures causing real cloud-service disruptions are documented, including an incident in London in July 2022. ([Google Cloud incident report][17]) ([ASHRAE thermal guidelines][18])
+9. **Heat and server failure.** Rack C, Ruth, and the research institute are invented. Cooling-system failures causing real cloud-service disruptions are documented, including an incident in London in July 2022. ([Google Cloud incident report][17]) ([ASHRAE thermal guidelines][18])
 
 [1]: https://americanhistory.si.edu/collections/object/nmah_334663 "Log Book With Computer Bug"
 [2]: https://www.poureva.be/spip.php?article32= "Rapport concernant les élections du 18 mai 2003"
