@@ -67,3 +67,20 @@ test('source apparatus identifies itself as authorial and cites fictional cases'
   assert.ok(html.includes('openlibrary.org/books/OL18675930M'));
   assert.doesNotMatch(visible, /Use as a pointer|mock citations/);
 });
+
+
+test('opening is brief, restores hauntings and contains no extra valve incident', () => {
+  const opening = visible.split('<h1 id="a-strange-collection-of-system-failures">')[1].split('<h3 id="case-i">')[0];
+  assert.match(opening, /<p>I was not trained for hauntings\./);
+  assert.ok(opening.length < 650, 'The opening should not delay the first story');
+  assert.doesNotMatch(visible, /\bvalve\b/i);
+  assert.doesNotMatch(manuscript, /promising the very sun/i);
+  assert.ok(visible.includes('Collected incidents · Vol. I'));
+});
+
+test('the tracer joke belongs to the early Heisenbug investigation', () => {
+  const heisenbug = visible.split('<h3 id="case-ii">')[1].split('<h3 id="case-iii">')[0];
+  assert.match(heisenbug, /tracer that had broken better men than me/);
+  assert.ok(heisenbug.indexOf('tracer that had broken better men') < heisenbug.indexOf('04:56'));
+  assert.equal((visible.match(/I was not trained for hauntings/g) || []).length, 1);
+});
