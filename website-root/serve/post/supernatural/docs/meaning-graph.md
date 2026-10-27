@@ -4282,7 +4282,7 @@ style: Factual reference prose.
 continuity: Follows $n14005; precedes $n32546. Documentation, provenance, and fictional composites.
 
 $n32546
-text: ** The prologue's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
+text: ** The opening's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
 intent: Keep external historical references distinct from invented story events. Its local function is procedural evidence or its displacement.
 style: Factual reference prose.
 continuity: Follows $n44426; precedes $n71606. Documentation, provenance, and fictional composites.
