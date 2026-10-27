@@ -94,7 +94,7 @@ export function renderPage(source) {
     '  <meta charset="utf-8">',
     '  <meta name="viewport" content="width=device-width, initial-scale=1">',
     '  <meta name="color-scheme" content="light">',
-    '  <meta name="description" content="Seven unsettling case files where engineering, folklore and the inexplicable collide. From the notebook of an investigator.">',
+    '  <meta name="description" content="Seven accounts of technical failures, unsettling encounters, and the people left to explain them.">',
     '  <meta property="og:type" content="article">',
     '  <meta property="og:site_name" content="Vau’s place">',
     '  <meta property="og:title" content="' + escapeHtml(title) + '">',
