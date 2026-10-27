@@ -109,3 +109,11 @@ source: @ottojung
 kind: requirement
 
 The collection should produce real dread, vulnerability, wonder, emotional force, and fear of harmful consequences—not just appreciation of clever technical incidents. Early cases should ground trust and stakes; later ones should encounter real beings and deep mystical phenomena rather than restoring tidy skeptical ambiguity. Fear should arise from specific action, consequences, presence and changed behavior, not generic horror adjectives. Preserve Case VII's objectively mundane causation while showing that even certainty no longer restores the narrator's peace.
+
+$id-6827493815902374
+title: Keep the opening brief and restore dry engineering humour
+date: 2026/10/27
+source: @ottojung
+kind: requirement
+
+The short unheaded opening begins with “I was not trained for hauntings.” It should be grounded in the investigator's working life rather than an invented valve accident or a miniature philosophy of explanation. Remove the valve incident entirely, including later callbacks. The tracer joke about breaking better men than the narrator belongs naturally in the first Heisenbug investigation, where the instrument actually affects what can be observed. Avoid elaborate witty framing. The earlier grandiose solar metaphor is disallowed and must not be restored. This direction supersedes incompatible older opening and preservation requirements.
