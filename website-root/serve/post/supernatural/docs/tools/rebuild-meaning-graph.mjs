@@ -18,7 +18,7 @@ for (const block of blocks) {
 }
 const rules = {
  preamble: ['State live editorial requirements.', 'Clear non-diegetic instruction.', 'Story contracts and authorial priorities.'],
- prologue: ['Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier.', 'Plain technically confident first-person narration.', 'The valve, sufficient causes, and the first discrepancy.'],
+ prologue: ['Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier.', 'Plain technically confident first-person narration.', 'The narrator’s work, kept notes and a brief retrospective joke.'],
  schaerbeek: ['Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account.', 'Concrete restrained conversation, everyday detail and subtle humor.', 'Election count, biscuits, newspaper, and the technician.'],
  heisenbug: ['Generate solitary dread through a failure that retreats under observation and damages perceptual confidence.', 'Compressed sleepless first person, increasingly uncanny images.', 'Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.'],
  demon: ['Make the demon visitation terrifying and the hash collision a brief inexplicable consequence.', 'Embodied dream logic, measured horror and abrupt ironies.', 'Demon, two small things, full SHA-256 collision and lost files.'],
@@ -26,7 +26,7 @@ const rules = {
  mercury: ['Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages.', 'Visceral visionary mysticism rather than technical documentation.', 'Mercury, serpents, mirrors, moving coin and impossible telephone.'],
  crocodile: ['Reveal changed causal relevance through excessive checks of unaffected American systems.', 'Dry civic reporting and gently disturbing obsessive repetition.', 'Vienna canal, crocodile, green dashboard, unnecessary column.'],
  crash: ['Show a sufficiently explained ordinary failure that cannot restore emotional peace.', 'Very short, undramatic, quiet procedural aftershock.', 'Rack C, cooling filter, Ruth, the extra watch.'],
- coda: ['Reveal the altered narrator through objects and gestures rather than interpretation.', 'Restrained and concrete, unresolved with a residual unease.', 'Rack C, valve report, maintenance log and almanac.'],
+ coda: ['Reveal the altered narrator through objects and gestures rather than interpretation.', 'Restrained and concrete, unresolved with a residual unease.', 'Rack C, quiet maintenance, and the almanac.'],
  sources: ['Keep external historical references distinct from invented story events.', 'Factual reference prose.', 'Documentation, provenance, and fictional composites.']
 };
 let section='preamble', fenced=false;
