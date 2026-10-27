@@ -7,9 +7,8 @@ Keep each case emotionally distinct, do not explain the moral, and close with ac
 </NOTE>
 
 <MUST HAVES>
-"I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct."
-"The closer your model fits the world, the more the world will take issue."
-These phrases belong naturally in later prose, not as prologue declarations.
+Keep the narrator's engineering judgment modest and show his growing unease through actions.
+Do not introduce sentences solely because they sound quotable.
 </MUST HAVES>
 
 # A Strange Collection of System Failures
@@ -588,21 +587,15 @@ Keep the narrator technically competent; show how procedures, rituals and appreh
 Reflect the revised cases accurately: a solitary Heisenbug vigil, an experienced demon dream and lost proof, an indistinct visitor, Mercury's occult summons, irrational crocodile checks, and an ordinary thermal failure.
 </NOTE>
 
-The room is quiet at this hour, by which I mean only that the fans are running properly. I can hear a change in their pitch without looking up. I write the temperature of Rack C in the margin of my notebook; it is within specification.
+Rack C has been running normally for a week. Ruth came by this afternoon to ask whether the restored data was safe. I showed her the result of a test restore, and she went back to her desk.
 
-Beside the notebook lies the dossier. Its first pages are orderly. They have dates, witnesses, causes proposed and rejected, little diagrams in ink. Near the front is the report of the valve that opened while a fitter was working beside it. His name is there, and the time, and an empty space where the command should have been. As the pages turn, the handwriting grows less even. Certain sentences have been written over so many times that the paper has thinned.
+I stayed late to check the next backup. It finished without error. A short rattle came from the new fan when it started. I found a loose paper label brushing the grille and moved it aside. The noise stopped.
 
-I keep a photograph of the moth taped into the logbook of an early computer, because I once found it amusing that a bug could be caught and made to stay. Next to it is the page on which I crossed out a sentence about a program that hated to be watched. I can still see the erased letters. Across the page a box is marked *04:56*. I have kept it empty, though I know exactly what I was doing at that hour.
+My notes are on the desk beside the maintenance log. I turn to the report about the valve that opened while a fitter was working beside it. There is still a space for the missing command. I had intended to fill it in after the next shutdown.
 
-There is a copied hash written on a folded scrap of paper. The files it once named are gone. When I unfold it, I remember not the number but the developer's description of a demon studying two small objects in its hands. I fold the paper again before reaching the end of the line.
+At midnight I enter Rack C's temperature and close the log. Before leaving I open it again and read what I have just written. There is nothing to correct.
 
-Another page contains a witness's answers in my own handwriting. He remembered a visitor and did not want to describe him. He had been laughed at, and each time I read the notes I remember how carefully he chose his words. I have stopped trying to supply the words he withheld.
-
-A coin lies beside the almanac. I have not shown it to anyone. Next month's date is ringed, and I have moved a routine change to the following week. The change is safer for several ordinary reasons, which I wrote down afterward.
-
-The filter for Rack C will be changed on the nineteenth. I have checked that the work order exists. I have checked that somebody has accepted it. I have set an ordinary reminder, in the ordinary way, and I have set another that I will not mention.
-
-On the last page I copy Ruth's name, though the crash that cost her a week has been explained completely. Then I put down my pen and listen to the fans. A small change passes through their sound and is gone.
+The almanac is in the same drawer as my notes. I have marked next month's date but left the margin empty.
 
 I look at the clock. I do not look at the almanac.
 
