@@ -26,7 +26,7 @@ const rules = {
  mercury: ['Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages.', 'Visceral visionary mysticism rather than technical documentation.', 'Mercury, serpents, mirrors, moving coin and impossible telephone.'],
  crocodile: ['Reveal changed causal relevance through excessive checks of unaffected American systems.', 'Dry civic reporting and gently disturbing obsessive repetition.', 'Vienna canal, crocodile, green dashboard, unnecessary column.'],
  crash: ['Show a sufficiently explained ordinary failure that cannot restore emotional peace.', 'Very short, undramatic, quiet procedural aftershock.', 'Rack C, cooling filter, Ruth, the extra watch.'],
- coda: ['Reveal the altered narrator through objects and gestures rather than interpretation.', 'Restrained and concrete, unresolved with a residual unease.', 'Dossier, moth, hash, coin, almanac and Rack C.'],
+ coda: ['Reveal the altered narrator through objects and gestures rather than interpretation.', 'Restrained and concrete, unresolved with a residual unease.', 'Rack C, valve report, maintenance log and almanac.'],
  sources: ['Keep external historical references distinct from invented story events.', 'Factual reference prose.', 'Documentation, provenance, and fictional composites.']
 };
 let section='preamble', fenced=false;
