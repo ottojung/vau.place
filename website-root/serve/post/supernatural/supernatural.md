@@ -58,25 +58,19 @@ Preserve the younger narrator's skepticism and the later narrator's retrospectiv
 Do not restore the removed conversation-quality billing digression; its separate joke interrupts the accumulated unease after the election account.
 </NOTE>
 
-I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late. In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
+I am in a cafeteria in Schaerbeek, waiting for an engineer who knows the contractors responsible for the municipal systems I am working on. He is late. My colleague said he would know whom to call when the names on the contracts proved unhelpful.
 
-The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling. The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs. The queue bends once before the till in an L-shape that keeps the doorway clear.
+The windows are low enough that I see mostly the legs of people passing outside. I order by pointing at a number on the menu, then take a table by the wall.
 
-I take my place in it, moving forward each time the drawer opens with its tired ring. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall.
+A newspaper lies on the next chair. Liège has held a waffle competition; the winner is photographed behind an enormous plate, with three judges smiling beside her. I turn to the science pages. A short report from CERN says a neutron was detected beyond the shielding of an experiment. The researchers are checking the detector. I put the paper back.
 
-A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for. He knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things.
+He arrives late and apologizes. His tram was delayed. He says they thought it was a signal fault, but nobody could tell the passengers what had happened.
 
-There is a newspaper on the next chair. I pick it up. Liège has held a waffle competition; the winner is photographed behind an enormous plate of waffles, with three judges smiling beside her. I turn a few pages, looking for science. A short item from Geneva says that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
+We introduce ourselves. He tells me he has worked on elections—“not politics,” he says, “interfaces.” As he speaks, he straightens the sugar packet and spoon. When he stops talking, he taps the table with one finger.
 
-He arrives late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He pauses, then corrects himself.
+I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I try to write down the names, but he keeps telling me stories about the people.
 
-“Not spontaneous. Sorry. A signal failed, or somebody changed the route. We just don't know which yet.”
-
-We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He tells me he has worked elections—“not politics,” he says quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he taps the table as though confirming liveness.
-
-I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I write down the useful parts and leave some of the commentary out.
-
-The commentary gets harder to separate from the useful parts when he picks up one of the biscuits beside his coffee.
+He picks up a biscuit from beside his coffee.
 
 “You can tell a lot about a nation from how its biscuits break.”
 
@@ -102,7 +96,7 @@ He mentions Schaerbeek, the 2003 federal election, and a candidate with an impos
 
 What follows is his account of that day. He did not tell it in order, but I will.
 
-The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and a carpet whose pattern is an argument against democracy.
+The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and an old carpet.
 
 He had been sent there as technician, a word expansive enough to cover whatever had not yet been assigned to the others. On his table lay the checklist: confirm serial numbers, confirm counters at zero, confirm seals intact; note every confirmation in ink, sign where indicated. Two party representatives sat near the door. The bureau had a president, seconded for the day from the commune, whose signature would certify the count. She had signed returns in Schaerbeek for eleven years; in that district a signed return was the count. A schoolteacher seconded as a watcher stood where she could see both the machines and the clerks and seemed unsure which of them constituted the real work.
 
@@ -118,7 +112,7 @@ She asked the clerk beside her to read the two figures. He did. They exchanged p
 
 They checked the machine identifier, the register, the media from which the totals had been read, and then the totals again.
 
-There is the certainty, never admitted aloud, that somewhere a check is missing and that this is sane; that checks go missing the way buttons go missing from coats. So they looked for the missing check.
+They assumed a check had been missed and went through the list again.
 
 The air in the school had become very dry. Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
 
@@ -132,7 +126,7 @@ $$
 \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
 $$
 
-The candidate's preference count should never rise above the list total. In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
+The candidate's preference count should never rise above the list total.
 
 The president asked the technician, quietly, whether she could sign. He understood the question: not whether the number was right, but whether the machine could be vouched for. He said he could not vouch for it. She held her pen over the box where the count would go. The figure the machine had printed would certify a contradiction; any other figure would alter the record; an empty box would fail to certify the district. She wrote the machine's figure, drew one line through it, wrote the corrected figure beside it, and initialled the correction. Then she asked the two representatives to witness it. One did. The other looked at the struck figure for a long time, and put down his pen without signing.
 
@@ -176,9 +170,9 @@ They could inspect software, recount totals, and ask clerks what they had done. 
 
 Later, the machine was tested, the software examined, and the result reconstructed. No software defect was found that explained the discrepancy. The experts' report concluded that it could *very probably* be attributed to a spontaneous and random inversion of a binary position in the computer's working memory.
 
-The report left the physical cause open. The committee’s report is less romantic, but it permits the word that haunts this dossier: likely.
+The report did not identify the particle or establish what had disturbed the memory.
 
-Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*. By the time the incident reached programmers, the whole thing was often filed under *computer error*. The phrase is correct in the way that shipwrecks are wet. What stayed with me was the qualification in the report: *very probably*.
+Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*. By the time the incident reached programmers, the whole thing was often filed under *computer error*. That label did not tell the clerks what they could safely sign. What stayed with me was the qualification in the report: *very probably*.
 
 One clerk later admitted that he would have preferred a boring human mistake. A human mistake belonged somewhere: to a hand, a tired eye, a copied line. It could be found and corrected. He did not say this during the investigation. If human error returned to the list of possibilities, he himself was one of the humans available.
 
@@ -192,15 +186,13 @@ At the time I heard an engineer's argument about preparation, nothing more. We d
 
 I did not write a field note that afternoon. Years later, when I began the dossier, I put this under his story:
 
-**Field Note #1. Horror, in our trade, is the clean error—the one that leaves no prints.**
+**Field Note #1. I checked the totals again after I read the report. They had not changed.**
 
 There is an older photograph I keep in a folder called *Proofs I Do Not Argue With*. In it, a moth lies taped to a page of an engineering log.
 
 ![Moth](https://ids.si.edu/ids/deliveryService?id=NMAH-NMAH2000-03035)
 
-The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” I like the page because it makes an engineering superstition almost literal: give the failure a name, and perhaps you can banish it. Here they could do both—call it a bug, pull it from the relay, and tape it beside the record. ([National Museum of American History][1])
-
-The moth looks unconvinced.
+The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” The cause had been found and kept with the report. I used to find that photograph reassuring. ([National Museum of American History][1])
 
 The page I reserve for what became of the president is the one page in the dossier I have never been able to fill.
 
