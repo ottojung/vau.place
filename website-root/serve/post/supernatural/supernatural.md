@@ -22,7 +22,7 @@ Do not spend the opening announcing supernatural beliefs, or anticipating the na
 
 I was hired to investigate failures. Most had ordinary causes, even when those causes were difficult to find. I checked logs, spoke to the people who had been there, and tried to make the same thing happen again.
 
-Once, during maintenance, a valve opened without a command in the log. A fitter was reaching into its housing. He pulled his hand clear just before the arm moved. I checked the maintenance schedule and the wiring, and ran the sequence again with everyone standing back. The valve stayed shut. Three people had heard it open, but their accounts did not agree.
+Once, during maintenance, a valve opened without a command in the log. A fitter was working beside the actuator. He pulled his hand clear as the valve opened. I checked the maintenance schedule and the wiring, and ran the sequence again with everyone standing back. The valve stayed shut. Three people had heard it open, but their accounts did not agree.
 
 The safety committee accepted our report. I kept my notes because I thought I might find what I had missed after the next shutdown.
 
@@ -119,8 +119,6 @@ For a while nobody called it an *error*. That word would have started another pr
 
 The same numbers survived every obvious check. The contradiction could now be written plainly:
 
-**Invariant 1. (violated)**
-
 $$
 \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
 $$
@@ -130,8 +128,6 @@ The candidate's preference count should never rise above the list total.
 The president asked the technician, quietly, whether she could sign. He understood the question: not whether the number was right, but whether the machine could be vouched for. He said he could not vouch for it. She held her pen over the box where the count would go. The figure the machine had printed would certify a contradiction; any other figure would alter the record; an empty box would fail to certify the district. She wrote the machine's figure, drew one line through it, wrote the corrected figure beside it, and initialled the correction. Then she asked the two representatives to witness it. One did. The other looked at the struck figure for a long time, and put down his pen without signing.
 
 Eventually somebody used the word *error*, and the formal investigation began.
-
-#### The Investigation
 
 The technician checked the machine and the media again. The schoolteacher tried to be helpful by pointing out each time the computer made a small sound, as if identifying birds.
 
