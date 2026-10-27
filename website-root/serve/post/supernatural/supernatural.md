@@ -212,7 +212,7 @@ Preserve the human cost of a transaction that may or may not have completed and 
 
 The trouble was an order that would neither finish nor fail. A customer could press *Pay*, and sometimes the answer would not come. I could not safely run the request again: the first attempt might already have taken the money. The company's office was empty, so I went in alone.
 
-The building backed onto the harbour. A strip of quay light crossed the carpet; beyond it the desks were dark. In the server room the fans kept their usual pitch. I had worked nights before. It pleased me that buildings, deprived of people, became easier to understand.
+The building backed onto the harbour. A strip of quay light crossed the carpet; beyond it the desks were dark. In the server room the fans kept their usual pitch. I had worked nights before. Without other people there, I could hear the fans clearly enough to notice a change in their pitch.
 
 At 00:41 I caught the failure. The application stopped at the same line it had stopped at earlier, waiting for the database to answer. I attached a tracer, expecting to see the operation just before the stall. The next run succeeded. Then the next. I removed the tracer, and within minutes the process hung again.
 
@@ -246,7 +246,7 @@ At 04:56 the request stopped again. I could attach the tracer immediately. Every
 
 What frightened me was not the possibility that the trace would show nothing. It was the idea, sudden and complete, that attaching it would make the thing aware of me.
 
-I was alone, and I knew exactly how foolish that thought was. I did not move.
+I knew I was tired. I still did not move.
 
 In the end I attached the tracer. The request completed. It left no useful evidence.
 
@@ -282,7 +282,7 @@ The lamps along the aisle began to go out, one by one. In their place appeared s
 
 Then he saw it.
 
-A figure stood between two cabinets where no person could have fitted. Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it. Its face was not blank. That would have been easier. It was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other. The features moved almost imperceptibly, attempting to agree on a single expression.
+A figure stood between two cabinets where no person could have fitted. Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it. Its face was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other. The features moved almost imperceptibly, attempting to agree on a single expression.
 
 He recognized it as a demon with the swift certainty of dreams, and immediately tried to reject the word.
 
@@ -294,7 +294,7 @@ It is a dream, he told himself. I can wake up.
 
 The demon looked at him. All the faces in its face stopped moving.
 
-He felt the weight of the entire room shift toward him. Not the floor, not the air: the room itself. The racks leaned inward by no visible amount. He heard a sound like paper being folded very slowly. He thought of the other people who had walked this aisle without knowing what watched them, and of the hundreds of rooms like it in other cities, and of how little a locked door meant to something that did not need to enter.
+He felt suddenly crowded, though the aisle was as wide as before. The racks seemed to lean toward him. He heard a sound like paper being folded very slowly. He thought of the other people who had walked this aisle without knowing what watched them, and of the hundreds of rooms like it in other cities, and of how little a locked door meant to something that did not need to enter.
 
 The demon stepped closer. Its feet made no sound. It had the smell of rain on overheated metal, and beneath that an ordinary human smell of wool damp from a journey. The human smell was worse.
 
@@ -308,7 +308,7 @@ He tried to turn. One of the little things in its hands fell, though the demon h
 
 The demon held out its hands.
 
-He could see now that the two pale objects were not alike. Their surfaces were marked differently, and one was worn thin at the edge. The demon regarded them with a sorrowful satisfaction, as if a difficult piece of work had finally come right.
+He could see now that the two pale objects were not alike. Their surfaces were marked differently, and one was worn thin at the edge. The demon studied them for a long time.
 
 “Both,” it said.
 
@@ -330,9 +330,7 @@ Nobody understood what he meant. He would not explain it.
 
 Both files were kept for examination. Eleven days later, a storage failure destroyed them. Nothing usable survived. The engineer who found the collision kept the digest on a folded piece of paper; she showed it to me as if the number itself might still be contagious.
 
-That was all that happened to the files.
-
-It was not all that happened to the developer. He moved his desk upstairs, stopped working late, and refused to pass the server-room door unless somebody else was in the corridor. Once, when a cleaner dropped a handful of coins behind him, he fell to the floor with his arms over his head. He stayed there while she apologized.
+The developer moved his desk upstairs, stopped working late, and refused to pass the server-room door unless somebody else was in the corridor. Once, when a cleaner dropped a handful of coins behind him, he fell to the floor with his arms over his head. He stayed there while she apologized.
 
 I asked him whether he would return to the room with me in daylight.
 
@@ -353,6 +351,8 @@ The mysterious visitor's small alteration to a loop bound is the eerie consequen
 Make the witness's isolation and damaged reputation emotionally credible; allow one moment of uneasy humor without letting the episode become a joke.
 The title must protect the witness and not use the name first introduced in his colleagues' ridicule.
 </NOTE>
+
+I was not trained for hauntings.
 
 The night operator asked me to turn off the recorder before he began. I told him I would not be able to quote him accurately. He said accuracy was why he wanted it off.
 
@@ -392,15 +392,13 @@ The room laughed.
 
 That word was not in the operator's account. He was careful to explain this to me. He did not say what word he might have chosen instead.
 
-He was put on day shifts. The company called it a kindness, and he was grateful for it in the way people are grateful when they have been spared an argument they could never have won. For weeks his colleagues placed little green objects on his desk: a paper hat, a plastic shamrock, an old toy shoe. Nobody meant to be cruel. He kept the objects in a drawer because throwing them away would have required him to speak about them.
+He was put on day shifts. He accepted the change without arguing. For weeks his colleagues placed little green objects on his desk: a paper hat, a plastic shamrock, an old toy shoe. Nobody meant to be cruel. He kept the objects in a drawer because throwing them away would have required him to speak about them.
 
 At the end of our conversation he asked whether I knew that, in the old stories, you should never take your eyes off the little people if you want them to remain.
 
 I said I had heard something like it.
 
 “But I looked down,” he said.
-
-He seemed to be trying to forgive himself for that.
 
 After he left I noticed that I had not asked whether he had seen the visitor's hands. I had asked only what they had done.
 
@@ -471,8 +469,6 @@ There was a pen next to the book. I asked why.
 
 “To give the letter somewhere to go.”
 
-I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct.
-
 The operator put his hand over the pen before I could pick it up. The gesture embarrassed both of us. He had invited me as an investigator, and now he was trying to prevent me from participating in his investigation. Yet I did not push his hand away.
 
 In the pause a telephone rang in the adjoining room. It was an old mechanical bell, the kind that strikes actual metal. I could hear it through the wall as distinctly as a spoon tapping the rim of a glass.
@@ -487,7 +483,7 @@ Then she led us into the adjoining room.
 
 It contained a narrow cabinet, a chair, and the ringing telephone. Beside the instrument lay a second receiver, disconnected, its cord cut short and tied with blue thread. I lifted the ringing receiver before I could consider the wisdom of doing so.
 
-I heard myself asking for the operator by name. The voice was unmistakably mine, impatient in exactly the way I become impatient when a call does not connect. Behind my own voice I heard a railway announcement and the hollow echo of a station concourse. Then, before I could speak, I heard a third voice, too faint to identify, say, “Tell him not to answer.”
+I heard myself asking for the operator by name. The voice was mine, and I sounded impatient. Behind my own voice I heard a railway announcement and the hollow echo of a station concourse. Then, before I could speak, I heard a third voice, too faint to identify, say, “Tell him not to answer.”
 
 I hung up.
 
@@ -503,7 +499,7 @@ The paper held no writing. We unfolded it twice. It was blank on both sides, exc
 
 For weeks afterward I tried to reduce the visit to a sequence of events. I drew the room, counted the pigeonholes, copied the tram routes, wrote down everything the woman had said. That procedure, which had served me well all my life, became a peculiar form of homesickness. I could catalogue her objects, but I could not return to the hour in which I had believed each object belonged to another world.
 
-I began reading the old books she had named. I learned why Mercury wears wings, why his staff bears two serpents, why merchants and messengers once made offerings at crossroads. I learned the signs for conjunction and opposition, and the houses in which an astrologer looks for journeys, theft, marriage, debts, death. These did not feel to me like explanations. They were rooms opening from rooms, with no outer wall.
+I began reading the old books she had named. I learned why Mercury wears wings, why his staff bears two serpents, why merchants and messengers once made offerings at crossroads. I learned the signs for conjunction and opposition, and the houses in which an astrologer looks for journeys, theft, marriage, debts, death. I filled a notebook with copied symbols. Some belonged to objects I had noticed in her house without understanding why they were there.
 
 One evening I waited in a car park to see Mercury after sunset. It was low and difficult to find, a small light in the last colour of the sky. A plane crossed the horizon. Somebody laughed behind me, and I turned too quickly. When I looked back, the light was gone.
 
@@ -513,7 +509,7 @@ Months later I found the same silver coin in the pocket of a coat I had not worn
 
 I have never decided whether I hope to meet the woman again.
 
-**Field Note #4. The closer your model fits the world, the more the world will take issue.**
+**Field Note #4. I never asked the operator what he heard when I lifted the receiver.**
 
 ---
 
@@ -525,9 +521,9 @@ Do not spell out why these have no natural connection; the narrator's disproport
 Keep the mundane civic incident vivid but brief, and show the narrator's subtle paranoia through attention and action rather than exposition.
 </NOTE>
 
-The photograph showed a crocodile on the stone embankment of the Donaukanal. Behind it were the ordinary details of Vienna: a bicycle railing, a cigarette packet, the edge of a café terrace. The animal lay with its mouth slightly open, as if it had arrived in the city too early for an appointment.
+The photograph showed a crocodile on the stone embankment of the Donaukanal. Behind it were the ordinary details of Vienna: a bicycle railing, a cigarette packet, the edge of a café terrace. The animal lay with its mouth slightly open.
 
-The police closed the path. Cyclists were redirected through narrow streets, children were taken away from the water, and a woman interviewed on the radio said that her dog had refused to approach the bridge. The zoo denied that anything was missing. For two days the city lived with the improbable addition to its geography.
+The police closed the path. Cyclists were redirected through narrow streets, children were taken away from the water, and a woman interviewed on the radio said that her dog had refused to approach the bridge. The zoo denied that anything was missing. For two days people went down to the canal to see it.
 
 I began keeping a record when the first report reached me. At noon I checked the news from Vienna. Then I opened the monitoring page for a service we operated in America. Everything was green.
 
@@ -568,7 +564,7 @@ The room was hot when I arrived. Rack C stood dark at the end of the row. A cool
 
 The database could be restored, but its latest transactions were missing. A backup warning had gone to an unattended inbox. Ruth, a postdoctoral researcher, had lost the last run of a simulation that had taken three days. She listened while I explained the gap, then told me she would join the cluster queue again. That would take another week.
 
-We changed the filter, replaced the fan, and checked the restored data. Every failure had a cause. Every cause had left a trace. The case was as complete as I had ever wanted a case to be.
+We changed the filter, replaced the fan, and checked the restored data. We could account for every step of the failure.
 
 That evening I wrote *ambient temperature* in the incident log and closed it.
 
