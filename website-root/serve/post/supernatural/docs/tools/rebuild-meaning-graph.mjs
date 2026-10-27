@@ -44,6 +44,8 @@ for(const [ix,line] of novel.split('\n').entries()){
  const trimmed=line.trim();
  if(trimmed.startsWith(String.fromCharCode(96).repeat(3))){fenced=!fenced;continue;}
  if(fenced)continue;
+ // With an untitled opening section, the prose begins immediately after the H1.
+ if(/^# [^#]/.test(trimmed)){section='prologue';continue;}
  if(trimmed.startsWith('## Prologue')){section='prologue';continue;}
  if(trimmed.startsWith('## Coda')){section='coda';continue;}
  if(trimmed.startsWith("## Author's Notes")){section='sources';continue;}
