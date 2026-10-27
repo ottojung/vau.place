@@ -14,12 +14,6 @@ These phrases belong naturally in later prose, not as prologue declarations.
 
 # A Strange Collection of System Failures
 
-*From the notebook of an investigator who kept what he could not explain*
-
----
-
-## Prologue
-
 <NOTE>
 Begin in the assured voice of a technically rigorous investigator, not the altered voice of the collection's ending.
 He should trust repeatable tests, evidence, and ordinary causal explanations without hesitation or metaphysical disclaimers.
@@ -27,21 +21,17 @@ Foreshadow only through the modest fact that one stubborn discrepancy prompted h
 Do not spend the opening announcing supernatural beliefs, or anticipating the narrator's later loss of confidence.
 </NOTE>
 
-I was employed to find out why things failed. A useful explanation specifies a mechanism, identifies the conditions that set it in motion, and survives an attempt to make it fail again. A server that dies at a particular temperature has not committed an outrage against nature. It has reached its limit. The distinction matters to the person whose work was lost, even if it offers that person no comfort.
+I was hired to investigate failures. Most had ordinary causes, even when those causes were difficult to find. I checked logs, spoke to the people who had been there, and tried to make the same thing happen again.
 
-I liked failures with a clear beginning. When a valve opened without a command, I asked where the command might have been lost; when a machine reported a state it could not have reached, I asked who had written the state and when. I distrusted eyewitnesses, including myself, in exactly the way an engineer ought to. Time was recorded before recollections were gathered. Nothing was called impossible until the ordinary possibilities had been exhausted.
+Once, during maintenance, a valve opened without a command in the log. A fitter was reaching into its housing. He pulled his hand clear just before the arm moved. I checked the maintenance schedule and the wiring, and ran the sequence again with everyone standing back. The valve stayed shut. Three people had heard it open, but their accounts did not agree.
 
-There was one incident I could not dispose of quite so neatly. A valve opened on a maintenance line at a quarter to five. It should have remained shut. A fitter happened to be reaching for his spanner and escaped injury; I had the maintenance schedule, a clean event log, and three mutually incompatible accounts of the sound it made. The eventual report was adequate for the safety committee. It was not adequate for me. I kept the papers, intending to return to them after the next shutdown.
+The safety committee accepted our report. I kept my notes because I thought I might find what I had missed after the next shutdown.
 
-Other papers followed. I arranged them by incident, never by theory: a count that would not add up, a program whose failure vanished under inspection, an account of a night shift that nobody wanted to put in the official record. Some were things I investigated. Others came from records, or from people willing to repeat their testimony only once. I marked the difference.
+Other reports accumulated over the years: a disputed election count, a program that behaved differently when somebody watched it, a night operator who would not let me record his account. I investigated some myself. Others came from records or from people who trusted me enough to tell me what they had seen.
 
-The folder acquired a name only when I could no longer hold its contents in my desk drawer. I called it a dossier because *miscellaneous* did not seem an adequate filing instruction. I still expected each case to yield to a patient account of what had happened.
-
-The first one is old. I was younger then, and the man who told it to me had a biscuit in his hand.
+The earliest account came from a conversation in Belgium, years before I began keeping the folder.
 
 ---
-
-## Case Files
 
 ### I. The Schaerbeek Bit
 
