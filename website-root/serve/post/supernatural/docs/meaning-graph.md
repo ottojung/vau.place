@@ -94,13 +94,13 @@ style: Plain technically confident first-person narration.
 continuity: Follows $n49531; precedes $n86374. The valve, sufficient causes, and the first discrepancy.
 
 $n86374
-text: A fitter was reaching into its housing.
+text: A fitter was working beside the actuator.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
 continuity: Follows $n53679; precedes $n82714. The valve, sufficient causes, and the first discrepancy.
 
 $n82714
-text: He pulled his hand clear just before the arm moved.
+text: He pulled his hand clear as the valve opened.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
 continuity: Follows $n86374; precedes $n82979. The valve, sufficient causes, and the first discrepancy.
@@ -751,19 +751,13 @@ $n14125
 text: The contradiction could now be written plainly:
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n56378; precedes $n21899. Election count, biscuits, newspaper, and the technician.
-
-$n21899
-text: **Invariant 1. (violated)**
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n14125; precedes $n64252. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n56378; precedes $n64252. Election count, biscuits, newspaper, and the technician.
 
 $n64252
 text: \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n21899; precedes $n92381. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n14125; precedes $n92381. Election count, biscuits, newspaper, and the technician.
 
 $n92381
 text: The candidate's preference count should never rise above the list total.
@@ -4033,139 +4027,139 @@ $n82419
 text: Close through actions, concrete objects and changed perception, not a thesis about scientific limits, skepticism, or the reality of supernatural beings.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n41766; precedes $n37915. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n41766; precedes $n37915. Rack C, valve report, maintenance log and almanac.
 
 $n37915
 text: Keep the narrator technically competent; show how procedures, rituals and apprehension now coexist without easy reconciliation.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n82419; precedes $n48875. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n82419; precedes $n48875. Rack C, valve report, maintenance log and almanac.
 
 $n48875
 text: Reflect the revised cases accurately: a solitary Heisenbug vigil, an experienced demon dream and lost proof, an indistinct visitor, Mercury's occult summons, irrational crocodile checks, and an ordinary thermal failure.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n37915; precedes $n66619. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n37915; precedes $n66619. Rack C, valve report, maintenance log and almanac.
 
 $n66619
 text: Rack C has been running normally for a week.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n48875; precedes $n93532. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n48875; precedes $n93532. Rack C, valve report, maintenance log and almanac.
 
 $n93532
 text: Ruth came by this afternoon to ask whether the restored data was safe.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n66619; precedes $n14320. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n66619; precedes $n14320. Rack C, valve report, maintenance log and almanac.
 
 $n14320
 text: I showed her the result of a test restore, and she went back to her desk.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is procedural evidence or its displacement.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n93532; precedes $n45936. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n93532; precedes $n45936. Rack C, valve report, maintenance log and almanac.
 
 $n45936
 text: I stayed late to check the next backup.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n14320; precedes $n78547. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n14320; precedes $n78547. Rack C, valve report, maintenance log and almanac.
 
 $n78547
 text: It finished without error.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is procedural evidence or its displacement.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n45936; precedes $n55426. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n45936; precedes $n55426. Rack C, valve report, maintenance log and almanac.
 
 $n55426
 text: A short rattle came from the new fan when it started.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n78547; precedes $n24819. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n78547; precedes $n24819. Rack C, valve report, maintenance log and almanac.
 
 $n24819
 text: I found a loose paper label brushing the grille and moved it aside.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n55426; precedes $n54368. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n55426; precedes $n54368. Rack C, valve report, maintenance log and almanac.
 
 $n54368
 text: The noise stopped.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n24819; precedes $n31240. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n24819; precedes $n31240. Rack C, valve report, maintenance log and almanac.
 
 $n31240
 text: My notes are on the desk beside the maintenance log.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is procedural evidence or its displacement.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n54368; precedes $n68035. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n54368; precedes $n68035. Rack C, valve report, maintenance log and almanac.
 
 $n68035
 text: I turn to the report about the valve that opened while a fitter was working beside it.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n31240; precedes $n57431. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n31240; precedes $n57431. Rack C, valve report, maintenance log and almanac.
 
 $n57431
 text: There is still a space for the missing command.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n68035; precedes $n41744. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n68035; precedes $n41744. Rack C, valve report, maintenance log and almanac.
 
 $n41744
 text: I had intended to fill it in after the next shutdown.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n57431; precedes $n47719. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n57431; precedes $n47719. Rack C, valve report, maintenance log and almanac.
 
 $n47719
 text: At midnight I enter Rack C's temperature and close the log.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n41744; precedes $n25496. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n41744; precedes $n25496. Rack C, valve report, maintenance log and almanac.
 
 $n25496
 text: Before leaving I open it again and read what I have just written.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n47719; precedes $n45150. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n47719; precedes $n45150. Rack C, valve report, maintenance log and almanac.
 
 $n45150
 text: There is nothing to correct.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n25496; precedes $n50907. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n25496; precedes $n50907. Rack C, valve report, maintenance log and almanac.
 
 $n50907
 text: The almanac is in the same drawer as my notes.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n45150; precedes $n75893. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n45150; precedes $n75893. Rack C, valve report, maintenance log and almanac.
 
 $n75893
 text: I have marked next month's date but left the margin empty.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n50907; precedes $n68988. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n50907; precedes $n68988. Rack C, valve report, maintenance log and almanac.
 
 $n68988
 text: I look at the clock.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n75893; precedes $n63464. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n75893; precedes $n63464. Rack C, valve report, maintenance log and almanac.
 
 $n63464
 text: I do not look at the almanac.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n68988; precedes $n41163. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n68988; precedes $n41163. Rack C, valve report, maintenance log and almanac.
 
 $n41163
 text: In the morning I will be able to explain why.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n63464; precedes $n44485. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n63464; precedes $n44485. Rack C, valve report, maintenance log and almanac.
 
 $n44485
 text: *These notes are outside the narrator's dossier.
