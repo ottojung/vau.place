@@ -40,7 +40,7 @@ The earliest account came from a conversation in Belgium, years before I began k
 >
 > This meeting belongs to an earlier period in the narrator's life. He has not yet become the investigator who keeps this dossier, and he does not believe in supernatural explanations. He is here for ordinary work and expects ordinary technical information.
 >
-> The newspaper items are fictional. The escaped neutron must never be connected in the prose to the 2003 bit flip. The implication that it somehow travelled backward in time is strictly for the reader.
+> The newspaper items are fictional. The CERN neutron report must not be connected in the prose to the 2003 bit flip. The implication that it somehow travelled backward in time is strictly for the reader.
 >
 > The worldview mismatch between the narrator and the technician should remain implicit. Show it through what each treats as evidence, useful information, or a reasonable explanation; do not explain the contrast as a theme.
 
@@ -48,8 +48,8 @@ The earliest account came from a conversation in Belgium, years before I began k
 Keep the opening café's spatial and procedural observations because they reveal the younger narrator's habits of thought without supplying biography.
 Tighten the long chain of preliminaries so that the biscuit exchange leads organically into the election story and the technician's peculiar perspective accumulates rather than resets.
 Preserve the subtle contrast between the narrator's useful facts and the technician's stories; neither character should become a mouthpiece for the collection's philosophy.
-Keep the escaped-neutron newspaper item an unspoken clue for the reader alone, but establish enough credible chronology and recurrence of imagery for the impossible temporal suggestion to be discoverable.
-Check that the fictional CERN report sounds plausible as journalism, especially the unusual claim that a single neutron escaped an enclosure.
+Keep the newspaper's neutron item an unspoken clue for the reader alone, but establish enough credible chronology and recurrence of imagery for the impossible temporal suggestion to be discoverable.
+Keep the fictional CERN notice modest and plausible as journalism.
 Treat the real election's multiday investigation carefully when compressing events into a firsthand reconstruction; the May 2003 chronology and the extent of the technician's knowledge must remain believable.
 Intensify the emotional stakes of an untraceable alteration to an election result through the clerks' fear of responsibility, loss of trust in the count, and uncertainty over what corrective action is possible.
 Let physical and bureaucratic details make the contradictory totals threatening instead of leaning on poetic descriptions of a bit flip or personifying the numerical anomaly.
@@ -75,9 +75,9 @@ He picks up a biscuit from beside his coffee.
 
 I look at him. “How they break?”
 
-“The English ones wait for tea and then break where you expect. The French fracture elegantly, usually along the line that leaves the prettier half. Belgian biscuits begin along one crack, reconsider, and finish by inventing a third.”
+“English biscuits soften in tea before they break. The French ones have layers; you end up with crumbs instead of two halves. Belgian biscuits begin along one crack, reconsider, and finish by inventing a third.”
 
-That seems ridiculous. I don't see what national character has to do with a biscuit, but he is already unwrapping it.
+He starts to unwrap it. I put down my pen.
 
 He breaks it. The biscuit splits diagonally across the stamped pattern, scattering crumbs onto the napkin. He seems pleased.
 
@@ -161,7 +161,7 @@ A physicist was eventually pressed into service because she happened to live nea
 
 She made them go through the ordinary possibilities again. Bad input, bad arithmetic, bad code: each had somewhere to leave a trace. When those routes led back to the same number, the question shifted to the memory itself. A memory cell can be disturbed physically, without the program asking it to change. An energetic particle passing through the semiconductor can deposit enough charge to alter the bit it crosses. If that bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 
-That gave them a hypothesis: a single-event upset. Under that hypothesis there would be no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
+They wrote *single-event upset* on the list of possible causes.
 
 The technician objected that bits did not change for no reason. The physicist agreed. A particle crossing a memory cell was a reason; the difficulty was that the reason would already be gone.
 
@@ -181,7 +181,7 @@ By the time he finishes, the cafeteria has thinned and our coffee has gone cold.
 
 At the door he asks me not to write down what became of the president. I promise him I will not.
 
-At the time I heard an engineer's argument about preparation, nothing more. We do not fight the weather, he said; we prepare for it. The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
+He believed the next count should be checked in more than one way, with records that the machine could not quietly change. I agreed with him.
 
 I did not write a field note that afternoon. Years later, when I began the dossier, I put this under his story:
 
@@ -391,7 +391,7 @@ The room laughed.
 
 That word was not in the operator's account. He was careful to explain this to me. He did not say what word he might have chosen instead.
 
-He was put on day shifts. He accepted the change without arguing. For weeks his colleagues placed little green objects on his desk: a paper hat, a plastic shamrock, an old toy shoe. Nobody meant to be cruel. He kept the objects in a drawer because throwing them away would have required him to speak about them.
+He was put on day shifts. He accepted the change without arguing. For weeks his colleagues placed little green objects on his desk: a paper hat, a plastic shamrock, an old toy shoe. He kept the objects in a drawer because throwing them away would have required him to speak about them.
 
 At the end of our conversation he asked whether I knew that, in the old stories, you should never take your eyes off the little people if you want them to remain.
 
@@ -505,8 +505,6 @@ One evening I waited in a car park to see Mercury after sunset. It was low and d
 I bought an almanac. I moved a planned migration away from the next retrograde. I did not put that reason in the schedule.
 
 Months later I found the same silver coin in the pocket of a coat I had not worn to the astrologer's house. The worn number on it was a little clearer now. I could almost read it.
-
-I have never decided whether I hope to meet the woman again.
 
 **Field Note #4. I never asked the operator what he heard when I lifted the receiver.**
 
