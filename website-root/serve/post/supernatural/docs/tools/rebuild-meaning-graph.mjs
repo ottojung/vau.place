@@ -26,7 +26,7 @@ const rules = {
  mercury: ['Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages.', 'Visceral visionary mysticism rather than technical documentation.', 'Mercury, serpents, mirrors, moving coin and impossible telephone.'],
  crocodile: ['Reveal changed causal relevance through excessive checks of unaffected American systems.', 'Dry civic reporting and gently disturbing obsessive repetition.', 'Vienna canal, crocodile, green dashboard, unnecessary column.'],
  crash: ['Show a sufficiently explained ordinary failure that cannot restore emotional peace.', 'Very short, undramatic, quiet procedural aftershock.', 'Rack C, cooling filter, Ruth, the extra watch.'],
- coda: ['Reveal the altered narrator through objects and gestures rather than interpretation.', 'Restrained and concrete, unresolved with a residual unease.', 'Dossier, moth, hash, coin, almanac and Rack C.'],
+ coda: ['Reveal the altered narrator through objects and gestures rather than interpretation.', 'Restrained and concrete, unresolved with a residual unease.', 'Rack C, valve report, maintenance log and almanac.'],
  sources: ['Keep external historical references distinct from invented story events.', 'Factual reference prose.', 'Documentation, provenance, and fictional composites.']
 };
 let section='preamble', fenced=false;
@@ -44,6 +44,8 @@ for(const [ix,line] of novel.split('\n').entries()){
  const trimmed=line.trim();
  if(trimmed.startsWith(String.fromCharCode(96).repeat(3))){fenced=!fenced;continue;}
  if(fenced)continue;
+ // With an untitled opening section, the prose begins immediately after the H1.
+ if(/^# [^#]/.test(trimmed)){section='prologue';continue;}
  if(trimmed.startsWith('## Prologue')){section='prologue';continue;}
  if(trimmed.startsWith('## Coda')){section='coda';continue;}
  if(trimmed.startsWith("## Author's Notes")){section='sources';continue;}

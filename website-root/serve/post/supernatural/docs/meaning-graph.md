@@ -31,37 +31,25 @@ $n68362
 text: Keep each case emotionally distinct, do not explain the moral, and close with actions rather than a lecture.
 intent: State live editorial requirements. Its local function is narrative advance.
 style: Clear non-diegetic instruction.
-continuity: Follows $n39190; precedes $n65643. Story contracts and authorial priorities.
+continuity: Follows $n39190; precedes $n89384. Story contracts and authorial priorities.
 
-$n65643
-text: "I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct."
+$n89384
+text: Keep the narrator's engineering judgment modest and show his growing unease through actions.
 intent: State live editorial requirements. Its local function is narrative advance.
 style: Clear non-diegetic instruction.
-continuity: Follows $n68362; precedes $n72875. Story contracts and authorial priorities.
+continuity: Follows $n68362; precedes $n27974. Story contracts and authorial priorities.
 
-$n72875
-text: "The closer your model fits the world, the more the world will take issue."
+$n27974
+text: Do not introduce sentences solely because they sound quotable.
 intent: State live editorial requirements. Its local function is narrative advance.
 style: Clear non-diegetic instruction.
-continuity: Follows $n65643; precedes $n57311. Story contracts and authorial priorities.
-
-$n57311
-text: These phrases belong naturally in later prose, not as prologue declarations.
-intent: State live editorial requirements. Its local function is narrative advance.
-style: Clear non-diegetic instruction.
-continuity: Follows $n72875; precedes $n43955. Story contracts and authorial priorities.
-
-$n43955
-text: *From the notebook of an investigator who kept what he could not explain*
-intent: State live editorial requirements. Its local function is narrative advance.
-style: Clear non-diegetic instruction.
-continuity: Follows $n57311; precedes $n27569. Story contracts and authorial priorities.
+continuity: Follows $n89384; precedes $n27569. Story contracts and authorial priorities.
 
 $n27569
 text: Begin in the assured voice of a technically rigorous investigator, not the altered voice of the collection's ending.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n43955; precedes $n26162. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n27974; precedes $n26162. The valve, sufficient causes, and the first discrepancy.
 
 $n26162
 text: He should trust repeatable tests, evidence, and ordinary causal explanations without hesitation or metaphysical disclaimers.
@@ -79,175 +67,103 @@ $n43598
 text: Do not spend the opening announcing supernatural beliefs, or anticipating the narrator's later loss of confidence.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n96185; precedes $n94105. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n96185; precedes $n35016. The valve, sufficient causes, and the first discrepancy.
 
-$n94105
-text: I was employed to find out why things failed.
+$n35016
+text: I was hired to investigate failures.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n43598; precedes $n87190. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n43598; precedes $n71466. The valve, sufficient causes, and the first discrepancy.
 
-$n87190
-text: A useful explanation specifies a mechanism, identifies the conditions that set it in motion, and survives an attempt to make it fail again.
+$n71466
+text: Most had ordinary causes, even when those causes were difficult to find.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n94105; precedes $n91773. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n35016; precedes $n49531. The valve, sufficient causes, and the first discrepancy.
 
-$n91773
-text: A server that dies at a particular temperature has not committed an outrage against nature.
+$n49531
+text: I checked logs, spoke to the people who had been there, and tried to make the same thing happen again.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is testimony or reported dialogue.
+style: Plain technically confident first-person narration.
+continuity: Follows $n71466; precedes $n53679. The valve, sufficient causes, and the first discrepancy.
+
+$n53679
+text: Once, during maintenance, a valve opened without a command in the log.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is procedural evidence or its displacement.
 style: Plain technically confident first-person narration.
-continuity: Follows $n87190; precedes $n66942. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n49531; precedes $n86374. The valve, sufficient causes, and the first discrepancy.
 
-$n66942
-text: It has reached its limit.
+$n86374
+text: A fitter was working beside the actuator.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n91773; precedes $n84428. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n53679; precedes $n82714. The valve, sufficient causes, and the first discrepancy.
 
-$n84428
-text: The distinction matters to the person whose work was lost, even if it offers that person no comfort.
+$n82714
+text: He pulled his hand clear as the valve opened.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n66942; precedes $n76107. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n86374; precedes $n82979. The valve, sufficient causes, and the first discrepancy.
 
-$n76107
-text: I liked failures with a clear beginning.
+$n82979
+text: I checked the maintenance schedule and the wiring, and ran the sequence again with everyone standing back.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n84428; precedes $n19490. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n82714; precedes $n65501. The valve, sufficient causes, and the first discrepancy.
 
-$n19490
-text: When a valve opened without a command, I asked where the command might have been lost; when a machine reported a state it could not have reached, I asked who had written the state and when.
+$n65501
+text: The valve stayed shut.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+style: Plain technically confident first-person narration.
+continuity: Follows $n82979; precedes $n24178. The valve, sufficient causes, and the first discrepancy.
+
+$n24178
+text: Three people had heard it open, but their accounts did not agree.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is testimony or reported dialogue.
 style: Plain technically confident first-person narration.
-continuity: Follows $n76107; precedes $n44025. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n65501; precedes $n37857. The valve, sufficient causes, and the first discrepancy.
 
-$n44025
-text: I distrusted eyewitnesses, including myself, in exactly the way an engineer ought to.
+$n37857
+text: The safety committee accepted our report.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n19490; precedes $n74760. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n24178; precedes $n55765. The valve, sufficient causes, and the first discrepancy.
 
-$n74760
-text: Time was recorded before recollections were gathered.
+$n55765
+text: I kept my notes because I thought I might find what I had missed after the next shutdown.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n44025; precedes $n50218. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n37857; precedes $n85579. The valve, sufficient causes, and the first discrepancy.
 
-$n50218
-text: Nothing was called impossible until the ordinary possibilities had been exhausted.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is testimony or reported dialogue.
-style: Plain technically confident first-person narration.
-continuity: Follows $n74760; precedes $n64502. The valve, sufficient causes, and the first discrepancy.
-
-$n64502
-text: There was one incident I could not dispose of quite so neatly.
+$n85579
+text: Other reports accumulated over the years: a disputed election count, a program that behaved differently when somebody watched it, a night operator who would not let me record his account.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n50218; precedes $n44417. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n55765; precedes $n23224. The valve, sufficient causes, and the first discrepancy.
 
-$n44417
-text: A valve opened on a maintenance line at a quarter to five.
+$n23224
+text: I investigated some myself.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n64502; precedes $n76723. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n85579; precedes $n20902. The valve, sufficient causes, and the first discrepancy.
 
-$n76723
-text: It should have remained shut.
+$n20902
+text: Others came from records or from people who trusted me enough to tell me what they had seen.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n44417; precedes $n28174. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n23224; precedes $n49185. The valve, sufficient causes, and the first discrepancy.
 
-$n28174
-text: A fitter happened to be reaching for his spanner and escaped injury; I had the maintenance schedule, a clean event log, and three mutually incompatible accounts of the sound it made.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is procedural evidence or its displacement.
-style: Plain technically confident first-person narration.
-continuity: Follows $n76723; precedes $n28362. The valve, sufficient causes, and the first discrepancy.
-
-$n28362
-text: The eventual report was adequate for the safety committee.
+$n49185
+text: The earliest account came from a conversation in Belgium, years before I began keeping the folder.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n28174; precedes $n89786. The valve, sufficient causes, and the first discrepancy.
-
-$n89786
-text: It was not adequate for me.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n28362; precedes $n31792. The valve, sufficient causes, and the first discrepancy.
-
-$n31792
-text: I kept the papers, intending to return to them after the next shutdown.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n89786; precedes $n22418. The valve, sufficient causes, and the first discrepancy.
-
-$n22418
-text: Other papers followed.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n31792; precedes $n38392. The valve, sufficient causes, and the first discrepancy.
-
-$n38392
-text: I arranged them by incident, never by theory: a count that would not add up, a program whose failure vanished under inspection, an account of a night shift that nobody wanted to put in the official record.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is emotional or perceptual change.
-style: Plain technically confident first-person narration.
-continuity: Follows $n22418; precedes $n13241. The valve, sufficient causes, and the first discrepancy.
-
-$n13241
-text: Some were things I investigated.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n38392; precedes $n79742. The valve, sufficient causes, and the first discrepancy.
-
-$n79742
-text: Others came from records, or from people willing to repeat their testimony only once.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n13241; precedes $n75130. The valve, sufficient causes, and the first discrepancy.
-
-$n75130
-text: I marked the difference.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n79742; precedes $n57816. The valve, sufficient causes, and the first discrepancy.
-
-$n57816
-text: The folder acquired a name only when I could no longer hold its contents in my desk drawer.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n75130; precedes $n29019. The valve, sufficient causes, and the first discrepancy.
-
-$n29019
-text: I called it a dossier because *miscellaneous* did not seem an adequate filing instruction.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is testimony or reported dialogue.
-style: Plain technically confident first-person narration.
-continuity: Follows $n57816; precedes $n70856. The valve, sufficient causes, and the first discrepancy.
-
-$n70856
-text: I still expected each case to yield to a patient account of what had happened.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n29019; precedes $n65009. The valve, sufficient causes, and the first discrepancy.
-
-$n65009
-text: The first one is old.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n70856; precedes $n36449. The valve, sufficient causes, and the first discrepancy.
-
-$n36449
-text: I was younger then, and the man who told it to me had a biscuit in his hand.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is testimony or reported dialogue.
-style: Plain technically confident first-person narration.
-continuity: Follows $n65009; precedes $n75488. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n20902; precedes $n75488. The valve, sufficient causes, and the first discrepancy.
 
 $n75488
 text: **Schaerbeek, Belgium.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n36449; precedes $n62068. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n49185; precedes $n62068. Election count, biscuits, newspaper, and the technician.
 
 $n62068
 text: This meeting belongs to an earlier period in the narrator's life.
@@ -271,10 +187,10 @@ $n33808
 text: The newspaper items are fictional.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n26455; precedes $n30423. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n26455; precedes $n31233. Election count, biscuits, newspaper, and the technician.
 
-$n30423
-text: The escaped neutron must never be connected in the prose to the 2003 bit flip.
+$n31233
+text: The CERN neutron report must not be connected in the prose to the 2003 bit flip.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n33808; precedes $n65616. Election count, biscuits, newspaper, and the technician.
@@ -283,7 +199,7 @@ $n65616
 text: The implication that it somehow travelled backward in time is strictly for the reader.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n30423; precedes $n86036. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n31233; precedes $n86036. Election count, biscuits, newspaper, and the technician.
 
 $n86036
 text: The worldview mismatch between the narrator and the technician should remain implicit.
@@ -313,25 +229,25 @@ $n44011
 text: Preserve the subtle contrast between the narrator's useful facts and the technician's stories; neither character should become a mouthpiece for the collection's philosophy.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n81654; precedes $n71947. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n81654; precedes $n56996. Election count, biscuits, newspaper, and the technician.
 
-$n71947
-text: Keep the escaped-neutron newspaper item an unspoken clue for the reader alone, but establish enough credible chronology and recurrence of imagery for the impossible temporal suggestion to be discoverable.
+$n56996
+text: Keep the newspaper's neutron item an unspoken clue for the reader alone, but establish enough credible chronology and recurrence of imagery for the impossible temporal suggestion to be discoverable.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is emotional or perceptual change.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n44011; precedes $n66580. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n44011; precedes $n58325. Election count, biscuits, newspaper, and the technician.
 
-$n66580
-text: Check that the fictional CERN report sounds plausible as journalism, especially the unusual claim that a single neutron escaped an enclosure.
+$n58325
+text: Keep the fictional CERN notice modest and plausible as journalism.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n71947; precedes $n39332. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n56996; precedes $n39332. Election count, biscuits, newspaper, and the technician.
 
 $n39332
 text: Treat the real election's multiday investigation carefully when compressing events into a firsthand reconstruction; the May 2003 chronology and the extent of the technician's knowledge must remain believable.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n66580; precedes $n84205. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n58325; precedes $n84205. Election count, biscuits, newspaper, and the technician.
 
 $n84205
 text: Intensify the emotional stakes of an untraceable alteration to an election result through the clerks' fear of responsibility, loss of trust in the count, and uncertainty over what corrective action is possible.
@@ -355,187 +271,121 @@ $n94975
 text: Do not restore the removed conversation-quality billing digression; its separate joke interrupts the accumulated unease after the election account.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n78613; precedes $n52144. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n78613; precedes $n56551. Election count, biscuits, newspaper, and the technician.
 
-$n52144
-text: I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late.
+$n56551
+text: I am in a cafeteria in Schaerbeek, waiting for an engineer who knows the contractors responsible for the municipal systems I am working on.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n94975; precedes $n59635. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n94975; precedes $n78493. Election count, biscuits, newspaper, and the technician.
 
-$n59635
-text: In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
+$n78493
+text: He is late.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n52144; precedes $n10445. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n56551; precedes $n56277. Election count, biscuits, newspaper, and the technician.
 
-$n10445
-text: The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n59635; precedes $n63211. Election count, biscuits, newspaper, and the technician.
-
-$n63211
-text: The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is sensory evidence.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n10445; precedes $n87792. Election count, biscuits, newspaper, and the technician.
-
-$n87792
-text: The queue bends once before the till in an L-shape that keeps the doorway clear.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n63211; precedes $n60495. Election count, biscuits, newspaper, and the technician.
-
-$n60495
-text: I take my place in it, moving forward each time the drawer opens with its tired ring.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n87792; precedes $n14149. Election count, biscuits, newspaper, and the technician.
-
-$n14149
-text: Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is emotional or perceptual change.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n60495; precedes $n56936. Election count, biscuits, newspaper, and the technician.
-
-$n56936
-text: Tray in hand, I take a table by the wall.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n14149; precedes $n61361. Election count, biscuits, newspaper, and the technician.
-
-$n61361
-text: A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n56936; precedes $n68128. Election count, biscuits, newspaper, and the technician.
-
-$n68128
-text: He knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things.
+$n56277
+text: My colleague said he would know whom to call when the names on the contracts proved unhelpful.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n61361; precedes $n14695. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n78493; precedes $n58632. Election count, biscuits, newspaper, and the technician.
 
-$n14695
-text: There is a newspaper on the next chair.
+$n58632
+text: The windows are low enough that I see mostly the legs of people passing outside.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n68128; precedes $n43717. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n56277; precedes $n25873. Election count, biscuits, newspaper, and the technician.
 
-$n43717
-text: I pick it up.
+$n25873
+text: I order by pointing at a number on the menu, then take a table by the wall.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n14695; precedes $n51879. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n58632; precedes $n43060. Election count, biscuits, newspaper, and the technician.
 
-$n51879
-text: Liège has held a waffle competition; the winner is photographed behind an enormous plate of waffles, with three judges smiling beside her.
+$n43060
+text: A newspaper lies on the next chair.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n43717; precedes $n54948. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n25873; precedes $n36771. Election count, biscuits, newspaper, and the technician.
 
-$n54948
-text: I turn a few pages, looking for science.
+$n36771
+text: Liège has held a waffle competition; the winner is photographed behind an enormous plate, with three judges smiling beside her.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n51879; precedes $n10179. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n43060; precedes $n81090. Election count, biscuits, newspaper, and the technician.
 
-$n10179
-text: A short item from Geneva says that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop.
+$n81090
+text: I turn to the science pages.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n54948; precedes $n18462. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n36771; precedes $n69422. Election count, biscuits, newspaper, and the technician.
 
-$n18462
-text: The laboratory says no one was at risk.
+$n69422
+text: A short report from CERN says a neutron was detected beyond the shielding of an experiment.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n10179; precedes $n82725. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n81090; precedes $n72025. Election count, biscuits, newspaper, and the technician.
 
-$n82725
-text: The newspaper uses the word *escaped* three times.
+$n72025
+text: The researchers are checking the detector.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n18462; precedes $n23591. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n69422; precedes $n91029. Election count, biscuits, newspaper, and the technician.
 
-$n23591
-text: I fold it and put it back.
+$n91029
+text: I put the paper back.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n82725; precedes $n88413. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n72025; precedes $n35019. Election count, biscuits, newspaper, and the technician.
 
-$n88413
-text: He arrives late and apologizes before sitting down.
+$n35019
+text: He arrives late and apologizes.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n23591; precedes $n90697. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n91029; precedes $n61074. Election count, biscuits, newspaper, and the technician.
 
-$n90697
-text: His tram, he says, underwent “a spontaneous adjustment to the route.”
+$n61074
+text: His tram was delayed.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n88413; precedes $n39799. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n35019; precedes $n19222. Election count, biscuits, newspaper, and the technician.
 
-$n39799
-text: He pauses, then corrects himself.
+$n19222
+text: He says they thought it was a signal fault, but nobody could tell the passengers what had happened.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n90697; precedes $n49227. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n61074; precedes $n65406. Election count, biscuits, newspaper, and the technician.
 
-$n49227
-text: “Not spontaneous.
+$n65406
+text: We introduce ourselves.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n39799; precedes $n13921. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n19222; precedes $n77323. Election count, biscuits, newspaper, and the technician.
 
-$n13921
-text: Sorry.
+$n77323
+text: He tells me he has worked on elections—“not politics,” he says, “interfaces.”
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n49227; precedes $n21531. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n65406; precedes $n95226. Election count, biscuits, newspaper, and the technician.
 
-$n21531
-text: A signal failed, or somebody changed the route.
+$n95226
+text: As he speaks, he straightens the sugar packet and spoon.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n13921; precedes $n49472. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n77323; precedes $n16030. Election count, biscuits, newspaper, and the technician.
 
-$n49472
-text: We just don't know which yet.”
+$n16030
+text: When he stops talking, he taps the table with one finger.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n21531; precedes $n98371. Election count, biscuits, newspaper, and the technician.
-
-$n98371
-text: We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n49472; precedes $n96957. Election count, biscuits, newspaper, and the technician.
-
-$n96957
-text: He tells me he has worked elections—“not politics,” he says quickly, “interfaces.”
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n98371; precedes $n31451. Election count, biscuits, newspaper, and the technician.
-
-$n31451
-text: As he talks, he keeps straightening small things: the sugar packet, the spoon.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n96957; precedes $n73973. Election count, biscuits, newspaper, and the technician.
-
-$n73973
-text: When conversation pauses, he taps the table as though confirming liveness.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n31451; precedes $n39292. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n95226; precedes $n39292. Election count, biscuits, newspaper, and the technician.
 
 $n39292
 text: I ask who actually maintains the municipal systems I am likely to encounter.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n73973; precedes $n10441. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n16030; precedes $n10441. Election count, biscuits, newspaper, and the technician.
 
 $n10441
 text: He gives me names, but rarely just names.
@@ -553,25 +403,25 @@ $n59702
 text: Another is the person everyone calls after hours even though nobody's paperwork admits this.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n86622; precedes $n55258. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n86622; precedes $n66570. Election count, biscuits, newspaper, and the technician.
 
-$n55258
-text: I write down the useful parts and leave some of the commentary out.
+$n66570
+text: I try to write down the names, but he keeps telling me stories about the people.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n59702; precedes $n39196. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n59702; precedes $n13941. Election count, biscuits, newspaper, and the technician.
 
-$n39196
-text: The commentary gets harder to separate from the useful parts when he picks up one of the biscuits beside his coffee.
+$n13941
+text: He picks up a biscuit from beside his coffee.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n55258; precedes $n77497. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n66570; precedes $n77497. Election count, biscuits, newspaper, and the technician.
 
 $n77497
 text: “You can tell a lot about a nation from how its biscuits break.”
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n39196; precedes $n22187. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n13941; precedes $n22187. Election count, biscuits, newspaper, and the technician.
 
 $n22187
 text: I look at him.
@@ -583,43 +433,43 @@ $n35955
 text: “How they break?”
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n22187; precedes $n49808. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n22187; precedes $n48194. Election count, biscuits, newspaper, and the technician.
 
-$n49808
-text: “The English ones wait for tea and then break where you expect.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is emotional or perceptual change.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n35955; precedes $n86809. Election count, biscuits, newspaper, and the technician.
-
-$n86809
-text: The French fracture elegantly, usually along the line that leaves the prettier half.
+$n48194
+text: “English biscuits soften in tea before they break.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n49808; precedes $n70756. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n35955; precedes $n42641. Election count, biscuits, newspaper, and the technician.
+
+$n42641
+text: The French ones have layers; you end up with crumbs instead of two halves.
+intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
+style: Concrete restrained conversation, everyday detail and subtle humor.
+continuity: Follows $n48194; precedes $n70756. Election count, biscuits, newspaper, and the technician.
 
 $n70756
 text: Belgian biscuits begin along one crack, reconsider, and finish by inventing a third.”
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n86809; precedes $n84584. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n42641; precedes $n50108. Election count, biscuits, newspaper, and the technician.
 
-$n84584
-text: That seems ridiculous.
+$n50108
+text: He starts to unwrap it.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n70756; precedes $n36676. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n70756; precedes $n87969. Election count, biscuits, newspaper, and the technician.
 
-$n36676
-text: I don't see what national character has to do with a biscuit, but he is already unwrapping it.
+$n87969
+text: I put down my pen.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n84584; precedes $n70157. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n50108; precedes $n70157. Election count, biscuits, newspaper, and the technician.
 
 $n70157
 text: He breaks it.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n36676; precedes $n20281. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n87969; precedes $n20281. Election count, biscuits, newspaper, and the technician.
 
 $n20281
 text: The biscuit splits diagonally across the stamped pattern, scattering crumbs onto the napkin.
@@ -727,10 +577,10 @@ $n27712
 text: Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n41571; precedes $n13109. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n41571; precedes $n17513. Election count, biscuits, newspaper, and the technician.
 
-$n13109
-text: There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and a carpet whose pattern is an argument against democracy.
+$n17513
+text: There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and an old carpet.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is sensory evidence.
 style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n27712; precedes $n35989. Election count, biscuits, newspaper, and the technician.
@@ -739,7 +589,7 @@ $n35989
 text: He had been sent there as technician, a word expansive enough to cover whatever had not yet been assigned to the others.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n13109; precedes $n68009. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n17513; precedes $n68009. Election count, biscuits, newspaper, and the technician.
 
 $n68009
 text: On his table lay the checklist: confirm serial numbers, confirm counters at zero, confirm seals intact; note every confirmation in ink, sign where indicated.
@@ -835,25 +685,19 @@ $n54658
 text: They checked the machine identifier, the register, the media from which the totals had been read, and then the totals again.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n78454; precedes $n95615. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n78454; precedes $n33114. Election count, biscuits, newspaper, and the technician.
 
-$n95615
-text: There is the certainty, never admitted aloud, that somewhere a check is missing and that this is sane; that checks go missing the way buttons go missing from coats.
+$n33114
+text: They assumed a check had been missed and went through the list again.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n54658; precedes $n16947. Election count, biscuits, newspaper, and the technician.
-
-$n16947
-text: So they looked for the missing check.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n95615; precedes $n57610. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n54658; precedes $n57610. Election count, biscuits, newspaper, and the technician.
 
 $n57610
 text: The air in the school had become very dry.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is sensory evidence.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n16947; precedes $n16059. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n33114; precedes $n16059. Election count, biscuits, newspaper, and the technician.
 
 $n16059
 text: Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
@@ -907,37 +751,25 @@ $n14125
 text: The contradiction could now be written plainly:
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n56378; precedes $n21899. Election count, biscuits, newspaper, and the technician.
-
-$n21899
-text: **Invariant 1. (violated)**
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n14125; precedes $n64252. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n56378; precedes $n64252. Election count, biscuits, newspaper, and the technician.
 
 $n64252
 text: \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n21899; precedes $n92381. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n14125; precedes $n92381. Election count, biscuits, newspaper, and the technician.
 
 $n92381
 text: The candidate's preference count should never rise above the list total.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n64252; precedes $n91363. Election count, biscuits, newspaper, and the technician.
-
-$n91363
-text: In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n92381; precedes $n29099. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n64252; precedes $n29099. Election count, biscuits, newspaper, and the technician.
 
 $n29099
 text: The president asked the technician, quietly, whether she could sign.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n91363; precedes $n56128. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n92381; precedes $n56128. Election count, biscuits, newspaper, and the technician.
 
 $n56128
 text: He understood the question: not whether the number was right, but whether the machine could be vouched for.
@@ -1153,25 +985,19 @@ $n12882
 text: If that bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n48514; precedes $n45529. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n48514; precedes $n45811. Election count, biscuits, newspaper, and the technician.
 
-$n45529
-text: That gave them a hypothesis: a single-event upset.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
+$n45811
+text: They wrote *single-event upset* on the list of possible causes.
+intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n12882; precedes $n50752. Election count, biscuits, newspaper, and the technician.
-
-$n50752
-text: Under that hypothesis there would be no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n45529; precedes $n56427. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n12882; precedes $n56427. Election count, biscuits, newspaper, and the technician.
 
 $n56427
 text: The technician objected that bits did not change for no reason.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n50752; precedes $n65158. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n45811; precedes $n65158. Election count, biscuits, newspaper, and the technician.
 
 $n65158
 text: The physicist agreed.
@@ -1213,34 +1039,28 @@ $n64121
 text: The experts' report concluded that it could *very probably* be attributed to a spontaneous and random inversion of a binary position in the computer's working memory.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n11253; precedes $n36362. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n11253; precedes $n95834. Election count, biscuits, newspaper, and the technician.
 
-$n36362
-text: The report left the physical cause open.
+$n95834
+text: The report did not identify the particle or establish what had disturbed the memory.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n64121; precedes $n94242. Election count, biscuits, newspaper, and the technician.
-
-$n94242
-text: The committee’s report is less romantic, but it permits the word that haunts this dossier: likely.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n36362; precedes $n83246. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n64121; precedes $n83246. Election count, biscuits, newspaper, and the technician.
 
 $n83246
 text: Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n94242; precedes $n81745. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n95834; precedes $n81745. Election count, biscuits, newspaper, and the technician.
 
 $n81745
 text: By the time the incident reached programmers, the whole thing was often filed under *computer error*.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is procedural evidence or its displacement.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n83246; precedes $n15273. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n83246; precedes $n33194. Election count, biscuits, newspaper, and the technician.
 
-$n15273
-text: The phrase is correct in the way that shipwrecks are wet.
+$n33194
+text: That label did not tell the clerks what they could safely sign.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n81745; precedes $n37749. Election count, biscuits, newspaper, and the technician.
@@ -1249,7 +1069,7 @@ $n37749
 text: What stayed with me was the qualification in the report: *very probably*.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n15273; precedes $n63280. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n33194; precedes $n63280. Election count, biscuits, newspaper, and the technician.
 
 $n63280
 text: One clerk later admitted that he would have preferred a boring human mistake.
@@ -1321,31 +1141,25 @@ $n99862
 text: I promise him I will not.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n51004; precedes $n34715. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n51004; precedes $n29847. Election count, biscuits, newspaper, and the technician.
 
-$n34715
-text: At the time I heard an engineer's argument about preparation, nothing more.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
+$n29847
+text: He believed the next count should be checked in more than one way, with records that the machine could not quietly change.
+intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is emotional or perceptual change.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n99862; precedes $n18816. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n99862; precedes $n16963. Election count, biscuits, newspaper, and the technician.
 
-$n18816
-text: We do not fight the weather, he said; we prepare for it.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n34715; precedes $n78293. Election count, biscuits, newspaper, and the technician.
-
-$n78293
-text: The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
+$n16963
+text: I agreed with him.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n18816; precedes $n63199. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n29847; precedes $n63199. Election count, biscuits, newspaper, and the technician.
 
 $n63199
 text: I did not write a field note that afternoon.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n78293; precedes $n54255. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n16963; precedes $n54255. Election count, biscuits, newspaper, and the technician.
 
 $n54255
 text: Years later, when I began the dossier, I put this under his story:
@@ -1357,19 +1171,25 @@ $n86401
 text: **Field Note #1.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n54255; precedes $n12178. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n54255; precedes $n39521. Election count, biscuits, newspaper, and the technician.
 
-$n12178
-text: Horror, in our trade, is the clean error—the one that leaves no prints.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is procedural evidence or its displacement.
+$n39521
+text: I checked the totals again after I read the report.
+intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n86401; precedes $n33563. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n86401; precedes $n20854. Election count, biscuits, newspaper, and the technician.
+
+$n20854
+text: They had not changed.
+intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
+style: Concrete restrained conversation, everyday detail and subtle humor.
+continuity: Follows $n39521; precedes $n33563. Election count, biscuits, newspaper, and the technician.
 
 $n33563
 text: There is an older photograph I keep in a folder called *Proofs I Do Not Argue With*.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n12178; precedes $n50947. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n20854; precedes $n50947. Election count, biscuits, newspaper, and the technician.
 
 $n50947
 text: In it, a moth lies taped to a page of an engineering log.
@@ -1387,37 +1207,31 @@ $n70307
 text: On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.”
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n99811; precedes $n67775. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n99811; precedes $n35156. Election count, biscuits, newspaper, and the technician.
 
-$n67775
-text: I like the page because it makes an engineering superstition almost literal: give the failure a name, and perhaps you can banish it.
+$n35156
+text: The cause had been found and kept with the report.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n70307; precedes $n62088. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n70307; precedes $n56424. Election count, biscuits, newspaper, and the technician.
 
-$n62088
-text: Here they could do both—call it a bug, pull it from the relay, and tape it beside the record.
+$n56424
+text: I used to find that photograph reassuring.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n67775; precedes $n65765. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n35156; precedes $n65765. Election count, biscuits, newspaper, and the technician.
 
 $n65765
 text: ([National Museum of American History][1])
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n62088; precedes $n10406. Election count, biscuits, newspaper, and the technician.
-
-$n10406
-text: The moth looks unconvinced.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n65765; precedes $n80750. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n56424; precedes $n80750. Election count, biscuits, newspaper, and the technician.
 
 $n80750
 text: The page I reserve for what became of the president is the one page in the dossier I have never been able to fill.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n10406; precedes $n52146. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n65765; precedes $n52146. Election count, biscuits, newspaper, and the technician.
 
 $n52146
 text: The narrator must investigate alone through the night; no colleagues enter to validate his perception or ease his fear.
@@ -1501,10 +1315,10 @@ $n40225
 text: I had worked nights before.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n82231; precedes $n80770. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n82231; precedes $n82101. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
-$n80770
-text: It pleased me that buildings, deprived of people, became easier to understand.
+$n82101
+text: Without other people there, I could hear the fans clearly enough to notice a change in their pitch.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
 continuity: Follows $n40225; precedes $n85672. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
@@ -1513,7 +1327,7 @@ $n85672
 text: At 00:41 I caught the failure.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n80770; precedes $n16971. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n82101; precedes $n16971. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n16971
 text: The application stopped at the same line it had stopped at earlier, waiting for the database to answer.
@@ -1885,25 +1699,25 @@ $n70259
 text: It was the idea, sudden and complete, that attaching it would make the thing aware of me.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n69779; precedes $n94715. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n69779; precedes $n60085. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
-$n94715
-text: I was alone, and I knew exactly how foolish that thought was.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is emotional or perceptual change.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n70259; precedes $n71232. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n71232
-text: I did not move.
+$n60085
+text: I knew I was tired.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n94715; precedes $n23148. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n70259; precedes $n58737. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+
+$n58737
+text: I still did not move.
+intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
+style: Compressed sleepless first person, increasingly uncanny images.
+continuity: Follows $n60085; precedes $n23148. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n23148
 text: In the end I attached the tracer.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n71232; precedes $n93399. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n58737; precedes $n93399. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n93399
 text: The request completed.
@@ -2101,31 +1915,19 @@ $n23815
 text: Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n36405; precedes $n51410. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n36405; precedes $n94706. Demon, two small things, full SHA-256 collision and lost files.
 
-$n51410
-text: Its face was not blank.
+$n94706
+text: Its face was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n23815; precedes $n62347. Demon, two small things, full SHA-256 collision and lost files.
-
-$n62347
-text: That would have been easier.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n51410; precedes $n67031. Demon, two small things, full SHA-256 collision and lost files.
-
-$n67031
-text: It was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n62347; precedes $n33941. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n23815; precedes $n33941. Demon, two small things, full SHA-256 collision and lost files.
 
 $n33941
 text: The features moved almost imperceptibly, attempting to agree on a single expression.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n67031; precedes $n88336. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n94706; precedes $n88336. Demon, two small things, full SHA-256 collision and lost files.
 
 $n88336
 text: He recognized it as a demon with the swift certainty of dreams, and immediately tried to reject the word.
@@ -2209,31 +2011,25 @@ $n35095
 text: All the faces in its face stopped moving.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n25345; precedes $n45848. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n25345; precedes $n22824. Demon, two small things, full SHA-256 collision and lost files.
 
-$n45848
-text: He felt the weight of the entire room shift toward him.
+$n22824
+text: He felt suddenly crowded, though the aisle was as wide as before.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is emotional or perceptual change.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n35095; precedes $n24759. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n35095; precedes $n26496. Demon, two small things, full SHA-256 collision and lost files.
 
-$n24759
-text: Not the floor, not the air: the room itself.
+$n26496
+text: The racks seemed to lean toward him.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n45848; precedes $n68022. Demon, two small things, full SHA-256 collision and lost files.
-
-$n68022
-text: The racks leaned inward by no visible amount.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n24759; precedes $n24103. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n22824; precedes $n24103. Demon, two small things, full SHA-256 collision and lost files.
 
 $n24103
 text: He heard a sound like paper being folded very slowly.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n68022; precedes $n85977. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n26496; precedes $n85977. Demon, two small things, full SHA-256 collision and lost files.
 
 $n85977
 text: He thought of the other people who had walked this aisle without knowing what watched them, and of the hundreds of rooms like it in other cities, and of how little a locked door meant to something that did not need to enter.
@@ -2329,10 +2125,10 @@ $n38837
 text: Their surfaces were marked differently, and one was worn thin at the edge.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n64042; precedes $n28825. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n64042; precedes $n89298. Demon, two small things, full SHA-256 collision and lost files.
 
-$n28825
-text: The demon regarded them with a sorrowful satisfaction, as if a difficult piece of work had finally come right.
+$n89298
+text: The demon studied them for a long time.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
 continuity: Follows $n38837; precedes $n40814. Demon, two small things, full SHA-256 collision and lost files.
@@ -2341,7 +2137,7 @@ $n40814
 text: “Both,” it said.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n28825; precedes $n63917. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n89298; precedes $n63917. Demon, two small things, full SHA-256 collision and lost files.
 
 $n63917
 text: He woke with his cheek stuck to the cold metal of the cart.
@@ -2515,31 +2311,19 @@ $n32260
 text: The engineer who found the collision kept the digest on a folded piece of paper; she showed it to me as if the number itself might still be contagious.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n68865; precedes $n50037. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n68865; precedes $n58776. Demon, two small things, full SHA-256 collision and lost files.
 
-$n50037
-text: That was all that happened to the files.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n32260; precedes $n92230. Demon, two small things, full SHA-256 collision and lost files.
-
-$n92230
-text: It was not all that happened to the developer.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n50037; precedes $n88142. Demon, two small things, full SHA-256 collision and lost files.
-
-$n88142
-text: He moved his desk upstairs, stopped working late, and refused to pass the server-room door unless somebody else was in the corridor.
+$n58776
+text: The developer moved his desk upstairs, stopped working late, and refused to pass the server-room door unless somebody else was in the corridor.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n92230; precedes $n17339. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n32260; precedes $n17339. Demon, two small things, full SHA-256 collision and lost files.
 
 $n17339
 text: Once, when a cleaner dropped a handful of coins behind him, he fell to the floor with his arms over his head.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n88142; precedes $n77320. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n58776; precedes $n77320. Demon, two small things, full SHA-256 collision and lost files.
 
 $n77320
 text: He stayed there while she apologized.
@@ -2611,13 +2395,19 @@ $n88432
 text: The title must protect the witness and not use the name first introduced in his colleagues' ridicule.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n82083; precedes $n96745. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n82083; precedes $n46605. Tapping, greenish light, changed loop bound, joking colleagues.
+
+$n46605
+text: I was not trained for hauntings.
+intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
+style: Hesitant testimony, small humiliations, ambiguous perception.
+continuity: Follows $n88432; precedes $n96745. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n96745
 text: The night operator asked me to turn off the recorder before he began.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is testimony or reported dialogue.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n88432; precedes $n21001. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n46605; precedes $n21001. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n21001
 text: I told him I would not be able to quote him accurately.
@@ -2917,11 +2707,11 @@ $n20043
 text: He was put on day shifts.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n33743; precedes $n10977. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n33743; precedes $n43646. Tapping, greenish light, changed loop bound, joking colleagues.
 
-$n10977
-text: The company called it a kindness, and he was grateful for it in the way people are grateful when they have been spared an argument they could never have won.
-intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is testimony or reported dialogue.
+$n43646
+text: He accepted the change without arguing.
+intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
 style: Hesitant testimony, small humiliations, ambiguous perception.
 continuity: Follows $n20043; precedes $n84676. Tapping, greenish light, changed loop bound, joking colleagues.
 
@@ -2929,19 +2719,13 @@ $n84676
 text: For weeks his colleagues placed little green objects on his desk: a paper hat, a plastic shamrock, an old toy shoe.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n10977; precedes $n74775. Tapping, greenish light, changed loop bound, joking colleagues.
-
-$n74775
-text: Nobody meant to be cruel.
-intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
-style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n84676; precedes $n83476. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n43646; precedes $n83476. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n83476
 text: He kept the objects in a drawer because throwing them away would have required him to speak about them.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n74775; precedes $n95482. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n84676; precedes $n95482. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n95482
 text: At the end of our conversation he asked whether I knew that, in the old stories, you should never take your eyes off the little people if you want them to remain.
@@ -2959,19 +2743,13 @@ $n55509
 text: “But I looked down,” he said.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is testimony or reported dialogue.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n64615; precedes $n93144. Tapping, greenish light, changed loop bound, joking colleagues.
-
-$n93144
-text: He seemed to be trying to forgive himself for that.
-intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
-style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n55509; precedes $n92069. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n64615; precedes $n92069. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n92069
 text: After he left I noticed that I had not asked whether he had seen the visitor's hands.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is sensory evidence.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n93144; precedes $n43459. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n55509; precedes $n43459. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n43459
 text: I had asked only what they had done.
@@ -3481,19 +3259,13 @@ $n50446
 text: “To give the letter somewhere to go.”
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n87671; precedes $n03597. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n03597
-text: I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n50446; precedes $n42396. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n87671; precedes $n42396. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n42396
 text: The operator put his hand over the pen before I could pick it up.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n03597; precedes $n88168. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n50446; precedes $n88168. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n88168
 text: The gesture embarrassed both of us.
@@ -3589,10 +3361,10 @@ $n51924
 text: I heard myself asking for the operator by name.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n39255; precedes $n49209. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n39255; precedes $n18496. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n49209
-text: The voice was unmistakably mine, impatient in exactly the way I become impatient when a call does not connect.
+$n18496
+text: The voice was mine, and I sounded impatient.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
 continuity: Follows $n51924; precedes $n84098. Mercury, serpents, mirrors, moving coin and impossible telephone.
@@ -3601,7 +3373,7 @@ $n84098
 text: Behind my own voice I heard a railway announcement and the hollow echo of a station concourse.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n49209; precedes $n14873. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n18496; precedes $n14873. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n14873
 text: Then, before I could speak, I heard a third voice, too faint to identify, say, “Tell him not to answer.”
@@ -3733,25 +3505,25 @@ $n96996
 text: I learned the signs for conjunction and opposition, and the houses in which an astrologer looks for journeys, theft, marriage, debts, death.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n95566; precedes $n74481. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n95566; precedes $n34416. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n74481
-text: These did not feel to me like explanations.
+$n34416
+text: I filled a notebook with copied symbols.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n96996; precedes $n22043. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n96996; precedes $n14523. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n22043
-text: They were rooms opening from rooms, with no outer wall.
+$n14523
+text: Some belonged to objects I had noticed in her house without understanding why they were there.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n74481; precedes $n58338. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n34416; precedes $n58338. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n58338
 text: One evening I waited in a car park to see Mercury after sunset.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n22043; precedes $n50784. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n14523; precedes $n50784. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n50784
 text: It was low and difficult to find, a small light in the last colour of the sky.
@@ -3811,23 +3583,17 @@ $n43099
 text: I could almost read it.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n19487; precedes $n68328. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n68328
-text: I have never decided whether I hope to meet the woman again.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n43099; precedes $n19021. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n19487; precedes $n19021. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n19021
 text: **Field Note #4.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n68328; precedes $n15724. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n43099; precedes $n67731. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n15724
-text: The closer your model fits the world, the more the world will take issue.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
+$n67731
+text: I never asked the operator what he heard when I lifted the receiver.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
 style: Visceral visionary mysticism rather than technical documentation.
 continuity: Follows $n19021; precedes $n38040. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
@@ -3835,7 +3601,7 @@ $n38040
 text: A real crocodile disrupts daily life in Vienna, while software systems in America continue as normal.
 intent: Reveal changed causal relevance through excessive checks of unaffected American systems. Its local function is narrative advance.
 style: Dry civic reporting and gently disturbing obsessive repetition.
-continuity: Follows $n15724; precedes $n55112. Vienna canal, crocodile, green dashboard, unnecessary column.
+continuity: Follows $n67731; precedes $n55112. Vienna canal, crocodile, green dashboard, unnecessary column.
 
 $n55112
 text: Do not spell out why these have no natural connection; the narrator's disproportionate private checking and changed relevance judgments must make that visible.
@@ -3859,10 +3625,10 @@ $n76131
 text: Behind it were the ordinary details of Vienna: a bicycle railing, a cigarette packet, the edge of a café terrace.
 intent: Reveal changed causal relevance through excessive checks of unaffected American systems. Its local function is narrative advance.
 style: Dry civic reporting and gently disturbing obsessive repetition.
-continuity: Follows $n21192; precedes $n89281. Vienna canal, crocodile, green dashboard, unnecessary column.
+continuity: Follows $n21192; precedes $n17190. Vienna canal, crocodile, green dashboard, unnecessary column.
 
-$n89281
-text: The animal lay with its mouth slightly open, as if it had arrived in the city too early for an appointment.
+$n17190
+text: The animal lay with its mouth slightly open.
 intent: Reveal changed causal relevance through excessive checks of unaffected American systems. Its local function is narrative advance.
 style: Dry civic reporting and gently disturbing obsessive repetition.
 continuity: Follows $n76131; precedes $n40301. Vienna canal, crocodile, green dashboard, unnecessary column.
@@ -3871,7 +3637,7 @@ $n40301
 text: The police closed the path.
 intent: Reveal changed causal relevance through excessive checks of unaffected American systems. Its local function is narrative advance.
 style: Dry civic reporting and gently disturbing obsessive repetition.
-continuity: Follows $n89281; precedes $n20498. Vienna canal, crocodile, green dashboard, unnecessary column.
+continuity: Follows $n17190; precedes $n20498. Vienna canal, crocodile, green dashboard, unnecessary column.
 
 $n20498
 text: Cyclists were redirected through narrow streets, children were taken away from the water, and a woman interviewed on the radio said that her dog had refused to approach the bridge.
@@ -3883,10 +3649,10 @@ $n17092
 text: The zoo denied that anything was missing.
 intent: Reveal changed causal relevance through excessive checks of unaffected American systems. Its local function is narrative advance.
 style: Dry civic reporting and gently disturbing obsessive repetition.
-continuity: Follows $n20498; precedes $n95288. Vienna canal, crocodile, green dashboard, unnecessary column.
+continuity: Follows $n20498; precedes $n45391. Vienna canal, crocodile, green dashboard, unnecessary column.
 
-$n95288
-text: For two days the city lived with the improbable addition to its geography.
+$n45391
+text: For two days people went down to the canal to see it.
 intent: Reveal changed causal relevance through excessive checks of unaffected American systems. Its local function is narrative advance.
 style: Dry civic reporting and gently disturbing obsessive repetition.
 continuity: Follows $n17092; precedes $n57398. Vienna canal, crocodile, green dashboard, unnecessary column.
@@ -3895,7 +3661,7 @@ $n57398
 text: I began keeping a record when the first report reached me.
 intent: Reveal changed causal relevance through excessive checks of unaffected American systems. Its local function is narrative advance.
 style: Dry civic reporting and gently disturbing obsessive repetition.
-continuity: Follows $n95288; precedes $n32395. Vienna canal, crocodile, green dashboard, unnecessary column.
+continuity: Follows $n45391; precedes $n32395. Vienna canal, crocodile, green dashboard, unnecessary column.
 
 $n32395
 text: At noon I checked the news from Vienna.
@@ -4177,31 +3943,19 @@ $n42671
 text: We changed the filter, replaced the fan, and checked the restored data.
 intent: Show a sufficiently explained ordinary failure that cannot restore emotional peace. Its local function is sensory evidence.
 style: Very short, undramatic, quiet procedural aftershock.
-continuity: Follows $n95010; precedes $n94741. Rack C, cooling filter, Ruth, the extra watch.
+continuity: Follows $n95010; precedes $n88848. Rack C, cooling filter, Ruth, the extra watch.
 
-$n94741
-text: Every failure had a cause.
+$n88848
+text: We could account for every step of the failure.
 intent: Show a sufficiently explained ordinary failure that cannot restore emotional peace. Its local function is narrative advance.
 style: Very short, undramatic, quiet procedural aftershock.
-continuity: Follows $n42671; precedes $n44731. Rack C, cooling filter, Ruth, the extra watch.
-
-$n44731
-text: Every cause had left a trace.
-intent: Show a sufficiently explained ordinary failure that cannot restore emotional peace. Its local function is procedural evidence or its displacement.
-style: Very short, undramatic, quiet procedural aftershock.
-continuity: Follows $n94741; precedes $n59463. Rack C, cooling filter, Ruth, the extra watch.
-
-$n59463
-text: The case was as complete as I had ever wanted a case to be.
-intent: Show a sufficiently explained ordinary failure that cannot restore emotional peace. Its local function is emotional or perceptual change.
-style: Very short, undramatic, quiet procedural aftershock.
-continuity: Follows $n44731; precedes $n26972. Rack C, cooling filter, Ruth, the extra watch.
+continuity: Follows $n42671; precedes $n26972. Rack C, cooling filter, Ruth, the extra watch.
 
 $n26972
 text: That evening I wrote *ambient temperature* in the incident log and closed it.
 intent: Show a sufficiently explained ordinary failure that cannot restore emotional peace. Its local function is testimony or reported dialogue.
 style: Very short, undramatic, quiet procedural aftershock.
-continuity: Follows $n59463; precedes $n64881. Rack C, cooling filter, Ruth, the extra watch.
+continuity: Follows $n88848; precedes $n64881. Rack C, cooling filter, Ruth, the extra watch.
 
 $n64881
 text: I opened it again before going home.
@@ -4273,241 +4027,139 @@ $n82419
 text: Close through actions, concrete objects and changed perception, not a thesis about scientific limits, skepticism, or the reality of supernatural beings.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n41766; precedes $n37915. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n41766; precedes $n37915. Rack C, valve report, maintenance log and almanac.
 
 $n37915
 text: Keep the narrator technically competent; show how procedures, rituals and apprehension now coexist without easy reconciliation.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n82419; precedes $n48875. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n82419; precedes $n48875. Rack C, valve report, maintenance log and almanac.
 
 $n48875
 text: Reflect the revised cases accurately: a solitary Heisenbug vigil, an experienced demon dream and lost proof, an indistinct visitor, Mercury's occult summons, irrational crocodile checks, and an ordinary thermal failure.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n37915; precedes $n96322. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n37915; precedes $n66619. Rack C, valve report, maintenance log and almanac.
 
-$n96322
-text: The room is quiet at this hour, by which I mean only that the fans are running properly.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n48875; precedes $n30940. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n30940
-text: I can hear a change in their pitch without looking up.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n96322; precedes $n94248. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n94248
-text: I write the temperature of Rack C in the margin of my notebook; it is within specification.
+$n66619
+text: Rack C has been running normally for a week.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n30940; precedes $n46629. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n48875; precedes $n93532. Rack C, valve report, maintenance log and almanac.
 
-$n46629
-text: Beside the notebook lies the dossier.
+$n93532
+text: Ruth came by this afternoon to ask whether the restored data was safe.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n94248; precedes $n61449. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n66619; precedes $n14320. Rack C, valve report, maintenance log and almanac.
 
-$n61449
-text: Its first pages are orderly.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n46629; precedes $n28608. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n28608
-text: They have dates, witnesses, causes proposed and rejected, little diagrams in ink.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n61449; precedes $n57032. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n57032
-text: Near the front is the report of the valve that opened while a fitter was working beside it.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n28608; precedes $n31147. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n31147
-text: His name is there, and the time, and an empty space where the command should have been.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n57032; precedes $n10407. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n10407
-text: As the pages turn, the handwriting grows less even.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n31147; precedes $n48753. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n48753
-text: Certain sentences have been written over so many times that the paper has thinned.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n10407; precedes $n91346. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n91346
-text: I keep a photograph of the moth taped into the logbook of an early computer, because I once found it amusing that a bug could be caught and made to stay.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n48753; precedes $n73095. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n73095
-text: Next to it is the page on which I crossed out a sentence about a program that hated to be watched.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n91346; precedes $n65434. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n65434
-text: I can still see the erased letters.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n73095; precedes $n43241. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n43241
-text: Across the page a box is marked *04:56*.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n65434; precedes $n29979. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n29979
-text: I have kept it empty, though I know exactly what I was doing at that hour.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n43241; precedes $n66486. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n66486
-text: There is a copied hash written on a folded scrap of paper.
+$n14320
+text: I showed her the result of a test restore, and she went back to her desk.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is procedural evidence or its displacement.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n29979; precedes $n14759. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n93532; precedes $n45936. Rack C, valve report, maintenance log and almanac.
 
-$n14759
-text: The files it once named are gone.
+$n45936
+text: I stayed late to check the next backup.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n66486; precedes $n92757. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n14320; precedes $n78547. Rack C, valve report, maintenance log and almanac.
 
-$n92757
-text: When I unfold it, I remember not the number but the developer's description of a demon studying two small objects in its hands.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is emotional or perceptual change.
+$n78547
+text: It finished without error.
+intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is procedural evidence or its displacement.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n14759; precedes $n30628. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n45936; precedes $n55426. Rack C, valve report, maintenance log and almanac.
 
-$n30628
-text: I fold the paper again before reaching the end of the line.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n92757; precedes $n56807. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n56807
-text: Another page contains a witness's answers in my own handwriting.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n30628; precedes $n22288. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n22288
-text: He remembered a visitor and did not want to describe him.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n56807; precedes $n28098. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n28098
-text: He had been laughed at, and each time I read the notes I remember how carefully he chose his words.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is emotional or perceptual change.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n22288; precedes $n37787. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n37787
-text: I have stopped trying to supply the words he withheld.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n28098; precedes $n72975. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n72975
-text: A coin lies beside the almanac.
+$n55426
+text: A short rattle came from the new fan when it started.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n37787; precedes $n15080. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n78547; precedes $n24819. Rack C, valve report, maintenance log and almanac.
 
-$n15080
-text: I have not shown it to anyone.
+$n24819
+text: I found a loose paper label brushing the grille and moved it aside.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n72975; precedes $n64300. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n55426; precedes $n54368. Rack C, valve report, maintenance log and almanac.
 
-$n64300
-text: Next month's date is ringed, and I have moved a routine change to the following week.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n15080; precedes $n63228. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n63228
-text: The change is safer for several ordinary reasons, which I wrote down afterward.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is testimony or reported dialogue.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n64300; precedes $n41228. Dossier, moth, hash, coin, almanac and Rack C.
-
-$n41228
-text: The filter for Rack C will be changed on the nineteenth.
+$n54368
+text: The noise stopped.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n63228; precedes $n69306. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n24819; precedes $n31240. Rack C, valve report, maintenance log and almanac.
 
-$n69306
-text: I have checked that the work order exists.
+$n31240
+text: My notes are on the desk beside the maintenance log.
+intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is procedural evidence or its displacement.
+style: Restrained and concrete, unresolved with a residual unease.
+continuity: Follows $n54368; precedes $n68035. Rack C, valve report, maintenance log and almanac.
+
+$n68035
+text: I turn to the report about the valve that opened while a fitter was working beside it.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n41228; precedes $n61048. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n31240; precedes $n57431. Rack C, valve report, maintenance log and almanac.
 
-$n61048
-text: I have checked that somebody has accepted it.
+$n57431
+text: There is still a space for the missing command.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n69306; precedes $n92528. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n68035; precedes $n41744. Rack C, valve report, maintenance log and almanac.
 
-$n92528
-text: I have set an ordinary reminder, in the ordinary way, and I have set another that I will not mention.
+$n41744
+text: I had intended to fill it in after the next shutdown.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n61048; precedes $n72181. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n57431; precedes $n47719. Rack C, valve report, maintenance log and almanac.
 
-$n72181
-text: On the last page I copy Ruth's name, though the crash that cost her a week has been explained completely.
+$n47719
+text: At midnight I enter Rack C's temperature and close the log.
+intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
+style: Restrained and concrete, unresolved with a residual unease.
+continuity: Follows $n41744; precedes $n25496. Rack C, valve report, maintenance log and almanac.
+
+$n25496
+text: Before leaving I open it again and read what I have just written.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n92528; precedes $n78385. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n47719; precedes $n45150. Rack C, valve report, maintenance log and almanac.
 
-$n78385
-text: Then I put down my pen and listen to the fans.
+$n45150
+text: There is nothing to correct.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n72181; precedes $n59139. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n25496; precedes $n50907. Rack C, valve report, maintenance log and almanac.
 
-$n59139
-text: A small change passes through their sound and is gone.
+$n50907
+text: The almanac is in the same drawer as my notes.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n78385; precedes $n68988. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n45150; precedes $n75893. Rack C, valve report, maintenance log and almanac.
+
+$n75893
+text: I have marked next month's date but left the margin empty.
+intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
+style: Restrained and concrete, unresolved with a residual unease.
+continuity: Follows $n50907; precedes $n68988. Rack C, valve report, maintenance log and almanac.
 
 $n68988
 text: I look at the clock.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n59139; precedes $n63464. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n75893; precedes $n63464. Rack C, valve report, maintenance log and almanac.
 
 $n63464
 text: I do not look at the almanac.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n68988; precedes $n41163. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n68988; precedes $n41163. Rack C, valve report, maintenance log and almanac.
 
 $n41163
 text: In the morning I will be able to explain why.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n63464; precedes $n44485. Dossier, moth, hash, coin, almanac and Rack C.
+continuity: Follows $n63464; precedes $n44485. Rack C, valve report, maintenance log and almanac.
 
 $n44485
 text: *These notes are outside the narrator's dossier.
@@ -4624,7 +4276,7 @@ style: Factual reference prose.
 continuity: Follows $n14005; precedes $n32546. Documentation, provenance, and fictional composites.
 
 $n32546
-text: ** The prologue's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
+text: ** The opening's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
 intent: Keep external historical references distinct from invented story events. Its local function is procedural evidence or its displacement.
 style: Factual reference prose.
 continuity: Follows $n44426; precedes $n71606. Documentation, provenance, and fictional composites.

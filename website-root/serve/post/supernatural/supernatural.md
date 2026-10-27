@@ -7,18 +7,11 @@ Keep each case emotionally distinct, do not explain the moral, and close with ac
 </NOTE>
 
 <MUST HAVES>
-"I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct."
-"The closer your model fits the world, the more the world will take issue."
-These phrases belong naturally in later prose, not as prologue declarations.
+Keep the narrator's engineering judgment modest and show his growing unease through actions.
+Do not introduce sentences solely because they sound quotable.
 </MUST HAVES>
 
 # A Strange Collection of System Failures
-
-*From the notebook of an investigator who kept what he could not explain*
-
----
-
-## Prologue
 
 <NOTE>
 Begin in the assured voice of a technically rigorous investigator, not the altered voice of the collection's ending.
@@ -27,21 +20,17 @@ Foreshadow only through the modest fact that one stubborn discrepancy prompted h
 Do not spend the opening announcing supernatural beliefs, or anticipating the narrator's later loss of confidence.
 </NOTE>
 
-I was employed to find out why things failed. A useful explanation specifies a mechanism, identifies the conditions that set it in motion, and survives an attempt to make it fail again. A server that dies at a particular temperature has not committed an outrage against nature. It has reached its limit. The distinction matters to the person whose work was lost, even if it offers that person no comfort.
+I was hired to investigate failures. Most had ordinary causes, even when those causes were difficult to find. I checked logs, spoke to the people who had been there, and tried to make the same thing happen again.
 
-I liked failures with a clear beginning. When a valve opened without a command, I asked where the command might have been lost; when a machine reported a state it could not have reached, I asked who had written the state and when. I distrusted eyewitnesses, including myself, in exactly the way an engineer ought to. Time was recorded before recollections were gathered. Nothing was called impossible until the ordinary possibilities had been exhausted.
+Once, during maintenance, a valve opened without a command in the log. A fitter was working beside the actuator. He pulled his hand clear as the valve opened. I checked the maintenance schedule and the wiring, and ran the sequence again with everyone standing back. The valve stayed shut. Three people had heard it open, but their accounts did not agree.
 
-There was one incident I could not dispose of quite so neatly. A valve opened on a maintenance line at a quarter to five. It should have remained shut. A fitter happened to be reaching for his spanner and escaped injury; I had the maintenance schedule, a clean event log, and three mutually incompatible accounts of the sound it made. The eventual report was adequate for the safety committee. It was not adequate for me. I kept the papers, intending to return to them after the next shutdown.
+The safety committee accepted our report. I kept my notes because I thought I might find what I had missed after the next shutdown.
 
-Other papers followed. I arranged them by incident, never by theory: a count that would not add up, a program whose failure vanished under inspection, an account of a night shift that nobody wanted to put in the official record. Some were things I investigated. Others came from records, or from people willing to repeat their testimony only once. I marked the difference.
+Other reports accumulated over the years: a disputed election count, a program that behaved differently when somebody watched it, a night operator who would not let me record his account. I investigated some myself. Others came from records or from people who trusted me enough to tell me what they had seen.
 
-The folder acquired a name only when I could no longer hold its contents in my desk drawer. I called it a dossier because *miscellaneous* did not seem an adequate filing instruction. I still expected each case to yield to a patient account of what had happened.
-
-The first one is old. I was younger then, and the man who told it to me had a biscuit in his hand.
+The earliest account came from a conversation in Belgium, years before I began keeping the folder.
 
 ---
-
-## Case Files
 
 ### I. The Schaerbeek Bit
 
@@ -51,7 +40,7 @@ The first one is old. I was younger then, and the man who told it to me had a bi
 >
 > This meeting belongs to an earlier period in the narrator's life. He has not yet become the investigator who keeps this dossier, and he does not believe in supernatural explanations. He is here for ordinary work and expects ordinary technical information.
 >
-> The newspaper items are fictional. The escaped neutron must never be connected in the prose to the 2003 bit flip. The implication that it somehow travelled backward in time is strictly for the reader.
+> The newspaper items are fictional. The CERN neutron report must not be connected in the prose to the 2003 bit flip. The implication that it somehow travelled backward in time is strictly for the reader.
 >
 > The worldview mismatch between the narrator and the technician should remain implicit. Show it through what each treats as evidence, useful information, or a reasonable explanation; do not explain the contrast as a theme.
 
@@ -59,8 +48,8 @@ The first one is old. I was younger then, and the man who told it to me had a bi
 Keep the opening café's spatial and procedural observations because they reveal the younger narrator's habits of thought without supplying biography.
 Tighten the long chain of preliminaries so that the biscuit exchange leads organically into the election story and the technician's peculiar perspective accumulates rather than resets.
 Preserve the subtle contrast between the narrator's useful facts and the technician's stories; neither character should become a mouthpiece for the collection's philosophy.
-Keep the escaped-neutron newspaper item an unspoken clue for the reader alone, but establish enough credible chronology and recurrence of imagery for the impossible temporal suggestion to be discoverable.
-Check that the fictional CERN report sounds plausible as journalism, especially the unusual claim that a single neutron escaped an enclosure.
+Keep the newspaper's neutron item an unspoken clue for the reader alone, but establish enough credible chronology and recurrence of imagery for the impossible temporal suggestion to be discoverable.
+Keep the fictional CERN notice modest and plausible as journalism.
 Treat the real election's multiday investigation carefully when compressing events into a firsthand reconstruction; the May 2003 chronology and the extent of the technician's knowledge must remain believable.
 Intensify the emotional stakes of an untraceable alteration to an election result through the clerks' fear of responsibility, loss of trust in the count, and uncertainty over what corrective action is possible.
 Let physical and bureaucratic details make the contradictory totals threatening instead of leaning on poetic descriptions of a bit flip or personifying the numerical anomaly.
@@ -68,33 +57,27 @@ Preserve the younger narrator's skepticism and the later narrator's retrospectiv
 Do not restore the removed conversation-quality billing digression; its separate joke interrupts the accumulated unease after the election account.
 </NOTE>
 
-I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late. In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
+I am in a cafeteria in Schaerbeek, waiting for an engineer who knows the contractors responsible for the municipal systems I am working on. He is late. My colleague said he would know whom to call when the names on the contracts proved unhelpful.
 
-The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling. The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs. The queue bends once before the till in an L-shape that keeps the doorway clear.
+The windows are low enough that I see mostly the legs of people passing outside. I order by pointing at a number on the menu, then take a table by the wall.
 
-I take my place in it, moving forward each time the drawer opens with its tired ring. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall.
+A newspaper lies on the next chair. Liège has held a waffle competition; the winner is photographed behind an enormous plate, with three judges smiling beside her. I turn to the science pages. A short report from CERN says a neutron was detected beyond the shielding of an experiment. The researchers are checking the detector. I put the paper back.
 
-A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for. He knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things.
+He arrives late and apologizes. His tram was delayed. He says they thought it was a signal fault, but nobody could tell the passengers what had happened.
 
-There is a newspaper on the next chair. I pick it up. Liège has held a waffle competition; the winner is photographed behind an enormous plate of waffles, with three judges smiling beside her. I turn a few pages, looking for science. A short item from Geneva says that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
+We introduce ourselves. He tells me he has worked on elections—“not politics,” he says, “interfaces.” As he speaks, he straightens the sugar packet and spoon. When he stops talking, he taps the table with one finger.
 
-He arrives late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He pauses, then corrects himself.
+I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I try to write down the names, but he keeps telling me stories about the people.
 
-“Not spontaneous. Sorry. A signal failed, or somebody changed the route. We just don't know which yet.”
-
-We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He tells me he has worked elections—“not politics,” he says quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he taps the table as though confirming liveness.
-
-I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I write down the useful parts and leave some of the commentary out.
-
-The commentary gets harder to separate from the useful parts when he picks up one of the biscuits beside his coffee.
+He picks up a biscuit from beside his coffee.
 
 “You can tell a lot about a nation from how its biscuits break.”
 
 I look at him. “How they break?”
 
-“The English ones wait for tea and then break where you expect. The French fracture elegantly, usually along the line that leaves the prettier half. Belgian biscuits begin along one crack, reconsider, and finish by inventing a third.”
+“English biscuits soften in tea before they break. The French ones have layers; you end up with crumbs instead of two halves. Belgian biscuits begin along one crack, reconsider, and finish by inventing a third.”
 
-That seems ridiculous. I don't see what national character has to do with a biscuit, but he is already unwrapping it.
+He starts to unwrap it. I put down my pen.
 
 He breaks it. The biscuit splits diagonally across the stamped pattern, scattering crumbs onto the napkin. He seems pleased.
 
@@ -112,7 +95,7 @@ He mentions Schaerbeek, the 2003 federal election, and a candidate with an impos
 
 What follows is his account of that day. He did not tell it in order, but I will.
 
-The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and a carpet whose pattern is an argument against democracy.
+The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and an old carpet.
 
 He had been sent there as technician, a word expansive enough to cover whatever had not yet been assigned to the others. On his table lay the checklist: confirm serial numbers, confirm counters at zero, confirm seals intact; note every confirmation in ink, sign where indicated. Two party representatives sat near the door. The bureau had a president, seconded for the day from the commune, whose signature would certify the count. She had signed returns in Schaerbeek for eleven years; in that district a signed return was the count. A schoolteacher seconded as a watcher stood where she could see both the machines and the clerks and seemed unsure which of them constituted the real work.
 
@@ -128,7 +111,7 @@ She asked the clerk beside her to read the two figures. He did. They exchanged p
 
 They checked the machine identifier, the register, the media from which the totals had been read, and then the totals again.
 
-There is the certainty, never admitted aloud, that somewhere a check is missing and that this is sane; that checks go missing the way buttons go missing from coats. So they looked for the missing check.
+They assumed a check had been missed and went through the list again.
 
 The air in the school had become very dry. Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
 
@@ -136,19 +119,15 @@ For a while nobody called it an *error*. That word would have started another pr
 
 The same numbers survived every obvious check. The contradiction could now be written plainly:
 
-**Invariant 1. (violated)**
-
 $$
 \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
 $$
 
-The candidate's preference count should never rise above the list total. In other words, the list's ceiling is the candidate's sky, and yet there it was: sky lower than the bird.
+The candidate's preference count should never rise above the list total.
 
 The president asked the technician, quietly, whether she could sign. He understood the question: not whether the number was right, but whether the machine could be vouched for. He said he could not vouch for it. She held her pen over the box where the count would go. The figure the machine had printed would certify a contradiction; any other figure would alter the record; an empty box would fail to certify the district. She wrote the machine's figure, drew one line through it, wrote the corrected figure beside it, and initialled the correction. Then she asked the two representatives to witness it. One did. The other looked at the struck figure for a long time, and put down his pen without signing.
 
 Eventually somebody used the word *error*, and the formal investigation began.
-
-#### The Investigation
 
 The technician checked the machine and the media again. The schoolteacher tried to be helpful by pointing out each time the computer made a small sound, as if identifying birds.
 
@@ -178,7 +157,7 @@ A physicist was eventually pressed into service because she happened to live nea
 
 She made them go through the ordinary possibilities again. Bad input, bad arithmetic, bad code: each had somewhere to leave a trace. When those routes led back to the same number, the question shifted to the memory itself. A memory cell can be disturbed physically, without the program asking it to change. An energetic particle passing through the semiconductor can deposit enough charge to alter the bit it crosses. If that bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
 
-That gave them a hypothesis: a single-event upset. Under that hypothesis there would be no smoking gun—only a single flip where a zero had become a one at the thirteenth bit, a neat, round power-of-two crime.
+They wrote *single-event upset* on the list of possible causes.
 
 The technician objected that bits did not change for no reason. The physicist agreed. A particle crossing a memory cell was a reason; the difficulty was that the reason would already be gone.
 
@@ -186,9 +165,9 @@ They could inspect software, recount totals, and ask clerks what they had done. 
 
 Later, the machine was tested, the software examined, and the result reconstructed. No software defect was found that explained the discrepancy. The experts' report concluded that it could *very probably* be attributed to a spontaneous and random inversion of a binary position in the computer's working memory.
 
-The report left the physical cause open. The committee’s report is less romantic, but it permits the word that haunts this dossier: likely.
+The report did not identify the particle or establish what had disturbed the memory.
 
-Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*. By the time the incident reached programmers, the whole thing was often filed under *computer error*. The phrase is correct in the way that shipwrecks are wet. What stayed with me was the qualification in the report: *very probably*.
+Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*. By the time the incident reached programmers, the whole thing was often filed under *computer error*. That label did not tell the clerks what they could safely sign. What stayed with me was the qualification in the report: *very probably*.
 
 One clerk later admitted that he would have preferred a boring human mistake. A human mistake belonged somewhere: to a hand, a tired eye, a copied line. It could be found and corrected. He did not say this during the investigation. If human error returned to the list of possibilities, he himself was one of the humans available.
 
@@ -198,19 +177,17 @@ By the time he finishes, the cafeteria has thinned and our coffee has gone cold.
 
 At the door he asks me not to write down what became of the president. I promise him I will not.
 
-At the time I heard an engineer's argument about preparation, nothing more. We do not fight the weather, he said; we prepare for it. The argument had a second half: if you believe in preparation, then you believe in a cathedral of checks where each arch braces another—triplicate logic, parity with scrubbing, watchdogs to guard the watchdogs, and the prophylactic act of voting in paper because paper fails like a person fails, slow and legible.
+He believed the next count should be checked in more than one way, with records that the machine could not quietly change. I agreed with him.
 
 I did not write a field note that afternoon. Years later, when I began the dossier, I put this under his story:
 
-**Field Note #1. Horror, in our trade, is the clean error—the one that leaves no prints.**
+**Field Note #1. I checked the totals again after I read the report. They had not changed.**
 
 There is an older photograph I keep in a folder called *Proofs I Do Not Argue With*. In it, a moth lies taped to a page of an engineering log.
 
 ![Moth](https://ids.si.edu/ids/deliveryService?id=NMAH-NMAH2000-03035)
 
-The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” I like the page because it makes an engineering superstition almost literal: give the failure a name, and perhaps you can banish it. Here they could do both—call it a bug, pull it from the relay, and tape it beside the record. ([National Museum of American History][1])
-
-The moth looks unconvinced.
+The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” The cause had been found and kept with the report. I used to find that photograph reassuring. ([National Museum of American History][1])
 
 The page I reserve for what became of the president is the one page in the dossier I have never been able to fill.
 
@@ -230,7 +207,7 @@ Preserve the human cost of a transaction that may or may not have completed and 
 
 The trouble was an order that would neither finish nor fail. A customer could press *Pay*, and sometimes the answer would not come. I could not safely run the request again: the first attempt might already have taken the money. The company's office was empty, so I went in alone.
 
-The building backed onto the harbour. A strip of quay light crossed the carpet; beyond it the desks were dark. In the server room the fans kept their usual pitch. I had worked nights before. It pleased me that buildings, deprived of people, became easier to understand.
+The building backed onto the harbour. A strip of quay light crossed the carpet; beyond it the desks were dark. In the server room the fans kept their usual pitch. I had worked nights before. Without other people there, I could hear the fans clearly enough to notice a change in their pitch.
 
 At 00:41 I caught the failure. The application stopped at the same line it had stopped at earlier, waiting for the database to answer. I attached a tracer, expecting to see the operation just before the stall. The next run succeeded. Then the next. I removed the tracer, and within minutes the process hung again.
 
@@ -264,7 +241,7 @@ At 04:56 the request stopped again. I could attach the tracer immediately. Every
 
 What frightened me was not the possibility that the trace would show nothing. It was the idea, sudden and complete, that attaching it would make the thing aware of me.
 
-I was alone, and I knew exactly how foolish that thought was. I did not move.
+I knew I was tired. I still did not move.
 
 In the end I attached the tracer. The request completed. It left no useful evidence.
 
@@ -300,7 +277,7 @@ The lamps along the aisle began to go out, one by one. In their place appeared s
 
 Then he saw it.
 
-A figure stood between two cabinets where no person could have fitted. Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it. Its face was not blank. That would have been easier. It was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other. The features moved almost imperceptibly, attempting to agree on a single expression.
+A figure stood between two cabinets where no person could have fitted. Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it. Its face was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other. The features moved almost imperceptibly, attempting to agree on a single expression.
 
 He recognized it as a demon with the swift certainty of dreams, and immediately tried to reject the word.
 
@@ -312,7 +289,7 @@ It is a dream, he told himself. I can wake up.
 
 The demon looked at him. All the faces in its face stopped moving.
 
-He felt the weight of the entire room shift toward him. Not the floor, not the air: the room itself. The racks leaned inward by no visible amount. He heard a sound like paper being folded very slowly. He thought of the other people who had walked this aisle without knowing what watched them, and of the hundreds of rooms like it in other cities, and of how little a locked door meant to something that did not need to enter.
+He felt suddenly crowded, though the aisle was as wide as before. The racks seemed to lean toward him. He heard a sound like paper being folded very slowly. He thought of the other people who had walked this aisle without knowing what watched them, and of the hundreds of rooms like it in other cities, and of how little a locked door meant to something that did not need to enter.
 
 The demon stepped closer. Its feet made no sound. It had the smell of rain on overheated metal, and beneath that an ordinary human smell of wool damp from a journey. The human smell was worse.
 
@@ -326,7 +303,7 @@ He tried to turn. One of the little things in its hands fell, though the demon h
 
 The demon held out its hands.
 
-He could see now that the two pale objects were not alike. Their surfaces were marked differently, and one was worn thin at the edge. The demon regarded them with a sorrowful satisfaction, as if a difficult piece of work had finally come right.
+He could see now that the two pale objects were not alike. Their surfaces were marked differently, and one was worn thin at the edge. The demon studied them for a long time.
 
 “Both,” it said.
 
@@ -348,9 +325,7 @@ Nobody understood what he meant. He would not explain it.
 
 Both files were kept for examination. Eleven days later, a storage failure destroyed them. Nothing usable survived. The engineer who found the collision kept the digest on a folded piece of paper; she showed it to me as if the number itself might still be contagious.
 
-That was all that happened to the files.
-
-It was not all that happened to the developer. He moved his desk upstairs, stopped working late, and refused to pass the server-room door unless somebody else was in the corridor. Once, when a cleaner dropped a handful of coins behind him, he fell to the floor with his arms over his head. He stayed there while she apologized.
+The developer moved his desk upstairs, stopped working late, and refused to pass the server-room door unless somebody else was in the corridor. Once, when a cleaner dropped a handful of coins behind him, he fell to the floor with his arms over his head. He stayed there while she apologized.
 
 I asked him whether he would return to the room with me in daylight.
 
@@ -371,6 +346,8 @@ The mysterious visitor's small alteration to a loop bound is the eerie consequen
 Make the witness's isolation and damaged reputation emotionally credible; allow one moment of uneasy humor without letting the episode become a joke.
 The title must protect the witness and not use the name first introduced in his colleagues' ridicule.
 </NOTE>
+
+I was not trained for hauntings.
 
 The night operator asked me to turn off the recorder before he began. I told him I would not be able to quote him accurately. He said accuracy was why he wanted it off.
 
@@ -410,15 +387,13 @@ The room laughed.
 
 That word was not in the operator's account. He was careful to explain this to me. He did not say what word he might have chosen instead.
 
-He was put on day shifts. The company called it a kindness, and he was grateful for it in the way people are grateful when they have been spared an argument they could never have won. For weeks his colleagues placed little green objects on his desk: a paper hat, a plastic shamrock, an old toy shoe. Nobody meant to be cruel. He kept the objects in a drawer because throwing them away would have required him to speak about them.
+He was put on day shifts. He accepted the change without arguing. For weeks his colleagues placed little green objects on his desk: a paper hat, a plastic shamrock, an old toy shoe. He kept the objects in a drawer because throwing them away would have required him to speak about them.
 
 At the end of our conversation he asked whether I knew that, in the old stories, you should never take your eyes off the little people if you want them to remain.
 
 I said I had heard something like it.
 
 “But I looked down,” he said.
-
-He seemed to be trying to forgive himself for that.
 
 After he left I noticed that I had not asked whether he had seen the visitor's hands. I had asked only what they had done.
 
@@ -489,8 +464,6 @@ There was a pen next to the book. I asked why.
 
 “To give the letter somewhere to go.”
 
-I had written prose that described procedures in the future tense, as if promising the very sun, and when the sun obeyed I pretended it was because we had the grammar correct.
-
 The operator put his hand over the pen before I could pick it up. The gesture embarrassed both of us. He had invited me as an investigator, and now he was trying to prevent me from participating in his investigation. Yet I did not push his hand away.
 
 In the pause a telephone rang in the adjoining room. It was an old mechanical bell, the kind that strikes actual metal. I could hear it through the wall as distinctly as a spoon tapping the rim of a glass.
@@ -505,7 +478,7 @@ Then she led us into the adjoining room.
 
 It contained a narrow cabinet, a chair, and the ringing telephone. Beside the instrument lay a second receiver, disconnected, its cord cut short and tied with blue thread. I lifted the ringing receiver before I could consider the wisdom of doing so.
 
-I heard myself asking for the operator by name. The voice was unmistakably mine, impatient in exactly the way I become impatient when a call does not connect. Behind my own voice I heard a railway announcement and the hollow echo of a station concourse. Then, before I could speak, I heard a third voice, too faint to identify, say, “Tell him not to answer.”
+I heard myself asking for the operator by name. The voice was mine, and I sounded impatient. Behind my own voice I heard a railway announcement and the hollow echo of a station concourse. Then, before I could speak, I heard a third voice, too faint to identify, say, “Tell him not to answer.”
 
 I hung up.
 
@@ -521,7 +494,7 @@ The paper held no writing. We unfolded it twice. It was blank on both sides, exc
 
 For weeks afterward I tried to reduce the visit to a sequence of events. I drew the room, counted the pigeonholes, copied the tram routes, wrote down everything the woman had said. That procedure, which had served me well all my life, became a peculiar form of homesickness. I could catalogue her objects, but I could not return to the hour in which I had believed each object belonged to another world.
 
-I began reading the old books she had named. I learned why Mercury wears wings, why his staff bears two serpents, why merchants and messengers once made offerings at crossroads. I learned the signs for conjunction and opposition, and the houses in which an astrologer looks for journeys, theft, marriage, debts, death. These did not feel to me like explanations. They were rooms opening from rooms, with no outer wall.
+I began reading the old books she had named. I learned why Mercury wears wings, why his staff bears two serpents, why merchants and messengers once made offerings at crossroads. I learned the signs for conjunction and opposition, and the houses in which an astrologer looks for journeys, theft, marriage, debts, death. I filled a notebook with copied symbols. Some belonged to objects I had noticed in her house without understanding why they were there.
 
 One evening I waited in a car park to see Mercury after sunset. It was low and difficult to find, a small light in the last colour of the sky. A plane crossed the horizon. Somebody laughed behind me, and I turned too quickly. When I looked back, the light was gone.
 
@@ -529,9 +502,7 @@ I bought an almanac. I moved a planned migration away from the next retrograde. 
 
 Months later I found the same silver coin in the pocket of a coat I had not worn to the astrologer's house. The worn number on it was a little clearer now. I could almost read it.
 
-I have never decided whether I hope to meet the woman again.
-
-**Field Note #4. The closer your model fits the world, the more the world will take issue.**
+**Field Note #4. I never asked the operator what he heard when I lifted the receiver.**
 
 ---
 
@@ -543,9 +514,9 @@ Do not spell out why these have no natural connection; the narrator's disproport
 Keep the mundane civic incident vivid but brief, and show the narrator's subtle paranoia through attention and action rather than exposition.
 </NOTE>
 
-The photograph showed a crocodile on the stone embankment of the Donaukanal. Behind it were the ordinary details of Vienna: a bicycle railing, a cigarette packet, the edge of a café terrace. The animal lay with its mouth slightly open, as if it had arrived in the city too early for an appointment.
+The photograph showed a crocodile on the stone embankment of the Donaukanal. Behind it were the ordinary details of Vienna: a bicycle railing, a cigarette packet, the edge of a café terrace. The animal lay with its mouth slightly open.
 
-The police closed the path. Cyclists were redirected through narrow streets, children were taken away from the water, and a woman interviewed on the radio said that her dog had refused to approach the bridge. The zoo denied that anything was missing. For two days the city lived with the improbable addition to its geography.
+The police closed the path. Cyclists were redirected through narrow streets, children were taken away from the water, and a woman interviewed on the radio said that her dog had refused to approach the bridge. The zoo denied that anything was missing. For two days people went down to the canal to see it.
 
 I began keeping a record when the first report reached me. At noon I checked the news from Vienna. Then I opened the monitoring page for a service we operated in America. Everything was green.
 
@@ -586,7 +557,7 @@ The room was hot when I arrived. Rack C stood dark at the end of the row. A cool
 
 The database could be restored, but its latest transactions were missing. A backup warning had gone to an unattended inbox. Ruth, a postdoctoral researcher, had lost the last run of a simulation that had taken three days. She listened while I explained the gap, then told me she would join the cluster queue again. That would take another week.
 
-We changed the filter, replaced the fan, and checked the restored data. Every failure had a cause. Every cause had left a trace. The case was as complete as I had ever wanted a case to be.
+We changed the filter, replaced the fan, and checked the restored data. We could account for every step of the failure.
 
 That evening I wrote *ambient temperature* in the incident log and closed it.
 
@@ -610,21 +581,15 @@ Keep the narrator technically competent; show how procedures, rituals and appreh
 Reflect the revised cases accurately: a solitary Heisenbug vigil, an experienced demon dream and lost proof, an indistinct visitor, Mercury's occult summons, irrational crocodile checks, and an ordinary thermal failure.
 </NOTE>
 
-The room is quiet at this hour, by which I mean only that the fans are running properly. I can hear a change in their pitch without looking up. I write the temperature of Rack C in the margin of my notebook; it is within specification.
+Rack C has been running normally for a week. Ruth came by this afternoon to ask whether the restored data was safe. I showed her the result of a test restore, and she went back to her desk.
 
-Beside the notebook lies the dossier. Its first pages are orderly. They have dates, witnesses, causes proposed and rejected, little diagrams in ink. Near the front is the report of the valve that opened while a fitter was working beside it. His name is there, and the time, and an empty space where the command should have been. As the pages turn, the handwriting grows less even. Certain sentences have been written over so many times that the paper has thinned.
+I stayed late to check the next backup. It finished without error. A short rattle came from the new fan when it started. I found a loose paper label brushing the grille and moved it aside. The noise stopped.
 
-I keep a photograph of the moth taped into the logbook of an early computer, because I once found it amusing that a bug could be caught and made to stay. Next to it is the page on which I crossed out a sentence about a program that hated to be watched. I can still see the erased letters. Across the page a box is marked *04:56*. I have kept it empty, though I know exactly what I was doing at that hour.
+My notes are on the desk beside the maintenance log. I turn to the report about the valve that opened while a fitter was working beside it. There is still a space for the missing command. I had intended to fill it in after the next shutdown.
 
-There is a copied hash written on a folded scrap of paper. The files it once named are gone. When I unfold it, I remember not the number but the developer's description of a demon studying two small objects in its hands. I fold the paper again before reaching the end of the line.
+At midnight I enter Rack C's temperature and close the log. Before leaving I open it again and read what I have just written. There is nothing to correct.
 
-Another page contains a witness's answers in my own handwriting. He remembered a visitor and did not want to describe him. He had been laughed at, and each time I read the notes I remember how carefully he chose his words. I have stopped trying to supply the words he withheld.
-
-A coin lies beside the almanac. I have not shown it to anyone. Next month's date is ringed, and I have moved a routine change to the following week. The change is safer for several ordinary reasons, which I wrote down afterward.
-
-The filter for Rack C will be changed on the nineteenth. I have checked that the work order exists. I have checked that somebody has accepted it. I have set an ordinary reminder, in the ordinary way, and I have set another that I will not mention.
-
-On the last page I copy Ruth's name, though the crash that cost her a week has been explained completely. Then I put down my pen and listen to the fans. A small change passes through their sound and is gone.
+The almanac is in the same drawer as my notes. I have marked next month's date but left the margin empty.
 
 I look at the clock. I do not look at the almanac.
 
@@ -644,7 +609,7 @@ In the morning I will be able to explain why.
 
 4. **The Heisenbug.** The lonely night and the narrator's experiences are fictional. The observation-sensitive software behavior is inspired by a real ProxySQL hang that disappeared under tracing and other interventions. That real issue was eventually investigated and fixed; the fictional episode does not claim otherwise. ([Original issue][5]) ([Engineering account][6]) ([Fix][7])
 
-5. **The valve.** The prologue's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
+5. **The valve.** The opening's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
 
 6. **Maxwell's Demon.** The visitation, hash collision, and vanished originals are fictional. No full SHA-256 collision is known to have been publicly demonstrated. The distinct-file collision actually demonstrated by the SHAttered project used SHA-1, a different hash algorithm. ([SHAttered demonstration][19])
 

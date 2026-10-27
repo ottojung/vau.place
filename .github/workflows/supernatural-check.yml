@@ -1,0 +1,25 @@
+name: Check Supernatural manuscript
+on:
+  pull_request:
+    paths:
+      - 'website-root/serve/post/supernatural/**'
+      - '.github/workflows/supernatural-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: website-root/serve/post/supernatural/package-lock.json
+      - name: Install dependencies
+        working-directory: website-root/serve/post/supernatural
+        run: npm ci --ignore-scripts
+      - name: Check the meaning graph, generated HTML, and story tests
+        working-directory: website-root/serve/post/supernatural
+        run: npm run check
