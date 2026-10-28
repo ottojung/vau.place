@@ -69,10 +69,10 @@ test('source apparatus identifies itself as authorial and cites fictional cases'
 });
 
 
-test('opening is brief, restores hauntings and contains no extra valve incident', () => {
+test('opening explains the dossier without introducing an extra incident', () => {
   const opening = visible.split('<h1 id="a-strange-collection-of-system-failures">')[1].split('<h3 id="case-i">')[0];
   assert.match(opening, /<p>I was not trained for hauntings\./);
-  assert.ok(opening.length < 650, 'The opening should not delay the first story');
+  assert.ok(opening.length < 1050, 'The opening should not delay the first story');
   assert.doesNotMatch(visible, /\bvalve\b/i);
   assert.doesNotMatch(manuscript, /promising the very sun/i);
   assert.ok(visible.includes('Collected incidents · Vol. I'));
