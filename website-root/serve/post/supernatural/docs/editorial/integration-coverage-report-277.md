@@ -11,7 +11,7 @@ rewritten; only integration conflicts, graph-node ordering, and one graph
 - Branch: `review/277-supernatural-integration` (pushed to `origin`)
 - Base: `91f14b1` (current `master`, "Reconcile local NOTE directives with updated authorial vision")
 - Pull request: <https://github.com/ottojung/vau.place/pull/12> (open, to `master`)
-- Consolidated contents: `supernatural.md`, `docs/meaning-graph.md`, the new
+- Consolidated contents: `manuscript.md`, `docs/meaning-graph.md`, the new
   `docs/editorial/cross-case-dramatic-map.md`, and this report
 
 ## Integrated sources (merge order)
@@ -57,7 +57,7 @@ disagreed.
 ## Validation
 
 Meaning-graph coverage checker (`coverage_check_full.py`), run against the
-integrated `supernatural.md` and `docs/meaning-graph.md`:
+integrated `manuscript.md` and `docs/meaning-graph.md`:
 
 ```
 nodes=918  unique_ids=918  duplicate_ids=0  missing_fields=0
@@ -86,7 +86,7 @@ one secret" is gone, replaced by the Case III-consistent token.
 
 ## Boundary
 
-Per `AGENTS.md` and `docs/skills/itinerary-supernatural.md`, scheduled
+Per `AGENTS.md` and `docs/skills/itinerary-manuscript.md`, scheduled
 orchestrators must not merge to `master`; human review owns promotion. This
 branch is pushed for human review only. A `gh` CLI is unavailable, so the PR
 must be opened from the branch.
