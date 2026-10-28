@@ -12,7 +12,7 @@ date: 2026/10/15
 source: @ottojung
 kind: requirement
 
-The opening voice believes firmly in reproducibility and technical rigor; the existence of a dossier suggests only the tiniest unresolved discrepancy. Later events transform how the narrator feels and acts, but he does not declare supernatural beings either real or fictional to the reader. Their existence in the fictional world is not a thesis for him to defend; witnesses may still be uncertain what they saw.
+The opening voice believes firmly in reproducibility and technical rigor; the opening admits only that some things would not fit the forms, without saying what they are or what he now believes about them. Later events transform how the narrator feels and acts, but he does not declare supernatural beings either real or fictional to the reader. Their existence in the fictional world is not a thesis for him to defend; witnesses may still be uncertain what they saw.
 
 $id-0861352612251497
 title: Skepticism is established early, not required of every later case
@@ -111,9 +111,9 @@ kind: requirement
 The collection should produce real dread, vulnerability, wonder, emotional force, and fear of harmful consequences—not just appreciation of clever technical incidents. Early cases should ground trust and stakes; later ones should encounter real beings and deep mystical phenomena rather than restoring tidy skeptical ambiguity. Fear should arise from specific action, consequences, presence and changed behavior, not generic horror adjectives. Preserve Case VII's objectively mundane causation while showing that even certainty no longer restores the narrator's peace.
 
 $id-6827493815902374
-title: Keep the opening brief and restore dry engineering humour
+title: Keep the opening short, grounded in incident paperwork, with dry engineering humour
 date: 2026/10/27
 source: @ottojung
 kind: requirement
 
-The short unheaded opening begins with “I was not trained for hauntings.” It should be grounded in the investigator's working life rather than an invented valve accident or a miniature philosophy of explanation. Remove the valve incident entirely, including later callbacks. The tracer joke about breaking better men than the narrator belongs naturally in the first Heisenbug investigation, where the instrument actually affects what can be observed. Avoid elaborate witty framing. The earlier grandiose solar metaphor is disallowed and must not be restored. This direction supersedes incompatible older opening and preservation requirements.
+The short unheaded opening begins with “I was not trained for hauntings.” It is grounded in the investigator's working life: timelines, root causes and postmortems, the relief of a test that fails the same way every time, and incident-report forms whose fields each name something that once went wrong. Its turn is the small box marked *Other* at the bottom of those forms: what belonged there was said aloud instead, and the narrator's own material was too long for it, so he began the dossier. It may close with a brief present-tense glimpse of the narrator and his dossier, shown through what he does rather than explained. Keep it to a few short paragraphs so it does not delay the Schaerbeek case, and keep the humour dry rather than elaborate. Do not invent an introductory incident; the former valve accident stays removed, including later callbacks. The tracer joke about breaking better men than the narrator belongs naturally in the first Heisenbug investigation, where the instrument actually affects what can be observed. The earlier grandiose solar metaphor is disallowed and must not be restored. This direction supersedes incompatible older opening and preservation requirements.

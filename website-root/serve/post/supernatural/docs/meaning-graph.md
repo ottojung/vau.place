@@ -4,7 +4,7 @@ Every sentence in the manuscript, including authorial directive sentences, recei
 The analytical fields identify the dramatic work and continuity with adjacent sentences, the case-specific arc and recurring motifs.
 
 $n26751
-text: Keep the opening narrator practical and confident in investigation, with one dry retrospective joke.
+text: Keep the opening narrator practical and confident in investigation, with dry, understated humour.
 intent: State live editorial requirements. Its local function is narrative advance.
 style: Clear non-diegetic instruction.
 continuity: Follows opening boundary; precedes $n37458. Story contracts and authorial priorities.
@@ -46,7 +46,7 @@ style: Clear non-diegetic instruction.
 continuity: Follows $n89384; precedes $n27569. Story contracts and authorial priorities.
 
 $n27569
-text: Begin in the assured voice of a technically rigorous investigator, not the altered voice of the collection's ending.
+text: Begin in the assured voice of a technically rigorous investigator; the altered narrator of the ending may show only in the opening's last lines, through what he does with the dossier.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
 continuity: Follows $n27974; precedes $n26162. The narrator’s work, kept notes and a brief retrospective joke.

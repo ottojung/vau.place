@@ -1,5 +1,5 @@
 <NOTE>
-Keep the opening narrator practical and confident in investigation, with one dry retrospective joke.
+Keep the opening narrator practical and confident in investigation, with dry, understated humour.
 Technical precision earns trust early but becomes actively harmful when repeated deep into the mystical cases.
 The prose must create horror, dread, wonder and mystery, not just jokes or clever incident reports.
 The narrator must not assert that later creatures are real or fictional; let witnesses and experiences speak.
@@ -14,7 +14,7 @@ Do not introduce sentences solely because they sound quotable.
 # A Strange Collection of System Failures
 
 <NOTE>
-Begin in the assured voice of a technically rigorous investigator, not the altered voice of the collection's ending.
+Begin in the assured voice of a technically rigorous investigator; the altered narrator of the ending may show only in the opening's last lines, through what he does with the dossier.
 He should trust repeatable tests, evidence, and ordinary causal explanations without hesitation or metaphysical disclaimers.
 Let the Schaerbeek case establish the narrator's investigative habits; do not invent a separate introductory incident.
 Do not explain hauntings or the narrator's eventual change of mind in the opening.
