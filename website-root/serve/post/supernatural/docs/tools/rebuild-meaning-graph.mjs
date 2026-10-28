@@ -3,7 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 
 const dir = path.resolve(process.argv[2]);
-const novel = fs.readFileSync(path.join(dir, 'supernatural.md'), 'utf8');
+const novel = fs.readFileSync(path.join(dir, 'manuscript.md'), 'utf8');
 const graphFile = path.join(dir, 'docs/meaning-graph.md');
 const old = fs.readFileSync(graphFile, 'utf8');
 const oldTextId = new Map();
