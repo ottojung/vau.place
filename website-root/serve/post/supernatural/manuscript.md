@@ -55,27 +55,33 @@ Preserve the younger narrator's skepticism and the later narrator's retrospectiv
 Do not restore the removed conversation-quality billing digression; its separate joke interrupts the accumulated unease after the election account.
 </NOTE>
 
-I am in a cafeteria in Schaerbeek, waiting for an engineer who knows the contractors responsible for the municipal systems I am working on. He is late. My colleague said he would know whom to call when the names on the contracts proved unhelpful.
+I am in a cafeteria in Schaerbeek, just off the tram line, waiting for a man who is late. In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
 
-The windows are low enough that I see mostly the legs of people passing outside. I order by pointing at a number on the menu, then take a table by the wall.
+The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling. The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs. The queue bends once before the till in an L-shape that keeps the doorway clear.
 
-A newspaper lies on the next chair. Liège has held a waffle competition; the winner is photographed behind an enormous plate, with three judges smiling beside her. I turn to the science pages. A short report from CERN says a neutron was detected beyond the shielding of an experiment. The researchers are checking the detector. I put the paper back.
+I take my place in it, moving forward each time the drawer opens with its tired ring. Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at. Tray in hand, I take a table by the wall.
 
-He arrives late and apologizes. His tram was delayed. He says they thought it was a signal fault, but nobody could tell the passengers what had happened.
+A colleague on the municipal-systems contract that brought me here has given me the name of the man I am waiting for. He knows the local engineering scene, I am told, and which names on procurement papers correspond to people who can actually fix things.
 
-We introduce ourselves. He tells me he has worked on elections—“not politics,” he says, “interfaces.” As he speaks, he straightens the sugar packet and spoon. When he stops talking, he taps the table with one finger.
+There is a newspaper on the next chair. I pick it up. Liège has held a waffle competition; the winner is photographed behind an enormous plate of waffles, with three judges smiling beside her. I turn a few pages, looking for science. A short item from Geneva says that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop. The laboratory says no one was at risk. The newspaper uses the word *escaped* three times. I fold it and put it back.
 
-I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I try to write down the names, but he keeps telling me stories about the people.
+He arrives late and apologizes before sitting down. His tram, he says, underwent “a spontaneous adjustment to the route.” He pauses, then corrects himself.
 
-He picks up a biscuit from beside his coffee.
+“Not spontaneous. Sorry. A signal failed, or somebody changed the route. We just don't know which yet.”
+
+We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day. He tells me he has worked elections—“not politics,” he says quickly, “interfaces.” As he talks, he keeps straightening small things: the sugar packet, the spoon. When conversation pauses, he taps the table as though confirming liveness.
+
+I ask who actually maintains the municipal systems I am likely to encounter. He gives me names, but rarely just names. One contractor is excellent with cabling but, according to him, “loses confidence around printers.” Another is the person everyone calls after hours even though nobody's paperwork admits this. I write down the useful parts and leave some of the commentary out.
+
+The commentary gets harder to separate from the useful parts when he picks up one of the biscuits beside his coffee.
 
 “You can tell a lot about a nation from how its biscuits break.”
 
 I look at him. “How they break?”
 
-“English biscuits soften in tea before they break. The French ones have layers; you end up with crumbs instead of two halves. Belgian biscuits begin along one crack, reconsider, and finish by inventing a third.”
+“The English ones wait for tea and then break where you expect. The French fracture elegantly, usually along the line that leaves the prettier half. Belgian biscuits begin along one crack, reconsider, and finish by inventing a third.”
 
-He starts to unwrap it. I put down my pen.
+That seems ridiculous. I don't see what national character has to do with a biscuit, but he is already unwrapping it.
 
 He breaks it. The biscuit splits diagonally across the stamped pattern, scattering crumbs onto the napkin. He seems pleased.
 
@@ -93,7 +99,7 @@ He mentions Schaerbeek, the 2003 federal election, and a candidate with an impos
 
 What follows is his account of that day. He did not tell it in order, but I will.
 
-The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and an old carpet.
+The polling station was a school. Its walls still carried faded posters about hygiene and primary colours, but the doors had been re-labelled with printed arrows and neutral nouns: Entrance, Exit, Polling Room. There were folding tables, metal chairs, extension leads taped to the floor, stacks of forms, pencils attached to string, cardboard screens, a clock protected by a wire cage, two wastebaskets, a cabinet of children's paintings turned to face the wall, and a carpet whose pattern is an argument against democracy.
 
 He had been sent there as technician, a word expansive enough to cover whatever had not yet been assigned to the others. On his table lay the checklist: confirm serial numbers, confirm counters at zero, confirm seals intact; note every confirmation in ink, sign where indicated. Two party representatives sat near the door. The bureau had a president, seconded for the day from the commune, whose signature would certify the count. She had signed returns in Schaerbeek for eleven years; in that district a signed return was the count. A schoolteacher seconded as a watcher stood where she could see both the machines and the clerks and seemed unsure which of them constituted the real work.
 
