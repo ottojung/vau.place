@@ -20,9 +20,7 @@ Let the Schaerbeek case establish the narrator's investigative habits; do not in
 Do not explain hauntings or the narrator's eventual change of mind in the opening.
 </NOTE>
 
-I was not trained for hauntings. My work was to investigate failures in software and machines. I kept notes on the difficult cases, and sometimes on accounts that came to me from other engineers.
-
-The oldest came from a meeting in Schaerbeek.
+I was not trained for hauntings. I was trained for code reviews, test plans and postmortems, and for the relief of a test that failed again in exactly the same way. But the longer I tended systems, the more often people told me things they would not put in their reports. Eventually I had things of my own that I could not put in mine.
 
 ---
 
