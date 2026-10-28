@@ -76,13 +76,13 @@ style: Plain technically confident first-person narration.
 continuity: Follows $n28800; precedes $n71663. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n71663
-text: I was trained for timelines, for root causes and postmortems, and for the clean relief of a test that fails again and again in exactly the same way.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is procedural evidence or its displacement.
+text: I was trained for timelines, for root causes and postmortems.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
 continuity: Follows $n46605; precedes $n31247. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n31247
-text: Much of it was paperwork, and the paperwork is better than it looks.
+text: Much of my work involved filing incident reports and various other forms, which were better than they looked.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
 continuity: Follows $n71663; precedes $n71136. The narrator’s work, kept notes and a brief retrospective joke.
