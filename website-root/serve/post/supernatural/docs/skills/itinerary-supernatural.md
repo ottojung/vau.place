@@ -10,7 +10,7 @@ Target repository:
 
 Primary manuscript:
 
-`website-root/serve/post/supernatural/supernatural.md`
+`website-root/serve/post/supernatural/manuscript.md`
 
 ## Board coordination
 
