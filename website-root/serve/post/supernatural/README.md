@@ -1,7 +1,7 @@
 # Supernatural post
 
 The Markdown story and its sentence-level meaning graph remain the
-canonical source files: supernatural.md and docs/meaning-graph.md.
+canonical source files: manuscript.md and docs/meaning-graph.md.
 
 The published reader-facing index.html is generated and styled by
 supernatural.css. It is not meant to be hand-edited.

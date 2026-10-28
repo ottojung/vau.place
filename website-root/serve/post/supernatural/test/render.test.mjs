@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { hideEditorial, renderPage } from '../render.mjs';
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
-const manuscript = fs.readFileSync(path.join(dir, '..', 'supernatural.md'), 'utf8');
+const manuscript = fs.readFileSync(path.join(dir, '..', 'manuscript.md'), 'utf8');
 const html = fs.readFileSync(path.join(dir, '..', 'index.html'), 'utf8');
 const visible = html.replace(/<!--[\s\S]*?-->/g, '');
 

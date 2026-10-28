@@ -1,6 +1,6 @@
 # Cross-case dramatic map
 
-Editorial companion to `supernatural.md`, produced for Antonina board issue #277.
+Editorial companion to `manuscript.md`, produced for Antonina board issue #277.
 Date: 2026-10-13 (revised 2026-10-14 on branch
 `agent-b6fb41f5ac39/issue277-cross-case-dramatic-map`, recovering the map from
 `agent-6b92725178a5/issue277-map-transitions` (a4786e8), which continues the
@@ -83,7 +83,7 @@ it belongs to, and the per-case **(e)** fields double as a deterioration ledger 
 ## Applied transitional revisions (this branch)
 
 Issue #277 owns the cross-case transitions, not the case bodies. Two redundant bridge
-openings were revised in `supernatural.md` and their meaning-graph nodes updated in place
+openings were revised in `manuscript.md` and their meaning-graph nodes updated in place
 (IDs kept, `text` re-matched exactly):
 
 - Case III opening: "I came to it the way I come to most of these cases: after the fact…"

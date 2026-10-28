@@ -4,7 +4,7 @@ date: 2026/09/23
 source: @ottojung
 kind: requirement
 
-Agents working on the manuscript maintain `docs/meaning-graph.md` as a current graph representation of what the prose is doing. Coverage is exhaustive and one-to-one: every sentence in `supernatural.md`, including sentences inside local directive blocks, has exactly one graph node. Sentences are never grouped into a shared node and coverage is not allowed to remain partial. The graph must be useful for reasoning about revisions, not merely a paraphrase of the text.
+Agents working on the manuscript maintain `docs/meaning-graph.md` as a current graph representation of what the prose is doing. Coverage is exhaustive and one-to-one: every sentence in `manuscript.md`, including sentences inside local directive blocks, has exactly one graph node. Sentences are never grouped into a shared node and coverage is not allowed to remain partial. The graph must be useful for reasoning about revisions, not merely a paraphrase of the text.
 
 $id-9187217062069867
 title: Meaning graph records communicative purpose
