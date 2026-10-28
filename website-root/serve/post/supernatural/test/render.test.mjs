@@ -107,6 +107,9 @@ test('opening explains the dossier without introducing an extra incident', () =>
   assert.doesNotMatch(manuscript, /promising the very sun/i);
   assert.ok(visible.includes('Collected incidents · Vol. I'));
   assert.ok(opening.includes('a box marked <em>Other</em>'));
+  assert.ok(opening.includes('I was trained for timelines, for root causes and postmortems.'));
+  assert.ok(opening.includes('Much of my work involved filing incident reports and various other forms, which were better than they looked.'));
+  assert.doesNotMatch(opening, /clean relief of a test/);
   assert.ok(opening.includes('I began keeping a dossier.'));
   assert.ok(opening.includes('more often than a responsible person would'));
 });

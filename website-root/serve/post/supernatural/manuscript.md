@@ -20,7 +20,7 @@ Let the Schaerbeek case establish the narrator's investigative habits; do not in
 Do not explain hauntings or the narrator's eventual change of mind in the opening.
 </NOTE>
 
-I was not trained for hauntings. I was trained for timelines, for root causes and postmortems, and for the clean relief of a test that fails again and again in exactly the same way. Much of it was paperwork, and the paperwork is better than it looks. Each field on an incident report is there because something once went wrong in a way nobody had a name for, and afterwards someone sat down and gave it one.
+I was not trained for hauntings. I was trained for timelines, for root causes and postmortems. Much of my work involved filing incident reports and various other forms, which were better than they looked. Each field on an incident report is there because something once went wrong in a way nobody had a name for, and afterwards someone sat down and gave it one.
 
 At the bottom of nearly every form there is a box marked *Other*. It is smaller than the rest, as if the designers hoped it would not be needed.
 
