@@ -58,6 +58,18 @@ test('Mercury retains overt magic while using messenger-specific imagery', () =>
   assert.ok(visible.includes('A timetable'));
 });
 
+test('Schaerbeek preserves the original analytical voice and quiet jokes', () => {
+  const caseI = visible.split('<h3 id="case-i">')[1].split('<h3 id="case-ii">')[0];
+  assert.ok(caseI.includes('In unfamiliar rooms I begin, out of habit, by checking how they are arranged.'));
+  assert.ok(caseI.includes('The queue bends once before the till in an L-shape'));
+  assert.ok(caseI.includes('The newspaper uses the word <em>escaped</em> three times.'));
+  assert.ok(caseI.includes('“Not spontaneous. Sorry.'));
+  assert.ok(caseI.includes('The English ones wait for tea and then break where you expect.'));
+  assert.ok(caseI.includes('The French fracture elegantly, usually along the line that leaves the prettier half.'));
+  assert.ok(caseI.includes('a carpet whose pattern is an argument against democracy.'));
+  assert.doesNotMatch(caseI, /English biscuits soften in tea before they break/);
+});
+
 test('Schaerbeek retains the count dilemma without the late president subplot', () => {
   const caseI = visible.split('<h3 id="case-i">')[1].split('<h3 id="case-ii">')[0];
   assert.ok(caseI.includes('The president asked the technician'));
