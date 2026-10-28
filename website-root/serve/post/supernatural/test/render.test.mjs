@@ -58,6 +58,24 @@ test('Mercury retains overt magic while using messenger-specific imagery', () =>
   assert.ok(visible.includes('A timetable'));
 });
 
+test('Schaerbeek retains the count dilemma without the late president subplot', () => {
+  const caseI = visible.split('<h3 id="case-i">')[1].split('<h3 id="case-ii">')[0];
+  assert.ok(caseI.includes('The president asked the technician'));
+  assert.doesNotMatch(caseI, /One clerk later admitted|The president was summoned|what became of the president|page I reserve for/);
+});
+
+test('Mercury centers the coin, almanac and telephone with a concrete ledger discrepancy', () => {
+  const caseV = visible.split('<h3 id="case-v">')[1].split('<h3 id="case-vi">')[0];
+  assert.ok(caseV.includes('the settlement log showed a rent payment posted at 01:14'));
+  assert.ok(caseV.includes('entry timestamped 01:09'));
+  assert.ok(caseV.includes('The coin travelled toward the operator'));
+  assert.ok(caseV.includes('After a few turns the dates began to repeat'));
+  assert.ok(caseV.includes('I heard myself asking for the operator by name'));
+  assert.ok(caseV.includes('a peculiar form of homesickness'));
+  assert.doesNotMatch(caseV, /two reflections|Outside, a tram passed|the instructions unwound|square of folded paper/);
+  assert.ok(visible.split('<h2 id="coda">')[1].includes('The almanac is in the same drawer'));
+});
+
 test('source apparatus identifies itself as authorial and cites fictional cases', () => {
   assert.ok(html.includes('<h2 id="authors-notes-and-sources">'));
   assert.ok(visible.includes("These notes are outside the narrator"));
