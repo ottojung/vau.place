@@ -1021,85 +1021,25 @@ $n37749
 text: What stayed with me was the qualification in the report: *very probably*.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n33194; precedes $n63280. Election count, biscuits, newspaper, and the technician.
-
-$n63280
-text: One clerk later admitted that he would have preferred a boring human mistake.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n37749; precedes $n71092. Election count, biscuits, newspaper, and the technician.
-
-$n71092
-text: A human mistake belonged somewhere: to a hand, a tired eye, a copied line.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n63280; precedes $n88101. Election count, biscuits, newspaper, and the technician.
-
-$n88101
-text: It could be found and corrected.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n71092; precedes $n43165. Election count, biscuits, newspaper, and the technician.
-
-$n43165
-text: He did not say this during the investigation.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n88101; precedes $n42626. Election count, biscuits, newspaper, and the technician.
-
-$n42626
-text: If human error returned to the list of possibilities, he himself was one of the humans available.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is procedural evidence or its displacement.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n43165; precedes $n03536. Election count, biscuits, newspaper, and the technician.
-
-$n03536
-text: The president was summoned to explain the correction.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n42626; precedes $n92831. Election count, biscuits, newspaper, and the technician.
-
-$n92831
-text: A figure struck through in ink is what a forged count looks like; she answered questions for two days about the one she had struck, and in the end the correction was accepted, the district certified, and no one accused of anything.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n03536; precedes $n77612. Election count, biscuits, newspaper, and the technician.
-
-$n77612
-text: She did not speak to the technician again.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n92831; precedes $n78255. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n33194; precedes $n78255. Election count, biscuits, newspaper, and the technician.
 
 $n78255
 text: By the time he finishes, the cafeteria has thinned and our coffee has gone cold.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is sensory evidence.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n77612; precedes $n57984. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n37749; precedes $n57984. Election count, biscuits, newspaper, and the technician.
 
 $n57984
 text: He straightens the sugar packet, which does not need straightening, and does not look up.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n78255; precedes $n51004. Election count, biscuits, newspaper, and the technician.
-
-$n51004
-text: At the door he asks me not to write down what became of the president.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is sensory evidence.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n57984; precedes $n99862. Election count, biscuits, newspaper, and the technician.
-
-$n99862
-text: I promise him I will not.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n51004; precedes $n29847. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n78255; precedes $n29847. Election count, biscuits, newspaper, and the technician.
 
 $n29847
 text: He believed the next count should be checked in more than one way, with records that the machine could not quietly change.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is emotional or perceptual change.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n99862; precedes $n16963. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n57984; precedes $n16963. Election count, biscuits, newspaper, and the technician.
 
 $n16963
 text: I agreed with him.
@@ -1177,19 +1117,13 @@ $n65765
 text: ([National Museum of American History][1])
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n56424; precedes $n80750. Election count, biscuits, newspaper, and the technician.
-
-$n80750
-text: The page I reserve for what became of the president is the one page in the dossier I have never been able to fill.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n65765; precedes $n52146. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n56424; precedes $n52146. Election count, biscuits, newspaper, and the technician.
 
 $n52146
 text: The narrator must investigate alone through the night; no colleagues enter to validate his perception or ease his fear.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is emotional or perceptual change.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n80750; precedes $n70860. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n65765; precedes $n70860. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n70860
 text: Minimize low-level technical detail, product names, proxy implementation, tables, and explanations of measurement overhead.
@@ -2743,10 +2677,10 @@ $n58143
 text: Let the supernatural be experienced, not certified or explained; unlike the earlier cases, technical precision is actively the wrong language for much of this story.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n72999; precedes $n98801. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n72999; precedes $n21927. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n98801
-text: Overt magic is deliberate in this exceptional chapter: retain the moving coin and impossible telephone call, and replace conventional stage properties with Mercury-specific symbols of delivery, transit and return.
+$n21927
+text: Overt magic is deliberate in this exceptional chapter: retain the moving coin and impossible telephone call, and use Mercury-specific symbols of delivery, transit and return without adding a tram apparition or a double reflection.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
 style: Visceral visionary mysticism rather than technical documentation.
 continuity: Follows $n58143; precedes $n70012. Mercury, serpents, mirrors, moving coin and impossible telephone.
@@ -2755,7 +2689,7 @@ $n70012
 text: **Wednesday, the day of Mercury.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n98801; precedes $n53049. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n21927; precedes $n53049. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n53049
 text: I first met the astrologer because of an envelope that had arrived at the clearing house three days before its contents happened.
@@ -2773,25 +2707,25 @@ $n64546
 text: A dozen people worked above a print shop, and their machines settled accounts after dark.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n53422; precedes $n38579. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n53422; precedes $n14240. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n38579
-text: One Wednesday in March, the nightly settlement ran backward.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
+$n14240
+text: One Wednesday in March, the settlement log showed a rent payment posted at 01:14, then reversed by an entry timestamped 01:09.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is procedural evidence or its displacement.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n64546; precedes $n31267. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n64546; precedes $n17188. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n31267
-text: The instructions unwound in the wrong order; wages reached the wrong accounts; a woman discovered that the rent she had already paid was due again.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
+$n17188
+text: By morning the landlord's account showed no payment, and the woman who had sent it was told her rent was due again.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n38579; precedes $n13471. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n14240; precedes $n13471. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n13471
 text: It was a serious failure, but not the kind of failure that ought to make anyone consult the heavens.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n31267; precedes $n30023. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n17188; precedes $n30023. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n30023
 text: The envelope contained a drawing of two serpents winding in opposite directions around a staff, and beneath it the instruction: *Do not settle accounts when the messenger is walking backward.
@@ -2905,31 +2839,13 @@ $n60233
 text: A timetable was pinned above the sorting desk, but its tram lines were drawn in two directions at once, each arrow pointing toward the station it had come from.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n27407; precedes $n99113. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n99113
-text: Names had been crossed out on the envelopes and written again on their backs, in the same hand.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n60233; precedes $n39345. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n39345
-text: Near the window an old letter scale balanced a sealed envelope against a pair of worn shoes.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n99113; precedes $n20724. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n20724
-text: I could not work out which side was supposed to be heavier.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n39345; precedes $n30869. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n27407; precedes $n30869. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n30869
 text: She called the room her observatory.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n20724; precedes $n78794. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n60233; precedes $n78794. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n78794
 text: There was no telescope.
@@ -3013,49 +2929,13 @@ $n54886
 text: It stopped at the edge of the table and waited.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n49956; precedes $n10374. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n10374
-text: The woman covered it with a drinking glass.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n54886; precedes $n63837. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n63837
-text: For a moment I saw the coin's reflection at the bottom of the glass; then I saw two reflections, one where the coin lay and another where it had been.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n10374; precedes $n97710. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n97710
-text: The actual coin had not moved.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n63837; precedes $n24199. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n24199
-text: I bent closer until my forehead almost touched the rim.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n97710; precedes $n13593. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n13593
-text: “Do not look there,” she said sharply.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n24199; precedes $n31519. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n31519
-text: “That is where things go when they have not yet happened.”
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n13593; precedes $n30622. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n49956; precedes $n30622. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n30622
 text: She took us to the window.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n31519; precedes $n82384. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n54886; precedes $n82384. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n82384
 text: The sky was pale and empty above the church.
@@ -3103,10 +2983,10 @@ $n27962
 text: I wanted to leave.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is emotional or perceptual change.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n37052; precedes $n37043. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n37052; precedes $n55930. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n37043
-text: At the same time I wanted, almost painfully, to know what was under the glass.
+$n55930
+text: At the same time I wanted, almost painfully, to see the coin move again.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is emotional or perceptual change.
 style: Visceral visionary mysticism rather than technical documentation.
 continuity: Follows $n27962; precedes $n13566. Mercury, serpents, mirrors, moving coin and impossible telephone.
@@ -3115,7 +2995,7 @@ $n13566
 text: She told us we had come on a Wednesday for a reason.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n37043; precedes $n68721. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n55930; precedes $n68721. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n68721
 text: The day belongs to Mercury, as do the market and the crossroads, the thieves and the interpreters.
@@ -3337,88 +3217,34 @@ $n12663
 text: The bell rang once more, although the receiver was down.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n74744; precedes $n16662. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n74744; precedes $n67518. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n16662
-text: Outside, a tram passed the window toward the canal.
+$n67518
+text: When we returned, the coin lay on the other side of the table.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n12663; precedes $n84688. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n84688
-text: The passengers were turning their heads in the same direction, toward something at the back of the carriage.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n16662; precedes $n51310. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n51310
-text: For one impossible second I had the conviction that every passenger was watching the same person walk toward them along the aisle, slowly, against the motion of the tram.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n84688; precedes $n75459. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n75459
-text: When I turned back, the woman had removed the glass.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n51310; precedes $n12422. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n12422
-text: The coin lay on the other side of the table.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n75459; precedes $n87572. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n87572
-text: Nobody had touched it.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n12422; precedes $n30945. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n12663; precedes $n30945. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n30945
 text: We left without signing the book.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n87572; precedes $n83275. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n67518; precedes $n83275. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n83275
 text: She did not appear disappointed.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n30945; precedes $n59395. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n59395
-text: At the door she gave the operator a little square of folded paper and said that when the messenger returned, he should give it back to the first person who asked for change.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n83275; precedes $n42726. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n42726
-text: The paper held no writing.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n59395; precedes $n69745. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n69745
-text: We unfolded it twice.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n42726; precedes $n61032. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n61032
-text: It was blank on both sides, except for an indentation that might have been made by a pen long before the ink ran dry.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n69745; precedes $n59888. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n30945; precedes $n59888. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n59888
 text: For weeks afterward I tried to reduce the visit to a sequence of events.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n61032; precedes $n23441. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n83275; precedes $n87374. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
-$n23441
-text: I drew the room, counted the pigeonholes, copied the tram routes, wrote down everything the woman had said.
+$n87374
+text: I drew the room, counted the pigeonholes, copied the timetable, wrote down everything the woman had said.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is testimony or reported dialogue.
 style: Visceral visionary mysticism rather than technical documentation.
 continuity: Follows $n59888; precedes $n83043. Mercury, serpents, mirrors, moving coin and impossible telephone.
@@ -3427,7 +3253,7 @@ $n83043
 text: That procedure, which had served me well all my life, became a peculiar form of homesickness.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n23441; precedes $n74310. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n87374; precedes $n74310. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n74310
 text: I could catalogue her objects, but I could not return to the hour in which I had believed each object belonged to another world.
