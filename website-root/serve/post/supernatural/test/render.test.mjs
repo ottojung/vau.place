@@ -76,6 +76,9 @@ test('opening is brief, restores hauntings and contains no extra valve incident'
   assert.doesNotMatch(visible, /\bvalve\b/i);
   assert.doesNotMatch(manuscript, /promising the very sun/i);
   assert.ok(visible.includes('Collected incidents · Vol. I'));
+  assert.ok(opening.includes('God preserve me from one more axis'));
+  assert.ok(opening.includes('Not a taxonomy'));
+  assert.ok(opening.includes('without relying entirely on my memory'));
 });
 
 test('the tracer joke belongs to the early Heisenbug investigation', () => {
