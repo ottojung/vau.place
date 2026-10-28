@@ -22,6 +22,8 @@ Do not explain hauntings or the narrator's eventual change of mind in the openin
 
 I was not trained for hauntings. I was trained for code reviews, test plans and postmortems, and for the relief of a test that failed again in exactly the same way. But the longer I tended systems, the more often people told me things they would not put in their reports. Eventually I had things of my own that I could not put in mine.
 
+I began keeping a separate folder. Not a taxonomy—God preserve me from one more axis—but the accounts themselves, with dates, the records I could find, and notes on what I had seen firsthand. I wanted to be able to read them later without relying entirely on my memory.
+
 ---
 
 ### I. The Schaerbeek Bit
