@@ -163,13 +163,7 @@ The report did not identify the particle or establish what had disturbed the mem
 
 Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*. By the time the incident reached programmers, the whole thing was often filed under *computer error*. That label did not tell the clerks what they could safely sign. What stayed with me was the qualification in the report: *very probably*.
 
-One clerk later admitted that he would have preferred a boring human mistake. A human mistake belonged somewhere: to a hand, a tired eye, a copied line. It could be found and corrected. He did not say this during the investigation. If human error returned to the list of possibilities, he himself was one of the humans available.
-
-The president was summoned to explain the correction. A figure struck through in ink is what a forged count looks like; she answered questions for two days about the one she had struck, and in the end the correction was accepted, the district certified, and no one accused of anything. She did not speak to the technician again.
-
 By the time he finishes, the cafeteria has thinned and our coffee has gone cold. He straightens the sugar packet, which does not need straightening, and does not look up.
-
-At the door he asks me not to write down what became of the president. I promise him I will not.
 
 He believed the next count should be checked in more than one way, with records that the machine could not quietly change. I agreed with him.
 
@@ -182,8 +176,6 @@ There is an older photograph I keep in a folder called *Proofs I Do Not Argue Wi
 ![Moth](https://ids.si.edu/ids/deliveryService?id=NMAH-NMAH2000-03035)
 
 The page belongs to the Harvard Mark II. On 9 September 1947, its operators found a moth in Relay #70, Panel F, taped it into the log, and wrote beside it: “First actual case of bug being found.” The cause had been found and kept with the report. I used to find that photograph reassuring. ([National Museum of American History][1])
-
-The page I reserve for what became of the president is the one page in the dossier I have never been able to fill.
 
 ---
 
@@ -401,14 +393,14 @@ Do not make a statistical correlation, a table of retrograde windows, astronomic
 The narrator should actively enter an uncanny ritual and undergo wonder, temptation, dread, and an altered understanding of causality.
 Give Mercury his old domains of messages, trade, journeys, thresholds and trickery, but make the mysticism vivid and particular, not a list of astrological facts.
 Let the supernatural be experienced, not certified or explained; unlike the earlier cases, technical precision is actively the wrong language for much of this story.
-Overt magic is deliberate in this exceptional chapter: retain the moving coin and impossible telephone call, and replace conventional stage properties with Mercury-specific symbols of delivery, transit and return.
+Overt magic is deliberate in this exceptional chapter: retain the moving coin and impossible telephone call, and use Mercury-specific symbols of delivery, transit and return without adding a tram apparition or a double reflection.
 </NOTE>
 
 **Wednesday, the day of Mercury.**
 
 I first met the astrologer because of an envelope that had arrived at the clearing house three days before its contents happened.
 
-The clearing house moved money between small businesses. A dozen people worked above a print shop, and their machines settled accounts after dark. One Wednesday in March, the nightly settlement ran backward. The instructions unwound in the wrong order; wages reached the wrong accounts; a woman discovered that the rent she had already paid was due again. It was a serious failure, but not the kind of failure that ought to make anyone consult the heavens.
+The clearing house moved money between small businesses. A dozen people worked above a print shop, and their machines settled accounts after dark. One Wednesday in March, the settlement log showed a rent payment posted at 01:14, then reversed by an entry timestamped 01:09. By morning the landlord's account showed no payment, and the woman who had sent it was told her rent was due again. It was a serious failure, but not the kind of failure that ought to make anyone consult the heavens.
 
 The envelope contained a drawing of two serpents winding in opposite directions around a staff, and beneath it the instruction: *Do not settle accounts when the messenger is walking backward.* There was no return address. The postmark and the office's incoming-mail stamp predated the failure. Someone had written the name of the on-call operator inside, very neatly, though the operator had never met the sender.
 
@@ -420,7 +412,7 @@ An old woman admitted us. She did not ask what we wanted. She examined the opera
 
 “Then the message has already arrived,” she said.
 
-The room resembled the back office of a postmaster who had taken charge of every undelivered letter in the city. Wooden pigeonholes climbed to the ceiling. Some held envelopes browned with age; others held receipts bearing tomorrow's date. A timetable was pinned above the sorting desk, but its tram lines were drawn in two directions at once, each arrow pointing toward the station it had come from. Names had been crossed out on the envelopes and written again on their backs, in the same hand. Near the window an old letter scale balanced a sealed envelope against a pair of worn shoes. I could not work out which side was supposed to be heavier.
+The room resembled the back office of a postmaster who had taken charge of every undelivered letter in the city. Wooden pigeonholes climbed to the ceiling. Some held envelopes browned with age; others held receipts bearing tomorrow's date. A timetable was pinned above the sorting desk, but its tram lines were drawn in two directions at once, each arrow pointing toward the station it had come from.
 
 She called the room her observatory. There was no telescope.
 
@@ -432,17 +424,13 @@ I would once have objected to the difference as a matter of language. But she sp
 
 She placed a silver coin on the table. A winged figure was engraved on one side. On the other was a number whose digits had been worn almost smooth. The coin travelled toward the operator across the wood, slowly, without rolling. He snatched his hands into his lap. It stopped at the edge of the table and waited.
 
-The woman covered it with a drinking glass. For a moment I saw the coin's reflection at the bottom of the glass; then I saw two reflections, one where the coin lay and another where it had been. The actual coin had not moved. I bent closer until my forehead almost touched the rim.
-
-“Do not look there,” she said sharply. “That is where things go when they have not yet happened.”
-
 She took us to the window. The sky was pale and empty above the church. Mercury was invisible in the daylight, but she pointed to a space near the sun as if she could see a tiny person waiting at a crossing. She spoke of the stations, those pauses when a planet seems to halt against the stars before beginning its backward walk, as days when the messenger puts down his bag and the messages inside begin addressing themselves.
 
 The operator asked whether the clearing house would be safe when the planet turned direct again.
 
 She laughed, not unkindly. “The bills will arrive,” she said. “That is what you call safe.”
 
-I wanted to leave. At the same time I wanted, almost painfully, to know what was under the glass.
+I wanted to leave. At the same time I wanted, almost painfully, to see the coin move again.
 
 She told us we had come on a Wednesday for a reason. The day belongs to Mercury, as do the market and the crossroads, the thieves and the interpreters. In the old stories Hermes carries souls between worlds. There is no door he cannot pass through, no boundary he has promised to respect. A person who relies on a message reaching its destination has already entered his country.
 
@@ -476,15 +464,11 @@ I hung up.
 
 The bell rang once more, although the receiver was down.
 
-Outside, a tram passed the window toward the canal. The passengers were turning their heads in the same direction, toward something at the back of the carriage. For one impossible second I had the conviction that every passenger was watching the same person walk toward them along the aisle, slowly, against the motion of the tram.
+When we returned, the coin lay on the other side of the table.
 
-When I turned back, the woman had removed the glass. The coin lay on the other side of the table. Nobody had touched it.
+We left without signing the book. She did not appear disappointed.
 
-We left without signing the book. She did not appear disappointed. At the door she gave the operator a little square of folded paper and said that when the messenger returned, he should give it back to the first person who asked for change.
-
-The paper held no writing. We unfolded it twice. It was blank on both sides, except for an indentation that might have been made by a pen long before the ink ran dry.
-
-For weeks afterward I tried to reduce the visit to a sequence of events. I drew the room, counted the pigeonholes, copied the tram routes, wrote down everything the woman had said. That procedure, which had served me well all my life, became a peculiar form of homesickness. I could catalogue her objects, but I could not return to the hour in which I had believed each object belonged to another world.
+For weeks afterward I tried to reduce the visit to a sequence of events. I drew the room, counted the pigeonholes, copied the timetable, wrote down everything the woman had said. That procedure, which had served me well all my life, became a peculiar form of homesickness. I could catalogue her objects, but I could not return to the hour in which I had believed each object belonged to another world.
 
 I began reading the old books she had named. I learned why Mercury wears wings, why his staff bears two serpents, why merchants and messengers once made offerings at crossroads. I learned the signs for conjunction and opposition, and the houses in which an astrologer looks for journeys, theft, marriage, debts, death. I filled a notebook with copied symbols. Some belonged to objects I had noticed in her house without understanding why they were there.
 
