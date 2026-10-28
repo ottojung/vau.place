@@ -3,8 +3,8 @@
 Every sentence in the manuscript, including authorial directive sentences, receives exactly one node in narrative order.
 The analytical fields identify the dramatic work and continuity with adjacent sentences, the case-specific arc and recurring motifs.
 
-$n89365
-text: Open with a narrator entirely confident in technical rigor, without already sounding altered.
+$n26751
+text: Keep the opening narrator practical and confident in investigation, with one dry retrospective joke.
 intent: State live editorial requirements. Its local function is narrative advance.
 style: Clear non-diegetic instruction.
 continuity: Follows opening boundary; precedes $n37458. Story contracts and authorial priorities.
@@ -13,7 +13,7 @@ $n37458
 text: Technical precision earns trust early but becomes actively harmful when repeated deep into the mystical cases.
 intent: State live editorial requirements. Its local function is emotional or perceptual change.
 style: Clear non-diegetic instruction.
-continuity: Follows $n89365; precedes $n43545. Story contracts and authorial priorities.
+continuity: Follows $n26751; precedes $n43545. Story contracts and authorial priorities.
 
 $n43545
 text: The prose must create horror, dread, wonder and mystery, not just jokes or clever incident reports.
@@ -49,121 +49,55 @@ $n27569
 text: Begin in the assured voice of a technically rigorous investigator, not the altered voice of the collection's ending.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n27974; precedes $n26162. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n27974; precedes $n26162. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n26162
 text: He should trust repeatable tests, evidence, and ordinary causal explanations without hesitation or metaphysical disclaimers.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is emotional or perceptual change.
 style: Plain technically confident first-person narration.
-continuity: Follows $n27569; precedes $n96185. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n27569; precedes $n36627. The narrator’s work, kept notes and a brief retrospective joke.
 
-$n96185
-text: Foreshadow only through the modest fact that one stubborn discrepancy prompted him to preserve a record.
+$n36627
+text: Let the Schaerbeek case establish the narrator's investigative habits; do not invent a separate introductory incident.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n26162; precedes $n43598. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n26162; precedes $n28800. The narrator’s work, kept notes and a brief retrospective joke.
 
-$n43598
-text: Do not spend the opening announcing supernatural beliefs, or anticipating the narrator's later loss of confidence.
+$n28800
+text: Do not explain hauntings or the narrator's eventual change of mind in the opening.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n96185; precedes $n35016. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n36627; precedes $n46605. The narrator’s work, kept notes and a brief retrospective joke.
 
-$n35016
-text: I was hired to investigate failures.
+$n46605
+text: I was not trained for hauntings.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n43598; precedes $n71466. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n28800; precedes $n71663. The narrator’s work, kept notes and a brief retrospective joke.
 
-$n71466
-text: Most had ordinary causes, even when those causes were difficult to find.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n35016; precedes $n49531. The valve, sufficient causes, and the first discrepancy.
-
-$n49531
-text: I checked logs, spoke to the people who had been there, and tried to make the same thing happen again.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is testimony or reported dialogue.
-style: Plain technically confident first-person narration.
-continuity: Follows $n71466; precedes $n53679. The valve, sufficient causes, and the first discrepancy.
-
-$n53679
-text: Once, during maintenance, a valve opened without a command in the log.
+$n71663
+text: I was trained for code reviews, test plans and postmortems, and for the relief of a test that failed again in exactly the same way.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is procedural evidence or its displacement.
 style: Plain technically confident first-person narration.
-continuity: Follows $n49531; precedes $n86374. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n46605; precedes $n42299. The narrator’s work, kept notes and a brief retrospective joke.
 
-$n86374
-text: A fitter was working beside the actuator.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n53679; precedes $n82714. The valve, sufficient causes, and the first discrepancy.
-
-$n82714
-text: He pulled his hand clear as the valve opened.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n86374; precedes $n82979. The valve, sufficient causes, and the first discrepancy.
-
-$n82979
-text: I checked the maintenance schedule and the wiring, and ran the sequence again with everyone standing back.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n82714; precedes $n65501. The valve, sufficient causes, and the first discrepancy.
-
-$n65501
-text: The valve stayed shut.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n82979; precedes $n24178. The valve, sufficient causes, and the first discrepancy.
-
-$n24178
-text: Three people had heard it open, but their accounts did not agree.
+$n42299
+text: But the longer I tended systems, the more often people told me things they would not put in their reports.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is testimony or reported dialogue.
 style: Plain technically confident first-person narration.
-continuity: Follows $n65501; precedes $n37857. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n71663; precedes $n19201. The narrator’s work, kept notes and a brief retrospective joke.
 
-$n37857
-text: The safety committee accepted our report.
+$n19201
+text: Eventually I had things of my own that I could not put in mine.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n24178; precedes $n55765. The valve, sufficient causes, and the first discrepancy.
-
-$n55765
-text: I kept my notes because I thought I might find what I had missed after the next shutdown.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n37857; precedes $n85579. The valve, sufficient causes, and the first discrepancy.
-
-$n85579
-text: Other reports accumulated over the years: a disputed election count, a program that behaved differently when somebody watched it, a night operator who would not let me record his account.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n55765; precedes $n23224. The valve, sufficient causes, and the first discrepancy.
-
-$n23224
-text: I investigated some myself.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n85579; precedes $n20902. The valve, sufficient causes, and the first discrepancy.
-
-$n20902
-text: Others came from records or from people who trusted me enough to tell me what they had seen.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n23224; precedes $n49185. The valve, sufficient causes, and the first discrepancy.
-
-$n49185
-text: The earliest account came from a conversation in Belgium, years before I began keeping the folder.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n20902; precedes $n75488. The valve, sufficient causes, and the first discrepancy.
+continuity: Follows $n42299; precedes $n75488. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n75488
 text: **Schaerbeek, Belgium.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n49185; precedes $n62068. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n19201; precedes $n62068. Election count, biscuits, newspaper, and the technician.
 
 $n62068
 text: This meeting belongs to an earlier period in the narrator's life.
@@ -1333,10 +1267,10 @@ $n16971
 text: The application stopped at the same line it had stopped at earlier, waiting for the database to answer.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n85672; precedes $n71523. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n85672; precedes $n37823. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
-$n71523
-text: I attached a tracer, expecting to see the operation just before the stall.
+$n37823
+text: I attached a tracer that had broken better men than me and waited for the next stall.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
 continuity: Follows $n16971; precedes $n29215. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
@@ -1345,7 +1279,7 @@ $n29215
 text: The next run succeeded.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n71523; precedes $n81190. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n37823; precedes $n81190. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n81190
 text: Then the next.
@@ -2395,19 +2329,13 @@ $n88432
 text: The title must protect the witness and not use the name first introduced in his colleagues' ridicule.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n82083; precedes $n46605. Tapping, greenish light, changed loop bound, joking colleagues.
-
-$n46605
-text: I was not trained for hauntings.
-intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is narrative advance.
-style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n88432; precedes $n96745. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n82083; precedes $n96745. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n96745
 text: The night operator asked me to turn off the recorder before he began.
 intent: Respect the embarrassed witness whose perceptions are uncertain, allowing folklore to emerge without certification. Its local function is testimony or reported dialogue.
 style: Hesitant testimony, small humiliations, ambiguous perception.
-continuity: Follows $n46605; precedes $n21001. Tapping, greenish light, changed loop bound, joking colleagues.
+continuity: Follows $n88432; precedes $n21001. Tapping, greenish light, changed loop bound, joking colleagues.
 
 $n21001
 text: I told him I would not be able to quote him accurately.
@@ -4027,139 +3955,115 @@ $n82419
 text: Close through actions, concrete objects and changed perception, not a thesis about scientific limits, skepticism, or the reality of supernatural beings.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n41766; precedes $n37915. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n41766; precedes $n37915. Rack C, quiet maintenance, and the almanac.
 
 $n37915
 text: Keep the narrator technically competent; show how procedures, rituals and apprehension now coexist without easy reconciliation.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n82419; precedes $n48875. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n82419; precedes $n48875. Rack C, quiet maintenance, and the almanac.
 
 $n48875
 text: Reflect the revised cases accurately: a solitary Heisenbug vigil, an experienced demon dream and lost proof, an indistinct visitor, Mercury's occult summons, irrational crocodile checks, and an ordinary thermal failure.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n37915; precedes $n66619. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n37915; precedes $n66619. Rack C, quiet maintenance, and the almanac.
 
 $n66619
 text: Rack C has been running normally for a week.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n48875; precedes $n93532. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n48875; precedes $n93532. Rack C, quiet maintenance, and the almanac.
 
 $n93532
 text: Ruth came by this afternoon to ask whether the restored data was safe.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n66619; precedes $n14320. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n66619; precedes $n14320. Rack C, quiet maintenance, and the almanac.
 
 $n14320
 text: I showed her the result of a test restore, and she went back to her desk.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is procedural evidence or its displacement.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n93532; precedes $n45936. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n93532; precedes $n45936. Rack C, quiet maintenance, and the almanac.
 
 $n45936
 text: I stayed late to check the next backup.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n14320; precedes $n78547. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n14320; precedes $n78547. Rack C, quiet maintenance, and the almanac.
 
 $n78547
 text: It finished without error.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is procedural evidence or its displacement.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n45936; precedes $n55426. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n45936; precedes $n55426. Rack C, quiet maintenance, and the almanac.
 
 $n55426
 text: A short rattle came from the new fan when it started.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n78547; precedes $n24819. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n78547; precedes $n24819. Rack C, quiet maintenance, and the almanac.
 
 $n24819
 text: I found a loose paper label brushing the grille and moved it aside.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n55426; precedes $n54368. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n55426; precedes $n54368. Rack C, quiet maintenance, and the almanac.
 
 $n54368
 text: The noise stopped.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n24819; precedes $n31240. Rack C, valve report, maintenance log and almanac.
-
-$n31240
-text: My notes are on the desk beside the maintenance log.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is procedural evidence or its displacement.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n54368; precedes $n68035. Rack C, valve report, maintenance log and almanac.
-
-$n68035
-text: I turn to the report about the valve that opened while a fitter was working beside it.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n31240; precedes $n57431. Rack C, valve report, maintenance log and almanac.
-
-$n57431
-text: There is still a space for the missing command.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n68035; precedes $n41744. Rack C, valve report, maintenance log and almanac.
-
-$n41744
-text: I had intended to fill it in after the next shutdown.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n57431; precedes $n47719. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n24819; precedes $n47719. Rack C, quiet maintenance, and the almanac.
 
 $n47719
 text: At midnight I enter Rack C's temperature and close the log.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n41744; precedes $n25496. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n54368; precedes $n25496. Rack C, quiet maintenance, and the almanac.
 
 $n25496
 text: Before leaving I open it again and read what I have just written.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n47719; precedes $n45150. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n47719; precedes $n45150. Rack C, quiet maintenance, and the almanac.
 
 $n45150
 text: There is nothing to correct.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n25496; precedes $n50907. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n25496; precedes $n50907. Rack C, quiet maintenance, and the almanac.
 
 $n50907
 text: The almanac is in the same drawer as my notes.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n45150; precedes $n75893. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n45150; precedes $n75893. Rack C, quiet maintenance, and the almanac.
 
 $n75893
 text: I have marked next month's date but left the margin empty.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n50907; precedes $n68988. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n50907; precedes $n68988. Rack C, quiet maintenance, and the almanac.
 
 $n68988
 text: I look at the clock.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n75893; precedes $n63464. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n75893; precedes $n63464. Rack C, quiet maintenance, and the almanac.
 
 $n63464
 text: I do not look at the almanac.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n68988; precedes $n41163. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n68988; precedes $n41163. Rack C, quiet maintenance, and the almanac.
 
 $n41163
 text: In the morning I will be able to explain why.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n63464; precedes $n44485. Rack C, valve report, maintenance log and almanac.
+continuity: Follows $n63464; precedes $n44485. Rack C, quiet maintenance, and the almanac.
 
 $n44485
 text: *These notes are outside the narrator's dossier.
@@ -4267,25 +4171,13 @@ $n14005
 text: ([Original issue][5]) ([Engineering account][6]) ([Fix][7])
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n52937; precedes $n44426. Documentation, provenance, and fictional composites.
-
-$n44426
-text: **The valve.
-intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
-style: Factual reference prose.
-continuity: Follows $n14005; precedes $n32546. Documentation, provenance, and fictional composites.
-
-$n32546
-text: ** The opening's uncommanded actuation is invented, drawing on the real class of industrial-control failures in which a physical action lacks a matching command in the available log.
-intent: Keep external historical references distinct from invented story events. Its local function is procedural evidence or its displacement.
-style: Factual reference prose.
-continuity: Follows $n44426; precedes $n71606. Documentation, provenance, and fictional composites.
+continuity: Follows $n52937; precedes $n71606. Documentation, provenance, and fictional composites.
 
 $n71606
 text: **Maxwell's Demon.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n32546; precedes $n68121. Documentation, provenance, and fictional composites.
+continuity: Follows $n14005; precedes $n68121. Documentation, provenance, and fictional composites.
 
 $n68121
 text: ** The visitation, hash collision, and vanished originals are fictional.
