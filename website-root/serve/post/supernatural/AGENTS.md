@@ -6,7 +6,7 @@ These rules apply to the supernatural story collection in this directory and its
 
 The primary manuscript is:
 
-- `supernatural.md`
+- `manuscript.md`
 
 The manuscript is a work of fiction built around a mixture of real incidents, fictionalized retellings, invented cases, and an intentionally unreliable or at least increasingly superstitious investigator-narrator.
 
@@ -50,7 +50,7 @@ Do not edit an Intent Record merely to justify a prose change. Intent changes co
 
 Maintain `docs/meaning-graph.md` as a sentence-by-sentence analytical companion to the current manuscript.
 
-Coverage is strict: **every sentence in `supernatural.md` must have exactly one corresponding graph node.** Do not group multiple sentences into one node, omit apparently trivial sentences, or leave coverage for later. Sentences inside manuscript directives such as `<NOTE>`, `<TODO>`, `<FIXME>`, and `<MUST HAVES>` are still sentences in the source and therefore also require nodes. Non-sentence structural material such as headings, separators, standalone equations, link-reference definitions, and table syntax does not require a node unless it contains a sentence.
+Coverage is strict: **every sentence in `manuscript.md` must have exactly one corresponding graph node.** Do not group multiple sentences into one node, omit apparently trivial sentences, or leave coverage for later. Sentences inside manuscript directives such as `<NOTE>`, `<TODO>`, `<FIXME>`, and `<MUST HAVES>` are still sentences in the source and therefore also require nodes. Non-sentence structural material such as headings, separators, standalone equations, link-reference definitions, and table syntax does not require a node unless it contains a sentence.
 
 Graph nodes must appear in the same order as their source sentences and use this format:
 
