@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import MarkdownIt from 'markdown-it';
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
-const sourceFile = path.join(dir, 'supernatural.md');
+const sourceFile = path.join(dir, 'manuscript.md');
 const outputFile = path.join(dir, 'index.html');
 
 const escapeHtml = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
