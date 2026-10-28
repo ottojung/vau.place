@@ -91,13 +91,31 @@ $n19201
 text: Eventually I had things of my own that I could not put in mine.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n42299; precedes $n75488. The narrator’s work, kept notes and a brief retrospective joke.
+continuity: Follows $n42299; precedes $n38174. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n38174
+text: I began keeping a separate folder.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+style: Plain technically confident first-person narration.
+continuity: Follows $n19201; precedes $n59320. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n59320
+text: Not a taxonomy—God preserve me from one more axis—but the accounts themselves, with dates, the records I could find, and notes on what I had seen firsthand.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+style: Plain technically confident first-person narration.
+continuity: Follows $n38174; precedes $n64783. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n64783
+text: I wanted to be able to read them later without relying entirely on my memory.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is emotional or perceptual change.
+style: Plain technically confident first-person narration.
+continuity: Follows $n59320; precedes $n75488. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n75488
 text: **Schaerbeek, Belgium.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n19201; precedes $n62068. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n64783; precedes $n62068. Election count, biscuits, newspaper, and the technician.
 
 $n62068
 text: This meeting belongs to an earlier period in the narrator's life.
