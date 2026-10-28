@@ -20,9 +20,13 @@ Let the Schaerbeek case establish the narrator's investigative habits; do not in
 Do not explain hauntings or the narrator's eventual change of mind in the opening.
 </NOTE>
 
-I was not trained for hauntings. I was trained for code reviews, test plans and postmortems, and for the relief of a test that failed again in exactly the same way. But the longer I tended systems, the more often people told me things they would not put in their reports. Eventually I had things of my own that I could not put in mine.
+I was not trained for hauntings. I was trained for timelines, for root causes and postmortems, and for the clean relief of a test that fails again and again in exactly the same way. Much of it was paperwork, and the paperwork is better than it looks. Each field on an incident report is there because something once went wrong in a way nobody had a name for, and afterwards someone sat down and gave it one.
 
-I began keeping a separate folder. Not a taxonomy—God preserve me from one more axis—but the accounts themselves, with dates, the records I could find, and notes on what I had seen firsthand. I wanted to be able to read them later without relying entirely on my memory.
+At the bottom of nearly every form there is a box marked *Other*. It is smaller than the rest, as if the designers hoped it would not be needed.
+
+But the longer I tended systems, the more I came to see how much belonged in that box. It was said at the door instead, or once the recorder was off, or after the report had been signed. Eventually I had things of my own for it, but I did not write them there either, for they were too long for such a small field.
+
+I began keeping a dossier. Each account got a date and a number, the records I could find, and a note on what I had seen myself. It seemed the responsible thing to do. It still does. I read it more often than a responsible person would.
 
 ---
 
