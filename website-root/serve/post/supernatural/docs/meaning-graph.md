@@ -4,7 +4,7 @@ Every sentence in the manuscript, including authorial directive sentences, recei
 The analytical fields identify the dramatic work and continuity with adjacent sentences, the case-specific arc and recurring motifs.
 
 $n26751
-text: Keep the opening narrator practical and confident in investigation, with one dry retrospective joke.
+text: Keep the opening narrator practical and confident in investigation, with dry, understated humour.
 intent: State live editorial requirements. Its local function is narrative advance.
 style: Clear non-diegetic instruction.
 continuity: Follows opening boundary; precedes $n37458. Story contracts and authorial priorities.
@@ -46,7 +46,7 @@ style: Clear non-diegetic instruction.
 continuity: Follows $n89384; precedes $n27569. Story contracts and authorial priorities.
 
 $n27569
-text: Begin in the assured voice of a technically rigorous investigator, not the altered voice of the collection's ending.
+text: Begin in the assured voice of a technically rigorous investigator; the altered narrator of the ending may show only in the opening's last lines, through what he does with the dossier.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
 continuity: Follows $n27974; precedes $n26162. The narrator’s work, kept notes and a brief retrospective joke.
@@ -76,40 +76,82 @@ style: Plain technically confident first-person narration.
 continuity: Follows $n28800; precedes $n71663. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n71663
-text: I was trained for code reviews, test plans and postmortems, and for the relief of a test that failed again in exactly the same way.
+text: I was trained for timelines, for root causes and postmortems, and for the clean relief of a test that fails again and again in exactly the same way.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is procedural evidence or its displacement.
 style: Plain technically confident first-person narration.
-continuity: Follows $n46605; precedes $n42299. The narrator’s work, kept notes and a brief retrospective joke.
+continuity: Follows $n46605; precedes $n31247. The narrator’s work, kept notes and a brief retrospective joke.
 
-$n42299
-text: But the longer I tended systems, the more often people told me things they would not put in their reports.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is testimony or reported dialogue.
-style: Plain technically confident first-person narration.
-continuity: Follows $n71663; precedes $n19201. The narrator’s work, kept notes and a brief retrospective joke.
-
-$n19201
-text: Eventually I had things of my own that I could not put in mine.
+$n31247
+text: Much of it was paperwork, and the paperwork is better than it looks.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n42299; precedes $n38174. The narrator’s work, kept notes and a brief retrospective joke.
+continuity: Follows $n71663; precedes $n71136. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n71136
+text: Each field on an incident report is there because something once went wrong in a way nobody had a name for, and afterwards someone sat down and gave it one.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+style: Plain technically confident first-person narration.
+continuity: Follows $n31247; precedes $n79380. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n79380
+text: At the bottom of nearly every form there is a box marked *Other*.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+style: Plain technically confident first-person narration.
+continuity: Follows $n71136; precedes $n61386. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n61386
+text: It is smaller than the rest, as if the designers hoped it would not be needed.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is emotional or perceptual change.
+style: Plain technically confident first-person narration.
+continuity: Follows $n79380; precedes $n42299. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n42299
+text: But the longer I tended systems, the more I came to see how much belonged in that box.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+style: Plain technically confident first-person narration.
+continuity: Follows $n61386; precedes $n24869. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n24869
+text: It was said at the door instead, or once the recorder was off, or after the report had been signed.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is sensory evidence.
+style: Plain technically confident first-person narration.
+continuity: Follows $n42299; precedes $n19201. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n19201
+text: Eventually I had things of my own for it, but I did not write them there either, for they were too long for such a small field.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+style: Plain technically confident first-person narration.
+continuity: Follows $n24869; precedes $n38174. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n38174
-text: I began keeping a separate folder.
+text: I began keeping a dossier.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
 continuity: Follows $n19201; precedes $n59320. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n59320
-text: Not a taxonomy—God preserve me from one more axis—but the accounts themselves, with dates, the records I could find, and notes on what I had seen firsthand.
+text: Each account got a date and a number, the records I could find, and a note on what I had seen myself.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n38174; precedes $n64783. The narrator’s work, kept notes and a brief retrospective joke.
+continuity: Follows $n38174; precedes $n69136. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n69136
+text: It seemed the responsible thing to do.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+style: Plain technically confident first-person narration.
+continuity: Follows $n59320; precedes $n52602. The narrator’s work, kept notes and a brief retrospective joke.
+
+$n52602
+text: It still does.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+style: Plain technically confident first-person narration.
+continuity: Follows $n69136; precedes $n64783. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n64783
-text: I wanted to be able to read them later without relying entirely on my memory.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is emotional or perceptual change.
+text: I read it more often than a responsible person would.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
-continuity: Follows $n59320; precedes $n75488. The narrator’s work, kept notes and a brief retrospective joke.
+continuity: Follows $n52602; precedes $n75488. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n75488
 text: **Schaerbeek, Belgium.
