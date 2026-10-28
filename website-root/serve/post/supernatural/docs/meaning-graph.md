@@ -76,19 +76,19 @@ style: Plain technically confident first-person narration.
 continuity: Follows $n28800; precedes $n71663. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n71663
-text: My work was to investigate failures in software and machines.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+text: I was trained for code reviews, test plans and postmortems, and for the relief of a test that failed again in exactly the same way.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is procedural evidence or its displacement.
 style: Plain technically confident first-person narration.
 continuity: Follows $n46605; precedes $n42299. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n42299
-text: I kept notes on the difficult cases, and sometimes on accounts that came to me from other engineers.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
+text: But the longer I tended systems, the more often people told me things they would not put in their reports.
+intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is testimony or reported dialogue.
 style: Plain technically confident first-person narration.
 continuity: Follows $n71663; precedes $n19201. The narrator’s work, kept notes and a brief retrospective joke.
 
 $n19201
-text: The oldest came from a meeting in Schaerbeek.
+text: Eventually I had things of my own that I could not put in mine.
 intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
 style: Plain technically confident first-person narration.
 continuity: Follows $n42299; precedes $n75488. The narrator’s work, kept notes and a brief retrospective joke.
