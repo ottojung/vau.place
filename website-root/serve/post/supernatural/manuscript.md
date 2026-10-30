@@ -127,8 +127,6 @@ $$
 \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
 $$
 
-The candidate's preference count should never rise above the list total.
-
 The president asked the technician, quietly, whether she could sign. He understood the question: not whether the number was right, but whether the machine could be vouched for. He said he could not vouch for it. She held her pen over the box where the count would go. The figure the machine had printed would certify a contradiction; any other figure would alter the record; an empty box would fail to certify the district. She wrote the machine's figure, drew one line through it, wrote the corrected figure beside it, and initialled the correction. Then she asked the two representatives to witness it. One did. The other looked at the struck figure for a long time, and put down his pen without signing.
 
 Eventually somebody used the word *error*, and the formal investigation began.
@@ -165,11 +163,7 @@ They wrote *single-event upset* on the list of possible causes.
 
 The technician objected that bits did not change for no reason. The physicist agreed. A particle crossing a memory cell was a reason; the difficulty was that the reason would already be gone.
 
-They could inspect software, recount totals, and ask clerks what they had done. If the cause had been a particle, there was no particle left to inspect.
-
-Later, the machine was tested, the software examined, and the result reconstructed. No software defect was found that explained the discrepancy. The experts' report concluded that it could *very probably* be attributed to a spontaneous and random inversion of a binary position in the computer's working memory.
-
-The report did not identify the particle or establish what had disturbed the memory.
+Later, the machine was tested, the software examined, and the result reconstructed. No software defect was found that explained the discrepancy. The experts' report concluded that it could *very probably* be attributed to a spontaneous and random inversion of a binary position in the computer's working memory. The report did not identify the particle or establish what had disturbed the memory.
 
 Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*. By the time the incident reached programmers, the whole thing was often filed under *computer error*. That label did not tell the clerks what they could safely sign. What stayed with me was the qualification in the report: *very probably*.
 

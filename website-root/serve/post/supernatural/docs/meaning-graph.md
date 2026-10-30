@@ -817,19 +817,13 @@ $n64252
 text: \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n14125; precedes $n92381. Election count, biscuits, newspaper, and the technician.
-
-$n92381
-text: The candidate's preference count should never rise above the list total.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n64252; precedes $n29099. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n14125; precedes $n29099. Election count, biscuits, newspaper, and the technician.
 
 $n29099
 text: The president asked the technician, quietly, whether she could sign.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n92381; precedes $n56128. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n64252; precedes $n56128. Election count, biscuits, newspaper, and the technician.
 
 $n56128
 text: He understood the question: not whether the number was right, but whether the machine could be vouched for.
@@ -1069,25 +1063,13 @@ $n14257
 text: A particle crossing a memory cell was a reason; the difficulty was that the reason would already be gone.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n65158; precedes $n20620. Election count, biscuits, newspaper, and the technician.
-
-$n20620
-text: They could inspect software, recount totals, and ask clerks what they had done.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n14257; precedes $n17234. Election count, biscuits, newspaper, and the technician.
-
-$n17234
-text: If the cause had been a particle, there was no particle left to inspect.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n20620; precedes $n47968. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n65158; precedes $n47968. Election count, biscuits, newspaper, and the technician.
 
 $n47968
 text: Later, the machine was tested, the software examined, and the result reconstructed.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n17234; precedes $n11253. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n14257; precedes $n11253. Election count, biscuits, newspaper, and the technician.
 
 $n11253
 text: No software defect was found that explained the discrepancy.
