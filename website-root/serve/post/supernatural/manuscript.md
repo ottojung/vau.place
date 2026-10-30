@@ -251,11 +251,27 @@ The developer had gone to sleep sitting upright at a crash cart, with his forehe
 
 In the dream he was standing at the far end of the server room, facing the door, and he knew it was a dream because the door was much too far away, with row after row of machines between him and it, receding into a distance the building could not contain. The fans were running, but he heard each one separately, as clearly as a person speaking his name in a crowd. He tried to walk, and his feet moved, and the door did not come nearer, and along the aisle the lamps began to go out one by one, and in their place small red lights came up inside the cabinets, too low and too regular to be status indicators, trembling each time he breathed, until it occurred to him that something on the other side of the racks was breathing too, and that it was standing between two cabinets where no person could have fitted.
 
-Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it. Its face was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other, all of them moving almost imperceptibly, trying to agree on a single expression. He knew it for a demon with the swift certainty of dreams, and at once tried to take the word back. In one hand it held something pale and minute, and in the other something exactly like it, grains of salt or teeth or tiny pieces of paper, he could not tell which, and it compared them with the absorbed attention of a clerk checking two signatures; whenever it raised one hand the lights on that side of the aisle flickered, and when it raised the other the lights answered.
+Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it. Its face was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other, all of them moving almost imperceptibly, trying to agree on a single expression.
 
-He wanted to ask what it was doing. He had worked with machines for twelve years and knew how to begin a question about a process that was behaving strangely, but every question that formed in his mind reached his mouth already answered, in a voice he had never heard. It is a dream, he told himself; I can wake up; and the demon looked at him, and all the faces in its face stopped moving, and the aisle, though it was as wide as before, was suddenly crowded, the racks leaning toward him, a sound like paper being folded very slowly going on and on, and he thought of the other people who had walked this aisle without knowing what watched them, and of the hundreds of rooms like it in other cities, and of how little a locked door meant to something that did not need to enter.
+He knew it for a demon with the swift certainty of dreams, and at once tried to take the word back. In one hand it held something pale and minute, and in the other something exactly like it, grains of salt or teeth or tiny pieces of paper, he could not tell which, and it compared them with the absorbed attention of a clerk checking two signatures; whenever it raised one hand the lights on that side of the aisle flickered, and when it raised the other the lights answered.
 
-The demon stepped closer. Its feet made no sound. It smelled of rain on overheated metal, and beneath that of wool damp from a journey, an ordinary human smell, which was worse. “This room is cursed,” it said, and the voice came from the doorway, which was now impossibly far behind him, so that he tried to turn toward it and found that one of the little things had already fallen, though the demon had opened neither hand, and had struck the floor with a noise like the cabinets coming down, and nothing had moved, and he was asking which one, and the demon was holding out its hands, and he could see now that the two pale objects were not alike, one marked differently, one worn thin at the edge, and it studied them for so long that he forgot he had asked anything at all.
+He wanted to ask what it was doing. He had worked with machines for twelve years and knew how to begin a question about a process that was behaving strangely, but every question that formed in his mind reached his mouth already answered, in a voice he had never heard.
+
+It is a dream, he told himself. I can wake up.
+
+The demon looked at him. All the faces in its face stopped moving.
+
+The aisle, though it was as wide as before, was suddenly crowded: the racks leaned toward him, a sound like paper being folded very slowly went on and on, and he thought of the other people who had walked this aisle without knowing what watched them, and of the hundreds of rooms like it in other cities, and of how little a locked door meant to something that did not need to enter.
+
+The demon stepped closer. Its feet made no sound. It smelled of rain on overheated metal, and beneath that of wool damp from a journey, an ordinary human smell, which was worse.
+
+“This room is cursed,” it said.
+
+The voice came from the doorway, which was now impossibly far behind him. He tried to turn toward it, and one of the little things fell, though the demon had opened neither hand, and struck the floor with a noise like the cabinets coming down. Nothing moved.
+
+“Which one?” he managed to ask.
+
+The demon held out its hands. He could see now that the two pale objects were not alike: one was marked differently, and one was worn thin at the edge. It studied them for so long that he forgot he had asked anything at all.
 
 “Both,” it said.
 
@@ -271,7 +287,7 @@ Both files were kept for examination. Eleven days later, a storage failure destr
 
 The developer moved his desk upstairs, stopped working late, and refused to pass the server-room door unless somebody else was in the corridor. Once, when a cleaner dropped a handful of coins behind him, he fell to the floor with his arms over his head. He stayed there while she apologized.
 
-I asked him whether he would return to the room with me in daylight. He looked at my two hands resting on the table, where I had been holding a pen in each, trying to decide which one still wrote, and said that he would not.
+I asked him whether he would return to the room with me in daylight. He looked at my two hands resting on the table; I had been holding a pen in each, trying to decide which one still wrote. “No,” he said.
 
 **Field Note #2. Two different things may answer to one name.**
 
