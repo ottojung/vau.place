@@ -221,21 +221,13 @@ I said this aloud. Hearing my voice in the empty office made the explanation fee
 
 At 04:12 I turned the main monitor away from me and left only the corner of its screen visible in the glass. I meant to see whether the request would fail without the bright window in front of my face. It did. On the reflected screen a small red mark appeared beside the waiting transaction. I turned around at once.
 
-There was no red mark. There was no waiting transaction. The system had completed, and the log gave an ordinary completion time. I tried to remember whether I had really seen the colour or had expected to see it. The difference, which should have been obvious, would not settle.
+There was no red mark. There was no waiting transaction. The system had completed, and the log gave an ordinary completion time, and I sat trying to remember whether I had seen the colour or only expected it, a difference that should have been obvious and would not settle, while the heating came on and the pipes began to click overhead and a chair creaked somewhere beyond the partition, and I found that I was listening between the clicks for a sound that would not belong to the building.
 
-The building's heating came on. Pipes clicked overhead; a chair creaked somewhere beyond the partition. I found myself listening between the clicks for a sound that would not belong to the building.
-
-At 04:56 the request stopped again. I could attach the tracer immediately. Everything I needed was on the screen. Instead I sat with my hands resting above the keys.
-
-What frightened me was not the possibility that the trace would show nothing. It was the idea, sudden and complete, that attaching it would make the thing aware of me.
-
-I knew I was tired. I did not move.
+At 04:56 the request stopped again. Everything I needed was on the screen, the tracer one command away, and I sat with my hands above the keys and did not type it, not because I thought the trace would show nothing but because the idea had come, sudden and complete, that attaching it would make the thing aware of me, and I knew that I was tired, and I knew what a tired man alone in an office will make of a timing fault, and I knew that somewhere in the gap a customer's money might be neither taken nor returned, and I went on not moving while the clock in the corner of the screen changed, and changed again.
 
 In the end I attached the tracer. The request completed. It left no useful evidence.
 
-There was another test I could have run, a quieter way of watching the live system. It carried a risk of interrupting a real customer's order. I decided against it. At daybreak I wrote that decision down carefully, with the reasons. I could still have defended every one of them.
-
-Then I added a line beneath the reasons, in smaller handwriting.
+There was another test I could have run, a quieter way of watching the live system, but it risked interrupting a real customer's order, and I decided against it. At daybreak I wrote the decision down with its reasons, every one of which I could still have defended, and beneath them, in smaller handwriting:
 
 *The thing hates to be watched.*
 

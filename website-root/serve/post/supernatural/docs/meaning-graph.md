@@ -1594,94 +1594,28 @@ style: Compressed sleepless first person, increasingly uncanny images.
 continuity: Follows $n90868; precedes $n70553. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n70553
-text: The system had completed, and the log gave an ordinary completion time.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is procedural evidence or its displacement.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n41262; precedes $n11673. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n11673
-text: I tried to remember whether I had really seen the colour or had expected to see it.
+text: The system had completed, and the log gave an ordinary completion time, and I sat trying to remember whether I had seen the colour or only expected it, a difference that should have been obvious and would not settle, while the heating came on and the pipes began to click overhead and a chair creaked somewhere beyond the partition, and I found that I was listening between the clicks for a sound that would not belong to the building.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is emotional or perceptual change.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n70553; precedes $n73636. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n73636
-text: The difference, which should have been obvious, would not settle.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n11673; precedes $n22314. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n22314
-text: The building's heating came on.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n73636; precedes $n80282. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n80282
-text: Pipes clicked overhead; a chair creaked somewhere beyond the partition.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n22314; precedes $n75280. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n75280
-text: I found myself listening between the clicks for a sound that would not belong to the building.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n80282; precedes $n45584. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n41262; precedes $n45584. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n45584
 text: At 04:56 the request stopped again.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n75280; precedes $n86616. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n86616
-text: I could attach the tracer immediately.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n45584; precedes $n81944. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n70553; precedes $n81944. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n81944
-text: Everything I needed was on the screen.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n86616; precedes $n71077. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n71077
-text: Instead I sat with my hands resting above the keys.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is sensory evidence.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n81944; precedes $n69779. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n69779
-text: What frightened me was not the possibility that the trace would show nothing.
+text: Everything I needed was on the screen, the tracer one command away, and I sat with my hands above the keys and did not type it, not because I thought the trace would show nothing but because the idea had come, sudden and complete, that attaching it would make the thing aware of me, and I knew that I was tired, and I knew what a tired man alone in an office will make of a timing fault, and I knew that somewhere in the gap a customer's money might be neither taken nor returned, and I went on not moving while the clock in the corner of the screen changed, and changed again.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is emotional or perceptual change.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n71077; precedes $n70259. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n70259
-text: It was the idea, sudden and complete, that attaching it would make the thing aware of me.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n69779; precedes $n60085. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n60085
-text: I knew I was tired.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n70259; precedes $n58737. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n58737
-text: I did not move.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n60085; precedes $n23148. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n45584; precedes $n23148. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n23148
 text: In the end I attached the tracer.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n58737; precedes $n93399. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n81944; precedes $n93399. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n93399
 text: The request completed.
@@ -1696,46 +1630,22 @@ style: Compressed sleepless first person, increasingly uncanny images.
 continuity: Follows $n93399; precedes $n87929. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n87929
-text: There was another test I could have run, a quieter way of watching the live system.
+text: There was another test I could have run, a quieter way of watching the live system, but it risked interrupting a real customer's order, and I decided against it.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is procedural evidence or its displacement.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n50825; precedes $n89986. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n89986
-text: It carried a risk of interrupting a real customer's order.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n87929; precedes $n38404. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n38404
-text: I decided against it.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n89986; precedes $n32485. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n50825; precedes $n32485. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n32485
-text: At daybreak I wrote that decision down carefully, with the reasons.
+text: At daybreak I wrote the decision down with its reasons, every one of which I could still have defended, and beneath them, in smaller handwriting:
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is testimony or reported dialogue.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n38404; precedes $n56285. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n56285
-text: I could still have defended every one of them.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n32485; precedes $n10922. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n10922
-text: Then I added a line beneath the reasons, in smaller handwriting.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n56285; precedes $n52544. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n87929; precedes $n52544. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n52544
 text: *The thing hates to be watched.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n10922; precedes $n56076. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n32485; precedes $n56076. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n56076
 text: I crossed it out.
