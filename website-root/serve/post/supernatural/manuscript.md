@@ -474,7 +474,7 @@ For weeks afterward I tried to reduce the visit to a sequence of events. I drew 
 
 I began reading the old books she had named. I learned why Mercury wears wings, why his staff bears two serpents, why merchants and messengers once made offerings at crossroads. I learned the signs for conjunction and opposition, and the houses in which an astrologer looks for journeys, theft, marriage, debts, death. I filled a notebook with copied symbols. Some belonged to objects I had noticed in her house without understanding why they were there.
 
-One evening I waited in a car park to see Mercury after sunset. It was low and difficult to find, a small light in the last colour of the sky. A plane crossed the horizon. Somebody laughed behind me, and I turned too quickly. When I looked back, the light was gone.
+One evening I waited in a car park to see Mercury after sunset. It was low and difficult to find, a small light in the last colour of the sky. A plane crossed the horizon, and for a moment I could not tell which light was which. I watched the smaller one until it sank behind the roofs opposite, and stayed a while after there was nothing left to see.
 
 I bought an almanac. I moved a planned migration away from the next retrograde. I did not put that reason in the schedule.
 

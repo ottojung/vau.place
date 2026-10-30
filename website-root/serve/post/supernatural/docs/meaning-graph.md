@@ -3376,22 +3376,16 @@ style: Visceral visionary mysticism rather than technical documentation.
 continuity: Follows $n58338; precedes $n99487. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n99487
-text: A plane crossed the horizon.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n50784; precedes $n28119. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n28119
-text: Somebody laughed behind me, and I turned too quickly.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n99487; precedes $n41238. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n41238
-text: When I looked back, the light was gone.
+text: A plane crossed the horizon, and for a moment I could not tell which light was which.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is sensory evidence.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n28119; precedes $n22790. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n50784; precedes $n41238. Mercury, serpents, mirrors, moving coin and impossible telephone.
+
+$n41238
+text: I watched the smaller one until it sank behind the roofs opposite, and stayed a while after there was nothing left to see.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
+style: Visceral visionary mysticism rather than technical documentation.
+continuity: Follows $n99487; precedes $n22790. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n22790
 text: I bought an almanac.
