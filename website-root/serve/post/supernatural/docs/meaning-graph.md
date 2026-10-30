@@ -1381,25 +1381,13 @@ $n69517
 text: I removed them a second time, watched the cursor blink, and saw the stall return.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n48788; precedes $n81119. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n81119
-text: I felt an unreasonable satisfaction.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is emotional or perceptual change.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n69517; precedes $n30123. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n30123
-text: At least there was a pattern.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n81119; precedes $n72187. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n48788; precedes $n72187. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n72187
 text: The next experiment was even smaller.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n30123; precedes $n46394. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n69517; precedes $n46394. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n46394
 text: I left the code alone and opened a monitor on the other screen.

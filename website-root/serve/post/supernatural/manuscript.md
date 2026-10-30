@@ -205,7 +205,7 @@ A familiar kind of nuisance. Watching a program changes its timing; anyone who h
 
 I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*.
 
-With the extra lines the application ran perfectly. Without them it stopped. I removed them a second time, watched the cursor blink, and saw the stall return. I felt an unreasonable satisfaction. At least there was a pattern.
+With the extra lines the application ran perfectly. Without them it stopped. I removed them a second time, watched the cursor blink, and saw the stall return.
 
 The next experiment was even smaller. I left the code alone and opened a monitor on the other screen. For an hour there was no failure. I closed the monitor. The request stalled on the very next attempt.
 
