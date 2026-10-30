@@ -1600,88 +1600,40 @@ style: Compressed sleepless first person, increasingly uncanny images.
 continuity: Follows $n41262; precedes $n11673. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n11673
-text: I tried to remember whether I had really seen the colour or had expected to see it.
+text: I tried to remember whether I had seen the colour or only expected it; the difference should have been obvious, and it would not settle.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is emotional or perceptual change.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n70553; precedes $n73636. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n73636
-text: The difference, which should have been obvious, would not settle.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n11673; precedes $n22314. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n70553; precedes $n22314. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n22314
-text: The building's heating came on.
+text: The heating came on.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n73636; precedes $n80282. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n11673; precedes $n80282. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n80282
-text: Pipes clicked overhead; a chair creaked somewhere beyond the partition.
+text: Pipes clicked overhead, a chair creaked somewhere beyond the partition, and I found myself listening between the clicks for a sound that would not belong to the building.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n22314; precedes $n75280. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n75280
-text: I found myself listening between the clicks for a sound that would not belong to the building.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n80282; precedes $n45584. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n22314; precedes $n45584. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n45584
 text: At 04:56 the request stopped again.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n75280; precedes $n86616. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n86616
-text: I could attach the tracer immediately.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n45584; precedes $n81944. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n80282; precedes $n81944. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n81944
-text: Everything I needed was on the screen.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n86616; precedes $n71077. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n71077
-text: Instead I sat with my hands resting above the keys.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is sensory evidence.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n81944; precedes $n69779. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n69779
-text: What frightened me was not the possibility that the trace would show nothing.
+text: Everything I needed was on the screen, the tracer one command away, and I sat with my hands above the keys and did not type it, not because I thought the trace would show nothing but because the idea had come, sudden and complete, that attaching it would make the thing aware of me, and I knew that I was tired, and I knew what a tired man alone in an office will make of a timing fault, and I knew that somewhere in the gap a customer's money might be neither taken nor returned, and I went on not moving while the clock in the corner of the screen changed, and changed again.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is emotional or perceptual change.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n71077; precedes $n70259. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n70259
-text: It was the idea, sudden and complete, that attaching it would make the thing aware of me.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n69779; precedes $n60085. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n60085
-text: I knew I was tired.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n70259; precedes $n58737. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n58737
-text: I did not move.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n60085; precedes $n23148. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n45584; precedes $n23148. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n23148
 text: In the end I attached the tracer.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n58737; precedes $n93399. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n81944; precedes $n93399. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n93399
 text: The request completed.
@@ -1696,46 +1648,22 @@ style: Compressed sleepless first person, increasingly uncanny images.
 continuity: Follows $n93399; precedes $n87929. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n87929
-text: There was another test I could have run, a quieter way of watching the live system.
+text: There was another test I could have run, a quieter way of watching the live system, but it risked interrupting a real customer's order, and I decided against it.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is procedural evidence or its displacement.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n50825; precedes $n89986. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n89986
-text: It carried a risk of interrupting a real customer's order.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n87929; precedes $n38404. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n38404
-text: I decided against it.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n89986; precedes $n32485. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n50825; precedes $n32485. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n32485
-text: At daybreak I wrote that decision down carefully, with the reasons.
+text: At daybreak I wrote the decision down with its reasons, every one of which I could still have defended, and beneath them, in smaller handwriting:
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is testimony or reported dialogue.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n38404; precedes $n56285. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n56285
-text: I could still have defended every one of them.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n32485; precedes $n10922. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n10922
-text: Then I added a line beneath the reasons, in smaller handwriting.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n56285; precedes $n52544. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n87929; precedes $n52544. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n52544
 text: *The thing hates to be watched.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n10922; precedes $n56076. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n32485; precedes $n56076. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n56076
 text: I crossed it out.
@@ -1804,154 +1732,64 @@ style: Embodied dream logic, measured horror and abrupt ironies.
 continuity: Follows $n90014; precedes $n84346. Demon, two small things, full SHA-256 collision and lost files.
 
 $n84346
-text: In the dream he was standing at the far end of the server room, facing the door.
+text: In the dream he was standing at the far end of the server room, facing the door, and he knew it was a dream because the door was much too far away, with row after row of machines between him and it, receding into a distance the building could not contain.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n37789; precedes $n77880. Demon, two small things, full SHA-256 collision and lost files.
-
-$n77880
-text: He knew at once that it was a dream because the door was much too far away.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n84346; precedes $n98231. Demon, two small things, full SHA-256 collision and lost files.
-
-$n98231
-text: Between him and it stood row after row of machines, receding into a distance the building could not contain.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n77880; precedes $n57890. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n37789; precedes $n57890. Demon, two small things, full SHA-256 collision and lost files.
 
 $n57890
 text: The fans were running, but he heard each one separately, as clearly as a person speaking his name in a crowd.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n98231; precedes $n42855. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n84346; precedes $n42855. Demon, two small things, full SHA-256 collision and lost files.
 
 $n42855
-text: He tried to walk.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n57890; precedes $n99854. Demon, two small things, full SHA-256 collision and lost files.
-
-$n99854
-text: His feet moved, yet the door did not come nearer.
+text: He tried to walk, and his feet moved, and the door did not come nearer, and along the aisle the lamps began to go out one by one, and in their place small red lights came up inside the cabinets, too low and too regular to be status indicators, trembling each time he breathed, until it occurred to him that something on the other side of the racks was breathing too, and that it was standing between two cabinets where no person could have fitted.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n42855; precedes $n73632. Demon, two small things, full SHA-256 collision and lost files.
-
-$n73632
-text: The lamps along the aisle began to go out, one by one.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n99854; precedes $n28453. Demon, two small things, full SHA-256 collision and lost files.
-
-$n28453
-text: In their place appeared small red lights in the cabinets, too low and too regular to be status indicators.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n73632; precedes $n94044. Demon, two small things, full SHA-256 collision and lost files.
-
-$n94044
-text: They trembled with each breath he took.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n28453; precedes $n80087. Demon, two small things, full SHA-256 collision and lost files.
-
-$n80087
-text: It occurred to him that something on the other side of the racks was breathing too.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n94044; precedes $n36405. Demon, two small things, full SHA-256 collision and lost files.
-
-$n36405
-text: A figure stood between two cabinets where no person could have fitted.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n80087; precedes $n23815. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n57890; precedes $n23815. Demon, two small things, full SHA-256 collision and lost files.
 
 $n23815
 text: Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n36405; precedes $n94706. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n42855; precedes $n94706. Demon, two small things, full SHA-256 collision and lost files.
 
 $n94706
-text: Its face was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other.
+text: Its face was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other, all of them moving almost imperceptibly, trying to agree on a single expression.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n23815; precedes $n33941. Demon, two small things, full SHA-256 collision and lost files.
-
-$n33941
-text: The features moved almost imperceptibly, attempting to agree on a single expression.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n94706; precedes $n88336. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n23815; precedes $n88336. Demon, two small things, full SHA-256 collision and lost files.
 
 $n88336
-text: He recognized it as a demon with the swift certainty of dreams, and immediately tried to reject the word.
+text: He knew it for a demon with the swift certainty of dreams, and at once tried to take the word back.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n33941; precedes $n69979. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n94706; precedes $n69979. Demon, two small things, full SHA-256 collision and lost files.
 
 $n69979
-text: In one hand it held something pale and minute.
+text: In one hand it held something pale and minute, and in the other something exactly like it, grains of salt or teeth or tiny pieces of paper, he could not tell which, and it compared them with the absorbed attention of a clerk checking two signatures; whenever it raised one hand the lights on that side of the aisle flickered, and when it raised the other the lights answered.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n88336; precedes $n79017. Demon, two small things, full SHA-256 collision and lost files.
-
-$n79017
-text: In the other, something exactly like it.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n69979; precedes $n45494. Demon, two small things, full SHA-256 collision and lost files.
-
-$n45494
-text: He could not tell whether they were grains of salt, teeth, or tiny pieces of paper.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n79017; precedes $n53540. Demon, two small things, full SHA-256 collision and lost files.
-
-$n53540
-text: The demon compared them with the absorbed attention of a clerk checking two signatures.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n45494; precedes $n78062. Demon, two small things, full SHA-256 collision and lost files.
-
-$n78062
-text: Whenever it raised one hand, the lights on that side of the aisle flickered.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n53540; precedes $n54057. Demon, two small things, full SHA-256 collision and lost files.
-
-$n54057
-text: When it raised the other, the lights answered.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n78062; precedes $n12924. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n88336; precedes $n12924. Demon, two small things, full SHA-256 collision and lost files.
 
 $n12924
 text: He wanted to ask what it was doing.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is emotional or perceptual change.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n54057; precedes $n20786. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n69979; precedes $n20786. Demon, two small things, full SHA-256 collision and lost files.
 
 $n20786
-text: He had worked with machines for twelve years; if a process was behaving strangely, he knew how to begin a question.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n12924; precedes $n97882. Demon, two small things, full SHA-256 collision and lost files.
-
-$n97882
-text: But every question that formed in his mind reached his mouth already answered, and each answer was in a voice he had never heard.
+text: He had worked with machines for twelve years and knew how to begin a question about a process that was behaving strangely, but every question that formed in his mind reached his mouth already answered, in a voice he had never heard.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n20786; precedes $n18227. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n12924; precedes $n18227. Demon, two small things, full SHA-256 collision and lost files.
 
 $n18227
 text: It is a dream, he told himself.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n97882; precedes $n24928. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n20786; precedes $n24928. Demon, two small things, full SHA-256 collision and lost files.
 
 $n24928
 text: I can wake up.
@@ -1972,34 +1810,16 @@ style: Embodied dream logic, measured horror and abrupt ironies.
 continuity: Follows $n25345; precedes $n22824. Demon, two small things, full SHA-256 collision and lost files.
 
 $n22824
-text: He felt suddenly crowded, though the aisle was as wide as before.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is emotional or perceptual change.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n35095; precedes $n26496. Demon, two small things, full SHA-256 collision and lost files.
-
-$n26496
-text: The racks seemed to lean toward him.
+text: The aisle, though it was as wide as before, was suddenly crowded: the racks leaned toward him, a sound like paper being folded very slowly went on and on, and he thought of the other people who had walked this aisle without knowing what watched them, and of the hundreds of rooms like it in other cities, and of how little a locked door meant to something that did not need to enter.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n22824; precedes $n24103. Demon, two small things, full SHA-256 collision and lost files.
-
-$n24103
-text: He heard a sound like paper being folded very slowly.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n26496; precedes $n85977. Demon, two small things, full SHA-256 collision and lost files.
-
-$n85977
-text: He thought of the other people who had walked this aisle without knowing what watched them, and of the hundreds of rooms like it in other cities, and of how little a locked door meant to something that did not need to enter.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n24103; precedes $n22076. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n35095; precedes $n22076. Demon, two small things, full SHA-256 collision and lost files.
 
 $n22076
 text: The demon stepped closer.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n85977; precedes $n19385. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n22824; precedes $n19385. Demon, two small things, full SHA-256 collision and lost files.
 
 $n19385
 text: Its feet made no sound.
@@ -2008,52 +1828,34 @@ style: Embodied dream logic, measured horror and abrupt ironies.
 continuity: Follows $n22076; precedes $n63559. Demon, two small things, full SHA-256 collision and lost files.
 
 $n63559
-text: It had the smell of rain on overheated metal, and beneath that an ordinary human smell of wool damp from a journey.
+text: It smelled of rain on overheated metal, and beneath that of wool damp from a journey, an ordinary human smell, which was worse.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n19385; precedes $n50399. Demon, two small things, full SHA-256 collision and lost files.
-
-$n50399
-text: The human smell was worse.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n63559; precedes $n31362. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n19385; precedes $n31362. Demon, two small things, full SHA-256 collision and lost files.
 
 $n31362
 text: “This room is cursed,” it said.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n50399; precedes $n62369. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n63559; precedes $n62369. Demon, two small things, full SHA-256 collision and lost files.
 
 $n62369
-text: Its voice came from the doorway, impossibly far behind him.
+text: The voice came from the doorway, which was now impossibly far behind him.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
 continuity: Follows $n31362; precedes $n43248. Demon, two small things, full SHA-256 collision and lost files.
 
 $n43248
-text: He tried to turn.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n62369; precedes $n28111. Demon, two small things, full SHA-256 collision and lost files.
-
-$n28111
-text: One of the little things in its hands fell, though the demon had opened neither hand.
+text: He tried to turn toward it, and one of the little things fell, though the demon had opened neither hand, and struck the floor with a noise like the cabinets coming down.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n43248; precedes $n42163. Demon, two small things, full SHA-256 collision and lost files.
-
-$n42163
-text: It struck the floor with a noise so violent that he expected the cabinets to fall over.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n28111; precedes $n41526. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n62369; precedes $n41526. Demon, two small things, full SHA-256 collision and lost files.
 
 $n41526
 text: Nothing moved.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n42163; precedes $n56397. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n43248; precedes $n56397. Demon, two small things, full SHA-256 collision and lost files.
 
 $n56397
 text: “Which one?”
@@ -2074,22 +1876,16 @@ style: Embodied dream logic, measured horror and abrupt ironies.
 continuity: Follows $n54782; precedes $n64042. Demon, two small things, full SHA-256 collision and lost files.
 
 $n64042
-text: He could see now that the two pale objects were not alike.
+text: He could see now that the two pale objects were not alike: one was marked differently, and one was worn thin at the edge.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n60096; precedes $n38837. Demon, two small things, full SHA-256 collision and lost files.
-
-$n38837
-text: Their surfaces were marked differently, and one was worn thin at the edge.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n64042; precedes $n89298. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n60096; precedes $n89298. Demon, two small things, full SHA-256 collision and lost files.
 
 $n89298
-text: The demon studied them for a long time.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
+text: It studied them for so long that he forgot he had asked anything at all.
+intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n38837; precedes $n40814. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n64042; precedes $n40814. Demon, two small things, full SHA-256 collision and lost files.
 
 $n40814
 text: “Both,” it said.
@@ -2098,22 +1894,16 @@ style: Embodied dream logic, measured horror and abrupt ironies.
 continuity: Follows $n89298; precedes $n63917. Demon, two small things, full SHA-256 collision and lost files.
 
 $n63917
-text: He woke with his cheek stuck to the cold metal of the cart.
+text: He woke with his cheek stuck to the cold metal of the cart, his neck aching.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n40814; precedes $n36231. Demon, two small things, full SHA-256 collision and lost files.
-
-$n36231
-text: His neck hurt.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n63917; precedes $n18298. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n40814; precedes $n18298. Demon, two small things, full SHA-256 collision and lost files.
 
 $n18298
 text: The door at the far end of the room stood open by an inch.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n36231; precedes $n62699. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n63917; precedes $n62699. Demon, two small things, full SHA-256 collision and lost files.
 
 $n62699
 text: He remembered pulling it shut.
@@ -2125,41 +1915,29 @@ $n69400
 text: The fans were running at their ordinary pitch.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n62699; precedes $n65242. Demon, two small things, full SHA-256 collision and lost files.
-
-$n65242
-text: For several minutes he could not make himself approach the door.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n69400; precedes $n60282. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n62699; precedes $n60282. Demon, two small things, full SHA-256 collision and lost files.
 
 $n60282
-text: He checked the system clock.
+text: He looked at the system clock, not at the door.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n65242; precedes $n63698. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n69400; precedes $n63698. Demon, two small things, full SHA-256 collision and lost files.
 
 $n63698
-text: At 02:47 the lights at the far end of the room had gone out during a brief power interruption.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n60282; precedes $n96854. Demon, two small things, full SHA-256 collision and lost files.
-
-$n96854
-text: The access log recorded the door opening and closing at 02:51.
+text: At 02:47 the lights at the far end of the room had gone out during a brief power interruption; at 02:51 the access log recorded the door opening and closing.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n63698; precedes $n68434. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n60282; precedes $n68434. Demon, two small things, full SHA-256 collision and lost files.
 
 $n68434
 text: Neither entry ought to have frightened him.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is emotional or perceptual change.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n96854; precedes $n76375. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n63698; precedes $n65242. Demon, two small things, full SHA-256 collision and lost files.
 
-$n76375
-text: Both did.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
+$n65242
+text: It was several minutes before he could make himself cross the room and shut the door.
+intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
 continuity: Follows $n68434; precedes $n27470. Demon, two small things, full SHA-256 collision and lost files.
 
@@ -2167,7 +1945,7 @@ $n27470
 text: On his way home he passed the laundrette opposite the station.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n76375; precedes $n99438. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n65242; precedes $n99438. Demon, two small things, full SHA-256 collision and lost files.
 
 $n99438
 text: Two white shirts hung in the window, identical except for a dark thread in one cuff.
@@ -2218,40 +1996,22 @@ style: Embodied dream logic, measured horror and abrupt ironies.
 continuity: Follows $n57551; precedes $n83969. Demon, two small things, full SHA-256 collision and lost files.
 
 $n83969
-text: She checked again with another program and asked someone to watch.
+text: She checked again with another program and asked someone to watch, and she was still staring at the result when the developer came in, looked at the screen, and said, “Don't put them together.”
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n66674; precedes $n87794. Demon, two small things, full SHA-256 collision and lost files.
-
-$n87794
-text: She was still staring at the result when the developer came in.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n83969; precedes $n10000. Demon, two small things, full SHA-256 collision and lost files.
-
-$n10000
-text: He said, “Don't put them together.”
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n87794; precedes $n75345. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n66674; precedes $n75345. Demon, two small things, full SHA-256 collision and lost files.
 
 $n75345
-text: Nobody understood what he meant.
+text: Nobody understood what he meant, and he would not explain it.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n10000; precedes $n68765. Demon, two small things, full SHA-256 collision and lost files.
-
-$n68765
-text: He would not explain it.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n75345; precedes $n25887. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n83969; precedes $n25887. Demon, two small things, full SHA-256 collision and lost files.
 
 $n25887
 text: Both files were kept for examination.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n68765; precedes $n25128. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n75345; precedes $n25128. Demon, two small things, full SHA-256 collision and lost files.
 
 $n25128
 text: Eleven days later, a storage failure destroyed them.
@@ -2296,22 +2056,16 @@ style: Embodied dream logic, measured horror and abrupt ironies.
 continuity: Follows $n77320; precedes $n62332. Demon, two small things, full SHA-256 collision and lost files.
 
 $n62332
-text: He looked at my two hands resting on the table.
+text: He looked at my two hands resting on the table; I had been holding a pen in each, trying to decide which one still wrote.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n75581; precedes $n92850. Demon, two small things, full SHA-256 collision and lost files.
-
-$n92850
-text: I had been holding a pen in each, trying to decide which one still wrote.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n62332; precedes $n19131. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n75581; precedes $n19131. Demon, two small things, full SHA-256 collision and lost files.
 
 $n19131
 text: “No,” he said.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is testimony or reported dialogue.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n92850; precedes $n71110. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n62332; precedes $n71110. Demon, two small things, full SHA-256 collision and lost files.
 
 $n71110
 text: **Field Note #2.
