@@ -3811,25 +3811,13 @@ $n86593
 text: I checked the temperature curve, then the warning time, then the curve once more.
 intent: Show a sufficiently explained ordinary failure that cannot restore emotional peace. Its local function is narrative advance.
 style: Very short, undramatic, quiet procedural aftershock.
-continuity: Follows $n83345; precedes $n29722. Rack C, cooling filter, Ruth, the extra watch.
-
-$n29722
-text: The explanation did not change.
-intent: Show a sufficiently explained ordinary failure that cannot restore emotional peace. Its local function is narrative advance.
-style: Very short, undramatic, quiet procedural aftershock.
-continuity: Follows $n86593; precedes $n64812. Rack C, cooling filter, Ruth, the extra watch.
-
-$n64812
-text: Nor did the peculiar feeling that I ought not to leave the room unattended.
-intent: Show a sufficiently explained ordinary failure that cannot restore emotional peace. Its local function is narrative advance.
-style: Very short, undramatic, quiet procedural aftershock.
-continuity: Follows $n29722; precedes $n98520. Rack C, cooling filter, Ruth, the extra watch.
+continuity: Follows $n83345; precedes $n98520. Rack C, cooling filter, Ruth, the extra watch.
 
 $n98520
 text: Ruth passed me in the corridor carrying her laptop and a paper cup of coffee.
 intent: Show a sufficiently explained ordinary failure that cannot restore emotional peace. Its local function is narrative advance.
 style: Very short, undramatic, quiet procedural aftershock.
-continuity: Follows $n64812; precedes $n30181. Rack C, cooling filter, Ruth, the extra watch.
+continuity: Follows $n86593; precedes $n30181. Rack C, cooling filter, Ruth, the extra watch.
 
 $n30181
 text: I asked if she needed anything.

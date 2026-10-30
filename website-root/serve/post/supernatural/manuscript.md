@@ -541,7 +541,7 @@ That evening I wrote *ambient temperature* in the incident log and closed it.
 
 I opened it again before going home.
 
-There was nothing to add. I checked the temperature curve, then the warning time, then the curve once more. The explanation did not change. Nor did the peculiar feeling that I ought not to leave the room unattended.
+There was nothing to add. I checked the temperature curve, then the warning time, then the curve once more.
 
 Ruth passed me in the corridor carrying her laptop and a paper cup of coffee. I asked if she needed anything. She said no, and went back to her desk.
 
