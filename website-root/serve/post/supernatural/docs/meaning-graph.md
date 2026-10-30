@@ -1861,19 +1861,13 @@ $n80087
 text: It occurred to him that something on the other side of the racks was breathing too.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is sensory evidence.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n94044; precedes $n22751. Demon, two small things, full SHA-256 collision and lost files.
-
-$n22751
-text: Then he saw it.
-intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
-style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n80087; precedes $n36405. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n94044; precedes $n36405. Demon, two small things, full SHA-256 collision and lost files.
 
 $n36405
 text: A figure stood between two cabinets where no person could have fitted.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n22751; precedes $n23815. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n80087; precedes $n23815. Demon, two small things, full SHA-256 collision and lost files.
 
 $n23815
 text: Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it.

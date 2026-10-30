@@ -265,8 +265,6 @@ He tried to walk. His feet moved, yet the door did not come nearer.
 
 The lamps along the aisle began to go out, one by one. In their place appeared small red lights in the cabinets, too low and too regular to be status indicators. They trembled with each breath he took. It occurred to him that something on the other side of the racks was breathing too.
 
-Then he saw it.
-
 A figure stood between two cabinets where no person could have fitted. Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it. Its face was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other. The features moved almost imperceptibly, attempting to agree on a single expression.
 
 He recognized it as a demon with the swift certainty of dreams, and immediately tried to reject the word.
