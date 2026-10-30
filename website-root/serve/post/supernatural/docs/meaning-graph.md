@@ -1672,7 +1672,7 @@ style: Compressed sleepless first person, increasingly uncanny images.
 continuity: Follows $n70259; precedes $n58737. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n58737
-text: I still did not move.
+text: I did not move.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
 continuity: Follows $n60085; precedes $n23148. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.

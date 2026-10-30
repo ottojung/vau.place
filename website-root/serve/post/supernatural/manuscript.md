@@ -229,7 +229,7 @@ At 04:56 the request stopped again. I could attach the tracer immediately. Every
 
 What frightened me was not the possibility that the trace would show nothing. It was the idea, sudden and complete, that attaching it would make the thing aware of me.
 
-I knew I was tired. I still did not move.
+I knew I was tired. I did not move.
 
 In the end I attached the tracer. The request completed. It left no useful evidence.
 
