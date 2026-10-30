@@ -1594,16 +1594,34 @@ style: Compressed sleepless first person, increasingly uncanny images.
 continuity: Follows $n90868; precedes $n70553. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n70553
-text: The system had completed, and the log gave an ordinary completion time, and I sat trying to remember whether I had seen the colour or only expected it, a difference that should have been obvious and would not settle, while the heating came on and the pipes began to click overhead and a chair creaked somewhere beyond the partition, and I found that I was listening between the clicks for a sound that would not belong to the building.
+text: The system had completed, and the log gave an ordinary completion time.
+intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is procedural evidence or its displacement.
+style: Compressed sleepless first person, increasingly uncanny images.
+continuity: Follows $n41262; precedes $n11673. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+
+$n11673
+text: I tried to remember whether I had seen the colour or only expected it; the difference should have been obvious, and it would not settle.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is emotional or perceptual change.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n41262; precedes $n45584. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n70553; precedes $n22314. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+
+$n22314
+text: The heating came on.
+intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
+style: Compressed sleepless first person, increasingly uncanny images.
+continuity: Follows $n11673; precedes $n80282. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+
+$n80282
+text: Pipes clicked overhead, a chair creaked somewhere beyond the partition, and I found myself listening between the clicks for a sound that would not belong to the building.
+intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
+style: Compressed sleepless first person, increasingly uncanny images.
+continuity: Follows $n22314; precedes $n45584. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n45584
 text: At 04:56 the request stopped again.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n70553; precedes $n81944. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n80282; precedes $n81944. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
 
 $n81944
 text: Everything I needed was on the screen, the tracer one command away, and I sat with my hands above the keys and did not type it, not because I thought the trace would show nothing but because the idea had come, sudden and complete, that attaching it would make the thing aware of me, and I knew that I was tired, and I knew what a tired man alone in an office will make of a timing fault, and I knew that somewhere in the gap a customer's money might be neither taken nor returned, and I went on not moving while the clock in the corner of the screen changed, and changed again.
