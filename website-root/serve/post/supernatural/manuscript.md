@@ -113,9 +113,7 @@ She asked the clerk beside her to read the two figures. He did. They exchanged p
 
 “Check this one,” somebody said.
 
-They checked the machine identifier, the register, the media from which the totals had been read, and then the totals again.
-
-They assumed a check had been missed and went through the list again.
+They checked the machine identifier, the register, the media from which the totals had been read, and then the totals again. They assumed a check had been missed and went through the list again.
 
 The air in the school had become very dry. Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
 
