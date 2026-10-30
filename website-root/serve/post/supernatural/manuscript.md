@@ -113,9 +113,7 @@ She asked the clerk beside her to read the two figures. He did. They exchanged p
 
 “Check this one,” somebody said.
 
-They checked the machine identifier, the register, the media from which the totals had been read, and then the totals again.
-
-They assumed a check had been missed and went through the list again.
+They checked the machine identifier, the register, the media from which the totals had been read, and then the totals again. They assumed a check had been missed and went through the list again.
 
 The air in the school had become very dry. Paper rasped when the clerks separated sheets, and once a wool sleeve snapped against the back of a plastic chair.
 
@@ -126,8 +124,6 @@ The same numbers survived every obvious check. The contradiction could now be wr
 $$
 \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
 $$
-
-The candidate's preference count should never rise above the list total.
 
 The president asked the technician, quietly, whether she could sign. He understood the question: not whether the number was right, but whether the machine could be vouched for. He said he could not vouch for it. She held her pen over the box where the count would go. The figure the machine had printed would certify a contradiction; any other figure would alter the record; an empty box would fail to certify the district. She wrote the machine's figure, drew one line through it, wrote the corrected figure beside it, and initialled the correction. Then she asked the two representatives to witness it. One did. The other looked at the struck figure for a long time, and put down his pen without signing.
 
@@ -165,11 +161,7 @@ They wrote *single-event upset* on the list of possible causes.
 
 The technician objected that bits did not change for no reason. The physicist agreed. A particle crossing a memory cell was a reason; the difficulty was that the reason would already be gone.
 
-They could inspect software, recount totals, and ask clerks what they had done. If the cause had been a particle, there was no particle left to inspect.
-
-Later, the machine was tested, the software examined, and the result reconstructed. No software defect was found that explained the discrepancy. The experts' report concluded that it could *very probably* be attributed to a spontaneous and random inversion of a binary position in the computer's working memory.
-
-The report did not identify the particle or establish what had disturbed the memory.
+Later, the machine was tested, the software examined, and the result reconstructed. No software defect was found that explained the discrepancy. The experts' report concluded that it could *very probably* be attributed to a spontaneous and random inversion of a binary position in the computer's working memory. The report did not identify the particle or establish what had disturbed the memory.
 
 Later retellings usually supplied ionizing radiation, and newspapers condensed that into a *cosmic flea bite*. By the time the incident reached programmers, the whole thing was often filed under *computer error*. That label did not tell the clerks what they could safely sign. What stayed with me was the qualification in the report: *very probably*.
 
@@ -211,7 +203,7 @@ A familiar kind of nuisance. Watching a program changes its timing; anyone who h
 
 I introduced print statements as if soothing a friend — *tell me what you are thinking when you do this*.
 
-With the extra lines the application ran perfectly. Without them it stopped. I removed them a second time, watched the cursor blink, and saw the stall return. I felt an unreasonable satisfaction. At least there was a pattern.
+With the extra lines the application ran perfectly. Without them it stopped. I removed them a second time, watched the cursor blink, and saw the stall return.
 
 The next experiment was even smaller. I left the code alone and opened a monitor on the other screen. For an hour there was no failure. I closed the monitor. The request stalled on the very next attempt.
 
@@ -237,7 +229,7 @@ At 04:56 the request stopped again. I could attach the tracer immediately. Every
 
 What frightened me was not the possibility that the trace would show nothing. It was the idea, sudden and complete, that attaching it would make the thing aware of me.
 
-I knew I was tired. I still did not move.
+I knew I was tired. I did not move.
 
 In the end I attached the tracer. The request completed. It left no useful evidence.
 
@@ -270,8 +262,6 @@ In the dream he was standing at the far end of the server room, facing the door.
 He tried to walk. His feet moved, yet the door did not come nearer.
 
 The lamps along the aisle began to go out, one by one. In their place appeared small red lights in the cabinets, too low and too regular to be status indicators. They trembled with each breath he took. It occurred to him that something on the other side of the racks was breathing too.
-
-Then he saw it.
 
 A figure stood between two cabinets where no person could have fitted. Its head touched the cable trays, and its shoulders passed behind the steel without interrupting it. Its face was covered with features set at different depths, like the faces of people pressing from the wrong side of a thin wall: an eye near the throat, a mouth that seemed to begin at one cheek and end somewhere behind the other. The features moved almost imperceptibly, attempting to agree on a single expression.
 
@@ -482,7 +472,7 @@ For weeks afterward I tried to reduce the visit to a sequence of events. I drew 
 
 I began reading the old books she had named. I learned why Mercury wears wings, why his staff bears two serpents, why merchants and messengers once made offerings at crossroads. I learned the signs for conjunction and opposition, and the houses in which an astrologer looks for journeys, theft, marriage, debts, death. I filled a notebook with copied symbols. Some belonged to objects I had noticed in her house without understanding why they were there.
 
-One evening I waited in a car park to see Mercury after sunset. It was low and difficult to find, a small light in the last colour of the sky. A plane crossed the horizon. Somebody laughed behind me, and I turned too quickly. When I looked back, the light was gone.
+One evening I waited in a car park to see Mercury after sunset. It was low and difficult to find, a small light in the last colour of the sky. A plane crossed the horizon, and for a moment I could not tell which light was which. I watched the smaller one until it sank behind the roofs opposite, and stayed a while after there was nothing left to see.
 
 I bought an almanac. I moved a planned migration away from the next retrograde. I did not put that reason in the schedule.
 
@@ -549,7 +539,7 @@ That evening I wrote *ambient temperature* in the incident log and closed it.
 
 I opened it again before going home.
 
-There was nothing to add. I checked the temperature curve, then the warning time, then the curve once more. The explanation did not change. Nor did the peculiar feeling that I ought not to leave the room unattended.
+There was nothing to add. I checked the temperature curve, then the warning time, then the curve once more.
 
 Ruth passed me in the corridor carrying her laptop and a paper cup of coffee. I asked if she needed anything. She said no, and went back to her desk.
 
@@ -571,7 +561,7 @@ Rack C has been running normally for a week. Ruth came by this afternoon to ask 
 
 I stayed late to check the next backup. It finished without error. A short rattle came from the new fan when it started. I found a loose paper label brushing the grille and moved it aside. The noise stopped.
 
-At midnight I enter Rack C's temperature and close the log. Before leaving I open it again and read what I have just written. There is nothing to correct.
+At midnight I enter Rack C's temperature in the log, read the figure aloud, and close it.
 
 The almanac is in the same drawer as my notes. I have marked next month's date but left the margin empty.
 
