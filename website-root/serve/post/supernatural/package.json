@@ -2,12 +2,8 @@
   "name": "vau-supernatural-dossier",
   "private": true,
   "type": "module",
-  "description": "Reproducible HTML rendering for the Supernatural dossier",
+  "description": "HTML-only Supernatural article and editorial checks",
   "scripts": {
-    "build": "node render.mjs",
-    "check": "node docs/tools/rebuild-meaning-graph.mjs . --check && node render.mjs --check && node --test test/render.test.mjs"
-  },
-  "dependencies": {
-    "markdown-it": "15.0.2"
+    "check": "node docs/tools/rebuild-meaning-graph.mjs . --check && node --test test/render.test.mjs"
   }
 }

@@ -4,9 +4,7 @@
 
 These rules apply to the supernatural story collection in this directory and its descendants.
 
-The primary manuscript is:
-
-- `manuscript.md`
+The single authoritative manuscript is `index.html`, including inline editorial comments and the collapsed Meta section. Edit the HTML directly; there is no Markdown manuscript or HTML generator.
 
 The manuscript is a work of fiction built around a mixture of real incidents, fictionalized retellings, invented cases, and an intentionally unreliable or at least increasingly superstitious investigator-narrator.
 
@@ -42,7 +40,7 @@ Keep the same ID while it denotes the same intent. Group related records into sc
 
 If current Intent Records conflict, identify the conflicting IDs and surface the conflict instead of silently choosing one.
 
-The manuscript's local `<NOTE>`, `<TODO>`, `<FIXME>`, and `<MUST HAVES>` blocks are also live local constraints unless a human explicitly supersedes them. If one conflicts with an Intent Record, surface the conflict rather than quietly discarding either instruction.
+The manuscript's `<!-- editorial N: NOTE ... -->` comments (and related editorial comments) are also live constraints unless a human explicitly supersedes them. If one conflicts with an Intent Record, surface the conflict rather than quietly discarding either instruction.
 
 Do not edit an Intent Record merely to justify a prose change. Intent changes come from the human author; manuscript changes should satisfy the current intent.
 
@@ -50,7 +48,7 @@ Do not edit an Intent Record merely to justify a prose change. Intent changes co
 
 Maintain `docs/meaning-graph.md` as a sentence-by-sentence analytical companion to the current manuscript.
 
-Coverage is strict: **every sentence in `manuscript.md` must have exactly one corresponding graph node.** Do not group multiple sentences into one node, omit apparently trivial sentences, or leave coverage for later. Sentences inside manuscript directives such as `<NOTE>`, `<TODO>`, `<FIXME>`, and `<MUST HAVES>` are still sentences in the source and therefore also require nodes. Non-sentence structural material such as headings, separators, standalone equations, link-reference definitions, and table syntax does not require a node unless it contains a sentence.
+Coverage is strict: **every sentence in `index.html`'s article, Meta section, and editorial comments must have exactly one corresponding graph node.** Do not group multiple sentences into one node, omit apparently trivial sentences, or leave coverage for later. Sentences inside HTML editorial comments and Meta content remain in scope. Markup and headings do not require nodes unless they contain prose sentences. Non-sentence structural material such as headings, separators, standalone equations, link-reference definitions, and table syntax does not require a node unless it contains a sentence.
 
 Graph nodes must appear in the same order as their source sentences and use this format:
 
@@ -64,7 +62,7 @@ continuity: ...
 
 Node IDs have the form `$n{RAND}`, where `RAND` is a random five-digit decimal string. Generate IDs randomly, give them no sequential or mnemonic meaning, and check the graph for collisions before assigning a new one. Keep an existing node ID when the same source sentence is edited rather than deleted/replaced.
 
-The `text` field must reproduce the current source sentence exactly, including meaningful Markdown and punctuation. The analytical fields are:
+The `text` field must reproduce the current source sentence exactly, including meaningful punctuation, with inline HTML tags omitted from the text field. The analytical fields are:
 
 - `intent`: what the sentence is trying to communicate or accomplish, including important implication, setup, payoff, ambiguity, joke, withholding, narrator belief, or reader inference;
 - `style`: the sentence's stylistic and rhetorical work, including voice, rhythm, diction, humor, uncanniness, emphasis, or other form that a revision should preserve when relevant;

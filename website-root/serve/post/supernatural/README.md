@@ -1,23 +1,13 @@
 # Supernatural post
 
-The Markdown story and its sentence-level meaning graph remain the
-canonical source files: manuscript.md and docs/meaning-graph.md.
+The only manuscript is `index.html`. Edit HTML directly; no Markdown
+manuscript or page generator exists. `supernatural.css` styles the story
+and the collapsed, native `<details>` Meta section, which contains all
+background material and references.
 
-The published reader-facing index.html is generated and styled by
-supernatural.css. It is not meant to be hand-edited.
+Editorial constraints remain as HTML comments. `docs/meaning-graph.md`
+tracks sentences in the story, comments and Meta section. Keep it up to
+date as you edit.
 
-Regenerate it after every manuscript change:
-
-    npm ci
-    npm run build
-    npm run check
-
-The generator preserves NOTE, FIXME, TODO, MUST HAVES, PLACEHOLDER
-and quoted NOTE directives in the Markdown source, but converts
-them to inert HTML comments in the generated page. They remain
-inspectable in page source while never appearing in rendered content.
-Generation does not modify the prose or the meaning graph.
-
-The deployment workflow verifies that the HTML matches the
-Markdown source before uploading the website.
-No client-side JavaScript is needed to read the page.
+Run `npm ci --ignore-scripts` and `npm run check` to validate the page,
+meaning graph and literary invariants.
