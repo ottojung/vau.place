@@ -3916,28 +3916,16 @@ style: Restrained and concrete, unresolved with a residual unease.
 continuity: Follows $n24819; precedes $n47719. Rack C, quiet maintenance, and the almanac.
 
 $n47719
-text: At midnight I enter Rack C's temperature and close the log.
+text: At midnight I enter Rack C's temperature in the log, read the figure aloud, and close it.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is sensory evidence.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n54368; precedes $n25496. Rack C, quiet maintenance, and the almanac.
-
-$n25496
-text: Before leaving I open it again and read what I have just written.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n47719; precedes $n45150. Rack C, quiet maintenance, and the almanac.
-
-$n45150
-text: There is nothing to correct.
-intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
-style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n25496; precedes $n50907. Rack C, quiet maintenance, and the almanac.
+continuity: Follows $n54368; precedes $n50907. Rack C, quiet maintenance, and the almanac.
 
 $n50907
 text: The almanac is in the same drawer as my notes.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n45150; precedes $n75893. Rack C, quiet maintenance, and the almanac.
+continuity: Follows $n47719; precedes $n75893. Rack C, quiet maintenance, and the almanac.
 
 $n75893
 text: I have marked next month's date but left the margin empty.

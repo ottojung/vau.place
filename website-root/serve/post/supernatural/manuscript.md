@@ -563,7 +563,7 @@ Rack C has been running normally for a week. Ruth came by this afternoon to ask 
 
 I stayed late to check the next backup. It finished without error. A short rattle came from the new fan when it started. I found a loose paper label brushing the grille and moved it aside. The noise stopped.
 
-At midnight I enter Rack C's temperature and close the log. Before leaving I open it again and read what I have just written. There is nothing to correct.
+At midnight I enter Rack C's temperature in the log, read the figure aloud, and close it.
 
 The almanac is in the same drawer as my notes. I have marked next month's date but left the margin empty.
 
