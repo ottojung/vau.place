@@ -154,3 +154,9 @@ test('the contents list case files only, not the Coda', () => {
 test('mobile contents sit directly under the title', () => {
   assert.match(html, /<h1 id="a-strange-collection-of-system-failures">[^<]*<\/h1>\n<details class="mobile-contents">/);
 });
+
+test('case-file design hooks are present', () => {
+  assert.equal((html.match(/<p class="case-meta">/g) || []).length, 5);
+  assert.equal((html.match(/<p class="field-note"><strong>Field Note #/g) || []).length, 6);
+  assert.match(html, /<p class="photo"><img /);
+});
