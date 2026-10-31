@@ -76,40 +76,58 @@ style: Short, dry, declarative; the only abstract noun in a paragraph of trade v
 continuity: Opens the collection; answered by the dossier at the end of the prologue and by every later case. Precedes $n71663.
 
 $n71663
-text: I was trained for timelines, for root causes and postmortems, and most of what I learned about any incident came from the engineers who were there.
-intent: Grounds the narrator in incident investigation and makes him a collector of other people's testimony, which is how most of the dossier will reach him (the technician, the developer, the night operator).
-style: Plain list of trade terms extended by a quieter clause; sets up the witness portrait without yet praising anyone.
-continuity: Follows $n46605; precedes $n77256. Introduces the engineers who become the witnesses of $n77256–$n14609 and of Cases I, III and IV.
+text: I was trained for timelines, for root causes and postmortems: for the long afternoon after an outage, when the engineers who were there sit at one table and try to agree on what happened, and in what order.
+intent: Grounds the narrator in incident investigation through a scene, the postmortem table, so the engineers arrive as people in a room. "In what order" quietly returns to "timelines".
+style: The colon slows the list into an image; habitual present tense; unhurried.
+continuity: Follows $n46605; precedes $n32390. The table is the room behind "said at the door" and "once the recorder was off" ($n24869).
 
-$n77256
-text: Engineers make excellent witnesses.
-intent: Sincere professional praise, offered in the narrator's assured early voice; the rest of the prologue turns on the one thing these excellent witnesses do not report.
-style: Flat four-word verdict, unhedged; the dry confidence the opening NOTE asks for.
-continuity: Follows $n71663; precedes $n25960. Its counterpoint is $n14609; later witnesses (Schaerbeek technician, Maxwell's developer, the night operator) test it.
+$n32390
+text: I prefer to think of those afternoons as court proceedings.
+intent: He chooses a frame for the meetings. The preference implies another frame he would rather not use; given the opening line, the reader may sense which. Must not be explained.
+style: Plain and slightly stiff; "prefer" carries the avoidance.
+continuity: Follows $n71663; precedes $n15861. Quiet counterweight to "hauntings" in $n46605; anticipates the narrator who, in the Coda, does not look at the almanac.
+
+$n15861
+text: The system is on trial, though it cannot speak for itself, and the people who were with it at the end speak for it.
+intent: The court is odd: its defendant cannot testify, so others speak for it. "With it at the end" is deathbed language dressed in court clothes, the haunting kept under the surface.
+style: "Though" marks the oddity of the defendant; the sentence runs on plainly rather than balancing.
+continuity: Follows $n32390; precedes $n24458. Makes the engineers witnesses by the logic of the court rather than by assertion.
+
+$n24458
+text: I am the record keeper.
+intent: Places the narrator in the court as the one who writes, preparing his dossier.
+style: Four words; flat role statement.
+continuity: Follows $n15861; precedes $n67588. Pays off in "before I have finished writing it down" ($n25960) and in the dossier ($n38174).
+
+$n67588
+text: Over the years I have taken down a great deal of testimony, and none better than an engineer's.
+intent: Sincere professional praise of engineers as witnesses, arrived at from inside the court frame.
+style: Understated superlative; the assured early voice.
+continuity: Follows $n24458; precedes $n25960. Later witnesses (the Schaerbeek technician, the developer, the night operator) test it; $n14609 is its counterpoint.
 
 $n25960
-text: They report what the dashboard showed before what they saw, and what they saw before what they believe, and they retract anything they cannot support before you have finished writing it down.
+text: They report what the dashboard showed before what they saw, and what they saw before what they believe, and they retract anything they cannot support before I have finished writing it down.
 intent: Shows the witnesses' rigour as a hierarchy of evidence (instrument, observation, belief) and a reflex of retraction; accidentally funny in its precision. It also explains why anything unsupported is unlikely to reach the record.
 style: Long, carefully ordered sentence whose clauses enact the ordering it describes; the comedy is in the exactness, never stated as a joke.
-continuity: Follows $n77256; precedes $n45971. Echoed by $n14609 ("would not let you write down a guess"). Anticipates the night operator's request to turn the recorder off for accuracy (Case IV).
+continuity: Follows $n67588; precedes $n19819. "I" is the record keeper of $n24458. Echoed by $n14609 ("would not let you write down a guess"). Anticipates the night operator's request to turn the recorder off for accuracy (Case IV).
 
-$n45971
-text: Their trade has been at this for a long time, and the incident report shows it.
-intent: Turns from the witnesses to the form as the accumulated product of the same careful habit, without a change of subject.
-style: Quiet hinge sentence; colloquial "at this" keeps the voice dry.
-continuity: Follows $n25960; precedes $n71136. Bridges witness portrait to the history of the form's fields.
+$n19819
+text: All of it ends up in the incident report.
+intent: Moves the testimony onto the form without changing subject: what is said at the table becomes the report.
+style: Short hinge sentence.
+continuity: Follows $n25960; precedes $n71136. Bridges the court to the history of the form's fields.
 
 $n71136
 text: Each field on it is there because something once went wrong in a way nobody had a name for, and afterwards someone sat down and gave it one.
 intent: Every field is a past improvement: an old unnamed failure that became a category. Establishes classification as the trade's method of learning, and sets up the one field that names nothing.
 style: Balanced, slightly ceremonious sentence with a modest close ("gave it one").
-continuity: Follows $n45971; precedes $n14609. The naming theme recurs in Schaerbeek (avoiding the word *error*), Maxwell's Demon ("tried to take the word back") and the Visitor ("That word was not in the operator's account").
+continuity: Follows $n19819; precedes $n14609. The naming theme recurs in Schaerbeek (avoiding the word *error*), Maxwell's Demon ("tried to take the word back") and the Visitor ("That word was not in the operator's account").
 
 $n14609
 text: The same witness who would not let you write down a guess will find room in one of those fields for nearly anything.
 intent: The counterpoint: the scrupulous witness is lax in one direction only, readily fitting what happened into an existing category. This is the habit that keeps the Other box empty, shown rather than stated.
 style: Contrast built into one sentence ("same witness"); "room" begins the prologue's spatial motif; "nearly" leaves the remainder the next sentence collects.
-continuity: Follows $n71136; precedes $n79380. Directly qualifies $n77256 and $n25960. "Room" and "nearly" set up $n79380 and $n42299.
+continuity: Follows $n71136; precedes $n79380. Directly qualifies $n67588 and $n25960. "Room" and "nearly" set up $n79380 and $n42299.
 
 $n79380
 text: Whatever is left has a box at the bottom, marked *Other*, the smallest on the page.
