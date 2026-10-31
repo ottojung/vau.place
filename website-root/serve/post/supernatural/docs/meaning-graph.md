@@ -71,93 +71,99 @@ continuity: Follows $n36627; precedes $n46605. The narrator’s work, kept notes
 
 $n46605
 text: I was not trained for hauntings.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n28800; precedes $n71663. The narrator’s work, kept notes and a brief retrospective joke.
+intent: Opening disclaimer from a confident professional: names the genre the reader is about to enter while denying the narrator any preparation for it. It must not explain what hauntings he later met or what he now believes.
+style: Short, dry, declarative; the only abstract noun in a paragraph of trade vocabulary.
+continuity: Opens the collection; answered by the dossier at the end of the prologue and by every later case. Precedes $n71663.
 
 $n71663
-text: I was trained for timelines, for root causes and postmortems.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n46605; precedes $n31247. The narrator’s work, kept notes and a brief retrospective joke.
+text: I was trained for timelines, for root causes and postmortems, and most of what I learned about any incident came from the engineers who were there.
+intent: Grounds the narrator in incident investigation and makes him a collector of other people's testimony, which is how most of the dossier will reach him (the technician, the developer, the night operator).
+style: Plain list of trade terms extended by a quieter clause; sets up the witness portrait without yet praising anyone.
+continuity: Follows $n46605; precedes $n77256. Introduces the engineers who become the witnesses of $n77256–$n14609 and of Cases I, III and IV.
 
-$n31247
-text: Much of my work involved filing incident reports and various other forms, which were better than they looked.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n71663; precedes $n71136. The narrator’s work, kept notes and a brief retrospective joke.
+$n77256
+text: Engineers make excellent witnesses.
+intent: Sincere professional praise, offered in the narrator's assured early voice; the rest of the prologue turns on the one thing these excellent witnesses do not report.
+style: Flat four-word verdict, unhedged; the dry confidence the opening NOTE asks for.
+continuity: Follows $n71663; precedes $n25960. Its counterpoint is $n14609; later witnesses (Schaerbeek technician, Maxwell's developer, the night operator) test it.
+
+$n25960
+text: They report what the dashboard showed before what they saw, and what they saw before what they believe, and they retract anything they cannot support before you have finished writing it down.
+intent: Shows the witnesses' rigour as a hierarchy of evidence (instrument, observation, belief) and a reflex of retraction; accidentally funny in its precision. It also explains why anything unsupported is unlikely to reach the record.
+style: Long, carefully ordered sentence whose clauses enact the ordering it describes; the comedy is in the exactness, never stated as a joke.
+continuity: Follows $n77256; precedes $n45971. Echoed by $n14609 ("would not let you write down a guess"). Anticipates the night operator's request to turn the recorder off for accuracy (Case IV).
+
+$n45971
+text: Their trade has been at this for a long time, and the incident report shows it.
+intent: Turns from the witnesses to the form as the accumulated product of the same careful habit, without a change of subject.
+style: Quiet hinge sentence; colloquial "at this" keeps the voice dry.
+continuity: Follows $n25960; precedes $n71136. Bridges witness portrait to the history of the form's fields.
 
 $n71136
-text: Each field on an incident report is there because something once went wrong in a way nobody had a name for, and afterwards someone sat down and gave it one.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n31247; precedes $n79380. The narrator’s work, kept notes and a brief retrospective joke.
+text: Each field on it is there because something once went wrong in a way nobody had a name for, and afterwards someone sat down and gave it one.
+intent: Every field is a past improvement: an old unnamed failure that became a category. Establishes classification as the trade's method of learning, and sets up the one field that names nothing.
+style: Balanced, slightly ceremonious sentence with a modest close ("gave it one").
+continuity: Follows $n45971; precedes $n14609. The naming theme recurs in Schaerbeek (avoiding the word *error*), Maxwell's Demon ("tried to take the word back") and the Visitor ("That word was not in the operator's account").
+
+$n14609
+text: The same witness who would not let you write down a guess will find room in one of those fields for nearly anything.
+intent: The counterpoint: the scrupulous witness is lax in one direction only, readily fitting what happened into an existing category. This is the habit that keeps the Other box empty, shown rather than stated.
+style: Contrast built into one sentence ("same witness"); "room" begins the prologue's spatial motif; "nearly" leaves the remainder the next sentence collects.
+continuity: Follows $n71136; precedes $n79380. Directly qualifies $n77256 and $n25960. "Room" and "nearly" set up $n79380 and $n42299.
 
 $n79380
-text: At the bottom of nearly every form there is a box marked *Other*.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n71136; precedes $n61386. The narrator’s work, kept notes and a brief retrospective joke.
-
-$n61386
-text: It is smaller than the rest, as if the designers hoped it would not be needed.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is emotional or perceptual change.
-style: Plain technically confident first-person narration.
-continuity: Follows $n79380; precedes $n42299. The narrator’s work, kept notes and a brief retrospective joke.
+text: Whatever is left has a box at the bottom, marked *Other*, the smallest on the page, as if the designers hoped it would not be needed.
+intent: Introduces the Other box as the place for the remainder of "nearly anything", and the designers' hope that there would be little remainder.
+style: Ends the paragraph on the box so the next paragraph can say "that box"; size continues the room motif; the designers' hope is a buried joke, not a thesis.
+continuity: Follows ${"n"}14609; precedes $n42299. Small field returns in $n19201 ("too long for such a small field").
 
 $n42299
 text: But the longer I tended systems, the more I came to see how much belonged in that box.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n61386; precedes $n24869. The narrator’s work, kept notes and a brief retrospective joke.
+intent: The turn: the remainder that seemed small is large. States the collection's premise in the narrator's professional terms without saying what belonged there.
+style: Gradual comparative construction mirrors slow realisation; "that box" depends on $n79380 ending the previous paragraph.
+continuity: Follows $n79380; precedes $n24869. Answers "nearly anything" and "whatever is left".
 
 $n24869
 text: It was said at the door instead, or once the recorder was off, or after the report had been signed.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is sensory evidence.
-style: Plain technically confident first-person narration.
-continuity: Follows $n42299; precedes $n19201. The narrator’s work, kept notes and a brief retrospective joke.
+intent: What belonged in Other was spoken rather than filed, by the same witnesses who retract what they cannot support; the record stays clean while testimony escapes it.
+style: Triad of off-record moments, each more final than the last.
+continuity: Follows $n42299; precedes $n19201. Prefigures the technician's café account, the night operator's recorder-off testimony (Case IV) and the developer telling it a week later (Case III).
 
 $n19201
 text: Eventually I had things of my own for it, but I did not write them there either, for they were too long for such a small field.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n24869; precedes $n38174. The narrator’s work, kept notes and a brief retrospective joke.
+intent: The narrator joins the witnesses: he too avoids the box, and his material exceeds it. Motivates the dossier without naming its contents.
+style: Measured, slightly formal close ("for they were"); "either" places him among the witnesses.
+continuity: Follows $n24869; precedes $n38174. Closes the room/size motif begun in ${"n"}14609.
 
 $n38174
 text: I began keeping a dossier.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n19201; precedes $n59320. The narrator’s work, kept notes and a brief retrospective joke.
+intent: Founds the collection the reader is holding.
+style: Plain short sentence after a long one.
+continuity: Follows $n19201; precedes $n59320.
 
 $n59320
 text: Each account got a date and a number, the records I could find, and a note on what I had seen myself.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n38174; precedes $n69136. The narrator’s work, kept notes and a brief retrospective joke.
+intent: Describes the dossier in the form's own procedural terms, separating records from his own observation.
+style: Inventory rhythm.
+continuity: Follows $n38174; precedes $n69136. Field Notes in each case are the "note on what I had seen myself".
 
 $n69136
 text: It seemed the responsible thing to do.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n59320; precedes $n52602. The narrator’s work, kept notes and a brief retrospective joke.
+intent: The rigorous professional's justification for an unusual file.
+style: Dry, self-assured.
+continuity: Follows $n59320; precedes $n52602.
 
 $n52602
 text: It still does.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n69136; precedes $n64783. The narrator’s work, kept notes and a brief retrospective joke.
-
-$n64783
-text: I read it more often than a responsible person would.
-intent: Establish genuine confidence in reproducibility, with only a minimal reason to retain a dossier. Its local function is narrative advance.
-style: Plain technically confident first-person narration.
-continuity: Follows $n52602; precedes $n75488. The narrator’s work, kept notes and a brief retrospective joke.
+intent: Present-tense glimpse: he continues to defend the dossier, which hints at the altered narrator of the coda without explaining it.
+style: Two-word present-tense coda; ends the prologue on reassurance the collection will undermine.
+continuity: Follows $n69136; precedes $n75488. Pairs with the coda's "In the morning I will be able to explain why."
 
 $n75488
 text: **Schaerbeek, Belgium.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n64783; precedes $n62068. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n52602; precedes $n62068. Election count, biscuits, newspaper, and the technician.
 
 $n62068
 text: This meeting belongs to an earlier period in the narrator's life.
