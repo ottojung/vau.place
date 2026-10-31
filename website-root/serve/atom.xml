@@ -11,9 +11,30 @@
     rel="alternate"
     type="text/html"
   />
-  <updated>2026-09-28T13:49:00-07:00</updated>
+  <updated>2026-10-31T14:00:00-07:00</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+
+  <entry>
+    <title>A Strange Collection of System Failures</title>
+    <summary>
+      A specification describes what we chose to make explicit, and everything outside it
+      is, in a precise sense, supernatural. Think of the specification as a circle
+      drawn in chalk. Your tests walk the inside of it, and your monitoring watches
+      the inside of it, and every night both report that all is well. They will
+      report it on the last night, too. I wrote seven stories about what is outside
+      it. Reading them will not help; they will not protect you. Nothing you have
+      specified can keep the horror out.
+    </summary>
+    <updated>2026-10-31T14:00:00-07:00</updated>
+    <link
+      href="https://vau.place/post/supernatural/index.html"
+      rel="alternate"
+      type="text/html"
+    />
+    <id>https://vau.place/post/supernatural/index.html</id>
+    <content type="text/html" src="https://vau.place/post/supernatural/index.html"/>
+  </entry>
 
   <entry>
     <title>Wreck a nice beach, and the one clue that won't show up</title>
