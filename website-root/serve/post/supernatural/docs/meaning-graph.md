@@ -271,25 +271,43 @@ $n66673
 text: In unfamiliar rooms I begin, out of habit, by checking how they are arranged.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n54335; precedes $n63530. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n54335; precedes $n51868. Election count, biscuits, newspaper, and the technician.
+
+$n51868
+text: The room is a long rectangle, three steps below the street.
+intent: Opens the room as a floor plan, the narrator's habitual first check; placing it below the street explains why traffic shows at the top of the low windows.
+style: Plain, measured statement of shape and level.
+continuity: Follows $n66673; precedes $n63530. Answers "checking how they are arranged" in the previous paragraph.
 
 $n63530
 text: The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n66673; precedes $n32550. Election count, biscuits, newspaper, and the technician.
+intent: The one figurative image in the room: the outside world as machinery moving overhead.
+style: Semicolon turn from fact to image; "mechanical" keeps the engineer's eye inside the metaphor.
+continuity: Follows $n51868; precedes $n89161. Depends on the room being below the street.
+
+$n89161
+text: The floor is laid in square tiles, which makes it easy to measure: twenty across, sixty deep.
+intent: Shows the narrator measuring an unfamiliar room by its grid, without being asked to.
+style: Dry procedural aside; the measurement is given as if it were useful.
+continuity: Follows $n63530; precedes $n32550. Counting and grids prefigure the election totals.
 
 $n32550
-text: The tables keep the same measured distance from the walls, aisles just wide enough for a tray to pass without contact; the chairs face each other in pairs.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is sensory evidence.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n63530; precedes $n42494. Election count, biscuits, newspaper, and the technician.
+text: The tables stand in four exact rows, a small vase of flowers on each.
+intent: Orderly layout softened by one human touch.
+style: "Exact" is the narrator's word; the flowers are added in a trailing clause, as an afterthought.
+continuity: Follows $n89161; precedes $n57755.
+
+$n57755
+text: Along the side wall hang framed paintings of Brussels streets, but one is a few degrees off level.
+intent: The narrator registers a small deviation from order and leaves it alone.
+style: "But" assumes the reader, like the narrator, expects pictures to hang straight; the deviation is measured in degrees.
+continuity: Follows $n32550; precedes $n42494. The technician who keeps straightening small things arrives a page later; anticipates the one figure that does not fit in the count.
 
 $n42494
-text: The queue bends once before the till in an L-shape that keeps the doorway clear.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n32550; precedes $n51761. Election count, biscuits, newspaper, and the technician.
+text: At the back, under a menu board in French and Dutch, the queue slides its trays along a steel rail to the cash register.
+intent: Ends the room on the queue so the next paragraph can begin "I take my place in it"; the bilingual board motivates ordering by number.
+style: Mechanical movement (trays sliding on a rail) echoing the traffic image.
+continuity: Follows $n57755; precedes $n51761. Sets up "I read out a number instead of a name".
 
 $n51761
 text: I take my place in it.
@@ -1621,19 +1639,13 @@ $n56076
 text: I crossed it out.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n52544; precedes $n13128. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n13128
-text: An hour later, before leaving the office, I copied it onto a clean page.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n56076; precedes $n46452. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n52544; precedes $n46452. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence. Now ends Case II: the sentence stays crossed out, with no recopying, so the case closes on the retraction rather than on the narrator keeping the thought.
 
 $n46452
 text: The dream must be the dramatic center: an experienced, terrifying encounter with a demon, presented as an event rather than certified as real or dismissed as a dream.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n13128; precedes $n59237. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n56076; precedes $n59237. Demon, two small things, full SHA-256 collision and lost files.
 
 $n59237
 text: The later SHA-256 collision is one astonishing, concise corroborating consequence: two genuinely different files have the same full digest.
