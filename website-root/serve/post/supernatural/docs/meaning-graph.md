@@ -292,28 +292,22 @@ style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n54335; precedes $n51868. Election count, biscuits, newspaper, and the technician.
 
 $n51868
-text: The room is a long rectangle, three steps below the street.
-intent: Opens the room as a floor plan, the narrator's habitual first check; placing it below the street explains why traffic shows at the top of the low windows.
-style: Plain, measured statement of shape and level.
-continuity: Follows $n66673; precedes $n63530. Answers "checking how they are arranged" in the previous paragraph.
+text: This one is a long rectangle; the floor is laid in square tiles, which makes it easy to measure: twenty across, sixty deep.
+intent: Opens the room as a floor plan, the narrator's habitual first check, and shows him measuring it by its grid without being asked to.
+style: "This one" picks up "unfamiliar rooms"; semicolon then colon, a dry procedural aside given as if useful.
+continuity: Follows $n66673; precedes $n63530. Answers "checking how they are arranged" in the previous paragraph. Counting and grids prefigure the election totals.
 
 $n63530
-text: The windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling.
+text: It is three steps below the street, and the windows sit low; from inside, passing traffic moves along the upper edge of the view like a slow mechanical ceiling.
 intent: The one figurative image in the room: the outside world as machinery moving overhead.
 style: Semicolon turn from fact to image; "mechanical" keeps the engineer's eye inside the metaphor.
-continuity: Follows $n51868; precedes $n89161. Depends on the room being below the street.
-
-$n89161
-text: The floor is laid in square tiles, which makes it easy to measure: twenty across, sixty deep.
-intent: Shows the narrator measuring an unfamiliar room by its grid, without being asked to.
-style: Dry procedural aside; the measurement is given as if it were useful.
-continuity: Follows $n63530; precedes $n32550. Counting and grids prefigure the election totals.
+continuity: Follows $n51868; precedes $n32550. Being below the street explains why traffic shows at the top of the low windows.
 
 $n32550
 text: The tables stand in four exact rows, a small vase of flowers on each.
 intent: Orderly layout softened by one human touch.
 style: "Exact" is the narrator's word; the flowers are added in a trailing clause, as an afterthought.
-continuity: Follows $n89161; precedes $n57755.
+continuity: Follows $n63530; precedes $n57755.
 
 $n57755
 text: Along the side wall hang framed paintings of Brussels streets, but one is a few degrees off level.
