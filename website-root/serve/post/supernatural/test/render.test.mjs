@@ -141,3 +141,9 @@ test('the Schaerbeek invariant renders as MathML, not raw LaTeX', () => {
   assert.match(caseI, /<div class="invariant"><math display="block">/);
   assert.doesNotMatch(visible, /\$\$|\\boxed|\\text\{|\\leq|\^\{/);
 });
+
+test('the contents list case files only, not the Coda', () => {
+  const navs = html.match(/<nav aria-label="Case files">[\s\S]*?<\/nav>/g) || [];
+  assert.equal(navs.length, 2);
+  for (const nav of navs) assert.doesNotMatch(nav, /#coda/);
+});
