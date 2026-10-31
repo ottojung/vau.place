@@ -2497,19 +2497,13 @@ $n70012
 text: **Wednesday, the day of Mercury.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n21927; precedes $n53049. Mercury, serpents, mirrors, moving coin and impossible telephone.
-
-$n53049
-text: I first met the astrologer because of an envelope that had arrived at the clearing house three days before its contents happened.
-intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
-style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n70012; precedes $n53422. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n21927; precedes $n53422. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n53422
 text: The clearing house moved money between small businesses.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n53049; precedes $n64546. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n70012; precedes $n64546. Now opens the case. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n64546
 text: A dozen people worked above a print shop, and their machines settled accounts after dark.
@@ -2533,13 +2527,19 @@ $n13471
 text: It was a serious failure, but not the kind of failure that ought to make anyone consult the heavens.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n17188; precedes $n30023. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n17188; precedes $n53049. Mercury, serpents, mirrors, moving coin and impossible telephone.
+
+$n53049
+text: I first met the astrologer because of an envelope that had arrived at the clearing house three days before the failure.
+intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
+style: Visceral visionary mysticism rather than technical documentation.
+continuity: Follows $n13471; precedes $n30023. Now follows the account of the failure, so "the failure" has its referent and the envelope arrives as the strange element after the ordinary one. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n30023
 text: The envelope contained a drawing of two serpents winding in opposite directions around a staff, and beneath it the instruction: *Do not settle accounts when the messenger is walking backward.
 intent: Draw the investigator into a compelling occult world of ritual, signs, prophecy and returning messages. Its local function is narrative advance.
 style: Visceral visionary mysticism rather than technical documentation.
-continuity: Follows $n13471; precedes $n35196. Mercury, serpents, mirrors, moving coin and impossible telephone.
+continuity: Follows $n53049; precedes $n35196. Mercury, serpents, mirrors, moving coin and impossible telephone.
 
 $n35196
 text: * There was no return address.
