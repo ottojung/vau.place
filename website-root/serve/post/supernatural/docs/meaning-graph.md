@@ -418,7 +418,7 @@ style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n37042; precedes $n63997. Election count, biscuits, newspaper, and the technician.
 
 $n63997
-text: We exchange the usual confirmations—my name, his, the fact that we have both found the correct café in the correct district on the correct day.
+text: We exchange the usual confirmations—my name, his, the fact that we have both found the correct cafeteria in the correct district on the correct day.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n40123; precedes $n63828. Election count, biscuits, newspaper, and the technician.
@@ -3814,7 +3814,7 @@ style: Factual reference prose.
 continuity: Follows $n68982; precedes $n80888. Documentation, provenance, and fictional composites.
 
 $n80888
-text: The technical anomaly and report are documented; this story's café conversation, witnesses' private words, and newspaper story are invented.
+text: The technical anomaly and report are documented; this story's cafeteria conversation, witnesses' private words, and newspaper story are invented.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
 continuity: Follows $n24076; precedes $n60708. Documentation, provenance, and fictional composites.
