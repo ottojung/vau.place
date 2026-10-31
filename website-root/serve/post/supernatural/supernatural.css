@@ -172,3 +172,13 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
   .story a { color: black; }
   @page { size: auto; margin: 18mm; }
 }
+
+/* Schaerbeek invariant: native MathML, boxed like \boxed{} */
+.invariant {
+  width: fit-content; max-width: 100%;
+  margin: 1.6rem auto; padding: .3em .9em;
+  border: 1px solid var(--ink);
+  overflow-x: auto;
+}
+.invariant math, .invariant mtext { font-family: var(--font-text); }
+@media (max-width: 520px) { .invariant { font-size: .8em; padding: .3em .6em; } }

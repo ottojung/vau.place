@@ -135,3 +135,9 @@ test('the tracer joke belongs to the early Heisenbug investigation', () => {
   assert.ok(heisenbug.indexOf('tracer that had broken better men') < heisenbug.indexOf('04:56'));
   assert.equal((visible.match(/I was not trained for hauntings/g) || []).length, 1);
 });
+
+test('the Schaerbeek invariant renders as MathML, not raw LaTeX', () => {
+  const caseI = visible.split('<h3 id="case-i">')[1].split('<h3 id="case-ii">')[0];
+  assert.match(caseI, /<div class="invariant"><math display="block">/);
+  assert.doesNotMatch(visible, /\$\$|\\boxed|\\text\{|\\leq|\^\{/);
+});
