@@ -145,25 +145,13 @@ $n59320
 text: Each account got a date and a number, the records I could find, and a note on what I had seen myself.
 intent: Describes the dossier in the form's own procedural terms, separating records from his own observation.
 style: Inventory rhythm.
-continuity: Follows $n38174; precedes $n69136. Field Notes in each case are the "note on what I had seen myself".
-
-$n69136
-text: It seemed the responsible thing to do.
-intent: The rigorous professional's justification for an unusual file.
-style: Dry, self-assured.
-continuity: Follows $n59320; precedes $n52602.
-
-$n52602
-text: It still does.
-intent: Present-tense glimpse: he continues to defend the dossier, which hints at the altered narrator of the coda without explaining it.
-style: Two-word present-tense coda; ends the prologue on reassurance the collection will undermine.
-continuity: Follows $n69136; precedes $n75488. Pairs with the coda's "In the morning I will be able to explain why."
+continuity: Follows $n38174; precedes $n75488. Field Notes in each case are the "note on what I had seen myself". Now closes the prologue: it ends on the dossier as a procedure, with no justification and no present-tense comment, leaving the narrator's change to show only in the Coda.
 
 $n75488
 text: **Schaerbeek, Belgium.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n52602; precedes $n62068. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n59320; precedes $n62068. Election count, biscuits, newspaper, and the technician.
 
 $n62068
 text: This meeting belongs to an earlier period in the narrator's life.
