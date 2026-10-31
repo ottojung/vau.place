@@ -88,9 +88,9 @@ style: Plain and slightly stiff; "prefer" carries the avoidance.
 continuity: Follows $n71663; precedes $n15861. Quiet counterweight to "hauntings" in $n46605; anticipates the narrator who, in the Coda, does not look at the almanac.
 
 $n15861
-text: The system is on trial, though it cannot speak for itself, and the people who were with it at the end speak for it.
+text: The system is on trial, though it cannot speak for itself, so the people who were with it at the end speak for it.
 intent: The court is odd: its defendant cannot testify, so others speak for it. "With it at the end" is deathbed language dressed in court clothes, the haunting kept under the surface.
-style: "Though" marks the oddity of the defendant; the sentence runs on plainly rather than balancing.
+style: "Though" marks the oddity of the defendant and "so" makes the witnesses its consequence; runs on plainly rather than balancing.
 continuity: Follows $n32390; precedes $n24458. Makes the engineers witnesses by the logic of the court rather than by assertion.
 
 $n24458
@@ -100,9 +100,9 @@ style: Four words; flat role statement.
 continuity: Follows $n15861; precedes $n67588. Pays off in "before I have finished writing it down" ($n25960) and in the dossier ($n38174).
 
 $n67588
-text: Over the years I have taken down a great deal of testimony, and none better than an engineer's.
+text: Over the years I have taken down a great deal of testimony, but none better than an engineer's.
 intent: Sincere professional praise of engineers as witnesses, arrived at from inside the court frame.
-style: Understated superlative; the assured early voice.
+style: Understated superlative set against quantity with "but"; conversational rather than balanced.
 continuity: Follows $n24458; precedes $n25960. Later witnesses (the Schaerbeek technician, the developer, the night operator) test it; $n14609 is its counterpoint.
 
 $n25960
