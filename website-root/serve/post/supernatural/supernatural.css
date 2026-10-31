@@ -106,34 +106,26 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
 .story th, .story td { padding: 10px 13px; border-bottom: 1px solid var(--line); text-align: left; }
 .story th { font-weight: 700; color: var(--accent-deep); }
 .story a { overflow-wrap: anywhere; text-decoration-thickness: .7px; }
-.article-foot {
-  margin-top: 115px; border-top: 1px solid var(--line);
-  padding-top: 38px; text-align: center; font-family: var(--font-ui);
-}
+.article-foot { margin-top: 1.5rem; text-align: center; font-family: var(--font-ui); }
 .article-foot a { text-decoration: none; font-size: .83rem; }
 @media (max-width: 1030px) {
   .page { grid-template-columns: 190px minmax(0, 740px); gap: 42px; }
   .sidebar nav a { font-size: .75rem; }
 }
 @media (max-width: 780px) {
-  .masthead { width: min(700px, calc(100% - 42px)); height: 70px; }
-  .masthead-label { display: none; }
+  .masthead { display: none; }
   .page { display: block; width: min(680px, calc(100% - 42px)); }
   .sidebar { display: none; }
-  .manuscript { padding-top: 55px; }
-  .mobile-contents {
-    display: block; margin: 26px 0 50px; border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line); font: .84rem/1.5 var(--font-ui);
-  }
+  .manuscript { padding-top: 34px; }
+  .mobile-contents { display: block; margin: -6px 0 36px; font: .84rem/1.5 var(--font-ui); }
   .mobile-contents summary {
-    cursor: pointer; list-style-position: inside; padding: 15px 0;
+    cursor: pointer; list-style-position: inside; padding: 6px 0;
     color: var(--accent-deep); font-weight: 650;
   }
   .mobile-contents summary span { float: right; }
   .mobile-contents nav { display: flex; flex-direction: column; gap: 1px; padding: 0 0 18px; }
   .mobile-contents nav a { padding: 6px 12px; text-decoration: none; }
   .story h1 { font-size: clamp(2.7rem, 9vw, 4.1rem); }
-  .story > h1 + p { margin-bottom: 55px; }
   .story > h3 { margin-top: 75px; }
   .story blockquote { margin-left: 0; }
   .story h2#case-files { margin-top: 68px; }
@@ -141,7 +133,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
 @media (max-width: 400px) {
   body { font-size: 17.5px; }
   .masthead, .page { width: calc(100% - 30px); }
-  .manuscript { padding-top: 42px; }
+  .manuscript { padding-top: 26px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -149,7 +141,8 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
 }
 
 /* The Meta dossier is initially collapsed; no client-side scripting is needed. */
-.meta-disclosure { margin-top: 3.8rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 3rem; }
+.meta-disclosure { margin: 3.8rem 0 1.5rem; border-top: 1px solid var(--line); }
+.meta-disclosure[open] { border-bottom: 1px solid var(--line); }
 .meta-disclosure > summary { cursor: pointer; padding: 1rem .1rem; color: var(--accent-deep); font: 650 1rem/1.5 var(--font-ui); }
 .meta-disclosure > summary span { color: var(--muted); font-weight: 400; font-size: .8rem; padding-left: .6rem; }
 .meta-disclosure[open] > summary { border-bottom: 1px solid var(--line); }

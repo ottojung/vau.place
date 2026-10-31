@@ -112,9 +112,9 @@ style: Contrast built into one sentence ("same witness"); "room" begins the prol
 continuity: Follows $n71136; precedes $n79380. Directly qualifies $n77256 and $n25960. "Room" and "nearly" set up $n79380 and $n42299.
 
 $n79380
-text: Whatever is left has a box at the bottom, marked *Other*, the smallest on the page, as if the designers hoped it would not be needed.
-intent: Introduces the Other box as the place for the remainder of "nearly anything", and the designers' hope that there would be little remainder.
-style: Ends the paragraph on the box so the next paragraph can say "that box"; size continues the room motif; the designers' hope is a buried joke, not a thesis.
+text: Whatever is left has a box at the bottom, marked *Other*, the smallest on the page.
+intent: Introduces the Other box as the place for the remainder of "nearly anything"; its size alone implies how little room was expected for it.
+style: Ends the paragraph flatly on the box so the next paragraph can say "that box"; size continues the room motif, left uncommented.
 continuity: Follows ${"n"}14609; precedes $n42299.
 
 $n42299
