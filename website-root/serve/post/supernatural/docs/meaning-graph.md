@@ -1,6 +1,6 @@
 # Meaning graph
 
-Every sentence in the manuscript, including authorial directive sentences, receives exactly one node in narrative order.
+Every sentence in the HTML article and Meta notes, including editorial comment sentences, receives exactly one node in reading order.
 The analytical fields identify the dramatic work and continuity with adjacent sentences, the case-specific arc and recurring motifs.
 
 $n26751
@@ -3703,13 +3703,103 @@ $n41163
 text: In the morning I will be able to explain why.
 intent: Reveal the altered narrator through objects and gestures rather than interpretation. Its local function is narrative advance.
 style: Restrained and concrete, unresolved with a residual unease.
-continuity: Follows $n63464; precedes $n44485. Rack C, quiet maintenance, and the almanac.
+continuity: Follows $n63464; precedes $n10009. Rack C, quiet maintenance, and the almanac.
+
+$n10009
+text: The purpose of this collection, how it was written, and the sources for its cases are explained in the Meta notes below.
+intent: Invite the curious reader to expand Meta. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n41163; precedes $n19826. Meta provides context after the coda.
+
+$n19826
+text: This collection is a tour of ways systems can go wrong outside the assumptions we usually make about them.
+intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n10009; precedes $n81258. Meta provides context after the coda.
+
+$n81258
+text: It moves from hardware faults and observation-sensitive software to questions of identity, agency, time, and mistaken causal connections.
+intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n19826; precedes $n81693. Meta provides context after the coda.
+
+$n81693
+text: The last cases also ask what happens when an investigator starts finding extraordinary explanations where none are needed.
+intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n81258; precedes $n44387. Meta provides context after the coda.
+
+$n44387
+text: I wrote it partly to make the notion of supernatural in Scheduler Theory easier to imagine.
+intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n81693; precedes $n26377. Meta provides context after the coda.
+
+$n26377
+text: In that theory, supernatural phenomena need not be magical: they are events outside the formal vocabulary of a scheduler and its environment, whether as ordinary as a sunset or as rare as a cosmic ray changing a memory bit.
+intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n44387; precedes $n50768. Meta provides context after the coda.
+
+$n50768
+text: A happy set identifies which such circumstances an implementation is expected to handle.
+intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n26377; precedes $n42036. Meta provides context after the coda.
+
+$n42036
+text: These accounts are illustrations and provocations, not a proof or an exhaustive classification.
+intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n50768; precedes $n50810. Meta provides context after the coda.
+
+$n50810
+text: The stories are told as a dossier because incident reports are a natural place to encounter the limits of one's explanations.
+intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n42036; precedes $n33117. Meta provides context after the coda.
+
+$n33117
+text: The narrator begins with confidence in technical investigation, meets increasingly strange experiences, and ends unable to find comfort even in an ordinary, fully explained failure.
+intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n50810; precedes $n67683. Meta provides context after the coda.
+
+$n67683
+text: His changing interpretation is part of the fiction, not a claim that every coincidence conceals an unseen cause.
+intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n33117; precedes $n67752. Meta provides context after the coda.
+
+$n67752
+text: The post was developed through successive drafts and editorial revisions, including AI-assisted writing under human direction.
+intent: Describe the author's human-directed editorial process. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n67683; precedes $n97143. Meta provides context after the coda.
+
+$n97143
+text: Intent records describe the intended effects of the collection, and a sentence-level meaning graph helps track implications, rhythm, and continuity as the prose changes.
+intent: Describe the author's human-directed editorial process. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n67752; precedes $n42582. Meta provides context after the coda.
+
+$n42582
+text: Revisions and review discussions are preserved in the repository's Git history and pull requests.
+intent: Describe the author's human-directed editorial process. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n97143; precedes $n87309. Meta provides context after the coda.
+
+$n87309
+text: This HTML file is now the manuscript itself.
+intent: Describe the author's human-directed editorial process. This is contextual explanation, not part of the fictional dossier.
+style: Plain authorial explanatory prose.
+continuity: Follows $n42582; precedes $n44485. Meta provides context after the coda.
 
 $n44485
 text: *These notes are outside the narrator's dossier.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n41163; precedes $n45423. Documentation, provenance, and fictional composites.
+continuity: Follows $n87309; precedes $n45423. Documentation, provenance, and fictional composites.
 
 $n45423
 text: The historical incidents and technical reports below are real; the characters, dialogue, occult events, and their connections in the stories are fictional unless explicitly identified otherwise.

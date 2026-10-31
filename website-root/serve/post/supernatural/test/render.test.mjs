@@ -3,22 +3,15 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { hideEditorial, renderPage } from '../render.mjs';
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
-const manuscript = fs.readFileSync(path.join(dir, '..', 'manuscript.md'), 'utf8');
 const html = fs.readFileSync(path.join(dir, '..', 'index.html'), 'utf8');
 const visible = html.replace(/<!--[\s\S]*?-->/g, '');
 
-test('editorial notes, directives, and placeholders are hidden from rendered content', () => {
-  const { markdown, annotations } = hideEditorial(manuscript);
-  assert.ok(annotations.length >= 10, 'Expected editorial annotations');
-  assert.doesNotMatch(markdown, /<NOTE>|<FIXME>|<MUST HAVES>|<PLACEHOLDER\s*\/>/);
-  assert.doesNotMatch(visible, /<NOTE>|<FIXME>|<MUST HAVES>|<PLACEHOLDER\s*\/>/);
-  assert.doesNotMatch(visible, /This document is a draft/);
-  assert.doesNotMatch(visible, /Change the title to something more evocative/);
-  assert.doesNotMatch(visible, /The escaped neutron must never be connected/);
-  assert.ok(html.includes('<!-- editorial'));
+test('HTML retains hidden editorial instructions', () => {
+ assert.ok((html.match(/<!-- editorial/g) || []).length >= 10);
+ assert.ok(html.includes('<!-- editorial'));
+ assert.doesNotMatch(visible, /<NOTE>|<FIXME>|<MUST HAVES>|<PLACEHOLDER\s*\/>/);
 });
 
 test('public page retains seven cases, real ending and source links', () => {
@@ -33,8 +26,10 @@ test('public page retains seven cases, real ending and source links', () => {
   assert.ok(html.includes('href="./supernatural.css"'));
 });
 
-test('page is reproducibly generated from the unchanged Markdown source', () => {
-  assert.equal(renderPage(manuscript), html);
+test('HTML is the only manuscript', () => {
+ assert.ok(fs.existsSync(path.join(dir, '..', 'index.html')));
+ assert.ok(!fs.existsSync(path.join(dir, '..', 'manuscript.md')));
+ assert.ok(!fs.existsSync(path.join(dir, '..', 'render.mjs')));
 });
 
 test('page has meaningful semantics and mobile navigation', () => {
@@ -88,14 +83,21 @@ test('Mercury centers the coin, almanac and telephone with a concrete ledger dis
   assert.ok(visible.split('<h2 id="coda">')[1].includes('The almanac is in the same drawer'));
 });
 
-test('source apparatus identifies itself as authorial and cites fictional cases', () => {
-  assert.ok(html.includes('<h2 id="authors-notes-and-sources">'));
-  assert.ok(visible.includes("These notes are outside the narrator"));
-  assert.ok(visible.includes('The visitor in the cold aisle.'));
-  assert.ok(visible.includes('Mercury in Retrograde.'));
-  assert.ok(html.includes('www.gutenberg.org/ebooks/33887'));
-  assert.ok(html.includes('openlibrary.org/books/OL18675930M'));
-  assert.doesNotMatch(visible, /Use as a pointer|mock citations/);
+test('collapsed Meta has rationale, process, and all source notes', () => {
+ assert.ok(html.includes('<details class="meta-disclosure" id="meta">'));
+ assert.doesNotMatch(html, /<details class="meta-disclosure" id="meta" open/);
+ assert.ok(html.includes('<summary>Meta '));
+ const story = html.split('</article>')[0];
+ assert.doesNotMatch(story, /The Mark II moth|The Schaerbeek election\.<\/strong>/);
+ const meta = html.split('<details class="meta-disclosure" id="meta">')[1].split('</details>')[0];
+ assert.ok(meta.includes('id="meta-sources"'));
+ assert.ok(meta.includes('These notes are outside the narrator'));
+ assert.ok(meta.includes('The visitor in the cold aisle.'));
+ assert.ok(meta.includes('Mercury in Retrograde.'));
+ assert.ok(meta.includes('www.gutenberg.org/ebooks/33887'));
+ assert.ok(meta.includes('openlibrary.org/books/OL18675930M'));
+ assert.ok(meta.includes('Scheduler Theory'));
+ assert.ok(meta.includes('How it was written'));
 });
 
 
@@ -104,7 +106,7 @@ test('opening explains the dossier without introducing an extra incident', () =>
   assert.match(opening, /<p>I was not trained for hauntings\./);
   assert.ok(opening.length < 1900, 'The opening should not delay the first story');
   assert.doesNotMatch(visible, /\bvalve\b/i);
-  assert.doesNotMatch(manuscript, /promising the very sun/i);
+  assert.doesNotMatch(visible, /promising the very sun/i);
   assert.ok(visible.includes('Collected incidents · Vol. I'));
   assert.ok(opening.includes('a box marked <em>Other</em>'));
   assert.ok(opening.includes('I was trained for timelines, for root causes and postmortems.'));

@@ -1,6 +1,6 @@
 # Cross-case dramatic map
 
-Editorial companion to `manuscript.md`, produced for Antonina board issue #277.
+Editorial companion to `index.html`, produced for Antonina board issue #277.
 Date: 2026-10-13 (revised 2026-10-14 on branch
 `agent-b6fb41f5ac39/issue277-cross-case-dramatic-map`, recovering the map from
 `agent-6b92725178a5/issue277-map-transitions` (a4786e8), which continues the

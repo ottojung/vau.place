@@ -106,11 +106,6 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
 .story th, .story td { padding: 10px 13px; border-bottom: 1px solid var(--line); text-align: left; }
 .story th { font-weight: 700; color: var(--accent-deep); }
 .story a { overflow-wrap: anywhere; text-decoration-thickness: .7px; }
-.story h2#authors-notes-and-sources {
-  margin-top: 90px; border-top: 1px solid var(--line);
-  padding-top: 43px; font-size: 1.65rem;
-}
-.story h2#authors-notes-and-sources ~ ol { font-size: .92rem; line-height: 1.75; }
 .article-foot {
   margin-top: 115px; border-top: 1px solid var(--line);
   padding-top: 38px; text-align: center; font-family: var(--font-ui);
@@ -152,6 +147,20 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
   html { scroll-behavior: auto; }
   .sidebar nav a { transition: none; }
 }
+
+/* The Meta dossier is initially collapsed; no client-side scripting is needed. */
+.meta-hint { margin: 4rem 0 .5rem; color: var(--muted); font: .88rem/1.65 var(--font-ui); }
+.meta-disclosure { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 3rem; }
+.meta-disclosure > summary { cursor: pointer; padding: 1rem .1rem; color: var(--accent-deep); font: 650 1rem/1.5 var(--font-ui); }
+.meta-disclosure > summary span { color: var(--muted); font-weight: 400; font-size: .8rem; padding-left: .6rem; }
+.meta-disclosure[open] > summary { border-bottom: 1px solid var(--line); }
+.meta-body { padding: 2rem .1rem 1rem; }
+.meta-body h2 { font-size: 2rem; font-weight: 500; margin: 0 0 1.2rem; }
+.meta-body h3 { font-size: 1.35rem; font-weight: 500; margin: 2rem 0 .7rem; }
+.meta-body p { margin: 0 0 1.2rem; }
+.meta-body ol { padding-left: 1.6em; font-size: .93rem; line-height: 1.7; }
+.meta-body li { margin-bottom: 1rem; }
+@media (max-width: 580px) { .meta-disclosure > summary span { display: block; padding-left: 1.3rem; } }
 @media print {
   :root { --paper: white; --ink: black; }
   body { color: black; background: white; font-size: 11.5pt; }

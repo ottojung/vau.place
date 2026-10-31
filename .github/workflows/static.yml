@@ -37,7 +37,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check generated Supernatural HTML
+      - name: Check HTML-first Supernatural manuscript
         working-directory: website-root/serve/post/supernatural
         run: |
           npm ci --ignore-scripts

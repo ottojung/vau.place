@@ -1,4 +1,4 @@
-name: Check Supernatural manuscript
+name: Check Supernatural HTML manuscript
 on:
   pull_request:
     paths:
@@ -20,6 +20,6 @@ jobs:
       - name: Install dependencies
         working-directory: website-root/serve/post/supernatural
         run: npm ci --ignore-scripts
-      - name: Check the meaning graph, generated HTML, and story tests
+      - name: Check the meaning graph, HTML story, and disclosure
         working-directory: website-root/serve/post/supernatural
         run: npm run check
