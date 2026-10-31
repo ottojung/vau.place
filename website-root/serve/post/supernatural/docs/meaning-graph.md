@@ -298,9 +298,9 @@ style: "Exact" is the narrator's word; the flowers are added in a trailing claus
 continuity: Follows $n89161; precedes $n57755.
 
 $n57755
-text: Along the side wall hang watercolours of Brussels in a straight line, but one is a few degrees off level.
+text: Along the side wall hang framed paintings of Brussels streets, but one is a few degrees off level.
 intent: The narrator registers a small deviation from order and leaves it alone.
-style: Set up and undercut with "but"; the deviation is measured in degrees.
+style: "But" assumes the reader, like the narrator, expects pictures to hang straight; the deviation is measured in degrees.
 continuity: Follows $n32550; precedes $n42494. The technician who keeps straightening small things arrives a page later; anticipates the one figure that does not fit in the count.
 
 $n42494
