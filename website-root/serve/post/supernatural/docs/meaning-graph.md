@@ -361,25 +361,19 @@ $n84872
 text: A short item from Geneva says that a neutron escaped one of CERN's experimental enclosures that morning and was detected beyond the shielding where it was expected to stop.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n87240; precedes $n28318. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n87240; precedes $n28318. Election count, biscuits, newspaper, and the technician. The neutron item is now the only trace of "escaped"; the clue is left unemphasized for the reader to connect with the later bit flip.
 
 $n28318
 text: The laboratory says no one was at risk.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n84872; precedes $n13566. Election count, biscuits, newspaper, and the technician.
-
-$n13566
-text: The newspaper uses the word *escaped* three times.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n28318; precedes $n43729. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n84872; precedes $n43729. Election count, biscuits, newspaper, and the technician.
 
 $n43729
 text: I fold it and put it back.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n13566; precedes $n21081. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n28318; precedes $n21081. Election count, biscuits, newspaper, and the technician.
 
 $n21081
 text: He arrives late and apologizes before sitting down.
