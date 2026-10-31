@@ -104,8 +104,8 @@ test('collapsed Meta has rationale, process, and all source notes', () => {
  assert.ok(meta.includes('A crocodile in Vienna'));
  assert.ok(meta.includes('A server failure can have completely ordinary'));
  assert.ok(meta.includes('happy set'));
- assert.ok(meta.includes('docs/specs/scheduler-theory.md#conformance'));
- assert.ok(meta.includes('docs/specs/scheduler-theory.md#happy-set'));
+ assert.ok(meta.includes('ottojung.github.io/volodyslav/specs/scheduler-theory#conformance'));
+ assert.ok(meta.includes('ottojung.github.io/volodyslav/specs/scheduler-theory#happy-set'));
  assert.doesNotMatch(meta, /outright impossible events|An impossible event is not a predicted/);
  assert.doesNotMatch(meta, /This HTML file is now the manuscript itself|The narrator begins with confidence|a tour of ways systems can go wrong/);
  assert.doesNotMatch(html, /class="meta-hint"/);
