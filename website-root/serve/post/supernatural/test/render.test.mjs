@@ -147,3 +147,7 @@ test('the contents list case files only, not the Coda', () => {
   assert.equal(navs.length, 2);
   for (const nav of navs) assert.doesNotMatch(nav, /#coda/);
 });
+
+test('mobile contents sit directly under the title', () => {
+  assert.match(html, /<h1 id="a-strange-collection-of-system-failures">[^<]*<\/h1>\n<details class="mobile-contents">/);
+});

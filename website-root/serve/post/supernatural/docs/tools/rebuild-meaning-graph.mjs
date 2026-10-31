@@ -4,7 +4,7 @@ const dir = path.resolve(process.argv[2] || '.');
 const html = fs.readFileSync(path.join(dir, 'index.html'), 'utf8');
 const graph = fs.readFileSync(path.join(dir, 'docs/meaning-graph.md'), 'utf8');
 const start = html.indexOf('<article class="story">');
-const end = html.indexOf('</details>', start);
+const end = html.indexOf('</details>', html.indexOf('<details class="meta-disclosure"', start));
 if (start < 0 || end < 0) throw new Error('Missing story or Meta section');
 const source = html.slice(start, end).replace(/<!-- editorial \d+: [A-Z ]+\s*\n/g, ' ').replace(/-->/g, ' ');
 const normalize = s => s.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
