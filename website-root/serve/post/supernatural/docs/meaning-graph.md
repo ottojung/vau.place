@@ -292,16 +292,16 @@ style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n32550; precedes $n51761. Election count, biscuits, newspaper, and the technician.
 
 $n51761
-text: I take my place in it, moving forward each time the drawer opens with its tired ring.
+text: I take my place in it.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
+style: Short, plain sentence; joins the room description rather than starting a new paragraph.
 continuity: Follows $n42494; precedes $n84586. Election count, biscuits, newspaper, and the technician.
 
 $n84586
-text: Above the counter, three menus are printed in two tight columns; when my turn comes I trust the digits more than the words and repeat one of the numbers, watching the cashier's hand go straight to the corresponding row as if confirming a mapping I had only guessed at.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is emotional or perceptual change.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n51761; precedes $n81561. Election count, biscuits, newspaper, and the technician.
+text: When my turn comes I read out a number instead of a name, and the cashier rings it up without looking, so I suppose I guessed right.
+intent: Shows the younger narrator abroad trusting digits over words, and accepting a guess only once something confirms it, without stating the habit.
+style: Dry, plain; the joke is in "so I suppose I guessed right", inference from the cashier's behaviour rather than from the menu.
+continuity: Follows $n51761; precedes $n81561. Numbers-as-mapping anticipates the crossed-off "wrong candidate mapping" in the ledger and the coin's worn number in Case V; inferring correctness from a system's behaviour anticipates the report's "very probably".
 
 $n81561
 text: Tray in hand, I take a table by the wall.
