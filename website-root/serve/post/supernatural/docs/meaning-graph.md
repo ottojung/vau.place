@@ -802,7 +802,7 @@ style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n56378; precedes $n64252. Election count, biscuits, newspaper, and the technician.
 
 $n64252
-text: \boxed{\text{candidate preferences } \leq \text{ party list total } \leq \text{ district total}}
+text: candidate preferences ≤ party list total ≤ district total
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n14125; precedes $n29099. Election count, biscuits, newspaper, and the technician.
