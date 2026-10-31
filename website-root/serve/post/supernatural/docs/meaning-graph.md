@@ -124,10 +124,10 @@ style: Gradual comparative construction mirrors slow realisation; "that box" dep
 continuity: Follows $n79380; precedes $n24869. Answers "nearly anything" and "whatever is left".
 
 $n24869
-text: It was said at the door instead, or once the recorder was off, or after the report had been signed.
+text: Most of it was said at the door instead, or once the recorder was off, or after the report had been signed.
 intent: What belonged in Other was spoken rather than filed, by the same witnesses who retract what they cannot support; the record stays clean while testimony escapes it.
 style: Triad of off-record moments, each more final than the last.
-continuity: Follows $n42299; precedes $n19201. Prefigures the technician's café account, the night operator's recorder-off testimony (Case IV) and the developer telling it a week later (Case III).
+continuity: Follows $n42299; precedes $n19201. Prefigures the technician's café account, the night operator's recorder-off testimony (Case IV) and the developer telling it a week later (Case III). "Most of it" refers back to "how much belonged in that box" in the previous sentence.
 
 $n19201
 text: Eventually I had things of my own for it, but I did not write them there either, for they were too long for such a small field.
