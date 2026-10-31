@@ -164,7 +164,6 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
   font: 700 .74rem/1 var(--font-type); letter-spacing: .32em; color: var(--stamp);
 }
 .story hr { border-top: 1px dashed #a89a80; }
-.story .case-meta { border-bottom: 1px solid var(--line); padding-bottom: .9rem; }
 .story h3 + .case-meta strong, .story .case-meta strong {
   font: 400 .92rem var(--font-type); letter-spacing: .03em; color: #4d473c; text-transform: uppercase;
 }
@@ -178,9 +177,10 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
 .story .field-note strong { font: 400 1rem/1.7 var(--font-type); }
 .story ul { font-family: var(--font-type); font-size: .95rem; list-style: "— "; }
 .story li s { text-decoration-color: var(--stamp); text-decoration-thickness: 2px; }
-.story .photo { position: relative; width: fit-content; max-width: 100%; margin: 2.6rem auto; transform: rotate(.8deg); }
+.story .photo { position: relative; width: min(520px, 92%); margin: 2.6rem auto; transform: rotate(.8deg); }
 .story .photo img {
-  margin: 0; padding: 12px 12px 34px; max-width: min(520px, 100%);
+  display: block; box-sizing: border-box; width: 100%; height: auto; max-width: none;
+  margin: 0; padding: 12px 12px 34px;
   background: #fff; border: 0; box-shadow: 0 12px 24px -14px rgba(0,0,0,.5);
 }
 .story .photo::before, .story .photo::after {
