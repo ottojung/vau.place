@@ -976,10 +976,10 @@ style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n10495; precedes $n57481. Election count, biscuits, newspaper, and the technician.
 
 $n57481
-text: The technician recognized the shape at once:
+text: The technician recognized the shape at once.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n22932; precedes $n48284. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n22932; precedes $n48284. Election count, biscuits, newspaper, and the technician. With the standalone 4096 = 2^12 line removed, the next sentence names what he recognized.
 
 $n48284
 text: A difference of exactly one power of two made a bit flip an obvious suspect.
