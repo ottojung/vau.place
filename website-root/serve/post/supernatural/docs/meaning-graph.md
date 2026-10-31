@@ -1000,52 +1000,16 @@ style: Concrete restrained conversation, everyday detail and subtle humor.
 continuity: Follows $n67448; precedes $n74266. Election count, biscuits, newspaper, and the technician.
 
 $n74266
-text: By then nobody needed her to notice \(2^{12}\); what they wanted was a reason for one bit to change.
+text: By then nobody needed her to notice the power of two; what they wanted was a reason for one bit to change.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is emotional or perceptual change.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n41886; precedes $n71757. Election count, biscuits, newspaper, and the technician.
-
-$n71757
-text: She made them go through the ordinary possibilities again.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n74266; precedes $n97787. Election count, biscuits, newspaper, and the technician.
-
-$n97787
-text: Bad input, bad arithmetic, bad code: each had somewhere to leave a trace.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is procedural evidence or its displacement.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n71757; precedes $n85177. Election count, biscuits, newspaper, and the technician.
-
-$n85177
-text: When those routes led back to the same number, the question shifted to the memory itself.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n97787; precedes $n87445. Election count, biscuits, newspaper, and the technician.
-
-$n87445
-text: A memory cell can be disturbed physically, without the program asking it to change.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n85177; precedes $n48514. Election count, biscuits, newspaper, and the technician.
-
-$n48514
-text: An energetic particle passing through the semiconductor can deposit enough charge to alter the bit it crosses.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n87445; precedes $n12882. Election count, biscuits, newspaper, and the technician.
-
-$n12882
-text: If that bit was the position worth 4 096, a zero becoming one would add exactly 4 096 to the stored count.
-intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
-style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n48514; precedes $n45811. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n41886; precedes $n45811. Election count, biscuits, newspaper, and the technician.
 
 $n45811
 text: They wrote *single-event upset* on the list of possible causes.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is testimony or reported dialogue.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n12882; precedes $n56427. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n74266; precedes $n56427. Election count, biscuits, newspaper, and the technician. The physicist names the cause without a mechanism lecture; the term is left as unexplained jargon on the ledger.
 
 $n56427
 text: The technician objected that bits did not change for no reason.
@@ -1063,7 +1027,7 @@ $n14257
 text: A particle crossing a memory cell was a reason; the difficulty was that the reason would already be gone.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n65158; precedes $n47968. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n65158; precedes $n47968. Election count, biscuits, newspaper, and the technician. Now the only statement of the particle mechanism in the case: it gives "the particle" in $n47968 its antecedent and keeps the image recurring from the newspaper neutron ($n84872).
 
 $n47968
 text: Later, the machine was tested, the software examined, and the result reconstructed.
