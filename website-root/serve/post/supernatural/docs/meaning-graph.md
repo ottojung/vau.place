@@ -3706,100 +3706,106 @@ style: Restrained and concrete, unresolved with a residual unease.
 continuity: Follows $n63464; precedes $n10009. Rack C, quiet maintenance, and the almanac.
 
 $n10009
-text: Formal models make software tractable by describing only a small part of the world.
-intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n41163; precedes $n19826. Unmodelled circumstances and the limits of specification.
+text: I wrote this collection while thinking about a problem in Scheduler Theory, my formal account of scheduler conformance: where should we draw the boundary of a system's specification?
+intent: Separate the chosen boundary of a model from whether its excluded phenomena are possible or mathematically expressible.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n41163; precedes $n19826. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n19826
-text: The exclusions are necessary, but they create a question: what should a system be required to do when something happens that its model has no way to describe?
-intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n10009; precedes $n81258. Unmodelled circumstances and the limits of specification.
+text: A model describes what we choose to make explicit.
+intent: Separate the chosen boundary of a model from whether its excluded phenomena are possible or mathematically expressible.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n10009; precedes $n81258. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n81258
-text: In Scheduler Theory, I call phenomena outside the scheduler-and-environment model supernatural.
-intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n19826; precedes $n81693. Unmodelled circumstances and the limits of specification.
+text: Everything else remains outside it—not necessarily because it is mysterious, impossible, or difficult to formalize, but because we decided not to include it.
+intent: Separate the chosen boundary of a model from whether its excluded phenomena are possible or mathematically expressible.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n19826; precedes $n81693. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n81693
-text: This is a technical term, not a claim about ghosts: an ordinary sunset or a cosmic ray changing a bit of memory can be supernatural relative to that theory.
-intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n81258; precedes $n44387. Unmodelled circumstances and the limits of specification.
+text: The theory calls such external phenomena supernatural.
+intent: Separate the chosen boundary of a model from whether its excluded phenomena are possible or mathematically expressible.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n81258; precedes $n44387. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n44387
-text: A user-chosen happy set states which combinations of such phenomena an implementation is still required to handle.
-intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n81693; precedes $n26377. Unmodelled circumstances and the limits of specification.
+text: That choice is more flexible than it first appears.
+intent: Show that a model may deliberately exclude even ordinary or precisely describable phenomena, and that literary invention expands the examples.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n81693; precedes $n26377. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n26377
-text: I wanted to make that enormous remainder easier to imagine, especially its neglected edges.
-intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n44387; precedes $n50768. Unmodelled circumstances and the limits of specification.
+text: A cryptographic hash collision is mathematically possible and can be specified perfectly well; we could equally leave it outside a particular model and, in a story, imagine it as the work of a demon.
+intent: Show that a model may deliberately exclude even ordinary or precisely describable phenomena, and that literary invention expands the examples.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n44387; precedes $n50768. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n50768
-text: The cases therefore range from real incidents to invented and outright impossible events, including demons appearing in a server room.
-intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n26377; precedes $n42036. Unmodelled circumstances and the limits of specification.
+text: The cases draw on engineering history, mundane mishaps, folklore, and invention to explore this neglected space of modeling choices.
+intent: Show that a model may deliberately exclude even ordinary or precisely describable phenomena, and that literary invention expands the examples.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n26377; precedes $n42036. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n42036
-text: An impossible event is not a predicted failure mode, nor an explanation I would offer for an actual incident; as fiction, it lets us examine the boundary of our assumptions without pretending to have exhausted what lies beyond it.
-intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n50768; precedes $n50810. Unmodelled circumstances and the limits of specification.
+text: They are not a catalogue of events I expect to happen.
+intent: Show that a model may deliberately exclude even ordinary or precisely describable phenomena, and that literary invention expands the examples.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n50768; precedes $n50810. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n50810
-text: Conversely, a strange event may have no connection to a system at all.
-intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n42036; precedes $n33117. Unmodelled circumstances and the limits of specification.
+text: The fantastic cases let us consider a boundary without first settling what can exist.
+intent: Show that a model may deliberately exclude even ordinary or precisely describable phenomena, and that literary invention expands the examples.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n42036; precedes $n33117. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n33117
-text: The point is to enlarge the questions we ask of a specification, not to encourage supernatural diagnoses.
-intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n50810; precedes $n67683. Unmodelled circumstances and the limits of specification.
+text: The last two cases matter for the opposite reason.
+intent: Demonstrate that an outside event need not cause a failure and that a real failure need not have an outside explanation.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n50810; precedes $n67683. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n67683
-text: I used an incident-dossier form because it can place observations, testimony, inference, and speculation side by side without collapsing them into a single certainty.
-intent: Describe the drafting practice and distinguish history from invented material.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n33117; precedes $n67752. Human-directed drafting and source provenance.
+text: A crocodile in Vienna might be outside the model of an American software system without having any bearing on that system.
+intent: Demonstrate that an outside event need not cause a failure and that a real failure need not have an outside explanation.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n33117; precedes $n67752. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n67752
-text: Some of the stories draw on documented technical incidents; others are deliberate inventions.
-intent: Describe the drafting practice and distinguish history from invented material.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n67683; precedes $n97143. Human-directed drafting and source provenance.
+text: A server failure can have completely ordinary, well-understood causes, even when the specification never mentioned the physical details involved.
+intent: Demonstrate that an outside event need not cause a failure and that a real failure need not have an outside explanation.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n67683; precedes $n97143. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n97143
-text: The source notes below distinguish historical precedents from fictional events.
-intent: Describe the drafting practice and distinguish history from invented material.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n67752; precedes $n42582. Human-directed drafting and source provenance.
+text: Neither an outside phenomenon nor a failure establishes a causal connection between the two.
+intent: Demonstrate that an outside event need not cause a failure and that a real failure need not have an outside explanation.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n67752; precedes $n42582. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n42582
-text: I developed the piece through repeated drafting, critique, and revision, using AI tools for parts of the writing and editing under my direction.
-intent: Describe the drafting practice and distinguish history from invented material.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n97143; precedes $n87309. Human-directed drafting and source provenance.
+text: The question is therefore not only what belongs inside a model, but what guarantees we should demand in the presence of what remains outside.
+intent: Distinguish the model boundary from the guarantees chosen for circumstances outside it.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n97143; precedes $n87309. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n87309
-text: The aim was not to explain the formal theory in story form, but to make its motivating problem memorable.
-intent: Describe the drafting practice and distinguish history from invented material.
-style: Clear authorial context, not the fictional narrator's voice.
-continuity: Follows $n42582; precedes $n44485. Human-directed drafting and source provenance.
+text: The theory distinguishes this modeling choice from a user-chosen happy set: the circumstances under which an implementation is still required to behave correctly.
+intent: Distinguish the model boundary from the guarantees chosen for circumstances outside it.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n42582; precedes $n18822. Purpose of the collection, model-boundary choices, and the last two cases.
+
+$n18822
+text: I wanted the stories to make those decisions more imaginable, including the consequences of confusing an irrelevant event with a cause or an explained failure with a mystery.
+intent: Distinguish the model boundary from the guarantees chosen for circumstances outside it.
+style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
+continuity: Follows $n87309; precedes $n44485. Purpose of the collection, model-boundary choices, and the last two cases.
 
 $n44485
 text: *These notes are outside the narrator's dossier.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
-continuity: Follows $n87309; precedes $n45423. Documentation, provenance, and fictional composites.
+continuity: Follows $n18822; precedes $n45423. Documentation, provenance, and fictional composites.
 
 $n45423
 text: The historical incidents and technical reports below are real; the characters, dialogue, occult events, and their connections in the stories are fictional unless explicitly identified otherwise.
