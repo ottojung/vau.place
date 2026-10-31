@@ -3958,7 +3958,7 @@ style: Factual reference prose.
 continuity: Follows $n83975; precedes $n73661. Documentation, provenance, and fictional composites.
 
 $n73661
-text: **Mercury in Retrograde.
+text: **Happens-Before.
 intent: Keep external historical references distinct from invented story events. Its local function is narrative advance.
 style: Factual reference prose.
 continuity: Follows $n13642; precedes $n99112. Documentation, provenance, and fictional composites.
