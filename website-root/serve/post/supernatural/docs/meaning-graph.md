@@ -3706,94 +3706,94 @@ style: Restrained and concrete, unresolved with a residual unease.
 continuity: Follows $n63464; precedes $n10009. Rack C, quiet maintenance, and the almanac.
 
 $n10009
-text: The purpose of this collection, how it was written, and the sources for its cases are explained in the Meta notes below.
-intent: Invite the curious reader to expand Meta. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n41163; precedes $n19826. Meta provides context after the coda.
+text: Formal models make software tractable by describing only a small part of the world.
+intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n41163; precedes $n19826. Unmodelled circumstances and the limits of specification.
 
 $n19826
-text: This collection is a tour of ways systems can go wrong outside the assumptions we usually make about them.
-intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n10009; precedes $n81258. Meta provides context after the coda.
+text: The exclusions are necessary, but they create a question: what should a system be required to do when something happens that its model has no way to describe?
+intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n10009; precedes $n81258. Unmodelled circumstances and the limits of specification.
 
 $n81258
-text: It moves from hardware faults and observation-sensitive software to questions of identity, agency, time, and mistaken causal connections.
-intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n19826; precedes $n81693. Meta provides context after the coda.
+text: In Scheduler Theory, I call phenomena outside the scheduler-and-environment model supernatural.
+intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n19826; precedes $n81693. Unmodelled circumstances and the limits of specification.
 
 $n81693
-text: The last cases also ask what happens when an investigator starts finding extraordinary explanations where none are needed.
-intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n81258; precedes $n44387. Meta provides context after the coda.
+text: This is a technical term, not a claim about ghosts: an ordinary sunset or a cosmic ray changing a bit of memory can be supernatural relative to that theory.
+intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n81258; precedes $n44387. Unmodelled circumstances and the limits of specification.
 
 $n44387
-text: I wrote it partly to make the notion of supernatural in Scheduler Theory easier to imagine.
-intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n81693; precedes $n26377. Meta provides context after the coda.
+text: A user-chosen happy set states which combinations of such phenomena an implementation is still required to handle.
+intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n81693; precedes $n26377. Unmodelled circumstances and the limits of specification.
 
 $n26377
-text: In that theory, supernatural phenomena need not be magical: they are events outside the formal vocabulary of a scheduler and its environment, whether as ordinary as a sunset or as rare as a cosmic ray changing a memory bit.
-intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n44387; precedes $n50768. Meta provides context after the coda.
+text: I wanted to make that enormous remainder easier to imagine, especially its neglected edges.
+intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n44387; precedes $n50768. Unmodelled circumstances and the limits of specification.
 
 $n50768
-text: A happy set identifies which such circumstances an implementation is expected to handle.
-intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n26377; precedes $n42036. Meta provides context after the coda.
+text: The cases therefore range from real incidents to invented and outright impossible events, including demons appearing in a server room.
+intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n26377; precedes $n42036. Unmodelled circumstances and the limits of specification.
 
 $n42036
-text: These accounts are illustrations and provocations, not a proof or an exhaustive classification.
-intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n50768; precedes $n50810. Meta provides context after the coda.
+text: An impossible event is not a predicted failure mode, nor an explanation I would offer for an actual incident; as fiction, it lets us examine the boundary of our assumptions without pretending to have exhausted what lies beyond it.
+intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n50768; precedes $n50810. Unmodelled circumstances and the limits of specification.
 
 $n50810
-text: The stories are told as a dossier because incident reports are a natural place to encounter the limits of one's explanations.
-intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n42036; precedes $n33117. Meta provides context after the coda.
+text: Conversely, a strange event may have no connection to a system at all.
+intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n42036; precedes $n33117. Unmodelled circumstances and the limits of specification.
 
 $n33117
-text: The narrator begins with confidence in technical investigation, meets increasingly strange experiences, and ends unable to find comfort even in an ordinary, fully explained failure.
-intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n50810; precedes $n67683. Meta provides context after the coda.
+text: The point is to enlarge the questions we ask of a specification, not to encourage supernatural diagnoses.
+intent: Explain the formal reason for considering unmodelled and even impossible cases without confusing illustration with prediction.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n50810; precedes $n67683. Unmodelled circumstances and the limits of specification.
 
 $n67683
-text: His changing interpretation is part of the fiction, not a claim that every coincidence conceals an unseen cause.
-intent: Explain the purpose of the unusual-failures collection. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n33117; precedes $n67752. Meta provides context after the coda.
+text: I used an incident-dossier form because it can place observations, testimony, inference, and speculation side by side without collapsing them into a single certainty.
+intent: Describe the drafting practice and distinguish history from invented material.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n33117; precedes $n67752. Human-directed drafting and source provenance.
 
 $n67752
-text: The post was developed through successive drafts and editorial revisions, including AI-assisted writing under human direction.
-intent: Describe the author's human-directed editorial process. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n67683; precedes $n97143. Meta provides context after the coda.
+text: Some of the stories draw on documented technical incidents; others are deliberate inventions.
+intent: Describe the drafting practice and distinguish history from invented material.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n67683; precedes $n97143. Human-directed drafting and source provenance.
 
 $n97143
-text: Intent records describe the intended effects of the collection, and a sentence-level meaning graph helps track implications, rhythm, and continuity as the prose changes.
-intent: Describe the author's human-directed editorial process. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n67752; precedes $n42582. Meta provides context after the coda.
+text: The source notes below distinguish historical precedents from fictional events.
+intent: Describe the drafting practice and distinguish history from invented material.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n67752; precedes $n42582. Human-directed drafting and source provenance.
 
 $n42582
-text: Revisions and review discussions are preserved in the repository's Git history and pull requests.
-intent: Describe the author's human-directed editorial process. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n97143; precedes $n87309. Meta provides context after the coda.
+text: I developed the piece through repeated drafting, critique, and revision, using AI tools for parts of the writing and editing under my direction.
+intent: Describe the drafting practice and distinguish history from invented material.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n97143; precedes $n87309. Human-directed drafting and source provenance.
 
 $n87309
-text: This HTML file is now the manuscript itself.
-intent: Describe the author's human-directed editorial process. This is contextual explanation, not part of the fictional dossier.
-style: Plain authorial explanatory prose.
-continuity: Follows $n42582; precedes $n44485. Meta provides context after the coda.
+text: The aim was not to explain the formal theory in story form, but to make its motivating problem memorable.
+intent: Describe the drafting practice and distinguish history from invented material.
+style: Clear authorial context, not the fictional narrator's voice.
+continuity: Follows $n42582; precedes $n44485. Human-directed drafting and source provenance.
 
 $n44485
 text: *These notes are outside the narrator's dossier.

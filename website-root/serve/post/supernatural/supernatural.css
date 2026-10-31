@@ -149,8 +149,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
 }
 
 /* The Meta dossier is initially collapsed; no client-side scripting is needed. */
-.meta-hint { margin: 4rem 0 .5rem; color: var(--muted); font: .88rem/1.65 var(--font-ui); }
-.meta-disclosure { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 3rem; }
+.meta-disclosure { margin-top: 3.8rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 3rem; }
 .meta-disclosure > summary { cursor: pointer; padding: 1rem .1rem; color: var(--accent-deep); font: 650 1rem/1.5 var(--font-ui); }
 .meta-disclosure > summary span { color: var(--muted); font-weight: 400; font-size: .8rem; padding-left: .6rem; }
 .meta-disclosure[open] > summary { border-bottom: 1px solid var(--line); }

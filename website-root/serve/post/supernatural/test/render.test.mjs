@@ -98,6 +98,11 @@ test('collapsed Meta has rationale, process, and all source notes', () => {
  assert.ok(meta.includes('openlibrary.org/books/OL18675930M'));
  assert.ok(meta.includes('Scheduler Theory'));
  assert.ok(meta.includes('How it was written'));
+ assert.ok(meta.includes('outright impossible events'));
+ assert.ok(meta.includes('outside the scheduler-and-environment model'));
+ assert.ok(meta.includes('happy set'));
+ assert.doesNotMatch(meta, /This HTML file is now the manuscript itself|The narrator begins with confidence|a tour of ways systems can go wrong/);
+ assert.doesNotMatch(html, /class="meta-hint"/);
 });
 
 
