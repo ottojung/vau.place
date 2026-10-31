@@ -3706,7 +3706,7 @@ style: Restrained and concrete, unresolved with a residual unease.
 continuity: Follows $n63464; precedes $n10009. Rack C, quiet maintenance, and the almanac.
 
 $n10009
-text: I wrote this collection while thinking about a problem in the formal theory of scheduler conformance: where should we draw the boundary of a system's specification?
+text: I wrote this collection while thinking about a problem in Scheduler Theory, my formal account of scheduler conformance: where should we draw the boundary of a system's specification?
 intent: Separate the chosen boundary of a model from whether its excluded phenomena are possible or mathematically expressible.
 style: Clear, grounded authorial explanation, without speaking as the dossier narrator.
 continuity: Follows $n41163; precedes $n19826. Purpose of the collection, model-boundary choices, and the last two cases.
