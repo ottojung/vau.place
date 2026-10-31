@@ -148,7 +148,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #a56d46; outline-off
 .meta-body { padding: .6rem .1rem 1rem; }
 .meta-body h2 { font-size: 2rem; font-weight: 500; margin: 0 0 1.2rem; }
 .meta-body h3 { font-size: 1.5rem; font-weight: 600; letter-spacing: -.02em; color: var(--accent-deep); margin: 2.6rem 0 .8rem; }
-.meta-body h2 + h3 { margin-top: 1.4rem; }
+.meta-body > h3:first-child { margin-top: .9rem; }
 .meta-body p { margin: 0 0 1.2rem; }
 .meta-body ol { padding-left: 1.6em; font-size: .93rem; line-height: 1.7; }
 .meta-body li { margin-bottom: 1rem; }
