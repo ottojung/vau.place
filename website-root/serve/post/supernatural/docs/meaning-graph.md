@@ -115,7 +115,7 @@ $n79380
 text: Whatever is left has a box at the bottom, marked *Other*, the smallest on the page, as if the designers hoped it would not be needed.
 intent: Introduces the Other box as the place for the remainder of "nearly anything", and the designers' hope that there would be little remainder.
 style: Ends the paragraph on the box so the next paragraph can say "that box"; size continues the room motif; the designers' hope is a buried joke, not a thesis.
-continuity: Follows ${"n"}14609; precedes $n42299. Small field returns in $n19201 ("too long for such a small field").
+continuity: Follows ${"n"}14609; precedes $n42299.
 
 $n42299
 text: But the longer I tended systems, the more I came to see how much belonged in that box.
@@ -130,10 +130,10 @@ style: Triad of off-record moments, each more final than the last.
 continuity: Follows $n42299; precedes $n19201. Prefigures the technician's café account, the night operator's recorder-off testimony (Case IV) and the developer telling it a week later (Case III). "Most of it" refers back to "how much belonged in that box" in the previous sentence.
 
 $n19201
-text: Eventually I had things of my own for it, but I did not write them there either, for they were too long for such a small field.
-intent: The narrator joins the witnesses: he too avoids the box, and his material exceeds it. Motivates the dossier without naming its contents.
-style: Measured, slightly formal close ("for they were"); "either" places him among the witnesses.
-continuity: Follows $n24869; precedes $n38174. Closes the room/size motif begun in ${"n"}14609.
+text: Eventually I had things of my own for it, but I did not write them there either.
+intent: The narrator joins the witnesses: he too avoids the box. Why he does is deliberately left unsaid; the dossier follows without a stated reason and without naming its contents.
+style: Ends flat on "either", which places him among the witnesses; the withheld reason is the point.
+continuity: Follows $n24869; precedes $n38174. The unexplained refusal is left for the cases and the Coda to account for, if anything does.
 
 $n38174
 text: I began keeping a dossier.
@@ -145,25 +145,13 @@ $n59320
 text: Each account got a date and a number, the records I could find, and a note on what I had seen myself.
 intent: Describes the dossier in the form's own procedural terms, separating records from his own observation.
 style: Inventory rhythm.
-continuity: Follows $n38174; precedes $n69136. Field Notes in each case are the "note on what I had seen myself".
-
-$n69136
-text: It seemed the responsible thing to do.
-intent: The rigorous professional's justification for an unusual file.
-style: Dry, self-assured.
-continuity: Follows $n59320; precedes $n52602.
-
-$n52602
-text: It still does.
-intent: Present-tense glimpse: he continues to defend the dossier, which hints at the altered narrator of the coda without explaining it.
-style: Two-word present-tense coda; ends the prologue on reassurance the collection will undermine.
-continuity: Follows $n69136; precedes $n75488. Pairs with the coda's "In the morning I will be able to explain why."
+continuity: Follows $n38174; precedes $n75488. Field Notes in each case are the "note on what I had seen myself". Now closes the prologue: it ends on the dossier as a procedure, with no justification and no present-tense comment, leaving the narrator's change to show only in the Coda.
 
 $n75488
 text: **Schaerbeek, Belgium.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n52602; precedes $n62068. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n59320; precedes $n62068. Election count, biscuits, newspaper, and the technician.
 
 $n62068
 text: This meeting belongs to an earlier period in the narrator's life.
