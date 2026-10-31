@@ -109,19 +109,19 @@ $n25960
 text: They report what the dashboard showed before what they saw, and what they saw before what they believe, and they retract anything they cannot support before I have finished writing it down.
 intent: Shows the witnesses' rigour as a hierarchy of evidence (instrument, observation, belief) and a reflex of retraction; accidentally funny in its precision. It also explains why anything unsupported is unlikely to reach the record.
 style: Long, carefully ordered sentence whose clauses enact the ordering it describes; the comedy is in the exactness, never stated as a joke.
-continuity: Follows $n67588; precedes $n19819. "I" is the record keeper of $n24458. Echoed by $n14609 ("would not let you write down a guess"). Anticipates the night operator's request to turn the recorder off for accuracy (Case IV).
+continuity: Follows $n67588; precedes $n45971. "I" is the record keeper of $n24458. Echoed by $n14609 ("would not let you write down a guess"). Anticipates the night operator's request to turn the recorder off for accuracy (Case IV).
 
-$n19819
-text: All of it ends up in the incident report.
-intent: Moves the testimony onto the form without changing subject: what is said at the table becomes the report.
-style: Short hinge sentence.
-continuity: Follows $n25960; precedes $n71136. Bridges the court to the history of the form's fields.
+$n45971
+text: Their trade has been at this for a long time, and the incident report shows it.
+intent: Turns from the witnesses to the form as the accumulated product of the same careful habit, without a change of subject.
+style: Quiet hinge sentence; colloquial "at this" keeps the voice dry.
+continuity: Follows $n25960; precedes $n71136. "Their" refers back to the engineers of $n67588 and $n25960; bridges witness portrait to the history of the form's fields.
 
 $n71136
 text: Each field on it is there because something once went wrong in a way nobody had a name for, and afterwards someone sat down and gave it one.
 intent: Every field is a past improvement: an old unnamed failure that became a category. Establishes classification as the trade's method of learning, and sets up the one field that names nothing.
 style: Balanced, slightly ceremonious sentence with a modest close ("gave it one").
-continuity: Follows $n19819; precedes $n14609. The naming theme recurs in Schaerbeek (avoiding the word *error*), Maxwell's Demon ("tried to take the word back") and the Visitor ("That word was not in the operator's account").
+continuity: Follows $n45971; precedes $n14609. The naming theme recurs in Schaerbeek (avoiding the word *error*), Maxwell's Demon ("tried to take the word back") and the Visitor ("That word was not in the operator's account").
 
 $n14609
 text: The same witness who would not let you write down a guess will find room in one of those fields for nearly anything.
