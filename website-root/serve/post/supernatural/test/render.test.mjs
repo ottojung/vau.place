@@ -112,7 +112,8 @@ test('collapsed Meta has rationale, process, and all source notes', () => {
 
 
 test('opening explains the dossier without introducing an extra incident', () => {
-  const opening = visible.split('<h1 id="a-strange-collection-of-system-failures">')[1].split('<h3 id="case-i">')[0];
+  const opening = visible.split('<h1 id="a-strange-collection-of-system-failures">')[1].split('<h3 id="case-i">')[0]
+    .replace(/<details class="mobile-contents">[\s\S]*?<\/details>/, '');
   assert.match(opening, /<p>I was not trained for hauntings\./);
   assert.ok(opening.length < 1900, 'The opening should not delay the first story');
   assert.doesNotMatch(visible, /\bvalve\b/i);
@@ -120,8 +121,9 @@ test('opening explains the dossier without introducing an extra incident', () =>
   assert.ok(visible.includes('Collected incidents · Vol. I'));
   assert.ok(opening.includes('marked <em>Other</em>'));
   assert.ok(opening.includes('I was trained for timelines, for root causes and postmortems'));
-  assert.ok(opening.includes('Engineers make excellent witnesses.'));
-  assert.ok(opening.includes('they retract anything they cannot support before you have finished writing it down'));
+  assert.ok(opening.includes('I prefer to think of those afternoons as court proceedings.'));
+  assert.doesNotMatch(opening, /Engineers make excellent witnesses/);
+  assert.ok(opening.includes('they retract anything they cannot support before I have finished writing it down'));
   assert.ok(opening.includes('The same witness who would not let you write down a guess will find room in one of those fields for nearly anything.'));
   assert.ok(opening.includes('how much belonged in that box'));
   assert.doesNotMatch(opening, /relief of a test/);
