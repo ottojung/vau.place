@@ -92,7 +92,8 @@ test('collapsed Meta has rationale, process, and all source notes', () => {
  assert.ok(meta.includes('id="meta-sources"'));
  assert.ok(meta.includes('These notes are outside the narrator'));
  assert.ok(meta.includes('The visitor in the cold aisle.'));
- assert.ok(meta.includes('Mercury in Retrograde.'));
+ assert.ok(meta.includes('Happens-Before.'));
+ assert.ok(html.includes('<h3 id="case-v">V. Happens-Before</h3>'));
  assert.ok(meta.includes('www.gutenberg.org/ebooks/33887'));
  assert.ok(meta.includes('openlibrary.org/books/OL18675930M'));
  assert.ok(meta.includes('Scheduler Theory'));
