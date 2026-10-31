@@ -11,9 +11,24 @@
     rel="alternate"
     type="text/html"
   />
-  <updated>2026-09-28T13:49:00-07:00</updated>
+  <updated>2026-10-31T14:00:00-07:00</updated>
   <author><name>Otto Jung</name></author>
   <id>https://vau.place</id>
+
+  <entry>
+    <title>A Strange Collection of System Failures</title>
+    <summary>
+      Seven accounts of technical failures, unsettling encounters, and the people left to explain them.
+    </summary>
+    <updated>2026-10-31T14:00:00-07:00</updated>
+    <link
+      href="https://vau.place/post/supernatural/index.html"
+      rel="alternate"
+      type="text/html"
+    />
+    <id>https://vau.place/post/supernatural/index.html</id>
+    <content type="text/html" src="https://vau.place/post/supernatural/index.html"/>
+  </entry>
 
   <entry>
     <title>Wreck a nice beach, and the one clue that won't show up</title>
