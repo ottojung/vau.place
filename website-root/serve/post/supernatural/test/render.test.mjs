@@ -127,7 +127,7 @@ test('opening explains the dossier without introducing an extra incident', () =>
   assert.ok(opening.includes('how much belonged in that box'));
   assert.doesNotMatch(opening, /relief of a test/);
   assert.ok(opening.includes('I began keeping a dossier.'));
-  assert.ok(opening.includes('more often than a responsible person would'));
+  assert.doesNotMatch(opening, /more often than a responsible person would/);
 });
 
 test('the tracer joke belongs to the early Heisenbug investigation', () => {

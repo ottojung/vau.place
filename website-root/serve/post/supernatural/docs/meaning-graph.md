@@ -157,19 +157,13 @@ $n52602
 text: It still does.
 intent: Present-tense glimpse: he continues to defend the dossier, which hints at the altered narrator of the coda without explaining it.
 style: Two-word present-tense coda; ends the prologue on reassurance the collection will undermine.
-continuity: Follows $n69136; precedes $n64783. Pairs with the coda's "In the morning I will be able to explain why."
-
-$n64783
-text: I read it more often than a responsible person would.
-intent: Present-tense glimpse of the altered narrator through what he does with the dossier.
-style: Dry understatement that closes the opening.
-continuity: Follows $n52602; precedes $n75488.
+continuity: Follows $n69136; precedes $n75488. Pairs with the coda's "In the morning I will be able to explain why."
 
 $n75488
 text: **Schaerbeek, Belgium.
 intent: Earn skeptical trust through records, human stakes, and a younger engineer meeting an anomalous account. Its local function is narrative advance.
 style: Concrete restrained conversation, everyday detail and subtle humor.
-continuity: Follows $n64783; precedes $n62068. Election count, biscuits, newspaper, and the technician.
+continuity: Follows $n52602; precedes $n62068. Election count, biscuits, newspaper, and the technician.
 
 $n62068
 text: This meeting belongs to an earlier period in the narrator's life.
