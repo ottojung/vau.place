@@ -56,7 +56,7 @@ test('Mercury retains overt magic while using messenger-specific imagery', () =>
 test('Schaerbeek preserves the original analytical voice and quiet jokes', () => {
   const caseI = visible.split('<h3 id="case-i">')[1].split('<h3 id="case-ii">')[0];
   assert.ok(caseI.includes('In unfamiliar rooms I begin, out of habit, by checking how they are arranged.'));
-  assert.ok(caseI.includes('The queue bends once before the till in an L-shape'));
+  assert.ok(caseI.includes('The windows sit low; from inside, passing traffic moves along the upper edge of the view'));
   assert.ok(caseI.includes('“Not spontaneous. Sorry.'));
   assert.ok(caseI.includes('The English ones wait for tea and then break where you expect.'));
   assert.ok(caseI.includes('The French fracture elegantly, usually along the line that leaves the prettier half.'));
