@@ -115,7 +115,7 @@ $n79380
 text: Whatever is left has a box at the bottom, marked *Other*, the smallest on the page, as if the designers hoped it would not be needed.
 intent: Introduces the Other box as the place for the remainder of "nearly anything", and the designers' hope that there would be little remainder.
 style: Ends the paragraph on the box so the next paragraph can say "that box"; size continues the room motif; the designers' hope is a buried joke, not a thesis.
-continuity: Follows ${"n"}14609; precedes $n42299. Small field returns in $n19201 ("too long for such a small field").
+continuity: Follows ${"n"}14609; precedes $n42299. Small field returns in $n19201 ("too heavy for such a small field").
 
 $n42299
 text: But the longer I tended systems, the more I came to see how much belonged in that box.
@@ -130,7 +130,7 @@ style: Triad of off-record moments, each more final than the last.
 continuity: Follows $n42299; precedes $n19201. Prefigures the technician's café account, the night operator's recorder-off testimony (Case IV) and the developer telling it a week later (Case III). "Most of it" refers back to "how much belonged in that box" in the previous sentence.
 
 $n19201
-text: Eventually I had things of my own for it, but I did not write them there either, for they were too long for such a small field.
+text: Eventually I had things of my own for it, but I did not write them there either, for they were too heavy for such a small field.
 intent: The narrator joins the witnesses: he too avoids the box, and his material exceeds it. Motivates the dossier without naming its contents.
 style: Measured, slightly formal close ("for they were"); "either" places him among the witnesses.
 continuity: Follows $n24869; precedes $n38174. Closes the room/size motif begun in ${"n"}14609.
