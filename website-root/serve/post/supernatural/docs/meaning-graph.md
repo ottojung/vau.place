@@ -1621,19 +1621,13 @@ $n56076
 text: I crossed it out.
 intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
 style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n52544; precedes $n13128. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
-
-$n13128
-text: An hour later, before leaving the office, I copied it onto a clean page.
-intent: Generate solitary dread through a failure that retreats under observation and damages perceptual confidence. Its local function is narrative advance.
-style: Compressed sleepless first person, increasingly uncanny images.
-continuity: Follows $n56076; precedes $n46452. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence.
+continuity: Follows $n52544; precedes $n46452. Watching/unwatched runs, reflected monitor, 04:56, crossed-out sentence. Now ends Case II: the sentence stays crossed out, with no recopying, so the case closes on the retraction rather than on the narrator keeping the thought.
 
 $n46452
 text: The dream must be the dramatic center: an experienced, terrifying encounter with a demon, presented as an event rather than certified as real or dismissed as a dream.
 intent: Make the demon visitation terrifying and the hash collision a brief inexplicable consequence. Its local function is narrative advance.
 style: Embodied dream logic, measured horror and abrupt ironies.
-continuity: Follows $n13128; precedes $n59237. Demon, two small things, full SHA-256 collision and lost files.
+continuity: Follows $n56076; precedes $n59237. Demon, two small things, full SHA-256 collision and lost files.
 
 $n59237
 text: The later SHA-256 collision is one astonishing, concise corroborating consequence: two genuinely different files have the same full digest.
