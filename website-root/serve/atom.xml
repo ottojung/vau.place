@@ -21,9 +21,10 @@
       A specification describes what we chose to make explicit, and everything outside it
       is, in a precise sense, supernatural. Think of the specification as a circle
       drawn in chalk. Your tests walk the inside of it, and your monitoring watches
-      the inside of it, and every night both report that all is well. I wrote seven
-      stories about what is outside it. Reading them will not help; they will not
-      protect you. Nothing you have specified can keep the horror out.
+      the inside of it, and every night both report that all is well. They will
+      report it on the last night, too. I wrote seven stories about what is outside
+      it. Reading them will not help; they will not protect you. Nothing you have
+      specified can keep the horror out.
     </summary>
     <updated>2026-10-31T14:00:00-07:00</updated>
     <link
