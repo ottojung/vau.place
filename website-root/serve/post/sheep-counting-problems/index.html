@@ -769,7 +769,23 @@ Y_i\mid\neg Q\sim\operatorname{Bernoulli}(b),
 
 <p>More testing can therefore improve the sheep-counting evidence while making the guard's actual job worse. The statistical ranking and the social ranking move in opposite directions.</p>
 
-<p>Neither paradox is an argument against intervention. They only show that evidence for one predicate under one experiment does not automatically answer a different question.</p>
+<h3 id="a-good-proof-of-work-can-be-bad-for-work">A good proof of work can be bad for work</h3>
+
+<p>A programmer spends an afternoon exploring approaches to a difficult problem. Several plausible ideas fail, and the result may be a better understanding of why no change should be made. Another programmer produces a large patch that solves no important problem. The second afternoon leaves more obvious evidence of productivity, even though the first might have been more useful.</p>
+
+<p>The distinction is between doing cognitive work and doing valuable work. Let \(W\) mean that substantial work was done, and \(U\) mean that the work was useful for the underlying goal. A sheep-counting protocol might make the trace distributions for \(W\) and \(\neg W\) far apart while providing little separation between the distributions for \(U\) and \(\neg U\). In an extreme case, the latter distributions could be identical:</p>
+
+<div class="math-display">\[
+d_{\mathrm{TV}}(P_U,P_{\neg U})=0,
+\]</div>
+
+<p>even though the trace gives strong evidence that effort was spent. Successful verification of effort does not by itself establish the value of the effort.</p>
+
+<p>It can get worse when workers know which evidence will be rewarded. They may favor tasks with quick, easy-to-check results over uncertain exploration whose value is delayed, indirect, or visible only in the mistakes it prevents. The evidence need not be fake: the worker may genuinely perform the certified activity. It is the incentive to produce an impressive trace that can divert effort from useful work.</p>
+
+<p>The paradox is that making work more verifiable can make it less valuable. A verifier can become more accurate about the predicate it tests while the test becomes a worse guide to the goal it was supposed to serve.</p>
+
+<p>These paradoxes are not arguments against verification or intervention. They show that evidence for one predicate under one experiment does not automatically answer a different question, and that designing a good test also requires considering how it changes the activity being tested.</p>
 
 <h2 id="what-i-would-try-next">What I would try next</h2>
 
